@@ -44,6 +44,10 @@ module_bays:
   - name: Riser PCIe slot 6
     label: "6"
     bay_position: PCIe-6
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
 links:
   datasheet: https://i.dell.com/sites/csdocuments/Shared-Content_data-Sheets_Documents/en/PowerEdge-OEM-R730xd-Carrier-Grade-Spec-Sheet.pdf
   manual: https://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/Dell-PowerEdge-R730-and-R730xd-Technical-Guide-v1-7.pdf
@@ -52,12 +56,15 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Dell/PowerEdge-R730xd.yaml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   upstream_fields:
     - airflow
     - console_ports
     - full_depth
+    - images.credit
+    - images.front
+    - images.rear
     - interfaces
     - links.datasheet
     - links.manual
@@ -68,4 +75,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: 4d426480c3f5578f
+  import_hash: 5758df0bc65cad76

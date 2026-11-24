@@ -18,6 +18,9 @@ module_bays:
     bay_position: "2"
   - name: "3"
     bay_position: "3"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
 links:
   other:
     - label: Rackmount 1U Blank Fiber Patch Panel
@@ -27,12 +30,14 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Cable Matters/120034.yaml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   upstream_fields:
     - airflow
     - description
     - full_depth
+    - images.credit
+    - images.front
     - links.other
     - manufacturer
     - model
@@ -41,4 +46,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: 9616fe287aa79c0e
+  import_hash: 74e2225571e52e1c

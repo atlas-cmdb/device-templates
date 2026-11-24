@@ -37,6 +37,9 @@ module_bays:
     bay_position: "2"
   - name: PowerSlot3
     bay_position: "3"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
 links:
   datasheet: https://www.cisco.com/c/en/us/products/collateral/routers/asr-9000-series-aggregation-services-routers/data_sheet_c78-501767.html
 source:
@@ -44,11 +47,13 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Cisco/ASR-9006.yaml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   upstream_fields:
     - airflow
     - full_depth
+    - images.credit
+    - images.front
     - links.datasheet
     - manufacturer
     - model
@@ -57,4 +62,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: 25939683eadd06ef
+  import_hash: 99cabc95f4a69439

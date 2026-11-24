@@ -19,6 +19,9 @@ interfaces:
 power_ports:
   - name: PSU 1
     type: iec-60320-c14
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
 links:
   manual: https://ftp1.overlandtandberg.com/public/TechSupportDocs/External/1021970_D.pdf
 source:
@@ -26,12 +29,14 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Overland-Tandberg/8920-rdx-2x1gbe.yml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   inferred:
     - category
   upstream_fields:
     - full_depth
+    - images.credit
+    - images.front
     - interfaces
     - links.manual
     - manufacturer
@@ -42,4 +47,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: f53f1aacbec0088f
+  import_hash: 2d92855e7f57e188

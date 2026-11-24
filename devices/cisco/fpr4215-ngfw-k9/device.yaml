@@ -49,6 +49,10 @@ module_bays:
   - name: PM1
     description: Power module
     bay_position: 0/PM1
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
 links:
   datasheet: https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-4200-ds.html
 source:
@@ -56,12 +60,15 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Cisco/FPR4215-NGFW-K9.yaml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   upstream_fields:
     - airflow
     - console_ports
     - full_depth
+    - images.credit
+    - images.front
+    - images.rear
     - interfaces
     - links.datasheet
     - manufacturer
@@ -71,4 +78,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: 5c0b3c772b45dc48
+  import_hash: b8aad6e910238eb8

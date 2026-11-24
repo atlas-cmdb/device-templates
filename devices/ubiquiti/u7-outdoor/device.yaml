@@ -22,6 +22,9 @@ interfaces:
     type: ieee802.11ac
   - name: Wlan 2
     type: ieee802.11ax
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
 comments: |-
   The U7 Outdoor has the following antenna configurations and stats:
   - (1) Directional internal antenna:
@@ -39,12 +42,14 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Ubiquiti/U7-Outdoor.yaml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   upstream_fields:
     - airflow
     - comments
     - full_depth
+    - images.credit
+    - images.front
     - interfaces
     - manufacturer
     - model
@@ -52,4 +57,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: 2220738be52f7f9d
+  import_hash: f07ecab67b18dc6e

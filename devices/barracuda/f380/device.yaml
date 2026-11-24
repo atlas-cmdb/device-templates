@@ -34,6 +34,9 @@ console_ports:
 power_ports:
   - name: PS
     type: iec-60320-c14
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
 links:
   datasheet: https://campus.barracuda.com/product/cloudgenfirewall/doc/71862281/f380-revision-a/
 source:
@@ -41,13 +44,15 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Barracuda/f380.yaml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   inferred:
     - category
   upstream_fields:
     - console_ports
     - full_depth
+    - images.credit
+    - images.front
     - interfaces
     - links.datasheet
     - manufacturer
@@ -58,4 +63,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: 6b19f467ab271423
+  import_hash: 9ea47437902cc9d9
