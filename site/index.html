@@ -399,7 +399,8 @@ function update() {
 	const devices = kind === 'devices';
 	$('cat').disabled = $('review').disabled = !devices;
 	$('chips').hidden = !devices;
-	const terms = $('q').value.toLowerCase().split(/\s+/).filter(Boolean);
+	// Same normalisation as the build's search index, so "EF-Core" / "USW-Pro-Max-24" match.
+	const terms = $('q').value.toLowerCase().replace(/[^a-z0-9.+ ]+/g, ' ').split(/\s+/).filter(Boolean);
 	const cat = devices ? $('cat').value : '';
 	const mfr = $('mfr').value;
 	for (const chip of $('chips').children) chip.setAttribute('aria-pressed', String(chip.dataset.cat === cat));
@@ -446,7 +447,7 @@ function render() {
 	$('grid').insertAdjacentHTML('beforeend', slice.map(card).join(''));
 	shown += slice.length;
 	$('more').hidden = shown >= results.length;
-	$('count').textContent = `${results.length.toLocaleString()} of ${manifest[$('kind').value].length.toLocaleString()}`;
+	$('count').textContent = `${results.length.toLocaleString('en')} of ${manifest[$('kind').value].length.toLocaleString('en')}`;
 }
 
 const row = (k, v) => (v === undefined || v === null || v === '' ? '' : `<tr><th>${esc(k)}</th><td>${v}</td></tr>`);
