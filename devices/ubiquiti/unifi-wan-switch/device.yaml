@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: UniFi WAN Switch
+slug: unifi-wan-switch
+category: network_switch
+form_factor: rack
+description: 10G SFP+ WAN switch linking two Shadow Mode High Availability UniFi Gateways to a single ISP.
+part_numbers:
+  - USW-WAN
+u_height: 1
+full_depth: false
+dimensions:
+  width_mm: 442.4
+  height_mm: 43.7
+  depth_mm: 120
+weight_kg: 2.2
+airflow: passive
+power:
+  max_w: 13
+  psu_count: 2
+  psu_redundancy: 1+1
+  psu_rating_w: 36
+  input_voltage: 100-240V AC
+  phase: single
+thermal:
+  operating_temp_min_c: -5
+  operating_temp_max_c: 40
+interfaces:
+  - name: Port 1
+    label: Output to gateway
+    type: 10gbase-x-sfpp
+    side: front
+  - name: Port 2
+    label: Output to redundant gateway
+    type: 10gbase-x-sfpp
+    side: front
+  - name: Port 3
+    label: Input from ISP
+    type: 10gbase-x-sfpp
+    side: front
+  - name: MGMT
+    type: 1000base-t
+    mgmt_only: true
+    side: rear
+power_ports:
+  - name: Input 1
+    type: iec-60320-c14
+    maximum_draw_w: 13
+    side: rear
+  - name: Input 2
+    type: iec-60320-c14
+    maximum_draw_w: 13
+    side: rear
+links:
+  product_page: https://store.ui.com/us/en/products/usw-wan
+  datasheet: https://techspecs.ui.com/unifi/switching/usw-wan
+  media:
+    - kind: gallery
+      url: https://techspecs.ui.com/unifi/switching/usw-wan
+      label: Front and rear diagrams (Ubiquiti)
+comments: |-
+  Front: (3) 10G SFP+ (10G/1G): two outputs to the gateways, one input from the ISP; system LED, reset button.
+  Rear: GbE RJ45 management port, (2) AC inputs (internal 36W PSUs).
+  Weight 2.2 kg without and 2.3 kg with mounting brackets. Switching capacity 20 Gbps, forwarding rate 15 Mpps.
+  For the RJ45 version see unifi-wan-switch-rj45 (USW-WAN-RJ45).
+source:
+  origin: manufacturer
+  url: https://techspecs.ui.com/unifi/switching/usw-wan
