@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: ProLiant DL345 Gen11
+slug: proliant-dl345-gen11
+category: server
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 19
+power:
+  psu_count: 2
+interfaces:
+  - name: iLO
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+  - name: OCP3_1
+    bay_position: OCP3_1
+  - name: OCP3_2
+    bay_position: OCP3_2
+  - name: PCIe1
+    bay_position: PCIe1
+  - name: PCIe2
+    bay_position: PCIe2
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  other:
+    - label: HPE ProLiant DL345 Gen11 QuickSpecs
+      url: https://www.hpe.com/psnow/doc/a50004298enw
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/ProLiant-DL345-Gen11.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: b98c5ceeeb6a6175

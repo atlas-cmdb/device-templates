@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: C3850-NM-8-10G
+slug: c3850-nm-8-10g
+kind: other
+part_numbers:
+  - C3850-NM-8-10G
+interfaces:
+  - name: TenGigabitEthernet1/{module}/1
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/{module}/2
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/{module}/3
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/{module}/4
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/{module}/5
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/{module}/6
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/{module}/7
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/{module}/8
+    type: 10gbase-x-sfpp
+links:
+  datasheet: https://www.cisco.com/c/en_in/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/C3850-NM-8-10G.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 486c7543d30271be

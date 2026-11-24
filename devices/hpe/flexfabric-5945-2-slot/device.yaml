@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: FlexFabric 5945 2-slot
+slug: flexfabric-5945-2-slot
+category: server
+form_factor: rack
+part_numbers:
+  - JQ075A
+u_height: 1
+full_depth: false
+weight_kg: 10.4
+power:
+  psu_count: 2
+interfaces:
+  - name: Management1
+    type: 100base-tx
+    mgmt_only: true
+  - name: Management2
+    type: 1000base-x-sfp
+    mgmt_only: true
+console_ports:
+  - name: console
+    type: rj-45
+  - name: USB Console
+    type: usb-micro-b
+module_bays:
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+  - name: Module1
+    bay_position: "1"
+  - name: Module2
+    bay_position: "2"
+links:
+  datasheet: https://www.hpe.com/psnow/doc/PSN1011424706USEN.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/FlexFabric-5945-2-slot.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 6244f205f28621f8

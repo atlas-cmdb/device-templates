@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: vivotek
+model: MD9560-DH
+slug: md9560-dh
+category: storage_shelf
+form_factor: other
+part_numbers:
+  - MD9560-DH
+u_height: 0
+full_depth: false
+weight_kg: 0.4
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: eth0
+    type: 100base-tx
+power_ports:
+  - name: DC IN
+    type: dc-terminal
+links:
+  product_page: https://www.vivotek.com/resource/download-center/product/download/71025
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Vivotek/md9560-dh.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 135530229fac29a7

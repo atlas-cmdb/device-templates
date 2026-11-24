@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: mellanox
+model: SX6012F-1BFS
+slug: sx6012f-1bfs
+category: network_switch
+form_factor: blade
+part_numbers:
+  - MSX6012F-1BFS
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 2.98
+airflow: rear-to-front
+power:
+  psu_count: 1
+interfaces:
+  - name: mgmt0
+    type: 1000base-t
+    mgmt_only: true
+  - name: IB1/1
+    type: infiniband-fdr
+  - name: IB1/2
+    type: infiniband-fdr
+  - name: IB1/3
+    type: infiniband-fdr
+  - name: IB1/4
+    type: infiniband-fdr
+  - name: IB1/5
+    type: infiniband-fdr
+  - name: IB1/6
+    type: infiniband-fdr
+  - name: IB1/7
+    type: infiniband-fdr
+  - name: IB1/8
+    type: infiniband-fdr
+  - name: IB1/9
+    type: infiniband-fdr
+  - name: IB1/10
+    type: infiniband-fdr
+  - name: IB1/11
+    type: infiniband-fdr
+  - name: IB1/12
+    type: infiniband-fdr
+console_ports:
+  - name: Serial Console
+    type: rj-45
+  - name: USB Console
+    type: usb-mini-b
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    allocated_draw_w: 152
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Mellanox/SX6012F-1BFS.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: a5de6dfa9a45e61e

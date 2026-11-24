@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fujitsu
+model: PRIMERGY RX2540 M5
+slug: primergy-rx2540-m5
+category: server
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 25
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: TenGig-E 1
+    type: 10gbase-t
+  - name: TenGig-E 2
+    type: 10gbase-t
+  - name: iRMC-S5
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: PSU-1
+    label: "1"
+    bay_position: PSU-1
+  - name: PSU-2
+    label: "2"
+    bay_position: PSU-2
+links:
+  manual: https://www.fujitsu.com/vn/en/imagesgig5/Data_Sheet_FUJITSU_Server_PRIMERGY_RX2540_M5_Rack_Server.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fujitsu/primergy-rx2540-m5.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 4854a526be2b76f6

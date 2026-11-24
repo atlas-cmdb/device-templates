@@ -1,0 +1,85 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cyberpower
+model: PDU41005
+slug: pdu41005
+category: pdu
+form_factor: rack
+part_numbers:
+  - PDU41005
+u_height: 1
+full_depth: false
+weight_kg: 2.1
+airflow: passive
+power:
+  outlet_count: 8
+interfaces:
+  - name: Network
+    type: 1000base-t
+  - name: Sensor
+    type: 1000base-t
+  - name: Daisy-Chain-In
+    type: 1000base-t
+  - name: Daisy-Chain-Out
+    type: 1000base-t
+  - name: USB
+    type: other
+console_ports:
+  - name: Serial
+    type: rj-45
+power_ports:
+  - name: Power Port
+    type: iec-60320-c20
+power_outlets:
+  - name: Outlet 1
+    type: iec-60320-c13
+    power_port: Power Port
+  - name: Outlet 2
+    type: iec-60320-c13
+    power_port: Power Port
+  - name: Outlet 3
+    type: iec-60320-c13
+    power_port: Power Port
+  - name: Outlet 4
+    type: iec-60320-c13
+    power_port: Power Port
+  - name: Outlet 5
+    type: iec-60320-c13
+    power_port: Power Port
+  - name: Outlet 6
+    type: iec-60320-c13
+    power_port: Power Port
+  - name: Outlet 7
+    type: iec-60320-c13
+    power_port: Power Port
+  - name: Outlet 8
+    type: iec-60320-c13
+    power_port: Power Port
+links:
+  datasheet: https://www.cyberpower.com/uk/en/File/GetCyberpowerFileByDocId/DS-20120016-01
+  product_page: https://www.cyberpower.com/uk/en/product/sku/pdu41005
+comments: PDU Switched
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/CyberPower/PDU41005.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 9a9ea2efb77c6b71

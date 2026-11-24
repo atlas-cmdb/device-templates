@@ -1,0 +1,102 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: fs
+model: FHD-3MTP6LCQOM4U
+slug: fhd-3mtp6lcqom4u
+kind: other
+part_numbers:
+  - "68399"
+front_ports:
+  - name: "{module}:1-2"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:1-8"
+    rear_port_position: 1
+  - name: "{module}:3-4"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:1-8"
+    rear_port_position: 2
+  - name: "{module}:5-6"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:1-8"
+    rear_port_position: 3
+  - name: "{module}:7-8"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:1-8"
+    rear_port_position: 4
+  - name: "{module}:9-10"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:9-16"
+    rear_port_position: 1
+  - name: "{module}:11-12"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:9-16"
+    rear_port_position: 2
+  - name: "{module}:13-14"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:9-16"
+    rear_port_position: 3
+  - name: "{module}:15-16"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:9-16"
+    rear_port_position: 4
+  - name: "{module}:17-18"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:17-24"
+    rear_port_position: 1
+  - name: "{module}:19-20"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:17-24"
+    rear_port_position: 2
+  - name: "{module}:21-22"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:17-24"
+    rear_port_position: 3
+  - name: "{module}:23-24"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:17-24"
+    rear_port_position: 4
+rear_ports:
+  - name: "{module}:1-8"
+    type: mpo
+    positions: 4
+  - name: "{module}:9-16"
+    type: mpo
+    positions: 4
+  - name: "{module}:17-24"
+    type: mpo
+    positions: 4
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+comments: FHD MTP-LC Cassette, OM4 Multimode, Universal Polarity, 24 Fibers, 3x MTP-8 (Male) to 6x LC Quad (Aqua), 0.35dB Max (https://www.fs.com/products/68399.html)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/FS/FHD-3MTP6LCQOM4U.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - front_ports
+    - images.credit
+    - images.front
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: 2da2f205bf133b38

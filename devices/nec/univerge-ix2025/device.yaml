@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: nec
+model: UNIVERGE IX2025
+slug: univerge-ix2025
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: FastEthernet0
+    type: 100base-tx
+  - name: FastEthernet1
+    type: 100base-tx
+  - name: FastEthernet2 port 1
+    type: 100base-tx
+  - name: FastEthernet2 port 2
+    type: 100base-tx
+  - name: FastEthernet2 port 3
+    type: 100base-tx
+  - name: FastEthernet2 port 4
+    type: 100base-tx
+  - name: BRI0 port LINE
+    type: other
+  - name: BRI0 port S/T
+    type: other
+console_ports:
+  - name: CONSOLE
+    type: rj-45
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 9
+    allocated_draw_w: 9
+comments: |-
+  NEC UNIVERGE IX2025, 9W
+  (1) RJ-45 Console Port, (2) Ethernet 100BASE-TX, (4) Ethernet 100BASE-TX in Switching Hub, (1) ISDN LINE interface, (1) ISDN S/T interface
+  Dimentions(WxDxH in mm): 210x297x43
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/NEC/UNIVERGE-IX2025.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 89e1c1c7e42b1dbc

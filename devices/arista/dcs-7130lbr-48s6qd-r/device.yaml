@@ -1,0 +1,165 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: arista
+model: DCS-7130LBR-48S6QD-R
+slug: dcs-7130lbr-48s6qd-r
+category: network_switch
+form_factor: rack
+part_numbers:
+  - DCS-7130LBR-48S6QD-R
+u_height: 1
+full_depth: false
+weight_kg: 14.969
+airflow: rear-to-front
+power:
+  psu_count: 2
+interfaces:
+  - name: Ethernet1
+    type: 10gbase-x-sfpp
+  - name: Ethernet2
+    type: 10gbase-x-sfpp
+  - name: Ethernet3
+    type: 10gbase-x-sfpp
+  - name: Ethernet4
+    type: 10gbase-x-sfpp
+  - name: Ethernet5
+    type: 10gbase-x-sfpp
+  - name: Ethernet6
+    type: 10gbase-x-sfpp
+  - name: Ethernet7
+    type: 10gbase-x-sfpp
+  - name: Ethernet8
+    type: 10gbase-x-sfpp
+  - name: Ethernet9
+    type: 10gbase-x-sfpp
+  - name: Ethernet10
+    type: 10gbase-x-sfpp
+  - name: Ethernet11
+    type: 10gbase-x-sfpp
+  - name: Ethernet12
+    type: 10gbase-x-sfpp
+  - name: Ethernet13
+    type: 10gbase-x-sfpp
+  - name: Ethernet14
+    type: 10gbase-x-sfpp
+  - name: Ethernet15
+    type: 10gbase-x-sfpp
+  - name: Ethernet16
+    type: 10gbase-x-sfpp
+  - name: Ethernet17
+    type: 10gbase-x-sfpp
+  - name: Ethernet18
+    type: 10gbase-x-sfpp
+  - name: Ethernet19
+    type: 10gbase-x-sfpp
+  - name: Ethernet20
+    type: 10gbase-x-sfpp
+  - name: Ethernet21
+    type: 10gbase-x-sfpp
+  - name: Ethernet22
+    type: 10gbase-x-sfpp
+  - name: Ethernet23
+    type: 10gbase-x-sfpp
+  - name: Ethernet24
+    type: 10gbase-x-sfpp
+  - name: Ethernet25
+    type: 10gbase-x-sfpp
+  - name: Ethernet26
+    type: 10gbase-x-sfpp
+  - name: Ethernet27
+    type: 10gbase-x-sfpp
+  - name: Ethernet28
+    type: 10gbase-x-sfpp
+  - name: Ethernet29
+    type: 10gbase-x-sfpp
+  - name: Ethernet30
+    type: 10gbase-x-sfpp
+  - name: Ethernet31
+    type: 10gbase-x-sfpp
+  - name: Ethernet32
+    type: 10gbase-x-sfpp
+  - name: Ethernet33
+    type: 10gbase-x-sfpp
+  - name: Ethernet34
+    type: 10gbase-x-sfpp
+  - name: Ethernet35
+    type: 10gbase-x-sfpp
+  - name: Ethernet36
+    type: 10gbase-x-sfpp
+  - name: Ethernet37
+    type: 10gbase-x-sfpp
+  - name: Ethernet38
+    type: 10gbase-x-sfpp
+  - name: Ethernet39
+    type: 10gbase-x-sfpp
+  - name: Ethernet40
+    type: 10gbase-x-sfpp
+  - name: Ethernet41
+    type: 10gbase-x-sfpp
+  - name: Ethernet42
+    type: 10gbase-x-sfpp
+  - name: Ethernet43
+    type: 10gbase-x-sfpp
+  - name: Ethernet44
+    type: 10gbase-x-sfpp
+  - name: Ethernet45
+    type: 10gbase-x-sfpp
+  - name: Ethernet46
+    type: 10gbase-x-sfpp
+  - name: Ethernet47
+    type: 10gbase-x-sfpp
+  - name: Ethernet48
+    type: 10gbase-x-sfpp
+  - name: Ethernet49/1
+    type: 100gbase-x-qsfpdd
+  - name: Ethernet50/1
+    type: 100gbase-x-qsfpdd
+  - name: Ethernet51/1
+    type: 100gbase-x-qsfpdd
+  - name: Ethernet52/1
+    type: 100gbase-x-qsfpdd
+  - name: Ethernet53/1
+    type: 100gbase-x-qsfpdd
+  - name: Ethernet54/1
+    type: 100gbase-x-qsfpdd
+  - name: Management1
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: USB
+    type: usb-a
+module_bays:
+  - name: PS1
+    bay_position: "0"
+  - name: PS2
+    bay_position: "1"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  datasheet: https://www.arista.com/assets/data/pdf/Datasheets/7130LBR-Datasheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Arista/DCS-7130LBR-48S6QD-R.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: f36de4bafe0c9543

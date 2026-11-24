@@ -1,0 +1,127 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SYS-220BT-CHASSIS
+slug: sys-220bt-chassis
+category: server
+form_factor: rack
+part_numbers:
+  - CSE-217BQ-000NP
+u_height: 2
+full_depth: true
+subdevice_role: parent
+weight_kg: 30
+airflow: front-to-rear
+power:
+  psu_count: 2
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+  - name: Storage bay A1
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node A
+    bay_position: "1"
+  - name: Storage bay A2
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node A
+    bay_position: "2"
+  - name: Storage bay A3
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node A
+    bay_position: "3"
+  - name: Storage bay A4
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node A
+    bay_position: "4"
+  - name: Storage bay A5
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node A
+    bay_position: "5"
+  - name: Storage bay A6
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node A
+    bay_position: "6"
+  - name: Storage bay B1
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node B
+    bay_position: "7"
+  - name: Storage bay B2
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node B
+    bay_position: "8"
+  - name: Storage bay B3
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node B
+    bay_position: "9"
+  - name: Storage bay B4
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node B
+    bay_position: "10"
+  - name: Storage bay B5
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node B
+    bay_position: "11"
+  - name: Storage bay B6
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node B
+    bay_position: "12"
+  - name: Storage bay C1
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node C
+    bay_position: "13"
+  - name: Storage bay C2
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node C
+    bay_position: "14"
+  - name: Storage bay C3
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node C
+    bay_position: "15"
+  - name: Storage bay C4
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node C
+    bay_position: "16"
+  - name: Storage bay C5
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node C
+    bay_position: "17"
+  - name: Storage bay C6
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node C
+    bay_position: "18"
+  - name: Storage bay D1
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node D
+    bay_position: "19"
+  - name: Storage bay D2
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node D
+    bay_position: "20"
+  - name: Storage bay D3
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node D
+    bay_position: "21"
+  - name: Storage bay D4
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node D
+    bay_position: "22"
+  - name: Storage bay D5
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node D
+    bay_position: "23"
+  - name: Storage bay D6
+    description: Hot-swap 2.5" NVMe/SATA hybrid bay for node D
+    bay_position: "24"
+device_bays:
+  - name: Node A
+  - name: Node B
+  - name: Node C
+  - name: Node D
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+comments: Chassis for SYS-220BT series
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SYS-220BT-CHASSIS.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - device_bays
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 28a205a526d0a62c

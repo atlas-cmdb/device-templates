@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: UCSX-9508-RBLK
+slug: ucsx-9508-rblk
+kind: other
+description: UCSX-9508 Chassis X-Fabric Module Blank
+part_numbers:
+  - UCSX-9508-RBLK
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/UCSX-9508-RBLK.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: a55e4cbc504f94e6

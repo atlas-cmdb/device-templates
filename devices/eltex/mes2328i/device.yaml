@@ -1,0 +1,110 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eltex
+model: MES2328I
+slug: mes2328i
+category: network_switch
+form_factor: rack
+part_numbers:
+  - MES2328i
+u_height: 1
+full_depth: false
+weight_kg: 3.85
+airflow: passive
+power:
+  psu_count: 2
+interfaces:
+  - name: gigabitethernet1/0/1
+    type: 1000base-t
+  - name: gigabitethernet1/0/2
+    type: 1000base-t
+  - name: gigabitethernet1/0/3
+    type: 1000base-t
+  - name: gigabitethernet1/0/4
+    type: 1000base-t
+  - name: gigabitethernet1/0/5
+    type: 1000base-t
+  - name: gigabitethernet1/0/6
+    type: 1000base-t
+  - name: gigabitethernet1/0/7
+    type: 1000base-t
+  - name: gigabitethernet1/0/8
+    type: 1000base-t
+  - name: gigabitethernet1/0/9
+    type: 1000base-t
+  - name: gigabitethernet1/0/10
+    type: 1000base-t
+  - name: gigabitethernet1/0/11
+    type: 1000base-t
+  - name: gigabitethernet1/0/12
+    type: 1000base-t
+  - name: gigabitethernet1/0/13
+    type: 1000base-t
+  - name: gigabitethernet1/0/14
+    type: 1000base-t
+  - name: gigabitethernet1/0/15
+    type: 1000base-t
+  - name: gigabitethernet1/0/16
+    type: 1000base-t
+  - name: gigabitethernet1/0/17
+    type: 1000base-t
+  - name: gigabitethernet1/0/18
+    type: 1000base-t
+  - name: gigabitethernet1/0/19
+    type: 1000base-t
+  - name: gigabitethernet1/0/20
+    type: 1000base-t
+  - name: gigabitethernet1/0/21
+    type: 1000base-t
+  - name: gigabitethernet1/0/22
+    type: 1000base-t
+  - name: gigabitethernet1/0/23
+    type: 1000base-t
+  - name: gigabitethernet1/0/24
+    type: 1000base-t
+  - name: gigabitethernet1/0/25
+    description: comboport 1000BASE-T / 1000BASE-X
+    type: 1000base-t
+  - name: gigabitethernet1/0/26
+    description: comboport 1000BASE-T / 1000BASE-X
+    type: 1000base-t
+  - name: gigabitethernet1/0/27
+    description: comboport 1000BASE-T / 1000BASE-X
+    type: 1000base-t
+  - name: gigabitethernet1/0/28
+    description: comboport 1000BASE-T / 1000BASE-X
+    type: 1000base-t
+console_ports:
+  - name: console
+    type: rj-45
+console_server_ports:
+  - name: Front  USB1
+    type: usb-a
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eltex/MES2328I.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 7b620b20023a6f83

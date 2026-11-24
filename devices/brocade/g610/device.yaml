@@ -1,0 +1,97 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: brocade
+model: G610
+slug: g610
+category: network_switch
+form_factor: rack
+part_numbers:
+  - G610
+u_height: 1
+full_depth: false
+weight_kg: 4.2
+power:
+  psu_count: 1
+interfaces:
+  - name: eth0
+    type: 1000base-t
+    mgmt_only: true
+  - name: FC port 0/0
+    type: 32gfc-sfp28
+  - name: FC port 0/1
+    type: 32gfc-sfp28
+  - name: FC port 0/2
+    type: 32gfc-sfp28
+  - name: FC port 0/3
+    type: 32gfc-sfp28
+  - name: FC port 0/4
+    type: 32gfc-sfp28
+  - name: FC port 0/5
+    type: 32gfc-sfp28
+  - name: FC port 0/6
+    type: 32gfc-sfp28
+  - name: FC port 0/7
+    type: 32gfc-sfp28
+  - name: FC port 0/8
+    type: 32gfc-sfp28
+  - name: FC port 0/9
+    type: 32gfc-sfp28
+  - name: FC port 0/10
+    type: 32gfc-sfp28
+  - name: FC port 0/11
+    type: 32gfc-sfp28
+  - name: FC port 0/12
+    type: 32gfc-sfp28
+  - name: FC port 0/13
+    type: 32gfc-sfp28
+  - name: FC port 0/14
+    type: 32gfc-sfp28
+  - name: FC port 0/15
+    type: 32gfc-sfp28
+  - name: FC port 0/16
+    type: 32gfc-sfp28
+  - name: FC port 0/17
+    type: 32gfc-sfp28
+  - name: FC port 0/18
+    type: 32gfc-sfp28
+  - name: FC port 0/19
+    type: 32gfc-sfp28
+  - name: FC port 0/20
+    type: 32gfc-sfp28
+  - name: FC port 0/21
+    type: 32gfc-sfp28
+  - name: FC port 0/22
+    type: 32gfc-sfp28
+  - name: FC port 0/23
+    type: 32gfc-sfp28
+console_ports:
+  - name: con0
+    type: rj-45
+power_ports:
+  - name: PSU0
+    type: iec-60320-c14
+    maximum_draw_w: 77
+links:
+  datasheet: https://docs.broadcom.com/docs/GA-DS-6231
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Brocade/g610.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 6bda55349d0129e7

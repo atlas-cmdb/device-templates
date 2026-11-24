@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huawei
+model: CE8861-4C-EI
+slug: ce8861-4c-ei
+category: network_switch
+form_factor: rack
+part_numbers:
+  - CE8861-4C-EI
+u_height: 2
+full_depth: true
+weight_kg: 21.3
+module_bays:
+  - name: FAN1
+    bay_position: "1"
+  - name: FAN2
+    bay_position: "2"
+  - name: PWR1
+    bay_position: "1"
+  - name: PWR2
+    bay_position: "2"
+  - name: Slot 1
+    bay_position: "1"
+  - name: Slot 2
+    bay_position: "2"
+  - name: Slot 3
+    bay_position: "3"
+  - name: Slot 4
+    bay_position: "4"
+links:
+  other:
+    - label: Huawei CE8861-4C-EI
+      url: https://support.huawei.com/enterprise/en/doc/EDOC1000019246/56e787dc/ce8861-4c-ei
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Huawei/CE8861-4C-EI.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - full_depth
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: b64a8e2f26c710dc

@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: corning
+model: CCH-01U
+slug: cch-01u
+category: other
+form_factor: rack
+description: Closet Connector Housing 1RU
+part_numbers:
+  - CCH-01U
+u_height: 1
+full_depth: false
+weight_kg: 4.98
+airflow: passive
+module_bays:
+  - name: "1"
+    bay_position: "1"
+  - name: "2"
+    bay_position: "2"
+comments: "[CCH-01U](https://ecatalog.corning.com/optical-communications/US/en/Fiber-Optic-Hardware/Housings/Closet-Connector-Housing-%28CCH%29/p/CCH-01U]"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Corning/CCH-01U.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - description
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: bb536f5fb358a864

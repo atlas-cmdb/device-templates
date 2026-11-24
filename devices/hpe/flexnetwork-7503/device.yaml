@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: FlexNetwork 7503
+slug: flexnetwork-7503
+category: server
+form_factor: rack
+part_numbers:
+  - JD240C
+u_height: 10
+full_depth: false
+weight_kg: 66.68
+power:
+  psu_count: 2
+console_ports:
+  - name: Serial
+    type: de-9
+  - name: out-of-band
+    type: de-9
+module_bays:
+  - name: Switch Fabric Module 1
+    bay_position: "0"
+  - name: Switch Fabric Module 2
+    bay_position: "1"
+  - name: I/O Module 1
+    bay_position: "2"
+  - name: I/O Module 2
+    bay_position: "3"
+  - name: I/O Module 3
+    bay_position: "4"
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+links:
+  other:
+    - label: HPE FlexNetwork 7500 Switch Series
+      url: https://support.hpe.com/hpesc/public/docDisplay?docId=c02707329&page=GUID-2F0420C4-474D-46DF-BC8C-A4A4C92C7714.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/FlexNetwork-7503.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 13a669285f7a3b57

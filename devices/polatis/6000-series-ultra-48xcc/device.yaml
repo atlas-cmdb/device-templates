@@ -1,0 +1,145 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: polatis
+model: 6000 Series Ultra 48xCC
+slug: 6000-series-ultra-48xcc
+category: network_switch
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 12
+airflow: passive
+power:
+  psu_count: 2
+interfaces:
+  - name: Eth0
+    type: 1000base-t
+    mgmt_only: true
+  - name: Eth1
+    type: 1000base-t
+    mgmt_only: true
+  - name: Port 1
+    type: other
+  - name: Port 2
+    type: other
+  - name: Port 3
+    type: other
+  - name: Port 4
+    type: other
+  - name: Port 5
+    type: other
+  - name: Port 6
+    type: other
+  - name: Port 7
+    type: other
+  - name: Port 8
+    type: other
+  - name: Port 9
+    type: other
+  - name: Port 10
+    type: other
+  - name: Port 11
+    type: other
+  - name: Port 12
+    type: other
+  - name: Port 13
+    type: other
+  - name: Port 14
+    type: other
+  - name: Port 15
+    type: other
+  - name: Port 16
+    type: other
+  - name: Port 17
+    type: other
+  - name: Port 18
+    type: other
+  - name: Port 19
+    type: other
+  - name: Port 20
+    type: other
+  - name: Port 21
+    type: other
+  - name: Port 22
+    type: other
+  - name: Port 23
+    type: other
+  - name: Port 24
+    type: other
+  - name: Port 25
+    type: other
+  - name: Port 26
+    type: other
+  - name: Port 27
+    type: other
+  - name: Port 28
+    type: other
+  - name: Port 29
+    type: other
+  - name: Port 30
+    type: other
+  - name: Port 31
+    type: other
+  - name: Port 32
+    type: other
+  - name: Port 33
+    type: other
+  - name: Port 34
+    type: other
+  - name: Port 35
+    type: other
+  - name: Port 36
+    type: other
+  - name: Port 37
+    type: other
+  - name: Port 38
+    type: other
+  - name: Port 39
+    type: other
+  - name: Port 40
+    type: other
+  - name: Port 41
+    type: other
+  - name: Port 42
+    type: other
+  - name: Port 43
+    type: other
+  - name: Port 44
+    type: other
+  - name: Port 45
+    type: other
+  - name: Port 46
+    type: other
+  - name: Port 47
+    type: other
+  - name: Port 48
+    type: other
+console_ports:
+  - name: Console
+    type: other
+module_bays:
+  - name: PSU 1
+    bay_position: PSU1
+  - name: PSU 2
+    bay_position: PSU2
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Polatis/6000-Series-Ultra-48xCC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 391aef5a1d33f746

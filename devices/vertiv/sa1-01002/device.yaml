@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: vertiv
+model: SA1-01002
+slug: sa1-01002
+category: network_switch
+form_factor: rack
+description: Vertiv SwitchAir SA1-01002
+part_numbers:
+  - SA1-01002
+u_height: 1
+full_depth: false
+weight_kg: 0.544
+airflow: front-to-rear
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Vertiv/SA1-01002.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1303c6fb2779f95e

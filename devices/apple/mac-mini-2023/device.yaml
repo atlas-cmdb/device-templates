@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apple
+model: Mac mini (2023)
+slug: mac-mini-2023
+category: appliance
+form_factor: rack
+part_numbers:
+  - Mac14,3
+u_height: 1
+full_depth: false
+weight_kg: 1.179
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: eth
+    type: 10gbase-t
+  - name: thunderbolt-1
+    type: other
+  - name: thunderbolt-2
+    type: other
+  - name: wireless
+    type: ieee802.11ax
+power_ports:
+  - name: Power
+    type: nema-1-15p
+    maximum_draw_w: 150
+links:
+  other:
+    - url: https://support.apple.com/en-us/111837
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Apple/mac-mini-2023.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1f89eb95d3f6df98

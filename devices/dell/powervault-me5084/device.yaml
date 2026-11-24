@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerVault ME5084
+slug: powervault-me5084
+category: storage_array
+form_factor: rack
+u_height: 5
+full_depth: true
+subdevice_role: parent
+weight_kg: 64
+airflow: front-to-rear
+power:
+  psu_count: 2
+module_bays:
+  - name: PSU-1
+    label: "1"
+    bay_position: "1"
+  - name: PSU-2
+    label: "2"
+    bay_position: "2"
+device_bays:
+  - name: Controller 1
+  - name: Controller 2
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerVault-ME5084.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - device_bays
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: b6751a7bfa7e86ff

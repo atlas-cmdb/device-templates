@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: dell
+model: 540-BBHS
+slug: 540-bbhs
+kind: other
+part_numbers:
+  - 540-BBHS
+interfaces:
+  - name: Gig-E 5
+    type: 1000base-t
+  - name: Gig-E 6
+    type: 1000base-t
+  - name: Gig-E 7
+    type: 1000base-t
+  - name: Gig-E 8
+    type: 1000base-t
+comments: Dell Broadcom 5719 Quad-Ports RJ-45 1Gbps PCI Express x4 Network Interface Card
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Dell/540-BBHS.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 4b987785f56fea91

@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hp
+model: EliteDesk 705 G4 Mini
+slug: elitedesk-705-g4-mini
+category: appliance
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 1.1
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: ethernet-1/1
+    description: Onboard Realtek Gigabit Ethernet (rear RJ-45)
+    type: 1000base-t
+power_ports:
+  - name: DC-in
+    description: External power adapter, 19.5 V DC
+    type: dc-terminal
+module_bays:
+  - name: DIMM1
+    description: DDR4 SODIMM slot, channel B
+    bay_position: DIMM1
+  - name: DIMM3
+    description: DDR4 SODIMM slot, channel A
+    bay_position: DIMM3
+  - name: M.2 SSD
+    description: M.2 PCIe NVMe SSD slot
+    bay_position: SSD
+  - name: WLAN
+    description: M.2 Wi-Fi module slot
+    bay_position: WLAN
+  - name: SATA drive
+    description: 2.5-inch SATA drive bay connected to system board connector P60 SATA. Only supports SSDs; no 12V power rail available.
+    bay_position: P60
+  - name: Expansion connector
+    description: Rear optional expansion connector board (system board connector P72 COMM_DP)
+    bay_position: P72
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  manual: https://h10032.www1.hp.com/ctg/Manual/c06112892.pdf
+comments: |-
+  The HP EliteDesk 705 G4 comes in several power envelope variants.
+  The WLAN card and rear expansion connector board are optional, removable components.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HP/EliteDesk-705-G4-Mini.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 026bfd16a83276f6

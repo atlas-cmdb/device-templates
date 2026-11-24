@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: EPDU1016b
+slug: epdu1016b
+category: pdu
+form_factor: rack
+part_numbers:
+  - EPDU1016b
+u_height: 1
+full_depth: false
+power:
+  outlet_count: 8
+power_ports:
+  - name: 16A Inlet 1
+    type: iec-60320-c20
+power_outlets:
+  - name: Outlet 1
+    type: iec-60320-c13
+  - name: Outlet 2
+    type: iec-60320-c13
+  - name: Outlet 3
+    type: iec-60320-c13
+  - name: Outlet 4
+    type: iec-60320-c13
+  - name: Outlet 5
+    type: iec-60320-c13
+  - name: Outlet 6
+    type: iec-60320-c13
+  - name: Outlet 7
+    type: iec-60320-c13
+  - name: Outlet 8
+    type: iec-60320-c13
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/epdu1016b.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 8848d5b8ddb0d52f

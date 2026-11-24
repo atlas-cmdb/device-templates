@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: IoT SuperServer SYS-E300-12D-4CN6P
+slug: iot-superserver-sys-e300-12d-4cn6p
+category: server
+form_factor: rack
+part_numbers:
+  - SYS-E300-12D-4CN6P
+u_height: 1
+full_depth: false
+weight_kg: 1.6
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: BMC
+    description: Dedicated IPMI LAN port
+    type: 1000base-t
+    mgmt_only: true
+  - name: LAN-ice0
+    type: 25gbase-x-sfp28
+  - name: LAN-ice1
+    type: 25gbase-x-sfp28
+  - name: LAN-igb0
+    type: 1000base-t
+  - name: LAN-igb1
+    type: 1000base-t
+  - name: LAN-igb2
+    type: 1000base-t
+  - name: LAN-igb3
+    type: 1000base-t
+power_ports:
+  - name: PS1
+    type: dc-terminal
+links:
+  product_page: https://www.supermicro.com/en/products/system/iot/1u/sys-e300-12d-4cn6p
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SYS-E300-12D-4CN6P.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: dc46fb326d26d4aa

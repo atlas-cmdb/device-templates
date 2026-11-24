@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lancom
+model: LX-7500
+slug: lx-7500
+category: network_switch
+form_factor: other
+part_numbers:
+  - "61897"
+u_height: 0
+full_depth: false
+weight_kg: 2.54
+airflow: passive
+interfaces:
+  - name: eth1
+    label: ETH1 (PoE)
+    type: 10gbase-t
+    poe_mode: pd
+    poe_type: type3-ieee802.3bt
+  - name: eth2
+    label: ETH2 (PoE)
+    type: 2.5gbase-t
+    poe_mode: pd
+    poe_type: type3-ieee802.3bt
+  - name: wlan0
+    description: 2.4GHz
+    type: ieee802.11be
+  - name: wlan1
+    description: 5GHz
+    type: ieee802.11be
+  - name: wlan3
+    description: 6GHz
+    type: ieee802.11be
+links:
+  datasheet: https://www.lancom-systems.de/fileadmin/download/LC-LX-7500/DS_LX-7500_DE.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/LANCOM/LX-7500.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 07b031660b2e3c63

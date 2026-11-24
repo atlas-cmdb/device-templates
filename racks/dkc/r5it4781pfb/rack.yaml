@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../../schema/rack.schema.json
+manufacturer: dkc
+model: R5IT4781PFB
+slug: r5it4781pfb
+form_factor: 4-post-cabinet
+description: DKC IT CQE, Server Rack Enclosure, 47U, Black, 2200H x 800W x 1000D mm
+u_height: 47
+starting_unit: 1
+rack_width: 19
+outer_width_mm: 800
+outer_height_mm: 2200
+outer_depth_mm: 1000
+weight_kg: 152.4
+max_load_kg: 1500
+links:
+  product_page: https://www.dkc.ru/en/catalog/1434/r5it4781pfb/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: rack-types/DKC/R5IT4781PFB.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - description
+    - links.product_page
+    - manufacturer
+    - max_load_kg
+    - model
+    - outer_depth_mm
+    - outer_height_mm
+    - outer_width_mm
+    - rack_width
+    - slug
+    - starting_unit
+    - u_height
+    - weight_kg
+  import_hash: 10ddb2369b5b47a0

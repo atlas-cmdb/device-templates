@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: 3PAR StoreServ 8200 2node Base
+slug: 3par-storeserv-8200-2node-base
+category: storage_array
+form_factor: rack
+part_numbers:
+  - K2Q35B
+u_height: 2
+full_depth: true
+subdevice_role: parent
+weight_kg: 20
+airflow: front-to-rear
+power:
+  psu_count: 2
+module_bays:
+  - name: PSU0
+    bay_position: PSU0
+  - name: PSU1
+    bay_position: PSU1
+device_bays:
+  - name: Ctrl1
+  - name: Ctrl0
+comments: 24xSAS SFF Storage Enclosure
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/3PAR-StoreServ-8200-2node-Base.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - device_bays
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: a1e4ff093885ba46

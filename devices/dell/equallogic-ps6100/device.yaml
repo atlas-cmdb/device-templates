@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: EqualLogic PS6100
+slug: equallogic-ps6100
+category: storage_array
+form_factor: rack
+u_height: 4
+full_depth: true
+weight_kg: 44.45
+power:
+  psu_count: 2
+interfaces:
+  - name: Ethernet 0
+    type: 1000base-t
+  - name: Ethernet 1
+    type: 1000base-t
+  - name: Ethernet 2
+    type: 1000base-t
+  - name: Ethernet 3
+    type: 1000base-t
+  - name: Management
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: PSU1
+    label: Power Supply Slot 1
+    bay_position: "1"
+  - name: PSU2
+    label: Power Supply Slot 2
+    bay_position: "2"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/EqualLogic-PS6100.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 221acf5e49bd263a

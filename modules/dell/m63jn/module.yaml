@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: dell
+model: M63JN
+slug: m63jn
+kind: other
+part_numbers:
+  - M63JN
+power_ports:
+  - name: "{module}-pwr0"
+    type: iec-60320-c20
+    maximum_draw_w: 2400
+comments: Dell PowerEdge 15G (R650 R6525 R750 R7525) 2400W 80+ Platinum 86mm AC Power Supply
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Dell/M63JN.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: 160738f60b6955f2

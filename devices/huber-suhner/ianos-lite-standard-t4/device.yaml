@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huber-suhner
+model: IANOS-LITE-STANDARD-T4
+slug: ianos-lite-standard-t4
+category: other
+form_factor: rack
+part_numbers:
+  - "85086220"
+u_height: 1
+full_depth: false
+weight_kg: 1
+module_bays:
+  - name: Module A1
+    bay_position: A1
+  - name: Module A2
+    bay_position: A2
+  - name: Module A3
+    bay_position: A3
+  - name: Module A4
+    bay_position: A4
+  - name: Module B1
+    bay_position: B1
+  - name: Module B2
+    bay_position: B2
+  - name: Module B3
+    bay_position: B3
+  - name: Module B4
+    bay_position: B4
+links:
+  product_page: https://www.hubersuhner.com/en/shop/product/fiber-cable-management/chassis/85086220/ianos-lite-chassis-1u
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HUBER SUHNER/IANOS-LITE-STANDARD-T4.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 618e9a701b22a2d2

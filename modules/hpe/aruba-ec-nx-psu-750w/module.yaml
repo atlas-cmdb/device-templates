@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: hpe
+model: Aruba EC-NX-PSU-750W
+slug: aruba-ec-nx-psu-750w
+kind: psu
+part_numbers:
+  - 500223-001
+power_ports:
+  - name: PS{module}
+    type: iec-60320-c14
+    maximum_draw_w: 440
+comments: Compatible with Aruba EC-L (401W), EC-L-B (440W), EC-L-P (440W), EC-L-NM (440W), EC-L-B-NM (370W), EC-L-P-NM (370W)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/HPE/Aruba-EC-NX-PSU-750W.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: 4ed8315c7142608a

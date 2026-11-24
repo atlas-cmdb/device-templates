@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: f5
+model: PWR-0334
+slug: pwr-0334
+kind: psu
+description: 250W AC PS for Big-IP i850/i2000/i4000 and r2000/r4000
+part_numbers:
+  - PWR-0334
+weight_kg: 0.91
+power_ports:
+  - name: PSU{module}
+    type: iec-60320-c14
+    maximum_draw_w: 250
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/F5/PWR-0334.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+    - weight_kg
+  import_hash: 16af8e0f7c5a2e99

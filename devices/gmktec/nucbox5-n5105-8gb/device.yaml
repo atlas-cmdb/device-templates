@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: gmktec
+model: NucBox5 N5105 8GB
+slug: nucbox5-n5105-8gb
+category: network_switch
+form_factor: other
+u_height: 0
+full_depth: false
+weight_kg: 0.25
+airflow: side-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: eth0
+    type: 1000base-t
+  - name: wlan0
+    type: ieee802.11ac
+console_ports:
+  - name: USB-A 1
+    description: Front USB 3.2 Gen 1 (5 Gbps)
+    type: usb-a
+  - name: USB-A 2
+    description: Front USB 3.2 Gen 1 (5 Gbps)
+    type: usb-a
+  - name: USB-A 3
+    description: Rear USB 3.2 Gen 1 (5 Gbps)
+    type: usb-a
+power_ports:
+  - name: PSU
+    type: usb-c
+module_bays:
+  - name: M.2
+    label: M.2 2242
+    bay_position: "1"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  manual: https://manuals.plus/m/99d2ef12321808f8922920f353fa0eba3def4ddfc8525ab047f4781dd8b093c6_optim.pdf
+  product_page: https://www.gmktec.com/products/gmktec-nucbox-5-mini-pc-intel%C2%AE-11th-jasper-lake-n5105-wi-fi-5
+comments: |-
+  GMKtec NucBox5 with an Intel Celeron N5105 (4 cores / 4 threads).
+  It appears that GMKtec has created other devices with similar names.
+  This listing is for the one with 8 GB onboard LPDDR4 RAM and an Intel
+  Dual Band Wireless-AC 7265 that provides 2x2 Wi-Fi 5 (802.11ac).
+  The USB-C connector is a 12 V DC power input only; the supplied adapter is rated at 3 A.
+  See
+  and the .
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/GMKtec/NucBox5-N5105-8GB.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.manual
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 69af5aa9d05398cd

@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: intel
+model: HNS2600TPR
+slug: hns2600tpr
+category: compute_blade
+form_factor: blade
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 1
+airflow: front-to-rear
+interfaces:
+  - name: GigabitEthernet1
+    type: 1000base-t
+  - name: GigabitEthernet2
+    type: 1000base-t
+  - name: IPMI
+    type: 1000base-t
+    mgmt_only: true
+  - name: QSFPPlus
+    type: 40gbase-x-qsfpp
+module_bays:
+  - name: PCIe Riser 1
+    label: PCIe Riser 1
+    bay_position: "1"
+  - name: PCIe Riser 2
+    label: PCIe Riser 2
+    bay_position: "2"
+links:
+  datasheet: https://ark.intel.com/content/www/us/en/ark/products/88297/intel-compute-module-hns2600tpr.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Intel/HNS2600TPR.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 41c13cf05576cc16

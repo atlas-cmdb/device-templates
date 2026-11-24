@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: ruggedcom
+model: RPM2420
+slug: rpm2420
+kind: psu
+description: RSG2488 PSU; 48VDC input
+part_numbers:
+  - 6GK6000-8PS12-1EA0
+power:
+  input_voltage: 48V DC
+  psu_rating_w: 59
+comments: |-
+  Technical Specifications
+  General Input Range : 36 to 72 VDC
+  Internal Fuse Rating: 5 A
+  Power Consumption : 59 W
+  Environment Operating Temperature : -40 to 85 C
+  Operating Relative Humidity : 5 to 95% (non-condensing)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/RuggedCom/RPM2420.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - description
+    - manufacturer
+    - model
+    - part_numbers
+    - power.input_voltage
+    - power.psu_rating_w
+    - slug
+  import_hash: 380ae186d961f364

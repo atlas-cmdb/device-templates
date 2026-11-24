@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fujitsu
+model: Primergy RX300 S6
+slug: primergy-rx300-s6
+category: server
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 25
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: iRMC
+    description: integrated Remote Management Controller S2
+    type: 100base-tx
+    mgmt_only: true
+console_ports:
+  - name: Serial 1
+    description: Serial RS-232-C usable for iRMC S2 or system
+    type: de-9
+  - name: Serial 2
+    description: Serial RS-232-C
+    type: de-9
+module_bays:
+  - name: PCIe 1
+    description: PCI-Express 2.0 (x4)
+    bay_position: PCIe 1
+  - name: PCIe 2
+    description: PCI-Express 2.0 (x4)
+    bay_position: PCIe 2
+  - name: PCIe 3
+    description: PCI-Express 2.0 (x4)
+    bay_position: PCIe 3
+  - name: PCIe 4
+    description: PCI-Express 2.0 (x4)
+    bay_position: PCIe 4
+  - name: PCIe 5
+    description: PCI-Express 2.0 (x4)
+    bay_position: PCIe 5
+  - name: PCIe 6
+    description: PCI-Express 2.0 (x8)
+    bay_position: PCIe 6
+  - name: PCIe 7
+    description: PCI-Express 2.0 (x8)
+    bay_position: PCIe 7
+  - name: PSU Slot 1
+    bay_position: PSU Slot 1
+  - name: PSU Slot 2
+    bay_position: PSU Slot 2
+links:
+  manual: https://manuals.ts.fujitsu.com/isc_illustrated_spares/content/RX300_S6/pdf/ba.pdf
+comments: See .
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fujitsu/primergy-rx300-s6.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 488903c0207beae9

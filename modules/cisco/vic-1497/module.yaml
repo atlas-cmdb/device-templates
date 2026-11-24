@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: VIC 1497
+slug: vic-1497
+kind: other
+part_numbers:
+  - UCSC-MLOM-C100-04
+interfaces:
+  - name: Ethernet {module}/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet {module}/2
+    type: 100gbase-x-qsfp28
+comments: Cisco UCS VIC 1497 dual port 40/100G QSFP28 mLOM for C220 M5, C240 M5, C240 SD M5
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/VIC-1497.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: db95486b4bf4a15f

@@ -1,0 +1,148 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: NCS-6008
+slug: ncs-6008
+category: router
+form_factor: rack
+description: NCS 6008 - 8-Slot Chassis
+part_numbers:
+  - NCS-6008
+u_height: 48
+full_depth: true
+subdevice_role: parent
+weight_kg: 352
+airflow: front-to-rear
+module_bays:
+  - name: Rack 0
+    description: NCS 6008 - 8-Slot Chassis
+    bay_position: "0"
+  - name: Power Tray Slot 0
+    label: PT0
+    description: Power Tray Slot
+    bay_position: "0"
+  - name: Power Tray Slot 1
+    label: PT1
+    description: Power Tray Slot
+    bay_position: "1"
+  - name: Power Tray Slot 2
+    label: PT2
+    description: Power Tray Slot
+    bay_position: "2"
+  - name: Power Tray Slot 3
+    label: PT3
+    description: Power Tray Slot
+    bay_position: "3"
+  - name: Power Tray Slot 4
+    label: PT4
+    description: Power Tray Slot
+    bay_position: "4"
+  - name: Power Tray Slot 5
+    label: PT5
+    description: Power Tray Slot
+    bay_position: "5"
+  - name: Fan Tray Slot 0
+    label: FT0
+    description: Fan Tray Slot
+    bay_position: "0"
+  - name: Fan Tray Slot 1
+    label: FT1
+    description: Fan Tray Slot
+    bay_position: "1"
+  - name: Line Card Slot 0
+    label: LC0
+    description: Line Card Slot
+    bay_position: "0"
+  - name: Line Card Slot 1
+    label: LC1
+    description: Line Card Slot
+    bay_position: "1"
+  - name: Line Card Slot 2
+    label: LC2
+    description: Line Card Slot
+    bay_position: "2"
+  - name: Line Card Slot 3
+    label: LC3
+    description: Line Card Slot
+    bay_position: "3"
+  - name: Line Card Slot 4
+    label: LC4
+    description: Line Card Slot
+    bay_position: "4"
+  - name: Line Card Slot 5
+    label: LC5
+    description: Line Card Slot
+    bay_position: "5"
+  - name: Line Card Slot 6
+    label: LC6
+    description: Line Card Slot
+    bay_position: "6"
+  - name: Line Card Slot 7
+    label: LC7
+    description: Line Card Slot
+    bay_position: "7"
+  - name: Route Processor Slot 0
+    label: RP0
+    description: Route Processor Slot
+    bay_position: "0"
+  - name: Fabric Card Slot 0
+    label: FC0
+    description: Fabric Card Slot
+    bay_position: "0"
+  - name: Fabric Card Slot 1
+    label: FC1
+    description: Fabric Card Slot
+    bay_position: "1"
+  - name: Fabric Card Slot 2
+    label: FC2
+    description: Fabric Card Slot
+    bay_position: "2"
+  - name: Fabric Card Slot 3
+    label: FC3
+    description: Fabric Card Slot
+    bay_position: "3"
+  - name: Fabric Card Slot 4
+    label: FC4
+    description: Fabric Card Slot
+    bay_position: "4"
+  - name: Fabric Card Slot 5
+    label: FC5
+    description: Fabric Card Slot
+    bay_position: "5"
+  - name: Route Processor Slot 1
+    label: RP1
+    description: Route Processor Slot
+    bay_position: "1"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/ios-nx-os-software/ncs-6000-series-network-convergence-system/datasheet-c78-737074.html
+  manual: https://www.cisco.com/c/en/us/td/docs/iosxr/ncs6000/hardware-install/spg/b-ncs6000-site-planning-guide/b-ncs6000-unpacking-moving-and-securing-guide_chapter_01.html
+  product_page: https://www.cisco.com/c/en/us/products/collateral/routers/network-convergence-system-6000-series-routers/data_sheet_c78-728048.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/NCS-6008.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - links.datasheet
+    - links.manual
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 64544c6032089931

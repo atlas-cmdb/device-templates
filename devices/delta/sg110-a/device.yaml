@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: delta
+model: SG110-A
+slug: sg110-a
+category: network_switch
+form_factor: rack
+part_numbers:
+  - SG110-A
+u_height: 3
+full_depth: true
+airflow: front-to-rear
+power:
+  outlet_count: 3
+  psu_count: 2
+interfaces:
+  - name: Management
+    label: RJ45
+    type: 1000base-t
+    mgmt_only: true
+power_ports:
+  - name: ac-input-a
+    label: AC INPUT A
+    type: other
+  - name: ac-input-b
+    label: AC INPUT B
+    type: other
+power_outlets:
+  - name: dc-output-bus-left
+    type: dc-terminal
+  - name: dc-output-bus-center
+    type: dc-terminal
+  - name: dc-output-bus-right
+    type: dc-terminal
+module_bays:
+  - name: psu-1a
+    label: 1A
+    bay_position: 1A
+  - name: psu-2a
+    label: 2A
+    bay_position: 2A
+  - name: psu-3a
+    label: 3A
+    bay_position: 3A
+  - name: psu-1b
+    label: 1B
+    bay_position: 1B
+  - name: psu-2b
+    label: 2B
+    bay_position: 2B
+  - name: psu-3b
+    label: 3B
+    bay_position: 3B
+comments: |-
+  Open Compute Project ORv1/v2 compatible Power Shelf
+  Stingray v1
+  Fits 21" ORv1/v2 racks and 19" EIA racks (with proper adapters)
+  Can take up to 6 PSU. In configurations where only 4 PSU are used, slots 1A and 3B are covered / unused.
+  Takes PSU type DPST-2130CB-A
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Delta/SG110-A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: b2a0e46bd904a7a5

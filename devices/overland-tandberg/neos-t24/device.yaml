@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: overland-tandberg
+model: NEOs T24
+slug: neos-t24
+category: appliance
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 15
+power:
+  psu_count: 1
+interfaces:
+  - name: Ethernet
+    type: 1000base-t
+power_ports:
+  - name: PSU 1
+    type: iec-60320-c14
+    maximum_draw_w: 160
+module_bays:
+  - name: Drive 1
+    bay_position: "1"
+  - name: Drive 2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.bdt.de/fileadmin/user_upload/07_Downloads/Storage/Formular_Storage_Data_Sheets_FLEXSTOR_2U.pdf
+  other:
+    - label: NEO Firmware and Documents
+      url: https://overlandtandberg.atlassian.net/wiki/spaces/KNOW/pages/117637153/NEO+LTO+Firmware+Driver+Links+Release+Notes
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Overland-Tandberg/neos-t24.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 0136baf39ab71aab

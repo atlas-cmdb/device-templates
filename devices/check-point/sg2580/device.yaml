@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: check-point
+model: SG2580
+slug: sg2580
+category: firewall
+form_factor: rack
+part_numbers:
+  - CPAP-SG2580
+u_height: 1
+full_depth: false
+weight_kg: 0.98
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: WAN-RJ-45
+    type: 10gbase-t
+  - name: WAN-SFP+
+    type: 10gbase-x-sfpp
+  - name: DMZ-RJ-45
+    type: 10gbase-t
+  - name: DMZ-SFP+
+    type: 10gbase-x-sfpp
+  - name: "1"
+    type: 2.5gbase-t
+  - name: "2"
+    type: 2.5gbase-t
+  - name: "3"
+    type: 1000base-t
+  - name: "4"
+    type: 1000base-t
+  - name: "5"
+    type: 1000base-t
+  - name: "6"
+    type: 1000base-t
+  - name: "7"
+    type: 1000base-t
+  - name: "8"
+    type: 1000base-t
+  - name: "9"
+    type: 1000base-t
+  - name: "10"
+    type: 1000base-t
+console_ports:
+  - name: CONSOLE-U
+    type: usb-c
+  - name: CONSOLE-S
+    type: rj-45
+power_ports:
+  - name: PSU1
+    type: dc-terminal
+    maximum_draw_w: 60
+    allocated_draw_w: 40
+  - name: PSU2
+    type: dc-terminal
+    maximum_draw_w: 60
+    allocated_draw_w: 40
+links:
+  datasheet: https://www.checkpoint.com/downloads/products/quantum-spark-2500-datasheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Check Point/SG2580.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 9a3eea6e6ec5a5d0

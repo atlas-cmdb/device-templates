@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: ISR3945
+slug: isr3945
+category: router
+form_factor: rack
+part_numbers:
+  - CISCO3945-CHASSIS
+u_height: 3
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: GigabitEthernet0/0
+    type: 1000base-t
+  - name: GigabitEthernet0/1
+    type: 1000base-t
+  - name: GigabitEthernet0/2
+    type: 1000base-t
+console_ports:
+  - name: con 0
+    type: rj-45
+  - name: aux 0
+    type: rj-45
+  - name: con usb
+    type: usb-mini-b
+  - name: usb 0
+    type: usb-a
+  - name: usb 1
+    type: usb-a
+power_ports:
+  - name: PSU0
+    type: iec-60320-c14
+  - name: PSU1
+    type: iec-60320-c14
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/ISR3945.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: dfa74ee35478d4ff

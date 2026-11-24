@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: asus
+model: RS521A-E12-RS12U
+slug: rs521a-e12-rs12u
+category: server
+form_factor: rack
+description: AMD Single Socket, 2U Server, 5th Generation AMD EPYC Processors with AMD 3D V-Cache technology
+u_height: 2
+full_depth: true
+weight_kg: 18
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Gig-E 1
+    description: Intel I350-AM2 Gigabit
+    type: 1000base-t
+  - name: Gig-E 2
+    description: Intel I350-AM2 Gigabit
+    type: 1000base-t
+  - name: MGMT
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+links:
+  datasheet: https://dlcdnets.asus.com/pub/ASUS/server/RS521A-E12-RS12U/DataSheet/DataSheet_RS521A-E12-RS12U_20251016.pdf
+  manual: https://servers.asus.com/support/os
+comments: See .\r\n\r\nSee .
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/ASUS/RS521A-E12-RS12U.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - description
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: be7bb11f80b48f8a

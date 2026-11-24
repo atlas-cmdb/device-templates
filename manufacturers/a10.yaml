@@ -1,0 +1,3 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: a10
+name: A10

@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: lenovo
+name: Lenovo
+aliases:
+  - IBM System x
+website: https://www.lenovo.com

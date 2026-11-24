@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Aruba 9004
+slug: aruba-9004
+category: network_controller
+form_factor: rack
+part_numbers:
+  - R1B21A
+u_height: 1
+full_depth: false
+weight_kg: 1.225
+power:
+  psu_count: 1
+interfaces:
+  - name: gigabitethernet 0/0/0
+    type: 1000base-t
+  - name: gigabitethernet 0/0/1
+    type: 1000base-t
+  - name: gigabitethernet 0/0/2
+    type: 1000base-t
+  - name: gigabitethernet 0/0/3
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: Console USB
+    type: usb-mini-b
+power_ports:
+  - name: DC
+    type: dc-terminal
+    maximum_draw_w: 25
+comments: |-
+  HPE Aruba Networking 9004 Series Branch Gateway, RW regional model.
+  RW model availability: available everywhere except US, Israel, Egypt, and Japan.
+  Physical dimensions: 1.5 x 7.8 x 6.0 in.
+  Input: 12V DC, 2.5A AC-to-DC power adapter.
+  Maximum power consumption: 25W with USB.
+  Desktop fanless chassis with optional 19-inch rack mount tray.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Aruba-9004.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e6d51dbc37264302

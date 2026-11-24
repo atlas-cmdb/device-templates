@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: meinberg
+model: IMS-VSG181h
+slug: ims-vsg181h
+kind: other
+description: Two BNC outputs and a DB15 multi-output with configurable video and audio signals
+rear_ports:
+  - name: Black Out
+    type: bnc
+  - name: Black Out 2
+    type: bnc
+  - name: LTC/DARS/Word Clk Out
+    label: DB-15
+    type: other
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Meinberg/IMS-VSG181h.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - manufacturer
+    - model
+    - rear_ports
+    - slug
+  import_hash: 9ba77d838cbff125

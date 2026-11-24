@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: bastion
+model: SKAT-UPS1000-24V
+slug: skat-ups1000-24v
+category: ups
+form_factor: other
+u_height: 0
+full_depth: false
+weight_kg: 4.9
+airflow: front-to-rear
+power:
+  outlet_count: 2
+  psu_count: 1
+console_ports:
+  - name: Serial
+    type: de-9
+  - name: USB
+    type: usb-b
+power_ports:
+  - name: Input
+    type: iec-60320-c14
+    maximum_draw_w: 1200
+power_outlets:
+  - name: Socket_1
+    type: ita-f
+    power_port: Input
+  - name: Socket_2
+    type: ita-f
+    power_port: Input
+module_bays:
+  - name: IntelligentSlot
+    bay_position: Rear
+links:
+  product_page: https://bast.ru/products/skat-ups-1000-24v
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Bastion/SKAT-UPS1000-24V.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 438a7fd17d1b8079

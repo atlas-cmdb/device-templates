@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: Unity XT 380 Controller
+slug: unity-xt-380-controller
+category: storage_array
+form_factor: blade
+u_height: 0
+full_depth: true
+subdevice_role: child
+airflow: front-to-rear
+interfaces:
+  - name: SP-A ETH1
+    type: 1000base-t
+    mgmt_only: true
+  - name: SP-A ETH2
+    type: 10gbase-t
+  - name: SP-A ETH3
+    type: 10gbase-t
+  - name: SP-A ETH4
+    type: 10gbase-x-sfpp
+  - name: SP-A ETH5
+    type: 10gbase-x-sfpp
+module_bays:
+  - name: I/O 1
+    bay_position: "1"
+  - name: I/O 2
+    bay_position: "2"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/Unity-XT-380-Controller.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 7db7ecb8b20a65be

@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: MicroCloud A+ Server AS 3015MR-H8TNR
+slug: microcloud-a-plus-server-as-3015mr-h8tnr
+category: server
+form_factor: rack
+part_numbers:
+  - AS-3015MR-H8TNR
+u_height: 3
+full_depth: true
+subdevice_role: parent
+weight_kg: 28.21
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: IPMI 1
+    description: Redundant IPMI port
+    type: 1000base-t
+    mgmt_only: true
+  - name: IPMI 2
+    description: Redundant IPMI port
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: PSU0
+    bay_position: PSU 0
+  - name: PSU1
+    bay_position: PSU 1
+device_bays:
+  - name: Node 1
+    label: Compute Node 1
+  - name: Node 2
+    label: Compute Node 2
+  - name: Node 3
+    label: Compute Node 3
+  - name: Node 4
+    label: Compute Node 4
+  - name: Node 5
+    label: Compute Node 5
+  - name: Node 6
+    label: Compute Node 6
+  - name: Node 7
+    label: Compute Node 7
+  - name: Node 8
+    label: Compute Node 8
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  product_page: https://www.supermicro.com/en/products/system/microcloud/3u/as%20-3015mr-h8tnr
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/AS-3015MR-H8TNR.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - device_bays
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: a8bc80c01a92826b

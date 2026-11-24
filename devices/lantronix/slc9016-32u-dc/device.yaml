@@ -1,0 +1,161 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lantronix
+model: SLC9016-32U-DC
+slug: slc9016-32u-dc
+category: console_server
+form_factor: rack
+part_numbers:
+  - SLC9016-32U-DC
+u_height: 1
+full_depth: false
+weight_kg: 2.7
+airflow: passive
+power:
+  psu_count: 2
+interfaces:
+  - name: eth1
+    type: 1000base-t
+    mgmt_only: true
+  - name: eth2
+    type: 1000base-t
+    mgmt_only: true
+  - name: eth3
+    type: 10gbase-x-sfpp
+    mgmt_only: true
+  - name: eth4
+    type: 10gbase-x-sfpp
+    mgmt_only: true
+console_ports:
+  - name: Console
+    type: rj-45
+console_server_ports:
+  - name: Port-01
+    type: rj-45
+  - name: Port-02
+    type: rj-45
+  - name: Port-03
+    type: rj-45
+  - name: Port-04
+    type: rj-45
+  - name: Port-05
+    type: rj-45
+  - name: Port-06
+    type: rj-45
+  - name: Port-07
+    type: rj-45
+  - name: Port-08
+    type: rj-45
+  - name: Port-09
+    type: rj-45
+  - name: Port-10
+    type: rj-45
+  - name: Port-11
+    type: rj-45
+  - name: Port-12
+    type: rj-45
+  - name: Port-13
+    type: rj-45
+  - name: Port-14
+    type: rj-45
+  - name: Port-15
+    type: rj-45
+  - name: Port-16
+    type: rj-45
+  - name: Port-17
+    type: usb-a
+  - name: Port-18
+    type: usb-a
+  - name: Port-19
+    type: usb-a
+  - name: Port-20
+    type: usb-a
+  - name: Port-21
+    type: usb-a
+  - name: Port-22
+    type: usb-a
+  - name: Port-23
+    type: usb-a
+  - name: Port-24
+    type: usb-a
+  - name: Port-25
+    type: usb-a
+  - name: Port-26
+    type: usb-a
+  - name: Port-27
+    type: usb-a
+  - name: Port-28
+    type: usb-a
+  - name: Port-29
+    type: usb-a
+  - name: Port-30
+    type: usb-a
+  - name: Port-31
+    type: usb-a
+  - name: Port-32
+    type: usb-a
+  - name: Port-33
+    type: usb-a
+  - name: Port-34
+    type: usb-a
+  - name: Port-35
+    type: usb-a
+  - name: Port-36
+    type: usb-a
+  - name: Port-37
+    type: usb-a
+  - name: Port-38
+    type: usb-a
+  - name: Port-39
+    type: usb-a
+  - name: Port-40
+    type: usb-a
+  - name: Port-41
+    type: usb-a
+  - name: Port-42
+    type: usb-a
+  - name: Port-43
+    type: usb-a
+  - name: Port-44
+    type: usb-a
+  - name: Port-45
+    type: usb-a
+  - name: Port-46
+    type: usb-a
+  - name: Port-47
+    type: usb-a
+  - name: Port-48
+    type: usb-a
+power_ports:
+  - name: PS1
+    type: dc-terminal
+    maximum_draw_w: 30
+  - name: PS2
+    type: dc-terminal
+    maximum_draw_w: 30
+links:
+  product_page: https://www.lantronix.com/products/slc-9000-series/
+comments: 48 serial ports (16 RJ45, 32 USB Type-A), 2x 1GbE, 2x SFP+, TPM 2.0, dual DC PSU.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Lantronix/SLC9016-32U-DC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: f0beca45a4227d3a

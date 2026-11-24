@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: gl-inet
+model: GL-BE3600
+slug: gl-be3600
+category: router
+form_factor: other
+description: Portable dual-band Wi-Fi 7 travel router with up to 2.5 GbE WAN/LAN ports, 2,882 Mbps (5 GHz) + 688 Mbps (2.4 GHz), touchscreen, OpenWRT, and VPN support.
+part_numbers:
+  - GL-BE3600
+u_height: 0
+full_depth: false
+weight_kg: 0.295
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: Port 1
+    label: LAN
+    type: 2.5gbase-t
+  - name: Port 2
+    label: WAN
+    type: 2.5gbase-t
+  - name: wlan0
+    description: IEEE 802.11a/n/ac/ax/be
+    type: ieee802.11be
+power_ports:
+  - name: External Power Adapter
+    type: usb-c
+    maximum_draw_w: 30
+links:
+  product_page: https://www.gl-inet.com/products/gl-be3600/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/GL-iNet/GL-BE3600.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 6a062dbbc20aad6e

@@ -1,0 +1,131 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: juniper
+model: ACX7100-32C-DC-AO
+slug: acx7100-32c-dc-ao
+category: router
+form_factor: rack
+part_numbers:
+  - ACX7100-32C-DC-AO
+u_height: 1
+full_depth: true
+weight_kg: 10.088
+airflow: front-to-rear
+interfaces:
+  - name: re0:mgmt-0
+    type: 1000base-t
+    mgmt_only: true
+  - name: et-0/0/0
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/1
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/2
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/3
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/4
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/5
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/6
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/7
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/8
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/9
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/10
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/11
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/12
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/13
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/14
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/15
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/16
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/17
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/18
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/19
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/20
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/21
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/22
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/23
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/24
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/25
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/26
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/27
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/28
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/29
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/30
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/31
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/32
+    type: 400gbase-x-qsfpdd
+  - name: et-0/0/33
+    type: 400gbase-x-qsfpdd
+  - name: et-0/0/34
+    type: 400gbase-x-qsfpdd
+  - name: et-0/0/35
+    type: 400gbase-x-qsfpdd
+console_ports:
+  - name: Console
+    type: rj-45
+module_bays:
+  - name: PSM 0
+    bay_position: "0"
+  - name: PSM 1
+    bay_position: "1"
+  - name: Fan Module 0
+    bay_position: "0"
+  - name: Fan Module 1
+    bay_position: "1"
+  - name: Fan Module 2
+    bay_position: "2"
+  - name: Fan Module 3
+    bay_position: "3"
+  - name: Fan Module 4
+    bay_position: "4"
+  - name: Fan Module 5
+    bay_position: "5"
+links:
+  manual: https://www.juniper.net/documentation/us/en/hardware/acx7100-32C/topics/topic-map/acx7100-32C-system-overview.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Juniper/ACX7100-32C-DC-AO.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 0600c6ba945c8461

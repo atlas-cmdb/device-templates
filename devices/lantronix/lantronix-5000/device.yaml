@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lantronix
+model: LANTRONIX-5000
+slug: lantronix-5000
+category: console_server
+form_factor: rack
+part_numbers:
+  - LANTRONIX-5000
+u_height: 1
+full_depth: false
+weight_kg: 3.719
+airflow: passive
+power:
+  psu_count: 2
+interfaces:
+  - name: GE-0
+    type: 1000base-t
+    mgmt_only: true
+  - name: GE-1
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: console
+    type: rj-45
+  - name: USB-Mini
+    type: usb-mini-a
+  - name: USB-1
+    type: usb-a
+  - name: USB-2
+    type: usb-a
+console_server_ports:
+  - name: 1/1
+    type: rj-45
+  - name: 1/2
+    type: rj-45
+  - name: 1/3
+    type: rj-45
+  - name: 1/4
+    type: rj-45
+  - name: 1/5
+    type: rj-45
+  - name: 1/6
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+  - name: PS2
+    type: iec-60320-c14
+module_bays:
+  - name: slot2
+    description: Expansion Module
+    bay_position: "2"
+  - name: slot3
+    description: Expansion Module
+    bay_position: "3"
+links:
+  other:
+    - url: https://uplogix.com/uplogix-5000
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Lantronix/lantronix-5000.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 36d0a99ca62f2bd5

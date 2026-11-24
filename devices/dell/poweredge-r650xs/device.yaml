@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge R650xs
+slug: poweredge-r650xs
+category: server
+form_factor: rack
+u_height: 1
+full_depth: true
+subdevice_role: parent
+power:
+  psu_count: 2
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: Gig-E 3
+    type: 1000base-t
+  - name: Gig-E 4
+    type: 1000base-t
+  - name: iDRAC9 1
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Optional Rear Serial
+    type: de-9
+power_ports:
+  - name: Power 1
+    type: iec-60320-c14
+    maximum_draw_w: 800
+  - name: Power 2
+    type: iec-60320-c14
+    maximum_draw_w: 800
+module_bays:
+  - name: PCIe-Gen4 1
+    description: PCIe 4.0 x16 Half Length
+    bay_position: PCIE1
+  - name: PCIe-Gen4 2
+    description: PCIe 4.0 x8 Half Length
+    bay_position: PCIE2
+  - name: PCIe-Gen4 3
+    description: PCIe 4.0 x8 Half Length
+    bay_position: PCIE3
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://i.dell.com/sites/csdocuments/Product_Docs/en/poweredge-r650xs-spec-sheet.pdf
+  manual: https://www.dell.com/support/manuals/en-us/poweredge-r650xs/per650xs_ism_pub/documentation-resources?guid=guid-1dcaccc8-3879-4b9d-8f5b-082268892e3b&lang=en-us
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-R650xs.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 364938aeaaa61439

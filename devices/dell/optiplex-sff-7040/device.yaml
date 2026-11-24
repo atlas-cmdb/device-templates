@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: OptiPlex SFF 7040
+slug: optiplex-sff-7040
+category: server
+form_factor: rack
+u_height: 2
+full_depth: false
+weight_kg: 8
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+power_ports:
+  - name: PSU
+    description: Internal power supply unit
+    type: iec-60320-c14
+    maximum_draw_w: 240
+links:
+  manual: https://downloads.dell.com/Manuals/all-products/esuprt_desktop/esuprt_optiplex_desktop/optiplex-7040-desktop_Owner's%20Manual_en-us.pdf
+comments: See .
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/OptiPlex-SFF-7040.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 87a5066038f4aaed

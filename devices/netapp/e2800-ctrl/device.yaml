@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netapp
+model: E2800-Ctrl
+slug: e2800-ctrl
+category: storage_array
+form_factor: blade
+description: E2800 Controller
+u_height: 0
+full_depth: false
+subdevice_role: child
+interfaces:
+  - name: P1
+    description: Management port 1
+    type: 1000base-t
+    mgmt_only: true
+  - name: P2
+    description: Management port 2, reserved for technical support
+    type: 1000base-t
+    mgmt_only: true
+  - name: EXP1
+    description: Drive expansion port 1, 12Gb/s SAS
+    type: other
+  - name: EXP2
+    description: Drive expansion port 2, 12Gb/s SAS
+    type: other
+console_ports:
+  - name: Serial
+    description: RJ-45 serial port, reserved for technical support
+    type: rj-45
+  - name: Micro USB serial
+    description: Micro USB serial port, reserved for technical support
+    type: usb-micro-b
+module_bays:
+  - name: HIC
+    description: Host interface card (optional)
+    bay_position: HIC
+links:
+  manual: https://docs.netapp.com/us-en/storagegrid-117/installconfig/controllers-in-sg6000-appliances.html
+  other:
+    - url: https://docs.netapp.com/us-en/e-series/install-hw-e2800-e5700/e2824-e5724-complete-setup-task.html
+  product_page: https://docs.netapp.com/us-en/e-series/maintenance-e2800/hpp-overview-supertask-concept.html
+comments: |-
+  Controller canister for the E2812 and E2824 controller shelves. Fixed ports per controller: management ports
+  P1 and P2 (1Gb RJ-45; P2 is reserved for technical support), drive expansion ports EXP1 and EXP2 (12Gb/s SAS),
+  an RJ-45 serial port and a micro USB serial port (both reserved for technical support). The USB port
+  (technical support only) is not modelled. The two baseboard host ports 0a and 0b are either SFP+ (16Gb FC /
+  10Gb iSCSI) or RJ-45 (10Gb iSCSI) depending on the controller ordered, so they are not modelled; add them on
+  the device. The optional host interface card (HIC, ports 0c onwards) goes in the HIC bay.
+  Connectors:
+  Management port P1:
+  Host ports and HIC:
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/NetApp/E2800-Ctrl.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - links.manual
+    - links.other
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 81d5cf839bb8d37d

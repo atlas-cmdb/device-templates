@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SuperChassis-CSE-846E16-R1200B
+slug: superchassis-cse-846e16-r1200b
+category: server
+form_factor: rack
+part_numbers:
+  - CSE-846E16-R1200B
+u_height: 4
+full_depth: true
+weight_kg: 26
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: iLO
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: PSU1
+    bay_position: PSU 1
+  - name: PSU2
+    bay_position: PSU 2
+  - name: PCI-E 1
+    description: PCIe slot
+    bay_position: "1"
+  - name: PCI-E 2
+    description: PCIe slot
+    bay_position: "2"
+  - name: PCI-E 3
+    description: PCIe slot
+    bay_position: "3"
+  - name: PCI-E 4
+    description: PCIe slot
+    bay_position: "4"
+  - name: PCI-E 5
+    description: PCIe slot
+    bay_position: "5"
+  - name: PCI-E 6
+    description: PCIe slot
+    bay_position: "6"
+  - name: PCI-E 7
+    description: PCIe slot
+    bay_position: "7"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SuperChassis-CSE-846E16-R1200B.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 3ebf8d7f8d74fdfd

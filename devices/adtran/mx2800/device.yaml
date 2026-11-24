@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: adtran
+model: MX2800
+slug: mx2800
+category: router
+form_factor: rack
+part_numbers:
+  - 1200290L1
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: DS3 A IN
+    type: t3
+  - name: DS3 A OUT
+    type: t3
+  - name: DS3 B IN
+    type: t3
+  - name: DS3 B OUT
+    type: t3
+console_ports:
+  - name: LAN
+    type: rj-45
+  - name: MODEM
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 27
+links:
+  product_page: https://portal.adtran.com/web/page/portal/Adtran/product/1200290L1/3
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Adtran/MX2800.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: a6775842d22af6db

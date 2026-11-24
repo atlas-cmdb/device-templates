@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: corning
+model: EDGE-01U-SP
+slug: edge-01u-sp
+category: other
+form_factor: rack
+part_numbers:
+  - EDGE-01U-SP
+u_height: 1
+full_depth: false
+subdevice_role: parent
+airflow: passive
+module_bays:
+  - name: 01A
+    bay_position: 01A
+  - name: 01B
+    bay_position: 01B
+  - name: 01C
+    bay_position: 01C
+  - name: 01D
+    bay_position: 01D
+  - name: 02A
+    bay_position: 02A
+  - name: 02B
+    bay_position: 02B
+  - name: 02C
+    bay_position: 02C
+  - name: 02D
+    bay_position: 02D
+  - name: 03A
+    bay_position: 03A
+  - name: 03B
+    bay_position: 03B
+  - name: 03C
+    bay_position: 03C
+  - name: 03D
+    bay_position: 03D
+comments: Corning EDGE 1-RU Fiber-Optic Housing with (12) module bays for Corning EDGE modules.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Corning/EDGE-01U-SP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 3df5b9541b21675e

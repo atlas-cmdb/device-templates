@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: smc-networks
+model: SMCGS8P-SMART
+slug: smcgs8p-smart
+category: network_switch
+form_factor: rack
+part_numbers:
+  - SMCGS8P-SMART
+u_height: 1
+full_depth: false
+weight_kg: 2.06
+airflow: left-to-right
+power:
+  psu_count: 1
+interfaces:
+  - name: GigabitEthernet1
+    type: 1000base-t
+  - name: GigabitEthernet2
+    type: 1000base-t
+  - name: GigabitEthernet3
+    type: 1000base-t
+  - name: GigabitEthernet4
+    type: 1000base-t
+  - name: GigabitEthernet5
+    type: 1000base-t
+  - name: GigabitEthernet6
+    type: 1000base-t
+  - name: GigabitEthernet7
+    type: 1000base-t
+  - name: GigabitEthernet8
+    type: 1000base-t
+  - name: GigabitEthernetSFP1
+    type: 1000base-x-sfp
+power_ports:
+  - name: PSU0
+    type: iec-60320-c14
+    maximum_draw_w: 165
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.use-ip.co.uk/datasheets/442/smc_gs8p_8port_gigabit_poe_switch.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/SMC Networks/SMCGS8P-SMART.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 310fbbc9fdb24295

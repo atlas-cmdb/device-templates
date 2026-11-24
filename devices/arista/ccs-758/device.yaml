@@ -1,0 +1,97 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: arista
+model: CCS-758
+slug: ccs-758
+category: network_switch
+form_factor: rack
+part_numbers:
+  - CCS-758-CH
+u_height: 10
+full_depth: true
+weight_kg: 31.6
+airflow: front-to-rear
+power:
+  psu_count: 10
+module_bays:
+  - name: Slot 1
+    label: Supervisor
+    bay_position: "1"
+  - name: Slot 2
+    label: Supervisor
+    bay_position: "2"
+  - name: Slot 3
+    label: Line Card
+    bay_position: "3"
+  - name: Slot 4
+    label: Line Card
+    bay_position: "4"
+  - name: Slot 5
+    label: Line Card
+    bay_position: "5"
+  - name: Slot 6
+    label: Line Card
+    bay_position: "6"
+  - name: Slot 7
+    label: Line Card
+    bay_position: "7"
+  - name: Slot 8
+    label: Line Card
+    bay_position: "8"
+  - name: Slot 9
+    label: Line Card
+    bay_position: "9"
+  - name: Slot 10
+    label: Line Card
+    bay_position: "10"
+  - name: PSU 1
+    label: Power Supply 1
+    bay_position: "1"
+  - name: PSU 2
+    label: Power Supply 2
+    bay_position: "2"
+  - name: PSU 3
+    label: Power Supply 3
+    bay_position: "3"
+  - name: PSU 4
+    label: Power Supply 4
+    bay_position: "4"
+  - name: PSU 5
+    label: Power Supply 5
+    bay_position: "5"
+  - name: PSU 6
+    label: Power Supply 6
+    bay_position: "6"
+  - name: PSU 7
+    label: Power Supply 7
+    bay_position: "7"
+  - name: PSU 8
+    label: Power Supply 8
+    bay_position: "8"
+  - name: PSU 9
+    label: Power Supply 9
+    bay_position: "9"
+  - name: PSU 10
+    label: Power Supply 10
+    bay_position: "10"
+links:
+  datasheet: https://www.arista.com/assets/data/pdf/Datasheets/CCS-750-Series-Datasheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Arista/CCS-758.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 812f3fbe41878bbb

@@ -1,0 +1,104 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SuperServer SYS-421GE-TNRT
+slug: superserver-sys-421ge-tnrt
+category: gpu_server
+form_factor: rack
+part_numbers:
+  - SYS-421GE-TNRT
+u_height: 4
+full_depth: true
+weight_kg: 29.7
+airflow: front-to-rear
+power:
+  psu_count: 4
+interfaces:
+  - name: BMC
+    description: Dedicated IPMI LAN port
+    type: 1000base-t
+    mgmt_only: true
+  - name: Gig-E 1
+    description: Intel X710-AT2 10GbE controller (Onboard)
+    type: 10gbase-t
+  - name: Gig-E 2
+    description: Intel X710-AT2 10GbE controller (Onboard)
+    type: 10gbase-t
+console_ports:
+  - name: Serial
+    description: Rear port
+    type: de-9
+module_bays:
+  - name: PSU 1
+    bay_position: PSU1
+  - name: PSU 2
+    bay_position: PSU2
+  - name: PSU 3
+    bay_position: PSU3
+  - name: PSU 4
+    bay_position: PSU4
+  - name: AIOM
+    description: Advanced I/O Module (AIOM) Form Factor Slot, PCI-E 5.0 x16
+    bay_position: AIOM1
+  - name: PCI-E 1
+    description: PCI-E 5.0 x16, Full Height, Full-length
+    bay_position: "1"
+  - name: PCI-E 2
+    description: PCI-E 5.0 x16, Full Height, Full-length
+    bay_position: "2"
+  - name: PCI-E 3
+    description: PCI-E 5.0 x16, Full Height, Full-length
+    bay_position: "3"
+  - name: PCI-E 4
+    description: PCI-E 5.0 x16, Full Height, Full Length
+    bay_position: "4"
+  - name: PCI-E 5
+    description: PCI-E 5.0 x16, Full Height, Full Length
+    bay_position: "5"
+  - name: PCI-E 6
+    description: PCI-E 5.0 x16, Full Height, Full Length
+    bay_position: "6"
+  - name: PCI-E 7
+    description: PCI-E 5.0 x16, Full Height, Full Length
+    bay_position: "7"
+  - name: PCI-E 8
+    description: PCI-E 5.0 x16, Full Height, Full Length
+    bay_position: "8"
+  - name: PCI-E 9
+    description: PCI-E 5.0 x16, Full Height, Full Length
+    bay_position: "9"
+  - name: PCI-E 10
+    description: PCI-E 5.0 x16, Full Height, Full Length
+    bay_position: "10"
+  - name: PCI-E 11
+    description: PCI-E 5.0 x16, Full Height, Full Length
+    bay_position: "11"
+  - name: PCI-E 12
+    description: PCI-E 5.0 x16, Full Height, Full Length
+    bay_position: "12"
+  - name: PCI-E 13
+    description: PCI-E 5.0 x16, Full Height, Full Length
+    bay_position: "13"
+links:
+  product_page: https://www.supermicro.com/en/products/system/gpu/4u/sys-421ge-tnrt
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SYS-421GE-TNRT.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 36bfb93cd0284f91

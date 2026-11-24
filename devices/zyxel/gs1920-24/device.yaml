@@ -1,0 +1,100 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: zyxel
+model: GS1920-24
+slug: gs1920-24
+category: network_switch
+form_factor: rack
+part_numbers:
+  - GS1920-24
+u_height: 1
+full_depth: false
+subdevice_role: parent
+weight_kg: 2.91
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: Gig-E 3
+    type: 1000base-t
+  - name: Gig-E 4
+    type: 1000base-t
+  - name: Gig-E 5
+    type: 1000base-t
+  - name: Gig-E 6
+    type: 1000base-t
+  - name: Gig-E 7
+    type: 1000base-t
+  - name: Gig-E 8
+    type: 1000base-t
+  - name: Gig-E 9
+    type: 1000base-t
+  - name: Gig-E 10
+    type: 1000base-t
+  - name: Gig-E 11
+    type: 1000base-t
+  - name: Gig-E 12
+    type: 1000base-t
+  - name: Gig-E 13
+    type: 1000base-t
+  - name: Gig-E 14
+    type: 1000base-t
+  - name: Gig-E 15
+    type: 1000base-t
+  - name: Gig-E 16
+    type: 1000base-t
+  - name: Gig-E 17
+    type: 1000base-t
+  - name: Gig-E 18
+    type: 1000base-t
+  - name: Gig-E 19
+    type: 1000base-t
+  - name: Gig-E 20
+    type: 1000base-t
+  - name: Gig-E 21
+    type: 1000base-t
+  - name: Gig-E 22
+    type: 1000base-t
+  - name: Gig-E 23
+    type: 1000base-t
+  - name: Gig-E 24
+    type: 1000base-t
+  - name: Gig-E/SFP 25
+    description: Gigabit Combo(RJ45/SFP)
+    type: 1000base-t
+  - name: Gig-E/SFP 26
+    description: Gigabit Combo(RJ45/SFP)
+    type: 1000base-t
+  - name: Gig-E/SFP 27
+    description: Gigabit Combo(RJ45/SFP)
+    type: 1000base-t
+  - name: Gig-E/SFP 28
+    description: Gigabit Combo(RJ45/SFP)
+    type: 1000base-t
+power_ports:
+  - name: Power Port 1
+    type: iec-60320-c14
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Zyxel/GS1920-24.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 811c47c3ed499d07

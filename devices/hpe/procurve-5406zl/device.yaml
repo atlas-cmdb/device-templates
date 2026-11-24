@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: ProCurve 5406zl
+slug: procurve-5406zl
+category: network_switch
+form_factor: rack
+part_numbers:
+  - J8697A
+u_height: 4
+full_depth: false
+weight_kg: 10.68
+airflow: left-to-right
+power:
+  psu_count: 2
+module_bays:
+  - name: A
+    description: Front Switching Module Slot
+    bay_position: A
+  - name: B
+    description: Front Switching Module Slot
+    bay_position: B
+  - name: C
+    description: Front Switching Module Slot
+    bay_position: C
+  - name: D
+    description: Front Switching Module Slot
+    bay_position: D
+  - name: E
+    description: Front Switching Module Slot
+    bay_position: E
+  - name: F
+    description: Front Switching Module Slot
+    bay_position: F
+  - name: MM1
+    description: Front Management Module Slot
+    bay_position: MM1
+  - name: PS1
+    description: Rear PSU Slot
+    bay_position: PS1
+  - name: PS2
+    description: Rear PSU Slot
+    bay_position: PS2
+  - name: Fan1
+    description: Rear Fan Slot
+    bay_position: Fan1
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  manual: https://www.hp.com/hpinfo/newsroom/press_kits/2010/HPOptimizesAppDelivery/E5400zl_Switch_Series_Data_Sheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/ProCurve-5406zl.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 19663f437d548c24

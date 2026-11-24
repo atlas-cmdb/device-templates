@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: A+ Server 2124BT-HNTR
+slug: a-plus-server-2124bt-hntr
+category: server
+form_factor: rack
+part_numbers:
+  - AS-2124BT-HNTR
+u_height: 2
+full_depth: true
+subdevice_role: parent
+weight_kg: 24.7
+airflow: front-to-rear
+power:
+  psu_count: 2
+module_bays:
+  - name: PSU0
+    bay_position: PSU 0
+  - name: PSU1
+    bay_position: PSU 1
+device_bays:
+  - name: Node 1
+    label: Compute Node 1
+  - name: Node 2
+    label: Compute Node 2
+  - name: Node 3
+    label: Compute Node 3
+  - name: Node 4
+    label: Compute Node 4
+comments: SuperServer SYS-5039MC-H8TRF (https://www.supermicro.com/en/Aplus/system/2U/2124/AS-2124BT-HNTR.cfm)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/AS-2124BT-HNTR.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - device_bays
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 2145286540a1c4bf

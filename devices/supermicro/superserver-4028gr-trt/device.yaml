@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SuperServer 4028GR-TRT
+slug: superserver-4028gr-trt
+category: server
+form_factor: rack
+part_numbers:
+  - SYS-4028GR-TRT07-NC24B
+u_height: 4
+full_depth: true
+weight_kg: 29.7
+airflow: front-to-rear
+power:
+  psu_count: 4
+interfaces:
+  - name: Eth-1
+    type: 1000base-t
+  - name: Eth-2
+    type: 1000base-t
+  - name: IPMI
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: PSU 1
+    bay_position: PSU-1
+  - name: PSU 2
+    bay_position: PSU-2
+  - name: PSU 3
+    bay_position: PSU-3
+  - name: PSU 4
+    bay_position: PSU-4
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SuperServer-4028GR-TRT.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 566e24be8deaa93e

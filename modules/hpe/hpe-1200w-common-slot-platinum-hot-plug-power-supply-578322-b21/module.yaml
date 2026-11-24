@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: hpe
+model: HPE 1200W Common Slot Platinum Hot Plug Power Supply (578322-B21)
+slug: hpe-1200w-common-slot-platinum-hot-plug-power-supply-578322-b21
+kind: psu
+description: Platinum Common Slot PSU with support for HPE Power Discovery Services on various HPE Proliant G6, G7 and Gen8 servers
+part_numbers:
+  - 578322-B21
+weight_kg: 1.13
+power_ports:
+  - name: "{module}"
+    type: iec-60320-c14
+    maximum_draw_w: 1200
+links:
+  other:
+    - label: QuickSpecs
+      url: https://support.hpe.com/hpesc/public/docDisplay?docId=c04111541
+comments: "See:"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/HPE/578322-B21.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - description
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+    - weight_kg
+  import_hash: 008d19a5b57b77df

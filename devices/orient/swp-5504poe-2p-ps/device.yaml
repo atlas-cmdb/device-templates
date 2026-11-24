@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: orient
+model: SWP-5504POE/2P-PS
+slug: swp-5504poe-2p-ps
+category: appliance
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 0.8
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: "1"
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "2"
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "3"
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "4"
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: up1
+    type: 100base-tx
+  - name: up2
+    type: 100base-tx
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 65
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Orient/swp-5504poe-2p-ps.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 263e5698c6174602

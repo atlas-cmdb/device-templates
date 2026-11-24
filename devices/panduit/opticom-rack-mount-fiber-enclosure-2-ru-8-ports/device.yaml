@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: panduit
+model: Opticom Rack Mount Fiber Enclosure, 2 RU, 8 Ports
+slug: opticom-rack-mount-fiber-enclosure-2-ru-8-ports
+category: patch_panel
+form_factor: rack
+part_numbers:
+  - FCE2U
+u_height: 2
+full_depth: false
+subdevice_role: parent
+weight_kg: 8.958
+airflow: passive
+module_bays:
+  - name: A
+    bay_position: A
+  - name: B
+    bay_position: B
+  - name: C
+    bay_position: C
+  - name: D
+    bay_position: D
+  - name: E
+    bay_position: E
+  - name: F
+    bay_position: F
+  - name: G
+    bay_position: G
+  - name: H
+    bay_position: H
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Panduit/FCE2U.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: e178303d71f57406

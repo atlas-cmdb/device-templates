@@ -1,0 +1,107 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: etherwan
+model: EX78934H
+slug: ex78934h
+category: network_switch
+form_factor: other
+part_numbers:
+  - EX78934H-0VB
+u_height: 0
+full_depth: false
+weight_kg: 1.497
+airflow: passive
+power:
+  psu_count: 2
+interfaces:
+  - name: ge1
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: ge2
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: ge3
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: ge4
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: ge5
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: ge6
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: ge7
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: ge8
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: ge9
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: ge10
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: ge11
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: ge12
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: ge13
+    type: 1000base-x-sfp
+  - name: ge14
+    type: 1000base-x-sfp
+  - name: ge15
+    type: 1000base-x-sfp
+  - name: ge16
+    type: 1000base-x-sfp
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: PS1
+    description: 46-57VDC terminal block
+    type: dc-terminal
+    maximum_draw_w: 380
+  - name: PS2
+    description: 46-57VDC terminal block
+    type: dc-terminal
+    maximum_draw_w: 380
+links:
+  datasheet: https://www.etherwan.com/us/products/ex78900h-series
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/EtherWAN/EX78934H.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 054500a209308207

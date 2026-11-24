@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: AP6015A
+slug: ap6015a
+category: pdu
+form_factor: rack
+part_numbers:
+  - AP6015A
+u_height: 1
+full_depth: false
+weight_kg: 0.91
+airflow: passive
+power:
+  outlet_count: 8
+power_ports:
+  - name: Source
+    type: iec-60320-c14
+power_outlets:
+  - name: Outlet 1
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 2
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 3
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 4
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 5
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 6
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 7
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 8
+    type: iec-60320-c13
+    power_port: Source
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+comments: RACK PDU, BASIC, 0U/1U, 120-240V/15A, 220-240V/10A, (8) C13
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/AP6015A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 904109c606b73976

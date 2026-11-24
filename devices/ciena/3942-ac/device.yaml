@@ -1,0 +1,104 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ciena
+model: 3942 AC
+slug: 3942-ac
+category: optical_transport
+form_factor: rack
+part_numbers:
+  - 170-3942-900
+u_height: 1
+full_depth: false
+weight_kg: 4.5
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: "1"
+    type: 1000base-t
+  - name: "2"
+    type: 1000base-t
+  - name: "3"
+    type: 1000base-t
+  - name: "4"
+    type: 1000base-t
+  - name: "5"
+    type: 1000base-t
+  - name: "6"
+    type: 1000base-t
+  - name: "7"
+    type: 1000base-t
+  - name: "8"
+    type: 1000base-t
+  - name: "9"
+    type: 1000base-t
+  - name: "10"
+    type: 1000base-t
+  - name: "11"
+    type: 1000base-t
+  - name: "12"
+    type: 1000base-t
+  - name: "13"
+    type: 1000base-t
+  - name: "14"
+    type: 1000base-t
+  - name: "15"
+    type: 1000base-t
+  - name: "16"
+    type: 1000base-t
+  - name: "17"
+    type: 1000base-t
+  - name: "18"
+    type: 1000base-t
+  - name: "19"
+    type: 1000base-t
+  - name: "20"
+    type: 1000base-t
+  - name: "21"
+    type: 10gbase-x-sfpp
+  - name: "22"
+    type: 10gbase-x-sfpp
+  - name: "23"
+    type: 10gbase-x-sfpp
+  - name: "24"
+    type: 10gbase-x-sfpp
+  - name: MGMT
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: CONSOLE
+    type: rj-45
+power_ports:
+  - name: PSA
+    type: iec-60320-c14
+    maximum_draw_w: 96
+    allocated_draw_w: 60
+  - name: PSB
+    type: iec-60320-c14
+    maximum_draw_w: 96
+    allocated_draw_w: 60
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ciena/3942-ac.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: f1b49155e1cafda9

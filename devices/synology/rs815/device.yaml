@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: synology
+model: RS815
+slug: rs815
+category: storage_array
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 4.34
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: LAN1
+    type: 1000base-t
+  - name: LAN2
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: de-9
+  - name: USB1
+    description: USB 3.0
+    type: usb-a
+  - name: USB2
+    description: USB 3.0
+    type: usb-a
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 15
+links:
+  datasheet: https://global.synologydownload.com/download/Document/Hardware/DataSheet/RackStation/15-year/RS815/enu/Synology_RS815_Data_Sheet_enu.pdf
+comments: See
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Synology/RS815.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 4b349c76af73535c

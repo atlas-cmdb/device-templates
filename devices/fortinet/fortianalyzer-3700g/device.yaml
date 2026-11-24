@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: FortiAnalyzer 3700G
+slug: fortianalyzer-3700g
+category: firewall
+form_factor: rack
+part_numbers:
+  - FAZ-3700G
+u_height: 4
+full_depth: true
+weight_kg: 53.5
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: IPMI
+    description: Do not use. Please change the default password.
+    type: 1000base-t
+    mgmt_only: true
+  - name: Ethernet1
+    type: 10gbase-t
+  - name: Ethernet2
+    type: 10gbase-t
+  - name: Ethernet3
+    type: 25gbase-x-sfp28
+  - name: Ethernet4
+    type: 25gbase-x-sfp28
+console_ports:
+  - name: Console
+    type: de-9
+module_bays:
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortianalyzer.pdf
+  manual: https://docs.fortinet.com/document/fortianalyzer/hardware/fortianalyzer-3700g-quickstart-guide
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/FAZ-3700G.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: a575551c2dce6f58

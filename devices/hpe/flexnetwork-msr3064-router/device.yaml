@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: FlexNetwork MSR3064 Router
+slug: flexnetwork-msr3064-router
+category: router
+form_factor: rack
+part_numbers:
+  - JG404A
+u_height: 3
+full_depth: false
+weight_kg: 16.55
+interfaces:
+  - name: GigabitEthernet1/0/0
+    type: 1000base-t
+  - name: GigabitEthernet1/0/1
+    type: 1000base-t
+  - name: GigabitEthernet1/0/2
+    type: 1000base-t
+console_ports:
+  - name: usb
+    type: usb-mini-b
+module_bays:
+  - name: PS-1
+    bay_position: PS-A
+  - name: PS-2
+    bay_position: PS-B
+  - name: SIC slot 1
+    bay_position: SIC-1
+  - name: SIC slot 2
+    bay_position: SIC-2
+  - name: SIC slot 3
+    bay_position: SIC-3
+  - name: SIC slot 4
+    bay_position: SIC-4
+  - name: DSIC slot 1
+    bay_position: DSIC-1
+  - name: DSIC slot 2
+    bay_position: DSIC-2
+  - name: HMIM slot 1
+    bay_position: HMIM-1
+  - name: HMIM slot 2
+    bay_position: HMIM-2
+  - name: HMIM slot 3
+    bay_position: HMIM-3
+  - name: HMIM slot 4
+    bay_position: HMIM-4
+  - name: HMIM slot 5
+    bay_position: HMIM-5
+  - name: HMIM slot 6
+    bay_position: HMIM-6
+  - name: DHMIM slot 1
+    bay_position: DHMIM-1
+  - name: VPM slot 1
+    bay_position: VPM-1
+  - name: VPM slot 2
+    bay_position: VPM-2
+links:
+  manual: https://www.hpe.com/psnow/doc/c04123140.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/FlexNetwork-MSR3064-Router.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 8c6485c8cf56fc17

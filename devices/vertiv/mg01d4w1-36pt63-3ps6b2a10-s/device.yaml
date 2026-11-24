@@ -1,0 +1,120 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: vertiv
+model: MG01D4W1-36PT63-3PS6B2A10-S
+slug: mg01d4w1-36pt63-3ps6b2a10-s
+category: pdu
+form_factor: zero-u
+part_numbers:
+  - GI10022L
+u_height: 0
+full_depth: false
+weight_kg: 7.26
+airflow: passive
+power:
+  outlet_count: 24
+power_ports:
+  - name: Power
+    type: iec-60309-p-n-e-4h
+    maximum_draw_w: 7360
+power_outlets:
+  - name: "01"
+    type: iec-60320-c19
+    power_port: Power
+  - name: "02"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "03"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "04"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "05"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "06"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "07"
+    type: iec-60320-c19
+    power_port: Power
+  - name: "8"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "9"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "10"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "11"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "12"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "13"
+    type: iec-60320-c19
+    power_port: Power
+  - name: "14"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "15"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "16"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "17"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "18"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "19"
+    type: iec-60320-c19
+    power_port: Power
+  - name: "20"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "21"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "22"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "23"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "24"
+    type: iec-60320-c13
+    power_port: Power
+module_bays:
+  - name: IMD
+    description: Interchangeable Monitoring Device
+    bay_position: 0/IMD
+comments: Geist rPDU '[Vertiv Geist rPDU GI10022L] (https://www.vertiv.com/493a8f/globalassets/documents/support/ geist-elo-change-notice-and-legacy-manuals/eol-change-notice/vertiv-powerit-rack-pdu-models-eol-en-na.pdf)'
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Vertiv/MG01D4W1-36PT63-3PS6B2A10-S.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 24b3defca600ea80

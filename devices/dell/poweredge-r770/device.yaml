@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge R770
+slug: poweredge-r770
+category: server
+form_factor: rack
+description: Dell PowerEdge R770 2U Rack Server
+u_height: 2
+full_depth: true
+weight_kg: 32
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: iDRAC
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Front USB Console
+    type: usb-a
+module_bays:
+  - name: PSU-1
+    label: "1"
+    bay_position: PSU-1
+  - name: PSU-2
+    label: "2"
+    bay_position: PSU-2
+  - name: NUMA 0 - OCP slot 1
+    bay_position: OCP-1
+  - name: NUMA 0 - PCIe slot 1 - FH
+    label: "1"
+    bay_position: PCIe-1
+  - name: NUMA 0 - PCIe slot 2 - FH
+    label: "2"
+    bay_position: PCIe-2
+  - name: NUMA 0 - PCIe slot 3 - LP
+    label: "3"
+    bay_position: PCIe-3
+  - name: NUMA 0 - PCIe slot 4 - FH
+    label: "4"
+    bay_position: PCIe-4
+  - name: NUMA 1 - PCIe slot 5 - FH
+    label: "5"
+    bay_position: PCIe-5
+  - name: NUMA 1 - PCIe slot 6 - LP
+    label: "6"
+    bay_position: PCIe-6
+  - name: NUMA 1 - PCIe slot 7 - FH
+    label: "7"
+    bay_position: PCIe-7
+  - name: NUMA 1 - PCIe slot 8 - FH
+    label: "8"
+    bay_position: PCIe-8
+comments: 2U dual-socket server (4th Gen Intel Xeon Scalable / Xeon 6). Up to 32 DDR5 DIMMs, up to 24x 2.5" drive bays. Managed via iDRAC10 (dedicated management Ethernet port). OCP 3.0 slot for network expansion.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-R770.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 18c7a436ec384318

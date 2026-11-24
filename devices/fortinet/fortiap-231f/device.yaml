@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: FortiAP 231F
+slug: fortiap-231f
+category: wireless_access_point
+form_factor: other
+part_numbers:
+  - FAP-231F
+u_height: 0
+full_depth: false
+weight_kg: 0.454
+airflow: passive
+interfaces:
+  - name: lan1-poe
+    type: 1000base-t
+    poe_mode: pd
+    poe_type: type2-ieee802.3at
+  - name: lan2
+    type: 1000base-t
+  - name: radio-1
+    type: ieee802.11n
+  - name: radio-2
+    type: ieee802.11ax
+  - name: radio-3
+    description: Frequency scanning only
+    type: other-wireless
+console_ports:
+  - name: Console
+    type: rj-45
+links:
+  manual: https://docs.fortinet.com/document/fortiap/hardware/fortiap-231f-qsg
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/FAP-231F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 924ecb7d11127978

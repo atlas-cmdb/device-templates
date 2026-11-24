@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: phoenix-contact
+model: FL SWITCH 2214-2SFX
+slug: fl-switch-2214-2sfx
+category: network_switch
+form_factor: other
+part_numbers:
+  - "1044030"
+u_height: 0
+full_depth: false
+weight_kg: 0.472
+airflow: passive
+power:
+  psu_count: 2
+interfaces:
+  - name: xf1
+    type: 100base-tx
+  - name: xf2
+    type: 100base-tx
+  - name: xf3
+    type: 100base-tx
+  - name: xf4
+    type: 100base-tx
+  - name: xf5
+    type: 100base-tx
+  - name: xf6
+    type: 100base-tx
+  - name: xf7
+    type: 100base-tx
+  - name: xf8
+    type: 100base-tx
+  - name: xf9
+    type: 100base-tx
+  - name: xf10
+    type: 100base-tx
+  - name: xf11
+    type: 100base-tx
+  - name: xf12
+    type: 100base-tx
+  - name: xf13
+    type: 100base-tx
+  - name: xf14
+    type: 100base-tx
+  - name: xf15
+    type: 100base-x-sfp
+  - name: xf16
+    type: 100base-x-sfp
+power_ports:
+  - name: US1
+    description: 12-57VDC
+    type: dc-terminal
+    maximum_draw_w: 11
+  - name: US2
+    description: 12-57VDC
+    type: dc-terminal
+    maximum_draw_w: 11
+links:
+  product_page: https://www.phoenixcontact.com/en-us/products/industrial-ethernet-switch-fl-switch-2214-2sfx-pn-1044030
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Phoenix Contact/FL-SWITCH-2214-2SFX.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e5bd5c3cdc5a6d54

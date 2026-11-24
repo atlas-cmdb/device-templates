@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: 10gtek
+model: BCM57810-2S
+slug: bcm57810-2s
+kind: other
+part_numbers:
+  - BCM57810-2S
+interfaces:
+  - name: Ethernet/{module}/1
+    type: 10gbase-x-sfpp
+  - name: Ethernet/{module}/2
+    type: 10gbase-x-sfpp
+links:
+  other:
+    - label: BCM57810-2S
+      url: https://store.10gtek.com/10g-network-card-dual-sfp-port-x8-lane-hp-530-sfp-equivalent-4731/p-20162
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/10GTek/BCM57810-2S.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 1874404dca5830bd

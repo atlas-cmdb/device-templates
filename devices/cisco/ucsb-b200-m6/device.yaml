@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: UCSB-B200-M6
+slug: ucsb-b200-m6
+category: compute_blade
+form_factor: blade
+part_numbers:
+  - UCSB-B200-M6
+u_height: 0
+full_depth: true
+subdevice_role: child
+weight_kg: 4.57
+airflow: front-to-rear
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/datasheet-c78-2368888.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/UCSB-B200-M6.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 6690632c88223c33

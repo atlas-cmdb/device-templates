@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ibm
+model: SAN Volume Controller 2145-SV2
+slug: san-volume-controller-2145-sv2
+category: server
+form_factor: rack
+description: IBM SAN Volume Controller 2145-SV2
+part_numbers:
+  - 2145-SV2
+u_height: 2
+full_depth: true
+weight_kg: 30
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Ethernet1
+    type: 10gbase-t
+  - name: Ethernet2
+    type: 10gbase-t
+  - name: Ethernet3
+    type: 10gbase-t
+  - name: Ethernet4
+    type: 10gbase-t
+module_bays:
+  - name: Adapter 1
+    description: Slot 1 for Host Interface cards
+    bay_position: Adapter 1
+  - name: Adapter 2
+    description: Slot 2 for Host Interface cards
+    bay_position: Adapter 2
+  - name: Adapter 3
+    description: Slot 3 for Host Interface cards
+    bay_position: Adapter 3
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+links:
+  datasheet: https://www.ibm.com/docs/en/sanvolumecontroller/8.6.0?topic=pip-san-volume-controller-2145-sv2-2145-sa2-environment-requirements
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/IBM/SAN-Volume-Controller-2145-SV2.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e6a66adecbb5585c

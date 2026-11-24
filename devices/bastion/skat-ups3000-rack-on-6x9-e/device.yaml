@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: bastion
+model: SKAT-UPS3000-RACK-ON-6x9-E
+slug: skat-ups3000-rack-on-6x9-e
+category: ups
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 27.6
+airflow: front-to-rear
+power:
+  outlet_count: 9
+  psu_count: 1
+console_ports:
+  - name: Serial
+    type: de-9
+  - name: USB
+    type: usb-b
+power_ports:
+  - name: Input
+    type: iec-60320-c20
+    maximum_draw_w: 3600
+power_outlets:
+  - name: Segment1_1
+    type: iec-60320-c13
+    power_port: Input
+  - name: Segment1_2
+    type: iec-60320-c13
+    power_port: Input
+  - name: Segment1_3
+    type: iec-60320-c13
+    power_port: Input
+  - name: Segment1_4
+    type: iec-60320-c13
+    power_port: Input
+  - name: Segment2_1
+    type: iec-60320-c13
+    power_port: Input
+  - name: Segment2_2
+    type: iec-60320-c13
+    power_port: Input
+  - name: Segment2_3
+    type: iec-60320-c13
+    power_port: Input
+  - name: Segment2_4
+    type: iec-60320-c13
+    power_port: Input
+  - name: High
+    type: iec-60320-c19
+    power_port: Input
+module_bays:
+  - name: IntelligentSlot
+    bay_position: Rear
+links:
+  other:
+    - label: Quickspecs
+      url: https://bast.ru/ups/skat-ups-3000-rack-on-6x9
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Bastion/SKAT-UPS3000-RACK-ON-6x9-E.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 07446193dc83cddf

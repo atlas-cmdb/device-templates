@@ -1,0 +1,158 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Aruba 2930M-48G
+slug: aruba-2930m-48g
+category: network_switch
+form_factor: rack
+part_numbers:
+  - JL321A
+u_height: 1
+full_depth: false
+weight_kg: 4.599
+power:
+  psu_count: 2
+interfaces:
+  - name: oobm
+    description: Out of Band Management (oobm) interface
+    type: 100base-tx
+    mgmt_only: true
+  - name: "1"
+    type: 1000base-t
+  - name: "2"
+    type: 1000base-t
+  - name: "3"
+    type: 1000base-t
+  - name: "4"
+    type: 1000base-t
+  - name: "5"
+    type: 1000base-t
+  - name: "6"
+    type: 1000base-t
+  - name: "7"
+    type: 1000base-t
+  - name: "8"
+    type: 1000base-t
+  - name: "9"
+    type: 1000base-t
+  - name: "10"
+    type: 1000base-t
+  - name: "11"
+    type: 1000base-t
+  - name: "12"
+    type: 1000base-t
+  - name: "13"
+    type: 1000base-t
+  - name: "14"
+    type: 1000base-t
+  - name: "15"
+    type: 1000base-t
+  - name: "16"
+    type: 1000base-t
+  - name: "17"
+    type: 1000base-t
+  - name: "18"
+    type: 1000base-t
+  - name: "19"
+    type: 1000base-t
+  - name: "20"
+    type: 1000base-t
+  - name: "21"
+    type: 1000base-t
+  - name: "22"
+    type: 1000base-t
+  - name: "23"
+    type: 1000base-t
+  - name: "24"
+    type: 1000base-t
+  - name: "25"
+    type: 1000base-t
+  - name: "26"
+    type: 1000base-t
+  - name: "27"
+    type: 1000base-t
+  - name: "28"
+    type: 1000base-t
+  - name: "29"
+    type: 1000base-t
+  - name: "30"
+    type: 1000base-t
+  - name: "31"
+    type: 1000base-t
+  - name: "32"
+    type: 1000base-t
+  - name: "33"
+    type: 1000base-t
+  - name: "34"
+    type: 1000base-t
+  - name: "35"
+    type: 1000base-t
+  - name: "36"
+    type: 1000base-t
+  - name: "37"
+    type: 1000base-t
+  - name: "38"
+    type: 1000base-t
+  - name: "39"
+    type: 1000base-t
+  - name: "40"
+    type: 1000base-t
+  - name: "41"
+    type: 1000base-t
+  - name: "42"
+    type: 1000base-t
+  - name: "43"
+    type: 1000base-t
+  - name: "44"
+    type: 1000base-t
+  - name: "45"
+    type: 1000base-t
+  - name: "46"
+    type: 1000base-t
+  - name: "47"
+    type: 1000base-t
+  - name: "48"
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: USB Console
+    type: usb-micro-b
+module_bays:
+  - name: Uplink
+    bay_position: A
+  - name: Stacking Module
+    bay_position: Stack
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.hpe.com/psnow/doc/PSN1009875168USEN.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Aruba-2930M-48G.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 23bcab36bde7b7ea

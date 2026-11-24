@@ -1,0 +1,55 @@
+name: "📷 Add or replace photos"
+description: Contribute front/rear photos for a device that is already in the library. Photos make rack elevations and the 3D/VR view look real.
+title: "[Photos]: <manufacturer>/<model>"
+labels: ["photos", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Find the device in the [catalog](https://atlas-cmdb.github.io/device-templates/) and copy its **id** (looks like `dell/poweredge-r650`).
+        Please follow the [photo guidelines](https://github.com/atlas-cmdb/device-templates/blob/main/docs/photography.md): straight-on, cropped to the faceplate without rack ears, sharp, no strong reflections. Phone photos are fine; we convert and resize them.
+  - type: input
+    id: device_id
+    attributes:
+      label: Device id
+      placeholder: dell/poweredge-r650
+    validations:
+      required: true
+  - type: textarea
+    id: front_image
+    attributes:
+      label: Front photo
+      description: Drag & drop one image.
+  - type: textarea
+    id: rear_image
+    attributes:
+      label: Rear photo
+      description: Drag & drop one image.
+  - type: textarea
+    id: interior_image
+    attributes:
+      label: Interior photo (lid off)
+      description: Top-down, straight on, front of the server at the bottom of the photo, cropped to the chassis. Shows DIMMs, CPUs, fans, PSUs.
+  - type: textarea
+    id: gallery
+    attributes:
+      label: More photos
+      description: Up to 12 extra photos (angled shots, port close-ups, internals). Add a caption on the line above each image if you like.
+  - type: input
+    id: vendor_media
+    attributes:
+      label: Vendor 3D / 360° viewer link
+      description: Does the manufacturer's site have a 3D, 360° or AR viewer for this model? Paste the page URL. We only link to it; we never copy vendor media.
+      placeholder: https://www.dell.com/.../poweredge-r750
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Configuration shown (e.g. 8x 2.5" bays, bezel removed) or anything else to know about the photos.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Rights
+      options:
+        - label: I took these photos myself and dedicate them to the public domain under CC0 1.0 (credit is still given in the template).
+          required: true

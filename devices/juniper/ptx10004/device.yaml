@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: juniper
+model: PTX10004
+slug: ptx10004
+category: router
+form_factor: rack
+part_numbers:
+  - PTX10004
+u_height: 7
+full_depth: true
+weight_kg: 117
+airflow: front-to-rear
+power:
+  psu_count: 3
+module_bays:
+  - name: Power Supply 0
+    bay_position: PSU 0
+  - name: Power Supply 1
+    bay_position: PSU 1
+  - name: Power Supply 2
+    bay_position: PSU 2
+  - name: Fan tray 0
+    bay_position: Fan 0
+  - name: Fan tray 1
+    bay_position: Fan 1
+  - name: RE 0
+    bay_position: CB0
+  - name: RE 1
+    bay_position: CB1
+  - name: Line Card 0
+    bay_position: LC0
+  - name: Line Card 1
+    bay_position: LC1
+  - name: Line Card 2
+    bay_position: LC2
+  - name: Line Card 3
+    bay_position: LC3
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.juniper.net/assets/us/en/local/pdf/datasheets/1000617-en.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Juniper/PTX10004.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: cb0b03f9d094014a

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://atlas-cmdb.github.io/device-templates/schema/module.schema.json",
+  "title": "Module template",
+  "description": "A field-replaceable part installed in a device's module bay: PSU, NIC, line card, fan tray, transceiver. modules/<manufacturer>/<slug>/module.yaml",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["manufacturer", "model", "slug", "kind"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "manufacturer": { "$ref": "device.schema.json#/$defs/slug" },
+    "model": { "type": "string", "minLength": 1 },
+    "slug": { "$ref": "device.schema.json#/$defs/slug" },
+    "kind": { "enum": ["psu", "fan", "nic", "line_card", "supervisor", "transceiver", "controller", "storage", "gpu", "battery", "management", "other"] },
+    "description": { "type": "string" },
+    "part_numbers": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "weight_kg": { "$ref": "device.schema.json#/$defs/positive" },
+    "airflow": { "$ref": "device.schema.json#/$defs/airflow" },
+    "power": { "$ref": "device.schema.json#/$defs/power" },
+    "interfaces": { "type": "array", "items": { "$ref": "device.schema.json#/$defs/interface" } },
+    "console_ports": { "type": "array", "items": { "$ref": "device.schema.json#/$defs/port" } },
+    "power_ports": { "type": "array", "items": { "$ref": "device.schema.json#/$defs/power_port" } },
+    "power_outlets": { "type": "array", "items": { "$ref": "device.schema.json#/$defs/power_outlet" } },
+    "front_ports": { "type": "array", "items": { "$ref": "device.schema.json#/$defs/pass_through_port" } },
+    "rear_ports": { "type": "array", "items": { "$ref": "device.schema.json#/$defs/pass_through_port" } },
+    "module_bays": { "type": "array", "items": { "$ref": "device.schema.json#/$defs/bay" } },
+    "images": { "$ref": "device.schema.json#/$defs/images" },
+    "links": { "$ref": "device.schema.json#/properties/links" },
+    "comments": { "type": "string" },
+    "verified": { "type": "boolean" },
+    "source": { "$ref": "device.schema.json#/$defs/source" }
+  }
+}

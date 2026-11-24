@@ -1,0 +1,199 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: commscope
+model: G2-SP-24LCG-PT
+slug: g2-sp-24lcg-pt
+kind: other
+description: G2 Splice Cassette, 24LC/UPC with internal shutters, OS2, with pigtails
+part_numbers:
+  - "760167874"
+front_ports:
+  - name: "{module}:1"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:1"
+    rear_port_position: 1
+  - name: "{module}:2"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:2"
+    rear_port_position: 1
+  - name: "{module}:3"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:3"
+    rear_port_position: 1
+  - name: "{module}:4"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:4"
+    rear_port_position: 1
+  - name: "{module}:5"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:5"
+    rear_port_position: 1
+  - name: "{module}:6"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:6"
+    rear_port_position: 1
+  - name: "{module}:7"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:7"
+    rear_port_position: 1
+  - name: "{module}:8"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:8"
+    rear_port_position: 1
+  - name: "{module}:9"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:9"
+    rear_port_position: 1
+  - name: "{module}:10"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:10"
+    rear_port_position: 1
+  - name: "{module}:11"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:11"
+    rear_port_position: 1
+  - name: "{module}:12"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:12"
+    rear_port_position: 1
+  - name: "{module}:13"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:13"
+    rear_port_position: 1
+  - name: "{module}:14"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:14"
+    rear_port_position: 1
+  - name: "{module}:15"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:15"
+    rear_port_position: 1
+  - name: "{module}:16"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:16"
+    rear_port_position: 1
+  - name: "{module}:17"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:17"
+    rear_port_position: 1
+  - name: "{module}:18"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:18"
+    rear_port_position: 1
+  - name: "{module}:19"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:19"
+    rear_port_position: 1
+  - name: "{module}:20"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:20"
+    rear_port_position: 1
+  - name: "{module}:21"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:21"
+    rear_port_position: 1
+  - name: "{module}:22"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:22"
+    rear_port_position: 1
+  - name: "{module}:23"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:23"
+    rear_port_position: 1
+  - name: "{module}:24"
+    type: lc-upc
+    color: 2196f3
+    rear_port: "{module}:24"
+    rear_port_position: 1
+rear_ports:
+  - name: "{module}:1"
+    type: splice
+  - name: "{module}:2"
+    type: splice
+  - name: "{module}:3"
+    type: splice
+  - name: "{module}:4"
+    type: splice
+  - name: "{module}:5"
+    type: splice
+  - name: "{module}:6"
+    type: splice
+  - name: "{module}:7"
+    type: splice
+  - name: "{module}:8"
+    type: splice
+  - name: "{module}:9"
+    type: splice
+  - name: "{module}:10"
+    type: splice
+  - name: "{module}:11"
+    type: splice
+  - name: "{module}:12"
+    type: splice
+  - name: "{module}:13"
+    type: splice
+  - name: "{module}:14"
+    type: splice
+  - name: "{module}:15"
+    type: splice
+  - name: "{module}:16"
+    type: splice
+  - name: "{module}:17"
+    type: splice
+  - name: "{module}:18"
+    type: splice
+  - name: "{module}:19"
+    type: splice
+  - name: "{module}:20"
+    type: splice
+  - name: "{module}:21"
+    type: splice
+  - name: "{module}:22"
+    type: splice
+  - name: "{module}:23"
+    type: splice
+  - name: "{module}:24"
+    type: splice
+links:
+  product_page: https://www.commscope.com/product-type/cabinets-panels-enclosures/fiber-panels-cassettes/fiber-cassettes/item760244929/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Commscope/G2-SP-24LCG-PT.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - front_ports
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: 08e03ab7f47517c3

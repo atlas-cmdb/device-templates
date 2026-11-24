@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: yeastar
+model: P550
+slug: p550
+category: network_switch
+form_factor: rack
+part_numbers:
+  - YST-P550
+u_height: 1
+full_depth: false
+weight_kg: 1.6
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: WAN
+    description: Wide Area Network / Primary Uplink
+    type: 1000base-t
+  - name: LAN
+    description: Local Area Network
+    type: 1000base-t
+  - name: Port 1
+    description: Analog/ISDN Port 1 (RJ-11)
+    type: other
+  - name: Port 2
+    description: Analog/ISDN Port 2 (RJ-11)
+    type: other
+  - name: Port 3
+    description: Analog/ISDN Port 3 (RJ-11)
+    type: other
+  - name: Port 4
+    description: Analog/ISDN Port 4 (RJ-11)
+    type: other
+  - name: Port 5
+    description: Analog/ISDN Port 5 (RJ-11)
+    type: other
+  - name: Port 6
+    description: Analog/ISDN Port 6 (RJ-11)
+    type: other
+  - name: Port 7
+    description: Analog/ISDN Port 7 (RJ-11)
+    type: other
+  - name: Port 8
+    description: Analog/ISDN Port 8 (RJ-11)
+    type: other
+power_ports:
+  - name: AC Power
+    type: iec-60320-c14
+    maximum_draw_w: 50
+comments: Yeastar P-Series Appliance Edition VoIP PBX Phone System. Base model supports up to 50 users and 25 concurrent calls.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Yeastar/P550.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: b0b3bd9f05f88f34

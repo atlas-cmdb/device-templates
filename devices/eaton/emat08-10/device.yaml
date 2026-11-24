@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eaton
+model: EMAT08-10
+slug: emat08-10
+category: pdu
+form_factor: rack
+part_numbers:
+  - "743172082657"
+u_height: 1
+full_depth: false
+weight_kg: 3.13
+airflow: passive
+power:
+  outlet_count: 8
+interfaces:
+  - name: Network
+    type: 1000base-t
+    mgmt_only: true
+  - name: Daisy Chain
+    type: 1000base-t
+    mgmt_only: true
+  - name: Bridge 0
+    type: bridge
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: rj-45
+  - name: USB management
+    type: usb-a
+power_ports:
+  - name: Power Port 1
+    type: nema-5-15p
+power_outlets:
+  - name: A1
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: A2
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: A3
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: A4
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: A5
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: A6
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: A7
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: A8
+    type: nema-5-15r
+    power_port: Power Port 1
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eaton/EMAT08-10.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: c6f8478ff5cd06ae

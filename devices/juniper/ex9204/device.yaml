@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: juniper
+model: EX9204
+slug: ex9204
+category: network_switch
+form_factor: rack
+u_height: 5
+full_depth: true
+weight_kg: 31
+airflow: right-to-left
+power:
+  psu_count: 4
+module_bays:
+  - name: SF0
+    bay_position: "0"
+  - name: SF1/LC0
+    bay_position: 1|0
+  - name: LC1
+    bay_position: "1"
+  - name: LC2
+    bay_position: "2"
+  - name: PSU0
+    bay_position: "0"
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+  - name: PSU3
+    bay_position: "3"
+links:
+  datasheet: https://www.juniper.net/us/en/local/pdf/datasheets/1000432-en.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Juniper/EX9204.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 6104840a9b4427ff

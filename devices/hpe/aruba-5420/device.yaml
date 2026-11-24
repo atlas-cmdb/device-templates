@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Aruba 5420
+slug: aruba-5420
+category: network_switch
+form_factor: rack
+part_numbers:
+  - S0U60A
+u_height: 4
+full_depth: false
+weight_kg: 12.1
+airflow: front-to-rear
+power:
+  psu_count: 4
+module_bays:
+  - name: "1"
+    bay_position: "1"
+  - name: "2"
+    bay_position: "2"
+  - name: "3"
+    bay_position: "3"
+  - name: "4"
+    bay_position: "4"
+  - name: "5"
+    bay_position: "5"
+  - name: "6"
+    bay_position: "6"
+  - name: "7"
+    bay_position: "7"
+  - name: "8"
+    bay_position: "8"
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+  - name: PS3
+    bay_position: "3"
+  - name: PS4
+    bay_position: "4"
+  - name: Fan1
+    bay_position: "1"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  other:
+    - label: HPE Aruba 5420 Switch
+      url: https://buy.hpe.com/de/de/networking/switches/fixed-port-l3-managed-ethernet-switches/networking-cx-switch-series/hpe-aruba-networking-cx-5420-6%E2%80%91slot%E2%80%91chassis/p/s0u60a
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Aruba-5420.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 36f398d4229d9d22

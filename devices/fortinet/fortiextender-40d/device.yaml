@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: FortiExtender 40D
+slug: fortiextender-40d
+category: router
+form_factor: other
+part_numbers:
+  - FEX-40D
+u_height: 0
+full_depth: false
+weight_kg: 0.376
+power:
+  psu_count: 1
+interfaces:
+  - name: port1
+    type: 1000base-t
+  - name: LTE
+    type: lte
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: dc-terminal
+comments: Built in LTE modem (2 antenna), PoE-capable, Wall-mount.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/FEX-40D.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: db848276bb303b75

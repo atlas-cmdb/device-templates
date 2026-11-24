@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../../schema/rack.schema.json
+manufacturer: cyberpower
+model: CR45U40001
+slug: cr45u40001
+form_factor: 4-post-frame
+description: CyberPower Open Frame Rack 45U
+u_height: 45
+starting_unit: 1
+rack_width: 19
+outer_width_mm: 600
+outer_height_mm: 2104
+outer_depth_mm: 1049
+mounting_depth_mm: 1016
+weight_kg: 800
+max_load_kg: 36
+links:
+  product_page: https://www.cyberpower.com/global/en/product/sku/cr45u40001
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: rack-types/CyberPower/CR45U40001.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - description
+    - links.product_page
+    - manufacturer
+    - max_load_kg
+    - model
+    - mounting_depth_mm
+    - outer_depth_mm
+    - outer_height_mm
+    - outer_width_mm
+    - rack_width
+    - slug
+    - starting_unit
+    - u_height
+    - weight_kg
+  import_hash: 2c2b58cda4d05958

@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Virtual Connect SE 40Gb F8 Module for Synergy
+slug: virtual-connect-se-40gb-f8-module-for-synergy
+category: network_switch
+form_factor: blade
+part_numbers:
+  - 794502-B23
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 5
+interfaces:
+  - name: interconnect {module}, L1
+    description: CXP (120 Gb/s Interconnect Link)
+    type: other
+  - name: interconnect {module}, L2
+    description: CXP (120 Gb/s Interconnect Link)
+    type: other
+  - name: interconnect {module}, L3
+    description: CXP (120 Gb/s Interconnect Link)
+    type: other
+  - name: interconnect {module}, L4
+    description: CXP (120 Gb/s Interconnect Link)
+    type: other
+  - name: interconnect {module}, Q1
+    type: 40gbase-x-qsfpp
+  - name: interconnect {module}, Q2
+    type: 40gbase-x-qsfpp
+  - name: interconnect {module}, Q3
+    type: 40gbase-x-qsfpp
+  - name: interconnect {module}, Q4
+    type: 40gbase-x-qsfpp
+  - name: interconnect {module}, Q5
+    type: 40gbase-x-qsfpp
+  - name: interconnect {module}, Q6
+    type: 40gbase-x-qsfpp
+  - name: interconnect {module}, Q7
+    description: ICM Clustering or Uplink
+    type: 40gbase-x-qsfpp
+  - name: interconnect {module}, Q8
+    description: ICM Clustring or Uplink
+    type: 40gbase-x-qsfpp
+links:
+  other:
+    - label: QuickSpecs
+      url: https://www.hpe.com/psnow/doc/c04815258
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Virtual-Connect-SE-40Gb-F8-Module-for-Synergy.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 7498fa7104c4ce39

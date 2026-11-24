@@ -1,0 +1,30 @@
+{
+	"name": "@atlas-cmdb/device-templates",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Open library of data center device templates (servers, switches, PDUs, UPSes, ...) with front/rear images for DCIM rack elevations and 3D/VR views.",
+	"license": "(CC0-1.0 AND MIT)",
+	"type": "module",
+	"engines": {
+		"node": ">=20"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/atlas-cmdb/device-templates.git"
+	},
+	"scripts": {
+		"validate": "node scripts/validate.mjs",
+		"build": "node scripts/build.mjs",
+		"new": "node scripts/new-device.mjs",
+		"images": "node scripts/optimize-images.mjs",
+		"import:netbox": "node scripts/import-netbox.mjs",
+		"import:opendcim": "node scripts/import-opendcim.mjs",
+		"test": "node scripts/validate.mjs && node scripts/build.mjs --out dist"
+	},
+	"devDependencies": {
+		"ajv": "^8.17.1",
+		"ajv-formats": "^3.0.1",
+		"sharp": "^0.35.5",
+		"yaml": "^2.8.1"
+	}
+}

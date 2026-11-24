@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: U6 Enterprise
+slug: u6-enterprise
+category: wireless_access_point
+form_factor: other
+part_numbers:
+  - U6-Enterprise
+u_height: 0
+full_depth: false
+weight_kg: 0.96
+airflow: passive
+interfaces:
+  - name: eth0
+    type: 2.5gbase-t
+    poe_mode: pd
+    poe_type: type2-ieee802.3at
+  - name: wlan0
+    type: ieee802.11ax
+  - name: wlan1
+    type: ieee802.11ax
+  - name: wlan2
+    type: ieee802.11ax
+links:
+  product_page: https://store.ui.com/products/u6-enterprise
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/U6-Enterprise.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1621eeb76a449d9e

@@ -1,0 +1,267 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: juniper
+model: MX2020-AC
+slug: mx2020-ac
+category: router
+form_factor: rack
+part_numbers:
+  - MX2020
+u_height: 45
+full_depth: true
+subdevice_role: parent
+weight_kg: 680.39
+airflow: front-to-rear
+module_bays:
+  - name: FPC10
+    label: FPC Slot 10
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 10
+    bay_position: "10"
+  - name: FPC11
+    label: FPC Slot 11
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 11
+    bay_position: "11"
+  - name: FPC12
+    label: FPC Slot 12
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 12
+    bay_position: "12"
+  - name: FPC13
+    label: FPC Slot 13
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 13
+    bay_position: "13"
+  - name: FPC14
+    label: FPC Slot 14
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 14
+    bay_position: "14"
+  - name: FPC15
+    label: FPC Slot 15
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 15
+    bay_position: "15"
+  - name: FPC16
+    label: FPC Slot 16
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 16
+    bay_position: "16"
+  - name: FPC17
+    label: FPC Slot 17
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 17
+    bay_position: "17"
+  - name: FPC18
+    label: FPC Slot 18
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 18
+    bay_position: "18"
+  - name: FPC19
+    label: FPC Slot 19
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 19
+    bay_position: "19"
+  - name: SFB0
+    label: Switch Fabric Board 0
+    description: Front Switch Fabric Board 0
+    bay_position: "0"
+  - name: SFB1
+    label: Switch Fabric Board 1
+    description: Front Switch Fabric Board 1
+    bay_position: "1"
+  - name: SFB2
+    label: Switch Fabric Board 2
+    description: Front Switch Fabric Board 2
+    bay_position: "2"
+  - name: SFB3
+    label: Switch Fabric Board 3
+    description: Front Switch Fabric Board 3
+    bay_position: "3"
+  - name: SFB4
+    label: Switch Fabric Board 4
+    description: Front Switch Fabric Board 4
+    bay_position: "4"
+  - name: SFB5
+    label: Switch Fabric Board 5
+    description: Front Switch Fabric Board 5
+    bay_position: "5"
+  - name: SFB6
+    label: Switch Fabric Board 6
+    description: Front Switch Fabric Board 6
+    bay_position: "6"
+  - name: SFB7
+    label: Switch Fabric Board 7
+    description: Front Switch Fabric Board 7
+    bay_position: "7"
+  - name: CB-RE0
+    label: Control Board and Routing Engine 0
+    description: Front Control Board and Routing Engine 0
+    bay_position: "0"
+  - name: CB-RE1
+    label: Control Board and Routing Engine 1
+    description: Front Control Board and Routing Engine 1
+    bay_position: "1"
+  - name: FPC0
+    label: FPC Slot 0
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 0
+    bay_position: "0"
+  - name: FPC1
+    label: FPC Slot 1
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 1
+    bay_position: "1"
+  - name: FPC2
+    label: FPC Slot 2
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 2
+    bay_position: "2"
+  - name: FPC3
+    label: FPC Slot 3
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 3
+    bay_position: "3"
+  - name: FPC4
+    label: FPC Slot 4
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 4
+    bay_position: "4"
+  - name: FPC5
+    label: FPC Slot 5
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 5
+    bay_position: "5"
+  - name: FPC6
+    label: FPC Slot 6
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 6
+    bay_position: "6"
+  - name: FPC7
+    label: FPC Slot 7
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 7
+    bay_position: "7"
+  - name: FPC8
+    label: FPC Slot 8
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 8
+    bay_position: "8"
+  - name: FPC9
+    label: FPC Slot 9
+    description: Modular Port Concentrators/Flexible PIC Concentrator Slot 9
+    bay_position: "9"
+  - name: FT2
+    label: Fan Tray 2
+    description: Rear Fan Tray 2
+    bay_position: "2"
+  - name: FT3
+    label: Fan Tray 3
+    description: Rear Fan Tray 3
+    bay_position: "3"
+  - name: PDM3
+    label: Power Distribution Module 3
+    description: Rear Power Distribution Module 3
+    bay_position: "3"
+  - name: PSM9
+    label: Power Supply Module 9
+    description: Rear Power Supply Module 9
+    bay_position: "9"
+  - name: PSM10
+    label: Power Supply Module 10
+    description: Rear Power Supply Module 10
+    bay_position: "10"
+  - name: PSM11
+    label: Power Supply Module 11
+    description: Rear Power Supply Module 11
+    bay_position: "11"
+  - name: PSM12
+    label: Power Supply Module 12
+    description: Rear Power Supply Module 12
+    bay_position: "12"
+  - name: PSM13
+    label: Power Supply Module 13
+    description: Rear Power Supply Module 13
+    bay_position: "13"
+  - name: PSM14
+    label: Power Supply Module 14
+    description: Rear Power Supply Module 14
+    bay_position: "14"
+  - name: PSM15
+    label: Power Supply Module 15
+    description: Rear Power Supply Module 15
+    bay_position: "15"
+  - name: PSM16
+    label: Power Supply Module 16
+    description: Rear Power Supply Module 16
+    bay_position: "16"
+  - name: PSM17
+    label: Power Supply Module 17
+    description: Rear Power Supply Module 17
+    bay_position: "17"
+  - name: PDM2
+    label: Power Distribution Module 2
+    description: Rear Power Distribution Module 2
+    bay_position: "2"
+  - name: PDM1
+    label: Power Distribution Module 1
+    description: Rear Power Distribution Module 1
+    bay_position: "1"
+  - name: PSM0
+    label: Power Supply Module 0
+    description: Rear Power Supply Module 0
+    bay_position: "0"
+  - name: PSM1
+    label: Power Supply Module 1
+    description: Rear Power Supply Module 1
+    bay_position: "1"
+  - name: PSM2
+    label: Power Supply Module 2
+    description: Rear Power Supply Module 2
+    bay_position: "2"
+  - name: PSM3
+    label: Power Supply Module 3
+    description: Rear Power Supply Module 3
+    bay_position: "3"
+  - name: PSM4
+    label: Power Supply Module 4
+    description: Rear Power Supply Module 4
+    bay_position: "4"
+  - name: PSM5
+    label: Power Supply Module 5
+    description: Rear Power Supply Module 5
+    bay_position: "5"
+  - name: PSM6
+    label: Power Supply Module 6
+    description: Rear Power Supply Module 6
+    bay_position: "6"
+  - name: PSM7
+    label: Power Supply Module 7
+    description: Rear Power Supply Module 7
+    bay_position: "7"
+  - name: PSM8
+    label: Power Supply Module 8
+    description: Rear Power Supply Module 8
+    bay_position: "8"
+  - name: PDM0
+    label: Power Distribution Module 0
+    description: Rear Power Distribution Module 0
+    bay_position: "0"
+  - name: FT0
+    label: Fan Tray 0
+    description: Rear Fan Tray 0
+    bay_position: "0"
+  - name: FT1
+    label: Fan Tray 1
+    description: Rear Fan Tray 1
+    bay_position: "1"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.juniper.net/us/en/products-services/routing/mx-series/mx2020/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Juniper/MX2020-AC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 24c139396acab4c3

@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: tp-link
+model: TL-SG1005P-PD
+slug: tl-sg1005p-pd
+category: network_switch
+form_factor: other
+description: 5-Port Gigabit Desktop PoE+ Switch with 1-Port PoE++ In and 4-Port PoE+Out
+part_numbers:
+  - "840030705700"
+u_height: 0
+full_depth: false
+weight_kg: 0.349
+airflow: passive
+interfaces:
+  - name: Port 1
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 2
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 3
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 4
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 5
+    description: PoE IN
+    type: 1000base-t
+    poe_mode: pd
+    poe_type: type3-ieee802.3bt
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  other:
+    - label: TL-SG1005P-PD
+      url: https://www.tp-link.com/us/business-networking/soho-switch-unmanaged/tl-sg1005p-pd/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/TP-Link/TL-SG1005P-PD.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 5b80088fab28c047

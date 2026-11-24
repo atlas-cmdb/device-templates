@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: zyxel
+model: XGS1250-12
+slug: xgs1250-12
+category: firewall
+form_factor: other
+u_height: 0
+full_depth: false
+weight_kg: 0.783
+airflow: side-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: GigabitEthernet/1
+    type: 1000base-t
+  - name: GigabitEthernet/2
+    type: 1000base-t
+  - name: GigabitEthernet/3
+    type: 1000base-t
+  - name: GigabitEthernet/4
+    type: 1000base-t
+  - name: GigabitEthernet/5
+    type: 1000base-t
+  - name: GigabitEthernet/6
+    type: 1000base-t
+  - name: GigabitEthernet/7
+    type: 1000base-t
+  - name: GigabitEthernet/8
+    type: 1000base-t
+  - name: TenGigabitEthernet/9
+    type: 10gbase-t
+  - name: TenGigabitEthernet/10
+    type: 10gbase-t
+  - name: TenGigabitEthernet/11
+    type: 10gbase-t
+  - name: TenGigabitSfpPlus/12
+    type: 10gbase-x-sfpp
+power_ports:
+  - name: PS
+    type: dc-terminal
+    maximum_draw_w: 22
+links:
+  datasheet: https://www.zyxel.com/global/en/products/switch/12-port-web-managed-multi-gigabit-switch-includes-3-port-10g-and-1-port-10g-sfp-xgs1250-12/specifications
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Zyxel/XGS1250-12.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 72e97b8c9da92107

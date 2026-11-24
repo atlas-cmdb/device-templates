@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eltex
+model: ESR-200
+slug: esr-200
+category: network_switch
+form_factor: rack
+part_numbers:
+  - ESR-200
+u_height: 1
+full_depth: false
+weight_kg: 2.5
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: gi1/0/1
+    type: 1000base-t
+  - name: gi1/0/2
+    type: 1000base-t
+  - name: gi1/0/3
+    description: comboport 1000BASE-T / 1000BASE-X
+    type: 1000base-t
+  - name: gi1/0/4
+    description: comboport 1000BASE-T / 1000BASE-X
+    type: 1000base-t
+  - name: gi1/0/5
+    description: 1000base-t
+    type: 1000base-t
+  - name: gi1/0/6
+    description: 1000base-t
+    type: 1000base-t
+  - name: gi1/0/7
+    description: comboport 1000BASE-T / 1000BASE-X
+    type: 1000base-t
+  - name: gi1/0/8
+    description: comboport 1000BASE-T / 1000BASE-X
+    type: 1000base-t
+console_ports:
+  - name: console01
+    type: rj-45
+power_ports:
+  - name: PSU#1
+    type: iec-60320-c14
+    maximum_draw_w: 25
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eltex/esr-200.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 0b77250df7aa7417

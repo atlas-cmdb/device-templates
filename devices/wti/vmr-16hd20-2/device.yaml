@@ -1,0 +1,107 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: wti
+model: VMR-16HD20-2
+slug: vmr-16hd20-2
+category: pdu
+form_factor: rack
+part_numbers:
+  - VMR-16HD20-2
+u_height: 2
+full_depth: false
+airflow: passive
+power:
+  outlet_count: 16
+interfaces:
+  - name: ETH0
+    type: 1000base-t
+console_server_ports:
+  - name: port1
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c20
+    maximum_draw_w: 10
+    allocated_draw_w: 5
+  - name: PS2
+    type: iec-60320-c20
+    maximum_draw_w: 10
+    allocated_draw_w: 5
+power_outlets:
+  - name: Outlet_A1
+    type: iec-60320-c13
+    power_port: PS1
+  - name: Outlet_A2
+    type: iec-60320-c13
+    power_port: PS1
+  - name: Outlet_A3
+    type: iec-60320-c13
+    power_port: PS1
+  - name: Outlet_A4
+    type: iec-60320-c13
+    power_port: PS1
+  - name: Outlet_A5
+    type: iec-60320-c13
+    power_port: PS1
+  - name: Outlet_A6
+    type: iec-60320-c13
+    power_port: PS1
+  - name: Outlet_A7
+    type: iec-60320-c13
+    power_port: PS1
+  - name: Outlet_A8
+    type: iec-60320-c13
+    power_port: PS1
+  - name: Outlet_B1
+    type: iec-60320-c13
+    power_port: PS2
+  - name: Outlet_B2
+    type: iec-60320-c13
+    power_port: PS2
+  - name: Outlet_B3
+    type: iec-60320-c13
+    power_port: PS2
+  - name: Outlet_B4
+    type: iec-60320-c13
+    power_port: PS2
+  - name: Outlet_B5
+    type: iec-60320-c13
+    power_port: PS2
+  - name: Outlet_B6
+    type: iec-60320-c13
+    power_port: PS2
+  - name: Outlet_B7
+    type: iec-60320-c13
+    power_port: PS2
+  - name: Outlet_B8
+    type: iec-60320-c13
+    power_port: PS2
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/WTI/VMR-16HD20-2.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_server_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 95c8f69fc2c37014

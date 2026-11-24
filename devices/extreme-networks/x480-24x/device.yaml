@@ -1,0 +1,121 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: extreme-networks
+model: X480-24x
+slug: x480-24x
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 9.5
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: "1"
+    type: 1000base-x-sfp
+  - name: "2"
+    type: 1000base-x-sfp
+  - name: "3"
+    type: 1000base-x-sfp
+  - name: "4"
+    type: 1000base-x-sfp
+  - name: "5"
+    type: 1000base-x-sfp
+  - name: "6"
+    type: 1000base-x-sfp
+  - name: "7"
+    type: 1000base-x-sfp
+  - name: "8"
+    type: 1000base-x-sfp
+  - name: "9"
+    type: 1000base-x-sfp
+  - name: "10"
+    type: 1000base-x-sfp
+  - name: "11"
+    type: 1000base-x-sfp
+  - name: "12"
+    type: 1000base-x-sfp
+  - name: "13"
+    type: 1000base-x-sfp
+  - name: "14"
+    type: 1000base-x-sfp
+  - name: "15"
+    type: 1000base-x-sfp
+  - name: "16"
+    type: 1000base-x-sfp
+  - name: "17"
+    type: 1000base-x-sfp
+  - name: "18"
+    type: 1000base-x-sfp
+  - name: "19"
+    type: 1000base-x-sfp
+  - name: "20"
+    type: 1000base-x-sfp
+  - name: "21"
+    type: 1000base-x-sfp
+  - name: "22"
+    type: 1000base-x-sfp
+  - name: "23"
+    type: 1000base-x-sfp
+  - name: "24"
+    type: 1000base-x-sfp
+  - name: "25"
+    type: 1000base-t
+  - name: "26"
+    type: 1000base-t
+  - name: "27"
+    type: 1000base-t
+  - name: "28"
+    type: 1000base-t
+  - name: "29"
+    type: 1000base-t
+  - name: "30"
+    type: 1000base-t
+  - name: "31"
+    type: 1000base-t
+  - name: "32"
+    type: 1000base-t
+  - name: "33"
+    type: 1000base-t
+  - name: "34"
+    type: 1000base-t
+  - name: "35"
+    type: 1000base-t
+  - name: "36"
+    type: 1000base-t
+  - name: Mgmt
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial console port
+    type: de-9
+module_bays:
+  - name: PSU-1
+    bay_position: PSU-1
+  - name: PSU-2
+    bay_position: PSU-2
+  - name: VIM
+    bay_position: VIM
+links:
+  datasheet: https://documentation.extremenetworks.com/summit_16/GUID-A2870F78-DF97-464E-814D-852EE8D94EE4.shtml
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Extreme Networks/X480-24x.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: af613ee877d494e8

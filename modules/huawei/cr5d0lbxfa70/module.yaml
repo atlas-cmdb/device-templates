@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: huawei
+model: CR5D0LBXFA70
+slug: cr5d0lbxfa70
+kind: transceiver
+description: LPUI-120 12x10GBase LAN/WAN-SFP+ -A
+part_numbers:
+  - "3054681"
+weight_kg: 7.9
+interfaces:
+  - name: GE{module}/0/0
+    type: 10gbase-x-sfpp
+  - name: GE{module}/0/1
+    type: 10gbase-x-sfpp
+  - name: GE{module}/0/2
+    type: 10gbase-x-sfpp
+  - name: GE{module}/0/3
+    type: 10gbase-x-sfpp
+  - name: GE{module}/0/4
+    type: 10gbase-x-sfpp
+  - name: GE{module}/0/5
+    type: 10gbase-x-sfpp
+  - name: GE{module}/0/6
+    type: 10gbase-x-sfpp
+  - name: GE{module}/0/7
+    type: 10gbase-x-sfpp
+  - name: GE{module}/0/8
+    type: 10gbase-x-sfpp
+  - name: GE{module}/0/9
+    type: 10gbase-x-sfpp
+  - name: GE{module}/0/10
+    type: 10gbase-x-sfpp
+  - name: GE{module}/0/11
+    type: 10gbase-x-sfpp
+links:
+  other:
+    - label: Huawei 12-Port 10GBase LAN/WAN-SFP+ Integrated Line Processing Unit (LPUI-120)
+      url: https://support.huawei.com/hedex/hdx.do?docid=EDOC1100259796
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Huawei/CR5D0LBXFA70.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - weight_kg
+  import_hash: 3ee4060e861a22a8

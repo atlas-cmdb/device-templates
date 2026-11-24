@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: corvil
+model: CNE-6950
+slug: cne-6950
+category: appliance
+form_factor: rack
+part_numbers:
+  - CNE-6950
+u_height: 1
+full_depth: true
+weight_kg: 24.948
+power:
+  psu_count: 2
+interfaces:
+  - name: PortA
+    type: 10gbase-x-sfpp
+  - name: PortB
+    type: 10gbase-x-sfpp
+  - name: PortC
+    type: 10gbase-x-sfpp
+  - name: PortD
+    type: 10gbase-x-sfpp
+  - name: mgmt-sfp-1
+    type: 10gbase-x-sfpp
+    mgmt_only: true
+  - name: mgmt-sfp-2
+    type: 10gbase-x-sfpp
+    mgmt_only: true
+  - name: mgmt
+    type: 1000base-t
+    mgmt_only: true
+  - name: mgmt2
+    type: 1000base-t
+    mgmt_only: true
+  - name: mgmt3
+    type: 1000base-t
+    mgmt_only: true
+  - name: mgmt4
+    type: 1000base-t
+    mgmt_only: true
+  - name: IPMI
+    type: 1000base-t
+    mgmt_only: true
+power_ports:
+  - name: PSU1
+    type: iec-60320-c14
+    maximum_draw_w: 1300
+  - name: PSU2
+    type: iec-60320-c14
+    maximum_draw_w: 1300
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Corvil/cne-6950.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 9a2323af51f40d25

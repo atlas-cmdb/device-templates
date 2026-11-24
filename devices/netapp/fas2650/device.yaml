@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netapp
+model: FAS2650
+slug: fas2650
+category: storage_array
+form_factor: rack
+description: FAS2650 Chassis
+u_height: 2
+full_depth: true
+subdevice_role: parent
+weight_kg: 26
+power:
+  psu_count: 2
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+device_bays:
+  - name: A
+  - name: B
+links:
+  datasheet: https://web.archive.org/web/20191018201305/https://www.netapp.com/us/media/ds-3808.pdf
+  manual: https://docs.netapp.com/us-en/ontap-systems/media/PDF/FAS26xx_ISI_215-15014_A0.pdf
+  other:
+    - url: https://github.com/NetAppDocs/ontap-systems/blob/7d062d75959b8dc16049f5ec3843eba9065fd549/fas2600/power-supply-swap-out.adoc
+comments: |-
+  2U chassis with two HA controllers, 24 internal drive slots and two hot-swappable power supplies with
+  integrated cooling. Weight is the lifting weight printed for the FAS26xx series.
+  Installation:
+  Datasheet:
+  Power supply:
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/NetApp/FAS2650.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - description
+    - device_bays
+    - full_depth
+    - links.datasheet
+    - links.manual
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 250af390bba35758

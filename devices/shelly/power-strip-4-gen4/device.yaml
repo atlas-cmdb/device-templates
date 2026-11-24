@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: shelly
+model: Power Strip 4 Gen4
+slug: power-strip-4-gen4
+category: pdu
+form_factor: zero-u
+part_numbers:
+  - S4PL-00416EU
+u_height: 0
+full_depth: false
+weight_kg: 0.56
+airflow: passive
+power:
+  outlet_count: 4
+interfaces:
+  - name: Wireless
+    type: ieee802.11n
+  - name: Bluetooth
+    type: ieee802.15.1
+power_ports:
+  - name: input
+    description: 220-240V ~ 50/60 Hz; 16A max
+    type: ita-ef
+    maximum_draw_w: 3680
+    allocated_draw_w: 3680
+power_outlets:
+  - name: "0"
+    description: 12A max
+    type: ita-f
+    power_port: input
+  - name: "1"
+    description: 12A max
+    type: ita-f
+    power_port: input
+  - name: "2"
+    description: 12A max
+    type: ita-f
+    power_port: input
+  - name: "3"
+    description: 12A max
+    type: ita-f
+    power_port: input
+links:
+  product_page: https://www.shelly.com/products/shelly-power-strip-4-gen4
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Shelly/Power-Strip-4-Gen4.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 0bda929e048c8121

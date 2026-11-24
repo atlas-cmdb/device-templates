@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fs
+model: FMU-MD085360EM3
+slug: fmu-md085360em3
+category: patch_panel
+form_factor: blade
+part_numbers:
+  - FMU-MD085360EM3
+u_height: 0
+full_depth: false
+subdevice_role: child
+front_ports:
+  - name: C53
+    type: lc
+    rear_port: LINE
+    rear_port_position: 33
+  - name: C54
+    type: lc
+    rear_port: LINE
+    rear_port_position: 34
+  - name: C55
+    type: lc
+    rear_port: LINE
+    rear_port_position: 35
+  - name: C56
+    type: lc
+    rear_port: LINE
+    rear_port_position: 36
+  - name: C57
+    type: lc
+    rear_port: LINE
+    rear_port_position: 37
+  - name: C58
+    type: lc
+    rear_port: LINE
+    rear_port_position: 38
+  - name: C59
+    type: lc
+    rear_port: LINE
+    rear_port_position: 39
+  - name: C60
+    type: lc
+    rear_port: LINE
+    rear_port_position: 40
+rear_ports:
+  - name: LINE
+    type: lc
+    positions: 40
+comments: 8 Channels 100GHz C53-C60, with Monitor, Expansion and 1310nm Port, LC/UPC, Dual Fiber DWDM Mux Demux, FMU Plug-in Module
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/FS/FMU-MD085360EM3.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - front_ports
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 080a1f8309509b5c

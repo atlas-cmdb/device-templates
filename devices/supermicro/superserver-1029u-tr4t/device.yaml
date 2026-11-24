@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SuperServer 1029U-TR4T
+slug: superserver-1029u-tr4t
+category: server
+form_factor: rack
+part_numbers:
+  - SYS-1029U-TR4T
+u_height: 1
+full_depth: true
+weight_kg: 11.8
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: BMC
+    description: Dedicated IPMI LAN port
+    type: 1000base-t
+    mgmt_only: true
+  - name: Gig-E 1
+    type: 10gbase-t
+  - name: Gig-E 2
+    type: 10gbase-t
+  - name: Gig-E 3
+    type: 10gbase-t
+  - name: Gig-E 4
+    type: 10gbase-t
+console_ports:
+  - name: Serial
+    description: Rear port
+    type: de-9
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+  - name: PCI-E 1
+    description: Internal low profile slot
+    bay_position: "1"
+  - name: PCI-E 2
+    description: Low profile slot
+    bay_position: "2"
+  - name: PCI-E 3
+    description: Full height slot
+    bay_position: "3"
+  - name: PCI-E 4
+    description: Full height slot
+    bay_position: "4"
+comments: SuperServer SYS-1029U-TR4T (https://www.supermicro.com/products/system/1U/1029/SYS-1029U-TR4T.cfm)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SYS-1029U-TR4T.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 2c4da774e5e0fc7b

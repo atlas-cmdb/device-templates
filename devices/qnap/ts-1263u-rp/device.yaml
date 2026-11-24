@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: qnap
+model: TS-1263U-RP
+slug: ts-1263u-rp
+category: storage_array
+form_factor: rack
+part_numbers:
+  - TS-1263U-RP-4G
+u_height: 2
+full_depth: true
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0
+    label: LAN1
+    type: 1000base-t
+  - name: eth1
+    label: LAN2
+    type: 1000base-t
+  - name: eth2
+    label: LAN3
+    type: 1000base-t
+  - name: eth3
+    label: LAN4
+    type: 1000base-t
+  - name: eth4
+    label: SFP+
+    type: 10gbase-x-sfpp
+power_ports:
+  - name: PSU 1
+    type: iec-60320-c14
+    maximum_draw_w: 250
+    allocated_draw_w: 80
+  - name: PSU 2
+    type: iec-60320-c14
+    maximum_draw_w: 250
+    allocated_draw_w: 80
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/QNAP/TS-1263U-RP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: ec94210317a8631c

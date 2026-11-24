@@ -1,0 +1,125 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: FortiGate 400E
+slug: fortigate-400e
+category: firewall
+form_factor: rack
+part_numbers:
+  - FG-400E
+u_height: 1
+full_depth: false
+weight_kg: 7.439
+airflow: side-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: ha
+    type: 1000base-t
+  - name: mgmt
+    type: 1000base-t
+    mgmt_only: true
+  - name: port1
+    type: 1000base-t
+  - name: port2
+    type: 1000base-t
+  - name: port3
+    type: 1000base-t
+  - name: port4
+    type: 1000base-t
+  - name: port5
+    type: 1000base-t
+  - name: port6
+    type: 1000base-t
+  - name: port7
+    type: 1000base-t
+  - name: port8
+    type: 1000base-t
+  - name: port9
+    type: 1000base-t
+  - name: port10
+    type: 1000base-t
+  - name: port11
+    type: 1000base-t
+  - name: port12
+    type: 1000base-t
+  - name: port13
+    type: 1000base-t
+  - name: port14
+    type: 1000base-t
+  - name: port15
+    type: 1000base-t
+  - name: port16
+    type: 1000base-t
+  - name: port17
+    type: 1000base-x-sfp
+  - name: port18
+    type: 1000base-x-sfp
+  - name: port19
+    type: 1000base-x-sfp
+  - name: port20
+    type: 1000base-x-sfp
+  - name: port21
+    type: 1000base-x-sfp
+  - name: port22
+    type: 1000base-x-sfp
+  - name: port23
+    type: 1000base-x-sfp
+  - name: port24
+    type: 1000base-x-sfp
+  - name: port25
+    type: 1000base-x-sfp
+  - name: port26
+    type: 1000base-x-sfp
+  - name: port27
+    type: 1000base-x-sfp
+  - name: port28
+    type: 1000base-x-sfp
+  - name: s1
+    type: 1000base-x-sfp
+  - name: s2
+    type: 1000base-x-sfp
+  - name: vw1
+    type: 1000base-x-sfp
+  - name: vw2
+    type: 1000base-x-sfp
+console_ports:
+  - name: Console
+    type: rj-45
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/FortiGate_400E.pdf
+comments: ". Compatible PSU module: SP-FG300E-PS, maximum power draw 214W, average power draw 109W."
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/FG-400E.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e96ab420ad0be6f3

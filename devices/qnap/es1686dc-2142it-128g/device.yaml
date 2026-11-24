@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: qnap
+model: ES1686dc-2142IT-128G
+slug: es1686dc-2142it-128g
+category: storage_array
+form_factor: rack
+part_numbers:
+  - ES1686dc-2142IT-128G
+u_height: 3
+full_depth: true
+weight_kg: 30.22
+power:
+  psu_count: 2
+module_bays:
+  - name: Controller A
+    bay_position: A
+  - name: Controller B
+    bay_position: B
+  - name: PSU 1
+    bay_position: "1"
+  - name: PSU 2
+    bay_position: "2"
+links:
+  product_page: https://www.qnap.com/en/product/es1686dc/specs/hardware
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/QNAP/ES1686dc-2142IT-128G.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - full_depth
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: d97d0bcb84db1af5

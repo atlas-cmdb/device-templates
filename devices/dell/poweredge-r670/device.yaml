@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge R670
+slug: poweredge-r670
+category: server
+form_factor: rack
+description: Dell PowerEdge R670 1U Rack Server
+u_height: 1
+full_depth: true
+weight_kg: 20.42
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: iDRAC
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: iDRAC Direct
+    type: usb-c
+module_bays:
+  - name: OCP NIC Slot 2 (3.0)
+    label: "2"
+    bay_position: PCIe-2
+  - name: OCP NIC Slot 5 (3.0)
+    label: "5"
+    bay_position: PCIe-5
+  - name: PSU-1
+    label: "1"
+    bay_position: PSU-1
+  - name: PSU-2
+    label: "2"
+    bay_position: PSU-2
+  - name: PCIe Slot 1
+    label: "1"
+    bay_position: PCIe-1
+  - name: PCIe Slot 4
+    label: "4"
+    bay_position: PCIe-4
+links:
+  datasheet: https://www.delltechnologies.com/asset/en-us/products/servers/technical-support/poweredge-r670-spec-sheet.pdf
+comments: "1U dual-socket rack server with two Intel Xeon 6 processors (E-cores or P-cores) and 32 DDR5 DIMM slots. Front bays support up to 20x EDSFF E3.S Gen5 NVMe or up to 10x 2.5-inch drives. Available in rear I/O (hot aisle) and front I/O (cold aisle) configurations. Hot swap redundant power supplies from 800 W to 1800 W. The rear I/O configuration modelled here has PCIe slots 1 and 4 and OCP NIC 3.0 slots 2 and 5. The front riser can carry PCIe slots 31 and 32. BOSS-N1 occupies slot 34 (front) or slot 3 (rear). Dimensions: 42.8 mm x 482 mm x 815.14 mm (rear I/O, without bezel)."
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-R670.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: b3ad38254c62df59

@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: juniper
+model: RE-S-1800x4
+slug: re-s-1800x4
+kind: supervisor
+part_numbers:
+  - 740-031116
+interfaces:
+  - name: fxp0
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: console
+    type: rj-45
+  - name: AUX
+    type: rj-45
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Juniper/RE-S-1800x4.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - console_ports
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: a9316d4c9442315c

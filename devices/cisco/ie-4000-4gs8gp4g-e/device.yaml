@@ -1,0 +1,106 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: IE-4000-4GS8GP4G-E
+slug: ie-4000-4gs8gp4g-e
+category: network_switch
+form_factor: rack
+part_numbers:
+  - IE-4000-4GS8GP4G-E
+u_height: 3
+full_depth: false
+weight_kg: 2.88
+airflow: passive
+power:
+  psu_count: 2
+interfaces:
+  - name: GigabitEthernet1/1
+    description: Shared media (You can use 1 of the 2 ports **WITH** this name. 1 is 1000base-x-sfp & the other is 1000base-t.)
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/2
+    description: Shared media (You can use 1 of the 2 ports **WITH** this name. 1 is 1000base-x-sfp & the other is 1000base-t.)
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/3
+    description: Shared media (You can use 1 of the 2 ports **WITH** this name. 1 is 1000base-x-sfp & the other is 1000base-t.)
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/4
+    description: Shared media (You can use 1 of the 2 ports **WITH** this name. 1 is 1000base-x-sfp & the other is 1000base-t.)
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/5
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/6
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/7
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/8
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/9
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet1/10
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet1/11
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet11/12
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet11/13
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet11/14
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet11/15
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet11/16
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+console_ports:
+  - name: usb
+    type: usb-mini-b
+  - name: console
+    type: rj-45
+power_ports:
+  - name: DC-A
+    type: dc-terminal
+  - name: DC-B
+    type: dc-terminal
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/IE-4000-4GS8GP4G-E.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: ada7099d05ea0b0e

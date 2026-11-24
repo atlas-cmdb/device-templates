@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or idea to discuss
+    url: https://github.com/atlas-cmdb/device-templates/discussions
+    about: Not sure if something belongs here? Start a discussion first.
+  - name: Atlas CMDB (the application)
+    url: https://github.com/atlas-cmdb
+    about: Issues with the Atlas DCIM viewer itself go to the Atlas repositories.

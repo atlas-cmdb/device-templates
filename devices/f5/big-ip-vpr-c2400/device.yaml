@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: f5
+model: BIG-IP VPR-C2400
+slug: big-ip-vpr-c2400
+category: load_balancer
+form_factor: rack
+part_numbers:
+  - VPR-C2400
+u_height: 4
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: 1/mgmt
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: usb1
+    type: usb-a
+  - name: usb2
+    type: usb-a
+power_ports:
+  - name: psu1
+    type: iec-60320-c20
+    maximum_draw_w: 1400
+  - name: psu2
+    type: iec-60320-c20
+    maximum_draw_w: 1400
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/F5/BIG-IP-VPR-C2400.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 29619793387664dd

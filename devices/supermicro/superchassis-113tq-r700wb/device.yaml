@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SuperChassis 113TQ-R700WB
+slug: superchassis-113tq-r700wb
+category: server
+form_factor: rack
+part_numbers:
+  - CSE-113TQ-R700WB
+u_height: 1
+full_depth: false
+weight_kg: 16.78
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: BMC
+    description: Dedicated IPMI LAN port
+    type: 1000base-t
+    mgmt_only: true
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+console_ports:
+  - name: COM1
+    type: de-9
+module_bays:
+  - name: PSU0
+    bay_position: PSU 0
+  - name: PSU1
+    bay_position: PSU 1
+  - name: PCI-E 1
+    description: PCIe FH slot
+    bay_position: "1"
+  - name: PCI-E 2
+    description: PCIe FH slot
+    bay_position: "2"
+  - name: PCI-E 3
+    description: PCIe LP slot
+    bay_position: "3"
+comments: Supermicro SuperChassis 113TQ-R700WB (https://www.supermicro.com/en/products/archive/chassis/sc113tq-r700wb)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SuperChassis-113TQ-R700WB.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: fe33c7ad02e3a4c0

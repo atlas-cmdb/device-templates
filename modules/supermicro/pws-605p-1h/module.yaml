@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: supermicro
+model: PWS-605P-1H
+slug: pws-605p-1h
+kind: other
+part_numbers:
+  - PWS-605P-1H
+power_ports:
+  - name: PSU{module}
+    type: iec-60320-c14
+    maximum_draw_w: 600
+links:
+  other:
+    - label: 600W Platinum Multiple Output Power Supply
+      url: https://store.supermicro.com/600w-1u-pws-605p-1h.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Supermicro/PWS-605P-1H.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: 60d2499734f9491d

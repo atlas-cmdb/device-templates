@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: hpe
+model: Aruba JL368A
+slug: aruba-jl368a
+kind: other
+part_numbers:
+  - JL368A
+interfaces:
+  - name: Management
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Auxiliary Port
+    type: usb-a
+  - name: Console-USB
+    type: usb-micro-b
+  - name: Console-RJ45
+    type: rj-45
+comments: HPE Aruba Networking 8400 Management Module
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/HPE/Aruba-JL368A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - console_ports
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 7c926922c1f3c1ee

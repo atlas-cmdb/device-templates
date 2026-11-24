@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: WS-X4712-SFP+E
+slug: ws-x4712-sfp-pluse
+kind: transceiver
+part_numbers:
+  - WS-X4712-SFP+E
+interfaces:
+  - name: 10GigabitEthernet{module}/1
+    type: 10gbase-x-sfpp
+  - name: 10GigabitEthernet{module}/2
+    type: 10gbase-x-sfpp
+  - name: 10GigabitEthernet{module}/3
+    type: 10gbase-x-sfpp
+  - name: 10GigabitEthernet{module}/4
+    type: 10gbase-x-sfpp
+  - name: 10GigabitEthernet{module}/5
+    type: 10gbase-x-sfpp
+  - name: 10GigabitEthernet{module}/6
+    type: 10gbase-x-sfpp
+  - name: 10GigabitEthernet{module}/7
+    type: 10gbase-x-sfpp
+  - name: 10GigabitEthernet{module}/8
+    type: 10gbase-x-sfpp
+  - name: 10GigabitEthernet{module}/9
+    type: 10gbase-x-sfpp
+  - name: 10GigabitEthernet{module}/10
+    type: 10gbase-x-sfpp
+  - name: 10GigabitEthernet{module}/11
+    type: 10gbase-x-sfpp
+  - name: 10GigabitEthernet{module}/12
+    type: 10gbase-x-sfpp
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/catalyst-4500-series-line-cards/product_data_sheet0900aecd802109ea.html
+comments: Cisco Catalyst 4500E Series 12-Port 10 Gigabit Ethernet (SFP+) /
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/WS-X4712-SFP-Plus-E.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 5d2901496a12ae97

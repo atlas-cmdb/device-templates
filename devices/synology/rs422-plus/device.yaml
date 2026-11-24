@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: synology
+model: RS422+
+slug: rs422-plus
+category: storage_array
+form_factor: rack
+part_numbers:
+  - RS422+
+u_height: 1
+full_depth: true
+weight_kg: 4.38
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: LAN 1
+    type: 1000base-t
+  - name: LAN 2
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: de-9
+  - name: USB-1
+    type: usb-a
+power_ports:
+  - name: External PSU 1
+    type: dc-terminal
+    maximum_draw_w: 90
+    allocated_draw_w: 37
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Synology/rs422-plus.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: b11590d54e2338f8

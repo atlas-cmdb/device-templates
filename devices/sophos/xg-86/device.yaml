@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: sophos
+model: XG 86
+slug: xg-86
+category: firewall
+form_factor: other
+description: Fanless desktop firewall for small and home offices
+u_height: 0
+full_depth: false
+weight_kg: 0.75
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: Port1
+    type: 1000base-t
+  - name: Port2
+    type: 1000base-t
+  - name: Port3
+    type: 1000base-t
+  - name: Port4
+    type: 1000base-t
+console_ports:
+  - name: COM
+    type: rj-45
+  - name: Micro-USB
+    type: usb-micro-b
+  - name: USB1
+    description: USB 2.0
+    type: usb-a
+  - name: USB2
+    description: USB 2.0
+    type: usb-a
+power_ports:
+  - name: DC In
+    description: External power supply, 12V DC, 24W
+    type: dc-terminal
+    maximum_draw_w: 21
+    allocated_draw_w: 12
+links:
+  manual: https://docs.sophos.com/nsg/hardware/quickstart/xg/sophos-quick-start-guide-xg-86%28w%29-rev1.pdf
+comments: See .
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Sophos/XG-86.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 8a2df57c3761c2d3

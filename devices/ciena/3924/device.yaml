@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ciena
+model: "3924"
+slug: "3924"
+category: optical_transport
+form_factor: rack
+part_numbers:
+  - 170-3924-904
+u_height: 1
+full_depth: false
+weight_kg: 1.77
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: "1"
+    type: 1000base-x-sfp
+  - name: "2"
+    type: 1000base-x-sfp
+  - name: "3"
+    type: 1000base-x-sfp
+  - name: "4"
+    type: 1000base-x-sfp
+  - name: "5"
+    type: 10gbase-x-sfpp
+  - name: "6"
+    type: 10gbase-x-sfpp
+  - name: "7"
+    type: 10gbase-x-sfpp
+  - name: "8"
+    type: 10gbase-x-sfpp
+  - name: MGMT
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: CONSOLE
+    description: Serial EIA-561 (RJ-45) console port
+    type: rj-45
+  - name: USB
+    description: USB 2.0 port
+    type: usb-a
+power_ports:
+  - name: PS-A
+    type: iec-60320-c14
+    maximum_draw_w: 35
+    allocated_draw_w: 28
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ciena/3924.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: bd0301e896c692ae

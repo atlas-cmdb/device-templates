@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: bonch
+model: ATS/PDU-8A-6S-C14/C14
+slug: ats-pdu-8a-6s-c14-c14
+category: ats
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 1.15
+airflow: passive
+power:
+  outlet_count: 6
+power_ports:
+  - name: Source A
+    type: iec-60320-c14
+  - name: Source B
+    type: iec-60320-c14
+power_outlets:
+  - name: Outlet 1
+    type: ita-f
+  - name: Outlet 2
+    type: ita-f
+  - name: Outlet 3
+    type: ita-f
+  - name: Outlet 4
+    type: ita-f
+  - name: Outlet 5
+    type: ita-f
+  - name: Outlet 6
+    type: ita-f
+comments: Bonch Rack Automatic Transfer Switch, 1U, 8A, 230V, Dual C14 IN, 6 Shuko OUT, 50/60Hz
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Bonch/ats-pdu-8a-6s-c14-c14.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1fffac425a00e526

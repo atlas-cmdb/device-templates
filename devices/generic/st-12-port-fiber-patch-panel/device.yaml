@@ -1,0 +1,104 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: generic
+model: ST-12-port Fiber Patch Panel
+slug: st-12-port-fiber-patch-panel
+category: patch_panel
+form_factor: rack
+description: 12-port ST fiber optic patch panel
+u_height: 1
+full_depth: false
+weight_kg: 0.5
+airflow: passive
+front_ports:
+  - name: FP_1
+    type: st
+    rear_port: RP_1
+    rear_port_position: 1
+  - name: FP_2
+    type: st
+    rear_port: RP_2
+    rear_port_position: 1
+  - name: FP_3
+    type: st
+    rear_port: RP_3
+    rear_port_position: 1
+  - name: FP_4
+    type: st
+    rear_port: RP_4
+    rear_port_position: 1
+  - name: FP_5
+    type: st
+    rear_port: RP_5
+    rear_port_position: 1
+  - name: FP_6
+    type: st
+    rear_port: RP_6
+    rear_port_position: 1
+  - name: FP_7
+    type: st
+    rear_port: RP_7
+    rear_port_position: 1
+  - name: FP_8
+    type: st
+    rear_port: RP_8
+    rear_port_position: 1
+  - name: FP_9
+    type: st
+    rear_port: RP_9
+    rear_port_position: 1
+  - name: FP_10
+    type: st
+    rear_port: RP_10
+    rear_port_position: 1
+  - name: FP_11
+    type: st
+    rear_port: RP_11
+    rear_port_position: 1
+  - name: FP_12
+    type: st
+    rear_port: RP_12
+    rear_port_position: 1
+rear_ports:
+  - name: RP_1
+    type: st
+  - name: RP_2
+    type: st
+  - name: RP_3
+    type: st
+  - name: RP_4
+    type: st
+  - name: RP_5
+    type: st
+  - name: RP_6
+    type: st
+  - name: RP_7
+    type: st
+  - name: RP_8
+    type: st
+  - name: RP_9
+    type: st
+  - name: RP_10
+    type: st
+  - name: RP_11
+    type: st
+  - name: RP_12
+    type: st
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Generic/ST-12-port-fiber-patch-panel.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - front_ports
+    - full_depth
+    - manufacturer
+    - model
+    - rear_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 79eff17a9995245f

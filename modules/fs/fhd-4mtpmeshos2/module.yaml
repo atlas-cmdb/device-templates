@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: fs
+model: FHD-4MTPMESHOS2
+slug: fhd-4mtpmeshos2
+kind: other
+part_numbers:
+  - "230563"
+front_ports:
+  - name: "{module}:A-1"
+    type: mpo
+    rear_port: "{module}:A-1"
+    rear_port_position: 1
+  - name: "{module}:A-2"
+    type: mpo
+    rear_port: "{module}:A-2"
+    rear_port_position: 1
+  - name: "{module}:A-3"
+    type: mpo
+    rear_port: "{module}:A-3"
+    rear_port_position: 1
+  - name: "{module}:A-4"
+    type: mpo
+    rear_port: "{module}:A-4"
+    rear_port_position: 1
+rear_ports:
+  - name: "{module}:A-1"
+    type: mpo
+  - name: "{module}:A-2"
+    type: mpo
+  - name: "{module}:A-3"
+    type: mpo
+  - name: "{module}:A-4"
+    type: mpo
+comments: FHD 4x MTP-8 Mesh Cassette, 32 Fibers OS2 Single Mode, 4x MTP-8 to 4x MTP-8 (Green)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/FS/FHD-4MTPMESHOS2.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - front_ports
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: 295251281fda3fec

@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: Motherboard C9X299-PG300
+slug: motherboard-c9x299-pg300
+category: server
+form_factor: blade
+part_numbers:
+  - MBD-C9X299-PG300
+u_height: 0
+full_depth: true
+subdevice_role: child
+airflow: front-to-rear
+interfaces:
+  - name: Gig-E
+    type: 1000base-t
+  - name: Ten-Gig-E
+    type: 10gbase-t
+console_ports:
+  - name: COM1
+    label: Rear
+    type: de-9
+module_bays:
+  - name: PCI-E 1
+    description: PCIe 3.0 x16
+    bay_position: "1"
+  - name: PCI-E 2
+    description: PCIe 3.0 x16
+    bay_position: "2"
+  - name: PCI-E 3
+    description: PCIe 3.0 x16
+    bay_position: "3"
+  - name: PCI-E 4
+    description: PCIe 3.0 x16
+    bay_position: "4"
+links:
+  product_page: https://www.supermicro.com/en/products/motherboard/c9x299-pg300
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/MBD-C9X299-PG300.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 9e11177eb9c896f1

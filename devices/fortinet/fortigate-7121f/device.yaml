@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: FortiGate 7121F
+slug: fortigate-7121f
+category: firewall
+form_factor: rack
+part_numbers:
+  - FG-7121F
+u_height: 16
+full_depth: true
+weight_kg: 97
+airflow: front-to-rear
+power:
+  psu_count: 6
+module_bays:
+  - name: FIM Slot 1
+    bay_position: "1"
+  - name: FIM Slot 2
+    bay_position: "2"
+  - name: FPM Slot 3
+    bay_position: "3"
+  - name: FPM Slot 4
+    bay_position: "4"
+  - name: FPM Slot 5
+    bay_position: "5"
+  - name: FPM Slot 6
+    bay_position: "6"
+  - name: FPM Slot 7
+    bay_position: "7"
+  - name: FPM Slot 8
+    bay_position: "8"
+  - name: FPM Slot 9
+    bay_position: "9"
+  - name: FPM Slot 10
+    bay_position: "10"
+  - name: FPM Slot 11
+    bay_position: "11"
+  - name: FPM Slot 12
+    bay_position: "12"
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+  - name: PSU3
+    bay_position: "3"
+  - name: PSU4
+    bay_position: "4"
+  - name: PSU5
+    bay_position: "5"
+  - name: PSU6
+    bay_position: "6"
+links:
+  manual: https://docs.fortinet.com/document/fortigate-7000/7.0.17/fortigate-7000f-handbook/956599/fortigate-7121f
+comments: FortiGate 7121F Handbook
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/fortigate-7121f.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 9cf20416a1b9e456

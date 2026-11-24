@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: FAC-200E
+slug: fac-200e
+category: firewall
+form_factor: rack
+part_numbers:
+  - FAC-200E
+u_height: 1
+full_depth: true
+weight_kg: 6.1
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: GigabitEthernet1
+    type: 1000base-t
+  - name: GigabitEthernet2
+    type: 1000base-t
+  - name: GigabitEthernet3
+    type: 1000base-t
+  - name: GigabitEthernet4
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 200
+comments: Fortinet FortiAuthenticator 200E - Identity management and multi-factor authentication appliance.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/FAC-200E.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 5b3d69a4b3b96178

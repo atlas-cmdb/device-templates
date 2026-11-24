@@ -1,0 +1,173 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: mellanox
+model: SN4600C
+slug: sn4600c
+category: network_switch
+form_factor: rack
+u_height: 2
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0
+    type: 1000base-t
+    mgmt_only: true
+  - name: swp1
+    type: 100gbase-x-qsfp28
+  - name: swp2
+    type: 100gbase-x-qsfp28
+  - name: swp3
+    type: 100gbase-x-qsfp28
+  - name: swp4
+    type: 100gbase-x-qsfp28
+  - name: swp5
+    type: 100gbase-x-qsfp28
+  - name: swp6
+    type: 100gbase-x-qsfp28
+  - name: swp7
+    type: 100gbase-x-qsfp28
+  - name: swp8
+    type: 100gbase-x-qsfp28
+  - name: swp9
+    type: 100gbase-x-qsfp28
+  - name: swp10
+    type: 100gbase-x-qsfp28
+  - name: swp11
+    type: 100gbase-x-qsfp28
+  - name: swp12
+    type: 100gbase-x-qsfp28
+  - name: swp13
+    type: 100gbase-x-qsfp28
+  - name: swp14
+    type: 100gbase-x-qsfp28
+  - name: swp15
+    type: 100gbase-x-qsfp28
+  - name: swp16
+    type: 100gbase-x-qsfp28
+  - name: swp17
+    type: 100gbase-x-qsfp28
+  - name: swp18
+    type: 100gbase-x-qsfp28
+  - name: swp19
+    type: 100gbase-x-qsfp28
+  - name: swp20
+    type: 100gbase-x-qsfp28
+  - name: swp21
+    type: 100gbase-x-qsfp28
+  - name: swp22
+    type: 100gbase-x-qsfp28
+  - name: swp23
+    type: 100gbase-x-qsfp28
+  - name: swp24
+    type: 100gbase-x-qsfp28
+  - name: swp25
+    type: 100gbase-x-qsfp28
+  - name: swp26
+    type: 100gbase-x-qsfp28
+  - name: swp27
+    type: 100gbase-x-qsfp28
+  - name: swp28
+    type: 100gbase-x-qsfp28
+  - name: swp29
+    type: 100gbase-x-qsfp28
+  - name: swp30
+    type: 100gbase-x-qsfp28
+  - name: swp31
+    type: 100gbase-x-qsfp28
+  - name: swp32
+    type: 100gbase-x-qsfp28
+  - name: swp33
+    type: 100gbase-x-qsfp28
+  - name: swp34
+    type: 100gbase-x-qsfp28
+  - name: swp35
+    type: 100gbase-x-qsfp28
+  - name: swp36
+    type: 100gbase-x-qsfp28
+  - name: swp37
+    type: 100gbase-x-qsfp28
+  - name: swp38
+    type: 100gbase-x-qsfp28
+  - name: swp39
+    type: 100gbase-x-qsfp28
+  - name: swp40
+    type: 100gbase-x-qsfp28
+  - name: swp41
+    type: 100gbase-x-qsfp28
+  - name: swp42
+    type: 100gbase-x-qsfp28
+  - name: swp43
+    type: 100gbase-x-qsfp28
+  - name: swp44
+    type: 100gbase-x-qsfp28
+  - name: swp45
+    type: 100gbase-x-qsfp28
+  - name: swp46
+    type: 100gbase-x-qsfp28
+  - name: swp47
+    type: 100gbase-x-qsfp28
+  - name: swp48
+    type: 100gbase-x-qsfp28
+  - name: swp49
+    type: 100gbase-x-qsfp28
+  - name: swp50
+    type: 100gbase-x-qsfp28
+  - name: swp51
+    type: 100gbase-x-qsfp28
+  - name: swp52
+    type: 100gbase-x-qsfp28
+  - name: swp53
+    type: 100gbase-x-qsfp28
+  - name: swp54
+    type: 100gbase-x-qsfp28
+  - name: swp55
+    type: 100gbase-x-qsfp28
+  - name: swp56
+    type: 100gbase-x-qsfp28
+  - name: swp57
+    type: 100gbase-x-qsfp28
+  - name: swp58
+    type: 100gbase-x-qsfp28
+  - name: swp59
+    type: 100gbase-x-qsfp28
+  - name: swp60
+    type: 100gbase-x-qsfp28
+  - name: swp61
+    type: 100gbase-x-qsfp28
+  - name: swp62
+    type: 100gbase-x-qsfp28
+  - name: swp63
+    type: 100gbase-x-qsfp28
+  - name: swp64
+    type: 100gbase-x-qsfp28
+console_ports:
+  - name: con0
+    type: rj-45
+power_ports:
+  - name: psu0
+    type: iec-60320-c14
+  - name: psu1
+    type: iec-60320-c14
+links:
+  manual: https://network.nvidia.com/files/doc-2020/br-sn4000-series.pdf
+comments: "Data sheet:"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Mellanox/SN4600C.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 9831b0629439e843

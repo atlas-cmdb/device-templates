@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: juniper
+model: SRX100H
+slug: srx100h
+category: firewall
+form_factor: rack
+part_numbers:
+  - srx100h
+u_height: 1
+full_depth: false
+weight_kg: 0.844
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: fe-0/0/0
+    type: 100base-tx
+  - name: fe-0/0/1
+    type: 100base-tx
+  - name: fe-0/0/2
+    type: 100base-tx
+  - name: fe-0/0/3
+    type: 100base-tx
+  - name: fe-0/0/4
+    type: 100base-tx
+  - name: fe-0/0/5
+    type: 100base-tx
+  - name: fe-0/0/6
+    type: 100base-tx
+  - name: fe-0/0/7
+    type: 100base-tx
+console_ports:
+  - name: Con0
+    type: rj-45
+power_ports:
+  - name: PSU0
+    type: iec-60320-c14
+links:
+  manual: https://www.juniper.net/documentation/en_US/release-independent/junos/information-products/pathway-pages/hardware/srx100/srx100-index.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Juniper/SRX100H.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1385637a93a82409

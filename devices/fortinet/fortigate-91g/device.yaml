@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: FortiGate 91G
+slug: fortigate-91g
+category: firewall
+form_factor: rack
+part_numbers:
+  - FG-91G
+u_height: 1
+full_depth: false
+weight_kg: 1.31
+airflow: side-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: internal1
+    type: 1000base-t
+  - name: internal2
+    type: 1000base-t
+  - name: internal3
+    type: 1000base-t
+  - name: internal4
+    type: 1000base-t
+  - name: internal5
+    type: 1000base-t
+  - name: internal6
+    type: 1000base-t
+  - name: a
+    type: 1000base-t
+  - name: b
+    type: 1000base-t
+  - name: wan1
+    description: Shared media (You can use 1 of the 2 ports **WITH** this name. One is 10gbase-x-sfpp, the other is 10gbase-t.)
+    type: 10gbase-x-sfpp
+  - name: wan2
+    description: Shared media (You can use 1 of the 2 ports **WITH** this name. One is 1000base-x-sfp, the other is 10gbase-t.)
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: USB
+    type: usb-a
+power_ports:
+  - name: PSU1
+    label: DC+12V
+    type: dc-terminal
+    maximum_draw_w: 23
+    allocated_draw_w: 22
+  - name: PSU2
+    label: DC+12V
+    type: dc-terminal
+    maximum_draw_w: 23
+    allocated_draw_w: 22
+comments: The 10G WAN interfaces and SFP+ interfaces are shared media ports. Has a 120GB SSD disk.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/FG-91G.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: d362293cd604d48a

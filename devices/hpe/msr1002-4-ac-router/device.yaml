@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: MSR1002-4 AC Router
+slug: msr1002-4-ac-router
+category: router
+form_factor: rack
+part_numbers:
+  - JG875A
+u_height: 1
+full_depth: false
+weight_kg: 3.1
+airflow: left-to-right
+power:
+  psu_count: 1
+interfaces:
+  - name: GigabitEthernet1/0/0
+    type: 1000base-t
+  - name: GigabitEthernet1/0/1
+    type: 1000base-t
+  - name: GigabitEthernet1/0/2
+    type: 1000base-t
+  - name: GigabitEthernet1/0/3
+    type: 1000base-t
+  - name: GigabitEthernet1/0/4
+    type: 1000base-t
+  - name: GigabitEthernet1/0/5
+    type: 1000base-x-sfp
+console_ports:
+  - name: CON/AUX
+    type: rj-45
+power_ports:
+  - name: PS-1
+    type: iec-60320-c14
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  manual: https://shoredata.us.com/wp-content/uploads/2016/03/MSR1000.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/MSR1002-4-AC-Router.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 82774a4c1908ae94

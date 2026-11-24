@@ -1,0 +1,97 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: SG350-10P
+slug: sg350-10p
+category: network_switch
+form_factor: rack
+part_numbers:
+  - SG350-10P-K9
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: GigabitEthernet1
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet2
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet3
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet4
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet5
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet6
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet7
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet8
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet9
+    type: 1000base-x-sfp
+  - name: GigabitEthernet10
+    type: 1000base-x-sfp
+  - name: Port-Channel1
+    type: lag
+  - name: Port-Channel2
+    type: lag
+  - name: Port-Channel3
+    type: lag
+  - name: Port-Channel4
+    type: lag
+  - name: Port-Channel5
+    type: lag
+  - name: Port-Channel6
+    type: lag
+  - name: Port-Channel7
+    type: lag
+  - name: Port-Channel8
+    type: lag
+  - name: vlan 1
+    type: virtual
+console_ports:
+  - name: console
+    type: de-9
+power_ports:
+  - name: External PS
+    type: iec-60320-c14
+    maximum_draw_w: 85
+    allocated_draw_w: 13
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/switches/small-business-smart-switches/data-sheet-c78-737359.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/SG350-10P-K9.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: d47f63d1e6dd24af

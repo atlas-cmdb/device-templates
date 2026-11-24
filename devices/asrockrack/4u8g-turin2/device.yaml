@@ -1,0 +1,172 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: asrockrack
+model: 4U8G-TURIN2
+slug: 4u8g-turin2
+category: server
+form_factor: rack
+part_numbers:
+  - 4U8G-TURIN2
+u_height: 4
+full_depth: true
+weight_kg: 20
+airflow: front-to-rear
+power:
+  psu_count: 4
+interfaces:
+  - name: BMC
+    description: Dedicated BMC/IPMI LAN port
+    type: 1000base-t
+    mgmt_only: true
+  - name: Gig-E 1 (shared with BMC/IPMI)
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+module_bays:
+  - name: PSU1
+    description: 2700W 80-PLUS Titanium Power Supply
+    bay_position: PSU1
+  - name: PSU2
+    description: 2700W 80-PLUS Titanium Power Supply
+    bay_position: PSU2
+  - name: PSU3
+    description: 2700W 80-PLUS Titanium Power Supply
+    bay_position: PSU3
+  - name: PSU4
+    description: 2700W 80-PLUS Titanium Power Supply
+    bay_position: PSU4
+  - name: PCI-E 1
+    description: PCI-E 5.0 x16 (Rear, FHFL dual-slot CPU direct link)
+    bay_position: "1"
+  - name: PCI-E 2
+    description: PCI-E 5.0 x16 (Rear, FHFL dual-slot CPU direct link)
+    bay_position: "2"
+  - name: PCI-E 3
+    description: PCI-E 5.0 x16 (FHFL dual-slot CPU direct link)
+    bay_position: "3"
+  - name: PCI-E 4
+    description: PCI-E 5.0 x16 (Rear, FHFL dual-slot CPU direct link)
+    bay_position: "4"
+  - name: PCI-E 5
+    description: PCI-E 5.0 x16 (Rear, FHFL dual-slot CPU direct link)
+    bay_position: "5"
+  - name: PCI-E 6
+    description: PCI-E 5.0 x16 (Rear, FHFL dual-slot CPU direct link)
+    bay_position: "6"
+  - name: PCI-E 7
+    description: PCI-E 5.0 x16 (Rear, FHFL dual-slot CPU direct link)
+    bay_position: "7"
+  - name: PCI-E 8
+    description: PCI-E 5.0 x16 (Rear, FHFL dual-slot CPU direct link)
+    bay_position: "8"
+  - name: PCI-E 9
+    description: PCI-E 5.0 x8 (Front, FHHL)
+    bay_position: "9"
+  - name: M.2 1
+    description: PCI-E 3.0 x4 (M-key 22110/2280) CPU0
+    bay_position: "10"
+  - name: M.2 2
+    description: PCI-E 3.0 x4 (M-key 22110/2280) CPU1
+    bay_position: "11"
+  - name: NVME 1
+    description: PCI-E 5.0 x4 (U.2)
+    bay_position: "12"
+  - name: NVME 2
+    description: PCI-E 5.0 x4 (U.2)
+    bay_position: "13"
+  - name: NVME 3
+    description: PCI-E 5.0 x4 (U.2)
+    bay_position: "14"
+  - name: NVME 4
+    description: PCI-E 5.0 x4 (U.2)
+    bay_position: "15"
+  - name: SATA/SAS 1
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "16"
+  - name: SATA/SAS 2
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "17"
+  - name: SATA/SAS 3
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "18"
+  - name: SATA/SAS 4
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "19"
+  - name: SATA/SAS 5
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "20"
+  - name: SATA/SAS 6
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "21"
+  - name: SATA/SAS 7
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "22"
+  - name: SATA/SAS 8
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "23"
+  - name: SATA/SAS 9
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "24"
+  - name: SATA/SAS 10
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "25"
+  - name: SATA/SAS 11
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "26"
+  - name: SATA/SAS 12
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "27"
+  - name: SATA/SAS 13
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "28"
+  - name: SATA/SAS 14
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "29"
+  - name: SATA/SAS 15
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "30"
+  - name: SATA/SAS 16
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "31"
+  - name: SATA/SAS 17
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "32"
+  - name: SATA/SAS 18
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "33"
+  - name: SATA/SAS 19
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "34"
+  - name: SATA/SAS 20
+    description: SATA/SAS (2.5" drive bay)
+    bay_position: "35"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+comments: ASRockRack 4U8G-TURIN2 (https://www.asrockrack.com/general/productdetail.asp?Model=4U8G-TURIN2)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/ASRockRack/4U8G-TURIN2.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 609f9f466fda15e7

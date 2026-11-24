@@ -1,0 +1,103 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huawei
+model: S6720-16X-LI-16S-AC
+slug: s6720-16x-li-16s-ac
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 4.1
+airflow: left-to-right
+power:
+  psu_count: 1
+interfaces:
+  - name: MEth0/0/1
+    label: ETH
+    description: IEEE 802.3, 10/100 Mbit/s. For configuration terminal or network management workstation to configure the switch locally or remotely by using an Ethernet cable.
+    type: 100base-tx
+    mgmt_only: true
+  - name: XGigabitEthernet0/0/1
+    label: "1"
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/2
+    label: "2"
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/3
+    label: "3"
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/4
+    label: "4"
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/5
+    label: "5"
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/6
+    label: "6"
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/7
+    label: "7"
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/8
+    label: "8"
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/9
+    label: "9"
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/10
+    label: "10"
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/11
+    label: "11"
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/12
+    label: "12"
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/13
+    label: "13"
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/14
+    label: "14"
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/15
+    label: "15"
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/16
+    label: "16"
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    label: CONSOLE
+    description: RS-232
+    type: rj-45
+  - name: USB
+    description: Can have a USB 2.0 flash drive connected to upgrade the switch, or transfer configuration files or other files.
+    type: usb-a
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 68
+links:
+  product_page: https://support.huawei.com/enterprise/en/doc/EDOC1000013621/a94df57d/s6720-16x-li-16s-ac
+comments: See .
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Huawei/S6720-16X-LI-16S-AC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: f6a04aaf74cf6af7

@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: qnap
+model: TS-h1886XU-RP
+slug: ts-h1886xu-rp
+category: storage_array
+form_factor: rack
+part_numbers:
+  - TS-h1886XU-RP
+u_height: 2
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0
+    type: 1000base-t
+  - name: eth1
+    type: 1000base-t
+  - name: eth2
+    type: 1000base-t
+  - name: eth3
+    type: 1000base-t
+  - name: eth4
+    type: 10gbase-x-sfpp
+  - name: eth5
+    type: 10gbase-x-sfpp
+power_ports:
+  - name: PSU 1
+    type: iec-60320-c14
+    maximum_draw_w: 550
+    allocated_draw_w: 118
+  - name: PSU 2
+    type: iec-60320-c14
+    maximum_draw_w: 550
+    allocated_draw_w: 118
+links:
+  other:
+    - label: TS-h1886XU-RP | Hardware Specs | QNAP
+      url: https://qnap.ru/ts-h1886xu-rp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/QNAP/TS-h1886XU-RP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 07da01876958add6

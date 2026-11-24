@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: digi
+model: CM-16
+slug: cm-16
+category: console_server
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 2.6
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: Network
+    type: 100base-tx
+console_ports:
+  - name: Console
+    type: rj-45
+console_server_ports:
+  - name: Serial_1
+    type: rj-45
+  - name: Serial_2
+    type: rj-45
+  - name: Serial_3
+    type: rj-45
+  - name: Serial_4
+    type: rj-45
+  - name: Serial_5
+    type: rj-45
+  - name: Serial_6
+    type: rj-45
+  - name: Serial_7
+    type: rj-45
+  - name: Serial_8
+    type: rj-45
+  - name: Serial_9
+    type: rj-45
+  - name: Serial_10
+    type: rj-45
+  - name: Serial_11
+    type: rj-45
+  - name: Serial_12
+    type: rj-45
+  - name: Serial_13
+    type: rj-45
+  - name: Serial_14
+    type: rj-45
+  - name: Serial_15
+    type: rj-45
+  - name: Serial_16
+    type: rj-45
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 40
+links:
+  datasheet: https://www.digi.com/resources/documentation/digidocs/pdfs/90000301-88.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Digi/CM-16.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: bed276c47b7a39d2

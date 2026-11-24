@@ -1,0 +1,143 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: FortiGate 200F
+slug: fortigate-200f
+category: firewall
+form_factor: rack
+part_numbers:
+  - FG-200F
+u_height: 1
+full_depth: true
+weight_kg: 4.5
+airflow: side-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: ha
+    label: HA
+    type: 1000base-t
+  - name: mgmt
+    label: MGMT
+    type: 1000base-t
+    mgmt_only: true
+  - name: port1
+    label: "1"
+    type: 1000base-t
+  - name: port2
+    label: "2"
+    type: 1000base-t
+  - name: port3
+    label: "3"
+    type: 1000base-t
+  - name: port4
+    label: "4"
+    type: 1000base-t
+  - name: port5
+    label: "5"
+    type: 1000base-t
+  - name: port6
+    label: "6"
+    type: 1000base-t
+  - name: port7
+    label: "7"
+    type: 1000base-t
+  - name: port8
+    label: "8"
+    type: 1000base-t
+  - name: port9
+    label: "9"
+    type: 1000base-t
+  - name: port10
+    label: "10"
+    type: 1000base-t
+  - name: port11
+    label: "11"
+    type: 1000base-t
+  - name: port12
+    label: "12"
+    type: 1000base-t
+  - name: port13
+    label: "13"
+    type: 1000base-t
+  - name: port14
+    label: "14"
+    type: 1000base-t
+  - name: port15
+    label: "15"
+    type: 1000base-t
+  - name: port16
+    label: "16"
+    type: 1000base-t
+  - name: port17
+    label: "17"
+    type: 1000base-x-sfp
+  - name: port18
+    label: "18"
+    type: 1000base-x-sfp
+  - name: port19
+    label: "19"
+    type: 1000base-x-sfp
+  - name: port20
+    label: "20"
+    type: 1000base-x-sfp
+  - name: port21
+    label: "21"
+    type: 1000base-x-sfp
+  - name: port22
+    label: "22"
+    type: 1000base-x-sfp
+  - name: port23
+    label: "23"
+    type: 1000base-x-sfp
+  - name: port24
+    label: "24"
+    type: 1000base-x-sfp
+  - name: x1
+    label: X1
+    type: 10gbase-x-sfpp
+  - name: x2
+    label: X2
+    type: 10gbase-x-sfpp
+  - name: x3
+    label: X3
+    type: 10gbase-x-sfpp
+  - name: x4
+    label: X4
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    label: CONSOLE
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 119
+    allocated_draw_w: 102
+  - name: PS2
+    type: iec-60320-c14
+    maximum_draw_w: 119
+    allocated_draw_w: 102
+links:
+  datasheet: https://www.fortinet.com/resources/data-sheets/fortigate-200f-series
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/FG-200F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 406de1abd8280730

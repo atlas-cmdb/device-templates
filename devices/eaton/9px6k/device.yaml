@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eaton
+model: 9PX6K
+slug: 9px6k
+category: ups
+form_factor: rack
+u_height: 3
+full_depth: true
+power:
+  outlet_count: 4
+  psu_count: 1
+interfaces:
+  - name: eth0
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: rj-45
+  - name: USB management
+    type: usb-b
+  - name: Mgmt Card Debug - "AUX"
+    type: usb-a
+power_ports:
+  - name: L630R
+    type: nema-6-30p
+power_outlets:
+  - name: Outlet 1
+    type: nema-6-20r
+  - name: Outlet 2
+    type: nema-6-20r
+  - name: Outlet 3
+    type: nema-6-30r
+  - name: Outlet 4
+    type: nema-6-30r
+comments: 9PX6K 6kVA 208V Tower/Rack Mountable UPS
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eaton/9PX6K.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 077f4c69fdc2d7c7

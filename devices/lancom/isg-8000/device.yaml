@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lancom
+model: ISG-8000
+slug: isg-8000
+category: network_switch
+form_factor: rack
+part_numbers:
+  - "61077"
+u_height: 1
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: ETH-1
+    type: 1000base-t
+  - name: ETH-2
+    type: 1000base-t
+  - name: ETH-3
+    type: 1000base-t
+  - name: ETH-4
+    type: 1000base-t
+  - name: ETH-5
+    type: 1000base-t
+  - name: ETH-6
+    type: 1000base-t
+  - name: ETH-7
+    type: 1000base-t
+  - name: ETH-8
+    type: 1000base-t
+  - name: ETH-9
+    type: 10gbase-x-sfpp
+  - name: ETH-10
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: com
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 300
+  - name: PS2
+    type: iec-60320-c14
+    maximum_draw_w: 300
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/LANCOM/ISG-8000.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 1b654e2a6cc03ac8

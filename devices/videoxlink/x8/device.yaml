@@ -1,0 +1,94 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: videoxlink
+model: X8
+slug: x8
+category: network_switch
+form_factor: rack
+part_numbers:
+  - VideoXLink X8
+u_height: 1
+full_depth: false
+weight_kg: 3.4
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: ETH0
+    label: "0"
+    type: 1000base-t
+  - name: ETH1
+    label: "1"
+    type: 1000base-t
+  - name: ETH2
+    label: "2"
+    type: 1000base-t
+  - name: ETH3
+    label: "3"
+    type: 1000base-t
+  - name: ETH4
+    label: "4"
+    type: 10gbase-t
+  - name: ETH5
+    label: "5"
+    type: 10gbase-t
+  - name: ETH6
+    label: "6"
+    type: 10gbase-x-sfpp
+  - name: ETH7
+    label: "7"
+    type: 10gbase-x-sfpp
+  - name: ETH8
+    label: "8"
+    type: 25gbase-x-sfp28
+  - name: ETH9
+    label: "9"
+    type: 25gbase-x-sfp28
+  - name: MGMT
+    label: MGMT
+    type: 1000base-t
+    mgmt_only: true
+power_ports:
+  - name: POWER1
+    type: iec-60320-c14
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.videoxlink.com/downloads/videoxlink_datasheet_x8.pdf
+comments: |-
+  VideoXLink X8 is the ultimate low latency production solution, suited for remote production usage in
+  the field or being installed in a production studio, thanks to its 19" size and rack mount kit. By having 8
+  3G-SDI bidirectional ports, the X8 can be used as a flexible solution, turning inputs to outputs and vice
+  versa. X8 is also capable of encoding/decoding NDI, adding even more channels than the 8 SDI ports.
+  X8 is equipped with 10 ethernet interface cards, offering speeds between 1 Gbit/s and 25 Gbit/s. All 10
+  ports are available for usage in the VideoXLink application, making it possible for using several backup
+  connections, layer 2 trunks or high-speed connections to the local network when using NDI network
+  streams.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/VideoXLink/VideoXLink-X8.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 76918182419f3080

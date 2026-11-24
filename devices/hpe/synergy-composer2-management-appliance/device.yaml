@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Synergy Composer2 Management Appliance
+slug: synergy-composer2-management-appliance
+category: compute_blade
+form_factor: blade
+part_numbers:
+  - 872957-B21
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 1.4
+interfaces:
+  - name: Management
+    type: virtual
+    mgmt_only: true
+  - name: iLO
+    type: virtual
+    mgmt_only: true
+links:
+  other:
+    - label: QuickSpecs
+      url: https://psnow.ext.hpe.com/doc/c04815139
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Synergy-Composer2-Management-Appliance.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: c3d663dadbe495f1

@@ -1,0 +1,130 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: Power Distribution Pro
+slug: power-distribution-pro
+category: pdu
+form_factor: rack
+part_numbers:
+  - USP-PDU-Pro
+u_height: 2
+full_depth: false
+weight_kg: 3.7
+airflow: passive
+power:
+  outlet_count: 20
+interfaces:
+  - name: Port 21
+    label: Main Internet
+    type: 100base-tx
+    mgmt_only: true
+  - name: Port 22
+    label: Reserved for future use
+    type: 1000base-t
+    mgmt_only: true
+  - name: Port 23
+    label: Reserved for future use
+    type: 1000base-t
+    mgmt_only: true
+  - name: Port 24
+    label: Reserved for future use
+    type: 1000base-t
+    mgmt_only: true
+power_ports:
+  - name: Input
+    description: 125V AC, 15A Max., 50/60 Hz
+    type: nema-5-15p
+    maximum_draw_w: 1875
+power_outlets:
+  - name: Outlet 1
+    type: usb-c
+    power_port: Input
+  - name: Outlet 2
+    type: usb-c
+    power_port: Input
+  - name: Outlet 3
+    type: usb-c
+    power_port: Input
+  - name: Outlet 4
+    type: usb-c
+    power_port: Input
+  - name: Outlet 5
+    type: nema-5-15r
+    power_port: Input
+  - name: Outlet 6
+    type: nema-5-15r
+    power_port: Input
+  - name: Outlet 7
+    type: nema-5-15r
+    power_port: Input
+  - name: Outlet 8
+    type: nema-5-15r
+    power_port: Input
+  - name: Outlet 9
+    type: nema-5-15r
+    power_port: Input
+  - name: Outlet 10
+    type: nema-5-15r
+    power_port: Input
+  - name: Outlet 11
+    type: nema-5-15r
+    power_port: Input
+  - name: Outlet 12
+    type: nema-5-15r
+    power_port: Input
+  - name: Outlet 13
+    type: nema-5-15r
+    power_port: Input
+  - name: Outlet 14
+    type: nema-5-15r
+    power_port: Input
+  - name: Outlet 15
+    type: nema-5-15r
+    power_port: Input
+  - name: Outlet 16
+    type: nema-5-15r
+    power_port: Input
+  - name: Outlet 17
+    type: nema-5-15r
+    power_port: Input
+  - name: Outlet 18
+    type: nema-5-15r
+    power_port: Input
+  - name: Outlet 19
+    type: nema-5-15r
+    power_port: Input
+  - name: Outlet 20
+    type: nema-5-15r
+    power_port: Input
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  product_page: https://store.ui.com/products/usp-pdu-pro
+comments: |-
+  2U rack-mounted power distribution unit with (16) controllable power outlets, (4) USB-C ports, and (4) Ethernet ports for monitoring and control.
+  Dimensions: 442.4 x 87.4 x 106 mm (17.4 x 3.4 x 4.2")
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/USP-PDU-Pro.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 881ea216c3def310

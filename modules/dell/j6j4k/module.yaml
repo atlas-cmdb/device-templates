@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: dell
+model: J6J4K
+slug: j6j4k
+kind: psu
+description: S6100-ON 1100W AC PSU (D1100E-S2), reverse airflow (PSU to I/O)
+part_numbers:
+  - J6J4K
+airflow: rear-to-front
+power_ports:
+  - name: "{module}"
+    type: iec-60320-c14
+    maximum_draw_w: 1100
+comments: Same physical form factor as the PowerEdge R640 PSU (and possibly other models), but the firmware is incompatible - not interchangeable between switch and server.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Dell/J6J4K.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - airflow
+    - comments
+    - description
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: e9faedb7758d66b5

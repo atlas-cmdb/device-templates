@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: lenovo
+model: C4A5
+slug: c4a5
+kind: other
+description: Lenovo ThinkSystem DM/DG5200 Series Controller, 64GB
+part_numbers:
+  - C4A5
+interfaces:
+  - name: Controller {module}/e0M
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Controller {module}/Console
+    type: rj-45
+rear_ports:
+  - name: Controller {module}/USB
+    type: usb-c
+module_bays:
+  - name: Controller {module}/PSU
+    bay_position: PSU
+  - name: Controller {module}/HIC1
+    bay_position: Controller {module}/e1
+  - name: Controller {module}/HIC2
+    bay_position: Controller {module}/e2
+  - name: Controller {module}/HIC3
+    bay_position: Controller {module}/e3
+  - name: Controller {module}/HIC4
+    bay_position: Controller {module}/e4
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Lenovo/C4A5.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - console_ports
+    - description
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: 71f9affd38f2484b

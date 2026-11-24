@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Aruba AP-518
+slug: aruba-ap-518
+category: wireless_access_point
+form_factor: other
+part_numbers:
+  - AP-518
+u_height: 0
+full_depth: false
+weight_kg: 1.5
+airflow: passive
+interfaces:
+  - name: E0
+    type: 2.5gbase-t
+    poe_mode: pd
+    poe_type: type2-ieee802.3at
+  - name: E1
+    type: 1000base-t
+    poe_mode: pd
+    poe_type: type2-ieee802.3at
+  - name: 2.4GHz WiFi
+    type: ieee802.11ax
+  - name: 5GHz WiFi
+    type: ieee802.11ax
+  - name: Bluetooth
+    type: ieee802.15.1
+  - name: Zigbee
+    type: other-wireless
+console_ports:
+  - name: Serial Console
+    type: usb-c
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.hpe.com/psnow/doc/a00096371enw
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Aruba-AP-518.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: ed925198fb9d4e2d

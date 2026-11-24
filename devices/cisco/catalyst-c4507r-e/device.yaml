@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: Catalyst C4507R-E
+slug: catalyst-c4507r-e
+category: network_switch
+form_factor: rack
+part_numbers:
+  - WS-C4507R-E
+u_height: 11
+full_depth: true
+weight_kg: 20.19
+airflow: right-to-left
+power:
+  psu_count: 2
+module_bays:
+  - name: Slot 1
+    description: Line Card
+    bay_position: "1"
+  - name: Slot 2
+    description: Line Card
+    bay_position: "2"
+  - name: Slot 3
+    description: Line Card
+    bay_position: "3"
+  - name: Slot 4
+    description: Line Card
+    bay_position: "4"
+  - name: Slot 5
+    description: Line Card
+    bay_position: "5"
+  - name: Slot 6
+    label: Supervisor Module 1
+    bay_position: "27"
+  - name: Slot 7
+    label: Supervisor Module 2
+    bay_position: "28"
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/WS-C4507R-E.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 855ab3b0bdffcb5e

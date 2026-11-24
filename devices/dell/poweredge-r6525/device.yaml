@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge R6525
+slug: poweredge-r6525
+category: server
+form_factor: rack
+u_height: 1
+full_depth: true
+weight_kg: 21.8
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: iDRAC
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: Optional OCP NIC
+    bay_position: ocp
+  - name: PCIe Slot 1
+    description: PCIe4 x16
+    bay_position: PCIe-1
+  - name: PCIe Slot 2
+    description: PCIe4 x16
+    bay_position: PCIe-2
+  - name: PCIe Slot 3
+    description: PCIe4 x16
+    bay_position: PCIe-3
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://i.dell.com/sites/csdocuments/product_docs/en/poweredge-r6525-spec-sheet.pdf
+  manual: https://www.delltechnologies.com/asset/en-ie/products/servers/technical-support/poweredge-r6625-technical-guide.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-R6525.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 41e5559adf1c88f6

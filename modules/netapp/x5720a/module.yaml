@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: netapp
+model: X5720A
+slug: x5720a
+kind: storage
+description: Storage controller for DS460C,DS224C,DS212C,DE460C,DE224C,DE212C
+part_numbers:
+  - 111-02850
+interfaces:
+  - name: "{module}: 1"
+    description: MiniSAS HD
+    type: other
+  - name: "{module}: 2"
+    description: MiniSAS HD
+    type: other
+  - name: "{module}: 3"
+    description: MiniSAS HD
+    type: other
+  - name: "{module}: 4"
+    description: MiniSAS HD
+    type: other
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/NetApp/X5720A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 56334add2ad00b89

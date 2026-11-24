@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lantronix
+model: ETS16PR
+slug: ets16pr
+category: console_server
+form_factor: rack
+part_numbers:
+  - ETS16PR
+u_height: 1
+full_depth: true
+weight_kg: 1.6
+power:
+  psu_count: 1
+interfaces:
+  - name: 10/100
+    type: 100base-tx
+    mgmt_only: true
+  - name: AUI
+    type: other
+    mgmt_only: true
+console_server_ports:
+  - name: Serial 1
+    type: rj-45
+  - name: Serial 2
+    type: rj-45
+  - name: Serial 3
+    type: rj-45
+  - name: Serial 4
+    type: rj-45
+  - name: Serial 5
+    type: rj-45
+  - name: Serial 6
+    type: rj-45
+  - name: Serial 7
+    type: rj-45
+  - name: Serial 8
+    type: rj-45
+  - name: Serial 9
+    type: rj-45
+  - name: Serial 10
+    type: rj-45
+  - name: Serial 11
+    type: rj-45
+  - name: Serial 12
+    type: rj-45
+  - name: Serial 13
+    type: rj-45
+  - name: Serial 14
+    type: rj-45
+  - name: Serial 15
+    type: rj-45
+  - name: Serial 16
+    type: rj-45
+power_ports:
+  - name: Power
+    type: iec-60320-c14
+    maximum_draw_w: 30
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Lantronix/ets16pr.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_server_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 8ed31c04d570faf9

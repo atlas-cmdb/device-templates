@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: nec
+model: UNIVERGE IX2105
+slug: univerge-ix2105
+category: appliance
+form_factor: rack
+part_numbers:
+  - BE108821
+u_height: 1
+full_depth: false
+weight_kg: 0.8
+power:
+  psu_count: 1
+interfaces:
+  - name: GigaEthernet0
+    type: 1000base-t
+  - name: GigaEthernet1 port 1
+    type: 1000base-t
+  - name: GigaEthernet1 port 2
+    type: 1000base-t
+  - name: GigaEthernet1 port 3
+    type: 1000base-t
+  - name: GigaEthernet1 port 4
+    type: 1000base-t
+console_ports:
+  - name: CONSOLE
+    type: rj-45
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 7
+    allocated_draw_w: 7
+comments: "NEC UNIVERGE IX2105, Router, 7W. (1) RJ-45 Console Port, (1) Ethernet 1000BASE-TX, (4) Ethernet 1000BASE-TX in Switching Hub. Dimentions(WxDxH in mm): 135x196x36"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/NEC/UNIVERGE-IX2105.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e3a37ce1731e027b

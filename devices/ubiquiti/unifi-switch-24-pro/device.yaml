@@ -1,0 +1,110 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: UniFi Switch 24 Pro
+slug: unifi-switch-24-pro
+category: network_switch
+form_factor: rack
+part_numbers:
+  - USW-Pro-24
+u_height: 1
+full_depth: false
+weight_kg: 3.583
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Port 1
+    type: 1000base-t
+  - name: Port 2
+    type: 1000base-t
+  - name: Port 3
+    type: 1000base-t
+  - name: Port 4
+    type: 1000base-t
+  - name: Port 5
+    type: 1000base-t
+  - name: Port 6
+    type: 1000base-t
+  - name: Port 7
+    type: 1000base-t
+  - name: Port 8
+    type: 1000base-t
+  - name: Port 9
+    type: 1000base-t
+  - name: Port 10
+    type: 1000base-t
+  - name: Port 11
+    type: 1000base-t
+  - name: Port 12
+    type: 1000base-t
+  - name: Port 13
+    type: 1000base-t
+  - name: Port 14
+    type: 1000base-t
+  - name: Port 15
+    type: 1000base-t
+  - name: Port 16
+    type: 1000base-t
+  - name: Port 17
+    type: 1000base-t
+  - name: Port 18
+    type: 1000base-t
+  - name: Port 19
+    type: 1000base-t
+  - name: Port 20
+    type: 1000base-t
+  - name: Port 21
+    type: 1000base-t
+  - name: Port 22
+    type: 1000base-t
+  - name: Port 23
+    type: 1000base-t
+  - name: Port 24
+    type: 1000base-t
+  - name: Port 25 - SFP+
+    type: 10gbase-x-sfpp
+  - name: Port 26 - SFP+
+    type: 10gbase-x-sfpp
+power_ports:
+  - name: Input
+    type: iec-60320-c14
+    maximum_draw_w: 30
+  - name: USP-RPS connector for PSU failover
+    type: ubiquiti-smartpower
+    maximum_draw_w: 30
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  other:
+    - label: Switch Switch 24 Pro Techspecs
+      url: https://techspecs.ui.com/unifi/switching/usw-pro-24
+comments: |-
+  UniFi Switch 24 Pro (50W), (24) Gigabit, (1-16) Gigabit, (17-24) Gigabit, (2) SFP+
+  Dimensions: 442.4 x 285 x 44 mm (17.4 x 11.2 x 1.7")
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/USW-Pro-24.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 641a17312a17fa0b

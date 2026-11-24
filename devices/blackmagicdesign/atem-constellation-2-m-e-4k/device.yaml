@@ -1,0 +1,127 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: blackmagicdesign
+model: ATEM Constellation 2 M/E 4k
+slug: atem-constellation-2-m-e-4k
+category: appliance
+form_factor: rack
+part_numbers:
+  - W-APS-41
+u_height: 1
+full_depth: false
+weight_kg: 2.971
+airflow: right-to-left
+power:
+  psu_count: 1
+interfaces:
+  - name: CONTROL
+    type: 1000base-t
+  - name: TALKBACK
+    type: 1000base-t
+console_ports:
+  - name: USB0
+    type: usb-c
+  - name: REMOTE
+    type: rj-12
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    allocated_draw_w: 140
+rear_ports:
+  - name: REF-IN
+    type: bnc
+  - name: SDI-INPUT-1
+    type: bnc
+  - name: SDI-INPUT-2
+    type: bnc
+  - name: SDI-INPUT-3
+    type: bnc
+  - name: SDI-INPUT-4
+    type: bnc
+  - name: SDI-INPUT-5
+    type: bnc
+  - name: SDI-INPUT-6
+    type: bnc
+  - name: SDI-INPUT-7
+    type: bnc
+  - name: SDI-INPUT-8
+    type: bnc
+  - name: SDI-INPUT-9
+    type: bnc
+  - name: SDI-INPUT-10
+    type: bnc
+  - name: SDI-INPUT-11
+    type: bnc
+  - name: SDI-INPUT-12
+    type: bnc
+  - name: SDI-INPUT-13
+    type: bnc
+  - name: SDI-INPUT-14
+    type: bnc
+  - name: SDI-INPUT-15
+    type: bnc
+  - name: SDI-INPUT-16
+    type: bnc
+  - name: SDI-INPUT-17
+    type: bnc
+  - name: SDI-INPUT-18
+    type: bnc
+  - name: SDI-INPUT-19
+    type: bnc
+  - name: SDI-INPUT-20
+    type: bnc
+  - name: SDI-OUTPUT-1
+    type: bnc
+  - name: SDI-OUTPUT-2
+    type: bnc
+  - name: SDI-OUTPUT-3
+    type: bnc
+  - name: SDI-OUTPUT-4
+    type: bnc
+  - name: SDI-OUTPUT-5
+    type: bnc
+  - name: SDI-OUTPUT-6
+    type: bnc
+  - name: SDI-OUTPUT-7
+    type: bnc
+  - name: SDI-OUTPUT-8
+    type: bnc
+  - name: SDI-OUTPUT-9
+    type: bnc
+  - name: SDI-OUTPUT-10
+    type: bnc
+  - name: SDI-OUTPUT-11
+    type: bnc
+  - name: SDI-OUTPUT-12
+    type: bnc
+  - name: MULTIVIEW-OUTPUT-1
+    type: bnc
+  - name: MULTIVIEW-OUTPUT-2
+    type: bnc
+  - name: ANALOG-AUDIO-IN-1
+    type: other
+  - name: ANALOG-AUDIO-IN-2
+    type: other
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Blackmagicdesign/atem-constellation-2-m-e-4k.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - rear_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: de0c7dc6b487ba80

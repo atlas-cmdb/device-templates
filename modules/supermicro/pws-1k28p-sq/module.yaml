@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: supermicro
+model: PWS-1K28P-SQ
+slug: pws-1k28p-sq
+kind: psu
+description: 1000W 1U Redundant Power Supply
+part_numbers:
+  - PWS-1K28P-SQ
+power_ports:
+  - name: PSU{module}
+    type: iec-60320-c14
+    maximum_draw_w: 1000
+links:
+  datasheet: https://store.supermicro.com/us_en/pub/media/wysiwyg/productspecs/PWS-1K28P-SQ/PWS-1K28P-SQ_quick_spec.pdf
+comments: '""'
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Supermicro/PWS-1K28P-SQ.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - description
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: 9f54c2d6c4008519

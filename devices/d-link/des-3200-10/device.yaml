@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: d-link
+model: DES-3200-10
+slug: des-3200-10
+category: network_switch
+form_factor: rack
+part_numbers:
+  - DES-3200-10
+u_height: 1
+full_depth: false
+weight_kg: 1.17
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: "1"
+    type: 100base-tx
+  - name: "2"
+    type: 100base-tx
+  - name: "3"
+    type: 100base-tx
+  - name: "4"
+    type: 100base-tx
+  - name: "5"
+    type: 100base-tx
+  - name: "6"
+    type: 100base-tx
+  - name: "7"
+    type: 100base-tx
+  - name: "8"
+    type: 100base-tx
+  - name: "9"
+    type: 1000base-t
+  - name: "10"
+    type: 1000base-t
+  - name: 9F
+    type: 1000base-x-sfp
+  - name: 10F
+    type: 1000base-x-sfp
+console_ports:
+  - name: console
+    type: rj-45
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 14
+links:
+  product_page: https://www.dlink.ru/am/products/1/1719.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/D-Link/DES-3200-10.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: a6999aa1c22aafc5

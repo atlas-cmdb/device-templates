@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: stormshield
+model: SN-S-SERIES
+slug: sn-s-series
+category: firewall
+form_factor: rack
+part_numbers:
+  - SN-S-SERIES
+u_height: 0.5
+full_depth: false
+weight_kg: 1.67
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: port1
+    type: 2.5gbase-t
+  - name: port2
+    type: 2.5gbase-t
+  - name: port3
+    type: 2.5gbase-t
+  - name: port4
+    type: 2.5gbase-t
+  - name: port5
+    type: 2.5gbase-t
+  - name: port6
+    type: 2.5gbase-t
+  - name: port7
+    type: 2.5gbase-t
+  - name: port8
+    type: 2.5gbase-t
+  - name: port9
+    type: 1000base-x-sfp
+console_ports:
+  - name: console0
+    type: usb-c
+power_ports:
+  - name: PS1
+    type: dc-terminal
+  - name: PS2
+    type: dc-terminal
+links:
+  datasheet: https://www.stormshield.com/wp-content/uploads/SN-S-Series-220-320-Datasheet-EN.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Stormshield/SN-S-SERIES.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1fb94e6c13948d0a

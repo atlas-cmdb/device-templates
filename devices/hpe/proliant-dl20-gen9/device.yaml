@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: ProLiant DL20 Gen9
+slug: proliant-dl20-gen9
+category: server
+form_factor: rack
+u_height: 1
+full_depth: true
+weight_kg: 8.7
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Gig-E 1
+    label: NIC1/iLO
+    type: 1000base-t
+  - name: Gig-E 2
+    label: NIC2
+    type: 1000base-t
+module_bays:
+  - name: PSU1
+    description: Either a Power Supply Unit or a Fan Unit
+    bay_position: PSU1
+  - name: PSU2
+    description: Either a Power Supply Unit or a Fan Unit
+    bay_position: PSU2
+  - name: PCIe1
+    bay_position: PCIe1
+  - name: PCIe2
+    bay_position: PCIe2
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  manual: https://support.hpe.com/hpesc/public/docDisplay?docId=c04898522
+  other:
+    - label: Identifying Components
+      url: https://support.hpe.com/hpesc/public/docDisplay?docId=c04912841
+    - label: Maintenance and Service Guide
+      url: https://support.hpe.com/hpesc/public/docDisplay?docId=c04903922
+  product_page: https://support.hpe.com/connect/s/product?language=en_US&sp4ts.oid=1008556819&kmpmoid=1008556817&actTab=all&manualsFilter=all
+comments: "About HPE ProLiant DL20 Gen9 Server:"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/ProLiant-DL20-Gen9.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - links.manual
+    - links.other
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 8559e5fcd94f5614

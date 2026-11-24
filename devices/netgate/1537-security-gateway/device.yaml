@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netgate
+model: 1537 Security Gateway
+slug: 1537-security-gateway
+category: firewall
+form_factor: rack
+part_numbers:
+  - xg-1537
+u_height: 1
+full_depth: false
+weight_kg: 3.54
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: ix0
+    label: OPT1
+    type: 10gbase-x-sfpp
+  - name: ix1
+    label: OPT2
+    type: 10gbase-x-sfpp
+  - name: igb0
+    label: WAN
+    type: 1000base-t
+  - name: igb1
+    label: LAN
+    type: 1000base-t
+  - name: ipmi
+    type: 1000base-t
+    mgmt_only: true
+power_ports:
+  - name: psu
+    type: iec-60320-c14
+module_bays:
+  - name: Slot 1
+    description: 4-port 1GbE Supermicro AOC-SGP-i4, 4-port 10GbE Intel X710BM2, 2-port 10GbE Chelsio T520-CR, 2-port 10GbE Intel X710BM2
+    bay_position: "1"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Netgate/1537-Security-Gateway.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e9b3e9d4763d96a6

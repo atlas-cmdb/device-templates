@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: huawei
+model: PAC1K2S12-PB
+slug: pac1k2s12-pb
+kind: psu
+description: 1200W AC&240V DC Power Module
+part_numbers:
+  - 02313NYX
+power_ports:
+  - name: PWR{module}
+    type: iec-60320-c14
+    maximum_draw_w: 1200
+links:
+  datasheet: https://support.huawei.com/enterprise/en/doc/EDOC1100214356/1f239551/pac1k2s12-pb-1200w-ac-240v-dc-power-module-66-mm-width-case-back-to-front-power-panel-side-exhaust
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Huawei/PAC1K2S12-PB.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: d2c4201b2a9b2fb6

@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: UCSB-B200-M4
+slug: ucsb-b200-m4
+category: compute_blade
+form_factor: blade
+part_numbers:
+  - UCSB-B200-M4
+u_height: 0
+full_depth: true
+subdevice_role: child
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/UCSB-B200-M4.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - full_depth
+    - images.credit
+    - images.front
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: e516692442af7b2b

@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: Enterprise Fortress Gateway
+slug: enterprise-fortress-gateway
+category: appliance
+form_factor: rack
+part_numbers:
+  - EFG
+u_height: 1
+full_depth: false
+weight_kg: 6.5
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Port 1
+    label: Default WAN 1
+    type: 2.5gbase-t
+  - name: Port 2
+    type: 2.5gbase-t
+  - name: Port 3
+    type: 10gbase-x-sfpp
+  - name: Port 4
+    type: 10gbase-x-sfpp
+  - name: Port 5
+    label: Default WAN 2
+    type: 25gbase-x-sfp28
+  - name: Port 6
+    type: 25gbase-x-sfp28
+module_bays:
+  - name: PSU 1
+    bay_position: left
+  - name: PSU 2
+    bay_position: right
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  product_page: https://store.ui.com/products/enterprise-fortress-gateway
+comments: |-
+  High-performance enterprise gateway with (2) 2.5GbE RJ45 ports, (2) 10G SFP+ ports, and (2) 25G SFP28 ports. Supports redundant WAN failover and load balancing.
+  Dimensions: 442.4 x 43.7 x 325 mm (17.4 x 1.7 x 12.8")
+  Weight: 6.5 kg (14.3 lb)
+  Max Power Consumption: 82W
+  Certifications: CE, FCC, IC
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/EFG.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1931aa2479f25a57

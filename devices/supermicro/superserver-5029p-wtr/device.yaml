@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SuperServer 5029P-WTR
+slug: superserver-5029p-wtr
+category: server
+form_factor: rack
+part_numbers:
+  - SYS-5029P-WTR
+u_height: 2
+full_depth: true
+weight_kg: 15.42
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: BMC
+    description: Dedicated IPMI LAN port
+    type: 1000base-t
+    mgmt_only: true
+  - name: Gig-E 1
+    type: 10gbase-t
+  - name: Gig-E 2
+    type: 10gbase-t
+console_ports:
+  - name: Serial-1
+    label: Front
+    type: de-9
+  - name: Serial-2
+    label: Rear
+    type: de-9
+module_bays:
+  - name: PSU1
+    bay_position: PSU 1
+  - name: PSU2
+    bay_position: PSU 2
+  - name: PCI-E 1
+    description: PCI-E 3.0 x8 (FH, FL)
+    bay_position: "1"
+  - name: PCI-E 2
+    description: PCI-E 3.0 x8 (FH, FL)
+    bay_position: "2"
+  - name: PCI-E 3
+    description: PCI-E 3.0 x8 (FH, FL)
+    bay_position: "3"
+  - name: PCI-E 4
+    description: PCI-E 3.0 x8 (FH, FL)
+    bay_position: "4"
+  - name: PCI-E 5
+    description: PCI-E 3.0 x8 (LP)
+    bay_position: "5"
+  - name: M.2 1
+    description: Form-factors 2280, 22110
+    bay_position: "6"
+comments: Superserver SYS-5029P-WTR (https://www.supermicro.com/products/system/2U/5029/SYS-5029P-WTR.cfm)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SYS-5029P-WTR.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: c064165c5089c336

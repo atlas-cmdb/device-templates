@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: bastion
+model: SKAT-UPS1000-RACK-E
+slug: skat-ups1000-rack-e
+category: ups
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 12.4
+airflow: front-to-rear
+power:
+  outlet_count: 8
+  psu_count: 1
+console_ports:
+  - name: Serial
+    type: de-9
+  - name: USB
+    type: usb-b
+power_ports:
+  - name: Input
+    type: iec-60320-c14
+    maximum_draw_w: 1200
+power_outlets:
+  - name: Segment1_1
+    type: iec-60320-c13
+    power_port: Input
+  - name: Segment1_2
+    type: iec-60320-c13
+    power_port: Input
+  - name: Segment1_3
+    type: iec-60320-c13
+    power_port: Input
+  - name: Segment1_4
+    type: iec-60320-c13
+    power_port: Input
+  - name: Segment2_1
+    type: iec-60320-c13
+    power_port: Input
+  - name: Segment2_2
+    type: iec-60320-c13
+    power_port: Input
+  - name: Segment2_3
+    type: iec-60320-c13
+    power_port: Input
+  - name: Segment2_4
+    type: iec-60320-c13
+    power_port: Input
+module_bays:
+  - name: IntelligentSlot
+    bay_position: Rear
+links:
+  other:
+    - label: 1000VA 700W Online 2U Rack UPS 2x9Ah Battery Quickspecs
+      url: https://skat-ups.ru/catalog/ups/istochnik-bespereboynogo-pitaniya-skat-ups-1000-rack-2x9ah-isp-e/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Bastion/SKAT-UPS1000-RACK-E.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 3fbf57a81a87b162

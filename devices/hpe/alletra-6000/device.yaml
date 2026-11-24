@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Alletra 6000
+slug: alletra-6000
+category: storage_array
+form_factor: rack
+part_numbers:
+  - R4U28A
+u_height: 4
+full_depth: true
+weight_kg: 54.5
+airflow: front-to-rear
+power:
+  psu_count: 4
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: Gig-E 3
+    type: 1000base-t
+  - name: Gig-E 4
+    type: 1000base-t
+  - name: Gig-E 5
+    type: 1000base-t
+  - name: Gig-E 6
+    type: 1000base-t
+  - name: Gig-E 7
+    type: 1000base-t
+  - name: Gig-E 8
+    type: 1000base-t
+  - name: iLO
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+  - name: PSU3
+    bay_position: PSU3
+  - name: PSU4
+    bay_position: PSU4
+links:
+  other:
+    - label: HPE Alletra Storage 6000 Server QuickSpecs
+      url: https://www.hpe.com/psnow/doc/a50002567enw
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Alletra-6000.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 0e0ade2a47662d61

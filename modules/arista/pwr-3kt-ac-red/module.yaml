@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: arista
+model: PWR-3KT-AC-RED
+slug: pwr-3kt-ac-red
+kind: psu
+weight_kg: 2.495
+power:
+  input_voltage: 240V AC
+  psu_rating_w: 3000
+power_ports:
+  - name: "{module}"
+    type: iec-60320-c20
+    maximum_draw_w: 3000
+comments: Power supply for DCS-7504N, 7508N, 7512N, and 7516N chassis
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Arista/PWR-3KT-AC-RED.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - manufacturer
+    - model
+    - power.input_voltage
+    - power.psu_rating_w
+    - power_ports
+    - slug
+    - weight_kg
+  import_hash: 3057347ede841e66

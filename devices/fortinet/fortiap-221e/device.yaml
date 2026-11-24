@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: FortiAP 221E
+slug: fortiap-221e
+category: wireless_access_point
+form_factor: other
+part_numbers:
+  - FAP-221E
+u_height: 0
+full_depth: false
+weight_kg: 0.499
+airflow: passive
+interfaces:
+  - name: wan-poe
+    type: 1000base-t
+    poe_mode: pd
+    poe_type: type1-ieee802.3af
+  - name: radio-1
+    type: ieee802.11n
+  - name: radio-2
+    type: ieee802.11ac
+links:
+  datasheet: https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortiap-series.pdf
+  manual: https://docs.fortinet.com/document/fortiap/hardware/fortiap-221e-223e-fap-221e-223e-quickstart-guide-gen-2
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/FAP-221E.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 9fbc9a0f52d36d48

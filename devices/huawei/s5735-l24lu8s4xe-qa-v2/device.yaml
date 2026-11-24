@@ -1,0 +1,179 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huawei
+model: S5735-L24LU8S4XE-QA-V2
+slug: s5735-l24lu8s4xe-qa-v2
+category: network_switch
+form_factor: rack
+description: Switch 8*10/100/1000BASE-T ports(PoE++), 16*10/100/1000BASE-T ports(PoE+), 8*GE SFP ports, 4*10GE SFP+ ports, 2*12GE stack ports, AC power, Fanless
+part_numbers:
+  - "98012374"
+u_height: 1
+full_depth: false
+weight_kg: 5.05
+power:
+  psu_count: 1
+interfaces:
+  - name: GigabitEthernet0/0/1
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet0/0/2
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet0/0/3
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet0/0/4
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet0/0/5
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet0/0/6
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet0/0/7
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet0/0/8
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet0/0/9
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet0/0/10
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet0/0/11
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet0/0/12
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet0/0/13
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet0/0/14
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet0/0/15
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet0/0/16
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet0/0/17
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: GigabitEthernet0/0/18
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: GigabitEthernet0/0/19
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: GigabitEthernet0/0/20
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: GigabitEthernet0/0/21
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: GigabitEthernet0/0/22
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: GigabitEthernet0/0/23
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: GigabitEthernet0/0/24
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type4-ieee802.3bt
+  - name: GigabitEthernet0/0/25
+    type: 1000base-x-sfp
+  - name: GigabitEthernet0/0/26
+    type: 1000base-x-sfp
+  - name: GigabitEthernet0/0/27
+    type: 1000base-x-sfp
+  - name: GigabitEthernet0/0/28
+    type: 1000base-x-sfp
+  - name: GigabitEthernet0/0/29
+    type: 1000base-x-sfp
+  - name: GigabitEthernet0/0/30
+    type: 1000base-x-sfp
+  - name: GigabitEthernet0/0/31
+    type: 1000base-x-sfp
+  - name: GigabitEthernet0/0/32
+    type: 1000base-x-sfp
+  - name: XGigabitEthernet0/0/1
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/2
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/3
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/4
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/5
+    description: Stack port
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/6
+    description: Stack port
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 311
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  other:
+    - label: Huawei S5735-L24LU8S4XE-QA-V2 Hardware Description
+      url: https://support.huawei.com/enterprise/en/doc/EDOC1100277349/dec0bd0a/s5735-l24lu8s4xe-qa-v2
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Huawei/S5735-L24LU8S4XE-QA-V2.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 8cdab2d134b344e0

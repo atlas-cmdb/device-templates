@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: avm
+model: FRITZ!Box 6890 LTE
+slug: fritz-box-6890-lte
+category: network_switch
+form_factor: other
+part_numbers:
+  - "20002817"
+u_height: 0
+full_depth: false
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: DSL
+    label: DSL
+    type: xdsl
+  - name: FON
+    label: FON 2
+    type: other
+  - name: FONS0
+    label: FON S0
+    type: other
+  - name: WAN_LAN
+    label: WAN/LAN
+    type: 1000base-t
+  - name: LAN1
+    label: LAN 1
+    type: 1000base-t
+  - name: LAN2
+    label: LAN 2
+    type: 1000base-t
+  - name: LAN3
+    label: LAN 3
+    type: 1000base-t
+  - name: WiFi
+    type: ieee802.11ac
+power_ports:
+  - name: Power
+    type: dc-terminal
+    maximum_draw_w: 10
+links:
+  datasheet: https://avm.de/produkte/fritzbox/fritzbox-6890-lte/technische-daten/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/AVM/FRITZBox-6890-LTE.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: da2502ffdb25e008

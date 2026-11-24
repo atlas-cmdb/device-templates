@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fujitsu
+model: PRIMERGY RX2530 M6
+slug: primergy-rx2530-m6
+category: server
+form_factor: rack
+part_numbers:
+  - rx2530m6
+u_height: 1
+full_depth: true
+weight_kg: 18.2
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: iRMC-S5
+    type: 1000base-t
+    mgmt_only: true
+power_ports:
+  - name: PSU-1
+    type: iec-60320-c14
+    maximum_draw_w: 900
+  - name: PSU-2
+    type: iec-60320-c14
+    maximum_draw_w: 900
+module_bays:
+  - name: PCIe slot 1
+    label: "1"
+    description: PCIe4.0 16x
+    bay_position: PCIe-1
+  - name: PCIe slot 2
+    label: "2"
+    description: PCIe4.0 16x
+    bay_position: PCIe-2
+  - name: PCIe slot 3
+    label: "3"
+    description: PCIe4.0 16x
+    bay_position: PCIe-3
+  - name: PCIe slot 4
+    label: "4"
+    description: PCIe4.0 16x
+    bay_position: PCIe-4
+links:
+  datasheet: https://sp.ts.fujitsu.com/dmsp/Publications/public/ds-py-rx2530-m6.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fujitsu/primergy-rx2530-m6.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: ae61d9f7024fc477

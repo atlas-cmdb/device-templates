@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: wti
+model: REM-4R4-2-NE
+slug: rem-4r4-2-ne
+category: console_server
+form_factor: rack
+part_numbers:
+  - REM-4R4-2-NE
+u_height: 1
+full_depth: false
+airflow: passive
+power:
+  outlet_count: 4
+  psu_count: 1
+interfaces:
+  - name: ETH0
+    type: 1000base-t
+  - name: ETH1
+    type: 1000base-t
+  - name: PPP0
+    type: lte
+console_ports:
+  - name: Console
+    type: usb-mini-b
+console_server_ports:
+  - name: port1
+    type: rj-45
+  - name: port2
+    type: rj-45
+  - name: port3
+    type: rj-45
+  - name: port4
+    type: rj-45
+  - name: U1
+    type: usb-a
+  - name: U2
+    type: usb-a
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 10
+    allocated_draw_w: 5
+power_outlets:
+  - name: Outlet_A1
+    type: iec-60320-c13
+    power_port: PS1
+  - name: Outlet_A2
+    type: iec-60320-c13
+    power_port: PS1
+  - name: Outlet_A3
+    type: iec-60320-c13
+    power_port: PS1
+  - name: Outlet_A4
+    type: iec-60320-c13
+    power_port: PS1
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/WTI/REM-4R4-2-NE.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: de0a94861483231d

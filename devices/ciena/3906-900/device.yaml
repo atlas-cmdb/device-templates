@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ciena
+model: 3906-900
+slug: 3906-900
+category: optical_transport
+form_factor: rack
+part_numbers:
+  - 170-3906-900
+u_height: 1
+full_depth: false
+weight_kg: 1.6
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: "1"
+    type: 1000base-x-sfp
+  - name: "2"
+    type: 1000base-x-sfp
+  - name: "3"
+    type: 1000base-t
+  - name: "4"
+    type: 1000base-t
+  - name: "5"
+    type: 1000base-x-sfp
+  - name: "6"
+    type: 1000base-x-sfp
+  - name: MGMT
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: CONSOLE
+    type: rj-45
+power_ports:
+  - name: PSA
+    type: iec-60320-c14
+    maximum_draw_w: 96
+    allocated_draw_w: 40
+  - name: PSB
+    type: iec-60320-c14
+    maximum_draw_w: 96
+    allocated_draw_w: 40
+module_bays:
+  - name: FRU 1
+    description: |-
+      * 170-0128-901 BROADWELL D-1548, 32GB RAM, 480GB SSD
+      * 170-0121-901 BROADWELL D-1508, 8GB RAM, 120GB SSD
+      * 170-0122-901 BROADWELL D-1527, 16GB RAM, 120GB SSD
+    bay_position: "1"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ciena/3906-900.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e7cf6c56283aa2e4

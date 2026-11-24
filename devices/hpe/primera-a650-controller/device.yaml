@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Primera A650 Controller
+slug: primera-a650-controller
+category: storage_array
+form_factor: blade
+u_height: 0
+full_depth: true
+subdevice_role: child
+weight_kg: 3
+interfaces:
+  - name: MGMT
+    type: 1000base-t
+  - name: Slot-1
+    type: 10gbase-x-sfpp
+  - name: Slot-2
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Service
+    type: rj-45
+module_bays:
+  - name: Slot-3
+    bay_position: "3"
+  - name: Slot-4
+    bay_position: "4"
+  - name: Slot-5
+    bay_position: "5"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Primera-A650-Controller.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 9cb395baedc2053a

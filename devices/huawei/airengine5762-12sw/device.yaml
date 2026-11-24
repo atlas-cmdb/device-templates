@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huawei
+model: AirEngine5762-12SW
+slug: airengine5762-12sw
+category: wireless_access_point
+form_factor: other
+description: Wi-Fi 6 (802.11ax) Wall mount Access Point (AP)
+u_height: 0
+full_depth: false
+weight_kg: 0.185
+airflow: passive
+interfaces:
+  - name: Dot11Radio0
+    type: ieee802.11ax
+  - name: GE0/PoE_IN
+    type: 1000base-t
+    poe_mode: pd
+    poe_type: type1-ieee802.3af
+  - name: GE1/Ext
+    type: 1000base-t
+links:
+  product_page: https://e.huawei.com/en/products/wlan/indoor-access-points/airengine-5762-12sw
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Huawei/AirEngine5762-12SW.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 98ab86e4f2334249

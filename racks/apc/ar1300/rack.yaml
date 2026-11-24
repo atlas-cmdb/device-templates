@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../../schema/rack.schema.json
+manufacturer: apc
+model: AR1300
+slug: ar1300
+form_factor: 4-post-cabinet
+description: APC NetShelter SX, Server Rack Enclosure, 42U, Black, 1991H x 600W x 1070D mm [TAA]
+u_height: 42
+starting_unit: 1
+rack_width: 19
+outer_width_mm: 600
+outer_height_mm: 1991
+outer_depth_mm: 1070
+mounting_depth_mm: 914
+weight_kg: 125.09
+max_load_kg: 1020
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: rack-types/APC/AR1300.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - description
+    - manufacturer
+    - max_load_kg
+    - model
+    - mounting_depth_mm
+    - outer_depth_mm
+    - outer_height_mm
+    - outer_width_mm
+    - rack_width
+    - slug
+    - starting_unit
+    - u_height
+    - weight_kg
+  import_hash: 517ac1170ec93058

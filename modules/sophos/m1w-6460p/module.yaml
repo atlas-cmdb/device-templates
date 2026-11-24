@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: sophos
+model: M1W-6460P
+slug: m1w-6460p
+kind: other
+part_numbers:
+  - B011300011
+power_ports:
+  - name: "{module}"
+    type: iec-60320-c14
+    maximum_draw_w: 800
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Sophos/B011300011.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: 5d7f3e9103e5756b

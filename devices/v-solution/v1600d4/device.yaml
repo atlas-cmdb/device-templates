@@ -1,0 +1,95 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: v-solution
+model: V1600D4
+slug: v1600d4
+category: network_switch
+form_factor: rack
+description: V-SOL 4 Port EPON OLT (Rebranded by Syrotech, Digiway, Sharp Vision etc)
+part_numbers:
+  - V1600D4
+u_height: 1
+full_depth: false
+weight_kg: 1.4
+airflow: left-to-right
+power:
+  psu_count: 1
+interfaces:
+  - name: AUX Interface
+    label: AUX
+    description: "Default Web management IP: 192.168.8.100"
+    type: 100base-fx
+    mgmt_only: true
+  - name: epon 0/1
+    label: PON1
+    type: epon
+  - name: epon 0/2
+    label: PON2
+    type: epon
+  - name: epon 0/3
+    label: PON3
+    type: epon
+  - name: epon 0/4
+    label: PON4
+    type: epon
+  - name: gigabitethernet 0/1
+    label: GE1
+    type: 1000base-x-sfp
+  - name: gigabitethernet 0/2
+    label: GE2
+    type: 1000base-x-sfp
+  - name: gigabitethernet 0/3
+    label: GE3
+    type: 1000base-x-sfp
+  - name: gigabitethernet 0/4
+    label: GE4
+    type: 1000base-x-sfp
+  - name: gigabitethernet 0/5
+    label: GE5
+    type: 1000base-t
+  - name: gigabitethernet 0/6
+    label: GE6
+    type: 1000base-t
+  - name: gigabitethernet 0/7
+    label: GE7
+    type: 1000base-t
+  - name: gigabitethernet 0/8
+    label: GE8
+    type: 1000base-t
+console_ports:
+  - name: Console
+    label: Console
+    type: rj-45
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 40
+    allocated_draw_w: 30
+links:
+  datasheet: https://www.scribd.com/document/667911092/V1600D4-Datasheet-V1-3-EN
+comments: "Datasheet:"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/V-Solution/V1600D4.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 7faecab0169d88fe

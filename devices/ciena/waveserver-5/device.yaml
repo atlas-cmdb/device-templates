@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ciena
+model: Waveserver 5
+slug: waveserver-5
+category: optical_transport
+form_factor: rack
+part_numbers:
+  - 186-3001-900
+u_height: 2
+full_depth: true
+weight_kg: 29
+airflow: front-to-rear
+power:
+  psu_count: 2
+module_bays:
+  - name: Access Panel
+    description: 186-3020-900
+    bay_position: AP
+  - name: Control Processor
+    description: 186-3010-900 or 186-3011-900
+    bay_position: CP
+  - name: Module 1
+    description: 186-3100-900/186-3100-901/186-3110-901/186-3101-900/186-3101-901/186-3111-901/186-3102-900/186-3102-901/186-3112-901/186-3160-900/186-3161-900/186-3162-900/186-3171-900/186-3172-900
+    bay_position: "1"
+  - name: Module 3
+    description: 186-3100-900/186-3100-901/186-3110-901/186-3101-900/186-3101-901/186-3111-901/186-3102-900/186-3102-901/186-3112-901/186-3160-900/186-3161-900/186-3162-900/186-3171-900/186-3172-900
+    bay_position: "3"
+  - name: Module 5
+    description: 186-3100-900/186-3100-901/186-3110-901/186-3101-900/186-3101-901/186-3111-901/186-3102-900/186-3102-901/186-3112-901/186-3160-900/186-3161-900/186-3162-900/186-3171-900/186-3172-900
+    bay_position: "5"
+  - name: Module 7
+    description: 186-3100-900/186-3100-901/186-3110-901/186-3101-900/186-3101-901/186-3111-901/186-3102-900/186-3102-901/186-3112-901/186-3160-900/186-3161-900/186-3162-900/186-3171-900/186-3172-900
+    bay_position: "7"
+  - name: PSU-1
+    description: 186-3040-900 AC/186-3041-900 DC
+    bay_position: PSU-1
+  - name: PSU-2
+    description: 186-3040-900 AC/186-3041-900 DC
+    bay_position: PSU-2
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ciena/waveserver-5.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 8db2b247e4100811

@@ -1,0 +1,104 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: mellanox
+model: SN3700
+slug: sn3700
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0
+    type: 1000base-t
+    mgmt_only: true
+  - name: swp1
+    type: 200gbase-x-qsfp56
+  - name: swp2
+    type: 200gbase-x-qsfp56
+  - name: swp3
+    type: 200gbase-x-qsfp56
+  - name: swp4
+    type: 200gbase-x-qsfp56
+  - name: swp5
+    type: 200gbase-x-qsfp56
+  - name: swp6
+    type: 200gbase-x-qsfp56
+  - name: swp7
+    type: 200gbase-x-qsfp56
+  - name: swp8
+    type: 200gbase-x-qsfp56
+  - name: swp9
+    type: 200gbase-x-qsfp56
+  - name: swp10
+    type: 200gbase-x-qsfp56
+  - name: swp11
+    type: 200gbase-x-qsfp56
+  - name: swp12
+    type: 200gbase-x-qsfp56
+  - name: swp13
+    type: 200gbase-x-qsfp56
+  - name: swp14
+    type: 200gbase-x-qsfp56
+  - name: swp15
+    type: 200gbase-x-qsfp56
+  - name: swp16
+    type: 200gbase-x-qsfp56
+  - name: swp17
+    type: 200gbase-x-qsfp56
+  - name: swp18
+    type: 200gbase-x-qsfp56
+  - name: swp19
+    type: 200gbase-x-qsfp56
+  - name: swp20
+    type: 200gbase-x-qsfp56
+  - name: swp21
+    type: 200gbase-x-qsfp56
+  - name: swp22
+    type: 200gbase-x-qsfp56
+  - name: swp23
+    type: 200gbase-x-qsfp56
+  - name: swp24
+    type: 200gbase-x-qsfp56
+  - name: swp25
+    type: 200gbase-x-qsfp56
+  - name: swp26
+    type: 200gbase-x-qsfp56
+  - name: swp27
+    type: 200gbase-x-qsfp56
+  - name: swp28
+    type: 200gbase-x-qsfp56
+  - name: swp29
+    type: 200gbase-x-qsfp56
+  - name: swp30
+    type: 200gbase-x-qsfp56
+  - name: swp31
+    type: 200gbase-x-qsfp56
+  - name: swp32
+    type: 200gbase-x-qsfp56
+console_ports:
+  - name: con0
+    type: rj-45
+power_ports:
+  - name: psu0
+    type: iec-60320-c14
+  - name: psu1
+    type: iec-60320-c14
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Mellanox/SN3700.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 5b01c3a994b01b0e

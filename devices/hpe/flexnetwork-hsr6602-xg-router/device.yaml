@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: FlexNetwork HSR6602-XG Router
+slug: flexnetwork-hsr6602-xg-router
+category: router
+form_factor: rack
+part_numbers:
+  - JG354A
+u_height: 2
+full_depth: false
+weight_kg: 12.1
+airflow: front-to-rear
+interfaces:
+  - name: M-GigabitEthernet0/0/0
+    type: 1000base-t
+    mgmt_only: true
+  - name: GigabitEthernet1/0/0
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/0/1
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/0/2
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/0/3
+    type: 1000base-x-sfp
+  - name: Ten-GigabitEthernet1/0/4
+    type: 10gbase-x-sfpp
+  - name: Ten-GigabitEthernet1/0/5
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: con0
+    type: rj-45
+  - name: aux
+    type: rj-45
+  - name: usb
+    type: usb-mini-b
+module_bays:
+  - name: PS-1
+    bay_position: PS-A
+  - name: PS-2
+    bay_position: PS-B
+  - name: Service Module Slot
+    description: FIP10 or FIP20 Modules only
+    bay_position: "1"
+links:
+  datasheet: http://www.telecomdatasheets.com/ddata/993.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/FlexNetwork-HSR6602-XG-Router.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 304f7704d355d259

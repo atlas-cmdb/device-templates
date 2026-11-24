@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huawei
+model: NE8000-X4
+slug: ne8000-x4
+category: router
+form_factor: rack
+part_numbers:
+  - 02353CWA
+u_height: 10
+full_depth: true
+weight_kg: 72
+airflow: front-to-rear
+module_bays:
+  - name: LPU 1
+    bay_position: "1"
+  - name: LPU 2
+    bay_position: "2"
+  - name: LPU 3
+    bay_position: "3"
+  - name: LPU 4
+    bay_position: "4"
+  - name: MPU 5
+    bay_position: "5"
+  - name: MPU 6
+    bay_position: "6"
+  - name: SFU 1
+    bay_position: SFU1
+  - name: SFU 2
+    bay_position: SFU2
+  - name: SFU 3
+    bay_position: SFU3
+  - name: SFU 4
+    bay_position: SFU4
+  - name: SFU 5
+    bay_position: SFU5
+  - name: SFU 6
+    bay_position: SFU6
+  - name: SFU 7
+    bay_position: SFU7
+  - name: SFU 8
+    bay_position: SFU8
+links:
+  product_page: https://e.huawei.com/en/products/routers/ne8000
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Huawei/NE8000-X4.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: ae79ca9413b64b12

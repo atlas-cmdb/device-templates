@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: qnap
+model: TS-2483XU-RP
+slug: ts-2483xu-rp
+category: storage_array
+form_factor: rack
+part_numbers:
+  - TS-2483XU-RP
+u_height: 4
+full_depth: true
+weight_kg: 22.9
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0
+    type: 1000base-t
+  - name: eth1
+    type: 1000base-t
+  - name: eth2
+    type: 1000base-t
+  - name: eth3
+    type: 1000base-t
+module_bays:
+  - name: PCIe1
+    bay_position: PCIE1
+  - name: PCIe2
+    bay_position: PCIE2
+  - name: PCIe3
+    bay_position: PCIE3
+  - name: PCIe4
+    bay_position: PCIE4
+  - name: PCIe5
+    bay_position: PCIE5
+  - name: PSU 1
+    bay_position: "1"
+  - name: PSU 2
+    bay_position: "2"
+links:
+  product_page: https://www.qnap.com/en/product/ts-2483xu-rp/specs/hardware
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/QNAP/TS-2483XU-RP.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 45ebb137ae48bc30

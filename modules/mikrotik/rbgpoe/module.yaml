@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: mikrotik
+model: RBGPOE
+slug: rbgpoe
+kind: other
+part_numbers:
+  - RBGPOE
+weight_kg: 0.05
+power_ports:
+  - name: DC
+    label: DC
+    description: 18 - 57V DC 2A
+    type: dc-terminal
+front_ports:
+  - name: IN
+    label: IN
+    type: 8p8c
+    rear_port: OUT
+    rear_port_position: 1
+rear_ports:
+  - name: OUT
+    label: OUT
+    description: POE-OUT
+    type: 8p8c
+links:
+  datasheet: https://mikrotik.com/product/RBGPOE
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/MikroTik/RBGPOE.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - front_ports
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - rear_ports
+    - slug
+    - weight_kg
+  import_hash: 8beed7528f26e439

@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: dell
+model: R1KTR
+slug: r1ktr
+kind: other
+part_numbers:
+  - R1KTR
+interfaces:
+  - name: "{module}-25GbE-0"
+    label: "1"
+    type: 25gbase-x-sfp28
+  - name: "{module}-25GbE-1"
+    label: "2"
+    type: 25gbase-x-sfp28
+  - name: "{module}-25GbE-2"
+    label: "3"
+    type: 25gbase-x-sfp28
+  - name: "{module}-25GbE-3"
+    label: "4"
+    type: 25gbase-x-sfp28
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  other:
+    - label: Dell Specs
+      url: https://www.dell.com/en-sg/shop/intel-e810-quad-port-10-25gbe-sfp28-adapter-ocp-network-interface-card-30/apd/540-bddt/networking#compatibility_section
+  product_page: https://ark.intel.com/content/www/us/en/ark/products/184820/intel-ethernet-network-adapter-e810xxvda4-for-ocp-3-0.html
+comments: Intel E810-XXVDA4 Quad Port 10 /25GbE SFP28 Adapter, OCP NIC 3.0\n \n
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Dell/R1KTR.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - images.credit
+    - images.front
+    - interfaces
+    - links.other
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 72904fd93884c233

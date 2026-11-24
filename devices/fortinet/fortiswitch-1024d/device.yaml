@@ -1,0 +1,98 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: FortiSwitch 1024D
+slug: fortiswitch-1024d
+category: network_switch
+form_factor: rack
+part_numbers:
+  - FS-1024D
+u_height: 1
+full_depth: false
+weight_kg: 8.6
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: port1
+    type: 10gbase-x-sfpp
+  - name: port2
+    type: 10gbase-x-sfpp
+  - name: port3
+    type: 10gbase-x-sfpp
+  - name: port4
+    type: 10gbase-x-sfpp
+  - name: port5
+    type: 10gbase-x-sfpp
+  - name: port6
+    type: 10gbase-x-sfpp
+  - name: port7
+    type: 10gbase-x-sfpp
+  - name: port8
+    type: 10gbase-x-sfpp
+  - name: port9
+    type: 10gbase-x-sfpp
+  - name: port10
+    type: 10gbase-x-sfpp
+  - name: port11
+    type: 10gbase-x-sfpp
+  - name: port12
+    type: 10gbase-x-sfpp
+  - name: port13
+    type: 10gbase-x-sfpp
+  - name: port14
+    type: 10gbase-x-sfpp
+  - name: port15
+    type: 10gbase-x-sfpp
+  - name: port16
+    type: 10gbase-x-sfpp
+  - name: port17
+    type: 10gbase-x-sfpp
+  - name: port18
+    type: 10gbase-x-sfpp
+  - name: port19
+    type: 10gbase-x-sfpp
+  - name: port20
+    type: 10gbase-x-sfpp
+  - name: port21
+    type: 10gbase-x-sfpp
+  - name: port22
+    type: 10gbase-x-sfpp
+  - name: port23
+    type: 10gbase-x-sfpp
+  - name: port24
+    type: 10gbase-x-sfpp
+  - name: mgmt
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Console
+    type: rj-45
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+links:
+  datasheet: https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/FortiSwitch_Data_Center_Series.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/FS-1024D.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: ad4d67366b93599f

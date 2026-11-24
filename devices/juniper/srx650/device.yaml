@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: juniper
+model: SRX650
+slug: srx650
+category: firewall
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 11.32
+airflow: left-to-right
+power:
+  psu_count: 2
+interfaces:
+  - name: ge-0/0/0
+    type: 1000base-t
+  - name: ge-0/0/1
+    type: 1000base-t
+  - name: ge-0/0/2
+    type: 1000base-t
+  - name: ge-0/0/3
+    type: 1000base-t
+module_bays:
+  - name: PIM1
+    bay_position: "1"
+  - name: PIM2
+    bay_position: "2"
+  - name: PIM3
+    bay_position: "3"
+  - name: PIM4
+    bay_position: "4"
+  - name: PIM5
+    bay_position: "5"
+  - name: PIM6
+    bay_position: "6"
+  - name: PIM7
+    bay_position: "7"
+  - name: PIM8
+    bay_position: "8"
+  - name: SRE0
+    bay_position: RE0
+  - name: SRE1
+    bay_position: RE1
+  - name: PSU0
+    bay_position: "0"
+  - name: PSU1
+    bay_position: "1"
+links:
+  datasheet: https://www.juniper.net/content/dam/www/assets/datasheets/us/en/security/srx-series-services-gateways-branch-datasheet.pdf
+  other:
+    - label: Juniper SRX650 Chassis Data
+      url: https://www.juniper.net/documentation/en_US/release-independent/junos/topics/concept/chassis-srx650.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Juniper/SRX650.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: d9539ca0ef98b516

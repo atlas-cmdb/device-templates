@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge R7425
+slug: poweredge-r7425
+category: server
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 28.4
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: iDRAC9 1
+    label: iDRAC
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Rear Serial
+    type: de-9
+module_bays:
+  - name: PSU-1
+    label: "1"
+    bay_position: "1"
+  - name: PSU-2
+    label: "2"
+    bay_position: "2"
+  - name: NUMA 0 - OCP slot 1
+    bay_position: OCP-1
+  - name: NUMA 0 - PCIe slot 1 - FH
+    label: "1"
+    bay_position: PCIe-1
+  - name: NUMA 0 - PCIe slot 2 - FH
+    label: "2"
+    bay_position: PCIe-2
+  - name: NUMA 0 - PCIe slot 3 - FH
+    label: "3"
+    bay_position: PCIe-3
+  - name: NUMA 0 - PCIe slot 4 - FH
+    label: "4"
+    bay_position: PCIe-4
+  - name: NUMA 1 - PCIe slot 5 - FH
+    label: "5"
+    bay_position: PCIe-5
+  - name: NUMA 1 - PCIe slot 6 - LP
+    label: "6"
+    bay_position: PCIe-6
+  - name: NUMA 1 - PCIe slot 7 - FH
+    label: "7"
+    bay_position: PCIe-7
+  - name: NUMA 1 - PCIe slot 8 - FH
+    label: "8"
+    bay_position: PCIe-8
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-R7425.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: c0e752bdbdaebe4a

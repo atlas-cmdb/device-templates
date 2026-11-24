@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: everfocus
+model: PHX-N1000 Series
+slug: phx-n1000-series
+category: network_switch
+form_factor: other
+part_numbers:
+  - PHX-N1000 Series
+u_height: 0
+full_depth: false
+weight_kg: 1.6
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: eth0
+    type: 1000base-t
+power_ports:
+  - name: DC IN
+    description: 12V DC
+    type: dc-terminal
+links:
+  product_page: https://www.everfocus.com/products-detail/PHX-N1000-Series-Edge-AI-Camera
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/EverFocus/phx-n1000-series.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 82cef8478060c2b1

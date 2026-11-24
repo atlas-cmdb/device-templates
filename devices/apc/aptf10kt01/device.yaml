@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: APTF10KT01
+slug: aptf10kt01
+category: pdu
+form_factor: rack
+part_numbers:
+  - APTF10KT01
+u_height: 4
+full_depth: true
+power:
+  outlet_count: 5
+power_ports:
+  - name: Source
+    type: hardwired
+power_outlets:
+  - name: Hard Wire Output
+    type: hardwired
+  - name: Outlet 1
+    type: nema-l14-30r
+  - name: Outlet 2
+    type: nema-l14-30r
+  - name: Outlet 3
+    type: nema-l5-20r
+  - name: Outlet 4
+    type: nema-l5-20r
+comments: APC 208V/120V 10KVA Step down Transformer
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/APTF10KT01.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 5c6099966baa607c

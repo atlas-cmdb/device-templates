@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: certa
+model: C300R-010-B
+slug: c300r-010-b
+category: pdu
+form_factor: rack
+part_numbers:
+  - C300R-010-B
+u_height: 2
+full_depth: true
+weight_kg: 18
+power:
+  outlet_count: 8
+console_ports:
+  - name: Serial
+    type: rj-45
+  - name: USB management
+    type: usb-b
+power_ports:
+  - name: Power Port 1
+    type: iec-60320-c20
+power_outlets:
+  - name: Power Outlet 1
+    type: iec-60320-c13
+  - name: Power Outlet 2
+    type: iec-60320-c13
+  - name: Power Outlet 3
+    type: iec-60320-c13
+  - name: Power Outlet 4
+    type: iec-60320-c13
+  - name: Power Outlet 5
+    type: iec-60320-c13
+  - name: Power Outlet 6
+    type: iec-60320-c13
+  - name: Power Outlet 7
+    type: iec-60320-c13
+  - name: Power Outlet 8
+    type: iec-60320-c13
+module_bays:
+  - name: Intelligent Port
+    bay_position: "1"
+comments: Line Interactive UPS offering 1000VA load support.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Certa/C300R-010-B.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: f2df8d6a4441a171

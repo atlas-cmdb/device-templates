@@ -1,0 +1,124 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huawei
+model: S6730-H24X4Y4C
+slug: s6730-h24x4y4c
+category: network_switch
+form_factor: rack
+part_numbers:
+  - S6730-H24X4Y4C
+u_height: 1
+full_depth: false
+weight_kg: 3.4
+airflow: left-to-right
+power:
+  psu_count: 2
+interfaces:
+  - name: MEth0/0/1
+    type: 1000base-t
+    mgmt_only: true
+  - name: XGigabitEthernet0/0/1
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/2
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/3
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/4
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/5
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/6
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/7
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/8
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/9
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/10
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/11
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/12
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/13
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/14
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/15
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/16
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/17
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/18
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/19
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/20
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/21
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/22
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/23
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/24
+    type: 10gbase-x-sfpp
+  - name: 25GE0/0/1
+    type: 25gbase-x-sfp28
+  - name: 25GE0/0/2
+    type: 25gbase-x-sfp28
+  - name: 25GE0/0/3
+    type: 25gbase-x-sfp28
+  - name: 25GE0/0/4
+    type: 25gbase-x-sfp28
+  - name: 100GE0/0/1
+    type: 100gbase-x-qsfp28
+  - name: 100GE0/0/2
+    type: 100gbase-x-qsfp28
+  - name: 100GE0/0/3
+    type: 100gbase-x-qsfp28
+  - name: 100GE0/0/4
+    type: 100gbase-x-qsfp28
+console_ports:
+  - name: console0
+    label: console
+    type: rj-45
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  other:
+    - label: Huawei CloudEngine S6730-H24X4Y4C Hardware Description
+      url: https://support.huawei.com/enterprise/en/doc/EDOC1000013621/baf15fb9/s6730-h24x4y4c-02353nrd
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Huawei/S6730-H24X4Y4C.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1c52dca2c35f11a3

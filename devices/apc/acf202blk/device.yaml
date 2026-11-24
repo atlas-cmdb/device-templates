@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: ACF202BLK
+slug: acf202blk
+category: other
+form_factor: rack
+description: Rack Side Air Distribution 2U, 200/208/230V, dual A-B power feeds
+part_numbers:
+  - ACF202BLK
+u_height: 2
+full_depth: true
+weight_kg: 14.55
+power:
+  psu_count: 2
+power_ports:
+  - name: Source A
+    type: iec-60320-c14
+  - name: Source B
+    type: iec-60320-c14
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/ACF202BLK.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - description
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 3070a992802ea07d

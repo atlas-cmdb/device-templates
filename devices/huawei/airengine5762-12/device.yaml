@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huawei
+model: AirEngine5762-12
+slug: airengine5762-12
+category: wireless_access_point
+form_factor: other
+description: Wi-Fi 6 (802.11ax) Access Point (AP)
+u_height: 0
+full_depth: false
+weight_kg: 0.515
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: GE0/PoE_IN
+    type: 1000base-t
+    poe_mode: pd
+    poe_type: type1-ieee802.3af
+power_ports:
+  - name: DC-12V
+    type: dc-terminal
+    maximum_draw_w: 11
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  product_page: https://e.huawei.com/en/products/wlan/indoor-access-points/airengine-5762-12
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Huawei/AirEngine5762-12.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 37d493491a010598

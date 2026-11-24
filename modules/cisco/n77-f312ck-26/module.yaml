@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: N77-F312CK-26
+slug: n77-f312ck-26
+kind: other
+description: Nexus 7700 12-Port 100 Gigabit Ethernet Module
+part_numbers:
+  - N77-F312CK-26
+weight_kg: 8.4
+interfaces:
+  - name: Ethernet{module}/1
+    type: 100gbase-x-cpak
+  - name: Ethernet{module}/2
+    type: 100gbase-x-cpak
+  - name: Ethernet{module}/3
+    type: 100gbase-x-cpak
+  - name: Ethernet{module}/4
+    type: 100gbase-x-cpak
+  - name: Ethernet{module}/5
+    type: 100gbase-x-cpak
+  - name: Ethernet{module}/6
+    type: 100gbase-x-cpak
+  - name: Ethernet{module}/7
+    type: 100gbase-x-cpak
+  - name: Ethernet{module}/8
+    type: 100gbase-x-cpak
+  - name: Ethernet{module}/9
+    type: 100gbase-x-cpak
+  - name: Ethernet{module}/10
+    type: 100gbase-x-cpak
+  - name: Ethernet{module}/11
+    type: 100gbase-x-cpak
+  - name: Ethernet{module}/12
+    type: 100gbase-x-cpak
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/switches/nexus-7000-series-switches/data_sheet_c78-728423.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/N77-F312CK-26.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - weight_kg
+  import_hash: 76a9b4394319c50d

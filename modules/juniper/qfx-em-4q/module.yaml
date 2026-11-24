@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: juniper
+model: QFX-EM-4Q
+slug: qfx-em-4q
+kind: other
+part_numbers:
+  - QFX-EM-4Q
+interfaces:
+  - name: et-0/{module}/0
+    type: 40gbase-x-qsfpp
+  - name: et-0/{module}/1
+    type: 40gbase-x-qsfpp
+  - name: et-0/{module}/2
+    type: 40gbase-x-qsfpp
+  - name: et-0/{module}/3
+    type: 40gbase-x-qsfpp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Juniper/QFX-EM-4Q.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 2692d6ded09fba3c

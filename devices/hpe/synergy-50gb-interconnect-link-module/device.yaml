@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Synergy 50Gb Interconnect Link Module
+slug: synergy-50gb-interconnect-link-module
+category: compute_blade
+form_factor: blade
+part_numbers:
+  - 867793-B21
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 3
+interfaces:
+  - name: L1
+    description: CXP28 (300 Gb/s Interconnect Link)
+    type: other
+  - name: L2
+    description: CXP28 (300 Gb/s Interconnect Link)
+    type: other
+links:
+  other:
+    - label: QuickSpecs
+      url: https://www.hpe.com/psnow/doc/a00067743enw
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Synergy-50Gb-Interconnect-Link-Module.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: a2e562fbb78d94ac

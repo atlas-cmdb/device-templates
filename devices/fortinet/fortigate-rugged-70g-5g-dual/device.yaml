@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: FortiGate Rugged 70G 5G Dual
+slug: fortigate-rugged-70g-5g-dual
+category: firewall
+form_factor: rack
+part_numbers:
+  - FGR-70G-5G-DUAL
+u_height: 3
+full_depth: false
+weight_kg: 2.1
+airflow: passive
+power:
+  psu_count: 2
+interfaces:
+  - name: lan1
+    type: 1000base-t
+  - name: lan2
+    type: 1000base-t
+  - name: lan3
+    type: 1000base-t
+  - name: lan4
+    type: 1000base-t
+  - name: wan1
+    type: 1000base-t
+  - name: wan2
+    type: 1000base-t
+  - name: sfp1
+    type: 1000base-x-sfp
+  - name: sfp2
+    type: 1000base-x-sfp
+console_ports:
+  - name: COM1
+    type: rj-45
+  - name: COM2
+    type: rj-45
+power_ports:
+  - name: DC1
+    type: dc-terminal
+    maximum_draw_w: 27
+    allocated_draw_w: 25
+  - name: DC2
+    type: dc-terminal
+    maximum_draw_w: 27
+    allocated_draw_w: 25
+links:
+  datasheet: https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/a1edabaa-6ec8-11ef-8355-fa163e15d75b/FGR-70G-5G-DUAL-QSG.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/FGR-70G-5G-Dual.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 485d2e62c33b2491

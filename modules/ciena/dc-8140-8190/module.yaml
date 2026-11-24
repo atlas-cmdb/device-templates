@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: ciena
+model: DC-8140-8190
+slug: dc-8140-8190
+kind: psu
+description: 8140/8190, DC PLUGGABLE POWER SUPPLY -48V
+part_numbers:
+  - 170-0372-900
+power_ports:
+  - name: PS-{module}
+    type: dc-terminal
+    maximum_draw_w: 620
+    allocated_draw_w: 545
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Ciena/DC-8140-8190.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: 4b3c5534ec644d26

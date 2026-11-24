@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SuperServer 530MT-H8TNR
+slug: superserver-530mt-h8tnr
+category: server
+form_factor: rack
+part_numbers:
+  - SYS-530MT-H8TNR
+u_height: 3
+full_depth: true
+subdevice_role: parent
+weight_kg: 28.21
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: BMC 1
+    description: IPMI LAN port 1
+    type: 1000base-t
+    mgmt_only: true
+  - name: BMC 2
+    description: IPMI LAN port 2
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+device_bays:
+  - name: Node 1
+    label: Compute Node 1
+  - name: Node 2
+    label: Compute Node 2
+  - name: Node 3
+    label: Compute Node 3
+  - name: Node 4
+    label: Compute Node 4
+  - name: Node 5
+    label: Compute Node 5
+  - name: Node 6
+    label: Compute Node 6
+  - name: Node 7
+    label: Compute Node 7
+  - name: Node 8
+    label: Compute Node 8
+comments: SuperServer SYS-530MT-H8TNR (https://www.supermicro.com/en/products/system/Microcloud/3U/SYS-530MT-H8TNR)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SYS-530MT-H8TNR.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - device_bays
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: dd8e3de103f8a79e

@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fs
+model: IES3110-8TF-R
+slug: ies3110-8tf-r
+category: network_switch
+form_factor: rack
+u_height: 0.5
+full_depth: false
+weight_kg: 0.798
+power:
+  psu_count: 2
+interfaces:
+  - name: 1/1
+    type: 1000base-t
+  - name: 1/2
+    type: 1000base-t
+  - name: 1/3
+    type: 1000base-t
+  - name: 1/4
+    type: 1000base-t
+  - name: 1/5
+    type: 1000base-t
+  - name: 1/6
+    type: 1000base-t
+  - name: 1/7
+    type: 1000base-t
+  - name: 1/8
+    type: 1000base-t
+  - name: 1/9
+    type: 1000base-x-sfp
+  - name: 1/10
+    type: 1000base-x-sfp
+console_ports:
+  - name: Management
+    type: rj-45
+power_ports:
+  - name: PSU1
+    type: dc-terminal
+    maximum_draw_w: 10
+  - name: PSU2
+    type: dc-terminal
+    maximum_draw_w: 10
+links:
+  datasheet: https://www.fs.com/products_support/preview.html?categories_id=4242&files_id=4628&model_name=IES3110-8TF-R,IES3110-8TFP-R&is_datasheet=1
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/FS/IES3110-8TF-R.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 3eb72e16ea68e3f2

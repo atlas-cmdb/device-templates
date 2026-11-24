@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: AS-1015A-MT
+slug: as-1015a-mt
+category: server
+form_factor: rack
+part_numbers:
+  - AS-1015A-MT
+u_height: 1
+full_depth: false
+subdevice_role: parent
+airflow: front-to-rear
+power:
+  psu_count: 1
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 500
+module_bays:
+  - name: Drive Bay 1
+    description: 3.5" SATA internal fixed drive bay
+    bay_position: "1"
+device_bays:
+  - name: Motherboard
+    description: Supermicro H13SAE-MF
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  product_page: https://www.supermicro.com/en/products/system/mainstream/1u/as-1015a-mt
+comments: 1U mainstream A+ Server with Supermicro H13SAE-MF motherboard (CSE-514-505 chassis), 1 internal fixed 3.5" SATA drive bay (optionally 4 internal fixed 2.5" SATA bays), 1 PCIe 5.0 x16 FHHL slot, 500W Platinum power supply
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/AS-1015A-MT.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - device_bays
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: c85735369e7a99b6

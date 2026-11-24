@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: juniper
+model: SRX110H2-VA
+slug: srx110h2-va
+category: firewall
+form_factor: rack
+part_numbers:
+  - srx110h2-va
+u_height: 1
+full_depth: false
+weight_kg: 3.06
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: fe-0/0/0
+    type: 100base-tx
+  - name: fe-0/0/1
+    type: 100base-tx
+  - name: fe-0/0/2
+    type: 100base-tx
+  - name: fe-0/0/3
+    type: 100base-tx
+  - name: fe-0/0/4
+    type: 100base-tx
+  - name: fe-0/0/5
+    type: 100base-tx
+  - name: fe-0/0/6
+    type: 100base-tx
+  - name: fe-0/0/7
+    type: 100base-tx
+  - name: pt-1/0/0
+    type: xdsl
+console_ports:
+  - name: Con0
+    type: rj-45
+power_ports:
+  - name: PSU0
+    type: iec-60320-c14
+links:
+  product_page: https://www.juniper.net/documentation/product/us/en/srx110/#cat=product_literature
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Juniper/SRX110H2-VA.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 093dca938fa6cad2

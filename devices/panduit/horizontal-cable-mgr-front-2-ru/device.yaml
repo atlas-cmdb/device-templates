@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: panduit
+model: HORIZONTAL CABLE MGR FRONT 2 RU
+slug: horizontal-cable-mgr-front-2-ru
+category: cable_management
+form_factor: rack
+part_numbers:
+  - WMPF1E
+u_height: 2
+full_depth: false
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Panduit/WMPF1E.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - full_depth
+    - images.credit
+    - images.front
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+  import_hash: 0586dde400919def

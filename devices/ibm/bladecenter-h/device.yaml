@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ibm
+model: BladeCenter H
+slug: bladecenter-h
+category: blade_chassis
+form_factor: rack
+u_height: 9
+full_depth: true
+subdevice_role: parent
+power:
+  psu_count: 4
+module_bays:
+  - name: PSU0
+    bay_position: "0"
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+  - name: PSU3
+    bay_position: "3"
+device_bays:
+  - name: Server Bay 1
+  - name: Server Bay 2
+  - name: Server Bay 3
+  - name: Server Bay 4
+  - name: Server Bay 5
+  - name: Server Bay 6
+  - name: Server Bay 7
+  - name: Server Bay 8
+  - name: Server Bay 9
+  - name: Server Bay 10
+  - name: Server Bay 11
+  - name: Server Bay 12
+  - name: Server Bay 13
+  - name: Server Bay 14
+  - name: I/O Module Bay 1
+  - name: I/O Module Bay 2
+  - name: I/O Module Bay 3
+  - name: I/O Module Bay 4
+  - name: I/O Module Bay 5
+  - name: I/O Module Bay 6
+  - name: I/O Module Bay 7 (High-speed)
+  - name: I/O Module Bay 8 (High-speed)
+  - name: I/O Module Bay 9 (High-speed)
+  - name: I/O Module Bay 10 (High-speed)
+  - name: Management Module Bay 1
+  - name: Management Module Bay 2
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/IBM/BladeCenter-H.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - device_bays
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: d640fcecac13b282

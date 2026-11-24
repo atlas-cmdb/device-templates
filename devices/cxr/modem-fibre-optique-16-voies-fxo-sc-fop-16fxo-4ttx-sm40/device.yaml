@@ -1,0 +1,98 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cxr
+model: Modem Fibre Optique 16 voies FXO/SC - FOP-16FXO-4TTX-SM40
+slug: modem-fibre-optique-16-voies-fxo-sc-fop-16fxo-4ttx-sm40
+category: console_server
+form_factor: rack
+part_numbers:
+  - FOP-16FXO-4TTX-SM40
+u_height: 1
+full_depth: false
+weight_kg: 2.5
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: Ethernet LAN
+    type: 100base-tx
+  - name: Ethernet 1
+    type: 100base-tx
+  - name: Ethernet 2
+    type: 100base-tx
+  - name: Ethernet 3
+    type: 100base-tx
+  - name: Ethernet 4
+    type: 100base-tx
+console_ports:
+  - name: USB
+    type: usb-b
+  - name: RS232
+    type: rj-45
+console_server_ports:
+  - name: ANALOG 01
+    type: rj-45
+  - name: ANALOG 02
+    type: rj-45
+  - name: ANALOG 03
+    type: rj-45
+  - name: ANALOG 04
+    type: rj-45
+  - name: ANALOG 05
+    type: rj-45
+  - name: ANALOG 06
+    type: rj-45
+  - name: ANALOG 07
+    type: rj-45
+  - name: ANALOG 08
+    type: rj-45
+  - name: ANALOG 09
+    type: rj-45
+  - name: ANALOG 10
+    type: rj-45
+  - name: ANALOG 11
+    type: rj-45
+  - name: ANALOG 12
+    type: rj-45
+  - name: ANALOG 13
+    type: rj-45
+  - name: ANALOG 14
+    type: rj-45
+  - name: ANALOG 15
+    type: rj-45
+  - name: ANALOG 16
+    type: rj-45
+power_ports:
+  - name: Power
+    type: iec-60320-c6
+    maximum_draw_w: 5
+rear_ports:
+  - name: LAN-FO
+    type: sc-upc
+links:
+  manual: https://www.cxr.com/documents/brochures/fop_32fxo_s_4ttx.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/CXR/FOP-16FXO-4TTX-SM40.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - rear_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: df1e65e17ed4abc8

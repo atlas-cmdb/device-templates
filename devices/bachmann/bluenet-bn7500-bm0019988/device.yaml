@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: bachmann
+model: BlueNet BN7500 BM0019988
+slug: bluenet-bn7500-bm0019988
+category: pdu
+form_factor: rack
+u_height: 1
+full_depth: false
+airflow: passive
+power:
+  outlet_count: 20
+interfaces:
+  - name: lan0
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: gpio
+    type: rj-12
+  - name: usb
+    type: usb-a
+power_ports:
+  - name: Input
+    description: Single-phase CEE inlet
+    type: iec-60309-p-n-e-6h
+    maximum_draw_w: 7400
+power_outlets:
+  - name: Outlet 1
+    type: iec-60320-c13
+  - name: Outlet 2
+    type: iec-60320-c13
+  - name: Outlet 3
+    type: iec-60320-c13
+  - name: Outlet 4
+    type: iec-60320-c19
+  - name: Outlet 5
+    type: iec-60320-c19
+  - name: Outlet 6
+    type: iec-60320-c13
+  - name: Outlet 7
+    type: iec-60320-c13
+  - name: Outlet 8
+    type: iec-60320-c13
+  - name: Outlet 9
+    type: iec-60320-c19
+  - name: Outlet 10
+    type: iec-60320-c19
+  - name: Outlet 11
+    type: iec-60320-c13
+  - name: Outlet 12
+    type: iec-60320-c13
+  - name: Outlet 13
+    type: iec-60320-c13
+  - name: Outlet 14
+    type: iec-60320-c19
+  - name: Outlet 15
+    type: iec-60320-c19
+  - name: Outlet 16
+    type: iec-60320-c13
+  - name: Outlet 17
+    type: iec-60320-c13
+  - name: Outlet 18
+    type: iec-60320-c13
+  - name: Outlet 19
+    type: ita-g
+  - name: Outlet 20
+    type: ita-g
+links:
+  datasheet: https://bluenet.de/wp-content/uploads/bluenet_bn3000-bn7500_v2.03.xx_bedienungsanleitung_de_rev_01.pdf.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Bachmann/BlueNet-BN7500-BM0019988.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 5184a725f9dcfb9a

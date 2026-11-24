@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: panduit
+model: Opticom Rack Mount Enclosure, White, 4 RU, 16 FAP/Cassette Slots
+slug: opticom-rack-mount-enclosure-white-4-ru-16-fap-cassette-slots
+category: patch_panel
+form_factor: rack
+part_numbers:
+  - FRE4UWH
+u_height: 4
+full_depth: false
+subdevice_role: parent
+weight_kg: 10
+airflow: passive
+module_bays:
+  - name: A
+    bay_position: A
+  - name: B
+    bay_position: B
+  - name: C
+    bay_position: C
+  - name: D
+    bay_position: D
+  - name: E
+    bay_position: E
+  - name: F
+    bay_position: F
+  - name: G
+    bay_position: G
+  - name: H
+    bay_position: H
+  - name: J
+    bay_position: J
+  - name: K
+    bay_position: K
+  - name: L
+    bay_position: L
+  - name: M
+    bay_position: M
+  - name: N
+    bay_position: N
+  - name: P
+    bay_position: P
+  - name: R
+    bay_position: R
+  - name: T
+    bay_position: T
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Panduit/FRE4UWH.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: d2c288f6ffb0bdca

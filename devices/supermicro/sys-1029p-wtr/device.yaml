@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SYS-1029P-WTR
+slug: sys-1029p-wtr
+category: server
+form_factor: rack
+part_numbers:
+  - SYS-1029P-WTR
+u_height: 1
+full_depth: true
+weight_kg: 20.9
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: LAN1
+    type: 1000base-t
+  - name: LAN2
+    type: 1000base-t
+  - name: IPMI
+    description: Dedicated IPMI LAN port
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+  - name: PCI-E 1
+    description: x16 Full height slot
+    bay_position: "1"
+  - name: PCI-E 2
+    description: x16 Full height slot
+    bay_position: "2"
+  - name: PCI-E 3
+    description: x8 Low profile slot
+    bay_position: "3"
+  - name: PCI-E 4
+    description: x16 for Add-on-module (AOM)
+    bay_position: "4"
+  - name: PCI-E 5
+    description: x4 NVMe M.2 slot
+    bay_position: "5"
+links:
+  datasheet: https://www.supermicro.com/en/products/system/1u/1029/sys-1029p-wtr.php
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SYS-1029P-WTR.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 13605a90f1deecfa

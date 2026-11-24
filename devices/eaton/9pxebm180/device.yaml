@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eaton
+model: 9PXEBM180
+slug: 9pxebm180
+category: ups
+form_factor: rack
+part_numbers:
+  - 9PXEBM180
+u_height: 3
+full_depth: true
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: Battery connector, top
+    type: other
+  - name: Battery detection, left
+    label: Batt detection
+    type: other
+  - name: Battery connector, down
+    type: other
+  - name: Battery detection, right
+    label: Batt detection
+    type: other
+power_ports:
+  - name: UPS Input
+    type: other
+links:
+  manual: https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/eaton-9px-ups/eaton-9sx-9px-ups-5-6-kva-ebm-180v-installation-and-user-manual.pdf
+comments: Eaton 9PX extended battery moduel (EBM), 180V, Rack/tower, 3U
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eaton/9PXEBM180.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: c2232e37b171be59

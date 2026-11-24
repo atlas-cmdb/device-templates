@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: CW9800H1
+slug: cw9800h1
+category: wireless_access_point
+form_factor: rack
+part_numbers:
+  - CW9800H1
+u_height: 1
+full_depth: false
+weight_kg: 9.3
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: GigabitEthernet
+    description: Out-of-band management port
+    type: 1000base-t
+    mgmt_only: true
+  - name: RP (RJ-45)
+    description: High Availability Redundancy Port (Copper)
+    type: 1000base-t
+  - name: RP (SFP)
+    description: High Availability Redundancy Port (Fiber)
+    type: 10gbase-x-sfpp
+  - name: TwentyFiveGigE0/1/0
+    type: 25gbase-x-sfp28
+  - name: TwentyFiveGigE0/1/1
+    type: 25gbase-x-sfp28
+  - name: TwentyFiveGigE0/1/2
+    type: 25gbase-x-sfp28
+  - name: TwentyFiveGigE0/2/0
+    type: 25gbase-x-sfp28
+  - name: TenGigabitEthernet0/0/0
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet0/0/1
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet0/0/2
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet0/0/3
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet0/0/4
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet0/0/5
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet0/0/6
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet0/0/7
+    type: 10gbase-x-sfpp
+  - name: USB 0
+    description: USB 3.0 Type-A port (External Memory)
+    type: other
+  - name: USB 1
+    description: USB 3.0 Type-A port (External Memory)
+    type: other
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: USB CON
+    type: usb-micro-b
+module_bays:
+  - name: Power Supply Module 0
+    label: PEM 0
+    bay_position: "0"
+  - name: Power Supply Module 1
+    label: PEM 1
+    bay_position: "1"
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/networking/wireless/wireless-lan-controllers/cat-cw9800h1-cw9800h2-wireless-controllers-ds.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/CW9800H1.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 38ab1b16aec2b719

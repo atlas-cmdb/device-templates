@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huawei
+model: D5V6-256G-NVMe-Ctrl
+slug: d5v6-256g-nvme-ctrl
+category: compute_blade
+form_factor: blade
+part_numbers:
+  - 03050MRN
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 3
+interfaces:
+  - name: Mgmt
+    type: 1000base-t
+    mgmt_only: true
+  - name: Maintenance
+    type: 1000base-t
+    mgmt_only: true
+  - name: RDMA_Expand_1
+    type: 100gbase-x-qsfp28
+  - name: RDMA_Expand_2
+    type: 100gbase-x-qsfp28
+module_bays:
+  - name: IOM_0
+    bay_position: IOM_0
+  - name: IOM_1
+    bay_position: IOM_1
+  - name: IOM_2
+    bay_position: IOM_2
+  - name: IOM_3
+    bay_position: IOM_3
+  - name: IOM_4
+    bay_position: IOM_4
+  - name: IOM_5
+    bay_position: IOM_5
+comments: Controller Module - Kunpeng920 64 Cores, 1xM.2,PALM,100G Expansion board,8x32GB,TPM Overseas
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Huawei/D5V6-256G-NVMe-Ctrl.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 98fccd1853eb4fbf

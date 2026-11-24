@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: MSR930 JG513A
+slug: msr930-jg513a
+category: network_switch
+form_factor: rack
+part_numbers:
+  - JG513A
+u_height: 1
+full_depth: false
+weight_kg: 1
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: GigabitEthernet0/0
+    description: GE WAN
+    type: 1000base-t
+  - name: GigabitEthernet0/1
+    description: GE LAN
+    type: 1000base-t
+  - name: GigabitEthernet0/2
+    description: GE LAN
+    type: 1000base-t
+  - name: GigabitEthernet0/3
+    description: GE LAN
+    type: 1000base-t
+  - name: GigabitEthernet0/4
+    description: GE LAN
+    type: 1000base-t
+  - name: Cellular0
+    description: Built-in 3G module
+    type: other-wireless
+console_ports:
+  - name: Console/AUX
+    type: rj-45
+power_ports:
+  - name: PSU0
+    type: iec-60320-c14
+    maximum_draw_w: 24
+links:
+  manual: https://www.hpe.com/psnow/doc/c04315114.pdf
+  other:
+    - url: https://support.hpe.com/hpesc/public/docDisplay?docId=c03762326
+comments: |-
+  - HPE MSR93x Router Series documentation:
+  - Additional HPE support reference:
+  - MSR930 3G router variant.
+  - Console/AUX ports: 1
+  - USB ports: 1
+  - GE WAN ports: 1
+  - GE LAN ports: 4
+  - Built-in 3G module.
+  - Max AC power: 24 W
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/MSR930-JG513A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 76ce78e4b1f7178f

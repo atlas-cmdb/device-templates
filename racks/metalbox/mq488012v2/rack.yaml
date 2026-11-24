@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/rack.schema.json
+manufacturer: metalbox
+model: MQ488012v2
+slug: mq488012v2
+form_factor: 4-post-cabinet
+description: 19 inches rack, 48U, 2260x800x1200mm, perforated 80% doors (1-front, 2- rear), locker with key, black (RAL 9005), 2 ZeroU organizer
+u_height: 48
+starting_unit: 1
+rack_width: 19
+outer_width_mm: 800
+outer_depth_mm: 1200
+mounting_depth_mm: 1010
+weight_kg: 173
+max_load_kg: 1500
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: rack-types/MetalBox/MQ488012v2.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - description
+    - manufacturer
+    - max_load_kg
+    - model
+    - mounting_depth_mm
+    - outer_depth_mm
+    - outer_width_mm
+    - rack_width
+    - slug
+    - starting_unit
+    - u_height
+    - weight_kg
+  import_hash: 5748b209f01ea2b3

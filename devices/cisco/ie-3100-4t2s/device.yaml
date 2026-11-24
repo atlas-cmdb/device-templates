@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: IE-3100-4T2S
+slug: ie-3100-4t2s
+category: network_switch
+form_factor: other
+part_numbers:
+  - IE-3100-4T2S-E
+u_height: 0
+full_depth: false
+weight_kg: 0.73
+airflow: passive
+power:
+  psu_count: 2
+interfaces:
+  - name: GigabitEthernet1/1
+    type: 1000base-t
+  - name: GigabitEthernet1/2
+    type: 1000base-t
+  - name: GigabitEthernet1/3
+    type: 1000base-t
+  - name: GigabitEthernet1/4
+    type: 1000base-t
+  - name: GigabitEthernet1/5
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/6
+    type: 1000base-x-sfp
+power_ports:
+  - name: PWR-A
+    type: dc-terminal
+  - name: PWR-B
+    type: dc-terminal
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/catalyst-ie3100-rugged-series/catalyst-ie3100-rugged-series-ds.html
+comments: |-
+  - Cisco Catalyst IE3100 Rugged Series Data Sheet:
+  - Industrial Ethernet switch.
+  - 6 total ports: 4 x 10/100/1000 copper and 2 x 1GE SFP.
+  - Dual DC power inputs.
+  - DIN rail mount.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/IE-3100-4T2S.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: c15fe5da980ca912

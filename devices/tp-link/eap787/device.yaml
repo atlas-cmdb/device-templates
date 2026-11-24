@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: tp-link
+model: EAP787
+slug: eap787
+category: wireless_access_point
+form_factor: other
+part_numbers:
+  - EAP787
+u_height: 0
+full_depth: false
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: LAN
+    type: 10gbase-t
+    poe_mode: pd
+    poe_type: type4-ieee802.3bt
+power_ports:
+  - name: PoE
+    type: dc-terminal
+links:
+  other:
+    - label: TP-Link Omada EAP787
+      url: https://www.omadanetworks.com/us/business-networking/omada-wifi-ceiling-mount/eap787/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/TP-Link/EAP787.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 75d6b7ac598b48d9

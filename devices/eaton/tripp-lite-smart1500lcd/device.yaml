@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eaton
+model: Tripp Lite SMART1500LCD
+slug: tripp-lite-smart1500lcd
+category: pdu
+form_factor: rack
+part_numbers:
+  - "037332126146"
+u_height: 2
+full_depth: false
+weight_kg: 13.608
+power:
+  outlet_count: 8
+console_ports:
+  - name: RS232
+    type: de-9
+  - name: USB
+    type: usb-b
+power_ports:
+  - name: Primary
+    type: nema-5-15p
+    maximum_draw_w: 1000
+power_outlets:
+  - name: "1"
+    type: nema-5-15r
+  - name: "2"
+    type: nema-5-15r
+  - name: "3"
+    type: nema-5-15r
+  - name: "4"
+    type: nema-5-15r
+  - name: "5"
+    type: nema-5-15r
+  - name: "6"
+    type: nema-5-15r
+  - name: "7"
+    type: nema-5-15r
+  - name: "8"
+    type: nema-5-15r
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+comments: |-
+  Battery-backed power supply feeding 8 Nema-5-15R receptables
+  Dimensions: 438 x 89 x 267 mm (17.25" x 3.5" x 10.5") Weight: 13.6 kg
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eaton/Tripp-Lite-SMART1500LCD.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 9f1004c28ef102d1

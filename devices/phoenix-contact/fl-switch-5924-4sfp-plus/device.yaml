@@ -1,0 +1,103 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: phoenix-contact
+model: FL SWITCH 5924-4SFP+
+slug: fl-switch-5924-4sfp-plus
+category: network_switch
+form_factor: rack
+part_numbers:
+  - "1525939"
+u_height: 1
+full_depth: true
+weight_kg: 4.781
+airflow: passive
+power:
+  psu_count: 2
+interfaces:
+  - name: xf1
+    type: 1000base-t
+  - name: xf2
+    type: 1000base-t
+  - name: xf3
+    type: 1000base-t
+  - name: xf4
+    type: 1000base-t
+  - name: xf5
+    type: 1000base-t
+  - name: xf6
+    type: 1000base-t
+  - name: xf7
+    type: 1000base-t
+  - name: xf8
+    type: 1000base-t
+  - name: xf9
+    type: 1000base-t
+  - name: xf10
+    type: 1000base-t
+  - name: xf11
+    type: 1000base-t
+  - name: xf12
+    type: 1000base-t
+  - name: xf13
+    type: 1000base-t
+  - name: xf14
+    type: 1000base-t
+  - name: xf15
+    type: 1000base-t
+  - name: xf16
+    type: 1000base-t
+  - name: xf17
+    type: 1000base-t
+  - name: xf18
+    type: 1000base-t
+  - name: xf19
+    type: 1000base-t
+  - name: xf20
+    type: 1000base-t
+  - name: xf21
+    type: 1000base-t
+  - name: xf22
+    type: 1000base-t
+  - name: xf23
+    type: 1000base-t
+  - name: xf24
+    type: 1000base-t
+  - name: xf25
+    type: 10gbase-x-sfpp
+  - name: xf26
+    type: 10gbase-x-sfpp
+  - name: xf27
+    type: 10gbase-x-sfpp
+  - name: xf28
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    type: usb-c
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+links:
+  product_page: https://www.phoenixcontact.com/en-us/products/industrial-ethernet-switch-fl-switch-5924-4sfp-1525939
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Phoenix Contact/FL-SWITCH-5924-4SFPP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 6de18c1ee37faf2b

@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: panduit
+model: Opticom Fiber Adapter Panel, OM1, 6 SC Simplex, Electric Ivory
+slug: opticom-fiber-adapter-panel-om1-6-sc-simplex-electric-ivory
+kind: other
+part_numbers:
+  - FAP6WEISCZ
+front_ports:
+  - name: "{module}:1"
+    description: Simplex SC Port
+    type: sc-upc
+    color: d7c5a2
+    rear_port: "{module}:1"
+    rear_port_position: 1
+  - name: "{module}:2"
+    description: Simplex SC Port
+    type: sc-upc
+    color: d7c5a2
+    rear_port: "{module}:2"
+    rear_port_position: 1
+  - name: "{module}:3"
+    description: Simplex SC Port
+    type: sc-upc
+    color: d7c5a2
+    rear_port: "{module}:3"
+    rear_port_position: 1
+  - name: "{module}:4"
+    description: Simplex SC Port
+    type: sc-upc
+    color: d7c5a2
+    rear_port: "{module}:4"
+    rear_port_position: 1
+  - name: "{module}:5"
+    description: Simplex SC Port
+    type: sc-upc
+    color: d7c5a2
+    rear_port: "{module}:5"
+    rear_port_position: 1
+  - name: "{module}:6"
+    description: Simplex SC Port
+    type: sc-upc
+    color: d7c5a2
+    rear_port: "{module}:6"
+    rear_port_position: 1
+rear_ports:
+  - name: "{module}:1"
+    description: Simplex SC Port
+    type: sc-upc
+    color: d7c5a2
+  - name: "{module}:2"
+    description: Simplex SC Port
+    type: sc-upc
+    color: d7c5a2
+  - name: "{module}:3"
+    description: Simplex SC Port
+    type: sc-upc
+    color: d7c5a2
+  - name: "{module}:4"
+    description: Simplex SC Port
+    type: sc-upc
+    color: d7c5a2
+  - name: "{module}:5"
+    description: Simplex SC Port
+    type: sc-upc
+    color: d7c5a2
+  - name: "{module}:6"
+    description: Simplex SC Port
+    type: sc-upc
+    color: d7c5a2
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Panduit/FAP6WEISCZ.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - front_ports
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: a0184d510ac84edd

@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: extreme-networks
+model: AP4020-WW
+slug: ap4020-ww
+category: wireless_access_point
+form_factor: rack
+description: AP4020 Access Point
+part_numbers:
+  - AP4020-WW
+u_height: 1
+full_depth: false
+weight_kg: 1.3
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: ETH0/POE
+    type: 5gbase-t
+    poe_mode: pd
+    poe_type: type3-ieee802.3bt
+  - name: ETH1
+    type: 2.5gbase-t
+  - name: radio 0
+    description: Wi-Fi 7 Radio (2.4 GHz)
+    type: ieee802.11be
+  - name: radio 1
+    description: Wi-Fi 7 Radio (5 GHz)
+    type: ieee802.11be
+  - name: radio 2
+    description: Wi-Fi 7 Radio (6 GHz)
+    type: ieee802.11be
+  - name: sensor
+    description: Dedicated Tri-Frequency Security Sensor
+    type: ieee802.11be
+  - name: ble0
+    description: Bluetooth Low Energy (BLE) Radio
+    type: ieee802.15.1
+  - name: iot0
+    description: Thread/Zigbee IoT Radio
+    type: ieee802.15.4
+console_ports:
+  - name: Console
+    description: Serial Console Management
+    type: usb-micro-b
+power_ports:
+  - name: 12VDC
+    type: dc-terminal
+    maximum_draw_w: 36
+    allocated_draw_w: 21
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://extr-p-001.sitecorecontenthub.cloud/api/public/content/6c4cd97dc1db45478295b8f74d2c6c82?v=22db8284
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Extreme Networks/AP4020-WW.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 44e6983b777da566

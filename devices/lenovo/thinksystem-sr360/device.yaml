@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lenovo
+model: ThinkSystem SR360
+slug: thinksystem-sr360
+category: server
+form_factor: rack
+part_numbers:
+  - 7X02CTO1WW
+u_height: 1
+full_depth: true
+weight_kg: 18.8
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: XCC
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: PSU-1
+    label: "1"
+    bay_position: PSU-1
+  - name: PSU-2
+    label: "2"
+    bay_position: PSU-2
+  - name: Riser 1 - PCIe Slot 1
+    description: PCIe 3.0 x8, ML2 x8, or ML2 x16; low profile
+    bay_position: PCIe-1
+  - name: Riser 1 - PCIe Slot 2
+    description: PCIe 3.0 x16 or x8; low profile or full-height, half-length. Requires the second processor to be installed.
+    bay_position: PCIe-2
+  - name: Riser 2 - PCIe Slot 3
+    description: PCIe 3.0 x16; low profile
+    bay_position: PCIe-3
+  - name: PCIe Slot 4
+    description: PCIe 3.0 x8 (dedicated to an internal storage controller
+    bay_position: PCIe-4
+  - name: LOM Slot 1
+    description: Onboard LOM slot for up to 4x 1/10 Gb Ethernet ports
+    bay_position: LOM-1
+  - name: LOM Slot 2
+    description: Optional Mezzanine LOM (ML2) slot for dual-port 10 GbE cards with SFP+ or RJ-45 connectors or single- or dual-port 25 GbE cards with SFP28 connectors.
+    bay_position: LOM-2
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Lenovo/ThinkSystem-SR360.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 8e55c598b065b159

@@ -1,0 +1,85 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ippon
+model: Innova RT II 1000
+slug: innova-rt-ii-1000
+category: pdu
+form_factor: rack
+part_numbers:
+  - "1398359"
+u_height: 2
+full_depth: true
+weight_kg: 14.3
+airflow: front-to-rear
+power:
+  outlet_count: 8
+interfaces:
+  - name: Management
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+  - name: USB
+    type: usb-b
+power_ports:
+  - name: Inlet
+    type: iec-60320-c14
+    maximum_draw_w: 1000
+power_outlets:
+  - name: Outlet 1
+    type: iec-60320-c13
+    power_port: Inlet
+  - name: Outlet 2
+    type: iec-60320-c13
+    power_port: Inlet
+  - name: Outlet 3
+    type: iec-60320-c13
+    power_port: Inlet
+  - name: Outlet 4
+    type: iec-60320-c13
+    power_port: Inlet
+  - name: Outlet 5
+    type: iec-60320-c13
+    power_port: Inlet
+  - name: Outlet 6
+    type: iec-60320-c13
+    power_port: Inlet
+  - name: Outlet 7
+    type: iec-60320-c13
+    power_port: Inlet
+  - name: Outlet 8
+    type: iec-60320-c13
+    power_port: Inlet
+module_bays:
+  - name: IntelligentSlot
+    bay_position: Rear
+links:
+  other:
+    - label: Quickspecs
+      url: https://ippon.ru/catalog/item/ippon-1000-1398359/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ippon/Innova-RT-II-1000.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 2358cd6bcf51e68d

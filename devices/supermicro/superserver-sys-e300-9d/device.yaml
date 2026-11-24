@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SuperServer SYS-E300-9D
+slug: superserver-sys-e300-9d
+category: server
+form_factor: rack
+part_numbers:
+  - SYS-E300-9D
+u_height: 1
+full_depth: false
+weight_kg: 1.56
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: BMC
+    description: Dedicated IPMI LAN port
+    type: 1000base-t
+    mgmt_only: true
+  - name: LAN1
+    type: 10gbase-t
+  - name: LAN2
+    type: 10gbase-t
+power_ports:
+  - name: PS1
+    type: dc-terminal
+links:
+  product_page: https://www.supermicro.com/en/products/system/Mini-ITX/SYS-E300-9D.cfm
+comments: "Specification:"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SYS-E300-9D.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 99ba809d396a7ac4

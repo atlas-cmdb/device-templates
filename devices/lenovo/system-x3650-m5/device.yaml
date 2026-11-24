@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lenovo
+model: System x3650 M5
+slug: system-x3650-m5
+category: server
+form_factor: rack
+part_numbers:
+  - "8871"
+u_height: 2
+full_depth: true
+weight_kg: 19
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Ethernet 1
+    type: 1000base-t
+  - name: Ethernet 2
+    type: 1000base-t
+  - name: Ethernet 3
+    type: 1000base-t
+  - name: Ethernet 4
+    type: 1000base-t
+  - name: IMM
+    type: 100base-tx
+    mgmt_only: true
+module_bays:
+  - name: PSU 1
+    bay_position: "1"
+  - name: PSU 2
+    bay_position: "2"
+  - name: PCIe slot 1 - FH
+    label: "1"
+    bay_position: PCIe-1
+  - name: PCIe slot 2 - FH
+    label: "2"
+    bay_position: PCIe-2
+  - name: PCIe slot 3 or ML2 - FH
+    label: "3"
+    bay_position: PCIe-3
+  - name: PCIe slot 4 - LP
+    label: "4"
+    bay_position: PCIe-4
+  - name: PCIe slot 5 - LP
+    label: "5"
+    bay_position: PCIe-5
+  - name: PCIe slot 6 - FH
+    label: "6"
+    bay_position: PCIe-6
+  - name: PCIe slot 7 - FH
+    label: "7"
+    bay_position: PCIe-7
+  - name: PCIe slot 8 - FH
+    label: "8"
+    bay_position: PCIe-8
+  - name: Mezzanine LOM (ML2)
+    label: LOM
+    bay_position: PCIe-8
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  manual: https://lenovopress.lenovo.com/lp0068.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Lenovo/system-x3650-M5.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: facb2c17309e8693

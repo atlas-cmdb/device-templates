@@ -1,0 +1,96 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: check-point
+model: SG7000
+slug: sg7000
+category: firewall
+form_factor: rack
+part_numbers:
+  - CPAP-SG7000-SNBT
+u_height: 1
+full_depth: true
+weight_kg: 9
+airflow: side-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: eth1
+    label: "1"
+    type: 1000base-t
+  - name: eth2
+    label: "2"
+    type: 1000base-t
+  - name: eth3
+    label: "3"
+    type: 1000base-t
+  - name: eth4
+    label: "4"
+    type: 1000base-t
+  - name: eth5
+    label: "5"
+    type: 1000base-t
+  - name: eth6
+    label: "6"
+    type: 1000base-t
+  - name: eth7
+    label: "7"
+    type: 1000base-t
+  - name: eth8
+    label: "8"
+    type: 1000base-t
+  - name: Sync
+    label: SYNC
+    type: 1000base-t
+  - name: Mgmt
+    label: MGMT
+    type: 1000base-t
+  - name: lom
+    label: LOM
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: ttyS0
+    label: CONSOLE
+    type: rj-45
+  - name: ttyS1
+    label: CONSOLE
+    type: usb-c
+module_bays:
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+  - name: Line card 1
+    bay_position: "1"
+  - name: Line card 2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.checkpoint.com/downloads/products/7000-security-gateway-datasheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Check Point/SG7000.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: a715b464773e2f82

@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: ASR-9001
+slug: asr-9001
+category: router
+form_factor: rack
+part_numbers:
+  - ASR-9001
+u_height: 2
+full_depth: true
+subdevice_role: parent
+weight_kg: 16.5
+airflow: right-to-left
+interfaces:
+  - name: MgmtEth0/RSP0/CPU0/0
+    type: 1000base-t
+  - name: MgmtEth0/RSP0/CPU0/1
+    type: 1000base-t
+  - name: TenGigE0/0/2/0
+    type: 10gbase-x-sfpp
+  - name: TenGigE0/0/2/1
+    type: 10gbase-x-sfpp
+  - name: TenGigE0/0/2/2
+    type: 10gbase-x-sfpp
+  - name: TenGigE0/0/2/3
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: con 0
+    type: rj-45
+module_bays:
+  - name: Slot 0
+    label: Line Card 0
+    bay_position: 0/0/0
+  - name: Slot 1
+    label: Line Card 0
+    bay_position: 0/0/1
+  - name: PM0
+    description: Power module
+    bay_position: 0/PS0/M0
+  - name: PM1
+    description: Power module
+    bay_position: 0/PS0/M1
+  - name: FAN0
+    description: Fan tray
+    bay_position: 0/FT0
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/routers/asr-9001-router/data_sheet_c78-685687.html
+  manual: https://www.cisco.com/c/en/us/td/docs/iosxr/asr9000/hardware-install/9001-hig/b-asr9001-hardware-installation-guide/b-asr9001-hardware-installation-guide_chapter_01.html#Cisco_Concept.dita_2b236e01-92fc-439c-835d-18d927ae5b83
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/ASR-9001.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 31bf88eb14c4ec26

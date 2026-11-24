@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: peplink
+model: Balance 1350
+slug: balance-1350
+category: network_switch
+form_factor: rack
+part_numbers:
+  - BPL-135
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: lan1
+    type: 1000base-t
+  - name: lan2
+    type: 1000base-t
+  - name: lan3
+    type: 1000base-t
+  - name: wan1
+    type: 1000base-t
+  - name: wan2
+    type: 1000base-t
+  - name: wan3
+    type: 1000base-t
+  - name: wan4
+    type: 1000base-t
+  - name: wan5
+    type: 1000base-t
+  - name: wan6
+    type: 1000base-t
+  - name: wan7
+    type: 1000base-t
+  - name: wan8
+    type: 1000base-t
+  - name: wan9
+    type: 1000base-t
+  - name: wan10
+    type: 1000base-t
+  - name: wan11
+    type: 1000base-t
+  - name: wan12
+    type: 1000base-t
+  - name: wan13
+    type: 1000base-t
+  - name: wan14
+    description: usb wan port
+    type: other
+console_ports:
+  - name: con0
+    type: rj-45
+power_ports:
+  - name: psu0
+    type: iec-60320-c14
+    maximum_draw_w: 70
+links:
+  datasheet: https://www.peplink.com/products/balance-1350/#datasheet--resources
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Peplink/Balance-1350.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 352420f86304e912

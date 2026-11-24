@@ -1,0 +1,151 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SSE-G3648B
+slug: sse-g3648b
+category: server
+form_factor: rack
+description: Supermicro Ethernet SuperSwitch (https://www.supermicro.com/en/products/accessories/Networking/SSE-G3648B.php)
+u_height: 1
+full_depth: false
+weight_kg: 8.18
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0
+    description: Dedicated console/management access
+    type: 1000base-t
+  - name: swp1
+    type: 1000base-t
+  - name: swp2
+    type: 1000base-t
+  - name: swp3
+    type: 1000base-t
+  - name: swp4
+    type: 1000base-t
+  - name: swp5
+    type: 1000base-t
+  - name: swp6
+    type: 1000base-t
+  - name: swp7
+    type: 1000base-t
+  - name: swp8
+    type: 1000base-t
+  - name: swp9
+    type: 1000base-t
+  - name: swp10
+    type: 1000base-t
+  - name: swp11
+    type: 1000base-t
+  - name: swp12
+    type: 1000base-t
+  - name: swp13
+    type: 1000base-t
+  - name: swp14
+    type: 1000base-t
+  - name: swp15
+    type: 1000base-t
+  - name: swp16
+    type: 1000base-t
+  - name: swp17
+    type: 1000base-t
+  - name: swp18
+    type: 1000base-t
+  - name: swp19
+    type: 1000base-t
+  - name: swp20
+    type: 1000base-t
+  - name: swp21
+    type: 1000base-t
+  - name: swp22
+    type: 1000base-t
+  - name: swp23
+    type: 1000base-t
+  - name: swp24
+    type: 1000base-t
+  - name: swp25
+    type: 1000base-t
+  - name: swp26
+    type: 1000base-t
+  - name: swp27
+    type: 1000base-t
+  - name: swp28
+    type: 1000base-t
+  - name: swp29
+    type: 1000base-t
+  - name: swp30
+    type: 1000base-t
+  - name: swp31
+    type: 1000base-t
+  - name: swp32
+    type: 1000base-t
+  - name: swp33
+    type: 1000base-t
+  - name: swp34
+    type: 1000base-t
+  - name: swp35
+    type: 1000base-t
+  - name: swp36
+    type: 1000base-t
+  - name: swp37
+    type: 1000base-t
+  - name: swp38
+    type: 1000base-t
+  - name: swp39
+    type: 1000base-t
+  - name: swp40
+    type: 1000base-t
+  - name: swp41
+    type: 1000base-t
+  - name: swp42
+    type: 1000base-t
+  - name: swp43
+    type: 1000base-t
+  - name: swp44
+    type: 1000base-t
+  - name: swp45
+    type: 1000base-t
+  - name: swp46
+    type: 1000base-t
+  - name: swp47
+    type: 1000base-t
+  - name: swp48
+    type: 1000base-t
+  - name: swp49
+    type: 10gbase-x-sfpp
+  - name: swp50
+    type: 10gbase-x-sfpp
+  - name: swp51
+    type: 10gbase-x-sfpp
+  - name: swp52
+    type: 10gbase-x-sfpp
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SSE-G3648B.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: bf5df6f542ff9ac4

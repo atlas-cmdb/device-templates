@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: AS5350XM
+slug: as5350xm
+category: appliance
+form_factor: rack
+part_numbers:
+  - AS535-DFC-CT3A
+u_height: 1
+full_depth: true
+weight_kg: 10
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: GigabitEthernet0/0
+    type: 1000base-t
+  - name: GigabitEthernet0/1
+    type: 1000base-t
+console_ports:
+  - name: con 0
+    type: rj-45
+  - name: aux 0
+    type: rj-45
+power_ports:
+  - name: PSU0
+    type: iec-60320-c14
+    maximum_draw_w: 140
+module_bays:
+  - name: Slot 1
+    bay_position: "1"
+  - name: Slot 2
+    bay_position: "2"
+  - name: Slot 3
+    bay_position: "3"
+links:
+  datasheet: https://spm-data-public.s3.eu-west-1.amazonaws.com/product-docs/AS535-DFC-CT3A__cisco-as5350xm-universal-gateway-datasheet__64b5c4ffa2c29c7ee1d5c0fe8ad5f8c6.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/AS5350XM.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: d1ccff0eb0ae674c

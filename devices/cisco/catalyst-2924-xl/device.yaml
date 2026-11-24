@@ -1,0 +1,96 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: Catalyst 2924 XL
+slug: catalyst-2924-xl
+category: network_switch
+form_factor: rack
+part_numbers:
+  - WS-C2924-XL-EN
+u_height: 1
+full_depth: false
+weight_kg: 3.2
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: FastEthernet0/1
+    type: 100base-tx
+  - name: FastEthernet0/2
+    type: 100base-tx
+  - name: FastEthernet0/3
+    type: 100base-tx
+  - name: FastEthernet0/4
+    type: 100base-tx
+  - name: FastEthernet0/5
+    type: 100base-tx
+  - name: FastEthernet0/6
+    type: 100base-tx
+  - name: FastEthernet0/7
+    type: 100base-tx
+  - name: FastEthernet0/8
+    type: 100base-tx
+  - name: FastEthernet0/9
+    type: 100base-tx
+  - name: FastEthernet0/10
+    type: 100base-tx
+  - name: FastEthernet0/11
+    type: 100base-tx
+  - name: FastEthernet0/12
+    type: 100base-tx
+  - name: FastEthernet0/13
+    type: 100base-tx
+  - name: FastEthernet0/14
+    type: 100base-tx
+  - name: FastEthernet0/15
+    type: 100base-tx
+  - name: FastEthernet0/16
+    type: 100base-tx
+  - name: FastEthernet0/17
+    type: 100base-tx
+  - name: FastEthernet0/18
+    type: 100base-tx
+  - name: FastEthernet0/19
+    type: 100base-tx
+  - name: FastEthernet0/20
+    type: 100base-tx
+  - name: FastEthernet0/21
+    type: 100base-tx
+  - name: FastEthernet0/22
+    type: 100base-tx
+  - name: FastEthernet0/23
+    type: 100base-tx
+  - name: FastEthernet0/24
+    type: 100base-tx
+console_ports:
+  - name: con 0
+    type: rj-45
+power_ports:
+  - name: PSU0
+    type: iec-60320-c14
+    maximum_draw_w: 30
+links:
+  other:
+    - label: Catalyst 2900 XL Technical Specs
+      url: https://www.cisco.com/en/US/docs/switches/lan/catalyst2900xl_3500xl/releasesa6/hig/2900xl/matechsp_external_docbase_0900e4b18042dc1f_4container_external_docbase_0900e4b18042ef55.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/Catalyst-2924-XL.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: f950c47a339554f7

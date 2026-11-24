@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: rohde-and-schwarz
+model: SITLine ETH-XL 8x1/10G NFD
+slug: sitline-eth-xl-8x1-10g-nfd
+category: network_switch
+form_factor: rack
+part_numbers:
+  - 5414.8110K22
+u_height: 1
+full_depth: false
+weight_kg: 9.5
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: A1
+    type: 10gbase-x-sfpp
+  - name: A2
+    type: 10gbase-x-sfpp
+  - name: A3
+    type: 10gbase-x-sfpp
+  - name: A4
+    type: 10gbase-x-sfpp
+  - name: A5
+    type: 10gbase-x-sfpp
+  - name: A6
+    type: 10gbase-x-sfpp
+  - name: A7
+    type: 10gbase-x-sfpp
+  - name: A8
+    type: 10gbase-x-sfpp
+  - name: X1
+    type: 10gbase-x-sfpp
+  - name: X2
+    type: 10gbase-x-sfpp
+  - name: X3
+    type: 10gbase-x-sfpp
+  - name: X4
+    type: 10gbase-x-sfpp
+  - name: X5
+    type: 10gbase-x-sfpp
+  - name: X6
+    type: 10gbase-x-sfpp
+  - name: X7
+    type: 10gbase-x-sfpp
+  - name: X8
+    type: 10gbase-x-sfpp
+  - name: Aux
+    type: 1000base-t
+  - name: Console
+    type: 1000base-t
+  - name: Management
+    type: 1000base-x-sfp
+    mgmt_only: true
+module_bays:
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Rohde & Schwarz/SITLine-ETH-XL-8x1-10G-NFD.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 9f012f42a0c2c142

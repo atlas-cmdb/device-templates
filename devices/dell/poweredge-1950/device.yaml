@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge 1950
+slug: poweredge-1950
+category: server
+form_factor: rack
+u_height: 1
+full_depth: true
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+console_ports:
+  - name: Serial
+    type: de-9
+power_ports:
+  - name: PSU1
+    type: iec-60320-c14
+    maximum_draw_w: 670
+    allocated_draw_w: 300
+  - name: PSU2
+    type: iec-60320-c14
+    maximum_draw_w: 670
+    allocated_draw_w: 300
+links:
+  datasheet: https://www1.la.dell.com/content/products/productdetails.aspx/pedge_1950_3
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-1950.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 43868f940b854a1c

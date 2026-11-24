@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SuperServer 5018R-WR
+slug: superserver-5018r-wr
+category: server
+form_factor: rack
+part_numbers:
+  - SYS-5018R-WR
+u_height: 1
+full_depth: true
+weight_kg: 17.69
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: BMC
+    type: 1000base-t
+    mgmt_only: true
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: PSU 1
+    bay_position: PSU-1
+  - name: PSU 2
+    bay_position: PSU-2
+  - name: PCIe slot 1
+    description: PCIe Slot LP, middle
+    bay_position: PCIe-1
+  - name: PCIe slot 2
+    description: PCIe Slot FH, upper right
+    bay_position: PCIe-2
+  - name: PCIe slot 3
+    description: PCIe Slot FH, lower right
+    bay_position: PCIe-3
+links:
+  manual: https://www.supermicro.com/manuals/superserver/1U/MNL-1771.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SYS-5018R-WR.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 2ee39b4fe710cefe

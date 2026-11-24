@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ciena
+model: 6500 R2
+slug: 6500-r2
+category: optical_transport
+form_factor: rack
+part_numbers:
+  - NTK803DA
+u_height: 2
+full_depth: true
+airflow: front-to-rear
+module_bays:
+  - name: Access Panel
+    description: NTK805NA Access Panel (6500-R2)
+    bay_position: "40"
+  - name: CTM Front Panel
+    description: NTK806DA
+    bay_position: "49"
+  - name: Module 1
+    bay_position: "1"
+  - name: Module 2
+    bay_position: "2"
+  - name: Module 3
+    bay_position: "3"
+  - name: Module 4
+    bay_position: "4"
+  - name: Power Input Module 1
+    description: |-
+      NTK805SA AC
+      NTK805DA DC
+    bay_position: "61"
+  - name: Power Input Module 2
+    description: |-
+      NTK805SA AC
+      NTK805DA DC
+    bay_position: "62"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ciena/6500-R2.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+  import_hash: c589378637736319

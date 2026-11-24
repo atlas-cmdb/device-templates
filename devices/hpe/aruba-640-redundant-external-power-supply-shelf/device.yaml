@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Aruba 640 Redundant/External Power Supply Shelf
+slug: aruba-640-redundant-external-power-supply-shelf
+category: shelf
+form_factor: rack
+part_numbers:
+  - J9805A
+u_height: 1
+full_depth: false
+power:
+  outlet_count: 8
+  psu_count: 3
+power_outlets:
+  - name: 1A
+    label: PS1-A
+    type: dc-terminal
+  - name: 1B
+    label: PS1-B
+    type: dc-terminal
+  - name: 1C
+    label: PS1-C
+    type: dc-terminal
+  - name: 1D
+    label: PS1-D
+    type: dc-terminal
+  - name: 2A
+    label: PS2-A
+    type: dc-terminal
+  - name: 2B
+    label: PS2-B
+    type: dc-terminal
+  - name: 3A
+    label: PS3-A
+    type: dc-terminal
+  - name: 3B
+    label: PS3-B
+    type: dc-terminal
+module_bays:
+  - name: Power Supply 1
+    bay_position: "1"
+  - name: Power Supply 2
+    bay_position: "2"
+  - name: Power Supply 3
+    bay_position: "3"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/J9805A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - slug
+    - u_height
+  import_hash: 02186893cfc2c5c0

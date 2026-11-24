@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: f5
+model: BIG-IP rSeries r2000
+slug: big-ip-rseries-r2000
+category: load_balancer
+form_factor: rack
+description: "Platform ID: C130, r2600|r2800"
+part_numbers:
+  - 203-0416-xx
+u_height: 1
+full_depth: true
+subdevice_role: parent
+weight_kg: 9.072
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: "1.0"
+    type: 10gbase-t
+  - name: "2.0"
+    type: 10gbase-t
+  - name: "3.0"
+    type: 10gbase-t
+  - name: "4.0"
+    type: 10gbase-t
+  - name: "5.0"
+    type: 25gbase-x-sfp28
+  - name: "6.0"
+    type: 25gbase-x-sfp28
+  - name: "7.0"
+    type: 25gbase-x-sfp28
+  - name: "8.0"
+    type: 25gbase-x-sfp28
+  - name: failover
+    type: 1000base-t
+  - name: mgmt
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: usb1
+    type: usb-a
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+comments: Device reports r2600 or r2800 depending on licensing level. All r2xxx models are same physical platform.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/F5/BIG-IP-rSeries-r2000.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 47dc6939c6569dab

@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: Meraki MX67C
+slug: meraki-mx67c
+category: appliance
+form_factor: rack
+part_numbers:
+  - MX67C
+u_height: 1
+full_depth: false
+weight_kg: 0.848
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: USB
+    type: lte
+  - name: Internet 1
+    type: 1000base-t
+  - name: Port 2
+    type: 1000base-t
+  - name: Port 3
+    type: 1000base-t
+  - name: Port 4
+    type: 1000base-t
+  - name: Port 5
+    type: 1000base-t
+  - name: Cellular
+    type: lte
+power_ports:
+  - name: Slot 1
+    type: iec-60320-c14
+    maximum_draw_w: 17
+    allocated_draw_w: 6
+links:
+  datasheet: https://documentation.meraki.com/MX/MX_Overviews_and_Specifications/MX67_and_MX68_Datasheet
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/Meraki-MX67C.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e0db7406896affdf

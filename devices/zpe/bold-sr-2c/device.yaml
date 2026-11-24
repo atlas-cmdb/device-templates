@@ -1,0 +1,129 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: zpe
+model: Bold SR 2C
+slug: bold-sr-2c
+category: console_server
+form_factor: rack
+description: 2-Core Intel CPU, 8x RJ45 Serial rolled, 5x GbE, Single AC Power Supply
+part_numbers:
+  - BSR-T8-BASE
+u_height: 1
+full_depth: false
+weight_kg: 1.2
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: eth0
+    label: ETH 0
+    type: 1000base-t
+  - name: backplane0
+    type: 1000base-t
+  - name: netS1
+    label: "1"
+    type: 1000base-t
+  - name: netS2
+    label: "2"
+    type: 1000base-t
+  - name: netS3
+    label: "3"
+    type: 1000base-t
+  - name: netS4
+    label: "4"
+    type: 1000base-t
+console_ports:
+  - name: Console
+    label: CONSOLE
+    type: rj-45
+console_server_ports:
+  - name: ttyS1
+    label: "1"
+    type: rj-45
+  - name: ttyS2
+    label: "2"
+    type: rj-45
+  - name: ttyS3
+    label: "3"
+    type: rj-45
+  - name: ttyS4
+    label: "4"
+    type: rj-45
+  - name: ttyS5
+    label: "5"
+    type: rj-45
+  - name: ttyS6
+    label: "6"
+    type: rj-45
+  - name: ttyS7
+    label: "7"
+    type: rj-45
+  - name: ttyS8
+    label: "8"
+    type: rj-45
+  - name: usbS1
+    label: "1"
+    description: USB 2.0
+    type: usb-a
+  - name: usbS2
+    label: "2"
+    description: USB 2.0
+    type: usb-a
+  - name: usbS3
+    label: "3"
+    description: USB 3.0
+    type: usb-a
+  - name: usbS4
+    label: "4"
+    description: USB 3.0
+    type: usb-a
+power_ports:
+  - name: PS
+    label: PWR IN
+    type: dc-terminal
+module_bays:
+  - name: Mini PCIe
+    description: Wi-Fi
+    bay_position: "0"
+  - name: SATA DOM 1
+    description: Primary Storage, Right (next to Power Switch)
+    bay_position: "1"
+  - name: SATA DOM 2
+    description: Secondary Storage, Center
+    bay_position: "2"
+  - name: Channel-A
+    label: Channel A
+    description: Cellular Modem, Sim A1 and A2, M.2 B-Key
+    bay_position: "0"
+  - name: Channel-B
+    label: Channel B
+    description: Cellular Modem, Sim B1 and B2, M.2 B-Key
+    bay_position: "1"
+links:
+  datasheet: https://go.zpesystems.com/rs/004-BTR-463/images/Datasheet-Nodegrid-Bold-SR.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/ZPE/BSR-T8-BASE.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - console_server_ports
+    - description
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 7e24cd6306e8ba78

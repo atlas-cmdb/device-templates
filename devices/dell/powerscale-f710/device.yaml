@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerScale F710
+slug: powerscale-f710
+category: storage_array
+form_factor: rack
+description: All-Flash NAS Platform
+u_height: 1
+full_depth: true
+weight_kg: 22.5
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: mgmt-1
+    type: 1000base-t
+    mgmt_only: true
+  - name: mgmt-2
+    type: 1000base-t
+    mgmt_only: true
+  - name: idrac-1
+    type: 1000base-t
+    mgmt_only: true
+  - name: 100gige-front-end-1
+    description: Front End Interface (Front End Networking)
+    type: 100gbase-x-qsfp28
+  - name: 100gige-front-end-2
+    description: Front End Interface (Front End Networking)
+    type: 100gbase-x-qsfp28
+  - name: 100gige-back-end-1
+    description: Backend Interface (Infrastructure Networking)
+    type: 100gbase-x-qsfp28
+  - name: 100gige-back-end-2
+    description: Backend Interface (Infrastructure Networking)
+    type: 100gbase-x-qsfp28
+console_ports:
+  - name: Console
+    type: de-9
+module_bays:
+  - name: PSU-1
+    bay_position: "1"
+  - name: PSU-2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.delltechnologies.com/asset/en-us/products/storage/technical-support/h15963-ss-powerscale-all-flash-nodes.pdf
+  product_page: https://infohub.delltechnologies.com/en-us/l/powerscale-all-flash-f210-f710-f910/overview-5806/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerScale-F710.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 3cb342b0fefc8d88

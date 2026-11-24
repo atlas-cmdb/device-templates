@@ -1,0 +1,125 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: siemon
+model: 16-port Category 5e 1RU flat patch panel
+slug: 16-port-category-5e-1ru-flat-patch-panel
+category: patch_panel
+form_factor: rack
+part_numbers:
+  - HD5-16
+u_height: 1
+full_depth: false
+front_ports:
+  - name: "1"
+    type: 8p8c
+    rear_port: "1"
+    rear_port_position: 1
+  - name: "2"
+    type: 8p8c
+    rear_port: "2"
+    rear_port_position: 1
+  - name: "3"
+    type: 8p8c
+    rear_port: "3"
+    rear_port_position: 1
+  - name: "4"
+    type: 8p8c
+    rear_port: "4"
+    rear_port_position: 1
+  - name: "5"
+    type: 8p8c
+    rear_port: "5"
+    rear_port_position: 1
+  - name: "6"
+    type: 8p8c
+    rear_port: "6"
+    rear_port_position: 1
+  - name: "7"
+    type: 8p8c
+    rear_port: "7"
+    rear_port_position: 1
+  - name: "8"
+    type: 8p8c
+    rear_port: "8"
+    rear_port_position: 1
+  - name: "9"
+    type: 8p8c
+    rear_port: "9"
+    rear_port_position: 1
+  - name: "10"
+    type: 8p8c
+    rear_port: "10"
+    rear_port_position: 1
+  - name: "11"
+    type: 8p8c
+    rear_port: "11"
+    rear_port_position: 1
+  - name: "12"
+    type: 8p8c
+    rear_port: "12"
+    rear_port_position: 1
+  - name: "13"
+    type: 8p8c
+    rear_port: "13"
+    rear_port_position: 1
+  - name: "14"
+    type: 8p8c
+    rear_port: "14"
+    rear_port_position: 1
+  - name: "15"
+    type: 8p8c
+    rear_port: "15"
+    rear_port_position: 1
+  - name: "16"
+    type: 8p8c
+    rear_port: "16"
+    rear_port_position: 1
+rear_ports:
+  - name: "1"
+    type: 110-punch
+  - name: "2"
+    type: 110-punch
+  - name: "3"
+    type: 110-punch
+  - name: "4"
+    type: 110-punch
+  - name: "5"
+    type: 110-punch
+  - name: "6"
+    type: 110-punch
+  - name: "7"
+    type: 110-punch
+  - name: "8"
+    type: 110-punch
+  - name: "9"
+    type: 110-punch
+  - name: "10"
+    type: 110-punch
+  - name: "11"
+    type: 110-punch
+  - name: "12"
+    type: 110-punch
+  - name: "13"
+    type: 110-punch
+  - name: "14"
+    type: 110-punch
+  - name: "15"
+    type: 110-punch
+  - name: "16"
+    type: 110-punch
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Siemon/HD5-16.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - front_ports
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+    - u_height
+  import_hash: 9bab4b12112e7f18

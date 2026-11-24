@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: arista
+model: DCS-7358X4-SC-F
+slug: dcs-7358x4-sc-f
+kind: other
+part_numbers:
+  - DCS-7358X4-SC-F
+weight_kg: 12.73
+airflow: front-to-rear
+links:
+  datasheet: https://www.arista.com/assets/data/pdf/Datasheets/7358X4-Datasheet.pdf
+comments: |-
+  DCS 7358X4 (Trident4) Switch Card.
+  With front-to-rear fan modules.
+  Datasheet:
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Arista/DCS-7358X4-SC-F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - airflow
+    - comments
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - weight_kg
+  import_hash: e678e5cfb393009e

@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: SMA M395
+slug: sma-m395
+category: server
+form_factor: rack
+part_numbers:
+  - SMA-M395
+u_height: 1
+full_depth: true
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: mgmt
+    type: 1000base-t
+    mgmt_only: true
+  - name: DATA1
+    type: 1000base-t
+  - name: DATA2
+    type: 1000base-t
+  - name: DATA3
+    type: 1000base-t
+  - name: DATA4
+    type: 1000base-t
+  - name: DATA5
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: RPC
+    type: rj-45
+  - name: usb1
+    type: usb-a
+  - name: usb2
+    type: usb-a
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/SMA-M395.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+  import_hash: 5887d094088e378d

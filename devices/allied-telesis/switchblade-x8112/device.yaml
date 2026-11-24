@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: allied-telesis
+model: SwitchBlade x8112
+slug: switchblade-x8112
+category: network_switch
+form_factor: rack
+part_numbers:
+  - AT-SBx8112
+u_height: 7
+full_depth: true
+power:
+  psu_count: 4
+module_bays:
+  - name: PSU Slot A
+    label: PoE PSU 1
+    bay_position: A
+  - name: PSU Slot B
+    label: PoE PSU 2
+    bay_position: B
+  - name: PSU Slot C
+    label: System PSU 1
+    bay_position: C
+  - name: PSU Slot D
+    label: System PSU 2
+    bay_position: D
+  - name: Slot 1
+    bay_position: "1"
+  - name: Slot 2
+    bay_position: "2"
+  - name: Slot 3
+    bay_position: "3"
+  - name: Slot 4
+    bay_position: "4"
+  - name: Slot 5
+    bay_position: "5"
+  - name: Slot 6
+    bay_position: "6"
+  - name: Slot 7
+    bay_position: "7"
+  - name: Slot 8
+    bay_position: "8"
+  - name: Slot 9
+    bay_position: "9"
+  - name: Slot 10
+    bay_position: "10"
+  - name: Slot 11
+    bay_position: "11"
+  - name: Slot 12
+    bay_position: "12"
+  - name: Fan 1
+    bay_position: "1"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Allied Telesis/SwitchBlade-x8112.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+  import_hash: 7f0deefd87201f9b

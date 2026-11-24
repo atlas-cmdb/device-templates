@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: opengear
+model: ACM7004-2-L
+slug: acm7004-2-l
+category: console_server
+form_factor: rack
+part_numbers:
+  - ACM7004-2-L
+u_height: 1
+full_depth: false
+weight_kg: 0.6
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: wan
+    type: 1000base-t
+  - name: lan
+    type: 1000base-t
+  - name: cellmodem
+    type: lte
+console_server_ports:
+  - name: port1
+    type: rj-45
+  - name: port2
+    type: rj-45
+  - name: port3
+    type: rj-45
+  - name: port4
+    type: rj-45
+  - name: port5
+    type: usb-a
+  - name: port6
+    type: usb-a
+  - name: port7
+    type: usb-a
+  - name: port8
+    type: usb-a
+power_ports:
+  - name: PS1
+    type: dc-terminal
+    maximum_draw_w: 12
+links:
+  datasheet: https://opengear.com/wp-content/uploads/2018/03/Resilience_Gateway_ACM7000-Data_Sheet.pdf
+comments: ACM7004 Console Server with 4x RJ45 and 4x USB Console Ports on the rear of the device.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Opengear/ACM7004-2-L.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 382c2a2a14704098

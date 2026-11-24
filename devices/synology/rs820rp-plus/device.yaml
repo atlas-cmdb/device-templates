@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: synology
+model: RS820RP+
+slug: rs820rp-plus
+category: storage_array
+form_factor: rack
+description: Synology RackStation RS820+. Scalable, high-performance 4-bay NAS server with Intel Atom C3538 Quad-Core 2.1 GHz processor
+part_numbers:
+  - RS820RP+
+u_height: 1
+full_depth: true
+weight_kg: 7.96
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Ethernet 1
+    type: 1000base-t
+  - name: Ethernet 2
+    type: 1000base-t
+  - name: Ethernet 3
+    type: 1000base-t
+  - name: Ethernet 4
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: de-9
+  - name: Rear USB1
+    type: usb-a
+  - name: Rear USB2
+    type: usb-a
+  - name: Rear eSATA
+    type: other
+module_bays:
+  - name: PSU1
+    label: Power Source 1
+    bay_position: "1"
+  - name: PSU2
+    label: Power Source 2
+    bay_position: "2"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Synology/rs820RP-plus.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 69d637c0a31f9e9d

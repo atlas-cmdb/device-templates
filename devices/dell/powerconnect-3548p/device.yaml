@@ -1,0 +1,249 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerConnect 3548p
+slug: powerconnect-3548p
+category: network_switch
+form_factor: rack
+part_numbers:
+  - 469-3418
+u_height: 1
+full_depth: true
+weight_kg: 6.019
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: g1
+    type: 1000base-x-sfp
+  - name: g2
+    type: 1000base-x-sfp
+  - name: g3
+    type: 1000base-t
+  - name: g4
+    type: 1000base-t
+  - name: e1
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e2
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e3
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e4
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e5
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e6
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e7
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e8
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e9
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e10
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e11
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e12
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e13
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e14
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e15
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e16
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e17
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e18
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e19
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e20
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e21
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e22
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e23
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e24
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e25
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e26
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e27
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e28
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e29
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e30
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e31
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e32
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e33
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e34
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e35
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e36
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e37
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e38
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e39
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e40
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e41
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e42
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e43
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e44
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e45
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e46
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e47
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: e48
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: Management
+    type: virtual
+    mgmt_only: true
+console_ports:
+  - name: rs-232
+    type: de-9
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+  - name: RPS
+    type: dc-terminal
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerConnect-3548p.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 081244ae592626e4

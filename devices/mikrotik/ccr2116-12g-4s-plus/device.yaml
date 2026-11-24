@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: mikrotik
+model: CCR2116-12G-4S+
+slug: ccr2116-12g-4s-plus
+category: router
+form_factor: rack
+part_numbers:
+  - CCR2116-12G-4S+
+u_height: 1
+full_depth: false
+weight_kg: 2.6
+power:
+  psu_count: 2
+interfaces:
+  - name: ether1
+    type: 1000base-t
+  - name: ether2
+    type: 1000base-t
+  - name: ether3
+    type: 1000base-t
+  - name: ether4
+    type: 1000base-t
+  - name: ether5
+    type: 1000base-t
+  - name: ether6
+    type: 1000base-t
+  - name: ether7
+    type: 1000base-t
+  - name: ether8
+    type: 1000base-t
+  - name: ether9
+    type: 1000base-t
+  - name: ether10
+    type: 1000base-t
+  - name: ether11
+    type: 1000base-t
+  - name: ether12
+    type: 1000base-t
+  - name: ether13
+    type: 1000base-t
+  - name: sfp-sfpplus1
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus2
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus3
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus4
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: serial0
+    type: rj-45
+power_ports:
+  - name: power1
+    type: iec-60320-c14
+    maximum_draw_w: 72
+  - name: power2
+    type: iec-60320-c14
+    maximum_draw_w: 72
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  product_page: https://mikrotik.com/product/ccr2116_12g_4splus
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/MikroTik/CCR2116-12G-4S-Plus.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: de847aadf074fdba

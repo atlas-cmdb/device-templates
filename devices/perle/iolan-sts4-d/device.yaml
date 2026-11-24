@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: perle
+model: IOLAN STS4-D
+slug: iolan-sts4-d
+category: ats
+form_factor: rack
+description: IOLAN STS-D Terminal Server
+part_numbers:
+  - STS4-D
+u_height: 1
+full_depth: false
+weight_kg: 0.349
+airflow: passive
+interfaces:
+  - name: Interface 1
+    label: Interface 1
+    description: LAN Interface
+    type: 100base-tx
+console_server_ports:
+  - name: RS232-1
+    label: RS232-1
+    description: RS232 - Port 1
+    type: rj-45
+  - name: RS232-2
+    label: RS232-2
+    description: RS232 - Port 2
+    type: rj-45
+  - name: RS232-3
+    label: RS232-3
+    description: RS232 - Port 3
+    type: rj-45
+  - name: RS232-4
+    label: RS232-4
+    description: RS232 - Port 4
+    type: rj-45
+power_ports:
+  - name: DC in
+    label: DC in
+    type: dc-terminal
+    maximum_draw_w: 5
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Perle/STS4-D.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_server_ports
+    - description
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 76b23a196ca3565f

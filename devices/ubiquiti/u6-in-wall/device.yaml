@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: U6 In-Wall
+slug: u6-in-wall
+category: wireless_access_point
+form_factor: other
+part_numbers:
+  - U6-IW
+u_height: 0
+full_depth: false
+weight_kg: 0.46
+airflow: passive
+interfaces:
+  - name: eth0
+    type: 1000base-t
+    poe_mode: pd
+    poe_type: type2-ieee802.3at
+  - name: eth1
+    label: "1"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: eth2
+    label: "2"
+    type: 1000base-t
+  - name: eth3
+    label: "3"
+    type: 1000base-t
+  - name: eth4
+    label: "4"
+    type: 1000base-t
+  - name: wlan0
+    type: ieee802.11ax
+  - name: wlan1
+    type: ieee802.11ax
+links:
+  product_page: https://store.ui.com/products/access-point-wifi-6-in-wall
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/U6-IW.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 174db5199d0c0034

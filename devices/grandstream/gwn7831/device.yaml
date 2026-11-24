@@ -1,0 +1,118 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: grandstream
+model: GWN7831
+slug: gwn7831
+category: network_switch
+form_factor: rack
+part_numbers:
+  - GWN7831
+u_height: 1
+full_depth: true
+weight_kg: 3.8
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: "1"
+    type: 1000base-t
+  - name: "2"
+    type: 1000base-t
+  - name: "3"
+    type: 1000base-t
+  - name: "4"
+    type: 1000base-t
+  - name: SFP1
+    type: 1000base-x-sfp
+  - name: SFP2
+    type: 1000base-x-sfp
+  - name: SFP3
+    type: 1000base-x-sfp
+  - name: SFP4
+    type: 1000base-x-sfp
+  - name: SFP5
+    type: 1000base-x-sfp
+  - name: SFP6
+    type: 1000base-x-sfp
+  - name: SFP7
+    type: 1000base-x-sfp
+  - name: SFP8
+    type: 1000base-x-sfp
+  - name: SFP9
+    type: 1000base-x-sfp
+  - name: SFP10
+    type: 1000base-x-sfp
+  - name: SFP11
+    type: 1000base-x-sfp
+  - name: SFP12
+    type: 1000base-x-sfp
+  - name: SFP13
+    type: 1000base-x-sfp
+  - name: SFP14
+    type: 1000base-x-sfp
+  - name: SFP15
+    type: 1000base-x-sfp
+  - name: SFP16
+    type: 1000base-x-sfp
+  - name: SFP17
+    type: 1000base-x-sfp
+  - name: SFP18
+    type: 1000base-x-sfp
+  - name: SFP19
+    type: 1000base-x-sfp
+  - name: SFP20
+    type: 1000base-x-sfp
+  - name: SFP21
+    type: 1000base-x-sfp
+  - name: SFP22
+    type: 1000base-x-sfp
+  - name: SFP23
+    type: 1000base-x-sfp
+  - name: SFP24
+    type: 1000base-x-sfp
+  - name: SFP+25
+    type: 10gbase-x-sfpp
+  - name: SFP+26
+    type: 10gbase-x-sfpp
+  - name: SFP+27
+    type: 10gbase-x-sfpp
+  - name: SFP+28
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 400
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+comments: "Grandstream GWN7831 Layer-3 Aggregation Switch. 4x Combo GE (RJ45), 24x SFP (1G), 4x SFP+ (10G, DAC 5m supported), 1x Console, Dual fans, Optional Redundant Power Supply (12V/60W RPS), Switching capacity: 128Gbps, Forwarding rate: 95.232Mpps, Supports L3 routing (Static, RIP, OSPF/OSPFv3), Max supported modules: SM-1G: 24, RJ45-1G: 12 (interval inserted), SM-10G: 4, RJ45-10G: 2"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Grandstream/GWN7831.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: b4e9b364419b5c16

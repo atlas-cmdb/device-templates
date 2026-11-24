@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: rockwell-automation
+model: ControlLogix Ethernet PRP Adapter K (EN2TP)
+slug: controllogix-ethernet-prp-adapter-k-en2tp
+category: compute_blade
+form_factor: blade
+part_numbers:
+  - 1756-EN2TPK
+u_height: 0
+full_depth: false
+subdevice_role: child
+interfaces:
+  - name: A1
+    type: 100base-tx
+  - name: A2
+    type: 100base-tx
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Rockwell Automation/1756-EN2TPK.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 9114c98df6ad0bf2

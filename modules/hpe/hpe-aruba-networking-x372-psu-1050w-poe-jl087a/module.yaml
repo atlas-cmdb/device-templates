@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: hpe
+model: HPE Aruba Networking X372 PSU 1050W PoE JL087A
+slug: hpe-aruba-networking-x372-psu-1050w-poe-jl087a
+kind: psu
+description: Hot Plug PSU for various HPE Aruba switches like the 3810M, 2930M and CX 6300M PoE models
+part_numbers:
+  - Aruba JL087A
+weight_kg: 0.88
+power_ports:
+  - name: PS {module}
+    type: iec-60320-c14
+    maximum_draw_w: 1050
+comments: HPE Aruba Networking X372 54V DC **1050W** 100-240V AC Power Supply.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/HPE/Aruba-JL087A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - description
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+    - weight_kg
+  import_hash: 10bffa20b65dfef0

@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: yealink
+model: AP08
+slug: ap08
+category: appliance
+form_factor: rack
+description: Digital Signal Processor
+u_height: 1
+full_depth: false
+weight_kg: 2.2
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: Management
+    label: MGMT
+    type: 1000base-t
+    mgmt_only: true
+  - name: LAN 1
+    type: 1000base-t
+    poe_mode: pd
+    poe_type: type2-ieee802.3at
+  - name: LAN 2
+    type: 1000base-t
+    poe_mode: pd
+    poe_type: type2-ieee802.3at
+  - name: LAN 3
+    type: 1000base-t
+    poe_mode: pd
+    poe_type: type2-ieee802.3at
+console_ports:
+  - name: Serial
+    label: RS-232
+    type: de-9
+  - name: USB 1
+    label: "1"
+    type: usb-b
+  - name: USB 2
+    label: "2"
+    type: usb-b
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 480
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://support.yealink.com/document-detail/a3da39fff78b402589925ec214df5363
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Yealink/AP08.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 7420d3134f7b078c

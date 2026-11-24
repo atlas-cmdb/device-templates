@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: AI Port
+slug: ai-port
+category: compute_blade
+form_factor: blade
+part_numbers:
+  - UP-AI-Port
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 0.258
+airflow: passive
+interfaces:
+  - name: eth0
+    label: PoE IN
+    type: 1000base-tx
+    poe_mode: pd
+    poe_type: type3-ieee802.3bt
+  - name: eth1
+    label: PoE OUT
+    type: 1000base-tx
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  other:
+    - label: AI Port
+      url: https://techspecs.ui.com/unifi/cameras-nvrs/up-ai-port
+comments: |-
+  AI appliance that enhances any UniFi or third-party camera with AI detection, classification, and recognition capabilities.
+  Dimensions
+      Without mount: 150 x 64 x 38.4 mm (5.9 x 2.5 x 1.5")
+      With mount: 152.7 x 69 x 47.8 mm (6 x 2.7 x 1.9")
+  Weight:
+    Without mount: 258.3 g (9.1 oz)
+    With mount: 294 g (10.4 oz)
+  Certifications: FCC, IC, CE
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/UP-AI-Port.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 4780acc0b9233301

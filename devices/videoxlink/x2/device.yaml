@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: videoxlink
+model: X2
+slug: x2
+category: appliance
+form_factor: rack
+part_numbers:
+  - VideoXLink X2
+u_height: 1
+full_depth: false
+weight_kg: 0.6
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: ETH0
+    label: "0"
+    type: 1000base-t
+power_ports:
+  - name: POWER1
+    description: AC plug 100-240V 50/60Hz to Mini XLR 19V
+    type: iec-60320-c14
+  - name: POWER2
+    description: 12-19V
+    type: dc-terminal
+links:
+  datasheet: https://www.videoxlink.com/downloads/videoxlink_datasheet_x2.pdf
+comments: |-
+  VideoXLink X2 is the ultimate low latency production solution, suited for remote production usage in
+  the field or being installed in a production studio. X2 is capable of encoding/decoding, NDI, adding
+  even more channels than the 2 SDI ports.
+  X2 is equipped with 1 ethernet interface cards and you can add external USB ethernet interface to
+  increase the numbers. All ports are available for usage in the VideoXLink application, making it
+  possible for using several backup connections, layer 2 trunks or high-speed connections to the local
+  network when using NDI network streams.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/VideoXLink/VideoXLink-X2.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: fd7b5a8e1507118a

@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: C9610-SUP-3XL
+slug: c9610-sup-3xl
+kind: supervisor
+description: Cisco C9610 Series Supervisor 3XL module
+part_numbers:
+  - C9610-SUP-3XL
+weight_kg: 14.1
+interfaces:
+  - name: GigabitEthernet0/0
+    type: 1000base-t
+    mgmt_only: true
+  - name: TenGigabitEthernet0/1
+    type: 10gbase-x-sfpp
+    mgmt_only: true
+console_ports:
+  - name: con 0
+    type: rj-45
+  - name: usb-c
+    type: usb-c
+links:
+  manual: https://www.cisco.com/c/en/us/td/docs/switches/lan/cisco9610/hardware/c9610R-series-supervisor-engine-installation-note.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/C9610-SUP-3XL.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - console_ports
+    - description
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - weight_kg
+  import_hash: 6310a3f5786f2704

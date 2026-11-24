@@ -1,0 +1,228 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: commscope
+model: MFPS-KHD-P-SIL1-048
+slug: mfps-khd-p-sil1-048
+category: patch_panel
+form_factor: rack
+description: MFPS Fiber Optic panel, 1RU, 48 fibers/RU, splice/patch, SMOUV/front patch cords orientation to the right, 48 LC/UPC, grade C
+part_numbers:
+  - EH6592-000
+u_height: 1
+full_depth: false
+airflow: passive
+front_ports:
+  - name: 1-2
+    label: 001-002
+    type: lc-apc
+    color: 70d975
+    rear_port: 1-2
+    rear_port_position: 1
+  - name: 3-4
+    label: 003-004
+    type: lc-apc
+    color: 70d975
+    rear_port: 3-4
+    rear_port_position: 1
+  - name: 5-6
+    label: 005-006
+    type: lc-apc
+    color: 70d975
+    rear_port: 5-6
+    rear_port_position: 1
+  - name: 7-8
+    label: 007-008
+    type: lc-apc
+    color: 70d975
+    rear_port: 7-8
+    rear_port_position: 1
+  - name: 9-10
+    label: 009-010
+    type: lc-apc
+    color: 70d975
+    rear_port: 9-10
+    rear_port_position: 1
+  - name: 11-12
+    label: 011-012
+    type: lc-apc
+    color: 70d975
+    rear_port: 11-12
+    rear_port_position: 1
+  - name: 13-14
+    label: 013-014
+    type: lc-apc
+    color: 70d975
+    rear_port: 13-14
+    rear_port_position: 1
+  - name: 15-16
+    label: 015-016
+    type: lc-apc
+    color: 70d975
+    rear_port: 15-16
+    rear_port_position: 1
+  - name: 17-18
+    label: 017-018
+    type: lc-apc
+    color: 70d975
+    rear_port: 17-18
+    rear_port_position: 1
+  - name: 19-20
+    label: 019-020
+    type: lc-apc
+    color: 70d975
+    rear_port: 19-20
+    rear_port_position: 1
+  - name: 21-22
+    label: 021-022
+    type: lc-apc
+    color: 70d975
+    rear_port: 21-22
+    rear_port_position: 1
+  - name: 23-24
+    label: 023-024
+    type: lc-apc
+    color: 70d975
+    rear_port: 23-24
+    rear_port_position: 1
+  - name: 25-26
+    label: 025-026
+    type: lc-apc
+    color: 70d975
+    rear_port: 25-26
+    rear_port_position: 1
+  - name: 27-28
+    label: 027-028
+    type: lc-apc
+    color: 70d975
+    rear_port: 27-28
+    rear_port_position: 1
+  - name: 29-30
+    label: 029-030
+    type: lc-apc
+    color: 70d975
+    rear_port: 29-30
+    rear_port_position: 1
+  - name: 31-32
+    label: 031-032
+    type: lc-apc
+    color: 70d975
+    rear_port: 31-32
+    rear_port_position: 1
+  - name: 33-34
+    label: 033-034
+    type: lc-apc
+    color: 70d975
+    rear_port: 33-34
+    rear_port_position: 1
+  - name: 35-36
+    label: 035-036
+    type: lc-apc
+    color: 70d975
+    rear_port: 35-36
+    rear_port_position: 1
+  - name: 37-38
+    label: 037-038
+    type: lc-apc
+    color: 70d975
+    rear_port: 37-38
+    rear_port_position: 1
+  - name: 39-40
+    label: 039-040
+    type: lc-apc
+    color: 70d975
+    rear_port: 39-40
+    rear_port_position: 1
+  - name: 41-42
+    label: 041-042
+    type: lc-apc
+    color: 70d975
+    rear_port: 41-42
+    rear_port_position: 1
+  - name: 43-44
+    label: 043-044
+    type: lc-apc
+    color: 70d975
+    rear_port: 43-44
+    rear_port_position: 1
+  - name: 45-46
+    label: 045-046
+    type: lc-apc
+    color: 70d975
+    rear_port: 45-46
+    rear_port_position: 1
+  - name: 47-48
+    label: 047-048
+    type: lc-apc
+    color: 70d975
+    rear_port: 47-48
+    rear_port_position: 1
+rear_ports:
+  - name: 1-2
+    type: splice
+  - name: 3-4
+    type: splice
+  - name: 5-6
+    type: splice
+  - name: 7-8
+    type: splice
+  - name: 9-10
+    type: splice
+  - name: 11-12
+    type: splice
+  - name: 13-14
+    type: splice
+  - name: 15-16
+    type: splice
+  - name: 17-18
+    type: splice
+  - name: 19-20
+    type: splice
+  - name: 21-22
+    type: splice
+  - name: 23-24
+    type: splice
+  - name: 25-26
+    type: splice
+  - name: 27-28
+    type: splice
+  - name: 29-30
+    type: splice
+  - name: 31-32
+    type: splice
+  - name: 33-34
+    type: splice
+  - name: 35-36
+    type: splice
+  - name: 37-38
+    type: splice
+  - name: 39-40
+    type: splice
+  - name: 41-42
+    type: splice
+  - name: 43-44
+    type: splice
+  - name: 45-46
+    type: splice
+  - name: 47-48
+    type: splice
+links:
+  manual: https://www.commscope.com/globalassets/digizuite/149234-p360-eh6592-000-external.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Commscope/MFPS-KHD-P-SIL1-048.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - front_ports
+    - full_depth
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+    - u_height
+  import_hash: a914886949a9e1b1

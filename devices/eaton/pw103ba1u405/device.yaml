@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eaton
+model: PW103BA1U405
+slug: pw103ba1u405
+category: pdu
+form_factor: rack
+part_numbers:
+  - PW103BA1U405
+u_height: 1
+full_depth: false
+power:
+  outlet_count: 16
+power_ports:
+  - name: Power Port 1
+    type: iec-60320-c20
+power_outlets:
+  - name: J1-1
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: J1-2
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: J1-3
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: J1-4
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: J2-1
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: J2-2
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: J2-3
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: J2-4
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: J3-1
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: J3-2
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: J3-3
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: J3-4
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: J4-1
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: J4-2
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: J4-3
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: J4-4
+    type: iec-60320-c13
+    power_port: Power Port 1
+comments: Rack PDU, Basic, 1U, 3.33kW, 208V, (16) C13.  Bank J1 is on front. Banks J2-4 are on back.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eaton/PW103BA1U405.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 61780eae0bdb3291

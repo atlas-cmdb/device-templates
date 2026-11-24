@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: etherwan
+model: EX73924X
+slug: ex73924x
+category: network_switch
+form_factor: other
+part_numbers:
+  - EX73924X-0VB
+u_height: 0
+full_depth: false
+weight_kg: 1.397
+airflow: passive
+power:
+  psu_count: 2
+interfaces:
+  - name: ge1
+    type: 1000base-t
+  - name: ge2
+    type: 1000base-t
+  - name: ge3
+    type: 1000base-t
+  - name: ge4
+    type: 1000base-t
+  - name: ge5
+    type: 1000base-t
+  - name: ge6
+    type: 1000base-t
+  - name: ge7
+    type: 1000base-t
+  - name: ge8
+    type: 1000base-t
+  - name: xe1
+    type: 10gbase-x-sfpp
+  - name: xe2
+    type: 10gbase-x-sfpp
+  - name: xe3
+    type: 10gbase-x-sfpp
+  - name: xe4
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: PS1
+    description: 12-48VDC terminal block
+    type: dc-terminal
+    maximum_draw_w: 20
+  - name: PS2
+    description: 12-48VDC terminal block (redundant)
+    type: dc-terminal
+    maximum_draw_w: 20
+links:
+  datasheet: https://www.etherwan.com/us/products/ex73900x-series
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/EtherWAN/EX73924X.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e0135b33061edcfe

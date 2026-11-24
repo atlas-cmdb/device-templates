@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: check-point
+model: SG3600
+slug: sg3600
+category: firewall
+form_factor: blade
+part_numbers:
+  - CPAP-SG3600-SNBT
+u_height: 0
+full_depth: false
+subdevice_role: child
+power:
+  psu_count: 2
+interfaces:
+  - name: eth1
+    label: "1"
+    type: 1000base-t
+  - name: eth2
+    label: "2"
+    type: 1000base-t
+  - name: eth3
+    label: "3"
+    type: 1000base-t
+  - name: eth4
+    label: "4"
+    type: 1000base-t
+  - name: eth5
+    label: "5"
+    type: 1000base-t
+  - name: Mgmt
+    label: MGMT
+    type: 1000base-t
+  - name: lom
+    label: LOM
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: ttyS0
+    label: CONSOLE
+    type: rj-45
+  - name: ttyS1
+    label: CONSOLE
+    type: usb-c
+power_ports:
+  - name: PS1
+    type: dc-terminal
+  - name: PS2
+    type: dc-terminal
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Check Point/SG3600.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: ed4e970b0ff30a74

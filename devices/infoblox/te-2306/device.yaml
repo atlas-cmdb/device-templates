@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: infoblox
+model: TE-2306
+slug: te-2306
+category: server
+form_factor: rack
+part_numbers:
+  - TE-2306
+u_height: 2
+full_depth: true
+subdevice_role: parent
+weight_kg: 13.154
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: HA Port
+    description: RJ-45 10/100/1000 Base-T auto-sensing gigabit Ethernet port through which the active node in an HA pair connects to the network.
+    type: 1000base-t
+  - name: iLO/IPMI Port
+    description: RJ-45 10/100/1000 iLO/IPMI port. Dedicated Ethernet port used for LOM (integrated Lights Out Management) with specific releases of NIOS.
+    type: 1000base-t
+    mgmt_only: true
+    enabled: false
+  - name: LAN1 Port
+    description: RJ-45 10/100/1000 Base-T auto-sensing gigabit Ethernet port. LAN1 connects the NIOS appliance to the network.
+    type: 1000base-t
+  - name: LAN2 Port
+    description: RJ-45 10/100/1000 Base-T auto-sensing gigabit Ethernet port. LAN2 connects a NIOS appliance to the network. LAN2 is disabled by default.
+    type: 1000base-t
+    enabled: false
+  - name: MGMT Port
+    description: A 1000-Mbps gigabit Ethernet port for appliance management, or for appliance services on the network
+    type: 1000base-t
+    mgmt_only: true
+    enabled: false
+console_ports:
+  - name: Console Port
+    description: Male DE-9 serial port
+    type: de-9
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Infoblox/TE-2306.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: c9bde34844fda4d8

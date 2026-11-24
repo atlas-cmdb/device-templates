@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: calix
+model: E7-2
+slug: e7-2
+category: other
+form_factor: rack
+part_numbers:
+  - 000-00372
+u_height: 1
+full_depth: false
+module_bays:
+  - name: slot 1
+    bay_position: "1"
+  - name: slot 2
+    bay_position: "2"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Calix/E7-2.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+  import_hash: d13a5b671154ffcc

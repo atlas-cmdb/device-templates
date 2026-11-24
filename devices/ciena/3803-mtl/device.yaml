@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ciena
+model: 3803-MTL
+slug: 3803-mtl
+category: optical_transport
+form_factor: blade
+part_numbers:
+  - 170-3803-910-MTL
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 0.632
+airflow: passive
+power:
+  outlet_count: 1
+  psu_count: 1
+interfaces:
+  - name: XGS-PON
+    type: xgs-pon
+  - name: UNI-ETH 1
+    type: 1000base-t
+  - name: UNI-ETH 2
+    type: 1000base-t
+  - name: UNI-ETH 3
+    type: 1000base-t
+  - name: UNI-ETH 4
+    type: 1000base-t
+power_ports:
+  - name: 48VDC
+    type: other
+    maximum_draw_w: 9
+    allocated_draw_w: 7
+power_outlets:
+  - name: USB-C
+    type: usb-c
+    power_port: 48VDC
+links:
+  datasheet: https://www.ciena.com/insights/data-sheets/3803-mtl-dcom-onu
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ciena/3803-MTL.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: b4c67fa819d41882

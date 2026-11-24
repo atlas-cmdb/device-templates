@@ -1,0 +1,118 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerSwitch S4128F-ON
+slug: powerswitch-s4128f-on
+category: network_switch
+form_factor: rack
+part_numbers:
+  - S4128F-ON
+u_height: 1
+full_depth: true
+weight_kg: 8.92
+airflow: front-to-rear
+interfaces:
+  - name: mgmt1/1/1
+    type: 1000base-t
+    mgmt_only: true
+  - name: ethernet1/1/1
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/2
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/3
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/4
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/5
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/6
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/7
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/8
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/9
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/10
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/11
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/12
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/13
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/14
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/15
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/16
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/17
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/18
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/19
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/20
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/21
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/22
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/23
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/24
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/25
+    type: 100gbase-x-qsfp28
+  - name: ethernet1/1/26
+    type: 100gbase-x-qsfp28
+  - name: ethernet1/1/27
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/28
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/29
+    type: 10gbase-x-sfpp
+  - name: ethernet1/1/30
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    type: usb-micro-b
+  - name: Serial
+    type: rj-45
+module_bays:
+  - name: "1"
+    label: PSU Slot 1
+    bay_position: "1"
+  - name: "2"
+    label: PSU Slot 2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.delltechnologies.com/asset/en-us/products/networking/technical-support/dell-networking-s4100-series-spec-sheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerSwitch-S4128F-ON.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 26cf270ff8833ac6

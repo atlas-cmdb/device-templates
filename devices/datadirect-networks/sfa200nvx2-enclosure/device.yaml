@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: datadirect-networks
+model: SFA200NVX2 Enclosure
+slug: sfa200nvx2-enclosure
+category: blade_chassis
+form_factor: rack
+part_numbers:
+  - ENC-200NVX2
+u_height: 2
+full_depth: true
+subdevice_role: parent
+weight_kg: 36.36
+airflow: front-to-rear
+power:
+  psu_count: 2
+module_bays:
+  - name: PSU 1
+    label: PSU Slot 1
+    bay_position: "1"
+  - name: PSU 2
+    label: PSU Slot 2
+    bay_position: "2"
+device_bays:
+  - name: Controller 0
+    label: Controller Slot 0
+  - name: Controller 1
+    label: Controller Slot 1
+comments: 24bay Enclosure for SFA200NVX2 or SFA400NVX2
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/DataDirect Networks/SFA200NVX2-Enclosure.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - device_bays
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: ec04e5cb04d136a5

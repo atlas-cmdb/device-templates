@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: vertiv
+model: VP5N31A0
+slug: vp5n31a0
+category: pdu
+form_factor: rack
+part_numbers:
+  - MNS5M1R6-12S203-3TL5A0H10-S
+u_height: 1
+full_depth: false
+weight_kg: 5.44
+airflow: passive
+power:
+  outlet_count: 12
+power_ports:
+  - name: Power
+    type: nema-l5-30p
+    maximum_draw_w: 2800
+power_outlets:
+  - name: "1"
+    type: nema-5-20r
+    power_port: Power
+  - name: "2"
+    type: nema-5-20r
+    power_port: Power
+  - name: "3"
+    type: nema-5-20r
+    power_port: Power
+  - name: "4"
+    type: nema-5-20r
+    power_port: Power
+  - name: "5"
+    type: nema-5-20r
+    power_port: Power
+  - name: "6"
+    type: nema-5-20r
+    power_port: Power
+  - name: "7"
+    type: nema-5-20r
+    power_port: Power
+  - name: "8"
+    type: nema-5-20r
+    power_port: Power
+  - name: "9"
+    type: nema-5-20r
+    power_port: Power
+  - name: "10"
+    type: nema-5-20r
+    power_port: Power
+  - name: "11"
+    type: nema-5-20r
+    power_port: Power
+  - name: "12"
+    type: nema-5-20r
+    power_port: Power
+comments: rPDU, Switched Unit Level Monitoring EC, 30A, 120V, 2.8kW, Horizontal, (12) NEMA 5-20R, 10ft / 3m power cord with L5-30P, Black Powder Coat
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Vertiv/VP5N31A0.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: d34aaf9a6993c940

@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: raritan
+name: Raritan
+aliases:
+  - Legrand Raritan
+website: https://www.raritan.com
+parent: legrand

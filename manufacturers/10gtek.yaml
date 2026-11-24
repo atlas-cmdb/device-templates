@@ -1,0 +1,3 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: 10gtek
+name: 10GTek

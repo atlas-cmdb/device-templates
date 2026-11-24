@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: zyxel
+model: USG FLEX 200H
+slug: usg-flex-200h
+category: firewall
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 1.52
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: P1
+    label: P1
+    type: 2.5gbase-t
+  - name: P2
+    label: P2
+    type: 2.5gbase-t
+  - name: P3
+    label: P3
+    type: 1000base-t
+  - name: P4
+    label: P4
+    type: 1000base-t
+  - name: P5
+    label: P5
+    type: 1000base-t
+  - name: P6
+    label: P6
+    type: 1000base-t
+  - name: P7
+    label: P7
+    type: 1000base-t
+  - name: P8
+    label: P8
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: USB
+    description: USB 3.0
+    type: usb-a
+power_ports:
+  - name: PSU
+    description: 12V DC, 2A MAX.
+    type: dc-terminal
+    maximum_draw_w: 22
+links:
+  datasheet: https://download.zyxel.com/USG_FLEX_200H/datasheet/USG%20FLEX%20200H_14.pdf
+  other:
+    - label: USG FLEX 200H Firewall Specification
+      url: https://www.zyxelguard.com/usg-flex-200h.asp
+comments: |-
+  See .
+  See .
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Zyxel/USG-FLEX-200H.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.other
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 91d5ce0bc134f19a

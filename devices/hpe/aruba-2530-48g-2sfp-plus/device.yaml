@@ -1,0 +1,144 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Aruba 2530-48G-2SFP+
+slug: aruba-2530-48g-2sfp-plus
+category: network_switch
+form_factor: rack
+part_numbers:
+  - J9855A
+u_height: 1
+full_depth: false
+weight_kg: 3.08
+power:
+  psu_count: 1
+interfaces:
+  - name: "1"
+    type: 1000base-t
+  - name: "2"
+    type: 1000base-t
+  - name: "3"
+    type: 1000base-t
+  - name: "4"
+    type: 1000base-t
+  - name: "5"
+    type: 1000base-t
+  - name: "6"
+    type: 1000base-t
+  - name: "7"
+    type: 1000base-t
+  - name: "8"
+    type: 1000base-t
+  - name: "9"
+    type: 1000base-t
+  - name: "10"
+    type: 1000base-t
+  - name: "11"
+    type: 1000base-t
+  - name: "12"
+    type: 1000base-t
+  - name: "13"
+    type: 1000base-t
+  - name: "14"
+    type: 1000base-t
+  - name: "15"
+    type: 1000base-t
+  - name: "16"
+    type: 1000base-t
+  - name: "17"
+    type: 1000base-t
+  - name: "18"
+    type: 1000base-t
+  - name: "19"
+    type: 1000base-t
+  - name: "20"
+    type: 1000base-t
+  - name: "21"
+    type: 1000base-t
+  - name: "22"
+    type: 1000base-t
+  - name: "23"
+    type: 1000base-t
+  - name: "24"
+    type: 1000base-t
+  - name: "25"
+    type: 1000base-t
+  - name: "26"
+    type: 1000base-t
+  - name: "27"
+    type: 1000base-t
+  - name: "28"
+    type: 1000base-t
+  - name: "29"
+    type: 1000base-t
+  - name: "30"
+    type: 1000base-t
+  - name: "31"
+    type: 1000base-t
+  - name: "32"
+    type: 1000base-t
+  - name: "33"
+    type: 1000base-t
+  - name: "34"
+    type: 1000base-t
+  - name: "35"
+    type: 1000base-t
+  - name: "36"
+    type: 1000base-t
+  - name: "37"
+    type: 1000base-t
+  - name: "38"
+    type: 1000base-t
+  - name: "39"
+    type: 1000base-t
+  - name: "40"
+    type: 1000base-t
+  - name: "41"
+    type: 1000base-t
+  - name: "42"
+    type: 1000base-t
+  - name: "43"
+    type: 1000base-t
+  - name: "44"
+    type: 1000base-t
+  - name: "45"
+    type: 1000base-t
+  - name: "46"
+    type: 1000base-t
+  - name: "47"
+    type: 1000base-t
+  - name: "48"
+    type: 1000base-t
+  - name: "49"
+    type: 1000base-x-sfp
+  - name: "50"
+    type: 1000base-x-sfp
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 55
+links:
+  datasheet: https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c03624915#N113F7
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Aruba-2530-48G-2SFPP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: dfdb4126a7a946f1

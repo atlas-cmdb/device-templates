@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: zpe
+model: NSR-FAN-IN
+slug: nsr-fan-in
+kind: fan
+description: NSR Fan, Intake (air in)
+part_numbers:
+  - NSR-FAN-IN
+links:
+  datasheet: https://go.zpesystems.com/rs/004-BTR-463/images/Datasheet-Nodegrid-Net-SR.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/ZPE/NSR-FAN-IN.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: b7ffd907cba8482a

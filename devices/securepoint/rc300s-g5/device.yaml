@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: securepoint
+model: RC300S G5
+slug: rc300s-g5
+category: firewall
+form_factor: rack
+description: UTM firewall for up to 100 users, 19 inch 1U rack appliance.
+u_height: 1
+full_depth: false
+weight_kg: 2.5
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: eth0
+    description: 1GbE RJ45 LAN port
+    type: 1000base-t
+  - name: eth1
+    description: 1GbE RJ45 LAN port
+    type: 1000base-t
+  - name: eth2
+    description: 1GbE RJ45 LAN port
+    type: 1000base-t
+  - name: eth3
+    description: 1GbE RJ45 LAN port
+    type: 1000base-t
+  - name: eth4
+    description: 1GbE RJ45 LAN port
+    type: 1000base-t
+  - name: eth5
+    description: 1GbE RJ45 LAN port
+    type: 1000base-t
+  - name: sfp0
+    description: 1GbE SFP port
+    type: 1000base-x-sfp
+  - name: sfp1
+    description: 1GbE SFP port
+    type: 1000base-x-sfp
+console_ports:
+  - name: Console
+    description: Console port
+    type: rj-45
+  - name: USB1
+    description: USB 3.0
+    type: usb-a
+  - name: USB2
+    description: USB 3.0
+    type: usb-a
+power_ports:
+  - name: PSU1
+    description: Internal PSU 110-240VAC 50-60Hz
+    type: iec-60320-c14
+    maximum_draw_w: 45
+links:
+  other:
+    - url: https://www.securepoint.de/fuer-unternehmen/utm-firewall/rc-serie/g5/rc300s/technik
+comments: "Datasheet:"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Securepoint/RC300S-G5.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: ff959682fb136023

@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: eaton
+name: Eaton
+aliases:
+  - Powerware
+  - MGE
+website: https://www.eaton.com

@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: UCSC-PSU2V2-1200W
+slug: ucsc-psu2v2-1200w
+kind: other
+part_numbers:
+  - UCSC-PSU2V2-1200W
+power_ports:
+  - name: PSU{module}
+    type: iec-60320-c14
+    maximum_draw_w: 1200
+comments: 1200W/800W V2 AC Power Supply for 2U C-Series Servers
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/UCSC-PSU2V2-1200W.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: f2fc34d1a1ad9c2e

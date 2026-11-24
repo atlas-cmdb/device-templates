@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: qnap
+model: TVS-1271U-RP
+slug: tvs-1271u-rp
+category: storage_array
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 16.14
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0
+    type: 1000base-t
+  - name: eth1
+    type: 1000base-t
+  - name: eth2
+    type: 1000base-t
+  - name: eth3
+    type: 1000base-t
+module_bays:
+  - name: PSU 1
+    bay_position: "1"
+  - name: PSU 2
+    bay_position: "2"
+  - name: PCIe1
+    description: PCIe Gen3 x8
+    bay_position: PCIe1
+  - name: PCIe2
+    description: PCIe Gen3 x4
+    bay_position: PCIe2
+links:
+  other:
+    - label: official rear-panel photo
+      url: https://www.qnap.com/i/_attach_file/product/photo/1000_625@2x/129_1401785976_14.png
+  product_page: https://www.qnap.com/en/product/tvs-1271u-rp/specs/hardware
+comments: . Airflow inferred from the  (rear exhaust vents and PSU fans; solid side panels, vented front drive trays).
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/QNAP/TVS-1271U-RP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.other
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 90899abafa2aa249

@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../../schema/rack.schema.json
+manufacturer: rittal
+model: VX IT 5312.124
+slug: vx-it-5312-124
+form_factor: 4-post-cabinet
+description: VX IT network/server enclosure (closed, 800mm). Direct climate control with 19" interior installation. Available in multiple size variants.
+u_height: 47
+starting_unit: 1
+rack_width: 19
+outer_width_mm: 800
+outer_height_mm: 2200
+outer_depth_mm: 800
+mounting_depth_mm: 520
+weight_kg: 101.22
+max_load_kg: 800
+links:
+  product_page: https://www.rittal.com/com-en/products/PG20231215ITI101/PG20240402ITI203/PRO106564?variantId=5312124
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: rack-types/Rittal/VX-IT-5312.124.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - description
+    - links.product_page
+    - manufacturer
+    - max_load_kg
+    - model
+    - mounting_depth_mm
+    - outer_depth_mm
+    - outer_height_mm
+    - outer_width_mm
+    - rack_width
+    - slug
+    - starting_unit
+    - u_height
+    - weight_kg
+  import_hash: 801f0a087a914790

@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: stormshield
+model: Stormshield SN2200
+slug: stormshield-sn2200
+category: firewall
+form_factor: rack
+part_numbers:
+  - sn2200
+u_height: 1
+full_depth: true
+weight_kg: 9.93
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: mgmt1
+    type: 1000base-t
+    mgmt_only: true
+  - name: mgmt2
+    type: 1000base-t
+    mgmt_only: true
+  - name: port1
+    type: 1000base-t
+  - name: port2
+    type: 1000base-t
+  - name: port3
+    type: 1000base-t
+  - name: port4
+    type: 1000base-t
+  - name: port5
+    type: 1000base-t
+  - name: port6
+    type: 1000base-t
+  - name: port7
+    type: 1000base-t
+  - name: port8
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: Keyboard
+    type: other
+  - name: Front USB1
+    type: usb-a
+  - name: Front USB2
+    type: usb-a
+  - name: Front USB3
+    type: usb-c
+  - name: Rear USB1
+    type: usb-a
+module_bays:
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+  - name: FAN1
+    bay_position: "1"
+  - name: FAN2
+    bay_position: "2"
+  - name: FAN3
+    bay_position: "3"
+  - name: FAN4
+    bay_position: "4"
+  - name: FAN5
+    bay_position: "5"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Stormshield/stormshield-sn2200.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: b385a21d818966b0

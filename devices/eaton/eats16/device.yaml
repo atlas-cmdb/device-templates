@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eaton
+model: EATS16
+slug: eats16
+category: pdu
+form_factor: rack
+description: Provides redundant power to sensitive equipment
+u_height: 1
+full_depth: false
+weight_kg: 3.5
+airflow: passive
+power:
+  outlet_count: 9
+interfaces:
+  - name: Ethernet
+    label: SNMP and HTTP access
+    type: 1000base-t
+console_ports:
+  - name: RS232
+    type: de-9
+console_server_ports:
+  - name: Sensor
+    label: RS232
+    type: rj-45
+power_ports:
+  - name: Source A
+    label: Input Source 1
+    type: iec-60320-c20
+  - name: Source B
+    label: Input Source 2
+    type: iec-60320-c20
+power_outlets:
+  - name: Output 1
+    label: Output 1-10A
+    type: iec-60320-c13
+  - name: Output 2
+    label: Output 2-10A
+    type: iec-60320-c13
+  - name: Output 3
+    label: Output 3-10A
+    type: iec-60320-c13
+  - name: Output 4
+    label: Output 4-10A
+    type: iec-60320-c13
+  - name: Output 5
+    label: Output 5-10A
+    type: iec-60320-c13
+  - name: Output 6
+    label: Output 6-10A
+    type: iec-60320-c13
+  - name: Output 7
+    label: Output 7-10A
+    type: iec-60320-c13
+  - name: Output 8
+    label: Output 8-10A
+    type: iec-60320-c13
+  - name: Output 9
+    label: Output 9-16A
+    type: iec-60320-c19
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eaton/eats16.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - console_server_ports
+    - description
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 726a855ffb618384

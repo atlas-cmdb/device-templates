@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: thomas-krenn
+model: RI1208-SMXS (V1.0)
+slug: ri1208-smxs-v1-0
+category: server
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 24
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: LAN1
+    type: 1000base-t
+  - name: LAN2
+    type: 1000base-t
+  - name: BMC
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+  - name: PCIe SLOT1
+    description: CPU SLOT1 PCIe 3.0 X8
+    bay_position: PCIe1
+  - name: PCIe SLOT2
+    description: CPU SLOT2 PCIe 3.0 X8
+    bay_position: PCIe2
+  - name: PCIe SLOT3
+    description: CPU SLOT3 PCIe 3.0 X8
+    bay_position: PCIe3
+  - name: PCIe SLOT4
+    description: CPU SLOT4 PCIe 4.0 X8 (IN X 16)
+    bay_position: PCIe4
+  - name: PCIe SLOT5
+    description: CPU SLOT5 PCIe 4.0 X8
+    bay_position: PCIe5
+  - name: PCIe SLOT6
+    description: CPU SLOT6 PCIe 4.0 X16
+    bay_position: PCIe6
+  - name: PCIe SLOT7
+    description: CPU SLOT7 PCIe 4.0 X8
+    bay_position: PCIe7
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  other:
+    - label: Supermicro X12SPL-F
+      url: https://www.supermicro.com/en/products/motherboard/X12SPL-F
+  product_page: https://www.thomas-krenn.com/en/products/rack-server/2u-servers/intel-single-cpu/2u-intel-single-cpu-ri1208-smxs-server.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Thomas-Krenn/ri1208-smxs-v1-0.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.other
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 19220046798b6b16

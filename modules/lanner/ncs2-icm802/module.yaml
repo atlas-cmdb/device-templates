@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: lanner
+model: NCS2-ICM802
+slug: ncs2-icm802
+kind: other
+part_numbers:
+  - NCS2-ICM802
+interfaces:
+  - name: eth{module}/0
+    type: 2.5gbase-t
+  - name: eth{module}/1
+    type: 2.5gbase-t
+  - name: eth{module}/2
+    type: 2.5gbase-t
+  - name: eth{module}/3
+    type: 2.5gbase-t
+  - name: eth{module}/4
+    type: 2.5gbase-t
+  - name: eth{module}/5
+    type: 2.5gbase-t
+  - name: eth{module}/6
+    type: 2.5gbase-t
+  - name: eth{module}/7
+    type: 2.5gbase-t
+comments: 8-port 2.5GbE RJ45 Module with 4 Pairs of Bypass
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Lanner/NCS2-ICM802.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: d2ccf1ad0ae125e7

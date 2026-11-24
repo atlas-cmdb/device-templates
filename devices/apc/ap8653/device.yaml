@@ -1,0 +1,128 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: AP8653
+slug: ap8653
+category: pdu
+form_factor: zero-u
+part_numbers:
+  - AP8653
+u_height: 0
+full_depth: false
+weight_kg: 8.23
+airflow: passive
+power:
+  outlet_count: 24
+interfaces:
+  - name: Network
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: rj-12
+power_ports:
+  - name: Power Port 1
+    type: iec-60309-2p-e-6h
+power_outlets:
+  - name: "1"
+    label: Power Outlet 1
+    type: iec-60320-c13
+  - name: "2"
+    label: Power Outlet 2
+    type: iec-60320-c13
+  - name: "3"
+    label: Power Outlet 3
+    type: iec-60320-c13
+  - name: "4"
+    label: Power Outlet 4
+    type: iec-60320-c13
+  - name: "5"
+    label: Power Outlet 5
+    type: iec-60320-c13
+  - name: "6"
+    label: Power Outlet 6
+    type: iec-60320-c13
+  - name: "7"
+    label: Power Outlet 7
+    type: iec-60320-c13
+  - name: "8"
+    label: Power Outlet 8
+    type: iec-60320-c19
+  - name: "9"
+    label: Power Outlet 9
+    type: iec-60320-c13
+  - name: "10"
+    label: Power Outlet 10
+    type: iec-60320-c13
+  - name: "11"
+    label: Power Outlet 11
+    type: iec-60320-c13
+  - name: "12"
+    label: Power Outlet 12
+    type: iec-60320-c13
+  - name: "13"
+    label: Power Outlet 13
+    type: iec-60320-c13
+  - name: "14"
+    label: Power Outlet 14
+    type: iec-60320-c13
+  - name: "15"
+    label: Power Outlet 15
+    type: iec-60320-c13
+  - name: "16"
+    label: Power Outlet 16
+    type: iec-60320-c19
+  - name: "17"
+    label: Power Outlet 17
+    type: iec-60320-c13
+  - name: "18"
+    label: Power Outlet 18
+    type: iec-60320-c13
+  - name: "19"
+    label: Power Outlet 19
+    type: iec-60320-c13
+  - name: "20"
+    label: Power Outlet 20
+    type: iec-60320-c13
+  - name: "21"
+    label: Power Outlet 21
+    type: iec-60320-c13
+  - name: "22"
+    label: Power Outlet 22
+    type: iec-60320-c13
+  - name: "23"
+    label: Power Outlet 23
+    type: iec-60320-c13
+  - name: "24"
+    label: Power Outlet 24
+    type: iec-60320-c19
+links:
+  datasheet: https://www.se.com/uk/en/product/download-pdf/AP8653?filename=Schneider+Electric_NetShelter-Switched-Metered-Outlet-PDUs_AP8653.pdf
+  manual: https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=NetShelter+AP86%E2%80%A2%E2%80%A2+Metered-by-Outlet+Switched+Rack_990-5570T-001.pdf&p_Doc_Ref=990-5570_EN
+  product_page: https://www.se.com/uk/en/product/AP8653/rack-pdu-2g-metered-by-outlet-with-switching-zerou-32a-230v-21-c13-3-c19/
+comments: Rack PDU 2G, Switched, ZeroU, 32A, 230V, (21) C13 & (3) C19
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/AP8653.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 3755c4e281ed1f73

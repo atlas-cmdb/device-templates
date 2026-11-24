@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: online-usv-systeme
+model: Xanto 1500
+slug: xanto-1500
+category: pdu
+form_factor: rack
+part_numbers:
+  - X1500
+u_height: 6
+full_depth: true
+weight_kg: 15
+airflow: front-to-rear
+power:
+  outlet_count: 4
+console_ports:
+  - name: Serial
+    type: de-9
+  - name: USB
+    type: usb-b
+power_ports:
+  - name: Power Port 1
+    type: iec-60320-c14
+power_outlets:
+  - name: Outlet 1
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 2
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 3
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 4
+    type: iec-60320-c13
+    power_port: Power Port 1
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/ONLINE USV-Systeme/X1500.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 88da7cb179083537

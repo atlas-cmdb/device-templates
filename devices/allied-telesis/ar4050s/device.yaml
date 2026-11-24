@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: allied-telesis
+model: AR4050S
+slug: ar4050s
+category: network_switch
+form_factor: rack
+part_numbers:
+  - AT-AR4050S
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: eth1
+    type: 1000base-t
+  - name: eth2
+    type: 1000base-t
+  - name: eth1_bypass
+    type: 1000base-t
+  - name: eth2_bypass
+    type: 1000base-t
+  - name: port1.0.1
+    type: 1000base-t
+  - name: port1.0.2
+    type: 1000base-t
+  - name: port1.0.3
+    type: 1000base-t
+  - name: port1.0.4
+    type: 1000base-t
+  - name: port1.0.5
+    type: 1000base-t
+  - name: port1.0.6
+    type: 1000base-t
+  - name: port1.0.7
+    type: 1000base-t
+  - name: port1.0.8
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 27
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Allied Telesis/AR4050S.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: d232bf829de4b3d4

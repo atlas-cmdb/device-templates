@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: synology
+model: RS819
+slug: rs819
+category: storage_array
+form_factor: rack
+description: Synology RackStation RS819 1U rackmount NAS with quad-core processor and 4x 3.5-inch/2.5-inch drive bays.
+part_numbers:
+  - RS819
+u_height: 1
+full_depth: false
+weight_kg: 4.34
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: LAN1
+    description: 1GbE RJ45 LAN port 1
+    type: 1000base-t
+  - name: LAN2
+    description: 1GbE RJ45 LAN port 2
+    type: 1000base-t
+console_ports:
+  - name: Console
+    description: Serial console port (DE-9)
+    type: de-9
+power_ports:
+  - name: PSU1
+    description: Primary power supply (100W)
+    type: iec-60320-c14
+    maximum_draw_w: 100
+    allocated_draw_w: 100
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://global.download.synology.com/download/Document/Hardware/DataSheet/RackStation/19-year/RS819/enu/Synology_RS819_Data_Sheet_enu.pdf
+comments: |-
+  Supports 4x 3.5-inch or 2.5-inch hot-swap SATA drives. Includes 2x 1GbE LAN ports and 2x USB 3.0 ports.
+  Reference:
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Synology/RS819.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: b164251e5246bd18

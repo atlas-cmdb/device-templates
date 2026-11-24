@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: commscope
+model: HD-1U
+slug: hd-1u
+category: patch_panel
+form_factor: rack
+description: HD-1U - High Density 1U modular cassette sliding Panel, accepts (4) G2 modules or MPO panels, providing up to 48 duplex LC ports, or up to 32 MPO ports
+part_numbers:
+  - "760209940"
+u_height: 1
+full_depth: false
+weight_kg: 5.63
+airflow: passive
+module_bays:
+  - name: "1"
+    description: Accepts G2 modules or MPO panels
+    bay_position: "1"
+  - name: "2"
+    description: Accepts G2 modules or MPO panels
+    bay_position: "2"
+  - name: "3"
+    description: Accepts G2 modules or MPO panels
+    bay_position: "3"
+  - name: "4"
+    description: Accepts G2 modules or MPO panels
+    bay_position: "4"
+links:
+  product_page: https://www.commscope.com/product-type/frames-panels-cassettes-modules/fiber-panels-modules-cassettes/fiber-panels/item760209940/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Commscope/HD-1U.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: f58ecb76bfadcae2

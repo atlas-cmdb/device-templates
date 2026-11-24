@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: ASR1013
+slug: asr1013
+category: router
+form_factor: rack
+part_numbers:
+  - ASR1013
+u_height: 13
+full_depth: true
+power:
+  psu_count: 4
+module_bays:
+  - name: Slot 1
+    bay_position: "1"
+  - name: Slot 2
+    bay_position: "2"
+  - name: Slot 3
+    bay_position: "3"
+  - name: Slot RP1
+    bay_position: RP1
+  - name: Slot RP2
+    bay_position: RP2
+  - name: Slot ESP1
+    bay_position: ESP1
+  - name: Slot ESP2
+    bay_position: ESP2
+  - name: Slot 4
+    bay_position: "4"
+  - name: Slot 5
+    bay_position: "5"
+  - name: Slot 6
+    bay_position: "6"
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+  - name: PS3
+    bay_position: "3"
+  - name: PS4
+    bay_position: "4"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/ASR1013.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+  import_hash: 25506344075b1479

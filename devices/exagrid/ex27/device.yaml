@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: exagrid
+model: EX27
+slug: ex27
+category: backup_appliance
+form_factor: rack
+part_numbers:
+  - EX27-SEC
+u_height: 2
+full_depth: true
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: GbE-1
+    type: 1000base-t
+  - name: GbE-2
+    type: 1000base-t
+  - name: SPF-1
+    type: 10gbase-x-sfpp
+  - name: SFP-2
+    type: 10gbase-x-sfpp
+  - name: SPF-3
+    type: 25gbase-x-sfp28
+  - name: SFP-4
+    type: 25gbase-x-sfp28
+  - name: iLO
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+links:
+  datasheet: https://www.exagrid.com/wp-content/uploads/ExaGrid-Technical_Specifications_DS.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/ExaGrid/ex27.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+  import_hash: 4852744339d7ce5f

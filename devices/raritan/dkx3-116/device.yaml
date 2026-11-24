@@ -1,0 +1,93 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: raritan
+model: DKX3-116
+slug: dkx3-116
+category: kvm_switch
+form_factor: rack
+part_numbers:
+  - DKX3-116
+u_height: 1
+full_depth: false
+weight_kg: 3.9
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: LAN1
+    type: 1000base-t
+  - name: LAN2
+    type: 1000base-t
+console_ports:
+  - name: DVI-D
+    type: other
+  - name: MODEM
+    type: rj-45
+  - name: USB1
+    type: usb-a
+  - name: USB2
+    type: usb-a
+  - name: USB3
+    type: usb-a
+console_server_ports:
+  - name: Dominion_KX3_Port1
+    type: rj-45
+  - name: Dominion_KX3_Port2
+    type: rj-45
+  - name: Dominion_KX3_Port3
+    type: rj-45
+  - name: Dominion_KX3_Port4
+    type: rj-45
+  - name: Dominion_KX3_Port5
+    type: rj-45
+  - name: Dominion_KX3_Port6
+    type: rj-45
+  - name: Dominion_KX3_Port7
+    type: rj-45
+  - name: Dominion_KX3_Port8
+    type: rj-45
+  - name: Dominion_KX3_Port9
+    type: rj-45
+  - name: Dominion_KX3_Port10
+    type: rj-45
+  - name: Dominion_KX3_Port11
+    type: rj-45
+  - name: Dominion_KX3_Port12
+    type: rj-45
+  - name: Dominion_KX3_Port13
+    type: rj-45
+  - name: Dominion_KX3_Port14
+    type: rj-45
+  - name: Dominion_KX3_Port15
+    type: rj-45
+  - name: Dominion_KX3_Port16
+    type: rj-45
+power_ports:
+  - name: PowerIn1
+    type: iec-60320-c14
+  - name: PowerIn2
+    type: iec-60320-c14
+links:
+  product_page: https://www.raritan.com/products/kvm-serial/kvm-over-ip-switches/enterprise-ip-kvm-switch
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Raritan/DKX3-116.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 383104ed08b47d6b

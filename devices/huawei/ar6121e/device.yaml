@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huawei
+model: AR6121E
+slug: ar6121e
+category: network_switch
+form_factor: rack
+part_numbers:
+  - 02353TBH
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: 10GE0
+    type: 10gbase-x-sfpp
+  - name: GE0
+    type: 1000base-t
+  - name: GE1
+    type: 1000base-t
+  - name: GE2
+    type: 1000base-t
+  - name: GE3
+    type: 1000base-t
+  - name: GE4
+    type: 1000base-t
+  - name: GE5
+    type: 1000base-t
+  - name: GE6
+    type: 1000base-t
+  - name: GE7
+    type: 1000base-t
+  - name: GE8/ETH
+    type: 1000base-t
+  - name: GE9/ETH
+    type: 1000base-t
+  - name: GE10/ETH
+    type: 1000base-t
+  - name: GE8/SFP
+    type: 1000base-x-sfp
+  - name: GE9/SFP
+    type: 1000base-x-sfp
+  - name: GE10/SFP
+    type: 1000base-x-sfp
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: Input
+    type: iec-60320-c14
+links:
+  other:
+    - label: https://support.huawei.com/enterprise/it/doc/EDOC1100041787/61b8dc2/ar6121e-02353tbh
+      url: https://support.huawei.com/enterprise/it/doc/EDOC1100041787/61b8dc2/ar6121e-02353tbh
+comments: "Technical details:"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Huawei/AR6121E.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 05006adfa06d312b

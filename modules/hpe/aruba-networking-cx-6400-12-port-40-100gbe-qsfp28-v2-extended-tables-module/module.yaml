@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: hpe
+model: Aruba Networking CX 6400 12-port 40/100GbE QSFP28 v2 Extended Tables Module
+slug: aruba-networking-cx-6400-12-port-40-100gbe-qsfp28-v2-extended-tables-module
+kind: transceiver
+part_numbers:
+  - R0X45C
+weight_kg: 4
+interfaces:
+  - name: 1/{module}/1
+    type: 100gbase-x-qsfp28
+  - name: 1/{module}/2
+    type: 100gbase-x-qsfp28
+  - name: 1/{module}/3
+    type: 100gbase-x-qsfp28
+  - name: 1/{module}/4
+    type: 100gbase-x-qsfp28
+  - name: 1/{module}/5
+    type: 100gbase-x-qsfp28
+  - name: 1/{module}/6
+    type: 100gbase-x-qsfp28
+  - name: 1/{module}/7
+    type: 100gbase-x-qsfp28
+  - name: 1/{module}/8
+    type: 100gbase-x-qsfp28
+  - name: 1/{module}/9
+    type: 100gbase-x-qsfp28
+  - name: 1/{module}/10
+    type: 100gbase-x-qsfp28
+  - name: 1/{module}/11
+    type: 100gbase-x-qsfp28
+  - name: 1/{module}/12
+    type: 100gbase-x-qsfp28
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/HPE/R0X45C.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - weight_kg
+  import_hash: 580598ee1e8e74d8

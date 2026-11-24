@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: neousys
+model: Nuvo-8240GC
+slug: nuvo-8240gc
+category: appliance
+form_factor: rack
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: enp5s0
+    type: 1000base-t
+  - name: enp0s31f6
+    type: 1000base-t
+console_ports:
+  - name: COM 1
+    type: de-9
+  - name: COM 2
+    type: de-9
+  - name: DVI-D
+    type: other
+  - name: DisplayPort
+    type: other
+  - name: Audio 3.5m plug
+    type: other
+power_ports:
+  - name: DC
+    type: dc-terminal
+links:
+  datasheet: https://www.neousys-tech.com/en/product/application/edge-ai-gpu-computing/nuvo-8240gc-dual-nvidia-tesla-t4-intel-9th-gpu-computing-ai-platform#specification
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Neousys/Nuvo-8240GC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 2c572b7cbdb36332

@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: vertiv
+model: VP0N3100
+slug: vp0n3100
+category: pdu
+form_factor: rack
+part_numbers:
+  - MN00X1R1-16MCQ9-3TL14A0A10-S
+u_height: 1
+full_depth: false
+weight_kg: 6.8
+airflow: passive
+power:
+  outlet_count: 16
+power_ports:
+  - name: Power
+    type: nema-l14-30p
+    maximum_draw_w: 5700
+power_outlets:
+  - name: Front circuit 1 outlet 1
+    type: nema-5-20r
+    power_port: Power
+  - name: Front circuit 1 outlet 2
+    type: nema-5-20r
+    power_port: Power
+  - name: Front circuit 2 outlet 1
+    type: nema-5-20r
+    power_port: Power
+  - name: Front circuit 2 outlet 2
+    type: nema-5-20r
+    power_port: Power
+  - name: Rear circuit 1 outlet 1
+    type: eaton-c39
+    power_port: Power
+  - name: Rear circuit 1 outlet 2
+    type: eaton-c39
+    power_port: Power
+  - name: Rear circuit 1 outlet 3
+    type: eaton-c39
+    power_port: Power
+  - name: Rear circuit 1 outlet 4
+    type: eaton-c39
+    power_port: Power
+  - name: Rear circuit 1 outlet 5
+    type: eaton-c39
+    power_port: Power
+  - name: Rear circuit 1 outlet 6
+    type: eaton-c39
+    power_port: Power
+  - name: Rear circuit 2 outlet 1
+    type: eaton-c39
+    power_port: Power
+  - name: Rear circuit 2 outlet 2
+    type: eaton-c39
+    power_port: Power
+  - name: Rear circuit 2 outlet 3
+    type: eaton-c39
+    power_port: Power
+  - name: Rear circuit 2 outlet 4
+    type: eaton-c39
+    power_port: Power
+  - name: Rear circuit 2 outlet 5
+    type: eaton-c39
+    power_port: Power
+  - name: Rear circuit 2 outlet 6
+    type: eaton-c39
+    power_port: Power
+comments: rPDU, Basic, Standard, 30A, 120/208V, 5.7kW, Horizontal, (12) Combination C13/C19, (4) NEMA 5-20R, 10ft power cord with L14-30P, Black Powder Coat
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Vertiv/VP0N3100.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 4fe5f30c8e62c8fc

@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apple
+model: Mac Studio 2025 M4 Max
+slug: mac-studio-2025-m4-max
+category: appliance
+form_factor: rack
+part_numbers:
+  - A3143
+u_height: 3
+full_depth: false
+weight_kg: 2.74
+airflow: bottom-to-top
+power:
+  psu_count: 1
+interfaces:
+  - name: eth0
+    type: 10gbase-t
+  - name: wireless
+    type: ieee802.11ax
+power_ports:
+  - name: Power
+    type: iec-60320-c6
+    maximum_draw_w: 480
+links:
+  other:
+    - label: Mac Studio 2025 (Mac16,9) | hardware specs
+      url: https://support.apple.com/en-us/122211
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Apple/A3143.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 55a8458b776352e6

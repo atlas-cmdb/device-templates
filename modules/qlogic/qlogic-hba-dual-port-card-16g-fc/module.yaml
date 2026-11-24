@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: qlogic
+model: Qlogic HBA dual-port card 16G FC
+slug: qlogic-hba-dual-port-card-16g-fc
+kind: storage
+part_numbers:
+  - 01CV760
+interfaces:
+  - name: FC{module}/1
+    type: 16gfc-sfpp
+  - name: FC{module}/2
+    type: 16gfc-sfpp
+comments: Qlogic HBA dual-port card 16G FC
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Qlogic/01CV760.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 5c6cc0738d47e4a0

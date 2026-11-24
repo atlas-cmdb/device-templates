@@ -1,0 +1,92 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: arista
+model: DCS-7358X4
+slug: dcs-7358x4
+category: network_switch
+form_factor: rack
+part_numbers:
+  - DCS-7358X4
+u_height: 4
+full_depth: true
+weight_kg: 39
+airflow: front-to-rear
+power:
+  psu_count: 4
+interfaces:
+  - name: Management1
+    type: 1000base-t
+  - name: Management2
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: rj-45
+module_bays:
+  - name: Linecard Slot 1
+    bay_position: "1"
+  - name: Linecard Slot 2
+    bay_position: "2"
+  - name: Linecard Slot 3
+    bay_position: "3"
+  - name: Linecard Slot 4
+    bay_position: "4"
+  - name: Linecard Slot 5
+    bay_position: "5"
+  - name: Linecard Slot 6
+    bay_position: "6"
+  - name: Linecard Slot 7
+    bay_position: "7"
+  - name: Linecard Slot 8
+    bay_position: "8"
+  - name: Supervisor Slot
+    bay_position: "9"
+  - name: Switch Card Slot
+    bay_position: "10"
+  - name: Fan Module Slot 1
+    bay_position: "11"
+  - name: Fan Module Slot 2
+    bay_position: "12"
+  - name: Fan Module Slot 3
+    bay_position: "13"
+  - name: Fan Module Slot 4
+    bay_position: "14"
+  - name: Fan Module Slot 5
+    bay_position: "15"
+  - name: PSU Slot 1
+    bay_position: "16"
+  - name: PSU Slot 2
+    bay_position: "17"
+  - name: PSU Slot 3
+    bay_position: "18"
+  - name: PSU Slot 4
+    bay_position: "19"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  product_page: https://www.arista.com/en/products/7358x4-series
+comments: The Arista DCS-7358X4 is a 4RU modular leaf/spine switch delivering up to 12.8 Tbps of system throughput. It supports up to 128 x 100G or 32 x 400G ports via 8 I/O slots and is ideal for high-density data center designs.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Arista/DCS-7358X4.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: f299c5aa3752978a

@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: huawei
+model: PDC260S12-DL
+slug: pdc260s12-dl
+kind: psu
+description: 260 W DC Power Module for S6730-H series
+part_numbers:
+  - 02312UMV
+power_ports:
+  - name: PWR{module}
+    type: dc-terminal
+    maximum_draw_w: 260
+links:
+  datasheet: https://support.huawei.com/enterprise/en/doc/EDOC1000013621/7efa44f7/pdc260s12-dl-260-w-dc-power-module
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Huawei/PDC260S12-DL.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: 2360f48a53beca4b

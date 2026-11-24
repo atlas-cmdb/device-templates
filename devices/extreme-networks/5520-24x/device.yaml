@@ -1,0 +1,105 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: extreme-networks
+model: 5520-24X
+slug: 5520-24x
+category: network_switch
+form_factor: rack
+part_numbers:
+  - 5520-24S
+u_height: 1
+full_depth: true
+weight_kg: 6.25
+power:
+  psu_count: 2
+interfaces:
+  - name: Mgmt
+    type: 1000base-t
+    mgmt_only: true
+  - name: "1"
+    type: 10gbase-x-sfpp
+  - name: "2"
+    type: 10gbase-x-sfpp
+  - name: "3"
+    type: 10gbase-x-sfpp
+  - name: "4"
+    type: 10gbase-x-sfpp
+  - name: "5"
+    type: 10gbase-x-sfpp
+  - name: "6"
+    type: 10gbase-x-sfpp
+  - name: "7"
+    type: 10gbase-x-sfpp
+  - name: "8"
+    type: 10gbase-x-sfpp
+  - name: "9"
+    type: 10gbase-x-sfpp
+  - name: "10"
+    type: 10gbase-x-sfpp
+  - name: "11"
+    type: 10gbase-x-sfpp
+  - name: "12"
+    type: 10gbase-x-sfpp
+  - name: "13"
+    type: 10gbase-x-sfpp
+  - name: "14"
+    type: 10gbase-x-sfpp
+  - name: "15"
+    type: 10gbase-x-sfpp
+  - name: "16"
+    type: 10gbase-x-sfpp
+  - name: "17"
+    type: 10gbase-x-sfpp
+  - name: "18"
+    type: 10gbase-x-sfpp
+  - name: "19"
+    type: 10gbase-x-sfpp
+  - name: "20"
+    type: 10gbase-x-sfpp
+  - name: "21"
+    type: 10gbase-x-sfpp
+  - name: "22"
+    type: 10gbase-x-sfpp
+  - name: "23"
+    type: 10gbase-x-sfpp
+  - name: "24"
+    type: 10gbase-x-sfpp
+  - name: U1
+    description: Connects at 1x40Gb, 2x 50Gb, 4x 25Gb, or 4x 10Gb, but not 1x 100Gb.  Or use for stacking.
+    type: 100gbase-x-qsfp28
+  - name: U2
+    description: Connects at 1x40Gb, 2x 50Gb, 4x 25Gb, or 4x 10Gb, but not 1x 100Gb.  Or use for stacking.
+    type: 100gbase-x-qsfp28
+console_ports:
+  - name: RJ45
+    type: rj-45
+  - name: USB
+    type: usb-micro-b
+module_bays:
+  - name: PSU-1
+    bay_position: "1"
+  - name: PSU-2
+    bay_position: "2"
+  - name: VIM
+    bay_position: VIM
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Extreme Networks/5520-24X.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 64f23d7275bb5e48

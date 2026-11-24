@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: lantronix
+model: 83X-16SA
+slug: 83x-16sa
+kind: other
+description: LM83X 16-Port Serial Module w/2 high-density cables
+part_numbers:
+  - 83X-16SA
+weight_kg: 0.116
+links:
+  manual: https://cdn.lantronix.com/wp-content/uploads/pdf/Lantronix-LM-Series-Option-Cards-and-Expansion-Modules-Product-Brief.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Lantronix/83X-16SA.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - weight_kg
+  import_hash: 2aa71ea277904fbe

@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: juniper
+model: EX4100-FAN-AFI
+slug: ex4100-fan-afi
+kind: fan
+airflow: rear-to-front
+links:
+  datasheet: https://www.juniper.net/content/dam/www/assets/datasheets/us/en/switches/ex4100-line-of-ethernet-switches-datasheet.pdf
+comments: Fan with back-to-front airflow
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Juniper/EX4100-FAN-AFI.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - airflow
+    - comments
+    - links.datasheet
+    - manufacturer
+    - model
+    - slug
+  import_hash: ec486e086dbfcfdd

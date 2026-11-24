@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lenovo
+model: ThinkSystem SR680a V3
+slug: thinksystem-sr680a-v3
+category: server
+form_factor: rack
+part_numbers:
+  - 7DHE
+u_height: 8
+full_depth: true
+subdevice_role: parent
+weight_kg: 102.9
+airflow: front-to-rear
+power:
+  psu_count: 8
+interfaces:
+  - name: XCC
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: PSU 1
+    bay_position: PSU1
+  - name: PSU 2
+    bay_position: PSU2
+  - name: PSU 3
+    bay_position: PSU3
+  - name: PSU 4
+    bay_position: PSU4
+  - name: PSU 5
+    bay_position: PSU5
+  - name: PSU 6
+    bay_position: PSU6
+  - name: PSU 7
+    bay_position: PSU7
+  - name: PSU 8
+    bay_position: PSU8
+  - name: PCIe1
+    bay_position: Slot1
+  - name: PCIe2
+    bay_position: Slot2
+  - name: PCIe3
+    bay_position: Slot3
+  - name: PCIe4
+    bay_position: Slot4
+  - name: PCIe5
+    bay_position: Slot5
+  - name: PCIe6
+    bay_position: Slot6
+  - name: PCIe7
+    bay_position: Slot7
+  - name: PCIe8
+    bay_position: Slot8
+  - name: PCIe9
+    bay_position: Slot9
+  - name: PCIe10
+    bay_position: Slot10
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  manual: https://lenovopress.com/lp1909
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Lenovo/ThinkSystem-SR680a-v3.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: d561dbe3d03da672

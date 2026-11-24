@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: avtron
+model: AM-SF12120-PVR1
+slug: am-sf12120-pvr1
+category: network_switch
+form_factor: other
+part_numbers:
+  - AM-SF12120-PVR1
+u_height: 0
+full_depth: false
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: eth0
+    type: 100base-tx
+power_ports:
+  - name: DC IN
+    type: dc-terminal
+links:
+  product_page: https://avtrontech.com/products/am-sf12120-pvr1
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Avtron/am-sf12120-pvr1.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: ad995ff19ffcc2f5

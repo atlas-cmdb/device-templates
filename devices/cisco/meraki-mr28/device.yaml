@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: Meraki MR28
+slug: meraki-mr28
+category: wireless_access_point
+form_factor: other
+part_numbers:
+  - MR28-HW
+u_height: 0
+full_depth: false
+weight_kg: 0.272
+airflow: passive
+interfaces:
+  - name: main
+    type: 1000base-t
+    poe_mode: pd
+    poe_type: type1-ieee802.3af
+  - name: wlan0
+    type: ieee802.11n
+  - name: wlan1
+    type: ieee802.11ac
+  - name: wlan2
+    description: WIDS/WIPS
+    type: other-wireless
+  - name: wlan3
+    description: Bluetooth Scanning and Beaconing
+    type: ieee802.15.1
+links:
+  datasheet: https://documentation.meraki.com/MR/MR_Overview_and_Specifications/MR28_Datasheet
+comments: |-
+  - Datasheet:
+  - IEEE Standards: 802.11a, 802.11ac, 802.11ax, 802.11b, 802.11e, 802.11g, 802.11h, 802.11i, 802.11k, 802.11n, 802.11r, and 802.11u
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/Meraki-MR28.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: c4723d33f306fb6f

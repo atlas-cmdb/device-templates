@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: netapp
+name: NetApp
+website: https://www.netapp.com

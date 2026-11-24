@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: dell
+model: 9M6PR
+slug: 9m6pr
+kind: other
+part_numbers:
+  - 9M6PR
+interfaces:
+  - name: "{module}-100GbE-0"
+    label: "1"
+    type: 100gbase-x-qsfp28
+  - name: "{module}-100GbE-1"
+    label: "2"
+    type: 100gbase-x-qsfp28
+comments: Broadcom 2x100G QSFP28 OCP 3.0
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Dell/9M6PR.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 4abb0da96e6de07d

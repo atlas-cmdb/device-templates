@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ugreen
+model: DXP6800Pro
+slug: dxp6800pro
+category: storage_array
+form_factor: rack
+description: NASync DXP6800 Pro 6-Bay 10GbE NAS
+part_numbers:
+  - dxp6800pro
+u_height: 5
+full_depth: false
+weight_kg: 9.05
+airflow: rear-to-front
+power:
+  psu_count: 1
+interfaces:
+  - name: LAN 1
+    label: LAN 1
+    type: 10gbase-t
+  - name: LAN 2
+    label: LAN 2
+    type: 10gbase-t
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+links:
+  other:
+    - label: UGREEN NASync DXP6800 Pro Specs
+      url: https://support.ugnas.com/knowledgecenter/#/detail/eyJjb2RlIjoiMiYmNzg2In0=
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/UGREEN/dxp6800pro.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: de33f35859e1de91

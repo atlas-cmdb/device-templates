@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: lantronix
+model: S5-8SA
+slug: s5-8sa
+kind: other
+description: Lantronix Series 5 8-Port Serial Expansion Module
+part_numbers:
+  - S5-8SA
+links:
+  product_page: https://docs.lantronix.com/products/lmos/6.6/local-manager/series-5/expansion-cards
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Lantronix/S5-8SA.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 6620fb5e1fb69f86

@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: ASR1001HX-IPSECHW
+slug: asr1001hx-ipsechw
+kind: other
+part_numbers:
+  - ASR1001HX-IPSECHW
+comments: Cisco ASR1001-HX crypto module with no default crypto throughput. You can upgrade the throughput (8 Gbps or 16 Gbps) by applying a software-activated performance upgrade license
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/ASR1001HX-IPSECHW.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: ef3ca8f182acd83c

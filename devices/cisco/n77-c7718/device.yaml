@@ -1,0 +1,223 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: N77-C7718
+slug: n77-c7718
+category: network_switch
+form_factor: rack
+description: Nexus 7700 Switches 18-Slot Chassis
+part_numbers:
+  - N77-C7718
+u_height: 26
+full_depth: true
+weight_kg: 136
+airflow: front-to-rear
+power:
+  psu_count: 16
+interfaces:
+  - name: mgmt0
+    type: virtual
+    mgmt_only: true
+module_bays:
+  - name: Line Card 1
+    label: "1"
+    description: Slot 1
+    bay_position: "1"
+  - name: Line Card 2
+    label: "2"
+    description: Slot 2
+    bay_position: "2"
+  - name: Line Card 3
+    label: "3"
+    description: Slot 3
+    bay_position: "3"
+  - name: Line Card 4
+    label: "4"
+    description: Slot 4
+    bay_position: "4"
+  - name: Line Card 5
+    label: "5"
+    description: Slot 5
+    bay_position: "5"
+  - name: Line Card 6
+    label: "6"
+    description: Slot 6
+    bay_position: "6"
+  - name: Line Card 7
+    label: "7"
+    description: Slot 7
+    bay_position: "7"
+  - name: Line Card 8
+    label: "8"
+    description: Slot 8
+    bay_position: "8"
+  - name: Supervisor Module 1
+    label: "9"
+    description: Slot 9
+    bay_position: "9"
+  - name: Supervisor Module 2
+    label: "10"
+    description: Slot 10
+    bay_position: "10"
+  - name: Line Card 9
+    label: "11"
+    description: Slot 11
+    bay_position: "11"
+  - name: Line Card 10
+    label: "12"
+    description: Slot 12
+    bay_position: "12"
+  - name: Line Card 11
+    label: "13"
+    description: Slot 13
+    bay_position: "13"
+  - name: Line Card 12
+    label: "14"
+    description: Slot 14
+    bay_position: "14"
+  - name: Line Card 13
+    label: "15"
+    description: Slot 15
+    bay_position: "15"
+  - name: Line Card 14
+    label: "16"
+    description: Slot 16
+    bay_position: "16"
+  - name: Line Card 15
+    label: "17"
+    description: Slot 17
+    bay_position: "17"
+  - name: Line Card 16
+    label: "18"
+    description: Slot 18
+    bay_position: "18"
+  - name: Fabric Module 1
+    label: Fabric 1
+    description: Slot 19
+    bay_position: "1"
+  - name: Fabric Module 2
+    label: Fabric 2
+    description: Slot 20
+    bay_position: "2"
+  - name: Fabric Module 3
+    label: Fabric 3
+    description: Slot 21
+    bay_position: "3"
+  - name: Fabric Module 4
+    label: Fabric 4
+    description: Slot 22
+    bay_position: "4"
+  - name: Fabric Module 5
+    label: Fabric 5
+    description: Slot 23
+    bay_position: "5"
+  - name: Fabric Module 6
+    label: Fabric 6
+    description: Slot 24
+    bay_position: "6"
+  - name: Power Supply 1
+    label: PS 1
+    description: Slot 33
+    bay_position: "1"
+  - name: Power Supply 2
+    label: PS 2
+    description: Slot 34
+    bay_position: "2"
+  - name: Power Supply 3
+    label: PS 3
+    description: Slot 35
+    bay_position: "3"
+  - name: Power Supply 4
+    label: PS 4
+    description: Slot 36
+    bay_position: "4"
+  - name: Power Supply 5
+    label: PS 5
+    description: Slot 37
+    bay_position: "5"
+  - name: Power Supply 6
+    label: PS 6
+    description: Slot 38
+    bay_position: "6"
+  - name: Power Supply 7
+    label: PS 7
+    description: Slot 39
+    bay_position: "7"
+  - name: Power Supply 8
+    label: PS 8
+    description: Slot 40
+    bay_position: "8"
+  - name: Power Supply 9
+    label: PS 9
+    description: Slot 41
+    bay_position: "9"
+  - name: Power Supply 10
+    label: PS 10
+    description: Slot 42
+    bay_position: "10"
+  - name: Power Supply 11
+    label: PS 11
+    description: Slot 43
+    bay_position: "11"
+  - name: Power Supply 12
+    label: PS 12
+    description: Slot 44
+    bay_position: "12"
+  - name: Power Supply 13
+    label: PS 13
+    description: Slot 45
+    bay_position: "13"
+  - name: Power Supply 14
+    label: PS 14
+    description: Slot 46
+    bay_position: "14"
+  - name: Power Supply 15
+    label: PS 15
+    description: Slot 47
+    bay_position: "15"
+  - name: Power Supply 16
+    label: PS 16
+    description: Slot 48
+    bay_position: "16"
+  - name: Fan 1
+    label: Fan 1
+    description: Slot 49
+    bay_position: "1"
+  - name: Fan 2
+    label: Fan 2
+    description: Slot 50
+    bay_position: "2"
+  - name: Fan 3
+    label: Fan 3
+    description: Slot 51
+    bay_position: "3"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/switches/nexus-7000-series-switches/data_sheet_c78-728187.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/N77-C7718.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1164df6a7b454a1f

@@ -1,0 +1,115 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: d-link
+model: DXS-3400-24TC
+slug: dxs-3400-24tc
+category: network_switch
+form_factor: rack
+part_numbers:
+  - DXS-3400-24TC
+u_height: 1
+full_depth: false
+weight_kg: 7.6
+airflow: front-to-rear
+interfaces:
+  - name: GigabitEthernet0/1
+    type: 1000base-t
+    mgmt_only: true
+  - name: GigabitEthernet1/0/1
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/2
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/3
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/4
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/5
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/6
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/7
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/8
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/9
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/10
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/11
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/12
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/13
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/14
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/15
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/16
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/17
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/18
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/19
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/20
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/21
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/22
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/23
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/24
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/21C
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/21F
+    type: 10gbase-x-sfpp
+  - name: GigabitEthernet1/0/22C
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/22F
+    type: 10gbase-x-sfpp
+  - name: GigabitEthernet1/0/23C
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/23F
+    type: 10gbase-x-sfpp
+  - name: GigabitEthernet1/0/24C
+    type: 10gbase-t
+  - name: GigabitEthernet1/0/24F
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: console
+    type: rj-45
+  - name: usb0
+    type: usb-mini-b
+module_bays:
+  - name: "1"
+    label: PSU Slot 1
+    bay_position: "1"
+  - name: "2"
+    label: PSU Slot 2
+    bay_position: "2"
+links:
+  product_page: https://eu.dlink.com/it/it/products/dxs-3400-series-top-of-rack-10-gigabit-stackable-managed-switches
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/D-Link/DXS-3400-24TC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: ee940d9a808d4982

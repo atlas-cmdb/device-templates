@@ -1,0 +1,92 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huawei
+model: 2288H-V5
+slug: 2288h-v5
+category: server
+form_factor: rack
+part_numbers:
+  - H22-05-S8AFF
+u_height: 2
+full_depth: true
+weight_kg: 20
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: LOM1
+    type: 10gbase-t
+  - name: LOM2
+    type: 10gbase-t
+  - name: LOM3
+    type: 1000base-t
+  - name: LOM4
+    type: 1000base-t
+  - name: mgmt
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: rj-45
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+  - name: FlexIO
+    label: Flexible NIC
+    bay_position: FlexIO
+  - name: PCIe1
+    label: primary riser
+    bay_position: PCIe1
+  - name: PCIe2
+    label: primary riser
+    bay_position: PCIe2
+  - name: PCIe3
+    label: primary riser
+    bay_position: PCIe3
+  - name: PCIe4
+    label: secondary riser
+    bay_position: PCIe4
+  - name: PCIe5
+    label: secondary riser
+    bay_position: PCIe5
+  - name: PCIe6
+    label: secondary riser
+    bay_position: PCIe6
+  - name: PCIe7
+    label: tertiary riser
+    bay_position: PCIe7
+  - name: PCIe8
+    label: tertiary riser
+    bay_position: PCIe8
+  - name: PCIe9
+    label: tertiary riser
+    bay_position: PCIe9
+links:
+  other:
+    - label: Huawei FusionServer 2288H V5 White Paper
+      url: https://support.huawei.com/enterprise/en/server/2288h-v5-pid-21872244
+comments: Per the , this model has two fixed 10GE LOM ports, two fixed GE LOM ports, and a single Flexible NIC slot (not OCP 3.0).
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Huawei/2288H-V5.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 48b3d29261d3450c

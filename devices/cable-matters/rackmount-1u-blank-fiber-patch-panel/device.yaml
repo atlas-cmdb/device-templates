@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cable-matters
+model: Rackmount 1U Blank Fiber Patch Panel
+slug: rackmount-1u-blank-fiber-patch-panel
+category: patch_panel
+form_factor: rack
+description: LGX Adapter Slots, 1U Rackmount, 19 in Panel, Black Metal Panel, LGX Compatible, Removable Adapter Panels
+part_numbers:
+  - "120034"
+u_height: 1
+full_depth: false
+weight_kg: 0.363
+airflow: passive
+module_bays:
+  - name: "1"
+    bay_position: "1"
+  - name: "2"
+    bay_position: "2"
+  - name: "3"
+    bay_position: "3"
+links:
+  other:
+    - label: Rackmount 1U Blank Fiber Patch Panel
+      url: https://www.cablematters.com/pc-1506-163-1u-19-blank-patch-panel-for-lgx-adapter-plates-or-cassettes.aspx
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cable Matters/120034.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 9616fe287aa79c0e

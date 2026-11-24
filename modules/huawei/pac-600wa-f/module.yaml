@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: huawei
+model: PAC-600WA-F
+slug: pac-600wa-f
+kind: psu
+description: 600 W AC Power Module (PAC-600WA)
+part_numbers:
+  - 02310PMJ
+weight_kg: 1
+airflow: front-to-rear
+power:
+  input_voltage: 240V AC
+  psu_rating_w: 600
+links:
+  datasheet: https://support.huawei.com/enterprise/de/doc/EDOC1000019246/adc445c0/600-w-ac-power-module-pac-600wa
+comments: |-
+  See .
+  | Item | PAC-600WA-F |
+  | Dimensions (W x D x H) | 100 x 205 x 40 mm |
+  | Weight | 1 kg  |
+  | Rated input voltage  | 100 V AC-240 V AC, 50/60 Hz  |
+  | Maximum input voltage  | 90 V AC-290 V AC, 47 Hz-63 Hz  |
+  | Rated input current  | 9 A  |
+  | Rated output current | 50 A  |
+  | Rated output voltage | 12 V  |
+  | Rated output power   | 600 W  |
+  | Part Number          | 02310PMJ  |
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Huawei/PAC-600WA-F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - airflow
+    - comments
+    - description
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.input_voltage
+    - power.psu_rating_w
+    - slug
+    - weight_kg
+  import_hash: 690b2b964432dd58

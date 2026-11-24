@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: ASR1004
+slug: asr1004
+category: router
+form_factor: rack
+part_numbers:
+  - ASR1004
+u_height: 4
+full_depth: true
+weight_kg: 31.16
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: GigabitEthernet0
+    description: Management
+    type: 1000base-t
+console_ports:
+  - name: Con 0
+    type: rj-45
+  - name: Aux 0
+    type: rj-45
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+  - name: SPA subslot 0/0
+    bay_position: 0/0
+  - name: SPA subslot 0/1
+    bay_position: 0/1
+  - name: SPA subslot 0/2
+    bay_position: 0/2
+  - name: SPA subslot 0/3
+    bay_position: 0/3
+  - name: SPA subslot 1/0
+    bay_position: 1/0
+  - name: SPA subslot 1/1
+    bay_position: 1/1
+  - name: SPA subslot 1/2
+    bay_position: 1/2
+  - name: SPA subslot 1/3
+    bay_position: 1/3
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  product_page: https://www.cisco.com/c/en/us/products/routers/asr-1004-router/index.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/ASR1004.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 2fa10ee319bfb488

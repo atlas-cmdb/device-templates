@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: rockwell-automation
+model: 1756-IB16
+slug: 1756-ib16
+kind: other
+description: 16-channel DC digital input module for ControlLogix systems
+part_numbers:
+  - 1756-IB16
+console_ports:
+  - name: Configuration Port
+    type: usb-mini-b
+comments: |-
+  The 1756-IB16 is a 16-channel digital input module designed for ControlLogix systems.
+  It supports multiple input configurations and operates with a DC voltage range.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Rockwell Automation/1756-IB16.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - console_ports
+    - description
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: e2039acecbf512eb

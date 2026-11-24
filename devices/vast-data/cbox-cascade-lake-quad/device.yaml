@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: vast-data
+model: CBox Cascade Lake Quad
+slug: cbox-cascade-lake-quad
+category: blade_chassis
+form_factor: rack
+part_numbers:
+  - QUAD-4N-CL
+u_height: 2
+full_depth: true
+subdevice_role: parent
+weight_kg: 35.38
+airflow: front-to-rear
+power:
+  psu_count: 2
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+device_bays:
+  - name: CN1
+    label: CNode 1 (bottom-right)
+    description: Cascade Lake CNode blade - CN1
+  - name: CN2
+    label: CNode 2 (bottom-left)
+    description: Cascade Lake CNode blade - CN2
+  - name: CN3
+    label: CNode 3 (top-right)
+    description: Cascade Lake CNode blade - CN3
+  - name: CN4
+    label: CNode 4 (top-left)
+    description: Cascade Lake CNode blade - CN4
+comments: |-
+  VAST Data CBox 2U 4-Node Cascade Lake (QUAD-4N-CL).
+  2U chassis hosting 4x CNodes (CN1-CN4) - Intel S9200WK platform.
+  Per CNode: 32x CPU cores @ 2.1GHz (128 total), 8x 32GB DDR4-2400 RDIMM (1TB total).
+  I/O per CNode: 2x 100GbE/IB (1NIC) or 4x 100GbE/IB (2NIC).
+  Management per CNode: 4x 1GbE.
+  Power: 2x 1600W shared chassis PSUs.
+  Performance per CNode: Read 8.8GB/s / 42K IOPs, Write 2.3GB/s / 23.6K IOPs.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/VAST Data/CBox-Cascade-Lake-Quad.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - device_bays
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: d1de2094d7d42012

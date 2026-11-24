@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Brocade 16Gb SAN Switch for HPE BladeSystem c-Class
+slug: brocade-16gb-san-switch-for-hpe-bladesystem-c-class
+category: network_switch
+form_factor: blade
+part_numbers:
+  - C8S46A
+u_height: 0
+full_depth: true
+subdevice_role: child
+weight_kg: 1.497
+airflow: passive
+interfaces:
+  - name: port0
+    type: 16gfc-sfpp
+  - name: port17
+    type: 16gfc-sfpp
+  - name: port18
+    type: 16gfc-sfpp
+  - name: port19
+    type: 16gfc-sfpp
+  - name: port20
+    type: 16gfc-sfpp
+  - name: port21
+    type: 16gfc-sfpp
+  - name: port22
+    type: 16gfc-sfpp
+  - name: port23
+    type: 16gfc-sfpp
+  - name: port24
+    type: 16gfc-sfpp
+  - name: port25
+    type: 16gfc-sfpp
+  - name: port26
+    type: 16gfc-sfpp
+  - name: port27
+    type: 16gfc-sfpp
+links:
+  other:
+    - label: HPE QuickSpecs
+      url: https://www.hpe.com/psnow/doc/c04111380
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/C8S46A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 920871d4a761386a

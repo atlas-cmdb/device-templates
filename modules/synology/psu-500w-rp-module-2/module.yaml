@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: synology
+model: PSU 500W-RP Module_2
+slug: psu-500w-rp-module-2
+kind: psu
+description: Redundant Power Module 500W
+part_numbers:
+  - PSU 500W-RP Module_2
+weight_kg: 0.77
+power_ports:
+  - name: "{module}"
+    type: iec-60320-c14
+    maximum_draw_w: 500
+links:
+  product_page: https://www.synology.com/de-de/products/spare_parts?search_by=category&category=PSU
+comments: for FS3410, SA6400, SA3610, SA3410, RS4021xs+, RS3621xs+, RS3621RPxs, RS2821RP+, RX1223RP.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Synology/PSU 500W-RP Module_2.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - description
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+    - weight_kg
+  import_hash: 21da03513f3cd158

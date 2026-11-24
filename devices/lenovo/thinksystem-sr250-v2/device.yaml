@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lenovo
+model: ThinkSystem SR250 V2
+slug: thinksystem-sr250-v2
+category: server
+form_factor: rack
+description: Lenovo ThinkSystem SR250 V2 single-socket 1U rack server with Intel Xeon E-2300 Series processors.
+part_numbers:
+  - 7D7Q
+u_height: 1
+full_depth: true
+weight_kg: 12.3
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: eno1
+    description: Onboard 1GbE RJ45 port 1
+    type: 1000base-t
+  - name: eno2
+    description: Onboard 1GbE RJ45 port 2
+    type: 1000base-t
+  - name: XCC
+    description: Lenovo XClarity Controller (XCC) management port
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  other:
+    - url: https://lenovopress.lenovo.com/lp1549-thinksystem-sr250-v2
+comments: |-
+  Withdrawn from marketing. Supports up to 4x 3.5-inch or 10x 2.5-inch hot-swap drives.
+  Reference:
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Lenovo/ThinkSystem-SR250-v2.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: da7957b61589d85c

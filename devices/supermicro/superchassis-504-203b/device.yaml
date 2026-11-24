@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SuperChassis 504-203B
+slug: superchassis-504-203b
+category: server
+form_factor: rack
+part_numbers:
+  - 504-203B
+u_height: 1
+full_depth: false
+weight_kg: 4.54
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: BMC
+    description: Dedicated IPMI LAN port
+    type: 1000base-t
+    mgmt_only: true
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: Gig-E 3
+    type: 1000base-t
+  - name: Gig-E 4
+    type: 1000base-t
+console_ports:
+  - name: COM1
+    label: Rear
+    type: de-9
+power_ports:
+  - name: PSU1
+    type: iec-60320-c14
+    maximum_draw_w: 200
+comments: Supermicro SuperChassis 504-203B (https://www.supermicro.com/en/products/chassis/Mini-1U/504/SC504-203B)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SuperChassis-504-203B.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 0d14caa0f3d9f201

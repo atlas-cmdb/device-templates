@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: synology
+model: DS1825+
+slug: ds1825-plus
+category: storage_shelf
+form_factor: other
+part_numbers:
+  - DS1825+
+u_height: 0
+full_depth: false
+weight_kg: 6
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: LAN 1
+    type: 2.5gbase-t
+  - name: LAN 2
+    type: 2.5gbase-t
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+links:
+  datasheet: https://www.synology.com/en-global/products/DS1825+
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Synology/DS1825+.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: ee307bb92156f840

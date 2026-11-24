@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huawei
+model: AirEngine6776-56TP
+slug: airengine6776-56tp
+category: wireless_access_point
+form_factor: other
+description: Indoor Access Point (AP) in compliance with Wi-Fi 7 (802.11be)
+u_height: 0
+full_depth: false
+weight_kg: 0.74
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: 5GE/PoE_IN
+    type: 5gbase-t
+    poe_mode: pd
+    poe_type: type3-ieee802.3bt
+  - name: GE/PoE_OUT
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+power_ports:
+  - name: 48V
+    type: dc-terminal
+    maximum_draw_w: 22
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  product_page: https://e.huawei.com/en/products/wlan/indoor-access-points/airengine-6776-56tp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Huawei/AirEngine6776-56TP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: c82dd3e96147905f

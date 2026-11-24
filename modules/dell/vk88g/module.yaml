@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: dell
+model: VK88G
+slug: vk88g
+kind: other
+part_numbers:
+  - VK88G
+interfaces:
+  - name: "{module}-25GbE-0"
+    label: "1"
+    type: 25gbase-x-sfp28
+  - name: "{module}-25GbE-1"
+    label: "2"
+    type: 25gbase-x-sfp28
+  - name: "{module}-25GbE-2"
+    label: "3"
+    type: 25gbase-x-sfp28
+  - name: "{module}-25GbE-3"
+    label: "4"
+    type: 25gbase-x-sfp28
+links:
+  other:
+    - label: Dell Specs
+      url: https://www.dell.com/en-hk/shop/intel-e810-xxvda4tg1-quad-port-10-25gbe-sfp28-precision-timing-adapter-pcie-full-height/apd/540-bdjk/networking#techspecs_section
+  product_page: https://ark.intel.com/content/www/us/en/ark/products/192560/intel-ethernet-network-adapter-e810xxvda4.html
+comments: Intel E810-XXVDA4 Quad Port 10 /25GbE SFP28 Adapter, PCIe Full Height\n \n
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Dell/VK88G.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - interfaces
+    - links.other
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 228c9b8cf0dcdc07

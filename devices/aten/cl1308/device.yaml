@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: aten
+model: CL1308
+slug: cl1308
+category: console_server
+form_factor: rack
+part_numbers:
+  - CL1308
+u_height: 1
+full_depth: false
+weight_kg: 12.59
+airflow: passive
+power:
+  psu_count: 1
+console_server_ports:
+  - name: KVM 1
+    type: other
+  - name: KVM 2
+    type: other
+  - name: KVM 3
+    type: other
+  - name: KVM 4
+    type: other
+  - name: KVM 5
+    type: other
+  - name: KVM 6
+    type: other
+  - name: KVM 7
+    type: other
+  - name: KVM 8
+    type: other
+power_ports:
+  - name: Power
+    type: iec-60320-c14
+    maximum_draw_w: 25
+links:
+  product_page: https://www.aten.com/global/en/products/kvm/lcd-kvm-switches/cl1308/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Aten/cl1308.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_server_ports
+    - full_depth
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 68a8001ee78f87e5

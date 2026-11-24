@@ -1,0 +1,474 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://atlas-cmdb.github.io/device-templates/schema/device.schema.json",
+  "title": "Device template",
+  "description": "One hardware model (server, switch, PDU, UPS, ...). Lives at devices/<manufacturer>/<slug>/device.yaml next to its images.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["manufacturer", "model", "slug", "category", "form_factor", "u_height"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "manufacturer": {
+      "description": "Manufacturer slug; must match a file in manufacturers/ and the parent folder name.",
+      "$ref": "#/$defs/slug"
+    },
+    "model": {
+      "description": "Marketing model name as printed by the manufacturer, without the manufacturer name.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "slug": {
+      "description": "URL-safe identifier, unique per manufacturer; must match the folder name.",
+      "$ref": "#/$defs/slug"
+    },
+    "category": { "$ref": "#/$defs/category" },
+    "form_factor": { "$ref": "#/$defs/form_factor" },
+    "description": { "type": "string", "maxLength": 500 },
+    "part_numbers": {
+      "description": "Orderable SKUs / part numbers for this model.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "aliases": {
+      "description": "Other names this model is known by (short names, OEM rebrands, previous names).",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "family": {
+      "description": "Product family/line, e.g. 'PowerEdge', 'Catalyst 9300', 'Smart-UPS'.",
+      "type": "string"
+    },
+
+    "u_height": {
+      "description": "Rack units occupied. 0 for zero-U (side-mounted PDUs) and blades.",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 60,
+      "multipleOf": 0.5
+    },
+    "full_depth": {
+      "description": "True when the device occupies both the front and rear of the rack unit(s).",
+      "type": "boolean"
+    },
+    "rack_width": {
+      "description": "Nominal rack standard in inches.",
+      "enum": [10, 19, 21, 23]
+    },
+    "dimensions": {
+      "description": "Physical chassis size in millimetres (body, excluding rack ears and handles unless noted).",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "width_mm": { "$ref": "#/$defs/positive" },
+        "height_mm": { "$ref": "#/$defs/positive" },
+        "depth_mm": { "$ref": "#/$defs/positive" },
+        "width_with_ears_mm": { "$ref": "#/$defs/positive" },
+        "depth_with_handles_mm": { "$ref": "#/$defs/positive" }
+      }
+    },
+    "weight_kg": {
+      "description": "Weight of a typical configuration in kilograms.",
+      "$ref": "#/$defs/positive"
+    },
+    "weight_max_kg": {
+      "description": "Weight of a fully populated configuration in kilograms.",
+      "$ref": "#/$defs/positive"
+    },
+    "airflow": { "$ref": "#/$defs/airflow" },
+    "color": {
+      "description": "Dominant chassis colour as #rrggbb; used for procedural rendering when no image exists.",
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{6}$"
+    },
+
+    "power": { "$ref": "#/$defs/power" },
+    "thermal": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "max_btu_hr": { "$ref": "#/$defs/positive" },
+        "typical_btu_hr": { "$ref": "#/$defs/positive" },
+        "operating_temp_min_c": { "type": "number" },
+        "operating_temp_max_c": { "type": "number" },
+        "noise_dba": { "$ref": "#/$defs/positive" }
+      }
+    },
+
+    "interfaces": { "type": "array", "items": { "$ref": "#/$defs/interface" } },
+    "console_ports": { "type": "array", "items": { "$ref": "#/$defs/port" } },
+    "console_server_ports": { "type": "array", "items": { "$ref": "#/$defs/port" } },
+    "power_ports": { "type": "array", "items": { "$ref": "#/$defs/power_port" } },
+    "power_outlets": { "type": "array", "items": { "$ref": "#/$defs/power_outlet" } },
+    "front_ports": { "type": "array", "items": { "$ref": "#/$defs/pass_through_port" } },
+    "rear_ports": { "type": "array", "items": { "$ref": "#/$defs/pass_through_port" } },
+    "module_bays": { "type": "array", "items": { "$ref": "#/$defs/bay" } },
+    "device_bays": { "type": "array", "items": { "$ref": "#/$defs/bay" } },
+    "inventory_items": { "type": "array", "items": { "$ref": "#/$defs/inventory_item" } },
+    "subdevice_role": {
+      "description": "'parent' for chassis with device bays (blade enclosures), 'child' for devices installed in a bay.",
+      "enum": ["parent", "child"]
+    },
+
+    "images": { "$ref": "#/$defs/images" },
+    "model_3d": {
+      "description": "Optional glTF binary (.glb) next to device.yaml for the 3D/VR viewer. Origin at front-bottom-left, +Z towards the rear, metres. Must be your own work (scan or model); see docs/3d-models.md.",
+      "type": "string",
+      "pattern": "^[a-z0-9._-]+\\.glb$"
+    },
+    "model_3d_info": {
+      "description": "Details about model_3d.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "description": "How it was made: a photogrammetry/LiDAR scan, modelled by hand, or generated from this template.",
+          "enum": ["scan", "modelled", "generated"]
+        },
+        "includes_interior": {
+          "description": "The lid can be removed / the inside is modelled (drives, PSUs, fans, DIMMs).",
+          "type": "boolean"
+        },
+        "layers": {
+          "description": "Toggleable parts, as glTF node names. Viewers hide 'top_cover' (and 'front_bezel') to show the interior, like vendor 3D viewers do.",
+          "type": "object",
+          "propertyNames": { "enum": ["top_cover", "front_bezel", "internal", "heatsinks", "air_shroud", "cables", "dimensions"] },
+          "additionalProperties": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+        },
+        "views": {
+          "description": "Camera bookmarks, as names of glTF camera nodes in the model.",
+          "type": "object",
+          "propertyNames": { "enum": ["hero", "front", "rear", "top", "left", "right", "interior", "processor", "memory", "storage", "fans", "psu", "io"] },
+          "additionalProperties": { "type": "string" }
+        },
+        "lod": {
+          "description": "Optional lighter model (same folder, e.g. model-lod1.glb) for racks seen from a distance.",
+          "type": "string",
+          "pattern": "^[a-z0-9._-]+\\.glb$"
+        },
+        "triangles": { "type": "integer", "minimum": 0 },
+        "credit": { "type": "string" },
+        "license": { "description": "SPDX id; contributions are CC0-1.0.", "type": "string" }
+      }
+    },
+
+    "lifecycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": { "enum": ["active", "end-of-sale", "end-of-life", "announced"] },
+        "released": { "$ref": "#/$defs/partial_date" },
+        "end_of_sale": { "$ref": "#/$defs/partial_date" },
+        "end_of_support": { "$ref": "#/$defs/partial_date" }
+      }
+    },
+    "management": {
+      "description": "How the device can be monitored or managed; lets Atlas suggest integrations.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "bmc": {
+          "description": "Out-of-band controller, e.g. iDRAC, iLO, XCC, IPMI.",
+          "type": "string"
+        },
+        "protocols": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "enum": ["snmp", "redfish", "ipmi", "ssh", "telnet", "http", "https", "netconf", "restconf", "gnmi", "modbus", "bacnet"] }
+        },
+        "snmp": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "sys_object_id": { "type": "string", "pattern": "^\\.?1(\\.\\d+)+$" },
+            "mibs": { "type": "array", "items": { "type": "string" } },
+            "oids": {
+              "description": "Named OIDs for live metrics (e.g. total_power_w, load_a, battery_runtime_s, temperature_c).",
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["oid"],
+                "properties": {
+                  "oid": { "type": "string", "pattern": "^\\.?1(\\.\\d+)+$" },
+                  "multiplier": { "type": "number" },
+                  "unit": { "type": "string" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "links": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "product_page": { "type": "string", "format": "uri" },
+        "datasheet": { "type": "string", "format": "uri" },
+        "manual": { "type": "string", "format": "uri" },
+        "media": {
+          "description": "Vendor-hosted media: 3D/360° viewers, photo galleries, CAD downloads, videos. Linked, never copied: vendor media is copyrighted.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["url", "kind"],
+            "properties": {
+              "kind": { "enum": ["3d-viewer", "360-view", "gallery", "cad", "video", "interior-tour", "ar"] },
+              "url": { "type": "string", "format": "uri" },
+              "label": { "type": "string" },
+              "format": { "description": "For CAD downloads, e.g. step, glb, dwg, vsdx.", "type": "string" }
+            }
+          }
+        },
+        "other": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["url"],
+            "properties": { "label": { "type": "string" }, "url": { "type": "string", "format": "uri" } }
+          }
+        }
+      }
+    },
+    "comments": { "type": "string" },
+    "verified": {
+      "description": "True once a maintainer checked the data against a datasheet or the physical device.",
+      "type": "boolean"
+    },
+    "source": { "$ref": "#/$defs/source" }
+  },
+
+  "$defs": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:[-_.][a-z0-9]+)*$", "maxLength": 100 },
+    "positive": { "type": "number", "exclusiveMinimum": 0 },
+    "partial_date": { "type": "string", "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$" },
+
+    "category": {
+      "description": "What the device is. Mirrors Atlas DCIM types where one exists.",
+      "enum": [
+        "server", "compute_blade", "blade_chassis", "gpu_server",
+        "storage_array", "storage_shelf", "tape_library", "backup_appliance", "database_appliance",
+        "network_switch", "router", "firewall", "load_balancer", "wireless_access_point", "network_controller",
+        "sdn_controller", "network_tap", "optical_transport", "media_converter", "security_appliance",
+        "kvm_switch", "kvm_extender", "console_server", "ipmi_controller",
+        "pdu", "ups", "ups_battery_pack", "ats", "power_meter", "environmental_monitor",
+        "patch_panel", "cable_management", "blank_panel", "shelf",
+        "appliance", "other"
+      ]
+    },
+    "form_factor": {
+      "description": "How the device is mounted. 'zero-u' = vertical in-rack (side channel), 'blade' = installs in a chassis bay.",
+      "enum": ["rack", "zero-u", "blade", "tower", "desktop", "wall", "din-rail", "other"]
+    },
+    "airflow": {
+      "enum": ["front-to-rear", "rear-to-front", "left-to-right", "right-to-left", "side-to-rear", "rear-to-side", "bottom-to-top", "top-to-bottom", "passive", "mixed"]
+    },
+
+    "power": {
+      "description": "Power summary. Draw values describe the whole device; capacity values apply to PDUs/UPSes.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "idle_w": { "$ref": "#/$defs/positive" },
+        "typical_w": { "$ref": "#/$defs/positive" },
+        "max_w": { "$ref": "#/$defs/positive" },
+        "psu_count": { "type": "integer", "minimum": 0 },
+        "psu_redundancy": { "type": "string", "examples": ["1+1", "2+1", "N+N", "none"] },
+        "psu_rating_w": { "$ref": "#/$defs/positive" },
+        "input_voltage": { "type": "string", "examples": ["100-240V AC", "-48V DC", "230V AC"] },
+        "phase": { "enum": ["single", "three", "dc"] },
+        "input_current_a": { "$ref": "#/$defs/positive" },
+        "capacity_va": { "$ref": "#/$defs/positive" },
+        "capacity_w": { "$ref": "#/$defs/positive" },
+        "outlet_count": { "type": "integer", "minimum": 0 },
+        "switched": { "description": "Outlets can be switched remotely.", "type": "boolean" },
+        "metered": { "enum": ["none", "unit", "phase", "bank", "outlet"] },
+        "runtime_full_load_min": { "$ref": "#/$defs/positive" },
+        "runtime_half_load_min": { "$ref": "#/$defs/positive" },
+        "battery_type": { "type": "string" },
+        "topology": { "description": "UPS topology.", "enum": ["standby", "line-interactive", "online-double-conversion", "delta-conversion"] }
+      }
+    },
+
+    "component_base": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "label": { "type": "string" },
+        "description": { "type": "string" },
+        "position": {
+          "description": "Where the component sits on the device face, as fractions (0-1) of the image width/height. Lets viewers place ports/LEDs.",
+          "$ref": "#/$defs/rect"
+        },
+        "side": { "enum": ["front", "rear"] }
+      }
+    },
+    "interface": {
+      "allOf": [{ "$ref": "#/$defs/component_base" }],
+      "unevaluatedProperties": false,
+      "properties": {
+        "type": { "description": "NetBox interface type, e.g. 1000base-t, 10gbase-x-sfpp, 100gbase-x-qsfp28.", "type": "string" },
+        "mgmt_only": { "type": "boolean" },
+        "poe_mode": { "enum": ["pd", "pse"] },
+        "poe_type": { "type": "string" },
+        "enabled": { "type": "boolean" }
+      },
+      "required": ["type"]
+    },
+    "port": {
+      "allOf": [{ "$ref": "#/$defs/component_base" }],
+      "unevaluatedProperties": false,
+      "properties": { "type": { "type": "string" } }
+    },
+    "power_port": {
+      "allOf": [{ "$ref": "#/$defs/component_base" }],
+      "unevaluatedProperties": false,
+      "properties": {
+        "type": { "description": "Connector, e.g. iec-60320-c14, iec-60320-c20, iec-60309-p-n-e-6h, nema-5-15p.", "type": "string" },
+        "maximum_draw_w": { "$ref": "#/$defs/positive" },
+        "allocated_draw_w": { "$ref": "#/$defs/positive" }
+      }
+    },
+    "power_outlet": {
+      "allOf": [{ "$ref": "#/$defs/component_base" }],
+      "unevaluatedProperties": false,
+      "properties": {
+        "type": { "type": "string" },
+        "power_port": { "description": "Name of the inlet feeding this outlet.", "type": "string" },
+        "feed_leg": { "enum": ["A", "B", "C"] }
+      }
+    },
+    "pass_through_port": {
+      "allOf": [{ "$ref": "#/$defs/component_base" }],
+      "unevaluatedProperties": false,
+      "properties": {
+        "type": { "description": "Connector, e.g. 8p8c, lc, mpo, sc.", "type": "string" },
+        "rear_port": { "type": "string" },
+        "rear_port_position": { "type": "integer", "minimum": 1 },
+        "positions": { "type": "integer", "minimum": 1 },
+        "color": { "type": "string" }
+      }
+    },
+    "bay": {
+      "allOf": [{ "$ref": "#/$defs/component_base" }],
+      "unevaluatedProperties": false,
+      "properties": {
+        "bay_position": { "type": "string" }
+      }
+    },
+    "inventory_item": {
+      "allOf": [{ "$ref": "#/$defs/component_base" }],
+      "unevaluatedProperties": false,
+      "properties": {
+        "manufacturer": { "type": "string" },
+        "part_id": { "type": "string" }
+      }
+    },
+
+    "rect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x", "y", "w", "h"],
+      "properties": {
+        "x": { "type": "number", "minimum": 0, "maximum": 1 },
+        "y": { "type": "number", "minimum": 0, "maximum": 1 },
+        "w": { "type": "number", "minimum": 0, "maximum": 1 },
+        "h": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "image_file": { "type": "string", "pattern": "^[a-z0-9_-]+\\.(webp|png|jpg)$" },
+    "images": {
+      "description": "Image files next to device.yaml. Front/rear are cropped exactly to the faceplate (no rack ears) and photographed straight on.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "front": { "$ref": "#/$defs/image_file" },
+        "rear": { "$ref": "#/$defs/image_file" },
+        "top": { "$ref": "#/$defs/image_file" },
+        "left": { "$ref": "#/$defs/image_file" },
+        "right": { "$ref": "#/$defs/image_file" },
+        "interior": {
+          "description": "Top-down photo with the lid off, straight on, cropped to the chassis outline (front edge at the bottom). Viewers can map it on the top face when the lid is hidden.",
+          "$ref": "#/$defs/image_file"
+        },
+        "gallery": {
+          "description": "Extra photos: angled 'nice' shots, close-ups of ports, labels, internals. Not used as textures.",
+          "type": "array",
+          "maxItems": 12,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["file"],
+            "properties": {
+              "file": { "$ref": "#/$defs/image_file" },
+              "caption": { "type": "string" },
+              "view": { "enum": ["front", "rear", "top", "interior", "left", "right", "angle", "detail"] }
+            }
+          }
+        },
+        "includes_ears": {
+          "description": "Set when the front/rear images include the rack ears (default false).",
+          "type": "boolean"
+        },
+        "hotspots": {
+          "description": "Clickable regions on the images (drive bays, PSUs, blade slots). openDCIM calls these chassis slots.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["label", "side", "rect"],
+            "properties": {
+              "label": { "type": "string" },
+              "side": { "enum": ["front", "rear", "top", "left", "right", "interior"] },
+              "rect": { "$ref": "#/$defs/rect" },
+              "kind": { "enum": ["drive_bay", "psu", "fan", "blade_slot", "module_bay", "port_group", "display", "led", "other"] },
+              "component": { "description": "Name of the matching bay/port component.", "type": "string" }
+            }
+          }
+        },
+        "credit": { "description": "Photographer / origin of the images.", "type": "string" },
+        "license": { "description": "SPDX id if the images differ from the repository licence.", "type": "string" }
+      }
+    },
+
+    "source": {
+      "description": "Provenance. Written by importers; contributors may leave it out.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "origin": { "enum": ["community", "manufacturer", "netbox-devicetype-library", "opendcim"] },
+        "url": { "type": "string", "format": "uri" },
+        "license": { "type": "string" },
+        "upstream_path": { "type": "string" },
+        "upstream_commit": { "type": "string" },
+        "imported_at": { "type": "string", "format": "date" },
+        "import_hash": {
+          "description": "Hash of the fields listed in upstream_fields. If you edit one of those, the importer leaves the file alone.",
+          "type": "string"
+        },
+        "upstream_fields": {
+          "description": "Fields owned by the importer (dotted paths). Everything else is yours and survives re-imports.",
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "also_from": {
+          "description": "Other sources that filled in missing fields.",
+          "type": "array",
+          "items": { "enum": ["community", "manufacturer", "netbox-devicetype-library", "opendcim"] },
+          "uniqueItems": true
+        },
+        "inferred": {
+          "description": "Fields guessed by the importer (e.g. category) that still need a human check.",
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

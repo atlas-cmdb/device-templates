@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SuperServer 120C-TR
+slug: superserver-120c-tr
+category: server
+form_factor: rack
+part_numbers:
+  - SYS-120C-TR
+u_height: 1
+full_depth: true
+weight_kg: 11.3
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: BMC
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: PSU 1
+    bay_position: "1"
+  - name: PSU 2
+    bay_position: "2"
+  - name: PCIe 1
+    description: PCIe 4.0 x16 FHHL Upper Right
+    bay_position: "1"
+  - name: PCIe 2
+    description: PCIe 4.0 x16 AIOM (OCP 3.0) Lower Right
+    bay_position: "2"
+  - name: PCIe 3
+    description: PCIe 4.0 x16 FHHL Upper Left
+    bay_position: "3"
+  - name: PCIe 4
+    description: PCIe 4.0 x16 AIOM (OCP 3.0) Lower Left
+    bay_position: "4"
+links:
+  datasheet: https://www.supermicro.com/en/products/system/clouddc/1u/sys-120c-tr
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SuperServer-120C-TR.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 4ad3412acd0e7472

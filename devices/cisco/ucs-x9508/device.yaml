@@ -1,0 +1,103 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: UCS-X9508
+slug: ucs-x9508
+category: blade_chassis
+form_factor: rack
+part_numbers:
+  - UCS-X9508
+u_height: 7
+full_depth: true
+subdevice_role: parent
+weight_kg: 43.09
+airflow: front-to-rear
+module_bays:
+  - name: Intelligent Fabric Module 1
+    label: IFM1
+    bay_position: "1"
+  - name: Intelligent Fabric Module 2
+    label: IFM2
+    bay_position: "2"
+  - name: Power slot 1
+    label: PSU1
+    bay_position: "1"
+  - name: Power slot 2
+    label: PSU2
+    bay_position: "2"
+  - name: Power slot 3
+    label: PSU3
+    bay_position: "3"
+  - name: Power slot 4
+    label: PSU4
+    bay_position: "4"
+  - name: Power slot 5
+    label: PSU5
+    bay_position: "5"
+  - name: Power slot 6
+    label: PSU6
+    bay_position: "6"
+  - name: FAN slot 1
+    label: FAN1
+    bay_position: "1"
+  - name: FAN slot 2
+    label: FAN2
+    bay_position: "2"
+  - name: FAN slot 3
+    label: FAN3
+    bay_position: "3"
+  - name: FAN slot 4
+    label: FAN4
+    bay_position: "4"
+  - name: X-Fabric module 1
+    label: XFM1
+    bay_position: "1"
+  - name: X-Fabric module 2
+    label: XFM2
+    bay_position: "2"
+device_bays:
+  - name: slot-1
+    label: "1"
+  - name: slot-2
+    label: "2"
+  - name: slot-3
+    label: "3"
+  - name: slot-4
+    label: "4"
+  - name: slot-5
+    label: "5"
+  - name: slot-6
+    label: "6"
+  - name: slot-7
+    label: "7"
+  - name: slot-8
+    label: "8"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/datasheet-c78-2472574.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/UCS-X9508.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - device_bays
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 6df5fabc4b4a50f0

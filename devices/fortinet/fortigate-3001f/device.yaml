@@ -1,0 +1,136 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: FortiGate 3001F
+slug: fortigate-3001f
+category: firewall
+form_factor: rack
+part_numbers:
+  - FG-3001F
+u_height: 2
+full_depth: true
+weight_kg: 17.3
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: ha1
+    type: 25gbase-x-sfp28
+  - name: ha2
+    type: 25gbase-x-sfp28
+  - name: mgmt1
+    type: 10gbase-t
+    mgmt_only: true
+  - name: mgmt2
+    type: 10gbase-t
+    mgmt_only: true
+  - name: port1
+    type: 10gbase-t
+  - name: port2
+    type: 10gbase-t
+  - name: port3
+    type: 10gbase-t
+  - name: port4
+    type: 10gbase-t
+  - name: port5
+    type: 10gbase-t
+  - name: port6
+    type: 10gbase-t
+  - name: port7
+    type: 10gbase-t
+  - name: port8
+    type: 10gbase-t
+  - name: port9
+    type: 10gbase-t
+  - name: port10
+    type: 10gbase-t
+  - name: port11
+    type: 10gbase-t
+  - name: port12
+    type: 10gbase-t
+  - name: port13
+    type: 10gbase-t
+  - name: port14
+    type: 10gbase-t
+  - name: port15
+    type: 10gbase-t
+  - name: port16
+    type: 10gbase-t
+  - name: port17
+    type: 25gbase-x-sfp28
+  - name: port18
+    type: 25gbase-x-sfp28
+  - name: port19
+    type: 25gbase-x-sfp28
+  - name: port20
+    type: 25gbase-x-sfp28
+  - name: port21
+    type: 25gbase-x-sfp28
+  - name: port22
+    type: 25gbase-x-sfp28
+  - name: port23
+    type: 25gbase-x-sfp28
+  - name: port24
+    type: 25gbase-x-sfp28
+  - name: port25
+    type: 25gbase-x-sfp28
+  - name: port26
+    type: 25gbase-x-sfp28
+  - name: port27
+    type: 25gbase-x-sfp28
+  - name: port28
+    type: 25gbase-x-sfp28
+  - name: port29
+    type: 25gbase-x-sfp28
+  - name: port30
+    type: 25gbase-x-sfp28
+  - name: port31
+    type: 100gbase-x-qsfp28
+  - name: port32
+    type: 100gbase-x-qsfp28
+  - name: port33
+    type: 100gbase-x-qsfp28
+  - name: port34
+    type: 100gbase-x-qsfp28
+  - name: port35
+    type: 100gbase-x-qsfp28
+  - name: port36
+    type: 100gbase-x-qsfp28
+console_ports:
+  - name: Console
+    type: rj-45
+module_bays:
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortigate-3000f-series.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/FG-3001F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: d875607924aa7a01

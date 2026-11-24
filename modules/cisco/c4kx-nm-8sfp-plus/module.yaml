@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: C4KX-NM-8SFP+
+slug: c4kx-nm-8sfp-plus
+kind: other
+part_numbers:
+  - C4KX-NM-8SFP+
+interfaces:
+  - name: TenGigabitEthernet{module}/1
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet{module}/2
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet{module}/3
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet{module}/4
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet{module}/5
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet{module}/6
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet{module}/7
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet{module}/8
+    type: 10gbase-x-sfpp
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4500-x-series-switches/data_sheet_c78-696791.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/C4KX-NM-8SFPP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 985d858b26de3477

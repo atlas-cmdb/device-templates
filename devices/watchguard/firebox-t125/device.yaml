@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: watchguard
+model: Firebox T125
+slug: firebox-t125
+category: firewall
+form_factor: other
+description: Tabletop UTM firewall with 1x 2.5GbE and 4x 1GbE ports
+part_numbers:
+  - WGT125001
+u_height: 0
+full_depth: false
+weight_kg: 2.07
+airflow: left-to-right
+power:
+  psu_count: 1
+interfaces:
+  - name: eth0
+    type: 2.5gbase-t
+  - name: eth1
+    type: 1000base-t
+  - name: eth2
+    type: 1000base-t
+  - name: eth3
+    type: 1000base-t
+  - name: eth4
+    type: 1000base-t
+console_ports:
+  - name: serial
+    type: rj-45
+  - name: usb1
+    type: usb-a
+  - name: usb2
+    type: usb-a
+power_ports:
+  - name: PSU0
+    type: dc-terminal
+    maximum_draw_w: 30
+links:
+  manual: http://www.watchguard.com/help/docs/help-center/en-US/Content/en-US/Hardware-Guides/firebox-t125-hardware-guide.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/WatchGuard/Firebox-T125.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 701c5002747fb9a1

@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: raritan
+model: DSX2-8
+slug: dsx2-8
+category: console_server
+form_factor: rack
+part_numbers:
+  - DSX2-8
+u_height: 1
+full_depth: false
+weight_kg: 4.12
+airflow: passive
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0
+    type: 1000base-t
+  - name: eth1
+    type: 1000base-t
+console_ports:
+  - name: console
+    type: rj-45
+console_server_ports:
+  - name: ttyS1
+    type: rj-45
+  - name: ttyS2
+    type: rj-45
+  - name: ttyS3
+    type: rj-45
+  - name: ttyS4
+    type: rj-45
+  - name: ttyS5
+    type: rj-45
+  - name: ttyS6
+    type: rj-45
+  - name: ttyS7
+    type: rj-45
+  - name: ttyS8
+    type: rj-45
+power_ports:
+  - name: ps1
+    type: iec-60320-c14
+    maximum_draw_w: 21
+  - name: ps2
+    type: iec-60320-c14
+    maximum_draw_w: 21
+links:
+  datasheet: https://www.raritan.com/assets/re/resources/data_sheets/RE-ds-SX2.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Raritan/DSX2-8.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 81076dce339ffeb2

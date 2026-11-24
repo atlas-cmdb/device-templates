@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: VIC 1495
+slug: vic-1495
+kind: other
+part_numbers:
+  - UCSC-PCIE-C100-04
+interfaces:
+  - name: Ethernet {module}/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet {module}/2
+    type: 100gbase-x-qsfp28
+comments: Cisco UCS VIC 1495 dual port 40/100G QSFP28 PCIe for C220 M5/M6, C240 M5/M6, S3260 M5, C240 SD M5, C480 M5, C480 ML M5, C125 M5, S3260 M5, C225 M6, C245 M6
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/VIC-1495.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 9222572aeab25f2d

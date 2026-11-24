@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: lenovo
+model: 7ZT7A00545
+slug: 7zt7a00545
+kind: nic
+part_numbers:
+  - 7ZT7A00545
+interfaces:
+  - name: "{module}/1"
+    type: 1000base-t
+  - name: "{module}/2"
+    type: 1000base-t
+  - name: "{module}/3"
+    type: 1000base-t
+  - name: "{module}/4"
+    type: 1000base-t
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  other:
+    - label: Intel X722 Integrated 10 GbE Controller for Lenovo ThinkSystem
+      url: https://lenovopress.lenovo.com/lp0654-intel-x722-integrated-controller
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Lenovo/7ZT7A00545.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - images.credit
+    - images.front
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 34c045a28ecbafeb

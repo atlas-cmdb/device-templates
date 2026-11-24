@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eaton
+model: Tripp-Lite PDUMV15-24
+slug: tripp-lite-pdumv15-24
+category: pdu
+form_factor: zero-u
+part_numbers:
+  - "037332182852"
+u_height: 0
+full_depth: false
+weight_kg: 1.2
+power:
+  outlet_count: 8
+power_ports:
+  - name: Primary
+    type: nema-5-15p
+power_outlets:
+  - name: "1"
+    type: nema-5-15r
+    power_port: Primary
+  - name: "2"
+    type: nema-5-15r
+    power_port: Primary
+  - name: "3"
+    type: nema-5-15r
+    power_port: Primary
+  - name: "4"
+    type: nema-5-15r
+    power_port: Primary
+  - name: "5"
+    type: nema-5-15r
+    power_port: Primary
+  - name: "6"
+    type: nema-5-15r
+    power_port: Primary
+  - name: "7"
+    type: nema-5-15r
+    power_port: Primary
+  - name: "8"
+    type: nema-5-15r
+    power_port: Primary
+comments: Metered with amp display, 15 foot power input cord, 24 inch PDU length
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eaton/Tripp-Lite-PDUMV15-24.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 39c196a15f261349

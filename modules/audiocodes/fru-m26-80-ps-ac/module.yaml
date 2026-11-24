@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: audiocodes
+model: FRU-M26-80-PS-AC
+slug: fru-m26-80-ps-ac
+kind: other
+part_numbers:
+  - FRU-M26-80-PS-AC
+power_ports:
+  - name: PSU{module}
+    type: iec-60320-c14
+    maximum_draw_w: 240
+comments: "[250W VAC redundant dual feed (hot-swappable)]"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/AudioCodes/FRU-M26-80-PS-AC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: cb878593d44b4473

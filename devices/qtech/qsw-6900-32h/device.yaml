@@ -1,0 +1,115 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: qtech
+model: QSW-6900-32H
+slug: qsw-6900-32h
+category: network_switch
+form_factor: rack
+part_numbers:
+  - QSW-6900-32H
+u_height: 1
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: HundredGigabitEthernet 0/1
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/2
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/3
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/4
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/5
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/6
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/7
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/8
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/9
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/10
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/11
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/12
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/13
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/14
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/15
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/16
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/17
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/18
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/19
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/20
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/21
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/22
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/23
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/24
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/25
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/26
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/27
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/28
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/29
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/30
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/31
+    type: 100gbase-x-qsfp28
+  - name: HundredGigabitEthernet 0/32
+    type: 100gbase-x-qsfp28
+  - name: mgmt 0
+    label: MGMT
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: console
+    label: Console
+    type: rj-45
+power_ports:
+  - name: PSU1
+    type: iec-60320-c14
+    maximum_draw_w: 550
+    allocated_draw_w: 300
+  - name: PSU2
+    type: iec-60320-c14
+    maximum_draw_w: 550
+    allocated_draw_w: 300
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/QTECH/QSW-6900-32H.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 723d4561f9aaadd1

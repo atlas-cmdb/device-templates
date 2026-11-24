@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: Motherboard H13SAE-MF
+slug: motherboard-h13sae-mf
+category: server
+form_factor: blade
+part_numbers:
+  - MBD-H13SAE-MF
+u_height: 0
+full_depth: false
+subdevice_role: child
+airflow: passive
+interfaces:
+  - name: BMC
+    description: Dedicated IPMI LAN port (Realtek RTL8211F)
+    type: 1000base-t
+    mgmt_only: true
+  - name: LAN1
+    description: Intel i210-AT
+    type: 1000base-t
+  - name: LAN2
+    description: Intel i210-AT
+    type: 1000base-t
+console_ports:
+  - name: COM1
+    label: Rear
+    type: de-9
+module_bays:
+  - name: CPU
+    description: AMD AM5 Socket (LGA1718)
+    bay_position: "1"
+  - name: DIMMA1
+    description: DDR5 UDIMM slot
+    bay_position: "2"
+  - name: DIMMA2
+    description: DDR5 UDIMM slot
+    bay_position: "3"
+  - name: DIMMB1
+    description: DDR5 UDIMM slot
+    bay_position: "4"
+  - name: DIMMB2
+    description: DDR5 UDIMM slot
+    bay_position: "5"
+  - name: SLOT4
+    description: CPU PCIe 5.0 x8 (in x16 slot)
+    bay_position: "6"
+  - name: SLOT6
+    description: CPU PCIe 5.0 x16
+    bay_position: "7"
+  - name: SLOT7
+    description: PCH PCIe 4.0 x4
+    bay_position: "8"
+  - name: M.2-C1
+    description: PCIe 5.0 x4 (M-key 2280, 22110)
+    bay_position: "9"
+  - name: M.2-C2
+    description: PCIe 5.0 x4 (M-key 2280, 22110)
+    bay_position: "10"
+links:
+  product_page: https://www.supermicro.com/en/products/motherboard/h13sae-mf
+comments: AMD B650 Micro-ATX workstation motherboard for AMD EPYC 4004/4005 and Ryzen 7000/8000/9000 series processors (Socket AM5), 4 DDR5 ECC/non-ECC UDIMM slots, 2 PCIe 5.0 x4 M.2, 4 SATA, dual Intel i210 GbE and ASPEED AST2600 BMC
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/MBD-H13SAE-MF.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: dc9b35539883113c

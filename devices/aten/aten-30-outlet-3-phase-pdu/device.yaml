@@ -1,0 +1,143 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: aten
+model: ATEN 30-Outlet 3-Phase PDU
+slug: aten-30-outlet-3-phase-pdu
+category: pdu
+form_factor: zero-u
+part_numbers:
+  - PG96230G
+u_height: 0
+full_depth: false
+weight_kg: 7.4
+airflow: passive
+power:
+  outlet_count: 30
+interfaces:
+  - name: Lan 1
+    type: 1000base-t
+  - name: Lan 2
+    type: 1000base-t
+console_ports:
+  - name: COM
+    type: rj-45
+  - name: SENSOR
+    type: rj-11
+power_ports:
+  - name: Power In
+    type: other
+power_outlets:
+  - name: Outlet 1
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 2
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 3
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 4
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 5
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 6
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 7
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 8
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 9
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 10
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 11
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 12
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 13
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 14
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 15
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 16
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 17
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 18
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 19
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 20
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 21
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 22
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 23
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 24
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Outlet 25
+    type: iec-60320-c19
+    power_port: Power In
+  - name: Outlet 26
+    type: iec-60320-c19
+    power_port: Power In
+  - name: Outlet 27
+    type: iec-60320-c19
+    power_port: Power In
+  - name: Outlet 28
+    type: iec-60320-c19
+    power_port: Power In
+  - name: Outlet 29
+    type: iec-60320-c19
+    power_port: Power In
+  - name: Outlet 30
+    type: iec-60320-c19
+    power_port: Power In
+links:
+  product_page: https://www.aten.com/global/en/products/power-distribution/rack-pdu/pg96230/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Aten/PG96230G.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: af8cbc7c0d0fe1cb

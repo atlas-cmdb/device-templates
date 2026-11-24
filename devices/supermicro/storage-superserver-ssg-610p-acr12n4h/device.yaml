@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: Storage SuperServer SSG-610P-ACR12N4H
+slug: storage-superserver-ssg-610p-acr12n4h
+category: server
+form_factor: rack
+part_numbers:
+  - SSG-610P-ACR12N4H
+u_height: 1
+full_depth: true
+weight_kg: 17.9
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: BMC
+    type: 1000base-t
+    mgmt_only: true
+  - name: Gig-E 1
+    type: 25gbase-x-sfp28
+  - name: Gig-E 2
+    type: 25gbase-x-sfp28
+module_bays:
+  - name: PSU1
+    bay_position: PSU 1
+  - name: PSU2
+    bay_position: PSU 2
+  - name: PCI-E 1
+    description: 1 PCIe 4.0 x16 LP slot
+    bay_position: "1"
+  - name: PCI-E 2
+    description: PCIe 4.0 x8 LP slot (Occupied by 3816L SAS controller)
+    bay_position: "2"
+  - name: PCI-E 3
+    description: PCIe 4.0 x16 LP slot
+    bay_position: "3"
+  - name: PCI-E A1
+    description: PCIe 4.0 x16 AIOM slot (OCP 3.0 compatible)
+    bay_position: "4"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+comments: "[Storage SuperServer SSG-610P-ACR12N4H ] (https://www.supermicro.com/en/products/system/megadc/1u/ssg-610p-acr12n4h)"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SSG-610P-ACR12N4H.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 0aa12ac29f09814f

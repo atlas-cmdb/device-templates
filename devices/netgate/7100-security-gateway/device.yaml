@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netgate
+model: 7100 Security Gateway
+slug: 7100-security-gateway
+category: firewall
+form_factor: rack
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: eth1
+    description: Marvell 88E6190 switched uplinked at 5 Gbps (2x 2.5 Gbps) to Intel SoC
+    type: 1000base-t
+  - name: eth2
+    description: Marvell 88E6190 switched uplinked at 5 Gbps (2x 2.5 Gbps) to Intel SoC
+    type: 1000base-t
+  - name: eth3
+    description: Marvell 88E6190 switched uplinked at 5 Gbps (2x 2.5 Gbps) to Intel SoC
+    type: 1000base-t
+  - name: eth4
+    description: Marvell 88E6190 switched uplinked at 5 Gbps (2x 2.5 Gbps) to Intel SoC
+    type: 1000base-t
+  - name: eth5
+    description: Marvell 88E6190 switched uplinked at 5 Gbps (2x 2.5 Gbps) to Intel SoC
+    type: 1000base-t
+  - name: eth6
+    description: Marvell 88E6190 switched uplinked at 5 Gbps (2x 2.5 Gbps) to Intel SoC
+    type: 1000base-t
+  - name: eth7
+    description: Marvell 88E6190 switched uplinked at 5 Gbps (2x 2.5 Gbps) to Intel SoC
+    type: 1000base-t
+  - name: eth8
+    description: Marvell 88E6190 switched uplinked at 5 Gbps (2x 2.5 Gbps) to Intel SoC
+    type: 1000base-t
+  - name: ix0
+    description: Intel x553
+    type: 10gbase-x-sfpp
+  - name: ix1
+    description: Intel x553
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: console
+    description: |-
+      115200 baud rate, 8 data bits, no parity, 1 stop bit, no flow control
+      or XON/OFF
+    type: usb-mini-a
+power_ports:
+  - name: PSU1
+    description: 100-240V, 50-60Hz, 1.5-3A Internal Power Supply
+    type: iec-60320-c14
+    maximum_draw_w: 360
+module_bays:
+  - name: pci1
+    description: PCI-E 3.0 4x
+    bay_position: PCI1
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Netgate/7100-Security-Gateway.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 8fa08311eed77d4e

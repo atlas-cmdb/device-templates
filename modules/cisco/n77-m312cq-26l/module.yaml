@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: N77-M312CQ-26L
+slug: n77-m312cq-26l
+kind: other
+description: Nexus 7700 M3-Series 12-Port 100G Ethernet Module
+part_numbers:
+  - N77-M312CQ-26L
+weight_kg: 5.44
+interfaces:
+  - name: Ethernet{module}/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/2
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/3
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/4
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/5
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/6
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/7
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/8
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/9
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/10
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/11
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/12
+    type: 100gbase-x-qsfp28
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/switches/nexus-7000-series-switches/datasheet-c78-738175.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/N77-M312CQ-26L.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - weight_kg
+  import_hash: 964266fa4197222a

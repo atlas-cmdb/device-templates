@@ -1,0 +1,110 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: juniper
+model: EX4400-24X-AFI
+slug: ex4400-24x-afi
+category: network_switch
+form_factor: rack
+part_numbers:
+  - EX4400-24X-AFI
+u_height: 1
+full_depth: true
+weight_kg: 5.901
+airflow: rear-to-front
+power:
+  psu_count: 2
+interfaces:
+  - name: me0
+    type: 1000base-t
+    mgmt_only: true
+  - name: xe-0/0/0
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/1
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/2
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/3
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/4
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/5
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/6
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/7
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/8
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/9
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/10
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/11
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/12
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/13
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/14
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/15
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/16
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/17
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/18
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/19
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/20
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/21
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/22
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/23
+    type: 10gbase-x-sfpp
+  - name: et-0/1/0
+    type: 100gbase-x-qsfp28
+  - name: et-0/1/1
+    type: 100gbase-x-qsfp28
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: Front Console
+    type: usb-c
+module_bays:
+  - name: Fan Module 0
+    bay_position: "0"
+  - name: Fan Module 1
+    bay_position: "1"
+  - name: Extension module
+    bay_position: "2"
+  - name: PSU0
+    bay_position: "0"
+  - name: PSU1
+    bay_position: "1"
+links:
+  manual: https://www.juniper.net/documentation/us/en/hardware/ex4400/topics/topic-map/ex4400-system-overview.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Juniper/EX4400-24X-AFI.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: bc648bd73796e526

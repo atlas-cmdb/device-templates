@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: palo-alto-networks
+model: PAN-PA-5400-MPC-A
+slug: pan-pa-5400-mpc-a
+kind: other
+part_numbers:
+  - PAN-PA-5400-MPC-A
+interfaces:
+  - name: HA1-A
+    label: HA1-A
+    type: 10gbase-x-sfpp
+  - name: HA1-B
+    label: HA1-B
+    type: 10gbase-x-sfpp
+  - name: HSCI-A
+    label: HSCI-A
+    type: 100gbase-x-qsfp28
+  - name: HSCI-B
+    label: HSCI-B
+    type: 100gbase-x-qsfp28
+  - name: LOG-1
+    label: LOG-1
+    type: 10gbase-x-sfpp
+  - name: LOG-2
+    label: LOG-2
+    type: 10gbase-x-sfpp
+  - name: MGT-A
+    label: MGT-A
+    type: 10gbase-x-sfpp
+    mgmt_only: true
+  - name: MGT-B
+    label: MGT-B
+    type: 10gbase-x-sfpp
+    mgmt_only: true
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Palo Alto Networks/PAN-PA-5400-MPC-A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 568b9539774d481b

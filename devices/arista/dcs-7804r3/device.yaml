@@ -1,0 +1,89 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: arista
+model: DCS-7804R3
+slug: dcs-7804r3
+category: network_switch
+form_factor: rack
+part_numbers:
+  - DCS-7804R3
+u_height: 10
+full_depth: true
+weight_kg: 209
+airflow: front-to-rear
+power:
+  psu_count: 8
+interfaces:
+  - name: Management1/1
+    type: 1000base-t
+  - name: Management2/1
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: rj-45
+module_bays:
+  - name: Linecard Slot 3
+    bay_position: "3"
+  - name: Linecard Slot 4
+    bay_position: "4"
+  - name: Linecard Slot 5
+    bay_position: "5"
+  - name: Linecard Slot 6
+    bay_position: "6"
+  - name: Supervisor Slot 1
+    bay_position: "1"
+  - name: Supervisor Slot 2
+    bay_position: "2"
+  - name: Fabric Module Slot 1
+    bay_position: "1"
+  - name: Fabric Module Slot 2
+    bay_position: "2"
+  - name: Fabric Module Slot 3
+    bay_position: "3"
+  - name: Fabric Module Slot 4
+    bay_position: "4"
+  - name: Fabric Module Slot 5
+    bay_position: "5"
+  - name: Fabric Module Slot 6
+    bay_position: "6"
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+  - name: PSU3
+    bay_position: "3"
+  - name: PSU4
+    bay_position: "4"
+  - name: PSU5
+    bay_position: "5"
+  - name: PSU6
+    bay_position: "6"
+  - name: PSU7
+    bay_position: "7"
+  - name: PSU8
+    bay_position: "8"
+links:
+  product_page: https://www.arista.com/en/products/7800r3-series
+comments: The Arista DCS-7804R3 is a 10RU modular chassis designed for high-density 800G networking, optimized for AI/ML workloads. It supports up to 4 line cards, 2 supervisor modules, 6 fabric modules, and 8 power supply units. The chassis offers a system throughput of up to 115 Tbps (230 Tbps full duplex) and supports up to 144 x 800G or 288 x 400G ports.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Arista/DCS-7804R3.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 2d489be7f0d1e72c

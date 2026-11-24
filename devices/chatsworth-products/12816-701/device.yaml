@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: chatsworth-products
+model: 12816-701
+slug: 12816-701
+category: pdu
+form_factor: rack
+part_numbers:
+  - 12816-701
+u_height: 1
+full_depth: false
+weight_kg: 4.1
+airflow: passive
+power:
+  outlet_count: 8
+power_ports:
+  - name: Input Power
+    type: nema-5-15p
+power_outlets:
+  - name: Power Outlet 1
+    type: nema-5-20r
+  - name: Power Outlet 2
+    type: nema-5-20r
+  - name: Power Outlet 3
+    type: nema-5-20r
+  - name: Power Outlet 4
+    type: nema-5-20r
+  - name: Power Outlet 5
+    type: nema-5-20r
+  - name: Power Outlet 6
+    type: nema-5-20r
+  - name: Power Outlet 7
+    type: nema-5-20r
+  - name: Power Outlet 8
+    type: nema-5-20r
+comments: Chatsworth Products 8 Port PDU Bar
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Chatsworth-Products/12816-701.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 02404314b3a855cd

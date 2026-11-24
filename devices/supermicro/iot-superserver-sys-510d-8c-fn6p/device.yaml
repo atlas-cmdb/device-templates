@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: IoT SuperServer SYS-510D-8C-FN6P
+slug: iot-superserver-sys-510d-8c-fn6p
+category: server
+form_factor: rack
+part_numbers:
+  - SYS-510D-8C-FN6P
+u_height: 1
+full_depth: false
+weight_kg: 4.54
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: BMC
+    description: Dedicated IPMI LAN port
+    type: 1000base-t
+    mgmt_only: true
+  - name: LAN1
+    type: 1000base-t
+  - name: LAN2
+    type: 1000base-t
+  - name: LAN3
+    type: 1000base-t
+  - name: LAN4
+    type: 1000base-t
+  - name: LAN5
+    type: 25gbase-x-sfp28
+  - name: LAN6
+    type: 25gbase-x-sfp28
+power_ports:
+  - name: PSW
+    type: iec-60320-c14
+    maximum_draw_w: 200
+links:
+  product_page: https://www.supermicro.com/en/products/system/iot/1u/sys-510d-8c-fn6p
+comments: "Specification:"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SYS-510D-8C-FN6P.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 82a2b8694183a326

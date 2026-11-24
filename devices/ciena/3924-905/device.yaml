@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ciena
+model: 3924-905
+slug: 3924-905
+category: optical_transport
+form_factor: rack
+description: 3924,(4)100M/1G SFP, (4) 10/1G SFP+,SAOS 10.X,DUAL AC POWER,REQ. POWER CABLE
+part_numbers:
+  - 170-3924-905
+u_height: 1
+full_depth: false
+weight_kg: 2.56
+power:
+  psu_count: 2
+interfaces:
+  - name: "1.1"
+    type: 1000base-x-sfp
+  - name: "1.2"
+    type: 1000base-x-sfp
+  - name: "1.3"
+    type: 1000base-x-sfp
+  - name: "1.4"
+    type: 1000base-x-sfp
+  - name: "1.5"
+    type: 10gbase-x-sfpp
+  - name: "1.6"
+    type: 10gbase-x-sfpp
+  - name: "1.7"
+    type: 10gbase-x-sfpp
+  - name: "1.8"
+    type: 10gbase-x-sfpp
+  - name: MGMT
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: CONSOLE
+    type: rj-45
+  - name: 1PPS
+    description: Mini SMB interface for 1PPS/ToD in/out (software selectable)
+    type: other
+  - name: SYNC
+    description: RJ45 interface G.703 1PPS & ToD input/output
+    type: rj-45
+power_ports:
+  - name: PSA
+    type: iec-60320-c14
+    maximum_draw_w: 30
+    allocated_draw_w: 23
+  - name: PSB
+    type: iec-60320-c14
+    maximum_draw_w: 30
+    allocated_draw_w: 23
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ciena/3924-905.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 85caa5ac88d3c19d

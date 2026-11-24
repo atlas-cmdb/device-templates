@@ -1,0 +1,97 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: complete-connect
+model: MX-PSM4-SM-MOD-CASS
+slug: mx-psm4-sm-mod-cass
+kind: other
+description: MTP/MPO BASE-8 SM Cassette Module 24 Fibre
+front_ports:
+  - name: "{module}:A1"
+    type: lc
+    color: 0000ff
+    rear_port: "{module}:A"
+    rear_port_position: 1
+  - name: "{module}:A2"
+    type: lc
+    color: 0000ff
+    rear_port: "{module}:A"
+    rear_port_position: 2
+  - name: "{module}:A3"
+    type: lc
+    color: 0000ff
+    rear_port: "{module}:A"
+    rear_port_position: 3
+  - name: "{module}:A4"
+    type: lc
+    color: 0000ff
+    rear_port: "{module}:A"
+    rear_port_position: 4
+  - name: "{module}:B1"
+    type: lc
+    color: 0000ff
+    rear_port: "{module}:B"
+    rear_port_position: 1
+  - name: "{module}:B2"
+    type: lc
+    color: 0000ff
+    rear_port: "{module}:B"
+    rear_port_position: 2
+  - name: "{module}:B3"
+    type: lc
+    color: 0000ff
+    rear_port: "{module}:B"
+    rear_port_position: 3
+  - name: "{module}:B4"
+    type: lc
+    color: 0000ff
+    rear_port: "{module}:B"
+    rear_port_position: 4
+  - name: "{module}:C1"
+    type: lc
+    color: 0000ff
+    rear_port: "{module}:C"
+    rear_port_position: 1
+  - name: "{module}:C2"
+    type: lc
+    color: 0000ff
+    rear_port: "{module}:C"
+    rear_port_position: 2
+  - name: "{module}:C3"
+    type: lc
+    color: 0000ff
+    rear_port: "{module}:C"
+    rear_port_position: 3
+  - name: "{module}:C4"
+    type: lc
+    color: 0000ff
+    rear_port: "{module}:C"
+    rear_port_position: 4
+rear_ports:
+  - name: "{module}:A"
+    type: mpo
+    positions: 4
+  - name: "{module}:B"
+    type: mpo
+    positions: 4
+  - name: "{module}:C"
+    type: mpo
+    positions: 4
+links:
+  product_page: https://www.completeconnect.co.uk/products/mx-series-plr4-24-fibre-singlemode-breakout-modular-cassette
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Complete Connect/MX-PSM4-SM-MOD-CASS.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - front_ports
+    - links.product_page
+    - manufacturer
+    - model
+    - rear_ports
+    - slug
+  import_hash: 4664d36f7906eb8a

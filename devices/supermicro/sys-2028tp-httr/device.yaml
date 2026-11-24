@@ -1,0 +1,105 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SYS-2028TP-HTTR
+slug: sys-2028tp-httr
+category: server
+form_factor: blade
+u_height: 0
+full_depth: true
+subdevice_role: child
+airflow: front-to-rear
+interfaces:
+  - name: IPMI
+    type: 1000base-t
+    mgmt_only: true
+  - name: LAN 1
+    type: 10gbase-t
+  - name: LAN 2
+    type: 10gbase-t
+module_bays:
+  - name: CPU 1
+    description: Socket R3 LGA 2011
+    bay_position: CPU 1
+  - name: CPU 2
+    description: Socket R3 LGA 2011
+    bay_position: CPU 2
+  - name: DIMM A1
+    description: Connected to CPU 1
+    bay_position: DIMM A1
+  - name: DIMM A2
+    description: Connected to CPU 1
+    bay_position: DIMM A2
+  - name: DIMM B1
+    description: Connected to CPU 1
+    bay_position: DIMM B1
+  - name: DIMM B2
+    description: Connected to CPU 1
+    bay_position: DIMM B2
+  - name: DIMM C1
+    description: Connected to CPU 1
+    bay_position: DIMM C1
+  - name: DIMM C2
+    description: Connected to CPU 1
+    bay_position: DIMM C2
+  - name: DIMM D1
+    description: Connected to CPU 1
+    bay_position: DIMM D1
+  - name: DIMM D2
+    description: Connected to CPU 1
+    bay_position: DIMM D2
+  - name: DIMM E1
+    description: Connected to CPU 2
+    bay_position: DIMM E1
+  - name: DIMM E2
+    description: Connected to CPU 2
+    bay_position: DIMM E2
+  - name: DIMM F1
+    description: Connected to CPU 2
+    bay_position: DIMM F1
+  - name: DIMM F2
+    description: Connected to CPU 2
+    bay_position: DIMM F2
+  - name: DIMM G1
+    description: Connected to CPU 2
+    bay_position: DIMM G1
+  - name: DIMM G2
+    description: Connected to CPU 2
+    bay_position: DIMM G2
+  - name: DIMM H1
+    description: Connected to CPU 2
+    bay_position: DIMM H1
+  - name: DIMM H2
+    description: Connected to CPU 2
+    bay_position: DIMM H2
+  - name: Slot 1
+    description: PCI-E 3.0 x16 Slot supported by CPU2
+    bay_position: Slot 1
+  - name: Slot 2
+    description: PCI-E 3.0 x8 Slot supported by CPU2
+    bay_position: Slot 2
+  - name: SXB1
+    description: S-SATA 0-2/PCI-E 3.0 x16 Slot supported by CPU2
+    bay_position: SXB1
+  - name: SXB2
+    description: I-SATA 0-5/PCI-E 3.0 x8 Slot supported by CPU1
+    bay_position: SXB2
+comments: A node with Super X10DRT-PT motherboard which gets installed in a SuperServer 2028TP chassis (https://www.supermicro.com/en/products/system/2u/2028/sys-2028tp-httr.php)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SYS-2028TP-HTTR.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: c990992b9c47d5b4

@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: check-point
+model: CPAC-2-100/25F
+slug: cpac-2-100-25f
+kind: other
+part_numbers:
+  - CPAC-2-100/25F
+interfaces:
+  - name: eth{module}-01
+    label: "1"
+    type: 100gbase-x-qsfp28
+  - name: eth{module}-02
+    label: "2"
+    type: 100gbase-x-qsfp28
+comments: 2 Port 100/25G QSFP28 interface card
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Check Point/CPAC-2-100-25F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 90faf47b704ebf8a

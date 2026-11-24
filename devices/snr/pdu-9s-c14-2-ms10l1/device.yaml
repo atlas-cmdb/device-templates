@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: snr
+model: PDU-9S-C14-2-MS10L1
+slug: pdu-9s-c14-2-ms10l1
+category: pdu
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 0.8
+airflow: passive
+power:
+  outlet_count: 9
+power_ports:
+  - name: Power Port 1
+    type: iec-60320-c14
+power_outlets:
+  - name: Outlet 1
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 2
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 3
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 4
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 5
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 6
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 7
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 8
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 9
+    type: ita-f
+    power_port: Power Port 1
+comments: Rack PDU, 1U, 10A, 230V, (9)Schuko
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/SNR/PDU-9S-C14-2-MS10L1.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 6934d7db795015e6

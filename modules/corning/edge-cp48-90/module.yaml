@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: corning
+model: EDGE-CP48-90
+slug: edge-cp48-90
+kind: other
+part_numbers:
+  - EDGE-CP48-90
+front_ports:
+  - name: "{module}1"
+    description: Front Port MPO conector port 1 (Strands 1-12)
+    type: mpo
+    rear_port: "{module}1"
+    rear_port_position: 1
+  - name: "{module}2"
+    description: Front Port MPO conector port 2 (Strands 13-24)
+    type: mpo
+    rear_port: "{module}2"
+    rear_port_position: 1
+  - name: "{module}3"
+    description: Front Port MPO conector port 3 (Strands 25-36)
+    type: mpo
+    rear_port: "{module}3"
+    rear_port_position: 1
+  - name: "{module}4"
+    description: Front Port MPO conector port 4 (Strands 37-48)
+    type: mpo
+    rear_port: "{module}4"
+    rear_port_position: 1
+rear_ports:
+  - name: "{module}1"
+    description: Rear Port MPO connector port 1 (Strands 1-12)
+    type: mpo
+  - name: "{module}2"
+    description: Rear Port MPO connector port 2 (strands 13-24)
+    type: mpo
+  - name: "{module}3"
+    description: Rear Port MPO connector port 3 (strands 25-36)
+    type: mpo
+  - name: "{module}4"
+    description: Rear Port MPO connector port 4 (strands 37-48)
+    type: mpo
+comments: |-
+  Corning EDGE MTP Adapter Panel:
+  * CP = MTP Adaper Panel
+  * 48 = 48-Strand
+  * 90 = Single-mode Ultra (OS2)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Corning/EDGE-CP48-90.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - front_ports
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: 6ec0a8d1ce280936

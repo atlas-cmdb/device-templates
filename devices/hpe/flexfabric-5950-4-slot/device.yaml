@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: FlexFabric 5950 4-slot
+slug: flexfabric-5950-4-slot
+category: server
+form_factor: rack
+part_numbers:
+  - JH404A
+u_height: 2
+full_depth: false
+weight_kg: 10.4
+interfaces:
+  - name: Management1
+    type: 100base-tx
+    mgmt_only: true
+  - name: Management2
+    type: 1000base-x-sfp
+    mgmt_only: true
+  - name: SFP1
+    type: 1000base-x-sfp
+  - name: SFP2
+    type: 1000base-x-sfp
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: USB Console
+    type: usb-mini-b
+  - name: USB
+    type: usb-b
+module_bays:
+  - name: PWR1
+    bay_position: "1"
+  - name: PWR2
+    bay_position: "2"
+  - name: PWR3
+    bay_position: "3"
+  - name: PWR4
+    bay_position: "4"
+  - name: Fan1
+    bay_position: "1"
+  - name: Fan2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.arubanetworks.com/assets/ds/DS_5950SwitchSeries.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/FlexFabric-5950-4-slot.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 897a666856cb571e

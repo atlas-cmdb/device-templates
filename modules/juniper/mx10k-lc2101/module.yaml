@@ -1,0 +1,93 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: juniper
+model: MX10K-LC2101
+slug: mx10k-lc2101
+kind: other
+description: JNP10K-LC2101
+part_numbers:
+  - 750-084779
+weight_kg: 12
+interfaces:
+  - name: et-{module}/0/0
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/0/1
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/0/2
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/0/3
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/1/0
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/1/1
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/1/2
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/1/3
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/2/0
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/2/1
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/2/2
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/2/3
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/3/0
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/3/1
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/3/2
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/3/3
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/4/0
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/4/1
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/4/2
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/4/3
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/5/0
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/5/1
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/5/2
+    type: 100gbase-x-qsfp28
+  - name: et-{module}/5/3
+    type: 100gbase-x-qsfp28
+links:
+  other:
+    - label: MX10K-LC2101
+      url: https://www.juniper.net/documentation/us/en/hardware/mx10008/topics/concept/mx10008-line-card-descripion.html
+comments: |-
+  ## MX10K-LC2101
+  The MX10K-LC2101 line card is a fixed configuration MPC. It does not contain separate slots for Modular Interface Cards (MICs). The MX10004 routers support four and the MX10008 routers support eight MX10K-LC2101 MPCs. The line card provides a maximum bandwidth of 2.4Tbps and has six Packet Forwarding Engines, each providing a maximum bandwidth of up to 400 Gbps. The line card plugs in to the MX10004, MX10008, and MX10016 routers horizontally at the front of the chassis.
+  ### Hardware features
+  - Fixed-configuration MPC with 10-Gbps, 40-Gbps, and 100-Gbps port speeds.
+  - All the ports are Multi-Rate ports. Each port is capable of supporting either 100 Gbps or 40 Gbps or 10 Gbps (4x10-Gbps with breakout cable).
+  - Line-rate throughput of up to 2.4 Tbps.
+  - Six Packet Forwarding Engines, each providing a maximum bandwidth of 400 Gbps.
+  - EA chipsets for increased scaling for bandwidth, subscribers, and services.
+  - Supports the Switch Fabric Boards, JNP10004-SF2, JNP10008-SF, JNP10008-SF2, and JNP10016-SF.
+  - Supports maximum transmission units (MTUs) from 256 bytes through 16,000 bytes for transit traffic, and from 256 bytes through 9,500 bytes for host-bound packets.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Juniper/MX10K-LC2101.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - description
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - weight_kg
+  import_hash: 1174385456d15a13

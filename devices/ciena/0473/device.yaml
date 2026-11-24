@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ciena
+model: "0473"
+slug: "0473"
+category: optical_transport
+form_factor: blade
+part_numbers:
+  - 170-0473-910
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 0.25
+airflow: passive
+power:
+  psu_count: 1
+console_server_ports:
+  - name: Serial Port 1
+    type: rj-45
+  - name: Serial Port 2
+    type: rj-45
+  - name: Serial Port 3
+    type: rj-45
+  - name: Serial Port 4
+    type: rj-45
+power_ports:
+  - name: USB-C
+    type: usb-c
+    maximum_draw_w: 2
+    allocated_draw_w: 1
+links:
+  datasheet: https://www.ciena.com/insights/data-sheets/3803-mtl-dcom-onu
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ciena/0473.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_server_ports
+    - full_depth
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: c98b3a6d536eee0d

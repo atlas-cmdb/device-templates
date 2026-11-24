@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: stormshield
+model: SN-L-SERIES
+slug: sn-l-series
+category: firewall
+form_factor: rack
+part_numbers:
+  - SN-L-SERIES
+u_height: 1
+full_depth: true
+weight_kg: 9.93
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: mgmt1
+    type: 1000base-t
+    mgmt_only: true
+  - name: mgmt2
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: concole0
+    type: rj-45
+  - name: console1
+    type: usb-c
+module_bays:
+  - name: Module 1
+    bay_position: "1"
+  - name: Module 2
+    bay_position: "2"
+  - name: Module 3
+    bay_position: "3"
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+links:
+  datasheet: https://www.stormshield.com/wp-content/uploads/SN-L-Series-2200-3200-Datasheet-EN.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Stormshield/SN-L-SERIES.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: b737c7b7a5ba4bbb

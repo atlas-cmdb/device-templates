@@ -1,0 +1,117 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huawei
+model: S6730-H24X6C
+slug: s6730-h24x6c
+category: network_switch
+form_factor: rack
+part_numbers:
+  - S6730-H24X6C
+u_height: 1
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: MEth0/0/1
+    type: 1000base-t
+    mgmt_only: true
+  - name: XGigabitEthernet0/0/1
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/2
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/3
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/4
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/5
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/6
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/7
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/8
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/9
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/10
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/11
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/12
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/13
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/14
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/15
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/16
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/17
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/18
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/19
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/20
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/21
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/22
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/23
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/24
+    type: 10gbase-x-sfpp
+  - name: 100GE0/0/1
+    type: 100gbase-x-qsfp28
+  - name: 100GE0/0/2
+    type: 100gbase-x-qsfp28
+  - name: 100GE0/0/3
+    type: 100gbase-x-qsfp28
+  - name: 100GE0/0/4
+    type: 100gbase-x-qsfp28
+  - name: 100GE0/0/5
+    type: 100gbase-x-qsfp28
+  - name: 100GE0/0/6
+    type: 100gbase-x-qsfp28
+console_ports:
+  - name: console
+    type: rj-45
+power_ports:
+  - name: PSU1
+    type: iec-60320-c14
+    maximum_draw_w: 600
+  - name: PSU2
+    type: iec-60320-c14
+    maximum_draw_w: 600
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://e.huawei.com/br/material/networking/4e6910a3ca27403b8220d34cebbb67e1
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Huawei/S6730-H24X6C.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: c53f2ab702391252

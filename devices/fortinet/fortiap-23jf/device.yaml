@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: FortiAP 23JF
+slug: fortiap-23jf
+category: wireless_access_point
+form_factor: other
+part_numbers:
+  - FAP-23JF
+u_height: 0
+full_depth: false
+weight_kg: 0.45
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: wan-poe-in
+    type: 1000base-t
+    poe_mode: pd
+    poe_type: type3-ieee802.3bt
+  - name: lan1
+    type: 1000base-t
+  - name: lan2
+    type: 1000base-t
+  - name: lan3-pse
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: pt-in
+    type: 1000base-t
+  - name: pt-out
+    type: 1000base-t
+  - name: radio-1
+    description: 2.4GHz
+    type: ieee802.11ax
+  - name: radio-2
+    description: 5GHz
+    type: ieee802.11ax
+  - name: radio-3
+    description: Scanning radio
+    type: other-wireless
+  - name: radio-4
+    description: BLE/ZigBee IoT radio
+    type: ieee802.15.1
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: DC-In
+    type: dc-terminal
+    maximum_draw_w: 43
+    allocated_draw_w: 43
+links:
+  manual: https://docs.fortinet.com/document/fortiap/hardware/fortiap-23jf-quickstart-guide
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/FAP-23JF.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: d21e07299ce5e8ae

@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: infoblox
+model: T-PSU600-AC
+slug: t-psu600-ac
+kind: psu
+part_numbers:
+  - T-PSU600-AC
+weight_kg: 0.454
+airflow: front-to-rear
+power:
+  input_voltage: 120V AC
+  psu_rating_w: 600
+power_ports:
+  - name: PSU{module}
+    type: iec-60320-c14
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Infoblox/T-PSU600-AC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - airflow
+    - manufacturer
+    - model
+    - part_numbers
+    - power.input_voltage
+    - power.psu_rating_w
+    - power_ports
+    - slug
+    - weight_kg
+  import_hash: bc0be6608f3341cc

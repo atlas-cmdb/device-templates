@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: vertiv
+model: VP7N31A1
+slug: vp7n31a1
+category: pdu
+form_factor: rack
+part_numbers:
+  - MNU5M1R6-12CF18-3TL6A0H10-S
+u_height: 1
+full_depth: false
+weight_kg: 6.35
+airflow: passive
+power:
+  outlet_count: 12
+power_ports:
+  - name: Power
+    type: nema-l6-30p
+    maximum_draw_w: 4900
+power_outlets:
+  - name: Circuit 1 outlet 1
+    type: eaton-c39
+    power_port: Power
+  - name: Circuit 1 outlet 2
+    type: eaton-c39
+    power_port: Power
+  - name: Circuit 1 outlet 3
+    type: eaton-c39
+    power_port: Power
+  - name: Circuit 1 outlet 4
+    type: eaton-c39
+    power_port: Power
+  - name: Circuit 1 outlet 5
+    type: eaton-c39
+    power_port: Power
+  - name: Circuit 1 outlet 6
+    type: eaton-c39
+    power_port: Power
+  - name: Circuit 2 outlet 1
+    type: eaton-c39
+    power_port: Power
+  - name: Circuit 2 outlet 2
+    type: eaton-c39
+    power_port: Power
+  - name: Circuit 2 outlet 3
+    type: eaton-c39
+    power_port: Power
+  - name: Circuit 2 outlet 4
+    type: eaton-c39
+    power_port: Power
+  - name: Circuit 2 outlet 5
+    type: eaton-c39
+    power_port: Power
+  - name: Circuit 2 outlet 6
+    type: eaton-c39
+    power_port: Power
+module_bays:
+  - name: IMD
+    description: Interchangeable Monitoring Device
+    bay_position: 0/IMD
+comments: rPDU, Switched Outlet Level Monitoring EC, 30A, 208V, 4.9kW, Horizontal, (12) Combination C13/C19, 10ft power cord with L6-30P, Black Powder Coat
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Vertiv/VP7N31A1.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 0b44d6ceda973c28

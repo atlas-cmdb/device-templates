@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: Catalyst 9800-L-F
+slug: catalyst-9800-l-f
+category: network_controller
+form_factor: blade
+part_numbers:
+  - C9800-L-F
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 1.819
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: Service Port
+    type: 1000base-t
+    mgmt_only: true
+  - name: Redundancy Port
+    type: 1000base-t
+    mgmt_only: true
+  - name: TwoGigabitEthernet0/0/0
+    type: 2.5gbase-t
+  - name: TwoGigabitEthernet0/0/1
+    type: 2.5gbase-t
+  - name: TwoGigabitEthernet0/0/2
+    type: 2.5gbase-t
+  - name: TwoGigabitEthernet0/0/3
+    type: 2.5gbase-t
+  - name: TenGigabitEthernet0/1/0
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet0/1/1
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Con
+    type: rj-45
+  - name: usb0
+    type: usb-micro-b
+power_ports:
+  - name: PS1
+    type: dc-terminal
+    maximum_draw_w: 85
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/C9800-L-F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 868dcfce0f64852c

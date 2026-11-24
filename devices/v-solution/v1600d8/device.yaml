@@ -1,0 +1,129 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: v-solution
+model: V1600D8
+slug: v1600d8
+category: network_switch
+form_factor: rack
+description: V-SOL 8 Port EPON OLT (Rebranded by Syrotech, Digiway, Sharp Vision etc)
+part_numbers:
+  - V1600D8
+u_height: 1
+full_depth: false
+weight_kg: 4.5
+airflow: left-to-right
+power:
+  psu_count: 1
+interfaces:
+  - name: AUX Interface
+    label: AUX
+    description: "Default Web management IP: 192.168.8.100"
+    type: 100base-fx
+    mgmt_only: true
+  - name: epon 0/1
+    label: PON1
+    type: epon
+  - name: epon 0/2
+    label: PON2
+    type: epon
+  - name: epon 0/3
+    label: PON3
+    type: epon
+  - name: epon 0/4
+    label: PON4
+    type: epon
+  - name: epon 0/5
+    label: PON5
+    type: epon
+  - name: epon 0/6
+    label: PON6
+    type: epon
+  - name: epon 0/7
+    label: PON7
+    type: epon
+  - name: epon 0/8
+    label: PON8
+    type: epon
+  - name: gigabitethernet 0/1
+    label: GE1
+    type: 1000base-x-sfp
+  - name: gigabitethernet 0/2
+    label: GE2
+    type: 1000base-x-sfp
+  - name: gigabitethernet 0/3
+    label: GE3
+    type: 1000base-x-sfp
+  - name: gigabitethernet 0/4
+    label: GE4
+    type: 1000base-x-sfp
+  - name: gigabitethernet 0/5
+    label: GE5
+    type: 10gbase-x-sfpp
+  - name: gigabitethernet 0/6
+    label: GE6
+    type: 10gbase-x-sfpp
+  - name: gigabitethernet 0/7
+    label: GE7
+    type: 10gbase-x-sfpp
+  - name: gigabitethernet 0/8
+    label: GE8
+    type: 10gbase-x-sfpp
+  - name: gigabitethernet 0/9
+    label: GE9
+    type: 1000base-t
+  - name: gigabitethernet 0/10
+    label: GE10
+    type: 1000base-t
+  - name: gigabitethernet 0/11
+    label: GE11
+    type: 1000base-t
+  - name: gigabitethernet 0/12
+    label: GE12
+    type: 1000base-t
+  - name: gigabitethernet 0/13
+    label: GE13
+    type: 1000base-t
+  - name: gigabitethernet 0/14
+    label: GE14
+    type: 1000base-t
+  - name: gigabitethernet 0/15
+    label: GE15
+    type: 1000base-t
+  - name: gigabitethernet 0/16
+    label: GE16
+    type: 1000base-t
+console_ports:
+  - name: Console
+    label: Console
+    type: rj-45
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 70
+    allocated_draw_w: 55
+links:
+  datasheet: http://vsolcn.com/product/8-port-epon-olt-v1600d8
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/V-Solution/V1600D8.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 0cc3eaeadfe3a704

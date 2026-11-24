@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: Powerscale H700
+slug: powerscale-h700
+category: storage_array
+form_factor: blade
+u_height: 0
+full_depth: false
+subdevice_role: child
+power:
+  psu_count: 1
+interfaces:
+  - name: Management
+    type: 1000base-t
+    mgmt_only: true
+  - name: Gig-E 1
+    type: 32gfc-sfp28
+  - name: Gig-E 2
+    type: 32gfc-sfp28
+  - name: Gig-E 3
+    type: 128gfc-qsfp28
+  - name: Gig-E 4
+    type: 128gfc-qsfp28
+console_ports:
+  - name: Console
+    type: de-9
+module_bays:
+  - name: PSU 1
+    bay_position: PSU1
+  - name: PCIe1
+    bay_position: PCIe1
+  - name: PCIe2
+    bay_position: PCIe2
+links:
+  datasheet: https://www.delltechnologies.com/asset/en-us/products/storage/technical-support/h16071-ss-powerscale-hybrid-nodes.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerScale-H700.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: f5359b7f1bc26f02

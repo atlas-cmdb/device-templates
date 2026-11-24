@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: check-point
+model: SG16000
+slug: sg16000
+category: firewall
+form_factor: rack
+part_numbers:
+  - CPAP-SG16000-PLUS-SNBT
+u_height: 2
+full_depth: true
+weight_kg: 18
+airflow: side-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Mgmt
+    label: MGMT
+    type: 1000base-t
+    mgmt_only: true
+  - name: lom
+    label: LOM
+    type: 1000base-t
+    mgmt_only: true
+  - name: sync
+    label: SYNC
+    type: 1000base-t
+console_ports:
+  - name: ttyS0
+    label: CONSOLE
+    type: rj-45
+  - name: ttyS1
+    label: CONSOLE
+    type: usb-c
+module_bays:
+  - name: PSU 1
+    description: Power Supply Unit 1 with Fan
+    bay_position: "1"
+  - name: PSU 2
+    description: Power Supply Unit 2 with Fan
+    bay_position: "2"
+  - name: Line card 1
+    bay_position: "1"
+  - name: Line card 2
+    bay_position: "2"
+  - name: Line card 3
+    bay_position: "3"
+  - name: Line card 4
+    bay_position: "4"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.checkpoint.com/downloads/products/16000-security-gateway-datasheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Check Point/SG16000.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: d9f68c3b67c3caec

@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huawei
+model: NE8000 M8 DC
+slug: ne8000-m8-dc
+category: router
+form_factor: rack
+part_numbers:
+  - 02353ANP
+u_height: 3
+full_depth: false
+weight_kg: 7.8
+airflow: left-to-right
+module_bays:
+  - name: PIC 1
+    bay_position: "1"
+  - name: PIC 2
+    bay_position: "2"
+  - name: PIC 3
+    bay_position: "3"
+  - name: PIC 4
+    bay_position: "4"
+  - name: PIC 5
+    bay_position: "5"
+  - name: PIC 6
+    bay_position: "6"
+  - name: PIC 7
+    bay_position: "7"
+  - name: PIC 8
+    bay_position: "8"
+  - name: IPU 9
+    bay_position: "9"
+  - name: IPU 10
+    bay_position: "10"
+  - name: PIU 11
+    bay_position: "11"
+  - name: PIU 12
+    bay_position: "12"
+links:
+  other:
+    - label: NetEngine 8000 M8
+      url: https://e.huawei.com/en/material/networking/ne-router/99a996e849bf454592951776bf41b9b4
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Huawei/NE8000-M8-DC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 62725527f7f66a2f

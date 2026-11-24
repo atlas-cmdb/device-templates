@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: inelt
+model: SPI-UPS-33-010
+slug: spi-ups-33-010
+category: ups
+form_factor: rack
+u_height: 19
+full_depth: true
+weight_kg: 124
+airflow: front-to-rear
+power:
+  outlet_count: 1
+  psu_count: 1
+interfaces:
+  - name: SNMP
+    type: 100base-tx
+console_ports:
+  - name: Serial
+    type: de-9
+  - name: USB
+    type: usb-b
+power_ports:
+  - name: Input
+    type: hardwired
+    maximum_draw_w: 12000
+power_outlets:
+  - name: Output
+    type: hardwired
+    power_port: Input
+links:
+  product_page: https://inelt.by/products/istochniki-besperebojnogo-pitaniya/trekhfaznye-ibp/spi-monoblochnyy-10-200-kva/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Inelt/SPI-UPS-33-010.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1496bc4a8f22e193

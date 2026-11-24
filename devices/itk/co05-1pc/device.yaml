@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: itk
+model: CO05-1PC
+slug: co05-1pc
+category: other
+form_factor: rack
+description: ITK 19" 482mm 60mm 1U
+part_numbers:
+  - CO05-1PC
+u_height: 1
+full_depth: false
+weight_kg: 0.38
+airflow: passive
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://itk-group.ru/products/catalog/oborudovanie_telekommunikatsionnoe/shkafy_telekommunikatsionnye/komplektuyushchie_i_aksessuary_dlya_shkafov_i_stoek/kabelnye_organayzery_i_koltsa/kabelnye_organayzery_s_kryshkoy/itk_19_plastikovyy_kabelnyy_organayzer_s_kryshkoy_glubina_60mm_1u_chernyy
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/ITK/CO05-1PC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 7170ed230fcc962a

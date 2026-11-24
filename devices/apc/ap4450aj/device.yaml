@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: AP4450AJ
+slug: ap4450aj
+category: ats
+form_factor: rack
+part_numbers:
+  - AP4450AJ
+u_height: 1
+full_depth: false
+weight_kg: 4.4
+airflow: passive
+power:
+  outlet_count: 10
+interfaces:
+  - name: Management
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: usb-micro-b
+power_ports:
+  - name: Source A
+    type: nema-5-15p
+  - name: Source B
+    type: nema-5-15p
+power_outlets:
+  - name: Outlet 1
+    type: nema-5-15r
+  - name: Outlet 2
+    type: nema-5-15r
+  - name: Outlet 3
+    type: nema-5-15r
+  - name: Outlet 4
+    type: nema-5-15r
+  - name: Outlet 5
+    type: nema-5-15r
+  - name: Outlet 6
+    type: nema-5-15r
+  - name: Outlet 7
+    type: nema-5-15r
+  - name: Outlet 8
+    type: nema-5-15r
+  - name: Outlet 9
+    type: nema-5-15r
+  - name: Outlet 10
+    type: nema-5-15r
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+comments: APC Netshelter Rack Automatic Transfer Switch, 1U, 15A, 100V, 5-15 IN, 10 5-15R OUT, 50/60Hz
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/AP4450AJ.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: c496856a5d43dff5

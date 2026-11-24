@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: intel
+model: FXX1600PCRPS
+slug: fxx1600pcrps
+kind: other
+power_ports:
+  - name: PSU{module}
+    label: 1600W Common Redundant Power Supply FXX1600PCRPS
+    type: iec-60320-c14
+    maximum_draw_w: 1600
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Intel/FXX1600PCRPS.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - manufacturer
+    - model
+    - power_ports
+    - slug
+  import_hash: b55136f4279d9d76

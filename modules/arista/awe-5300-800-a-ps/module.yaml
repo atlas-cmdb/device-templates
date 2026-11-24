@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: arista
+model: AWE-5300-800-A-PS
+slug: awe-5300-800-a-ps
+kind: other
+part_numbers:
+  - AWE-5300-800-A-PS
+power_ports:
+  - name: "{module}"
+    type: iec-60320-c14
+    maximum_draw_w: 800
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Arista/AWE-5300-800-A-PS.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: e66ca684c88077ba

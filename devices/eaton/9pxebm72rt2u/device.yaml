@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eaton
+model: 9PXEBM72RT2U
+slug: 9pxebm72rt2u
+category: ups
+form_factor: rack
+part_numbers:
+  - 9PXEBM72RT2U
+u_height: 2
+full_depth: true
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: Battery connector, left
+    label: 72V DC 40A
+    type: other
+  - name: Battery detection, left
+    label: Batt detection
+    type: other
+  - name: Battery connector, right
+    label: 72V DC 40A
+    type: other
+  - name: Battery detection, right
+    label: Batt detection
+    type: other
+power_ports:
+  - name: UPS Input
+    type: other
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  manual: https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/eaton-9px-ups/eaton-9px-1-3kva-ups-manual.pdf
+comments: Eaton 9PX EBM 2U 72V Sealed Lead Acid VRLA 9PXEBM72RT2U
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eaton/9PXEBM72RT2U.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 0ba0d12f6bfcb382

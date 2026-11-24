@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: WSA S195
+slug: wsa-s195
+category: security_appliance
+form_factor: rack
+part_numbers:
+  - WSA-S195
+u_height: 1
+full_depth: true
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: M1
+    type: 1000base-t
+  - name: M2
+    type: 1000base-t
+  - name: P1
+    type: 1000base-t
+  - name: P2
+    type: 1000base-t
+  - name: T1
+    type: 1000base-t
+  - name: T2
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: RPC
+    type: rj-45
+  - name: usb1
+    type: usb-a
+  - name: usb2
+    type: usb-a
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/WSA-S195.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+  import_hash: 560244e370cd2113

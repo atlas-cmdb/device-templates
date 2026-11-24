@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: rohde-and-schwarz
+model: SITLine ETH-XL 2x100G
+slug: sitline-eth-xl-2x100g
+category: server
+form_factor: rack
+part_numbers:
+  - 5414.8110K02
+u_height: 1
+full_depth: false
+weight_kg: 10
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: A1
+    type: 100gbase-x-qsfp28
+  - name: A2
+    type: 100gbase-x-qsfp28
+  - name: X1
+    type: 100gbase-x-qsfp28
+  - name: X2
+    type: 100gbase-x-qsfp28
+  - name: Aux
+    type: 1000base-t
+  - name: Console
+    type: 1000base-t
+  - name: Management
+    type: 1000base-x-sfp
+    mgmt_only: true
+module_bays:
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Rohde & Schwarz/SITLine-ETH-XL-2x100G.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: bdc6ba223d573fae

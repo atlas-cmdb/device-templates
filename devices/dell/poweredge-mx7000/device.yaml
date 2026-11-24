@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge MX7000
+slug: poweredge-mx7000
+category: router
+form_factor: rack
+part_numbers:
+  - "5112814"
+u_height: 7
+full_depth: true
+subdevice_role: parent
+weight_kg: 47.627
+airflow: front-to-rear
+power:
+  psu_count: 6
+module_bays:
+  - name: IOM-A1
+    bay_position: A1
+  - name: IOM-A2
+    bay_position: A2
+  - name: IOM-B1
+    bay_position: B1
+  - name: IOM-B2
+    bay_position: B2
+  - name: IOM-C1
+    bay_position: C1
+  - name: IOM-C2
+    bay_position: C2
+  - name: MM-1
+    bay_position: MM-1
+  - name: MM-2
+    bay_position: MM-2
+  - name: PSU.Slot.1
+    bay_position: "1"
+  - name: PSU.Slot.2
+    bay_position: "2"
+  - name: PSU.Slot.3
+    bay_position: "3"
+  - name: PSU.Slot.4
+    bay_position: "4"
+  - name: PSU.Slot.5
+    bay_position: "5"
+  - name: PSU.Slot.6
+    bay_position: "6"
+device_bays:
+  - name: Sled-1
+  - name: Sled-2
+  - name: Sled-3
+  - name: Sled-4
+  - name: Sled-5
+  - name: Sled-6
+  - name: Sled-7
+  - name: Sled-8
+links:
+  product_page: https://www.dell.com/en-us/shop/ipovw/poweredge-mx7000
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-MX7000.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - device_bays
+    - full_depth
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 939924711a47b455

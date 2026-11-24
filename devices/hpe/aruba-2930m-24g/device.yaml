@@ -1,0 +1,110 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Aruba 2930M-24G
+slug: aruba-2930m-24g
+category: network_switch
+form_factor: rack
+part_numbers:
+  - JL319A
+u_height: 1
+full_depth: false
+weight_kg: 4.45
+power:
+  psu_count: 2
+interfaces:
+  - name: oobm
+    description: Out of Band Management (oobm) interface
+    type: 100base-tx
+    mgmt_only: true
+  - name: "1"
+    type: 1000base-t
+  - name: "2"
+    type: 1000base-t
+  - name: "3"
+    type: 1000base-t
+  - name: "4"
+    type: 1000base-t
+  - name: "5"
+    type: 1000base-t
+  - name: "6"
+    type: 1000base-t
+  - name: "7"
+    type: 1000base-t
+  - name: "8"
+    type: 1000base-t
+  - name: "9"
+    type: 1000base-t
+  - name: "10"
+    type: 1000base-t
+  - name: "11"
+    type: 1000base-t
+  - name: "12"
+    type: 1000base-t
+  - name: "13"
+    type: 1000base-t
+  - name: "14"
+    type: 1000base-t
+  - name: "15"
+    type: 1000base-t
+  - name: "16"
+    type: 1000base-t
+  - name: "17"
+    type: 1000base-t
+  - name: "18"
+    type: 1000base-t
+  - name: "19"
+    type: 1000base-t
+  - name: "20"
+    type: 1000base-t
+  - name: "21"
+    type: 1000base-t
+  - name: "22"
+    type: 1000base-t
+  - name: "23"
+    type: 1000base-t
+  - name: "24"
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: USB Console
+    type: usb-micro-b
+module_bays:
+  - name: Uplink
+    bay_position: A
+  - name: Stacking Module
+    bay_position: Stack
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.arubanetworks.com/assets/ds/DS_2930MSwitchSeries.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Aruba-2930M-24G.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 8295cb40a52bb9bd

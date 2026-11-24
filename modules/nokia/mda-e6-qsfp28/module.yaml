@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: nokia
+model: MDA-E6-QSFP28
+slug: mda-e6-qsfp28
+kind: transceiver
+part_numbers:
+  - 3HE12333AA
+interfaces:
+  - name: "{module}/c1"
+    type: 100gbase-x-qsfp28
+  - name: "{module}/c2"
+    type: 100gbase-x-qsfp28
+  - name: "{module}/c3"
+    type: 100gbase-x-qsfp28
+  - name: "{module}/c4"
+    type: 100gbase-x-qsfp28
+  - name: "{module}/c5"
+    type: 100gbase-x-qsfp28
+  - name: "{module}/c6"
+    type: 100gbase-x-qsfp28
+links:
+  datasheet: https://onestore.nokia.com/asset/164728
+comments: 6 QSFP28 ports Media Dependent Adapter (MDA) for the 7750 SR-1, 7, 12 and 12e that provides additional physical interface connectivity. ''
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Nokia/MDA-E6-QSFP28.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 2ef0e9632f0decce

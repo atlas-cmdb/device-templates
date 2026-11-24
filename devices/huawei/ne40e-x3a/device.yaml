@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huawei
+model: NE40E-X3A
+slug: ne40e-x3a
+category: router
+form_factor: rack
+part_numbers:
+  - 02350FMK
+u_height: 6
+full_depth: true
+weight_kg: 34.4
+airflow: front-to-rear
+module_bays:
+  - name: LPU 1
+    bay_position: "1"
+  - name: LPU 2
+    bay_position: "2"
+  - name: LPU 3
+    bay_position: "3"
+  - name: MPU 4
+    bay_position: "4"
+  - name: MPU 5
+    bay_position: "5"
+  - name: PWR 8
+    bay_position: "8"
+  - name: PWR 9
+    bay_position: "9"
+  - name: FAN 10
+    bay_position: "10"
+links:
+  other:
+    - label: Huawei NE40E X3A
+      url: https://support.huawei.com/hedex/hdx.do?docid=EDOC1100259796
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Huawei/NE40E-X3A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 84d07ec9bd83ab35

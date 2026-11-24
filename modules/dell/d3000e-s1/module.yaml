@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: dell
+model: D3000E-S1
+slug: d3000e-s1
+kind: other
+part_numbers:
+  - 1W1TN
+weight_kg: 1.36
+links:
+  other:
+    - label: Dell 1W1TN MX7000 3000Watt 80 Platinum Power Supply
+      url: https://www.serversupply.com/POWER%20SUPPLY/SERVER%20POWER%20SUPPLY/3000%20WATT/DELL/1W1TN_355740.htm
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Dell/1W1TN.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - weight_kg
+  import_hash: 1e1a6eabb5576b56

@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: check-point
+model: SG5100
+slug: sg5100
+category: firewall
+form_factor: rack
+part_numbers:
+  - CPAP-SG5100-NGTP
+u_height: 1
+full_depth: true
+weight_kg: 6.22
+airflow: side-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: eth1
+    label: "1"
+    type: 1000base-t
+  - name: eth2
+    label: "2"
+    type: 1000base-t
+  - name: eth3
+    label: "3"
+    type: 1000base-t
+  - name: eth4
+    label: "4"
+    type: 1000base-t
+  - name: eth5
+    label: "5"
+    type: 1000base-t
+  - name: eth6
+    label: "6"
+    type: 1000base-t
+  - name: Sync
+    label: SYNC
+    type: 1000base-t
+  - name: Mgmt
+    label: MGMT
+    type: 1000base-t
+  - name: lom
+    label: LOM
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: ttyS0
+    label: CONSOLE
+    type: rj-45
+  - name: ttyS1
+    label: CONSOLE
+    type: usb-micro-b
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 250
+    allocated_draw_w: 80
+module_bays:
+  - name: Line card 1
+    bay_position: "1"
+links:
+  datasheet: https://www.checkpoint.com/downloads/products/5100-security-gateway-datasheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Check Point/SG5100.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1628d8bdb435a895

@@ -1,0 +1,132 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: smartoptics
+model: H-MD-16-921-936
+slug: h-md-16-921-936
+kind: other
+part_numbers:
+  - H-MD-16-921-936
+weight_kg: 0.3
+front_ports:
+  - name: Filter/{module}/Ext
+    description: Incoming fiber for extension channel
+    type: lc-upc
+    rear_port: Filter/{module}/Line
+    rear_port_position: 1
+  - name: Filter/{module}/Mon
+    description: Monitor port for line channel
+    type: lc-upc
+    rear_port: Filter/{module}/Line
+    rear_port_position: 2
+  - name: Filter/{module}/NC
+    description: Not connected port
+    type: lc-upc
+    rear_port: Filter/{module}/Line
+    rear_port_position: 3
+  - name: Filter/{module}/921
+    description: 192.1 THz
+    type: lc-upc
+    rear_port: Filter/{module}/Line
+    rear_port_position: 4
+  - name: Filter/{module}/922
+    description: 192.2 THz
+    type: lc-upc
+    rear_port: Filter/{module}/Line
+    rear_port_position: 5
+  - name: Filter/{module}/923
+    description: 192.3 THz
+    type: lc-upc
+    rear_port: Filter/{module}/Line
+    rear_port_position: 6
+  - name: Filter/{module}/924
+    description: 192.4 THz
+    type: lc-upc
+    rear_port: Filter/{module}/Line
+    rear_port_position: 7
+  - name: Filter/{module}/925
+    description: 192.5 THz
+    type: lc-upc
+    rear_port: Filter/{module}/Line
+    rear_port_position: 8
+  - name: Filter/{module}/926
+    description: 192.6 THz
+    type: lc-upc
+    rear_port: Filter/{module}/Line
+    rear_port_position: 9
+  - name: Filter/{module}/927
+    description: 192.7 THz
+    type: lc-upc
+    rear_port: Filter/{module}/Line
+    rear_port_position: 10
+  - name: Filter/{module}/928
+    description: 192.8 THz
+    type: lc-upc
+    rear_port: Filter/{module}/Line
+    rear_port_position: 11
+  - name: Filter/{module}/929
+    description: 192.9 THz
+    type: lc-upc
+    rear_port: Filter/{module}/Line
+    rear_port_position: 12
+  - name: Filter/{module}/930
+    description: 193.0 THz
+    type: lc-upc
+    rear_port: Filter/{module}/Line
+    rear_port_position: 13
+  - name: Filter/{module}/931
+    description: 193.1 THz
+    type: lc-upc
+    rear_port: Filter/{module}/Line
+    rear_port_position: 14
+  - name: Filter/{module}/932
+    description: 193.2 THz
+    type: lc-upc
+    rear_port: Filter/{module}/Line
+    rear_port_position: 15
+  - name: Filter/{module}/933
+    description: 193.3 THz
+    type: lc-upc
+    rear_port: Filter/{module}/Line
+    rear_port_position: 16
+  - name: Filter/{module}/934
+    description: 193.4 THz
+    type: lc-upc
+    rear_port: Filter/{module}/Line
+    rear_port_position: 17
+  - name: Filter/{module}/935
+    description: 193.5 THz
+    type: lc-upc
+    rear_port: Filter/{module}/Line
+    rear_port_position: 18
+  - name: Filter/{module}/936
+    description: 193.6 THz
+    type: lc-upc
+    rear_port: Filter/{module}/Line
+    rear_port_position: 19
+rear_ports:
+  - name: Filter/{module}/Line
+    description: WDM Line I/O
+    type: lc-upc
+    positions: 19
+links:
+  datasheet: https://smartoptics.com/wp-content/uploads/2023/01/so-ds-h-md-16-xxx-yyy-r5.4.pdf
+comments: 16-channel 16QAM supporting DWDM Mux/Demux with Extension and Monitor ports
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Smartoptics/H-MD-16-921-936.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - front_ports
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+    - weight_kg
+  import_hash: 1b67db2ba3d1ac39

@@ -1,0 +1,89 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: tp-link
+model: TL-SG2210MP
+slug: tl-sg2210mp
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 0.85
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: Ethernet 1
+    label: "1"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Ethernet 2
+    label: "2"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Ethernet 3
+    label: "3"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Ethernet 4
+    label: "4"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Ethernet 5
+    label: "5"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Ethernet 6
+    label: "6"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Ethernet 7
+    label: "7"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Ethernet 8
+    label: "8"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Ethernet 9
+    label: SFP 1
+    type: 1000base-x-sfp
+  - name: Ethernet 10
+    label: SFP 2
+    type: 1000base-x-sfp
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 175
+links:
+  other:
+    - label: TP-Link SG2210MP
+      url: https://www.tp-link.com/us/business-networking/omada-switch-poe/sg2210mp/
+comments: "- Omada 10-Port Gigabit Smart Switch with 8-Port PoE+"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/TP-Link/TL-SG2210MP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 31ca2b12eb1db171

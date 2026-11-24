@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: StoreEver MSL6480 Expansion
+slug: storeever-msl6480-expansion
+category: tape_library
+form_factor: rack
+part_numbers:
+  - QU626A
+u_height: 6
+full_depth: true
+weight_kg: 43.6
+airflow: front-to-rear
+power:
+  psu_count: 2
+console_ports:
+  - name: console
+    type: rj-45
+  - name: console usb
+    type: usb-a
+module_bays:
+  - name: LTO Drive 1
+    bay_position: "1"
+  - name: LTO Drive 2
+    bay_position: "2"
+  - name: LTO Drive 3
+    bay_position: "3"
+  - name: LTO Drive 4
+    bay_position: "4"
+  - name: LTO Drive 5
+    bay_position: "5"
+  - name: LTO Drive 6
+    bay_position: "6"
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+comments: HPE StoreEver MSL6480 expansion module, 80 LTO cartridge slots, 6 LTO Drives FC/SAS, 2 PSU Base module, extendable
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/StoreEver-MSL6480-Expansion.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 45d1255c4b33944c

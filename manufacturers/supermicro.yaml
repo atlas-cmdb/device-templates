@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: supermicro
+name: Supermicro
+aliases:
+  - Super Micro Computer
+  - SMC
+website: https://www.supermicro.com

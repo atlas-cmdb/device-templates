@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: leviton
+model: 5R2UM-F06
+slug: 5r2um-f06
+category: other
+form_factor: rack
+u_height: 2
+full_depth: false
+module_bays:
+  - name: A
+    bay_position: A
+  - name: B
+    bay_position: B
+  - name: C
+    bay_position: C
+  - name: D
+    bay_position: D
+  - name: E
+    bay_position: E
+  - name: F
+    bay_position: F
+comments: Opt-X 1000i SDX 2RU Distribution and Splice Enclosure, empty (no sliding tray); Accepts up to (6) SDX adapter plates or (6) SDX MTP cassettes and accepts up to (6) splice trays.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Leviton/5R2UM-F06.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - u_height
+  import_hash: 39d2b97db6be48df

@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: uptime-industries
+model: Compute Blade v1 Dev
+slug: compute-blade-v1-dev
+category: compute_blade
+form_factor: blade
+part_numbers:
+  - BladeDev-v1-0
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 1.5
+airflow: passive
+interfaces:
+  - name: eth0
+    type: 1000base-t
+    poe_mode: pd
+    poe_type: type2-ieee802.3at
+console_ports:
+  - name: HDMI 4K60
+    type: other
+  - name: USB-A
+    type: usb-a
+  - name: USB-C
+    type: usb-c
+  - name: UART REAR
+    type: other
+  - name: UART FRONT
+    type: other
+module_bays:
+  - name: Raspberry Pi CM4/5 Connector
+    bay_position: "1"
+  - name: M.2 NVMe SSD
+    bay_position: "2"
+  - name: microSD Card
+    bay_position: "3"
+links:
+  other:
+    - label: Docs
+      url: https://docs.computeblade.com/blade
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Uptime Industries/Compute-Blade-v1-Dev.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 61b776ddeae1d5a9

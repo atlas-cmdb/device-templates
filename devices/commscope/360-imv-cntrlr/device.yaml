@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: commscope
+model: 360-imV-CNTRLR
+slug: 360-imv-cntrlr
+category: appliance
+form_factor: rack
+part_numbers:
+  - "760161380"
+u_height: 1
+full_depth: false
+weight_kg: 1.29
+power:
+  psu_count: 2
+interfaces:
+  - name: A
+    type: 100base-tx
+  - name: B
+    type: 100base-tx
+console_ports:
+  - name: DISPLAY
+    type: usb-a
+  - name: USB
+    type: usb-a
+power_ports:
+  - name: PWR1
+    type: dc-terminal
+  - name: PWR2
+    type: dc-terminal
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Commscope/360-imV-CNTRLR.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 0dfb43911402b37d

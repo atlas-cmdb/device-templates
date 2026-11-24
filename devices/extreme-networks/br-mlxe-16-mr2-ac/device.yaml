@@ -1,0 +1,101 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: extreme-networks
+model: BR-MLXE-16-MR2-AC
+slug: br-mlxe-16-mr2-ac
+category: server
+form_factor: rack
+part_numbers:
+  - BR-MLXE-16-MR2-AC
+u_height: 14
+full_depth: true
+power:
+  psu_count: 8
+interfaces:
+  - name: Management 1
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: F1
+    bay_position: F1
+  - name: F2
+    bay_position: F2
+  - name: F3
+    bay_position: F3
+  - name: F4
+    bay_position: F4
+  - name: M1
+    bay_position: M1
+  - name: M2
+    bay_position: M2
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+  - name: PSU3
+    bay_position: "3"
+  - name: PSU4
+    bay_position: "4"
+  - name: PSU5
+    bay_position: "5"
+  - name: PSU6
+    bay_position: "6"
+  - name: PSU7
+    bay_position: "7"
+  - name: PSU8
+    bay_position: "8"
+  - name: S1
+    bay_position: S1
+  - name: S2
+    bay_position: S2
+  - name: S3
+    bay_position: S3
+  - name: S4
+    bay_position: S4
+  - name: S5
+    bay_position: S5
+  - name: S6
+    bay_position: S6
+  - name: S7
+    bay_position: S7
+  - name: S8
+    bay_position: S8
+  - name: S9
+    bay_position: S9
+  - name: S10
+    bay_position: S10
+  - name: S11
+    bay_position: S11
+  - name: S12
+    bay_position: S12
+  - name: S13
+    bay_position: S13
+  - name: S14
+    bay_position: S14
+  - name: S15
+    bay_position: S15
+  - name: S16
+    bay_position: S16
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Extreme Networks/BR-MLXE-16-MR2-AC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+  import_hash: 30d3e37eac37cc49

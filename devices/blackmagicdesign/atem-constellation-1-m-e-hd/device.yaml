@@ -1,0 +1,95 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: blackmagicdesign
+model: ATEM Constellation 1 M/E HD
+slug: atem-constellation-1-m-e-hd
+category: appliance
+form_factor: rack
+part_numbers:
+  - W-APS-25
+u_height: 1
+full_depth: false
+weight_kg: 1.873
+airflow: right-to-left
+power:
+  psu_count: 1
+interfaces:
+  - name: CONTROL
+    type: 1000base-t
+  - name: TALKBACK
+    type: 1000base-t
+console_ports:
+  - name: USB0
+    type: usb-c
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    allocated_draw_w: 36
+rear_ports:
+  - name: REF-IN
+    type: bnc
+  - name: SDI-INPUT-1
+    type: bnc
+  - name: SDI-INPUT-2
+    type: bnc
+  - name: SDI-INPUT-3
+    type: bnc
+  - name: SDI-INPUT-4
+    type: bnc
+  - name: SDI-INPUT-5
+    type: bnc
+  - name: SDI-INPUT-6
+    type: bnc
+  - name: SDI-INPUT-7
+    type: bnc
+  - name: SDI-INPUT-8
+    type: bnc
+  - name: SDI-INPUT-9
+    type: bnc
+  - name: SDI-INPUT-10
+    type: bnc
+  - name: SDI-INPUT-11
+    type: bnc
+  - name: SDI-INPUT-12
+    type: bnc
+  - name: SDI-OUTPUT-1
+    type: bnc
+  - name: SDI-OUTPUT-2
+    type: bnc
+  - name: SDI-OUTPUT-3
+    type: bnc
+  - name: SDI-OUTPUT-4
+    type: bnc
+  - name: SDI-OUTPUT-5
+    type: bnc
+  - name: SDI-OUTPUT-6
+    type: bnc
+  - name: MULTIVIEW-OUTPUT
+    type: bnc
+  - name: ANALOG-AUDIO-IN-1
+    type: other
+  - name: ANALOG-AUDIO-IN-2
+    type: other
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Blackmagicdesign/atem-constellation-1-m-e-hd.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - rear_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 9b0860e838e5c95f

@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: datadirect-networks
+model: SFA200NVX2 Controller
+slug: sfa200nvx2-controller
+category: compute_blade
+form_factor: blade
+part_numbers:
+  - CTLR-200NVX2E
+u_height: 0
+full_depth: false
+subdevice_role: child
+airflow: front-to-rear
+interfaces:
+  - name: BMC
+    type: 1000base-t
+    mgmt_only: true
+  - name: Mgmt 0
+    type: 10gbase-t
+    mgmt_only: true
+  - name: Mgmt 1
+    type: 10gbase-t
+    mgmt_only: true
+  - name: RP0 Port0
+    description: HDR200 or 200GbE
+    type: infiniband-hdr
+  - name: RP0 Port1
+    description: HDR200 or 200GbE
+    type: infiniband-hdr
+console_ports:
+  - name: Console
+    description: 3.5mm stereo jack
+    type: other
+comments: Controller for SFA200NVX2
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/DataDirect Networks/SFA200NVX2-Controller.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: fe10c33190764042

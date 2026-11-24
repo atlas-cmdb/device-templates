@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ruijie
+model: RG-ES208GC
+slug: rg-es208gc
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 0.49
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: eth1
+    label: Port 1
+    type: 1000base-t
+  - name: eth2
+    label: Port 2
+    type: 1000base-t
+  - name: eth3
+    label: Port 3
+    type: 1000base-t
+  - name: eth4
+    label: Port 4
+    type: 1000base-t
+  - name: eth5
+    label: Port 5
+    type: 1000base-t
+  - name: eth6
+    label: Port 6
+    type: 1000base-t
+  - name: eth7
+    label: Port 7
+    type: 1000base-t
+  - name: eth8
+    label: Port 8
+    type: 1000base-t
+power_ports:
+  - name: Power
+    type: dc-terminal
+links:
+  product_page: https://reyee.ruijie.com/en-global/products/reyee-switch/smart-cctv-switch/es208gc/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ruijie/RG-ES208GC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 2512cca85d28c765

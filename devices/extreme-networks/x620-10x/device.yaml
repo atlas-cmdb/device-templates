@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: extreme-networks
+model: X620-10x
+slug: x620-10x
+category: network_switch
+form_factor: rack
+part_numbers:
+  - "17404"
+u_height: 1
+full_depth: false
+weight_kg: 2.74
+power:
+  psu_count: 2
+interfaces:
+  - name: Mgmt-port
+    type: 1000base-t
+    mgmt_only: true
+  - name: "1"
+    type: 10gbase-x-sfpp
+  - name: "2"
+    type: 10gbase-x-sfpp
+  - name: "3"
+    type: 10gbase-x-sfpp
+  - name: "4"
+    type: 10gbase-x-sfpp
+  - name: "5"
+    type: 10gbase-x-sfpp
+  - name: "6"
+    type: 10gbase-x-sfpp
+  - name: "7"
+    type: 10gbase-x-sfpp
+  - name: "8"
+    type: 10gbase-x-sfpp
+  - name: "9"
+    description: Can be used for stacking or as a standard port
+    type: 10gbase-x-sfpp
+  - name: "10"
+    description: Can be used for stacking or as a standard port
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: C14
+    type: iec-60320-c14
+    maximum_draw_w: 36
+  - name: RPS1
+    description: Redundant Power Supply
+    type: dc-terminal
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://documentation.extremenetworks.com/extremeswitching/GUID-0C8FD510-0231-4278-9349-A8DC70AA88CD.shtml
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Extreme Networks/X620-10x.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 4797240ac5d4130d

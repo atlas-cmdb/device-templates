@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: OptiPlex SFF 7050
+slug: optiplex-sff-7050
+category: network_switch
+form_factor: rack
+u_height: 2
+full_depth: false
+weight_kg: 5.26
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+power_ports:
+  - name: PSU
+    description: Internal power supply unit
+    type: iec-60320-c14
+    maximum_draw_w: 180
+links:
+  product_page: https://www.dell.com/support/home/en-us/product-support/product/optiplex-7050-desktop/docs
+comments: See .
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/OptiPlex-SFF-7050.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 76883cc1eaa40f36

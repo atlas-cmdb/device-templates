@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: extreme-networks
+model: XN-DCPWR-550W-BF
+slug: xn-dcpwr-550w-bf
+kind: other
+part_numbers:
+  - XN-DCPWR-550W-BF
+weight_kg: 0.81
+airflow: rear-to-front
+power_ports:
+  - name: "{module}"
+    type: dc-terminal
+    maximum_draw_w: 550
+comments: 550W DC PSU, for use in 5520
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Extreme Networks/XN-DCPWR-550W-BF.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - airflow
+    - comments
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+    - weight_kg
+  import_hash: 15271b2f5d9a85f7

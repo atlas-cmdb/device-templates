@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: generic
+model: Cable Management Panel 1U
+slug: cable-management-panel-1u
+category: cable_management
+form_factor: rack
+u_height: 1
+full_depth: false
+airflow: passive
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Generic/cable-management-panel-1u.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - manufacturer
+    - model
+    - slug
+    - u_height
+  import_hash: 27cdb06f25d425c0

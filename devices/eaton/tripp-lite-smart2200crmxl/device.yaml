@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eaton
+model: Tripp Lite SMART2200CRMXL
+slug: tripp-lite-smart2200crmxl
+category: pdu
+form_factor: rack
+part_numbers:
+  - "037332142368"
+u_height: 4
+full_depth: true
+weight_kg: 45.495
+power:
+  outlet_count: 8
+console_ports:
+  - name: COM 1
+    type: usb-b
+  - name: COM 2
+    type: de-9
+power_ports:
+  - name: Primary
+    type: nema-5-20p
+    maximum_draw_w: 1920
+power_outlets:
+  - name: Load 1
+    description: Output Power Breaker 1
+    type: nema-5-20r
+  - name: Load 2
+    description: Output Power Breaker 1
+    type: nema-5-20r
+  - name: Load 3
+    description: Output Power Breaker 2
+    type: nema-5-20r
+  - name: Load 4 Unswitched 1
+    description: Output Power Breaker 1
+    type: nema-5-20r
+  - name: Load 4 Unswitched 2
+    description: Output Power Breaker 1
+    type: nema-5-20r
+  - name: Load 4 Unswitched 3
+    description: Output Power Breaker 2
+    type: nema-5-20r
+  - name: Load 4 Unswitched 4
+    description: Output Power Breaker 2
+    type: nema-5-20r
+  - name: Load 4 Unswitched 5
+    description: Output Power Breaker 2
+    type: nema-5-20r
+module_bays:
+  - name: Accessory Slot
+    bay_position: "1"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+comments: Battery-backed power supply feeding 8 Nema-5-20R receptables
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eaton/Tripp-Lite-SMART2200CRMXL.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 7bf50f5a9442758d

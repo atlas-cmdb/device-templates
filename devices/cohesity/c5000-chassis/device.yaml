@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cohesity
+model: C5000-CHASSIS
+slug: c5000-chassis
+category: backup_appliance
+form_factor: rack
+part_numbers:
+  - C5000-CHASSIS
+u_height: 2
+full_depth: true
+subdevice_role: parent
+weight_kg: 49.895
+airflow: front-to-rear
+power:
+  psu_count: 2
+module_bays:
+  - name: PSU0
+    bay_position: PSU 0
+  - name: PSU1
+    bay_position: PSU 1
+device_bays:
+  - name: Node 1
+    label: Compute Node 1
+  - name: Node 2
+    label: Compute Node 2
+  - name: Node 3
+    label: Compute Node 3
+  - name: Node 4
+    label: Compute Node 4
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+comments: C5000 chassis (https://www.cohesity.com/resources/datasheet/c5000-data-sheet/)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cohesity/C5000-CHASSIS.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - device_bays
+    - full_depth
+    - images.credit
+    - images.front
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 6728482c066a284a

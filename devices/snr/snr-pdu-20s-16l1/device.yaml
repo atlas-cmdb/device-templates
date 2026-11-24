@@ -1,0 +1,100 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: snr
+model: SNR-PDU-20S-16L1
+slug: snr-pdu-20s-16l1
+category: pdu
+form_factor: zero-u
+part_numbers:
+  - SNR-PDU-20S-16L1
+u_height: 0
+full_depth: false
+weight_kg: 3.75
+airflow: passive
+power:
+  outlet_count: 20
+power_ports:
+  - name: Power Port 1
+    type: ita-f
+power_outlets:
+  - name: Outlet 1
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 2
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 3
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 4
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 5
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 6
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 7
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 8
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 9
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 10
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 11
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 12
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 13
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 14
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 15
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 16
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 17
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 18
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 19
+    type: ita-f
+    power_port: Power Port 1
+  - name: Outlet 20
+    type: ita-f
+    power_port: Power Port 1
+comments: Rack PDU Unmanaged, 0U, 16A, 230V, (20) Schuko (Analog REM R-16-20S-A-1420-3)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/SNR/SNR-PDU-20S-16L1.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 6f77362cb1544ebc

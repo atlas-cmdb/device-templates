@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ericsson
+model: GRU0401
+slug: gru0401
+category: appliance
+form_factor: rack
+description: Ericsson GNSS Reciever 0401
+part_numbers:
+  - GRU0401
+u_height: 1
+full_depth: false
+weight_kg: 0.5
+interfaces:
+  - name: TOD 1
+    description: RJ45 port 1PPS+TOD (ITU-T G.703 Amd1)
+    type: other
+    poe_mode: pd
+    poe_type: type1-ieee802.3af
+  - name: TOD 2
+    description: RJ45 port 1PPS+TOD (ITU-T G.703 Amd1)
+    type: other
+    poe_mode: pd
+    poe_type: type1-ieee802.3af
+comments: "[Ericsson GRU0401 Data Sheet]()"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ericsson/GRU0401.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - description
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 60e9c73293776edf

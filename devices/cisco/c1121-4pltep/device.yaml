@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: C1121-4PLTEP
+slug: c1121-4pltep
+category: appliance
+form_factor: rack
+part_numbers:
+  - C1121-4PLTEP
+u_height: 1
+full_depth: false
+weight_kg: 1.68
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: GigabitEthernet0/0/0
+    description: WAN
+    type: 1000base-t
+  - name: GigabitEthernet0/0/1
+    description: WAN
+    type: 1000base-t
+  - name: GigabitEthernet0/1/0
+    description: LAN
+    type: 1000base-t
+  - name: GigabitEthernet0/1/1
+    description: LAN
+    type: 1000base-t
+  - name: GigabitEthernet0/1/2
+    description: LAN
+    type: 1000base-t
+  - name: GigabitEthernet0/1/3
+    description: LAN
+    type: 1000base-t
+  - name: Cellular0/2/0
+    description: LTE interface
+    type: lte
+console_ports:
+  - name: con0
+    type: rj-45
+power_ports:
+  - name: PSU0
+    type: dc-terminal
+    maximum_draw_w: 24
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/routers/1000-series-integrated-services-routers-isr/datasheet-c78-739512.html
+comments: |-
+  - Cisco 1000 Series Integrated Services Routers Data Sheet:
+  - Cisco 112x ISR model.
+  - 2 WAN GE interfaces.
+  - 4 LAN GE interfaces.
+  - LTE-capable model.
+  - Dimensions: 1.65 x 10.80 x 7.85 in.
+  - Maximum power consumption: 23.5 W.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/C1121-4PLTEP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: dff0a9cfdf0f66a8

@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: opnsense
+model: DEC2770
+slug: dec2770
+category: firewall
+form_factor: rack
+description: OPNsense Rack Security Appliance
+u_height: 1
+full_depth: false
+weight_kg: 2.75
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: ax0
+    type: 10gbase-x-sfpp
+  - name: ax1
+    type: 10gbase-x-sfpp
+  - name: igc0
+    type: 2.5gbase-t
+  - name: igc1
+    type: 2.5gbase-t
+  - name: igc2
+    type: 2.5gbase-t
+  - name: igc3
+    type: 2.5gbase-t
+  - name: igc4
+    type: 2.5gbase-t
+  - name: igc5
+    type: 2.5gbase-t
+  - name: igc6
+    type: 2.5gbase-t
+console_ports:
+  - name: Console
+    type: usb-mini-b
+power_ports:
+  - name: Power
+    type: iec-60320-c16
+    allocated_draw_w: 20
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  product_page: https://shop.opnsense.com/product/dec2770-opnsense-rack-security-appliance/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/OPNsense/DEC2770.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 53dc7da6f8e1a7b7

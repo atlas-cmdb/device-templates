@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netapp
+model: FAS2750-Ctrl
+slug: fas2750-ctrl
+category: storage_array
+form_factor: blade
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 3
+interfaces:
+  - name: e0a
+    type: 10gbase-x-sfpp
+  - name: e0b
+    type: 10gbase-x-sfpp
+  - name: e0c
+    type: 10gbase-x-sfpp
+  - name: e0d
+    type: 10gbase-x-sfpp
+  - name: e0e
+    type: 10gbase-x-sfpp
+  - name: e0f
+    type: 10gbase-x-sfpp
+  - name: mgmt
+    type: 1000base-t
+    mgmt_only: true
+  - name: 0a
+    label: sas0
+    type: other
+  - name: 0b
+    label: sas1
+    type: other
+console_ports:
+  - name: S0
+    label: CONSOLE0
+    type: rj-45
+  - name: S1
+    label: CONSOLE1
+    type: usb-micro-b
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/NetApp/FAS2750-Ctrl.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: ae13140c6d4b8bc9

@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: arista
+model: PWR-1011-AC-RED
+slug: pwr-1011-ac-red
+kind: psu
+part_numbers:
+  - PWR-1011-AC-RED
+power_ports:
+  - name: "{module}"
+    type: iec-60320-c14
+    maximum_draw_w: 1000
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Arista/PWR-1011-AC-RED.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: 304eb733c246e0db

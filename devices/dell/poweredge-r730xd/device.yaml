@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge R730xd
+slug: poweredge-r730xd
+category: server
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 36.5
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: iDRAC
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: PSU-1
+    label: "1"
+    bay_position: PSU-1
+  - name: PSU-2
+    label: "2"
+    bay_position: PSU-2
+  - name: Network Daughter Card slot 1
+    bay_position: NDC-1
+  - name: PCIe slot 1
+    label: "1"
+    bay_position: PCIe-1
+  - name: Riser PCIe slot 2
+    label: "2"
+    bay_position: PCIe-2
+  - name: Riser PCIe slot 3
+    label: "3"
+    bay_position: PCIe-3
+  - name: PCIe slot 4
+    label: "4"
+    bay_position: PCIe-4
+  - name: Riser PCIe slot 5
+    label: "5"
+    bay_position: PCIe-5
+  - name: Riser PCIe slot 6
+    label: "6"
+    bay_position: PCIe-6
+links:
+  datasheet: https://i.dell.com/sites/csdocuments/Shared-Content_data-Sheets_Documents/en/PowerEdge-OEM-R730xd-Carrier-Grade-Spec-Sheet.pdf
+  manual: https://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/Dell-PowerEdge-R730-and-R730xd-Technical-Guide-v1-7.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-R730xd.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 4d426480c3f5578f

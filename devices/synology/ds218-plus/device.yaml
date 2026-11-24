@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: synology
+model: DS218+
+slug: ds218-plus
+category: storage_shelf
+form_factor: other
+part_numbers:
+  - DS218+
+u_height: 0
+full_depth: false
+weight_kg: 1.3
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: LAN 1
+    type: 1000base-t
+power_ports:
+  - name: PSU
+    type: dc-terminal
+    maximum_draw_w: 60
+    allocated_draw_w: 17
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  other:
+    - label: Synology DS218+ Specs
+      url: https://www.synology.com/en-us/support/download/DS218+
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Synology/DS218+.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 28ce95ede1fd7065

@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: juniper
+model: JNP10K-PWR-AC2
+slug: jnp10k-pwr-ac2
+kind: psu
+description: JNP10K 5500W AC/HVDC Power Supply
+part_numbers:
+  - 740-069994
+weight_kg: 5
+power:
+  input_voltage: 240V AC
+  psu_rating_w: 5500
+power_ports:
+  - name: PEM {module}
+    type: saf-d-grid
+    maximum_draw_w: 5500
+links:
+  datasheet: https://www.juniper.net/documentation/us/en/hardware/mx10008/topics/topic-map/mx10008-power-planning.html#mx10008-power-cord-specifications__d58e348
+  other:
+    - label: JNP10K-PWR-AC2 Power Supply
+      url: https://www.juniper.net/documentation/us/en/hardware/ptx10008/topics/topic-map/ptx10008-power-system.html#jnp10k-pwr-ac2-power-supply
+    - label: Figure 4
+      url: https://www.juniper.net/documentation/us/en/hardware/ptx10008/topics/topic-map/ptx10008-power-system.html#jnp10k-pwr-ac2-power-supply__ptx10-ac2
+    - label: JNP10K-PWR-AC2 Power Cable Specifications for 30-A input with 5500 W output
+      url: https://www.juniper.net/documentation/us/en/hardware/mx10008/topics/topic-map/mx10008-power-planning.html#mx10008-power-cord-specifications__d58e985
+comments: |-
+  ## JNP10K-PWR-AC2 Power Supply
+  The JNP10K-PWR-AC2 power supply is a high-capacity model that is designed to support AC, high-voltage AC (HVAC), or high-voltage DC (HVDC) systems in either a 20-A or a 30-A mode; see . The power supply feeds AC input and provides DC output of 5000 W with a single feed and 5500 W with a dual feed. The operating input voltage range is 180 to 305 VAC for AC systems and 190 to 410 VDC for DC systems.
+  ## JNP10K-PWR-AC2 Power Cable Specifications
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Juniper/JNP10K-PWR-AC2.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - description
+    - links.datasheet
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.input_voltage
+    - power.psu_rating_w
+    - power_ports
+    - slug
+    - weight_kg
+  import_hash: ddd1df3dc8e255c9

@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: EdgeRouter 8
+slug: edgerouter-8
+category: router
+form_factor: rack
+part_numbers:
+  - ER-8
+u_height: 1
+full_depth: false
+weight_kg: 2.3
+airflow: side-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: eth0
+    type: 1000base-t
+  - name: eth1
+    type: 1000base-t
+  - name: eth2
+    type: 1000base-t
+  - name: eth3
+    type: 1000base-t
+  - name: eth4
+    type: 1000base-t
+  - name: eth5
+    type: 1000base-t
+  - name: eth6
+    type: 1000base-t
+  - name: eth7
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: AC
+    description: 100-240VAC/50-60 Hz
+    type: iec-60320-c6
+    maximum_draw_w: 35
+links:
+  datasheet: https://dl.ubnt.com/datasheets/edgemax/EdgeRouter_DS.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/ER-8.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 0a2fd8032b67e474

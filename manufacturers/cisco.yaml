@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: cisco
+name: Cisco
+aliases:
+  - Cisco Systems
+  - Meraki
+  - Linksys Business
+website: https://www.cisco.com

@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: ssd
+model: ssd-skos-l-8fc
+slug: ssd-skos-l-8fc
+kind: storage
+part_numbers:
+  - 130308-00123
+front_ports:
+  - name: "{module}:1"
+    description: FC Port 1
+    type: fc
+    rear_port: "{module}:1"
+    rear_port_position: 1
+  - name: "{module}:2"
+    description: FC Port 2
+    type: fc
+    rear_port: "{module}:2"
+    rear_port_position: 1
+  - name: "{module}:3"
+    description: FC Port 3
+    type: fc
+    rear_port: "{module}:3"
+    rear_port_position: 1
+  - name: "{module}:4"
+    description: FC Port 4
+    type: fc
+    rear_port: "{module}:4"
+    rear_port_position: 1
+  - name: "{module}:5"
+    description: FC Port 5
+    type: fc
+    rear_port: "{module}:5"
+    rear_port_position: 1
+  - name: "{module}:6"
+    description: FC Port 6
+    type: fc
+    rear_port: "{module}:6"
+    rear_port_position: 1
+  - name: "{module}:7"
+    description: FC Port 7
+    type: fc
+    rear_port: "{module}:7"
+    rear_port_position: 1
+  - name: "{module}:8"
+    description: FC Port 8
+    type: fc
+    rear_port: "{module}:8"
+    rear_port_position: 1
+rear_ports:
+  - name: "{module}:1"
+    type: fc
+  - name: "{module}:2"
+    type: fc
+  - name: "{module}:3"
+    type: fc
+  - name: "{module}:4"
+    type: fc
+  - name: "{module}:5"
+    type: fc
+  - name: "{module}:6"
+    type: fc
+  - name: "{module}:7"
+    type: fc
+  - name: "{module}:8"
+    type: fc
+comments: Fiber module, 8 x FC (Metal)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/SSD/ssd-skos-l-8fc.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - front_ports
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: 264a2c3babf76f33

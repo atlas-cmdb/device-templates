@@ -1,0 +1,93 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: UniFi Dream Machine Pro Max
+slug: unifi-dream-machine-pro-max
+category: network_switch
+form_factor: rack
+part_numbers:
+  - UDM-PRO-MAX
+u_height: 1
+full_depth: false
+weight_kg: 4.717
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: port.1
+    label: Port 1 - LAN
+    type: 1000base-t
+  - name: port.2
+    label: Port 2 - LAN
+    type: 1000base-t
+  - name: port.3
+    label: Port 3 - LAN
+    type: 1000base-t
+  - name: port.4
+    label: Port 4 - LAN
+    type: 1000base-t
+  - name: port.5
+    label: Port 5 - LAN
+    type: 1000base-t
+  - name: port.6
+    label: Port 6 - LAN
+    type: 1000base-t
+  - name: port.7
+    label: Port 7 - LAN
+    type: 1000base-t
+  - name: port.8
+    label: Port 8 - LAN
+    type: 1000base-t
+  - name: port.9
+    label: Port 9 - WAN 1
+    type: 2.5gbase-t
+  - name: port.10
+    label: Port 10 - SFP+ WAN 2
+    type: 10gbase-x-sfpp
+  - name: port.11
+    type: 10gbase-x-sfpp
+power_ports:
+  - name: Input
+    type: iec-60320-c14
+    maximum_draw_w: 100
+  - name: USP-RPS connector for PSU failover
+    type: ubiquiti-smartpower
+    maximum_draw_w: 100
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  other:
+    - label: UniFi Dream Machine Pro Max Techspecs
+      url: https://techspecs.ui.com/unifi/unifi-cloud-gateways/udm-pro-max
+comments: |-
+  UniFi Dream Machine Pro Max
+  Enterprise Security Gateway and Network Appliance with 10G SFP+, (8) 1G LAN, (1) 2.5G WAN, (1) 1/10G SFP+ LAN, (1) 1/10G SFP+ WAN
+  Dimensions: 442.4 x 43.7 x 285.6 mm (17.42 x 1.72 x 11.24")
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/UniFi-Dream-Machine-Pro-Max.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 28e830780ee154ad

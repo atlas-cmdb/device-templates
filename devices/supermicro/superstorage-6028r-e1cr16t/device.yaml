@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SuperStorage 6028r-E1CR16T
+slug: superstorage-6028r-e1cr16t
+category: server
+form_factor: rack
+part_numbers:
+  - SSG-6028R-E1CR16T
+u_height: 2
+full_depth: true
+weight_kg: 15.4
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Eth-1
+    type: 10gbase-t
+  - name: Eth-2
+    type: 10gbase-t
+  - name: IPMI
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+  - name: PCIe-1 LP x16
+    bay_position: PCIe-1
+  - name: PCIe-2 LP x8
+    bay_position: PCIe-2
+  - name: PCIe-3 LP x8
+    bay_position: PCIe-3
+  - name: PCIe-4 LP x8
+    bay_position: PCIe-4
+  - name: PCIe-5 LP x8
+    bay_position: PCIe-5
+  - name: PCIe-6 LP x8
+    bay_position: PCIe-6
+links:
+  datasheet: https://www.supermicro.com/en/products/system/2U/6028/SSG-6028R-E1CR16T.cfm
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SSG-6028R-E1CR16T.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: f2588371fa234c7d

@@ -1,0 +1,119 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: arista
+model: DCS-7512N
+slug: dcs-7512n
+category: network_switch
+form_factor: rack
+part_numbers:
+  - DCS-7512N
+u_height: 18
+full_depth: true
+weight_kg: 83.915
+airflow: front-to-rear
+power:
+  psu_count: 12
+module_bays:
+  - name: Slot 1
+    label: Supervisor
+    bay_position: "1"
+  - name: Slot 2
+    label: Supervisor
+    bay_position: "2"
+  - name: Slot 3
+    label: Line Card
+    bay_position: "3"
+  - name: Slot 4
+    label: Line Card
+    bay_position: "4"
+  - name: Slot 5
+    label: Line Card
+    bay_position: "5"
+  - name: Slot 6
+    label: Line Card
+    bay_position: "6"
+  - name: Slot 7
+    label: Line Card
+    bay_position: "7"
+  - name: Slot 8
+    label: Line Card
+    bay_position: "8"
+  - name: Slot 9
+    label: Line Card
+    bay_position: "9"
+  - name: Slot 10
+    label: Line Card
+    bay_position: "10"
+  - name: Slot 11
+    label: Line Card
+    bay_position: "11"
+  - name: Slot 12
+    label: Line Card
+    bay_position: "12"
+  - name: Slot 13
+    label: Line Card
+    bay_position: "13"
+  - name: Slot 14
+    label: Line Card
+    bay_position: "14"
+  - name: Fabric Module Slot 1
+    bay_position: F1
+  - name: Fabric Module Slot 2
+    bay_position: F2
+  - name: Fabric Module Slot 3
+    bay_position: F3
+  - name: Fabric Module Slot 4
+    bay_position: F4
+  - name: Fabric Module Slot 5
+    bay_position: F5
+  - name: Fabric Module Slot 6
+    bay_position: F6
+  - name: PSU Slot 1
+    bay_position: PSU-1
+  - name: PSU Slot 2
+    bay_position: PSU-2
+  - name: PSU Slot 3
+    bay_position: PSU-3
+  - name: PSU Slot 4
+    bay_position: PSU-4
+  - name: PSU Slot 5
+    bay_position: PSU-5
+  - name: PSU Slot 6
+    bay_position: PSU-6
+  - name: PSU Slot 7
+    bay_position: PSU-7
+  - name: PSU Slot 8
+    bay_position: PSU-8
+  - name: PSU Slot 9
+    bay_position: PSU-9
+  - name: PSU Slot 10
+    bay_position: PSU-10
+  - name: PSU Slot 11
+    bay_position: PSU-11
+  - name: PSU Slot 12
+    bay_position: PSU-12
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Arista/DCS-7512N.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 3fa5ddd60195c8af

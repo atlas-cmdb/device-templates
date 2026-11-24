@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: rosewill
+model: RSV-Z2600U
+slug: rsv-z2600u
+category: blade_chassis
+form_factor: rack
+part_numbers:
+  - RSV-Z2600U
+u_height: 2
+full_depth: false
+subdevice_role: parent
+weight_kg: 4.8
+airflow: front-to-rear
+power:
+  psu_count: 1
+module_bays:
+  - name: PSU
+    description: PS2 (ATX) power supply, maximum length 150 mm
+    bay_position: PSU
+device_bays:
+  - name: System Board
+    label: System Board
+    description: Micro-ATX or Mini-ITX system board
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  datasheet: https://www.rosewill.com/rosewill-rsv-z2600u-black/p/9SIA072GJ92852
+comments: ". 2U chassis supporting Micro-ATX and Mini-ITX system boards. Dimensions: 430 mm wide x 89 mm high x 380 mm deep; weight is for the bare chassis. Four low-profile expansion slots and four internal 3.5-inch drive bays. Supports a PS2 (ATX) power supply up to 150 mm long."
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Rosewill/RSV-Z2600U.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - device_bays
+    - full_depth
+    - images.credit
+    - images.front
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: a2bc930f3217631c

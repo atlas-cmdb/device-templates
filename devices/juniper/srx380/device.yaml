@@ -1,0 +1,130 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: juniper
+model: SRX380
+slug: srx380
+category: firewall
+form_factor: rack
+part_numbers:
+  - SRX380-P-SYS-JB-AC
+u_height: 1
+full_depth: false
+weight_kg: 7.602
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: fxp0
+    type: 1000base-t
+    mgmt_only: true
+  - name: ge-0/0/0
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: ge-0/0/1
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: ge-0/0/2
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: ge-0/0/3
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: ge-0/0/4
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: ge-0/0/5
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: ge-0/0/6
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: ge-0/0/7
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: ge-0/0/8
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: ge-0/0/9
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: ge-0/0/10
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: ge-0/0/11
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: ge-0/0/12
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: ge-0/0/13
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: ge-0/0/14
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: ge-0/0/15
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: xe-0/0/16
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/17
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/18
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/19
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: console0
+    type: rj-45
+module_bays:
+  - name: PSU 0
+    bay_position: "0"
+  - name: PSU 1
+    bay_position: "1"
+  - name: PIM 0
+    bay_position: "2"
+  - name: PIM 1
+    bay_position: "3"
+  - name: PIM 2
+    bay_position: "4"
+  - name: PIM 3
+    bay_position: "5"
+links:
+  datasheet: https://www.juniper.net/content/dam/www/assets/datasheets/us/en/security/srx300-line-services-gateways-branch-datasheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Juniper/SRX380.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 8827c0a26ab56f1b

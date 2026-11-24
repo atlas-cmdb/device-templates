@@ -1,0 +1,113 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: nokia
+model: 7750-SR-7s
+slug: 7750-sr-7s
+category: router
+form_factor: rack
+description: Nokia 7750 SR-7s Service Router
+part_numbers:
+  - 3HE11905AA
+u_height: 12
+full_depth: true
+weight_kg: 45.3
+airflow: front-to-rear
+module_bays:
+  - name: Card 1
+    label: XCM
+    bay_position: "1"
+  - name: Card 2
+    label: XCM
+    bay_position: "2"
+  - name: Card 3
+    label: XCM
+    bay_position: "3"
+  - name: Card 4
+    label: XCM
+    bay_position: "4"
+  - name: Card 5
+    label: XCM
+    bay_position: "5"
+  - name: Card 6
+    label: XCM
+    bay_position: "6"
+  - name: Card 7
+    label: XCM
+    bay_position: "7"
+  - name: CMA
+    label: CMA Carrier
+    bay_position: CMA
+  - name: SFM 1
+    label: SFM
+    bay_position: SFM1
+  - name: SFM 2
+    label: SFM
+    bay_position: SFM2
+  - name: SFM 3
+    label: SFM
+    bay_position: SFM3
+  - name: SFM 4
+    label: SFM
+    bay_position: SFM4
+  - name: PM 1
+    label: Power Module
+    bay_position: PM1
+  - name: PM 2
+    label: Power Module
+    bay_position: PM2
+  - name: PM 3
+    label: Power Module
+    bay_position: PM3
+  - name: PM 4
+    label: Power Module
+    bay_position: PM4
+  - name: PM 5
+    label: Power Module
+    bay_position: PM5
+  - name: PM 6
+    label: Power Module
+    bay_position: PM6
+  - name: PM 7
+    label: Power Module
+    bay_position: PM7
+  - name: PM 8
+    label: Power Module
+    bay_position: PM8
+  - name: PM 9
+    label: Power Module
+    bay_position: PM9
+  - name: PM 10
+    label: Power Module
+    bay_position: PM10
+  - name: FAN 1
+    label: Fan Tray
+    bay_position: FAN1
+  - name: FAN 2
+    label: Fan Tray
+    bay_position: FAN2
+  - name: FAN 3
+    label: Fan Tray
+    bay_position: FAN3
+  - name: FAN 4
+    label: Fan Tray
+    bay_position: FAN4
+comments: 7-slot chassis (SR-s platform). Provides 7 horizontal line card slots (XCM-7s, XCM-7s-b, XCM2-7s) plus dedicated CPM, SFM, power, and fan bays. CPM slots A/B are housed in the CMA2-7s carrier bracket. 4 SFM slots for full fabric redundancy. 10 DC power module bays. 4 fan trays.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Nokia/7750-SR-7s.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - description
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 3d1a301c59065520

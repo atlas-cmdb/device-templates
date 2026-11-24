@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: rittal
+model: DK 7030088
+slug: dk-7030088
+category: blade_chassis
+form_factor: rack
+part_numbers:
+  - "4028177709423"
+u_height: 1
+full_depth: false
+subdevice_role: parent
+weight_kg: 0.54
+airflow: passive
+device_bays:
+  - name: CMC III SU 1
+    description: 1st slot for CMC III device Unit
+  - name: CMC III SU 2
+    description: 2nd slot for CMC III device Unit
+  - name: CMC III SU 3
+    description: 3rd slot for CMC III device Unit
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  product_page: https://www.rittal.com/com-en/products/PG20231215ITI101/PG20240408ITI301/PG20240913ITI008/PRO23684?variantId=7030088
+comments: |-
+  Dimensions (W x H x D): 482.6 mm x 1 RU x 141 mm.
+  Fire protection: Self-extinguishing to UL 94 HB.
+  NOTE: For installing CMC III units in network and server racks. This mounting unit can accommodate up to 3 Processing Units, Power Units, I/O Units, Sensor Units etc.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Rittal/DK-7030088.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - device_bays
+    - full_depth
+    - images.credit
+    - images.front
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 7cb304982d979a6b

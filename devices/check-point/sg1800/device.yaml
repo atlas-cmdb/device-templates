@@ -1,0 +1,118 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: check-point
+model: SG1800
+slug: sg1800
+category: firewall
+form_factor: rack
+part_numbers:
+  - CPAP-SG1800
+u_height: 1
+full_depth: false
+weight_kg: 6.76
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: DMZ-RJ-45
+    type: 10gbase-t
+  - name: DMZ-SFPPlus
+    type: 10gbase-x-sfpp
+  - name: WAN1-RJ-45
+    type: 1000base-t
+  - name: WAN1-SFP
+    type: 1000base-x-sfp
+  - name: WAN2-RJ-45
+    type: 1000base-t
+  - name: WAN2-SFP
+    type: 1000base-x-sfp
+  - name: eth1
+    label: "1"
+    type: 2.5gbase-t
+  - name: eth2
+    label: "2"
+    type: 2.5gbase-t
+  - name: eth3
+    label: "3"
+    type: 1000base-t
+  - name: eth4
+    label: "4"
+    type: 1000base-t
+  - name: eth5
+    label: "5"
+    type: 1000base-t
+  - name: eth6
+    label: "6"
+    type: 1000base-t
+  - name: eth7
+    label: "7"
+    type: 1000base-t
+  - name: eth8
+    label: "8"
+    type: 1000base-t
+  - name: eth9
+    label: "9"
+    type: 1000base-t
+  - name: eth10
+    label: "10"
+    type: 1000base-t
+  - name: eth11
+    label: "11"
+    type: 1000base-t
+  - name: eth12
+    label: "12"
+    type: 1000base-t
+  - name: eth13
+    label: "13"
+    type: 1000base-t
+  - name: eth14
+    label: "14"
+    type: 1000base-t
+  - name: eth15
+    label: "15"
+    type: 1000base-t
+  - name: eth16
+    label: "16"
+    type: 1000base-t
+  - name: eth17
+    label: "17"
+    type: 1000base-t
+  - name: eth18
+    label: "18"
+    type: 1000base-t
+console_ports:
+  - name: ttyS0
+    label: CONSOLE
+    type: rj-45
+  - name: ttyS1
+    label: CONSOLE
+    type: usb-c
+power_ports:
+  - name: PSU1
+    type: iec-60320-c14
+    maximum_draw_w: 150
+    allocated_draw_w: 95
+  - name: PSU2
+    type: iec-60320-c14
+    maximum_draw_w: 150
+    allocated_draw_w: 95
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Check Point/SG1800.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: b5283de1c82d55d0

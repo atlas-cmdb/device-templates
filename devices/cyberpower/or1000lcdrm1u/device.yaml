@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cyberpower
+model: OR1000LCDRM1U
+slug: or1000lcdrm1u
+category: ups
+form_factor: rack
+part_numbers:
+  - or1000lcdrm1u
+u_height: 1
+full_depth: true
+power:
+  outlet_count: 6
+  psu_count: 1
+interfaces:
+  - name: eth0
+    description: RMCARD205
+    type: 100base-tx
+    mgmt_only: true
+console_ports:
+  - name: Serial Port I
+    type: de-9
+  - name: Serial Port II
+    type: de-9
+  - name: USB
+    type: usb-b
+power_ports:
+  - name: AC Input
+    type: nema-5-15p
+    maximum_draw_w: 600
+power_outlets:
+  - name: power1
+    description: battery+surge
+    type: nema-5-15r
+    power_port: AC Input
+  - name: power2
+    description: battery+surge
+    type: nema-5-15r
+    power_port: AC Input
+  - name: power3
+    description: battery+surge
+    type: nema-5-15r
+    power_port: AC Input
+  - name: power4
+    description: battery+surge
+    type: nema-5-15r
+    power_port: AC Input
+  - name: power5
+    description: surge-only
+    type: nema-5-15r
+    power_port: AC Input
+  - name: power6
+    description: surge-only
+    type: nema-5-15r
+    power_port: AC Input
+comments: Smart App LCD 1000va UPS
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/CyberPower/OR1000LCDRM1U.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 6cabaf85ebbe46f4

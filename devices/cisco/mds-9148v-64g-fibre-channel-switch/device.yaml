@@ -1,0 +1,156 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: MDS 9148V 64G Fibre Channel Switch
+slug: mds-9148v-64g-fibre-channel-switch
+category: network_switch
+form_factor: rack
+part_numbers:
+  - DS-C9148V-48EK9
+u_height: 1
+full_depth: true
+weight_kg: 9.9
+airflow: rear-to-front
+power:
+  psu_count: 2
+interfaces:
+  - name: mgmt0
+    label: MGMT ETH
+    type: 1000base-t
+    mgmt_only: true
+  - name: fc1/1
+    type: 64gfc-sfpp
+  - name: fc1/2
+    type: 64gfc-sfpp
+  - name: fc1/3
+    type: 64gfc-sfpp
+  - name: fc1/4
+    type: 64gfc-sfpp
+  - name: fc1/5
+    type: 64gfc-sfpp
+  - name: fc1/6
+    type: 64gfc-sfpp
+  - name: fc1/7
+    type: 64gfc-sfpp
+  - name: fc1/8
+    type: 64gfc-sfpp
+  - name: fc1/9
+    type: 64gfc-sfpp
+  - name: fc1/10
+    type: 64gfc-sfpp
+  - name: fc1/11
+    type: 64gfc-sfpp
+  - name: fc1/12
+    type: 64gfc-sfpp
+  - name: fc1/13
+    type: 64gfc-sfpp
+  - name: fc1/14
+    type: 64gfc-sfpp
+  - name: fc1/15
+    type: 64gfc-sfpp
+  - name: fc1/16
+    type: 64gfc-sfpp
+  - name: fc1/17
+    type: 64gfc-sfpp
+  - name: fc1/18
+    type: 64gfc-sfpp
+  - name: fc1/19
+    type: 64gfc-sfpp
+  - name: fc1/20
+    type: 64gfc-sfpp
+  - name: fc1/21
+    type: 64gfc-sfpp
+  - name: fc1/22
+    type: 64gfc-sfpp
+  - name: fc1/23
+    type: 64gfc-sfpp
+  - name: fc1/24
+    type: 64gfc-sfpp
+  - name: fc1/25
+    type: 64gfc-sfpp
+  - name: fc1/26
+    type: 64gfc-sfpp
+  - name: fc1/27
+    type: 64gfc-sfpp
+  - name: fc1/28
+    type: 64gfc-sfpp
+  - name: fc1/29
+    type: 64gfc-sfpp
+  - name: fc1/30
+    type: 64gfc-sfpp
+  - name: fc1/31
+    type: 64gfc-sfpp
+  - name: fc1/32
+    type: 64gfc-sfpp
+  - name: fc1/33
+    type: 64gfc-sfpp
+  - name: fc1/34
+    type: 64gfc-sfpp
+  - name: fc1/35
+    type: 64gfc-sfpp
+  - name: fc1/36
+    type: 64gfc-sfpp
+  - name: fc1/37
+    type: 64gfc-sfpp
+  - name: fc1/38
+    type: 64gfc-sfpp
+  - name: fc1/39
+    type: 64gfc-sfpp
+  - name: fc1/40
+    type: 64gfc-sfpp
+  - name: fc1/41
+    type: 64gfc-sfpp
+  - name: fc1/42
+    type: 64gfc-sfpp
+  - name: fc1/43
+    type: 64gfc-sfpp
+  - name: fc1/44
+    type: 64gfc-sfpp
+  - name: fc1/45
+    type: 64gfc-sfpp
+  - name: fc1/46
+    type: 64gfc-sfpp
+  - name: fc1/47
+    type: 64gfc-sfpp
+  - name: fc1/48
+    type: 64gfc-sfpp
+console_ports:
+  - name: Console
+    label: CONSOLE
+    type: rj-45
+module_bays:
+  - name: PSU-1
+    description: Chassis Power Supply
+    bay_position: "1"
+  - name: Fan-1
+    description: Chassis Fan Module
+    bay_position: "1"
+  - name: Fan-2
+    description: Chassis Fan Module
+    bay_position: "2"
+  - name: PSU-2
+    description: Chassis Power Supply
+    bay_position: "2"
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/MDS-9148V-64G-Fibre-Channel-Switch.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 380a101a19f24285

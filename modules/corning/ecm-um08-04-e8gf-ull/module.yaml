@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: corning
+model: ECM-UM08-04-E8GF-ULL
+slug: ecm-um08-04-e8gf-ull
+kind: other
+part_numbers:
+  - ECM-UM08-04-E8GF-ULL
+front_ports:
+  - name: "{module}1"
+    description: Front Port 1 (Strands 1, 12)
+    type: lc
+    rear_port: "{module}1-4"
+    rear_port_position: 1
+  - name: "{module}2"
+    description: Front Port 2 (Strands 2, 11)
+    type: lc
+    rear_port: "{module}1-4"
+    rear_port_position: 2
+  - name: "{module}3"
+    description: Front Port 3 (Strands 3, 10)
+    type: lc
+    rear_port: "{module}1-4"
+    rear_port_position: 3
+  - name: "{module}4"
+    description: Front Port 4 (Strands 4, 9)
+    type: lc
+    rear_port: "{module}1-4"
+    rear_port_position: 4
+rear_ports:
+  - name: "{module}1-4"
+    description: Rear Port MPO connector ports 1-4 (strands 1-12)
+    type: mpo
+    positions: 4
+comments: |-
+  Corning EDGE Low Loss Module:
+  * UM = Universal Polarity
+  * 08 = 8-Strand
+  * 04 = Shuttered LC Duplex UPC
+  * G = 50 Single-mode ultra (OS2)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Corning/ECM-UM08-04-E8GF-ULL.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - front_ports
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: baea255ab41b15ad

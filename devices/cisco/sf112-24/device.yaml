@@ -1,0 +1,102 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: SF112-24
+slug: sf112-24
+category: network_switch
+form_factor: rack
+part_numbers:
+  - SF112-24
+u_height: 1
+full_depth: false
+weight_kg: 1.93
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: FastEthernet1
+    type: 100base-tx
+  - name: FastEthernet2
+    type: 100base-tx
+  - name: FastEthernet3
+    type: 100base-tx
+  - name: FastEthernet4
+    type: 100base-tx
+  - name: FastEthernet5
+    type: 100base-tx
+  - name: FastEthernet6
+    type: 100base-tx
+  - name: FastEthernet7
+    type: 100base-tx
+  - name: FastEthernet8
+    type: 100base-tx
+  - name: FastEthernet9
+    type: 100base-tx
+  - name: FastEthernet10
+    type: 100base-tx
+  - name: FastEthernet11
+    type: 100base-tx
+  - name: FastEthernet12
+    type: 100base-tx
+  - name: FastEthernet13
+    type: 100base-tx
+  - name: FastEthernet14
+    type: 100base-tx
+  - name: FastEthernet15
+    type: 100base-tx
+  - name: FastEthernet16
+    type: 100base-tx
+  - name: FastEthernet17
+    type: 100base-tx
+  - name: FastEthernet18
+    type: 100base-tx
+  - name: FastEthernet19
+    type: 100base-tx
+  - name: FastEthernet20
+    type: 100base-tx
+  - name: FastEthernet21
+    type: 100base-tx
+  - name: FastEthernet22
+    type: 100base-tx
+  - name: FastEthernet23
+    type: 100base-tx
+  - name: FastEthernet24
+    type: 100base-tx
+  - name: GigabitEthernet1
+    type: 1000base-t
+  - name: GigabitEthernet2
+    type: 1000base-t
+  - name: GigabitEthernet1 (SFP)
+    type: 1000base-x-sfp
+  - name: GigabitEthernet2 (SFP)
+    type: 1000base-x-sfp
+power_ports:
+  - name: PSU0
+    type: iec-60320-c14
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/switches/110-series-unmanaged-switches/datasheet-c78-734450.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/SF112-24.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 5f25c05f4d939f6e

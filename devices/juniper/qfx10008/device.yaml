@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: juniper
+model: QFX10008
+slug: qfx10008
+category: network_switch
+form_factor: rack
+part_numbers:
+  - front-to-rear
+u_height: 13
+full_depth: true
+weight_kg: 127
+airflow: front-to-rear
+module_bays:
+  - name: CB0
+    label: Routing Engine 0
+    bay_position: re0
+  - name: CB1
+    label: Routing Engine 1
+    bay_position: re1
+  - name: PEM0
+    label: PSU 0
+    bay_position: PSU0
+  - name: PEM1
+    label: PSU 1
+    bay_position: PSU1
+  - name: PEM2
+    label: PSU 2
+    bay_position: PSU2
+  - name: PEM3
+    label: PSU 3
+    bay_position: PSU3
+  - name: PEM4
+    label: PSU 4
+    bay_position: PSU4
+  - name: PEM5
+    label: PSU 5
+    bay_position: PSU5
+  - name: FPC 0
+    bay_position: "0"
+  - name: FPC 1
+    bay_position: "1"
+  - name: FPC 2
+    bay_position: "2"
+  - name: FPC 3
+    bay_position: "3"
+  - name: FPC 4
+    bay_position: "4"
+  - name: FPC 5
+    bay_position: "5"
+  - name: FPC 6
+    bay_position: "6"
+  - name: FPC 7
+    bay_position: "7"
+links:
+  datasheet: https://www.juniper.net/us/en/products/switches/qfx-series/qfx10000-qfx10008-qfx10016-spine-and-core-switches.html/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Juniper/QFX10008.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 89e375a89006b7c1

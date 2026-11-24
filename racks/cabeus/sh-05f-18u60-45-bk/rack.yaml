@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/rack.schema.json
+manufacturer: cabeus
+model: SH-05F-18U60-45-BK
+slug: sh-05f-18u60-45-bk
+form_factor: wall-cabinet
+description: Wall mount cabinet, 18U, 901x600x450mm, glass door with locker, two side panel, black (RAL 9004)
+u_height: 18
+starting_unit: 1
+rack_width: 19
+outer_width_mm: 600
+outer_depth_mm: 450
+mounting_depth_mm: 300
+weight_kg: 30
+max_load_kg: 60
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: rack-types/Cabeus/SH-05F-18U60-45-BK.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - description
+    - manufacturer
+    - max_load_kg
+    - model
+    - mounting_depth_mm
+    - outer_depth_mm
+    - outer_width_mm
+    - rack_width
+    - slug
+    - starting_unit
+    - u_height
+    - weight_kg
+  import_hash: 5b0048b7a6b1f8b9

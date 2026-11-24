@@ -1,0 +1,127 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: fs
+model: FHZ-36F3MTPLCOM4
+slug: fhz-36f3mtplcom4
+kind: other
+part_numbers:
+  - "74184"
+front_ports:
+  - name: "{module}:1-12"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:1-12"
+    rear_port_position: 1
+  - name: "{module}:2-11"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:1-12"
+    rear_port_position: 2
+  - name: "{module}:3-10"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:1-12"
+    rear_port_position: 3
+  - name: "{module}:4-9"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:1-12"
+    rear_port_position: 4
+  - name: "{module}:5-8"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:1-12"
+    rear_port_position: 5
+  - name: "{module}:6-7"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:1-12"
+    rear_port_position: 6
+  - name: "{module}:13-24"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:13-24"
+    rear_port_position: 1
+  - name: "{module}:14-23"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:13-24"
+    rear_port_position: 2
+  - name: "{module}:15-22"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:13-24"
+    rear_port_position: 3
+  - name: "{module}:16-21"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:13-24"
+    rear_port_position: 4
+  - name: "{module}:17-20"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:13-24"
+    rear_port_position: 5
+  - name: "{module}:18-19"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:13-24"
+    rear_port_position: 6
+  - name: "{module}:25-36"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:25-36"
+    rear_port_position: 1
+  - name: "{module}:26-35"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:25-36"
+    rear_port_position: 2
+  - name: "{module}:27-34"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:25-36"
+    rear_port_position: 3
+  - name: "{module}:28-33"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:25-36"
+    rear_port_position: 4
+  - name: "{module}:29-32"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:25-36"
+    rear_port_position: 5
+  - name: "{module}:30-31"
+    type: lc
+    color: 00ffff
+    rear_port: "{module}:25-36"
+    rear_port_position: 6
+rear_ports:
+  - name: "{module}:1-12"
+    type: mpo
+    positions: 6
+  - name: "{module}:13-24"
+    type: mpo
+    positions: 6
+  - name: "{module}:25-36"
+    type: mpo
+    positions: 6
+comments: FHZ MTP-LC Cassette, OM4 Multimode, Type AF, 36 Fibers, 3x MTP-12
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/FS/FHZ-36F3MTPLCOM4.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - front_ports
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: fc388c477cceb6b0

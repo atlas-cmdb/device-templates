@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: EdgeSwitch 8 150W
+slug: edgeswitch-8-150w
+category: network_switch
+form_factor: other
+part_numbers:
+  - ES-8-150W
+u_height: 0
+full_depth: false
+weight_kg: 1.72
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: 0/1
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: 0/2
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: 0/3
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: 0/4
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: 0/5
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: 0/6
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: 0/7
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: 0/8
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: 0/9
+    type: 1000base-x-sfp
+  - name: 0/10
+    type: 1000base-x-sfp
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: PSU1
+    type: iec-60320-c14
+    maximum_draw_w: 150
+    allocated_draw_w: 150
+links:
+  other:
+    - label: EdgeSwitch 8 150W
+      url: https://www.ui.com/edgemax/edgeswitch-8-150w/
+comments: |-
+  Managed PoE+ Gigabit Switch with SFP
+  Non-blocking throughput: 10 Gbps
+  Switching capacity: 20 Gbps
+  Wallmountable or desktop (not rackmountable)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/ES-8-150W.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e0259cfa1c874f5c

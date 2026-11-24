@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netapp
+model: DS4246
+slug: ds4246
+category: storage_shelf
+form_factor: rack
+u_height: 4
+full_depth: true
+weight_kg: 50
+airflow: front-to-rear
+power:
+  psu_count: 2
+module_bays:
+  - name: IOM A
+    bay_position: IOM A
+  - name: IOM B
+    bay_position: IOM B
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+comments: 24-bay 3.5" SAS disk shelf with dual IOM6 modules.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/NetApp/DS4246.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 9bc707eab9fef0c6

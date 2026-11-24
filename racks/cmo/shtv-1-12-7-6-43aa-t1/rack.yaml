@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../../schema/rack.schema.json
+manufacturer: cmo
+model: SHTV-1-12.7.6-43AA-T1
+slug: shtv-1-12-7-6-43aa-t1
+form_factor: 4-post-cabinet
+description: CMO SHTV-1-12.7.6-43AA-T1, Outdoor IP55 Rack Enclosure, 12U, Gray, 775H x 745W x 645D mm
+u_height: 12
+starting_unit: 1
+rack_width: 19
+outer_width_mm: 745
+outer_height_mm: 775
+outer_depth_mm: 645
+mounting_depth_mm: 520
+weight_kg: 90
+max_load_kg: 950
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: rack-types/CMO/SHTV-1-12.7.6-43AA-T1.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - description
+    - manufacturer
+    - max_load_kg
+    - model
+    - mounting_depth_mm
+    - outer_depth_mm
+    - outer_height_mm
+    - outer_width_mm
+    - rack_width
+    - slug
+    - starting_unit
+    - u_height
+    - weight_kg
+  import_hash: f7aed517979c0422

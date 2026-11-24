@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ribbon-communications
+model: SBC 5400
+slug: sbc-5400
+category: server
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 22.68
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Mgmt0
+    type: 1000base-t
+    mgmt_only: true
+  - name: Mgmt1
+    type: 1000base-t
+    mgmt_only: true
+  - name: Mgmt2
+    type: 1000base-t
+    mgmt_only: true
+  - name: Mgmt3
+    type: 1000base-t
+    mgmt_only: true
+  - name: HA0
+    type: 1000base-x-sfp
+  - name: HA1
+    type: 1000base-x-sfp
+  - name: Field Service
+    type: 1000base-t
+    mgmt_only: true
+  - name: Media0
+    type: 10gbase-x-sfpp
+  - name: Media1
+    type: 10gbase-x-sfpp
+  - name: Media2
+    type: 1000base-x-sfp
+  - name: Media3
+    type: 1000base-x-sfp
+console_ports:
+  - name: Craft DB9
+    type: de-9
+module_bays:
+  - name: PSU0
+    bay_position: PSU0
+  - name: PSU1
+    bay_position: PSU1
+  - name: DSP-Slot-1
+    bay_position: DSP1
+  - name: DSP-Slot-2
+    bay_position: DSP2
+  - name: DSP-Slot-3
+    bay_position: DSP3
+  - name: DSP-Slot-4
+    bay_position: DSP4
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ribbon Communications/SBC-5400.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 448c44e2a72eb8e4

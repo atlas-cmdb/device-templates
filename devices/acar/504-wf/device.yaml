@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: acar
+model: 504 WF
+slug: 504-wf
+category: pdu
+form_factor: rack
+description: "230 V, 50 Hz, 10 A, Pmax=2300 W, power cord length: 1.5 m"
+part_numbers:
+  - W0072
+u_height: 1
+full_depth: false
+weight_kg: 0.54
+airflow: passive
+power:
+  outlet_count: 5
+power_ports:
+  - name: power port
+    type: ita-ef
+    maximum_draw_w: 2300
+power_outlets:
+  - name: power outlets 1
+    type: ita-e
+    power_port: power port
+  - name: power outlets 2
+    type: ita-e
+    power_port: power port
+  - name: power outlets 3
+    type: ita-e
+    power_port: power port
+  - name: power outlets 4
+    type: ita-e
+    power_port: power port
+  - name: power outlets 5
+    type: ita-e
+    power_port: power port
+links:
+  datasheet: https://acar.pl/en/produkty/acar-surge-protectors/acar-504-wf-2/
+  other:
+    - label: European Plugs and Sockets
+      url: https://en.wikipedia.org/wiki/CEE_7#/media/File:European_plug_and_sockets,_UE_standard,_EU_plug_and_socket_wiring_diagram,_schuko,_french_socket,_cee_7-7.jpg
+    - label: Power plug & outlet Type E
+      url: https://www.worldstandards.eu/electricity/plugs-and-sockets/e/
+comments: |-
+  See .
+  See .
+  See .
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/ACAR/504-WF.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - description
+    - full_depth
+    - links.datasheet
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 12d121318bcf0ca0

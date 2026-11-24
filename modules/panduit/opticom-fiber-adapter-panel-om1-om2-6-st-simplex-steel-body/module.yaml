@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: panduit
+model: Opticom Fiber Adapter Panel, OM1/OM2, 6 ST Simplex, Steel Body
+slug: opticom-fiber-adapter-panel-om1-om2-6-st-simplex-steel-body
+kind: other
+part_numbers:
+  - FAP6WST
+front_ports:
+  - name: "{module}:1"
+    description: Simplex ST Port
+    type: st
+    rear_port: "{module}:1"
+    rear_port_position: 1
+  - name: "{module}:2"
+    description: Simplex ST Port
+    type: st
+    rear_port: "{module}:2"
+    rear_port_position: 1
+  - name: "{module}:3"
+    description: Simplex ST Port
+    type: st
+    rear_port: "{module}:3"
+    rear_port_position: 1
+  - name: "{module}:4"
+    description: Simplex ST Port
+    type: st
+    rear_port: "{module}:4"
+    rear_port_position: 1
+  - name: "{module}:5"
+    description: Simplex ST Port
+    type: st
+    rear_port: "{module}:5"
+    rear_port_position: 1
+  - name: "{module}:6"
+    description: Simplex ST Port
+    type: st
+    rear_port: "{module}:6"
+    rear_port_position: 1
+rear_ports:
+  - name: "{module}:1"
+    description: Simplex ST Port
+    type: st
+  - name: "{module}:2"
+    description: Simplex ST Port
+    type: st
+  - name: "{module}:3"
+    description: Simplex ST Port
+    type: st
+  - name: "{module}:4"
+    description: Simplex ST Port
+    type: st
+  - name: "{module}:5"
+    description: Simplex ST Port
+    type: st
+  - name: "{module}:6"
+    description: Simplex ST Port
+    type: st
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Panduit/FAP6WST.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - front_ports
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: 6b7adfef5eb7b4f7

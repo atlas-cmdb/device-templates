@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huawei
+model: NE8000-X16
+slug: ne8000-x16
+category: router
+form_factor: rack
+part_numbers:
+  - 02354MDE
+u_height: 33
+full_depth: true
+weight_kg: 245
+airflow: front-to-rear
+module_bays:
+  - name: LPU 1
+    bay_position: "1"
+  - name: LPU 2
+    bay_position: "2"
+  - name: LPU 3
+    bay_position: "3"
+  - name: LPU 4
+    bay_position: "4"
+  - name: LPU 5
+    bay_position: "5"
+  - name: LPU 6
+    bay_position: "6"
+  - name: LPU 7
+    bay_position: "7"
+  - name: LPU 8
+    bay_position: "8"
+  - name: LPU 9
+    bay_position: "9"
+  - name: LPU 10
+    bay_position: "10"
+  - name: LPU 11
+    bay_position: "11"
+  - name: LPU 12
+    bay_position: "12"
+  - name: LPU 13
+    bay_position: "13"
+  - name: LPU 14
+    bay_position: "14"
+  - name: LPU 15
+    bay_position: "15"
+  - name: LPU 16
+    bay_position: "16"
+  - name: MPU 17
+    bay_position: "17"
+  - name: MPU 18
+    bay_position: "18"
+  - name: SFU 1
+    bay_position: SFU1
+  - name: SFU 2
+    bay_position: SFU2
+  - name: SFU 3
+    bay_position: SFU3
+  - name: SFU 4
+    bay_position: SFU4
+  - name: SFU 5
+    bay_position: SFU5
+  - name: SFU 6
+    bay_position: SFU6
+  - name: SFU 7
+    bay_position: SFU7
+  - name: SFU 8
+    bay_position: SFU8
+links:
+  product_page: https://e.huawei.com/en/products/routers/ne8000
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Huawei/NE8000-X16.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: ba38b257655dcb43

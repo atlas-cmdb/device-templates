@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eltex
+model: MES2408C
+slug: mes2408c
+category: network_switch
+form_factor: rack
+part_numbers:
+  - MES2408C
+u_height: 1
+full_depth: false
+weight_kg: 1.77
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: gi0/1
+    type: 1000base-t
+  - name: gi0/2
+    type: 1000base-t
+  - name: gi0/3
+    type: 1000base-t
+  - name: gi0/4
+    type: 1000base-t
+  - name: gi0/5
+    type: 1000base-t
+  - name: gi0/6
+    type: 1000base-t
+  - name: gi0/7
+    type: 1000base-t
+  - name: gi0/8
+    type: 1000base-t
+  - name: gi0/9
+    description: comboport 1000BASE-T / 1000BASE-X
+    type: 1000base-x-sfp
+  - name: gi0/10
+    description: comboport 1000BASE-T / 1000BASE-X
+    type: 1000base-x-sfp
+console_ports:
+  - name: console01
+    label: Console
+    type: rj-45
+power_ports:
+  - name: PSU front
+    type: iec-60320-c14
+    maximum_draw_w: 10
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eltex/MES2408C.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 7e0928236928d238

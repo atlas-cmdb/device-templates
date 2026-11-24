@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: delta
+model: DPST-2130CB-A
+slug: dpst-2130cb-a
+kind: other
+part_numbers:
+  - DPST-2130CB-A
+comments: |-
+  Switching Power Supply
+  Stingray Power Supply
+  12.5V/168A/2130W
+  FB PN: 03-000261
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Delta/DPST-2130CB-A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 25dc9454e3a9c345

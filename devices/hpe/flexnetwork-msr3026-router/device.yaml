@@ -1,0 +1,98 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: FlexNetwork MSR3026 Router
+slug: flexnetwork-msr3026-router
+category: router
+form_factor: rack
+part_numbers:
+  - R9J03A
+u_height: 1
+full_depth: false
+weight_kg: 6.7
+interfaces:
+  - name: GigabitEthernet1/0/0
+    type: 1000base-t
+  - name: GigabitEthernet1/0/1
+    type: 1000base-t
+  - name: GigabitEthernet1/0/2
+    type: 1000base-t
+  - name: GigabitEthernet1/0/3
+    type: 1000base-t
+  - name: GigabitEthernet1/0/4
+    type: 1000base-t
+  - name: GigabitEthernet1/0/5
+    type: 1000base-t
+  - name: GigabitEthernet1/0/6
+    type: 1000base-t
+  - name: GigabitEthernet1/0/7
+    type: 1000base-t
+  - name: GigabitEthernet1/0/8
+    type: 1000base-t
+  - name: GigabitEthernet1/0/9
+    type: 1000base-t
+  - name: GigabitEthernet1/0/10
+    type: 1000base-t
+  - name: GigabitEthernet1/0/11
+    type: 1000base-t
+  - name: GigabitEthernet1/0/12
+    type: 1000base-t
+  - name: GigabitEthernet1/0/13
+    type: 1000base-t
+  - name: GigabitEthernet1/0/14
+    type: 1000base-t
+  - name: GigabitEthernet1/0/15
+    type: 1000base-t
+  - name: Ten-GigabitEthernet1/0/16
+    type: 10gbase-x-sfpp
+  - name: Ten-GigabitEthernet1/0/17
+    type: 10gbase-x-sfpp
+  - name: Ten-GigabitEthernet1/0/18
+    type: 10gbase-x-sfpp
+  - name: Ten-GigabitEthernet1/0/19
+    type: 10gbase-x-sfpp
+  - name: Ten-GigabitEthernet1/0/20
+    type: 10gbase-x-sfpp
+  - name: Ten-GigabitEthernet1/0/21
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: con0
+    type: rj-45
+module_bays:
+  - name: PS-1
+    bay_position: PS-A
+  - name: PS-2
+    bay_position: PS-B
+  - name: SIC slot 1
+    bay_position: SIC-1
+  - name: SIC slot 2
+    bay_position: SIC-2
+  - name: SIC slot 3
+    bay_position: SIC-3
+  - name: SIC slot 4
+    bay_position: SIC-4
+  - name: HMIM slot 1
+    bay_position: HMIM-1
+  - name: HMIM slot 2
+    bay_position: HMIM-2
+links:
+  manual: https://www.hpe.com/psnow/doc/c04123140.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/FlexNetwork-MSR3026-Router.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: d456002bd2826778

@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lenovo
+model: ThinkSystem DM5100F Controller
+slug: thinksystem-dm5100f-controller
+category: server
+form_factor: blade
+u_height: 0
+full_depth: false
+subdevice_role: child
+interfaces:
+  - name: e0M
+    type: 1000base-t
+    mgmt_only: true
+  - name: e0a
+    type: 10gbase-t
+  - name: e0b
+    type: 10gbase-t
+  - name: e0c
+    description: HA and cluster interconnect
+    type: 25gbase-x-sfp28
+  - name: e0d
+    description: HA and cluster interconnect
+    type: 25gbase-x-sfp28
+console_ports:
+  - name: Console
+    type: usb-micro-b
+module_bays:
+  - name: Slot 1
+    bay_position: "1"
+  - name: Slot 2
+    bay_position: "2"
+links:
+  manual: https://lenovopress.lenovo.com/lp1365-thinksystem-dm5100f-unified-flash-storage-array
+  other:
+    - label: DM5100F Installation and Setup Instructions
+      url: https://pubs.lenovo.com/dm5100f/Lenovo_DM5100F_Installation_and_Setup_Instructions.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Lenovo/ThinkSystem-DM5100F-Controller.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: e97aeadf5a4f2c86

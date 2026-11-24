@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cyberpower
+model: CP1500AVRLCD
+slug: cp1500avrlcd
+category: pdu
+form_factor: zero-u
+u_height: 0
+full_depth: false
+weight_kg: 11.79
+airflow: passive
+power:
+  outlet_count: 12
+power_ports:
+  - name: AC Input
+    type: nema-5-15p
+    maximum_draw_w: 900
+power_outlets:
+  - name: Outlet-1
+    type: nema-5-15r
+  - name: Outlet-2
+    type: nema-5-15r
+  - name: Outlet-3
+    type: nema-5-15r
+  - name: Outlet-4
+    type: nema-5-15r
+  - name: Outlet-5
+    type: nema-5-15r
+  - name: Outlet-6
+    type: nema-5-15r
+  - name: Outlet-7 (Surge Only)
+    type: nema-5-15r
+  - name: Outlet-8 (Surge Only)
+    type: nema-5-15r
+  - name: Outlet-9 (Surge Only)
+    type: nema-5-15r
+  - name: Outlet-10 (Surge Only)
+    type: nema-5-15r
+  - name: Outlet-11 (Surge Only)
+    type: nema-5-15r
+  - name: Outlet-12 (Surge Only)
+    type: nema-5-15r
+comments: CyberPower CP1500AVRLCD is a mini-tower UPS system with 1500VA/900W capacity, simulated sine wave output, AVR support, and 12 NEMA 5-15R outlets. Ideal for home offices and network protection.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/CyberPower/CP1500AVRLCD.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 14ed629c07d6b585

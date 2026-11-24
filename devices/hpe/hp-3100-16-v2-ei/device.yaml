@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: HP 3100-16 v2 EI
+slug: hp-3100-16-v2-ei
+category: network_switch
+form_factor: rack
+part_numbers:
+  - JD319B
+u_height: 1
+full_depth: false
+weight_kg: 2.5
+power:
+  psu_count: 1
+interfaces:
+  - name: Ethernet1/0/1
+    type: 100base-tx
+  - name: Ethernet1/0/2
+    type: 100base-tx
+  - name: Ethernet1/0/3
+    type: 100base-tx
+  - name: Ethernet1/0/4
+    type: 100base-tx
+  - name: Ethernet1/0/5
+    type: 100base-tx
+  - name: Ethernet1/0/6
+    type: 100base-tx
+  - name: Ethernet1/0/7
+    type: 100base-tx
+  - name: Ethernet1/0/8
+    type: 100base-tx
+  - name: Ethernet1/0/9
+    type: 100base-tx
+  - name: Ethernet1/0/10
+    type: 100base-tx
+  - name: Ethernet1/0/11
+    type: 100base-tx
+  - name: Ethernet1/0/12
+    type: 100base-tx
+  - name: Ethernet1/0/13
+    type: 100base-tx
+  - name: Ethernet1/0/14
+    type: 100base-tx
+  - name: Ethernet1/0/15
+    type: 100base-tx
+  - name: Ethernet1/0/16
+    type: 100base-tx
+  - name: GigabitEthernet1/0/17
+    type: 1000base-t
+  - name: GigabitEthernet1/0/18
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 12
+links:
+  other:
+    - label: HPE FlexNetwork 3100 EI Switch Series - QuickSpecs
+      url: https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=c04111573
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/HP-3100-16-v2-EI.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 78d7f003a722078b

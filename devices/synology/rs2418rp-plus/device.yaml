@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: synology
+model: RS2418RP+
+slug: rs2418rp-plus
+category: storage_array
+form_factor: rack
+part_numbers:
+  - RS2418RP+
+u_height: 2
+full_depth: true
+weight_kg: 13.85
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Ethernet 1
+    type: 1000base-t
+  - name: Ethernet 2
+    type: 1000base-t
+  - name: Ethernet 3
+    type: 1000base-t
+  - name: Ethernet 4
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: de-9
+power_ports:
+  - name: PSU 1
+    type: iec-60320-c14
+    maximum_draw_w: 120
+    allocated_draw_w: 56
+  - name: PSU 2
+    type: iec-60320-c14
+    maximum_draw_w: 120
+    allocated_draw_w: 56
+module_bays:
+  - name: PCIe Expansion
+    bay_position: PCIe1
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Synology/RS2418RP+.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 9470db998f2cfa25

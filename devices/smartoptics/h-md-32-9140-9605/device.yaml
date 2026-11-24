@@ -1,0 +1,207 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: smartoptics
+model: H-MD-32-9140-9605
+slug: h-md-32-9140-9605
+category: patch_panel
+form_factor: rack
+part_numbers:
+  - H-MD-32-9140-9605
+u_height: 1
+full_depth: false
+weight_kg: 1.5
+airflow: passive
+front_ports:
+  - name: Mon
+    description: Monitor port for line channel
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 1
+  - name: "914"
+    description: 191.400 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 2
+  - name: "915.5"
+    description: 191.550 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 3
+  - name: "917"
+    description: 191.700 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 4
+  - name: "918.5"
+    description: 191.850 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 5
+  - name: "920"
+    description: 192.000 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 6
+  - name: "921.5"
+    description: 192.150 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 7
+  - name: "923"
+    description: 192.300 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 8
+  - name: "924.5"
+    description: 192.450 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 9
+  - name: "926"
+    description: 192.600 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 10
+  - name: "927.5"
+    description: 192.750 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 11
+  - name: "929"
+    description: 192.900 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 12
+  - name: "930.5"
+    description: 193.050 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 13
+  - name: "932"
+    description: 193.200 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 14
+  - name: "933.5"
+    description: 193.350 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 15
+  - name: "935"
+    description: 193.500 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 16
+  - name: "936.5"
+    description: 193.650 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 17
+  - name: "938"
+    description: 193.800 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 18
+  - name: "939.5"
+    description: 193.950 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 19
+  - name: "941"
+    description: 194.100 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 20
+  - name: "942.5"
+    description: 194.250 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 21
+  - name: "944"
+    description: 194.400 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 22
+  - name: "945.5"
+    description: 194.550 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 23
+  - name: "947"
+    description: 194.700 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 24
+  - name: "948.5"
+    description: 194.850 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 25
+  - name: "950"
+    description: 195.000 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 26
+  - name: "951.5"
+    description: 195.150 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 27
+  - name: "953"
+    description: 195.300 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 28
+  - name: "954.5"
+    description: 195.450 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 29
+  - name: "956"
+    description: 195.600 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 30
+  - name: "957.5"
+    description: 195.750 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 31
+  - name: "959"
+    description: 195.900 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 32
+  - name: "960.5"
+    description: 196.050 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 33
+rear_ports:
+  - name: Line
+    description: WDM Line I/O
+    type: lc-upc
+    positions: 33
+links:
+  datasheet: https://smartoptics.com/wp-content/uploads/2025/02/so-ds-h-md-32-9140-9605-r5.0.pdf
+comments: 32-channel DWDM Mux/Demux, 150GHz, with Monitor ports
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Smartoptics/H-MD-32-9140-9605.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - front_ports
+    - full_depth
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1e6924eefdeef4a0

@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: Cloud Key Gen2 Plus
+slug: cloud-key-gen2-plus
+category: appliance
+form_factor: rack
+part_numbers:
+  - uck-g2-plus
+u_height: 1
+full_depth: false
+weight_kg: 0.582
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: eth0
+    type: 1000base-t
+    mgmt_only: true
+    poe_mode: pd
+    poe_type: type1-ieee802.3af
+console_ports:
+  - name: console
+    type: usb-c
+power_ports:
+  - name: power1
+    type: usb-c
+    maximum_draw_w: 13
+comments: |-
+  Unifi Cloud Key Generation 2 Plus
+  PoE in 24V or USB-type C Power
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/UCK-G2-PLUS.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: a6c36edb1a1729d6

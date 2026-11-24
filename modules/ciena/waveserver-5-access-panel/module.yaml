@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: ciena
+model: Waveserver 5 Access Panel
+slug: waveserver-5-access-panel
+kind: other
+part_numbers:
+  - 186-3020-900
+interfaces:
+  - name: ILAN-1
+    type: 1000base-t
+    mgmt_only: true
+  - name: ILAN-2
+    type: 1000base-t
+    mgmt_only: true
+  - name: DCN-3
+    type: 1000base-t
+    mgmt_only: true
+  - name: DCN-4
+    type: 1000base-t
+    mgmt_only: true
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Ciena/waveserver-5-access-panel.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: fcb7767dac478bd3

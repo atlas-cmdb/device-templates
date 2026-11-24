@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: UniFi Application Server
+slug: unifi-application-server
+category: wireless_access_point
+form_factor: rack
+part_numbers:
+  - UAS-XG
+u_height: 1
+full_depth: true
+weight_kg: 6.5
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: IPMI LAN
+    type: 1000base-t
+    mgmt_only: true
+  - name: LAN1
+    type: 10gbase-t
+  - name: LAN2
+    type: 10gbase-t
+power_ports:
+  - name: Supply
+    type: iec-60320-c14
+    maximum_draw_w: 150
+    allocated_draw_w: 60
+comments: |-
+  10G Rack-Mountable UniFi Application Server, (2) 1/10G LAN, (1) 1G IPMI LAN, (1) VGA rear, (2) USB 3.0 rear, (2) USB 2.0 front
+  Dimensions: 442.4 x 43.7 x 305.5 mm (17.42 x 1.72 x 12.03")
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/UAS-XG.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 43102db20820812f

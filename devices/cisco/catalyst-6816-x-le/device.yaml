@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: Catalyst 6816-X-LE
+slug: catalyst-6816-x-le
+category: network_switch
+form_factor: rack
+part_numbers:
+  - C6816-X-LE
+u_height: 2
+full_depth: false
+power:
+  psu_count: 2
+interfaces:
+  - name: TenGigabitEthernet1/1
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/2
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/3
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/4
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/5
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/6
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/7
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/8
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/9
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/10
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/11
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/12
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/13
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/14
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/15
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/16
+    type: 10gbase-x-sfpp
+  - name: mgmt0
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: con0
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+  - name: PS2
+    type: iec-60320-c14
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/C6816-X-LE.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: f8e838fc352723a1

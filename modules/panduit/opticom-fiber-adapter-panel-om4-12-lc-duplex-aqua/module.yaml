@@ -1,0 +1,151 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: panduit
+model: Opticom Fiber Adapter Panel, OM4, 12 LC Duplex, Aqua
+slug: opticom-fiber-adapter-panel-om4-12-lc-duplex-aqua
+kind: line_card
+part_numbers:
+  - FAP12WAQDLCZ
+front_ports:
+  - name: "{module}:1-2"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+    rear_port: "{module}:1-2"
+    rear_port_position: 1
+  - name: "{module}:3-4"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+    rear_port: "{module}:3-4"
+    rear_port_position: 1
+  - name: "{module}:5-6"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+    rear_port: "{module}:5-6"
+    rear_port_position: 1
+  - name: "{module}:7-8"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+    rear_port: "{module}:7-8"
+    rear_port_position: 1
+  - name: "{module}:9-10"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+    rear_port: "{module}:9-10"
+    rear_port_position: 1
+  - name: "{module}:11-12"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+    rear_port: "{module}:11-12"
+    rear_port_position: 1
+  - name: "{module}:13-14"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+    rear_port: "{module}:13-14"
+    rear_port_position: 1
+  - name: "{module}:15-16"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+    rear_port: "{module}:15-16"
+    rear_port_position: 1
+  - name: "{module}:17-18"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+    rear_port: "{module}:17-18"
+    rear_port_position: 1
+  - name: "{module}:19-20"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+    rear_port: "{module}:19-20"
+    rear_port_position: 1
+  - name: "{module}:21-22"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+    rear_port: "{module}:21-22"
+    rear_port_position: 1
+  - name: "{module}:23-24"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+    rear_port: "{module}:23-24"
+    rear_port_position: 1
+rear_ports:
+  - name: "{module}:1-2"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+  - name: "{module}:3-4"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+  - name: "{module}:5-6"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+  - name: "{module}:7-8"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+  - name: "{module}:9-10"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+  - name: "{module}:11-12"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+  - name: "{module}:13-14"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+  - name: "{module}:15-16"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+  - name: "{module}:17-18"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+  - name: "{module}:19-20"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+  - name: "{module}:21-22"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+  - name: "{module}:23-24"
+    description: Duplex LC Port
+    type: lc-upc
+    color: 00ffff
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Panduit/FAP12WAQDLCZ.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - front_ports
+    - images.credit
+    - images.front
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: cd55cc62ddb8a093

@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apple
+model: MacPro7,1 Rack Mount
+slug: macpro7-1-rack-mount
+category: appliance
+form_factor: rack
+part_numbers:
+  - A2304
+u_height: 5
+full_depth: false
+weight_kg: 17.6
+airflow: rear-to-front
+power:
+  psu_count: 1
+interfaces:
+  - name: eth0
+    type: 10gbase-t
+  - name: eth1
+    type: 10gbase-t
+  - name: wireless
+    type: ieee802.11ac
+power_ports:
+  - name: Power
+    type: iec-60320-c14
+    maximum_draw_w: 1280
+links:
+  other:
+    - url: https://support.apple.com/en-us/111907
+comments: See
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Apple/A2304.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 4332b600f24d34f6

@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: 819G-4G-V
+slug: 819g-4g-v
+category: appliance
+form_factor: rack
+part_numbers:
+  - C819G-4G-V-K9
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: FastEthernet0
+    type: 100base-tx
+  - name: FastEthernet1
+    type: 100base-tx
+  - name: FastEthernet2
+    type: 100base-tx
+  - name: FastEthernet3
+    type: 100base-tx
+  - name: Cellular0
+    type: lte
+console_ports:
+  - name: con 0
+    type: rj-45
+  - name: usb
+    type: usb-mini-b
+power_ports:
+  - name: PSU0
+    type: iec-60320-c14
+    maximum_draw_w: 11
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/C819G-4G-V-K9.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 862c55d8739f6334

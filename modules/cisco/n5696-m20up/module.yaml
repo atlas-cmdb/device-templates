@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: N5696-M20UP
+slug: n5696-m20up
+kind: other
+description: 20-Port 10-Gbps Unified Port Line-Card Expansion Module
+part_numbers:
+  - N5696-M20UP
+interfaces:
+  - name: Ethernet{module}/1
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/2
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/3
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/4
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/5
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/6
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/7
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/8
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/9
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/10
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/11
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/12
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/13
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/14
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/15
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/16
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/17
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/18
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/19
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/20
+    type: 10gbase-x-sfpp
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html
+comments: supports 1 and 10 Gigabit Ethernet SFP+, Fibre Channel at 8/4/2 Gbps, and 10-Gbps FCoE
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/N5696-M20UP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - description
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 08932c9b567ea3fd

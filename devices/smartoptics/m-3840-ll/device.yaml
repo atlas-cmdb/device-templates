@@ -1,0 +1,242 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: smartoptics
+model: M-3840-LL
+slug: m-3840-ll
+category: patch_panel
+form_factor: rack
+part_numbers:
+  - M-3840-LL
+u_height: 1
+full_depth: false
+weight_kg: 1.5
+airflow: passive
+front_ports:
+  - name: "921"
+    description: 192.1 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 1
+  - name: "922"
+    description: 192.2 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 2
+  - name: "923"
+    description: 192.3 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 3
+  - name: "924"
+    description: 192.4 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 4
+  - name: "925"
+    description: 192.5 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 5
+  - name: "926"
+    description: 192.6 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 6
+  - name: "927"
+    description: 192.7 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 7
+  - name: "928"
+    description: 192.8 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 8
+  - name: "929"
+    description: 192.9 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 9
+  - name: "930"
+    description: 193.0 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 10
+  - name: "931"
+    description: 193.1 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 11
+  - name: "932"
+    description: 193.2 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 12
+  - name: "933"
+    description: 193.3 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 13
+  - name: "934"
+    description: 193.4 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 14
+  - name: "935"
+    description: 193.5 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 15
+  - name: "936"
+    description: 193.6 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 16
+  - name: "937"
+    description: 193.7 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 17
+  - name: "938"
+    description: 193.8 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 18
+  - name: "939"
+    description: 193.9 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 19
+  - name: "940"
+    description: 194.0 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 20
+  - name: "941"
+    description: 194.1 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 21
+  - name: "942"
+    description: 194.2 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 22
+  - name: "943"
+    description: 194.3 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 23
+  - name: "944"
+    description: 194.4 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 24
+  - name: "945"
+    description: 194.5 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 25
+  - name: "946"
+    description: 194.6 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 26
+  - name: "947"
+    description: 194.7 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 27
+  - name: "948"
+    description: 194.8 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 28
+  - name: "949"
+    description: 194.9 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 29
+  - name: "950"
+    description: 195.0 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 30
+  - name: "951"
+    description: 195.1 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 31
+  - name: "952"
+    description: 195.2 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 32
+  - name: "953"
+    description: 195.3 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 33
+  - name: "954"
+    description: 195.4 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 34
+  - name: "955"
+    description: 195.5 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 35
+  - name: "956"
+    description: 195.6 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 36
+  - name: "957"
+    description: 195.7 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 37
+  - name: "958"
+    description: 195.8 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 38
+  - name: "959"
+    description: 195.9 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 39
+  - name: "960"
+    description: 196.0 THz
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 40
+rear_ports:
+  - name: Line
+    description: WDM Line I/O
+    type: lc-upc
+    positions: 40
+links:
+  datasheet: https://smartoptics.com/wp-content/uploads/2023/01/so-ds-m-3840-ll.pdf
+comments: Low-loss 40-channel DWDM Mux/Demux
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Smartoptics/M-3840-LL.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - front_ports
+    - full_depth
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 2095dd2efc590363

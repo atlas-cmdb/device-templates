@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: extreme-networks
+model: FabricEngine-4220-8X
+slug: fabricengine-4220-8x
+category: network_switch
+form_factor: rack
+part_numbers:
+  - 4220-8X
+u_height: 1
+full_depth: false
+weight_kg: 2.37
+airflow: left-to-right
+power:
+  psu_count: 1
+interfaces:
+  - name: mgmt-oob
+    label: MGMT
+    type: 1000base-t
+    mgmt_only: true
+  - name: mgmt-clip
+    type: virtual
+    mgmt_only: true
+  - name: mgmt-vlan
+    type: virtual
+    mgmt_only: true
+console_ports:
+  - name: Console
+    label: CONSOLE
+    type: rj-45
+  - name: USB console
+    label: CONSOLE
+    type: usb-micro-b
+power_ports:
+  - name: PS#1
+    type: iec-60320-c14
+    maximum_draw_w: 30
+module_bays:
+  - name: 1/1
+    label: "1"
+    bay_position: 1/1
+  - name: 1/2
+    label: "2"
+    bay_position: 1/2
+  - name: 1/3
+    label: "3"
+    bay_position: 1/3
+  - name: 1/4
+    label: "4"
+    bay_position: 1/4
+  - name: 1/5
+    label: "5"
+    bay_position: 1/5
+  - name: 1/6
+    label: "6"
+    bay_position: 1/6
+  - name: 1/7
+    label: U1
+    bay_position: 1/7
+  - name: 1/8
+    label: U2
+    bay_position: 1/8
+links:
+  datasheet: https://extr-p-001.sitecorecontenthub.cloud/api/public/content/4000-Series-Data-Sheet
+comments: Dual-persona Universal Hardware running Fabric Engine (VOSS).
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Extreme Networks/FabricEngine-4220-8X.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 37a9361765392ee1

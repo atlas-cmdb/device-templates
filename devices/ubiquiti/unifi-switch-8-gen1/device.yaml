@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: UniFi Switch 8 Gen1
+slug: unifi-switch-8-gen1
+category: network_switch
+form_factor: other
+part_numbers:
+  - US-8
+u_height: 0
+full_depth: false
+weight_kg: 0.432
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: Port 1 (PoE in)
+    type: 1000base-t
+    poe_mode: pd
+    poe_type: type2-ieee802.3at
+  - name: Port 2
+    type: 1000base-t
+  - name: Port 3
+    type: 1000base-t
+  - name: Port 4
+    type: 1000base-t
+  - name: Port 5
+    type: 1000base-t
+  - name: Port 6
+    type: 1000base-t
+  - name: Port 7
+    type: 1000base-t
+  - name: Port 8 (PoE out)
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+power_ports:
+  - name: Input
+    type: dc-terminal
+    maximum_draw_w: 12
+comments: |-
+  UniFi Switch 8 non-PoE, Gen1, Desk/WallMount, External VDC PSU, (8) Gigabit, (1/8) Gigabit PoE Passthrough Port: 802.3af/at or 48V
+  Dimensions: 148.0 x 99.5 x 30.7 mm (5.83 x 3.92 x 1.21")
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/US-8.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 9a69a3afc272d6e0

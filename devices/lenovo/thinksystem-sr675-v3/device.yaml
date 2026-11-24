@@ -1,0 +1,96 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lenovo
+model: ThinkSystem SR675 V3
+slug: thinksystem-sr675-v3
+category: server
+form_factor: rack
+part_numbers:
+  - 7D9x
+u_height: 3
+full_depth: true
+subdevice_role: parent
+weight_kg: 39
+airflow: front-to-rear
+power:
+  psu_count: 4
+interfaces:
+  - name: XCC
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: PSU-1
+    bay_position: PSU-1
+  - name: PSU-2
+    bay_position: PSU-2
+  - name: PSU-3
+    bay_position: PSU-3
+  - name: PSU-4
+    bay_position: PSU-4
+  - name: OCP slot 1
+    bay_position: OCP-1
+  - name: Front Riser 1 - PCIe slot 1
+    label: 1 PCIe
+    bay_position: PCIe-1
+  - name: Front Riser 1 - PCIe slot 2
+    label: 2 PCIe
+    bay_position: PCIe-2
+  - name: Front PCIe slot 3
+    label: 3 PCIe
+    bay_position: PCIe-3
+  - name: Front PCIe slot 4
+    label: 4 PCIe
+    bay_position: PCIe-4
+  - name: Front PCIe slot 5
+    label: 5 PCIe
+    bay_position: PCIe-5
+  - name: Front PCIe slot 6
+    label: 6 PCIe
+    bay_position: PCIe-6
+  - name: Front PCIe slot 7
+    label: 7 PCIe
+    bay_position: PCIe-7
+  - name: Front PCIe slot 8
+    label: 8 PCIe
+    bay_position: PCIe-8
+  - name: Front PCIe slot 9
+    label: 9 PCIe
+    bay_position: PCIe-9
+  - name: Front PCIe slot 10
+    label: 10 PCIe
+    bay_position: PCIe-10
+  - name: Riser 1 - PCIe slot 15
+    label: 15 PCIe
+    bay_position: PCIe-11
+  - name: Riser 1 - PCIe slot 16
+    label: 16 PCIe
+    bay_position: PCIe-12
+  - name: Riser 2 - PCIe slot 20
+    label: 20 PCIe
+    bay_position: PCIe-13
+  - name: Riser 2 - PCIe slot 21
+    label: 21 PCIe
+    bay_position: PCIe-14
+links:
+  manual: https://lenovopress.lenovo.com/lp1611-thinksystem-sr675-v3-server
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Lenovo/ThinkSystem-SR675-v3.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: a50b057e01febb5c

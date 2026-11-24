@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: Meraki CW9176
+slug: meraki-cw9176
+category: wireless_access_point
+form_factor: other
+part_numbers:
+  - CW9176
+u_height: 0
+full_depth: false
+weight_kg: 1.56
+airflow: passive
+interfaces:
+  - name: main
+    type: 10gbase-t
+    poe_mode: pd
+    poe_type: type4-ieee802.3bt
+  - name: wlan0
+    type: ieee802.11be
+  - name: wlan1
+    type: ieee802.11be
+  - name: wlan2
+    type: ieee802.11be
+  - name: wlan3
+    description: WIDS/WIPS
+    type: other-wireless
+  - name: wlan4
+    description: Bluetooth Scanning and Beaconing
+    type: ieee802.15.1
+links:
+  datasheet: https://documentation.meraki.com/Wireless/Product_Information/Overviews_and_Datasheets/CW9176I_%2F%2F_CW9176D1_Datasheet
+comments: |-
+  - Datasheet:
+  - IEEE Standards: 802.11ab, 802.11af/at/bt, 802.11a/b/g/n/ac/ax/be, 802.11d/h/i/k/r/u/v/w
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/Meraki-CW9176.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: b9f1272d3fffc061

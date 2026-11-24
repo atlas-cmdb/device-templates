@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: ProLiant-DL120-Gen7
+slug: proliant-dl120-gen7
+category: server
+form_factor: rack
+part_numbers:
+  - 628690-421
+u_height: 1
+full_depth: true
+weight_kg: 11.898
+power:
+  psu_count: 1
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: iLO
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+power_ports:
+  - name: PSU1
+    type: iec-60320-c14
+    maximum_draw_w: 400
+module_bays:
+  - name: PCIe1
+    bay_position: PCIe1
+  - name: PCIe2
+    bay_position: PCIe2
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/ProLiant-DL120-Gen7.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e11feee79b336305

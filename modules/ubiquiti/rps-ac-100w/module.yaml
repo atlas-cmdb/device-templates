@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: ubiquiti
+model: RPS-AC-100W
+slug: rps-ac-100w
+kind: other
+part_numbers:
+  - RPS-AC-100W
+power_ports:
+  - name: PSU {module}
+    type: iec-60320-c14
+    maximum_draw_w: 100
+links:
+  datasheet: https://dl.ui.com/ds/uf_gpon
+comments: Page 5
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Ubiquiti/RPS-AC-100W.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: 732ed1ef00f6a870

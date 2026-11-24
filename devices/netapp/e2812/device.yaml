@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netapp
+model: E2812
+slug: e2812
+category: shelf
+form_factor: rack
+description: E2812 Controller Shelf
+u_height: 2
+full_depth: true
+subdevice_role: parent
+weight_kg: 29
+power:
+  psu_count: 2
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+device_bays:
+  - name: Controller A
+    label: A
+  - name: Controller B
+    label: B
+links:
+  manual: https://docs.netapp.com/p/e-series/systems/Site-Preparation-Guide-e5560.pdf
+  other:
+    - url: https://docs.netapp.com/us-en/e-series/maintenance-e2800/controllers-overview-supertask-concept.html
+  product_page: https://docs.netapp.com/us-en/e-series/maintenance-e2800/canisters-overview-supertask-concept.html
+comments: |-
+  2U controller shelf with twelve 3.5-inch drive slots, one (simplex) or two (duplex) E2800 controller canisters
+  and two power-fan canisters. The controller canisters are modelled as child devices (see E2800-Ctrl). Weight is
+  the maximum (fully loaded) value.
+  Specifications:
+  Canisters:
+  Controllers:
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/NetApp/E2812.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - description
+    - device_bays
+    - full_depth
+    - links.manual
+    - links.other
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 4e76aa7cbd834582

@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: Motherboard X12SCA-5F
+slug: motherboard-x12sca-5f
+category: server
+form_factor: blade
+part_numbers:
+  - MBD-X12SCA-5F
+u_height: 0
+full_depth: true
+subdevice_role: child
+airflow: front-to-rear
+interfaces:
+  - name: BMC
+    description: Dedicated BMC IPMI port
+    type: 1000base-t
+    mgmt_only: true
+  - name: LAN 1
+    type: 2.5gbase-t
+  - name: LAN 2
+    type: 1000base-t
+module_bays:
+  - name: PCI-E 1
+    description: PCIe 3.0 x1
+    bay_position: "1"
+  - name: PCI-E 2
+    description: PCIe 3.0 x1
+    bay_position: "2"
+  - name: PCI-E 3
+    description: PCIe 4.0 x16
+    bay_position: "3"
+  - name: PCI-E 4
+    description: PCIe 4.0 x16
+    bay_position: "4"
+  - name: M.2 1
+    description: PCIe 4.0 x4 - Form factor 2280/22110
+    bay_position: "5"
+  - name: M.2 2
+    description: PCIe 4.0 x4 - Form factor 2280/22110
+    bay_position: "6"
+comments: "[Supermicro motherboard X12SCA-5F](www.supermicro.com/en/products/motherboard/x12sca-5f)"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/MBD-X12SCA-5F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 45ecd650f8ca678e

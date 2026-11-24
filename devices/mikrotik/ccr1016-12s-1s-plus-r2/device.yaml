@@ -1,0 +1,95 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: mikrotik
+model: CCR1016-12S-1S+-r2
+slug: ccr1016-12s-1s-plus-r2
+category: router
+form_factor: rack
+description: "[CCR1016-12S-1S+](https://mikrotik.com/product/CCR1016-12S-1Splus)"
+part_numbers:
+  - CCR1016-12S-1S+r2
+u_height: 1
+full_depth: false
+weight_kg: 2.55
+airflow: front-to-rear
+power:
+  outlet_count: 1
+  psu_count: 2
+interfaces:
+  - name: sfp1
+    label: SFP1
+    type: 1000base-x-sfp
+  - name: sfp2
+    label: SFP2
+    type: 1000base-x-sfp
+  - name: sfp3
+    label: SFP3
+    type: 1000base-x-sfp
+  - name: sfp4
+    label: SFP4
+    type: 1000base-x-sfp
+  - name: sfp5
+    label: SFP5
+    type: 1000base-x-sfp
+  - name: sfp6
+    label: SFP6
+    type: 1000base-x-sfp
+  - name: sfp7
+    label: SFP7
+    type: 1000base-x-sfp
+  - name: sfp8
+    label: SFP8
+    type: 1000base-x-sfp
+  - name: sfp9
+    label: SFP9
+    type: 1000base-x-sfp
+  - name: sfp10
+    label: SFP10
+    type: 1000base-x-sfp
+  - name: sfp11
+    label: SFP11
+    type: 1000base-x-sfp
+  - name: sfp12
+    label: SFP12
+    type: 1000base-x-sfp
+  - name: sfp-sfpplus1
+    label: SFP+1
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: serial0
+    type: rj-45
+power_ports:
+  - name: power1
+    type: iec-60320-c14
+    maximum_draw_w: 48
+  - name: power2
+    type: iec-60320-c14
+    maximum_draw_w: 48
+power_outlets:
+  - name: usb
+    type: usb-a
+comments: second revision with USB typeA and RJ-45 RS232
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/MikroTik/CCR1016-12S-1S-Plus-r2.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 319827d34fee2abe

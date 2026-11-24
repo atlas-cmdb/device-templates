@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: apc
+name: APC
+aliases:
+  - APC by Schneider Electric
+  - American Power Conversion
+website: https://www.apc.com
+parent: schneider-electric

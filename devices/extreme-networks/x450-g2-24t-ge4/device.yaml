@@ -1,0 +1,108 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: extreme-networks
+model: X450-G2-24t-GE4
+slug: x450-g2-24t-ge4
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 6.22
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: "1"
+    type: 1000base-t
+  - name: "2"
+    type: 1000base-t
+  - name: "3"
+    type: 1000base-t
+  - name: "4"
+    type: 1000base-t
+  - name: "5"
+    type: 1000base-t
+  - name: "6"
+    type: 1000base-t
+  - name: "7"
+    type: 1000base-t
+  - name: "8"
+    type: 1000base-t
+  - name: "9"
+    type: 1000base-t
+  - name: "10"
+    type: 1000base-t
+  - name: "11"
+    type: 1000base-t
+  - name: "12"
+    type: 1000base-t
+  - name: "13"
+    type: 1000base-t
+  - name: "14"
+    type: 1000base-t
+  - name: "15"
+    type: 1000base-t
+  - name: "16"
+    type: 1000base-t
+  - name: "17"
+    type: 1000base-t
+  - name: "18"
+    type: 1000base-t
+  - name: "19"
+    type: 1000base-t
+  - name: "20"
+    type: 1000base-t
+  - name: "21"
+    type: 1000base-t
+  - name: "22"
+    type: 1000base-t
+  - name: "23"
+    type: 1000base-t
+  - name: "24"
+    type: 1000base-t
+  - name: "25"
+    type: 1000base-x-sfp
+  - name: "26"
+    type: 1000base-x-sfp
+  - name: "27"
+    type: 1000base-x-sfp
+  - name: "28"
+    type: 1000base-x-sfp
+  - name: Mgmt
+    type: 1000base-t
+    mgmt_only: true
+  - name: SP1
+    type: extreme-summitstack
+  - name: SP2
+    type: extreme-summitstack
+console_ports:
+  - name: Serial console port
+    type: rj-45
+power_ports:
+  - name: C14
+    type: iec-60320-c14
+    maximum_draw_w: 71
+links:
+  datasheet: https://documentation.extremenetworks.com/summit_16/GUID-B7988A69-FEBE-44EE-8976-F3257D6BDB89.shtml#GUID-B7988A69-FEBE-44EE-8976-F3257D6BDB89
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Extreme Networks/X450-G2-24t-GE4.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: fe1164bed1eac0f8

@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: overland-tandberg
+model: RDX QuikStation 4 (Rackmount, 4x1GbE)
+slug: rdx-quikstation-4-rackmount-4x1gbe
+category: appliance
+form_factor: rack
+part_numbers:
+  - 8920-RDX 4x1GbE
+u_height: 1
+full_depth: true
+weight_kg: 5.98
+power:
+  psu_count: 1
+interfaces:
+  - name: Ethernet 1
+    type: 1000base-t
+  - name: Ethernet 2
+    type: 1000base-t
+  - name: Ethernet 3
+    type: 1000base-t
+  - name: Ethernet 4
+    type: 1000base-t
+power_ports:
+  - name: PSU 1
+    type: iec-60320-c14
+links:
+  manual: https://ftp1.overlandtandberg.com/public/TechSupportDocs/External/1021970_D.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Overland-Tandberg/8920-rdx-4x1gbe.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 35774ce53c6e43a6

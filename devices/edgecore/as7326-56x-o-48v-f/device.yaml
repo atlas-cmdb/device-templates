@@ -1,0 +1,187 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: edgecore
+model: AS7326-56X-O-48V-F
+slug: as7326-56x-o-48v-f
+category: network_switch
+form_factor: rack
+part_numbers:
+  - FP4ZZ7656011A
+u_height: 1
+full_depth: true
+weight_kg: 10
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0
+    type: 1000base-t
+    mgmt_only: true
+  - name: xe57
+    type: 10gbase-x-sfpp
+    mgmt_only: true
+  - name: xe58
+    type: 10gbase-x-sfpp
+    mgmt_only: true
+  - name: xe1
+    type: 25gbase-x-sfp28
+  - name: xe2
+    type: 25gbase-x-sfp28
+  - name: xe3
+    type: 25gbase-x-sfp28
+  - name: xe4
+    type: 25gbase-x-sfp28
+  - name: xe5
+    type: 25gbase-x-sfp28
+  - name: xe6
+    type: 25gbase-x-sfp28
+  - name: xe7
+    type: 25gbase-x-sfp28
+  - name: xe8
+    type: 25gbase-x-sfp28
+  - name: xe9
+    type: 25gbase-x-sfp28
+  - name: xe10
+    type: 25gbase-x-sfp28
+  - name: xe11
+    type: 25gbase-x-sfp28
+  - name: xe12
+    type: 25gbase-x-sfp28
+  - name: xe13
+    type: 25gbase-x-sfp28
+  - name: xe14
+    type: 25gbase-x-sfp28
+  - name: xe15
+    type: 25gbase-x-sfp28
+  - name: xe16
+    type: 25gbase-x-sfp28
+  - name: xe17
+    type: 25gbase-x-sfp28
+  - name: xe18
+    type: 25gbase-x-sfp28
+  - name: xe19
+    type: 25gbase-x-sfp28
+  - name: xe20
+    type: 25gbase-x-sfp28
+  - name: xe21
+    type: 25gbase-x-sfp28
+  - name: xe22
+    type: 25gbase-x-sfp28
+  - name: xe23
+    type: 25gbase-x-sfp28
+  - name: xe24
+    type: 25gbase-x-sfp28
+  - name: xe25
+    type: 25gbase-x-sfp28
+  - name: xe26
+    type: 25gbase-x-sfp28
+  - name: xe27
+    type: 25gbase-x-sfp28
+  - name: xe28
+    type: 25gbase-x-sfp28
+  - name: xe29
+    type: 25gbase-x-sfp28
+  - name: xe30
+    type: 25gbase-x-sfp28
+  - name: xe31
+    type: 25gbase-x-sfp28
+  - name: xe32
+    type: 25gbase-x-sfp28
+  - name: xe33
+    type: 25gbase-x-sfp28
+  - name: xe34
+    type: 25gbase-x-sfp28
+  - name: xe35
+    type: 25gbase-x-sfp28
+  - name: xe36
+    type: 25gbase-x-sfp28
+  - name: xe37
+    type: 25gbase-x-sfp28
+  - name: xe38
+    type: 25gbase-x-sfp28
+  - name: xe39
+    type: 25gbase-x-sfp28
+  - name: xe40
+    type: 25gbase-x-sfp28
+  - name: xe41
+    type: 25gbase-x-sfp28
+  - name: xe42
+    type: 25gbase-x-sfp28
+  - name: xe43
+    type: 25gbase-x-sfp28
+  - name: xe44
+    type: 25gbase-x-sfp28
+  - name: xe45
+    type: 25gbase-x-sfp28
+  - name: xe46
+    type: 25gbase-x-sfp28
+  - name: xe47
+    type: 25gbase-x-sfp28
+  - name: xe48
+    type: 25gbase-x-sfp28
+  - name: ce49
+    type: 100gbase-x-qsfp28
+  - name: ce50
+    type: 100gbase-x-qsfp28
+  - name: ce51
+    type: 100gbase-x-qsfp28
+  - name: ce52
+    type: 100gbase-x-qsfp28
+  - name: ce53
+    type: 100gbase-x-qsfp28
+  - name: ce54
+    type: 100gbase-x-qsfp28
+  - name: ce55
+    type: 100gbase-x-qsfp28
+  - name: ce56
+    type: 100gbase-x-qsfp28
+console_ports:
+  - name: Console
+    type: rj-45
+module_bays:
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+  - name: Fan Module Slot 1
+    bay_position: "1"
+  - name: Fan Module Slot 2
+    bay_position: "2"
+  - name: Fan Module Slot 3
+    bay_position: "3"
+  - name: Fan Module Slot 4
+    bay_position: "4"
+  - name: Fan Module Slot 5
+    bay_position: "5"
+  - name: Fan Module Slot 6
+    bay_position: "6"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  manual: https://www.edge-core.com/_upload/images/DCS203_AS7326-56X_DS_R09_20230717.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Edgecore/AS7326-56X-O-48V-F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 2442a8eccd8b2f47

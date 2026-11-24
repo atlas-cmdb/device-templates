@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: SUA2200R2X180
+slug: sua2200r2x180
+category: ups
+form_factor: rack
+part_numbers:
+  - SUA2200R2X180
+u_height: 2
+full_depth: true
+weight_kg: 43.64
+airflow: front-to-rear
+power:
+  outlet_count: 8
+  psu_count: 1
+console_ports:
+  - name: Serial
+    type: de-9
+  - name: USB
+    type: usb-b
+power_ports:
+  - name: Source
+    type: nema-5-20p
+    maximum_draw_w: 1980
+power_outlets:
+  - name: Outlet 1
+    type: nema-5-15r
+    power_port: Source
+  - name: Outlet 2
+    type: nema-5-15r
+    power_port: Source
+  - name: Outlet 3
+    type: nema-5-15r
+    power_port: Source
+  - name: Outlet 4
+    type: nema-5-15r
+    power_port: Source
+  - name: Outlet 5
+    type: nema-5-15r
+    power_port: Source
+  - name: Outlet 6
+    type: nema-5-15r
+    power_port: Source
+  - name: Outlet 7
+    type: nema-5-20r
+    power_port: Source
+  - name: Outlet 8
+    type: nema-5-20r
+    power_port: Source
+module_bays:
+  - name: SmartSlot
+    bay_position: SmartSlot
+comments: |-
+  APC Smart-UPS, Line Interactive, 2200VA, Rackmount 2U, 120V, 6x NEMA 5-15R + 2x Nema 5-20R outlets, SmartSlot, AVR, LED
+   Battery SKU: RBC43
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/SUA2200R2X180.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: ea69cc4123cfa7d7

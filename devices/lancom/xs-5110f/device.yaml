@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lancom
+model: XS-5110F
+slug: xs-5110f
+category: network_switch
+form_factor: rack
+part_numbers:
+  - "61858"
+u_height: 1
+full_depth: false
+weight_kg: 4.9
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: 1/0/1
+    label: "1"
+    type: 10gbase-x-sfpp
+  - name: 1/0/2
+    label: "2"
+    type: 10gbase-x-sfpp
+  - name: 10gbase-x-sfpp 1/0/3
+    label: "3"
+    type: 10gbase-x-sfpp
+  - name: 1/0/4
+    label: "4"
+    type: 10gbase-x-sfpp
+  - name: 1/0/5
+    label: "5"
+    type: 10gbase-x-sfpp
+  - name: 1/0/6
+    label: "6"
+    type: 10gbase-x-sfpp
+  - name: 1/0/7
+    label: "7"
+    type: 10gbase-x-sfpp
+  - name: 1/0/8
+    label: "8"
+    type: 10gbase-x-sfpp
+  - name: 1/0/9
+    label: "9"
+    type: 10gbase-t
+  - name: 1/0/10
+    label: "10"
+    type: 10gbase-t
+console_ports:
+  - name: com
+    type: rj-45
+  - name: USB
+    type: usb-micro-b
+  - name: USB-A
+    description: USB port for firmware and configuration transfer
+    type: usb-a
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 34
+links:
+  datasheet: https://www.lancom-systems.de/fileadmin/download/LC-XS-5110F/DS_XS-5110F_DE.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/LANCOM/XS-5110F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: f5b0a4b6523e955e

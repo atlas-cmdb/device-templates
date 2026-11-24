@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Aruba 7005
+slug: aruba-7005
+category: network_controller
+form_factor: rack
+part_numbers:
+  - JW634A
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: gigabitethernet 0/0/0
+    type: 1000base-t
+  - name: gigabitethernet 0/0/1
+    type: 1000base-t
+  - name: gigabitethernet 0/0/2
+    type: 1000base-t
+  - name: gigabitethernet 0/0/3
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: Console USB
+    type: usb-mini-b
+power_ports:
+  - name: DC
+    type: dc-terminal
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Aruba-7005.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 8d955200f8bcb9cf

@@ -1,0 +1,34 @@
+name: "💡 Feature request"
+description: Suggest a new field, category, data source, tool or change to the published data.
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Schema (new field / category)
+        - Published data (manifest.json, URLs, formats)
+        - 3D / VR assets
+        - Contributor tooling (scripts, validation, issue forms)
+        - Importers / data sources
+        - Catalog website
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: What are you trying to do (in Atlas or another DCIM tool) that the library does not support today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: For schema changes an example YAML snippet helps a lot.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered

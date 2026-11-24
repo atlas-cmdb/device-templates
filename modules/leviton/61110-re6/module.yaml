@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: leviton
+model: 61110-RE6
+slug: 61110-re6
+kind: other
+description: eXtreme Cat 6 QuickPort Jack, 8P8C (1), 110 Punch (1), Black
+part_numbers:
+  - 61110-RE6
+front_ports:
+  - name: "{module}"
+    type: 8p8c
+    rear_port: "{module}"
+    rear_port_position: 1
+rear_ports:
+  - name: "{module}"
+    type: 110-punch
+comments: |-
+  Leviton eXtreme Cat 6 QuickPort connector. Snaps into any Leviton
+  QuickPort-compatible patch panel, surface-mount box, or wall plate.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Leviton/61110-RE6.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - description
+    - front_ports
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: a552723f4320aaa4

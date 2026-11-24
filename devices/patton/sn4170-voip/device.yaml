@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: patton
+model: SN4170 VOIP
+slug: sn4170-voip
+category: network_switch
+form_factor: blade
+part_numbers:
+  - SN4170
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 0.45
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: PRI0/0
+    type: other
+  - name: Eth0/0
+    type: 1000base-tx
+console_ports:
+  - name: Console
+    type: de-9
+power_ports:
+  - name: Power-In
+    type: dc-terminal
+    maximum_draw_w: 15
+    allocated_draw_w: 5
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Patton/SN4170.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 530cf07632b4d32f

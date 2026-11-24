@@ -1,0 +1,108 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eaton
+model: Tripp Lite PDUMH15NET
+slug: tripp-lite-pdumh15net
+category: pdu
+form_factor: rack
+part_numbers:
+  - "037332157690"
+u_height: 1
+full_depth: false
+weight_kg: 5.67
+power:
+  outlet_count: 16
+interfaces:
+  - name: Mgmt
+    type: 100base-tx
+    mgmt_only: true
+console_ports:
+  - name: RS232
+    label: Config Port
+    description: Configuration port
+    type: de-9
+  - name: Config
+    label: Console
+    description: Configuration port
+    type: usb-micro-b
+  - name: Sensor
+    description: Supports a variety of Envirosense2 environmental and control modules.
+    type: usb-a
+power_ports:
+  - name: Primary
+    type: nema-5-15p
+    maximum_draw_w: 1400
+power_outlets:
+  - name: Front 1
+    label: "1"
+    type: nema-5-15r
+  - name: Front 2
+    label: "2"
+    type: nema-5-15r
+  - name: Front 3
+    label: "3"
+    type: nema-5-15r
+  - name: Front 4
+    label: "4"
+    type: nema-5-15r
+  - name: Front 5
+    label: "5"
+    type: nema-5-15r
+  - name: Front 6
+    label: "6"
+    type: nema-5-15r
+  - name: Front 7
+    label: "7"
+    type: nema-5-15r
+  - name: Front 8
+    label: "8"
+    type: nema-5-15r
+  - name: Rear 1
+    label: "9"
+    type: nema-5-15r
+  - name: Rear 2
+    label: "10"
+    type: nema-5-15r
+  - name: Rear 3
+    label: "11"
+    type: nema-5-15r
+  - name: Rear 4
+    label: "12"
+    type: nema-5-15r
+  - name: Rear 5
+    label: "13"
+    type: nema-5-15r
+  - name: Rear 6
+    label: "14"
+    type: nema-5-15r
+  - name: Rear 7
+    label: "15"
+    type: nema-5-15r
+  - name: Rear 8
+    label: "16"
+    type: nema-5-15r
+links:
+  manual: https://tripplite.eaton.com/support/owners-manual/894513
+comments: 15A 120V Switched Power Distribution Unit / PDU with built-in web/network interface (WEBCARDLX).
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eaton/Tripp-Lite-PDUMH15NET.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 8574735c05eab172

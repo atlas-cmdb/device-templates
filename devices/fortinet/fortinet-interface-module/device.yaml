@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: Fortinet Interface Module
+slug: fortinet-interface-module
+category: firewall
+form_factor: blade
+part_numbers:
+  - FIM-7941F
+u_height: 0
+full_depth: true
+subdevice_role: child
+weight_kg: 11.65
+airflow: passive
+interfaces:
+  - name: mgmt1
+    type: 1000base-t
+  - name: mgmt2
+    type: 1000base-t
+  - name: port1
+    type: 100gbase-x-qsfp28
+  - name: port2
+    type: 100gbase-x-qsfp28
+  - name: port3
+    type: 100gbase-x-qsfp28
+  - name: port4
+    type: 100gbase-x-qsfp28
+  - name: port5
+    type: 100gbase-x-qsfp28
+  - name: port6
+    type: 100gbase-x-qsfp28
+  - name: port7
+    type: 100gbase-x-qsfp28
+  - name: port8
+    type: 100gbase-x-qsfp28
+  - name: port9
+    type: 100gbase-x-qsfp28
+  - name: port10
+    type: 100gbase-x-qsfp28
+  - name: port11
+    type: 100gbase-x-qsfp28
+  - name: port12
+    type: 100gbase-x-qsfp28
+  - name: port13
+    type: 100gbase-x-qsfp28
+  - name: port14
+    type: 100gbase-x-qsfp28
+  - name: port15
+    type: 100gbase-x-qsfp28
+  - name: port16
+    type: 100gbase-x-qsfp28
+  - name: port17
+    type: 100gbase-x-qsfp28
+  - name: port18
+    type: 100gbase-x-qsfp28
+  - name: port19
+    type: 400gbase-x-qsfpdd
+  - name: port20
+    type: 400gbase-x-qsfpdd
+  - name: m1
+    type: 100gbase-x-qsfp28
+  - name: m2
+    type: 100gbase-x-qsfp28
+  - name: m3
+    type: 25gbase-x-sfp28
+  - name: m4
+    type: 25gbase-x-sfp28
+console_ports:
+  - name: Console
+    type: rj-45
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/FIM-7941F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: a2826a92648ac5a1

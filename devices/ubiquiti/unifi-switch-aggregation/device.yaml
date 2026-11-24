@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: UniFi Switch Aggregation
+slug: unifi-switch-aggregation
+category: network_switch
+form_factor: rack
+part_numbers:
+  - USW-Aggregation
+u_height: 1
+full_depth: false
+weight_kg: 2.7
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: SFP+ 1
+    type: 10gbase-x-sfpp
+  - name: SFP+ 2
+    type: 10gbase-x-sfpp
+  - name: SFP+ 3
+    type: 10gbase-x-sfpp
+  - name: SFP+ 4
+    type: 10gbase-x-sfpp
+  - name: SFP+ 5
+    type: 10gbase-x-sfpp
+  - name: SFP+ 6
+    type: 10gbase-x-sfpp
+  - name: SFP+ 7
+    type: 10gbase-x-sfpp
+  - name: SFP+ 8
+    type: 10gbase-x-sfpp
+power_ports:
+  - name: Input
+    type: iec-60320-c14
+    maximum_draw_w: 36
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  other:
+    - url: https://techspecs.ui.com/unifi/switching/usw-aggregation
+comments: |-
+  UniFi Switch Aggregation, 10G 8-Port Managed Aggregation Switch, 30W, (8) SFP+
+  Dimensions: 442.4 x 120 x 43.7 mm (17.42 x 4.72 x 1.72")
+  [USW-Aggregation Techspecs]
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/USW-Aggregation.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 839932e34f2fc48d

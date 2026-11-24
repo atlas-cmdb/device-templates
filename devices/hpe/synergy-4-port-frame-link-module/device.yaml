@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Synergy 4-port Frame Link Module
+slug: synergy-4-port-frame-link-module
+category: compute_blade
+form_factor: blade
+part_numbers:
+  - 876852-B21
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 1
+interfaces:
+  - name: MGMT
+    type: 10gbase-x-sfpp
+  - name: LINK
+    type: 10gbase-x-sfpp
+  - name: Appliance 1
+    type: 10gbase-x-sfpp
+  - name: Appliance 2
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    type: usb-c
+links:
+  other:
+    - label: QuickSpecs
+      url: https://www.hpe.com/psnow/doc/a00030303enw
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Synergy-4-port-Frame-Link-Module.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 6e1fded525d8a125

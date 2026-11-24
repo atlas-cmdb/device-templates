@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SYS-2028U-E1CNR4T+
+slug: sys-2028u-e1cnr4t-plus
+category: server
+form_factor: rack
+u_height: 2
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: Te1
+    type: 10gbase-t
+  - name: Te2
+    type: 10gbase-t
+  - name: Te3
+    type: 10gbase-t
+  - name: Te4
+    type: 10gbase-t
+  - name: BMC
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+power_ports:
+  - name: Power 1
+    type: iec-60320-c14
+  - name: Power 2
+    type: iec-60320-c14
+module_bays:
+  - name: PCI-E 1
+    bay_position: "1"
+  - name: PCI-E 2
+    bay_position: "2"
+  - name: PCI-E 3
+    bay_position: "3"
+  - name: PCI-E 4
+    bay_position: "4"
+  - name: PCI-E LP 1
+    bay_position: "5"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SYS-2028U-E1CNR4T-Plus.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 655268b79bca52f1

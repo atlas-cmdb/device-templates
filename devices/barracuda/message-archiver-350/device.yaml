@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: barracuda
+model: Message Archiver 350
+slug: message-archiver-350
+category: appliance
+form_factor: rack
+part_numbers:
+  - BMA350A
+u_height: 1
+full_depth: true
+weight_kg: 14.969
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: "1"
+    type: 1000base-t
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+links:
+  datasheet: https://assets.barracuda.com/assets/docs/dms/Barracuda_Message_Archiver_DS_US.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Barracuda/Message-Archiver-350.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: fb6b783c859ca948

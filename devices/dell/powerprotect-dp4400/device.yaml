@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerProtect DP4400
+slug: powerprotect-dp4400
+category: backup_appliance
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 33
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: 10GbE 1
+    type: 10gbase-t
+  - name: 10GbE 2
+    type: 10gbase-t
+  - name: 10GbE 3
+    type: 10gbase-t
+  - name: 10GbE 4
+    type: 10gbase-t
+  - name: 10GbE 5
+    type: 10gbase-t
+  - name: 10GbE 6
+    type: 10gbase-t
+  - name: 10GbE 7
+    type: 10gbase-t
+  - name: 10GbE 8
+    type: 10gbase-t
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: iDRAC
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: PSU-1
+    label: "1"
+    description: 1100W
+    bay_position: PSU-1
+  - name: PSU-2
+    label: "2"
+    description: 1100W
+    bay_position: PSU-2
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerProtect-DP4400.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 2889c9cef39a6810

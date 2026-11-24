@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: extreme-networks
+model: nx5500-6t
+slug: nx5500-6t
+category: appliance
+form_factor: rack
+part_numbers:
+  - nx5500-6t
+u_height: 1
+full_depth: false
+subdevice_role: parent
+weight_kg: 4.5
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: "1"
+    type: 1000base-t
+  - name: "2"
+    type: 1000base-t
+  - name: "3"
+    type: 1000base-t
+  - name: "4"
+    type: 1000base-t
+  - name: "5"
+    type: 1000base-t
+  - name: "6"
+    type: 1000base-t
+console_ports:
+  - name: Console_RJ45
+    type: rj-45
+  - name: Console_USB_1
+    type: usb-micro-b
+  - name: Console_USB_2
+    type: usb-micro-b
+power_ports:
+  - name: PSU1
+    type: iec-60320-c14
+    maximum_draw_w: 100
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Extreme Networks/NX5500-6T.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 1e81974430d7a175

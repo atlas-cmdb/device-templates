@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: A9K-3KW-AC
+slug: a9k-3kw-ac
+kind: other
+part_numbers:
+  - A9K-3KW-AC
+power_ports:
+  - name: 0/PT{module}-PM{module}
+    type: iec-60320-c20
+    maximum_draw_w: 3000
+comments: 3kW AC Power Module
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/A9K-3KW-AC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: ee440ced612f864d

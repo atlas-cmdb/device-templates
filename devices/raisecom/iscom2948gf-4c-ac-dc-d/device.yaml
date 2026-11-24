@@ -1,0 +1,155 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: raisecom
+model: ISCOM2948GF-4C-AC/DC/D
+slug: iscom2948gf-4c-ac-dc-d
+category: network_switch
+form_factor: rack
+part_numbers:
+  - ISCOM2948GF-4C-AC/DC/D
+u_height: 1
+full_depth: false
+weight_kg: 8
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Port 1
+    type: 1000base-x-sfp
+  - name: Port 2
+    type: 1000base-x-sfp
+  - name: Port 3
+    type: 1000base-x-sfp
+  - name: Port 4
+    type: 1000base-x-sfp
+  - name: Port 5
+    type: 1000base-x-sfp
+  - name: Port 6
+    type: 1000base-x-sfp
+  - name: Port 7
+    type: 1000base-x-sfp
+  - name: Port 8
+    type: 1000base-x-sfp
+  - name: Port 9
+    type: 1000base-x-sfp
+  - name: Port 10
+    type: 1000base-x-sfp
+  - name: Port 11
+    type: 1000base-x-sfp
+  - name: Port 12
+    type: 1000base-x-sfp
+  - name: Port 13
+    type: 1000base-x-sfp
+  - name: Port 14
+    type: 1000base-x-sfp
+  - name: Port 15
+    type: 1000base-x-sfp
+  - name: Port 16
+    type: 1000base-x-sfp
+  - name: Port 17
+    type: 1000base-x-sfp
+  - name: Port 18
+    type: 1000base-x-sfp
+  - name: Port 19
+    type: 1000base-x-sfp
+  - name: Port 20
+    type: 1000base-x-sfp
+  - name: Port 21
+    type: 1000base-x-sfp
+  - name: Port 22
+    type: 1000base-x-sfp
+  - name: Port 23
+    type: 1000base-x-sfp
+  - name: Port 24
+    type: 1000base-x-sfp
+  - name: Port 25
+    type: 1000base-x-sfp
+  - name: Port 26
+    type: 1000base-x-sfp
+  - name: Port 27
+    type: 1000base-x-sfp
+  - name: Port 28
+    type: 1000base-x-sfp
+  - name: Port 29
+    type: 1000base-x-sfp
+  - name: Port 30
+    type: 1000base-x-sfp
+  - name: Port 31
+    type: 1000base-x-sfp
+  - name: Port 32
+    type: 1000base-x-sfp
+  - name: Port 33
+    type: 1000base-x-sfp
+  - name: Port 34
+    type: 1000base-x-sfp
+  - name: Port 35
+    type: 1000base-x-sfp
+  - name: Port 36
+    type: 1000base-x-sfp
+  - name: Port 37
+    type: 1000base-x-sfp
+  - name: Port 38
+    type: 1000base-x-sfp
+  - name: Port 39
+    type: 1000base-x-sfp
+  - name: Port 40
+    type: 1000base-x-sfp
+  - name: Port 41
+    type: 1000base-x-sfp
+  - name: Port 42
+    type: 1000base-x-sfp
+  - name: Port 43
+    type: 1000base-x-sfp
+  - name: Port 44
+    type: 1000base-x-sfp
+  - name: Port 45
+    type: 1000base-x-sfp
+  - name: Port 46
+    type: 1000base-x-sfp
+  - name: Port 47
+    type: 1000base-x-sfp
+  - name: Port 48
+    type: 1000base-x-sfp
+  - name: Port 49
+    type: 10gbase-x-sfpp
+  - name: Port 50
+    type: 10gbase-x-sfpp
+  - name: Port 51
+    type: 10gbase-x-sfpp
+  - name: Port 52
+    type: 10gbase-x-sfpp
+  - name: Port SNMP
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Console
+    type: rj-45
+module_bays:
+  - name: PS1
+    description: Power Supply Unit slot 1
+    bay_position: "1"
+  - name: PS2
+    description: Power Supply Unit slot 2
+    bay_position: "2"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Raisecom/iscom2948gf-4c-ac-dc-d.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e3aeca966e7065d1

@@ -1,0 +1,89 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: SF110D-16HP
+slug: sf110d-16hp
+category: network_switch
+form_factor: other
+part_numbers:
+  - SF110D-16HP
+u_height: 0
+full_depth: false
+weight_kg: 1.36
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: FastEthernet1
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: FastEthernet2
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: FastEthernet3
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: FastEthernet4
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: FastEthernet5
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: FastEthernet6
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: FastEthernet7
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: FastEthernet8
+    type: 100base-tx
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: FastEthernet9
+    type: 100base-tx
+  - name: FastEthernet10
+    type: 100base-tx
+  - name: FastEthernet11
+    type: 100base-tx
+  - name: FastEthernet12
+    type: 100base-tx
+  - name: FastEthernet13
+    type: 100base-tx
+  - name: FastEthernet14
+    type: 100base-tx
+  - name: FastEthernet15
+    type: 100base-tx
+  - name: FastEthernet16
+    type: 100base-tx
+power_ports:
+  - name: PSU0
+    type: iec-60320-c14
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/switches/110-series-unmanaged-switches/datasheet-c78-734450.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/SF110D-16HP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e02f17763ab1a7df

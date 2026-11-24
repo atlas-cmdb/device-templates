@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netgear
+model: XS708T
+slug: xs708t
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 2.61
+airflow: right-to-left
+power:
+  psu_count: 1
+interfaces:
+  - name: TenGigabitEthernet/1
+    label: "1"
+    type: 10gbase-t
+  - name: TenGigabitEthernet/2
+    label: "2"
+    type: 10gbase-t
+  - name: TenGigabitEthernet/3
+    label: "3"
+    type: 10gbase-t
+  - name: TenGigabitEthernet/4
+    label: "4"
+    type: 10gbase-t
+  - name: TenGigabitEthernet/5
+    label: "5"
+    type: 10gbase-t
+  - name: TenGigabitEthernet/6
+    label: "6"
+    type: 10gbase-t
+  - name: TenGigabitEthernet/7T
+    label: 7T
+    type: 10gbase-t
+  - name: TenGigabitEthernet/8T
+    label: 8T
+    type: 10gbase-t
+  - name: TenGigabitEthernet/7F
+    label: 7F
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet/8F
+    label: 8F
+    type: 10gbase-x-sfpp
+power_ports:
+  - name: Power
+    type: iec-60320-c14
+    maximum_draw_w: 50
+links:
+  manual: https://www.downloads.netgear.com/files/GDC/XS708T/XS708T_XS712Tv2_XS716T_XS728T_XS748T_DS.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Netgear/XS708T.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 51a370ff285c8c15

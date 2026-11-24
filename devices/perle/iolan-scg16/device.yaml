@@ -1,0 +1,98 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: perle
+model: IOLAN SCG16
+slug: iolan-scg16
+category: console_server
+form_factor: rack
+description: IOLAN SCG16 Terminal Server
+part_numbers:
+  - "04032652"
+u_height: 1
+full_depth: false
+weight_kg: 3.06
+airflow: right-to-left
+power:
+  psu_count: 2
+interfaces:
+  - name: eth1
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: rj-45
+console_server_ports:
+  - name: tty1
+    label: RS232-1
+    type: rj-45
+  - name: tty2
+    label: RS232-2
+    type: rj-45
+  - name: tty3
+    label: RS232-3
+    type: rj-45
+  - name: tty4
+    label: RS232-4
+    type: rj-45
+  - name: tty5
+    label: RS232-5
+    type: rj-45
+  - name: tty6
+    label: RS232-6
+    type: rj-45
+  - name: tty7
+    label: RS232-7
+    type: rj-45
+  - name: tty8
+    label: RS232-8
+    type: rj-45
+  - name: tty9
+    label: RS232-9
+    type: rj-45
+  - name: tty10
+    label: RS232-10
+    type: rj-45
+  - name: tty11
+    label: RS232-11
+    type: rj-45
+  - name: tty12
+    label: RS232-12
+    type: rj-45
+  - name: tty13
+    label: RS232-13
+    type: rj-45
+  - name: tty14
+    label: RS232-14
+    type: rj-45
+  - name: tty15
+    label: RS232-15
+    type: rj-45
+  - name: tty16
+    label: RS232-16
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+  - name: PS2
+    type: iec-60320-c14
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Perle/IOLAN-SCG16.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - console_server_ports
+    - description
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 20e12bdfd9593b42

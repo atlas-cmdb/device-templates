@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge C6400
+slug: poweredge-c6400
+category: server
+form_factor: rack
+u_height: 2
+full_depth: true
+subdevice_role: parent
+weight_kg: 45
+airflow: front-to-rear
+module_bays:
+  - name: Power 1
+    bay_position: "1"
+  - name: Power 2
+    bay_position: "2"
+device_bays:
+  - name: "1"
+    label: Sled 1
+  - name: "2"
+    label: Sled 2
+  - name: "3"
+    label: Sled 3
+  - name: "4"
+    label: Sled 4
+links:
+  datasheet: https://i.dell.com/sites/csdocuments/Product_Docs/en/poweredge-c6400-c6420-technical-guide.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-C6400.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - device_bays
+    - full_depth
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 998a2a8bb7d4e6de

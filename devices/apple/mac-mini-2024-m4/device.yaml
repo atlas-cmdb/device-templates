@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apple
+model: Mac Mini 2024 M4
+slug: mac-mini-2024-m4
+category: compute_blade
+form_factor: blade
+part_numbers:
+  - A3238
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 0.67
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: eth
+    type: 1000base-t
+  - name: wireless
+    type: ieee802.11ax
+power_ports:
+  - name: Power
+    type: iec-60320-c8
+    maximum_draw_w: 155
+links:
+  other:
+    - label: Mac Mini 2024 M4 | hardware specs
+      url: https://support.apple.com/en-us/121555
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Apple/A3238.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 2c633b1abfa73a84

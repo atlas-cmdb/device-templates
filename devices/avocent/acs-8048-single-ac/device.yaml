@@ -1,0 +1,149 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: avocent
+model: ACS 8048 Single-AC
+slug: acs-8048-single-ac
+category: console_server
+form_factor: rack
+part_numbers:
+  - ACS8048SAC-400
+u_height: 1
+full_depth: false
+weight_kg: 3.266
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: eth0
+    type: 1000base-t
+  - name: eth1
+    type: 1000base-t
+console_ports:
+  - name: console
+    type: rj-45
+console_server_ports:
+  - name: ttyS1
+    type: rj-45
+  - name: ttyS2
+    type: rj-45
+  - name: ttyS3
+    type: rj-45
+  - name: ttyS4
+    type: rj-45
+  - name: ttyS5
+    type: rj-45
+  - name: ttyS6
+    type: rj-45
+  - name: ttyS7
+    type: rj-45
+  - name: ttyS8
+    type: rj-45
+  - name: ttyS9
+    type: rj-45
+  - name: ttyS10
+    type: rj-45
+  - name: ttyS11
+    type: rj-45
+  - name: ttyS12
+    type: rj-45
+  - name: ttyS13
+    type: rj-45
+  - name: ttyS14
+    type: rj-45
+  - name: ttyS15
+    type: rj-45
+  - name: ttyS16
+    type: rj-45
+  - name: ttyS17
+    type: rj-45
+  - name: ttyS18
+    type: rj-45
+  - name: ttyS19
+    type: rj-45
+  - name: ttyS20
+    type: rj-45
+  - name: ttyS21
+    type: rj-45
+  - name: ttyS22
+    type: rj-45
+  - name: ttyS23
+    type: rj-45
+  - name: ttyS24
+    type: rj-45
+  - name: ttyS25
+    type: rj-45
+  - name: ttyS26
+    type: rj-45
+  - name: ttyS27
+    type: rj-45
+  - name: ttyS28
+    type: rj-45
+  - name: ttyS29
+    type: rj-45
+  - name: ttyS30
+    type: rj-45
+  - name: ttyS31
+    type: rj-45
+  - name: ttyS32
+    type: rj-45
+  - name: ttyS33
+    type: rj-45
+  - name: ttyS34
+    type: rj-45
+  - name: ttyS35
+    type: rj-45
+  - name: ttyS36
+    type: rj-45
+  - name: ttyS37
+    type: rj-45
+  - name: ttyS38
+    type: rj-45
+  - name: ttyS39
+    type: rj-45
+  - name: ttyS40
+    type: rj-45
+  - name: ttyS41
+    type: rj-45
+  - name: ttyS42
+    type: rj-45
+  - name: ttyS43
+    type: rj-45
+  - name: ttyS44
+    type: rj-45
+  - name: ttyS45
+    type: rj-45
+  - name: ttyS46
+    type: rj-45
+  - name: ttyS47
+    type: rj-45
+  - name: ttyS48
+    type: rj-45
+power_ports:
+  - name: ps1
+    type: iec-60320-c14
+    maximum_draw_w: 33
+    allocated_draw_w: 11
+links:
+  datasheet: https://www.vertiv.com/4ae0c3/globalassets/products/monitoring-control-and-management/serial-consoles-and-gateways/avocent-acs-8000-advanced-console-server-data-sheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Avocent/ACS8048SAC-400.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: c43855ab61228efd

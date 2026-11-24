@@ -1,0 +1,103 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fs
+model: FHU-FPP48FLCSMF
+slug: fhu-fpp48flcsmf
+category: patch_panel
+form_factor: rack
+part_numbers:
+  - FHU-FPP48FLCSMF (#35530)
+u_height: 1
+full_depth: true
+front_ports:
+  - name: Front Port 1
+    type: lc
+    rear_port: Rear Port 1
+    rear_port_position: 1
+  - name: Front Port 2
+    type: lc
+    rear_port: Rear Port 2
+    rear_port_position: 1
+  - name: Front Port 3
+    type: lc
+    rear_port: Rear Port 3
+    rear_port_position: 1
+  - name: Front Port 4
+    type: lc
+    rear_port: Rear Port 4
+    rear_port_position: 1
+  - name: Front Port 5
+    type: lc
+    rear_port: Rear Port 5
+    rear_port_position: 1
+  - name: Front Port 6
+    type: lc
+    rear_port: Rear Port 6
+    rear_port_position: 1
+  - name: Front Port 7
+    type: lc
+    rear_port: Rear Port 7
+    rear_port_position: 1
+  - name: Front Port 8
+    type: lc
+    rear_port: Rear Port 8
+    rear_port_position: 1
+  - name: Front Port 9
+    type: lc
+    rear_port: Rear Port 9
+    rear_port_position: 1
+  - name: Front Port 10
+    type: lc
+    rear_port: Rear Port 10
+    rear_port_position: 1
+  - name: Front Port 11
+    type: lc
+    rear_port: Rear Port 11
+    rear_port_position: 1
+  - name: Front Port 12
+    type: lc
+    rear_port: Rear Port 12
+    rear_port_position: 1
+rear_ports:
+  - name: Rear Port 1
+    type: lc
+  - name: Rear Port 2
+    type: lc
+  - name: Rear Port 3
+    type: lc
+  - name: Rear Port 4
+    type: lc
+  - name: Rear Port 5
+    type: lc
+  - name: Rear Port 6
+    type: lc
+  - name: Rear Port 7
+    type: lc
+  - name: Rear Port 8
+    type: lc
+  - name: Rear Port 9
+    type: lc
+  - name: Rear Port 10
+    type: lc
+  - name: Rear Port 11
+    type: lc
+  - name: Rear Port 12
+    type: lc
+comments: FHU 1U 19" Fiber Adapter Panel, 48 Fibers OS2 Single Mode, 24 x LC UPC Duplex (Blue) Adapter, Ceramic Sleeve
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/FS/FHU-FPP48FLCSMF.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - front_ports
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+    - u_height
+  import_hash: 76703f04b2f0a92b

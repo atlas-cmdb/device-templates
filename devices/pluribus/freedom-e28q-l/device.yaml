@@ -1,0 +1,471 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: pluribus
+model: Freedom E28Q-L
+slug: freedom-e28q-l
+category: network_switch
+form_factor: rack
+part_numbers:
+  - E28Q-L
+u_height: 2
+full_depth: true
+weight_kg: 25
+airflow: rear-to-front
+power:
+  psu_count: 2
+interfaces:
+  - name: mgmt
+    label: MGMT
+    type: 1000base-t
+    mgmt_only: true
+  - name: "1"
+    label: "1"
+    type: 40gbase-x-qsfpp
+  - name: "2"
+    label: "2"
+    type: 40gbase-x-qsfpp
+  - name: "3"
+    label: "3"
+    type: 40gbase-x-qsfpp
+  - name: "4"
+    label: "4"
+    type: 40gbase-x-qsfpp
+  - name: "5"
+    label: 5..8
+    type: 40gbase-x-qsfpp
+  - name: 5-10GbE
+    label: 5..8
+    description: Breakout child for port 5
+    type: 10gbase-x-sfpp
+  - name: 6-10GbE
+    label: 5..8
+    description: Breakout child for port 5
+    type: 10gbase-x-sfpp
+  - name: 7-10GbE
+    label: 5..8
+    description: Breakout child for port 5
+    type: 10gbase-x-sfpp
+  - name: 8-10GbE
+    label: 5..8
+    description: Breakout child for port 5
+    type: 10gbase-x-sfpp
+  - name: "9"
+    label: 9..12
+    type: 40gbase-x-qsfpp
+  - name: 9-10GbE
+    label: 9..12
+    description: Breakout child for port 9
+    type: 10gbase-x-sfpp
+  - name: 10-10GbE
+    label: 9..12
+    description: Breakout child for port 9
+    type: 10gbase-x-sfpp
+  - name: 11-10GbE
+    label: 9..12
+    description: Breakout child for port 9
+    type: 10gbase-x-sfpp
+  - name: 12-10GbE
+    label: 9..12
+    description: Breakout child for port 9
+    type: 10gbase-x-sfpp
+  - name: "13"
+    label: 13..16
+    type: 40gbase-x-qsfpp
+  - name: 13-10GbE
+    label: 13..16
+    description: Breakout child for port 13
+    type: 10gbase-x-sfpp
+  - name: 14-10GbE
+    label: 13..16
+    description: Breakout child for port 13
+    type: 10gbase-x-sfpp
+  - name: 15-10GbE
+    label: 13..16
+    description: Breakout child for port 13
+    type: 10gbase-x-sfpp
+  - name: 16-10GbE
+    label: 13..16
+    description: Breakout child for port 13
+    type: 10gbase-x-sfpp
+  - name: "17"
+    label: 17..20
+    type: 40gbase-x-qsfpp
+  - name: 17-10GbE
+    label: 17..20
+    description: Breakout child for port 17
+    type: 10gbase-x-sfpp
+  - name: 18-10GbE
+    label: 17..20
+    description: Breakout child for port 17
+    type: 10gbase-x-sfpp
+  - name: 19-10GbE
+    label: 17..20
+    description: Breakout child for port 17
+    type: 10gbase-x-sfpp
+  - name: 20-10GbE
+    label: 17..20
+    description: Breakout child for port 17
+    type: 10gbase-x-sfpp
+  - name: "21"
+    label: 21..24
+    type: 40gbase-x-qsfpp
+  - name: 21-10GbE
+    label: 21..24
+    description: Breakout child for port 21
+    type: 10gbase-x-sfpp
+  - name: 22-10GbE
+    label: 21..24
+    description: Breakout child for port 21
+    type: 10gbase-x-sfpp
+  - name: 23-10GbE
+    label: 21..24
+    description: Breakout child for port 21
+    type: 10gbase-x-sfpp
+  - name: 24-10GbE
+    label: 21..24
+    description: Breakout child for port 21
+    type: 10gbase-x-sfpp
+  - name: "25"
+    label: 25..28
+    type: 40gbase-x-qsfpp
+  - name: 25-10GbE
+    label: 25..28
+    description: Breakout child for port 25
+    type: 10gbase-x-sfpp
+  - name: 26-10GbE
+    label: 25..28
+    description: Breakout child for port 25
+    type: 10gbase-x-sfpp
+  - name: 27-10GbE
+    label: 25..28
+    description: Breakout child for port 25
+    type: 10gbase-x-sfpp
+  - name: 28-10GbE
+    label: 25..28
+    description: Breakout child for port 25
+    type: 10gbase-x-sfpp
+  - name: "29"
+    label: 29..32
+    type: 40gbase-x-qsfpp
+  - name: 29-10GbE
+    label: 29..32
+    description: Breakout child for port 29
+    type: 10gbase-x-sfpp
+  - name: 30-10GbE
+    label: 29..32
+    description: Breakout child for port 29
+    type: 10gbase-x-sfpp
+  - name: 31-10GbE
+    label: 29..32
+    description: Breakout child for port 29
+    type: 10gbase-x-sfpp
+  - name: 32-10GbE
+    label: 29..32
+    description: Breakout child for port 29
+    type: 10gbase-x-sfpp
+  - name: "33"
+    label: 33..36
+    type: 40gbase-x-qsfpp
+  - name: 33-10GbE
+    label: 33..36
+    description: Breakout child for port 33
+    type: 10gbase-x-sfpp
+  - name: 34-10GbE
+    label: 33..36
+    description: Breakout child for port 33
+    type: 10gbase-x-sfpp
+  - name: 35-10GbE
+    label: 33..36
+    description: Breakout child for port 33
+    type: 10gbase-x-sfpp
+  - name: 36-10GbE
+    label: 33..36
+    description: Breakout child for port 33
+    type: 10gbase-x-sfpp
+  - name: "37"
+    label: 37..40
+    type: 40gbase-x-qsfpp
+  - name: 37-10GbE
+    label: 37..40
+    description: Breakout child for port 37
+    type: 10gbase-x-sfpp
+  - name: 38-10GbE
+    label: 37..40
+    description: Breakout child for port 37
+    type: 10gbase-x-sfpp
+  - name: 39-10GbE
+    label: 37..40
+    description: Breakout child for port 37
+    type: 10gbase-x-sfpp
+  - name: 40-10GbE
+    label: 37..40
+    description: Breakout child for port 37
+    type: 10gbase-x-sfpp
+  - name: "41"
+    label: 41..44
+    type: 40gbase-x-qsfpp
+  - name: 41-10GbE
+    label: 41..44
+    description: Breakout child for port 41
+    type: 10gbase-x-sfpp
+  - name: 42-10GbE
+    label: 41..44
+    description: Breakout child for port 41
+    type: 10gbase-x-sfpp
+  - name: 43-10GbE
+    label: 41..44
+    description: Breakout child for port 41
+    type: 10gbase-x-sfpp
+  - name: 44-10GbE
+    label: 41..44
+    description: Breakout child for port 41
+    type: 10gbase-x-sfpp
+  - name: "45"
+    label: 45..48
+    type: 40gbase-x-qsfpp
+  - name: 45-10GbE
+    label: 45..48
+    description: Breakout child for port 45
+    type: 10gbase-x-sfpp
+  - name: 46-10GbE
+    label: 45..48
+    description: Breakout child for port 45
+    type: 10gbase-x-sfpp
+  - name: 47-10GbE
+    label: 45..48
+    description: Breakout child for port 45
+    type: 10gbase-x-sfpp
+  - name: 48-10GbE
+    label: 45..48
+    description: Breakout child for port 45
+    type: 10gbase-x-sfpp
+  - name: "49"
+    label: 49..52
+    type: 40gbase-x-qsfpp
+  - name: 49-10GbE
+    label: 49..52
+    description: Breakout child for port 49
+    type: 10gbase-x-sfpp
+  - name: 50-10GbE
+    label: 49..52
+    description: Breakout child for port 49
+    type: 10gbase-x-sfpp
+  - name: 51-10GbE
+    label: 49..52
+    description: Breakout child for port 49
+    type: 10gbase-x-sfpp
+  - name: 52-10GbE
+    label: 49..52
+    description: Breakout child for port 49
+    type: 10gbase-x-sfpp
+  - name: "53"
+    label: 53..56
+    type: 40gbase-x-qsfpp
+  - name: 53-10GbE
+    label: 53..56
+    description: Breakout child for port 53
+    type: 10gbase-x-sfpp
+  - name: 54-10GbE
+    label: 53..56
+    description: Breakout child for port 53
+    type: 10gbase-x-sfpp
+  - name: 55-10GbE
+    label: 53..56
+    description: Breakout child for port 53
+    type: 10gbase-x-sfpp
+  - name: 56-10GbE
+    label: 53..56
+    description: Breakout child for port 53
+    type: 10gbase-x-sfpp
+  - name: "57"
+    label: 57..60
+    type: 40gbase-x-qsfpp
+  - name: 57-10GbE
+    label: 57..60
+    description: Breakout child for port 57
+    type: 10gbase-x-sfpp
+  - name: 58-10GbE
+    label: 57..60
+    description: Breakout child for port 57
+    type: 10gbase-x-sfpp
+  - name: 59-10GbE
+    label: 57..60
+    description: Breakout child for port 57
+    type: 10gbase-x-sfpp
+  - name: 60-10GbE
+    label: 57..60
+    description: Breakout child for port 57
+    type: 10gbase-x-sfpp
+  - name: "61"
+    label: 61..64
+    type: 40gbase-x-qsfpp
+  - name: 61-10GbE
+    label: 61..64
+    description: Breakout child for port 61
+    type: 10gbase-x-sfpp
+  - name: 62-10GbE
+    label: 61..64
+    description: Breakout child for port 61
+    type: 10gbase-x-sfpp
+  - name: 63-10GbE
+    label: 61..64
+    description: Breakout child for port 61
+    type: 10gbase-x-sfpp
+  - name: 64-10GbE
+    label: 61..64
+    description: Breakout child for port 61
+    type: 10gbase-x-sfpp
+  - name: "65"
+    label: 65..68
+    type: 40gbase-x-qsfpp
+  - name: 65-10GbE
+    label: 65..68
+    description: Breakout child for port 65
+    type: 10gbase-x-sfpp
+  - name: 66-10GbE
+    label: 65..68
+    description: Breakout child for port 65
+    type: 10gbase-x-sfpp
+  - name: 67-10GbE
+    label: 65..68
+    description: Breakout child for port 65
+    type: 10gbase-x-sfpp
+  - name: 68-10GbE
+    label: 65..68
+    description: Breakout child for port 65
+    type: 10gbase-x-sfpp
+  - name: "69"
+    label: 69..72
+    type: 40gbase-x-qsfpp
+  - name: 69-10GbE
+    label: 69..72
+    description: Breakout child for port 69
+    type: 10gbase-x-sfpp
+  - name: 70-10GbE
+    label: 69..72
+    description: Breakout child for port 69
+    type: 10gbase-x-sfpp
+  - name: 71-10GbE
+    label: 69..72
+    description: Breakout child for port 69
+    type: 10gbase-x-sfpp
+  - name: 72-10GbE
+    label: 69..72
+    description: Breakout child for port 69
+    type: 10gbase-x-sfpp
+  - name: "73"
+    label: 73..76
+    type: 40gbase-x-qsfpp
+  - name: 73-10GbE
+    label: 73..76
+    description: Breakout child for port 73
+    type: 10gbase-x-sfpp
+  - name: 74-10GbE
+    label: 73..76
+    description: Breakout child for port 73
+    type: 10gbase-x-sfpp
+  - name: 75-10GbE
+    label: 73..76
+    description: Breakout child for port 73
+    type: 10gbase-x-sfpp
+  - name: 76-10GbE
+    label: 73..76
+    description: Breakout child for port 73
+    type: 10gbase-x-sfpp
+  - name: "77"
+    label: 77..80
+    type: 40gbase-x-qsfpp
+  - name: 77-10GbE
+    label: 77..80
+    description: Breakout child for port 77
+    type: 10gbase-x-sfpp
+  - name: 78-10GbE
+    label: 77..80
+    description: Breakout child for port 77
+    type: 10gbase-x-sfpp
+  - name: 79-10GbE
+    label: 77..80
+    description: Breakout child for port 77
+    type: 10gbase-x-sfpp
+  - name: 80-10GbE
+    label: 77..80
+    description: Breakout child for port 77
+    type: 10gbase-x-sfpp
+  - name: "81"
+    label: 81..84
+    type: 40gbase-x-qsfpp
+  - name: 81-10GbE
+    label: 81..84
+    description: Breakout child for port 81
+    type: 10gbase-x-sfpp
+  - name: 82-10GbE
+    label: 81..84
+    description: Breakout child for port 81
+    type: 10gbase-x-sfpp
+  - name: 83-10GbE
+    label: 81..84
+    description: Breakout child for port 81
+    type: 10gbase-x-sfpp
+  - name: 84-10GbE
+    label: 81..84
+    description: Breakout child for port 81
+    type: 10gbase-x-sfpp
+  - name: "85"
+    label: "85"
+    type: 40gbase-x-qsfpp
+  - name: "86"
+    label: "86"
+    type: 40gbase-x-qsfpp
+  - name: "87"
+    label: "87"
+    type: 40gbase-x-qsfpp
+  - name: "88"
+    label: "88"
+    type: 40gbase-x-qsfpp
+console_ports:
+  - name: Console
+    label: CON
+    type: rj-45
+  - name: Console USB
+    label: USB
+    type: usb-a
+module_bays:
+  - name: PSU-1
+    label: "1"
+    bay_position: PSU-1
+  - name: PSU-2
+    label: "2"
+    bay_position: PSU-2
+  - name: PCIe slot 1 - FH
+    label: PCIe 1
+    bay_position: PCIe-1
+  - name: PCIe slot 2 - FH
+    label: PCIe 2
+    bay_position: PCIe-2
+links:
+  datasheet: https://www.pluribusnetworks.com/assets/PluribusFreedomE28Q-LSwitchDatasheet8-17-1.pdf
+  manual: https://www.pluribusnetworks.com/assets/PN-HIG-E28Q.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Pluribus/Freedom-E28Q-L.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e5446f189f3131c7

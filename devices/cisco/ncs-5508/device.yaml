@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: NCS-5508
+slug: ncs-5508
+category: router
+form_factor: rack
+part_numbers:
+  - NCS-5508
+u_height: 13
+full_depth: true
+weight_kg: 68.2
+airflow: front-to-rear
+module_bays:
+  - name: RP0
+    bay_position: "0"
+  - name: RP1
+    bay_position: "1"
+  - name: LC0
+    bay_position: "0"
+  - name: LC1
+    bay_position: "1"
+  - name: LC2
+    bay_position: "2"
+  - name: LC3
+    bay_position: "3"
+  - name: LC4
+    bay_position: "4"
+  - name: LC5
+    bay_position: "5"
+  - name: LC6
+    bay_position: "6"
+  - name: LC7
+    bay_position: "7"
+  - name: PM0
+    bay_position: "0"
+  - name: PM1
+    bay_position: "1"
+  - name: PM2
+    bay_position: "2"
+  - name: PM3
+    bay_position: "3"
+  - name: PM4
+    bay_position: "4"
+  - name: PM5
+    bay_position: "5"
+  - name: PM6
+    bay_position: "6"
+  - name: PM7
+    bay_position: "7"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  manual: https://www.cisco.com/c/en/us/td/docs/iosxr/ncs5500/hardware-install/b-ncs5500-hardware-installation-guide.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/NCS-5508.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 213aeda6fa9aee19

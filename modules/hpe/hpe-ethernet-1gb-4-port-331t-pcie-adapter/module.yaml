@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: hpe
+model: HPE Ethernet 1Gb 4-port 331T PCIe Adapter
+slug: hpe-ethernet-1gb-4-port-331t-pcie-adapter
+kind: nic
+description: NIC for PCIe port on various HP Proliant Gen9 and Gen10; Apollo Gen9 servers
+part_numbers:
+  - 649871-001
+interfaces:
+  - name: "{module}/1"
+    type: 1000base-t
+  - name: "{module}/2"
+    type: 1000base-t
+  - name: "{module}/3"
+    type: 1000base-t
+  - name: "{module}/4"
+    type: 1000base-t
+links:
+  datasheet: https://support.hpe.com/hpesc/public/docDisplay?docId=c03225747&docLocale=en_US
+  manual: https://support.hpe.com/hpesc/public/docDisplay?docId=c03225735&page=index.html
+  other:
+    - label: QuickSpecs
+      url: https://www.hpe.com/psnow/doc/c04111478
+comments: |-
+  Ethernet 1Gb 4-port 331T adapter, PCIe form-factor. Has four 10/100/1000BASE-T RJ45 ports. Requires CAT5 or better twisted-pair.
+  **Discontinued**. See:
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/HPE/649871-001.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - description
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 675beff2ce1e41a9

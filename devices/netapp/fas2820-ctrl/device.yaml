@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netapp
+model: FAS2820-Ctrl
+slug: fas2820-ctrl
+category: storage_array
+form_factor: blade
+description: FAS2820 Controller
+u_height: 0
+full_depth: false
+subdevice_role: child
+interfaces:
+  - name: e0a
+    type: 25gbase-x-sfp28
+  - name: e0b
+    type: 25gbase-x-sfp28
+  - name: e0M
+    description: Wrench port, shared with the BMC
+    type: 1000base-t
+    mgmt_only: true
+  - name: 0a
+    description: 12Gb SAS, mini-SAS HD
+    type: other
+  - name: 0b1
+    description: 12Gb SAS, mini-SAS HD
+    type: other
+module_bays:
+  - name: Slot 1
+    description: Mezzanine slot
+    bay_position: "1"
+links:
+  manual: https://docs.netapp.com/us-en/ontap-systems/fas2800/install-detailed-guide.html
+  other:
+    - url: https://docs.netapp.com/us-en/ontap-systems/sas3/install-cabling-rules.html
+  product_page: https://docs.netapp.com/us-en/ontap-systems/fas2800/overview.html
+comments: |-
+  Onboard ports per controller: e0a/e0b 25GbE SFP28 (cluster/HA interconnect), wrench port e0M (shared with
+  the BMC), external SAS ports 0a and 0b1. SAS port 0b2 is not used by ONTAP and is always disabled, so it is
+  not modelled. Mezzanine slot 1 takes a 4-port card (ports e1a-e1d or 1a-1d).
+  Specifications:
+  Cabling:
+  SAS ports:
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/NetApp/FAS2820-Ctrl.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - description
+    - full_depth
+    - interfaces
+    - links.manual
+    - links.other
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: b95cd48ad4d53750

@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: ciena
+model: AC-5162-5170
+slug: ac-5162-5170
+kind: psu
+description: 5162/5170,AC PLUGGABLE POWER SUPPLY, WIDE RANGE 120/240V
+part_numbers:
+  - 170-0093-900
+power_ports:
+  - name: PS-{module}
+    type: iec-60320-c14
+    maximum_draw_w: 325
+    allocated_draw_w: 169
+comments: |-
+  Used in:
+  * 5162
+  * 5170
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Ciena/AC-5162-5170.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - description
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: 1517d40c29b1e791

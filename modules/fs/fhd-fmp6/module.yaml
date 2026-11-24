@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: fs
+model: FHD-FMP6
+slug: fhd-fmp6
+kind: other
+part_numbers:
+  - "66602"
+comments: FHD 6-Port Multimedia Copper/Fiber Modular Panel with 6 x Plastic Clips
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/FS/FHD-FMP6.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 9f7b1f4fc649e9ba

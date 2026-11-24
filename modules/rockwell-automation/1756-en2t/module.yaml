@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: rockwell-automation
+model: 1756-EN2T
+slug: 1756-en2t
+kind: other
+description: EtherNet/IP bridge module for ControlLogix systems
+part_numbers:
+  - 1756-EN2T
+interfaces:
+  - name: Ethernet 1
+    type: 1000base-t
+console_ports:
+  - name: USB Configuration Port
+    type: usb-mini-b
+comments: |-
+  The 1756-EN2T module supports real-time I/O messaging and message exchange over an EtherNet/IP network.
+  It enables communication between controllers, remote I/O, and various industrial automation devices.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Rockwell Automation/1756-EN2T.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - console_ports
+    - description
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: d888aff5dc51df23

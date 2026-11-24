@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: vertiv
+name: Vertiv
+aliases:
+  - Liebert
+  - Avocent
+  - Geist
+  - Emerson Network Power
+  - Cyclades
+website: https://www.vertiv.com

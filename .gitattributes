@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.webp binary
+*.png binary
+*.jpg binary
+*.glb binary
+package-lock.json -diff linguist-generated=true

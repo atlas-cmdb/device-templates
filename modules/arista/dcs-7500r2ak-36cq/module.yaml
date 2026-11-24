@@ -1,0 +1,95 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: arista
+model: DCS-7500R2AK-36CQ
+slug: dcs-7500r2ak-36cq
+kind: other
+weight_kg: 7.303
+interfaces:
+  - name: Ethernet{module}/1/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/2/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/3/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/4/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/5/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/6/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/7/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/8/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/9/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/10/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/11/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/12/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/13/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/14/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/15/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/16/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/17/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/18/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/19/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/20/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/21/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/22/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/23/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/24/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/25/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/26/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/27/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/28/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/29/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/30/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/31/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/32/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/33/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/34/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/35/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/36/1
+    type: 100gbase-x-qsfp28
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Arista/DCS-7500R2AK-36CQ.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - manufacturer
+    - model
+    - slug
+    - weight_kg
+  import_hash: 91eb02bea4cecdfc

@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: Storage SuperServer SSG-620P-E1CR24L
+slug: storage-superserver-ssg-620p-e1cr24l
+category: server
+form_factor: rack
+part_numbers:
+  - SSG-620P-E1CR24L
+u_height: 2
+full_depth: true
+weight_kg: 25.39
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: BMC
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: PSU1
+    bay_position: PSU 1
+  - name: PSU2
+    bay_position: PSU 2
+  - name: PCI-E 1
+    description: 1 PCIe 4.0 x8 LP slot (Occupied by 3808 SAS controller)
+    bay_position: "1"
+  - name: PCI-E 2
+    description: PCIe 4.0 x16 LP slot
+    bay_position: "2"
+  - name: PCI-E 3
+    description: PCIe 4.0 x16 LP slot
+    bay_position: "3"
+  - name: PCI-E A1
+    description: PCIe 4.0 x16 AIOM slot (OCP 3.0 compatible)
+    bay_position: "4"
+comments: "[Storage SuperServer SSG-620P-E1CR24L] (https://www.supermicro.com/en/products/system/Storage/2U/SSG-620P-E1CR24L)"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SSG-620P-E1CR24L.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: d09b3fed5043334c

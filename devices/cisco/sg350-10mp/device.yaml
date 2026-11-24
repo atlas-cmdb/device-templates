@@ -1,0 +1,96 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: SG350-10MP
+slug: sg350-10mp
+category: network_switch
+form_factor: rack
+part_numbers:
+  - SG350-10MP-K9
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: GigabitEthernet1
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet2
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet3
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet4
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet5
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet6
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet7
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet8
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet9
+    type: 1000base-x-sfp
+  - name: GigabitEthernet10
+    type: 1000base-x-sfp
+  - name: Port-channel1
+    type: lag
+  - name: Port-channel2
+    type: lag
+  - name: Port-channel3
+    type: lag
+  - name: Port-channel4
+    type: lag
+  - name: Port-channel5
+    type: lag
+  - name: Port-channel6
+    type: lag
+  - name: Port-channel7
+    type: lag
+  - name: Port-channel8
+    type: lag
+  - name: vlan1
+    type: virtual
+console_ports:
+  - name: console
+    type: rj-45
+power_ports:
+  - name: External PS
+    type: iec-60320-c14
+    maximum_draw_w: 152
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/switches/small-business-smart-switches/data-sheet-c78-737359.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/SG350-10MP-K9.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 854d12fbb0eea7c0

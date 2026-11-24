@@ -1,0 +1,101 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: ME-3400E-24TS-M
+slug: me-3400e-24ts-m
+category: network_switch
+form_factor: rack
+part_numbers:
+  - ME-3400E-24TS-M
+u_height: 1
+full_depth: false
+weight_kg: 2.903
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Management
+    type: 100base-tx
+    mgmt_only: true
+  - name: GigabitEthernet0/1
+    type: 100base-tx
+  - name: GigabitEthernet0/2
+    type: 100base-tx
+  - name: GigabitEthernet0/3
+    type: 100base-tx
+  - name: GigabitEthernet0/4
+    type: 100base-tx
+  - name: GigabitEthernet0/5
+    type: 100base-tx
+  - name: GigabitEthernet0/6
+    type: 100base-tx
+  - name: GigabitEthernet0/7
+    type: 100base-tx
+  - name: GigabitEthernet0/8
+    type: 100base-tx
+  - name: GigabitEthernet0/9
+    type: 100base-tx
+  - name: GigabitEthernet0/10
+    type: 100base-tx
+  - name: GigabitEthernet0/11
+    type: 100base-tx
+  - name: GigabitEthernet0/12
+    type: 100base-tx
+  - name: GigabitEthernet0/13
+    type: 100base-tx
+  - name: GigabitEthernet0/14
+    type: 100base-tx
+  - name: GigabitEthernet0/15
+    type: 100base-tx
+  - name: GigabitEthernet0/16
+    type: 100base-tx
+  - name: GigabitEthernet0/17
+    type: 100base-tx
+  - name: GigabitEthernet0/18
+    type: 100base-tx
+  - name: GigabitEthernet0/19
+    type: 100base-tx
+  - name: GigabitEthernet0/20
+    type: 100base-tx
+  - name: GigabitEthernet0/21
+    type: 100base-tx
+  - name: GigabitEthernet0/22
+    type: 100base-tx
+  - name: GigabitEthernet0/23
+    type: 100base-tx
+  - name: GigabitEthernet0/24
+    type: 100base-tx
+  - name: GigabitEthernet0/25
+    type: 1000base-x-sfp
+  - name: GigabitEthernet0/26
+    type: 1000base-x-sfp
+console_ports:
+  - name: Console
+    type: rj-45
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/ME-3400E-24TS-M.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 6887d289355e63ce

@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: ISR2901
+slug: isr2901
+category: router
+form_factor: rack
+part_numbers:
+  - ISR2901/K9
+u_height: 1
+full_depth: true
+weight_kg: 6.08
+power:
+  psu_count: 1
+interfaces:
+  - name: GigabitEthernet0/0/0
+    type: 1000base-t
+  - name: GigabitEthernet0/0/1
+    type: 1000base-t
+console_ports:
+  - name: con 0
+    type: rj-45
+  - name: usb
+    type: usb-mini-b
+  - name: aux
+    type: rj-45
+power_ports:
+  - name: PSU0
+    type: iec-60320-c6
+    maximum_draw_w: 150
+    allocated_draw_w: 40
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/ISR2901.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: a1afb0d2fcd8c2b5

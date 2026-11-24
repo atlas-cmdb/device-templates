@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: juniper
+model: EX-FAN-AFO
+slug: ex-fan-afo
+kind: fan
+airflow: front-to-rear
+comments: fan with front-to-back airflow
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Juniper/EX-FAN-AFO.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - airflow
+    - comments
+    - manufacturer
+    - model
+    - slug
+  import_hash: 2724726612329ec2

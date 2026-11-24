@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: forza
+model: FDC-1502R
+slug: fdc-1502r
+category: pdu
+form_factor: rack
+part_numbers:
+  - UI774FOR23
+u_height: 2
+full_depth: false
+weight_kg: 16
+airflow: passive
+power:
+  outlet_count: 8
+console_ports:
+  - name: USB
+    type: usb-b
+  - name: RS232
+    type: de-9
+power_ports:
+  - name: Input Port
+    type: nema-5-15p
+    maximum_draw_w: 1800
+power_outlets:
+  - name: Rear Outlet 1
+    type: nema-5-15r
+  - name: Rear Outlet 2
+    type: nema-5-15r
+  - name: Rear Outlet 3
+    type: nema-5-15r
+  - name: Rear Outlet 4
+    type: nema-5-15r
+  - name: Rear Outlet 5
+    type: nema-5-15r
+  - name: Rear Outlet 6
+    type: nema-5-15r
+  - name: Rear Outlet 7
+    type: nema-5-15r
+  - name: Rear Outlet 8
+    type: nema-5-15r
+links:
+  product_page: https://www.forzaups.com/products/internal/FDC-1502R-eng/
+comments: Forza FDC-1502R Online UPS, 220VAC, 1500VA, 1350W, Input NEMA 5-15P, Outputs 8 NEMA 5-15R, Rack/tower 2U
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Forza/FDC-1502R.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 12a5d1bb4db26e1e

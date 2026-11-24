@@ -1,0 +1,48 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Validate templates, images and references
+        run: npm run validate -- --max-warnings 100
+      - name: Check images are optimised
+        run: |
+          npm run images
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "::error::Some images are not in the stored format. Run 'npm run images' locally and commit the result."
+            git status --porcelain
+            exit 1
+          fi
+      - name: Build manifest (smoke test)
+        run: npm run build -- --no-assets
+      - name: Summary
+        if: always()
+        run: |
+          node -e "
+            const m = require('./dist/manifest.json');
+            const s = m.stats;
+            console.log('### Dataset\n');
+            console.log('| devices | with images | modules | racks | manufacturers |');
+            console.log('|---|---|---|---|---|');
+            console.log('| ' + [s.devices, s.with_images, s.modules, s.racks, s.manufacturers].join(' | ') + ' |');
+          " >> "$GITHUB_STEP_SUMMARY" || true

@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Aruba 1960 12XGT 4SFP+
+slug: aruba-1960-12xgt-4sfp-plus
+category: network_switch
+form_factor: rack
+part_numbers:
+  - JL805A
+u_height: 1
+full_depth: false
+weight_kg: 4.3
+airflow: left-to-right
+power:
+  psu_count: 1
+interfaces:
+  - name: "1"
+    type: 10gbase-t
+  - name: "2"
+    type: 10gbase-t
+  - name: "3"
+    type: 10gbase-t
+  - name: "4"
+    type: 10gbase-t
+  - name: "5"
+    type: 10gbase-t
+  - name: "6"
+    type: 10gbase-t
+  - name: "7"
+    type: 10gbase-t
+  - name: "8"
+    type: 10gbase-t
+  - name: "9"
+    type: 10gbase-t
+  - name: "10"
+    type: 10gbase-t
+  - name: "11"
+    type: 10gbase-t
+  - name: "12"
+    type: 10gbase-t
+  - name: "13"
+    type: 10gbase-x-sfpp
+  - name: "14"
+    type: 10gbase-x-sfpp
+  - name: "15"
+    type: 10gbase-x-sfpp
+  - name: "16"
+    type: 10gbase-x-sfpp
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 160
+links:
+  datasheet: https://www.hpe.com/psnow/doc/a00118137enw
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Aruba-1960-12XGT-4SFPP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 52b83145af48820e

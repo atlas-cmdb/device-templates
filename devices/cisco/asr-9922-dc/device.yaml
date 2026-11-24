@@ -1,0 +1,198 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: ASR-9922-DC
+slug: asr-9922-dc
+category: router
+form_factor: rack
+description: ASR 9922 20 Line Card Slot DC Chassis w/ PEM V2
+part_numbers:
+  - ASR-9922-DC
+u_height: 44
+full_depth: true
+subdevice_role: parent
+weight_kg: 187.73
+airflow: front-to-rear
+module_bays:
+  - name: Power Tray Slot 0
+    label: PT0
+    description: Power Tray Slot
+    bay_position: "0"
+  - name: Power Tray Slot 1
+    label: PT1
+    description: Power Tray Slot
+    bay_position: "1"
+  - name: Power Tray Slot 2
+    label: PT2
+    description: Power Tray Slot
+    bay_position: "2"
+  - name: Power Tray Slot 3
+    label: PT3
+    description: Power Tray Slot
+    bay_position: "3"
+  - name: Rack 0
+    description: ASR 9922 20 Line Card Slot Chassis
+    bay_position: "0"
+  - name: Line Card Slot 0
+    label: LC0
+    description: Line Card Slot
+    bay_position: "0"
+  - name: Line Card Slot 1
+    label: LC1
+    description: Line Card Slot
+    bay_position: "1"
+  - name: Line Card Slot 2
+    label: LC2
+    description: Line Card Slot
+    bay_position: "2"
+  - name: Line Card Slot 3
+    label: LC3
+    description: Line Card Slot
+    bay_position: "3"
+  - name: Line Card Slot 4
+    label: LC4
+    description: Line Card Slot
+    bay_position: "4"
+  - name: Line Card Slot 5
+    label: LC5
+    description: Line Card Slot
+    bay_position: "5"
+  - name: Line Card Slot 6
+    label: LC6
+    description: Line Card Slot
+    bay_position: "6"
+  - name: Line Card Slot 7
+    label: LC7
+    description: Line Card Slot
+    bay_position: "7"
+  - name: Line Card Slot 8
+    label: LC8
+    description: Line Card Slot
+    bay_position: "8"
+  - name: Line Card Slot 9
+    label: LC9
+    description: Line Card Slot
+    bay_position: "9"
+  - name: Fan Tray Slot 0
+    label: FT0
+    description: Fan Tray Slot
+    bay_position: "0"
+  - name: Fan Tray Slot 1
+    label: FT1
+    description: Fan Tray Slot
+    bay_position: "1"
+  - name: Route Processor Slot 0
+    label: RP0
+    description: Route Processor Slot
+    bay_position: "0"
+  - name: Fabric Card Slot 0
+    label: FC0
+    description: Fabric Card Slot
+    bay_position: "0"
+  - name: Fabric Card Slot 1
+    label: FC1
+    description: Fabric Card Slot
+    bay_position: "1"
+  - name: Fabric Card Slot 2
+    label: FC2
+    description: Fabric Card Slot
+    bay_position: "2"
+  - name: Fabric Card Slot 3
+    label: FC3
+    description: Fabric Card Slot
+    bay_position: "3"
+  - name: Fabric Card Slot 4
+    label: FC4
+    description: Fabric Card Slot
+    bay_position: "4"
+  - name: Fabric Card Slot 5
+    label: FC5
+    description: Fabric Card Slot
+    bay_position: "5"
+  - name: Fabric Card Slot 6
+    label: FC6
+    description: Fabric Card Slot
+    bay_position: "6"
+  - name: Route Processor Slot 1
+    label: RP1
+    description: Route Processor Slot
+    bay_position: "1"
+  - name: Fan Tray Slot 2
+    label: FT2
+    description: Fan Tray Slot
+    bay_position: "2"
+  - name: Fan Tray Slot 3
+    label: FT3
+    description: Fan Tray Slot
+    bay_position: "3"
+  - name: Line Card Slot 10
+    label: LC10
+    description: Line Card Slot
+    bay_position: "10"
+  - name: Line Card Slot 11
+    label: LC11
+    description: Line Card Slot
+    bay_position: "11"
+  - name: Line Card Slot 12
+    label: LC12
+    description: Line Card Slot
+    bay_position: "12"
+  - name: Line Card Slot 13
+    label: LC13
+    description: Line Card Slot
+    bay_position: "13"
+  - name: Line Card Slot 14
+    label: LC14
+    description: Line Card Slot
+    bay_position: "14"
+  - name: Line Card Slot 15
+    label: LC15
+    description: Line Card Slot
+    bay_position: "15"
+  - name: Line Card Slot 16
+    label: LC16
+    description: Line Card Slot
+    bay_position: "16"
+  - name: Line Card Slot 17
+    label: LC17
+    description: Line Card Slot
+    bay_position: "17"
+  - name: Line Card Slot 18
+    label: LC18
+    description: Line Card Slot
+    bay_position: "18"
+  - name: Line Card Slot 19
+    label: LC19
+    description: Line Card Slot
+    bay_position: "19"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/routers/asr-9000-series-aggregation-services-routers/data_sheet_c78-501767.html
+  manual: https://www.cisco.com/c/en/us/td/docs/iosxr/asr9000/hardware-install/hig/b-asr9k-hardware-installation-guide/b-asr9k-hardware-installation-guide_chapter_00.html
+  product_page: https://www.cisco.com/c/en/us/td/docs/iosxr/asr9000/hardware-install/overview-reference/b-asr9k-overview-reference-guide/b-asr9k-overview-reference-guide_chapter_01.html#con_879733__fig_801676
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/ASR-9922-DC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - links.datasheet
+    - links.manual
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 2db678b4c09bfc83

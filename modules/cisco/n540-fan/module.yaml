@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: N540-FAN
+slug: n540-fan
+kind: fan
+part_numbers:
+  - N540-FAN
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/N540-FAN.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 71839508f9983b29

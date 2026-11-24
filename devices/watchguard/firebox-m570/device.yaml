@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: watchguard
+model: Firebox M570
+slug: firebox-m570
+category: firewall
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 8.17
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: eth0
+    type: 1000base-t
+  - name: eth1
+    type: 1000base-t
+  - name: eth2
+    type: 1000base-t
+  - name: eth3
+    type: 1000base-t
+  - name: eth4
+    type: 1000base-t
+  - name: eth5
+    type: 1000base-t
+  - name: eth6
+    type: 1000base-t
+  - name: eth7
+    type: 1000base-t
+console_ports:
+  - name: console
+    type: rj-45
+  - name: USB0
+    type: usb-a
+  - name: USB1
+    type: usb-a
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 220
+    allocated_draw_w: 220
+module_bays:
+  - name: A
+    bay_position: A
+links:
+  manual: https://www.watchguard.com/help/docs/hardware%20guides/Firebox_M370_470_570_670_Hardware_Guide.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/WatchGuard/Firebox-M570.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 00a1f87822ff0ee8

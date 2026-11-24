@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: generic
+model: shelf-2he
+slug: shelf-2he
+category: shelf
+form_factor: rack
+u_height: 2
+full_depth: false
+subdevice_role: parent
+airflow: passive
+device_bays:
+  - name: A
+  - name: B
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Generic/shelf-2he.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - device_bays
+    - full_depth
+    - manufacturer
+    - model
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 7eed8d06deb8154f

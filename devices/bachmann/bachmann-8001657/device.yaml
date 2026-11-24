@@ -1,0 +1,126 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: bachmann
+model: Bachmann 8001657
+slug: bachmann-8001657
+category: pdu
+form_factor: zero-u
+part_numbers:
+  - "800.1657"
+u_height: 0
+full_depth: false
+weight_kg: 2.2
+airflow: passive
+power:
+  outlet_count: 27
+power_ports:
+  - name: Power Port 1
+    type: iec-60309-p-n-e-6h
+power_outlets:
+  - name: Outlet 1
+    type: iec-60320-c19
+    power_port: Power Port 1
+  - name: Outlet 2
+    type: iec-60320-c19
+    power_port: Power Port 1
+  - name: Outlet 3
+    type: iec-60320-c19
+    power_port: Power Port 1
+  - name: Outlet 4
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 5
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 6
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 7
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 8
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 9
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 10
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 11
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 12
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 13
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 14
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 15
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 16
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 17
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 18
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 19
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 20
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 21
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 22
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 23
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 24
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 25
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 26
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 27
+    type: iec-60320-c13
+    power_port: Power Port 1
+links:
+  other:
+    - label: PDU Basic 1HE IEC 60320 1P
+      url: https://www.bachmann.com/ocs/de-de/bm/pdu-basic-1he-iec-60320-varianten-c13-c19--3237-p/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Bachmann/Bachmann-8001657.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 94dd97370bf64453

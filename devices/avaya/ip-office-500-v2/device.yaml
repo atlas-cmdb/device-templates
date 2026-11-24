@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: avaya
+model: IP Office 500 V2
+slug: ip-office-500-v2
+category: appliance
+form_factor: rack
+part_numbers:
+  - "700476005"
+u_height: 2
+full_depth: true
+weight_kg: 4.5
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: eth0
+    type: 1000base-t
+  - name: eth1
+    type: 1000base-t
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+comments: Avaya IP Office 500 V2 Control Unit - stackable 2U control unit with 4 base card slots, SD card(s), supports IP phones, analog/digital cards, and expansion modules.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Avaya/IP-Office-500-V2.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: d3a5171285d836d7

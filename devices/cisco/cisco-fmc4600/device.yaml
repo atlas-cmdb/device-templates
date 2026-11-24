@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: Cisco FMC4600
+slug: cisco-fmc4600
+category: server
+form_factor: rack
+part_numbers:
+  - FMC4600
+u_height: 1
+full_depth: true
+weight_kg: 16.329
+airflow: front-to-rear
+interfaces:
+  - name: CIMC
+    label: o]
+    type: 1000base-t
+    mgmt_only: true
+  - name: eth0
+    label: "1"
+    type: 1000base-t
+    mgmt_only: true
+  - name: eth1
+    label: "2"
+    type: 1000base-t
+    mgmt_only: true
+  - name: eth2
+    type: 10gbase-x-sfpp
+  - name: eth3
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Con
+    label: IOIOI
+    type: rj-45
+module_bays:
+  - name: PS-1
+    bay_position: "1"
+  - name: PS-2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/security/firesight-management-center/datasheet-c78-736775.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/FMC4600.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e9a93519d55ddc4a

@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Synergy 480 Gen10
+slug: synergy-480-gen10
+category: compute_blade
+form_factor: blade
+part_numbers:
+  - 871940-B21
+u_height: 0
+full_depth: true
+subdevice_role: child
+weight_kg: 8
+module_bays:
+  - name: Mezzanine 1
+    bay_position: "1"
+  - name: Mezzanine 2
+    bay_position: "2"
+  - name: Mezzanine 3
+    bay_position: "3"
+links:
+  other:
+    - label: QuickSpecs
+      url: https://www.hpe.com/psnow/doc/a00008520enw
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Synergy-480-Gen10.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - full_depth
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: a53ee50f64e80f2f

@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: yamaha
+model: SWX2310-10G
+slug: swx2310-10g
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: port1.1
+    type: 1000base-t
+  - name: port1.2
+    type: 1000base-t
+  - name: port1.3
+    type: 1000base-t
+  - name: port1.4
+    type: 1000base-t
+  - name: port1.5
+    type: 1000base-t
+  - name: port1.6
+    type: 1000base-t
+  - name: port1.7
+    type: 1000base-t
+  - name: port1.8
+    type: 1000base-t
+  - name: port1.9
+    type: 1000base-x-sfp
+  - name: port1.10
+    type: 1000base-x-sfp
+console_ports:
+  - name: RJ-45 console port
+    type: rj-45
+  - name: USB console port
+    type: usb-mini-b
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 12
+links:
+  product_page: https://network.yamaha.com/products/switches/swx2310-10g/index
+comments: '"Intelligent" Layer 2 Switch, manufactured by YAMAHA.'
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/YAMAHA/SWX2310-10G.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 4583604bdc47f05c

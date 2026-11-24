@@ -1,0 +1,97 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: ASR1002-HX
+slug: asr1002-hx
+category: router
+form_factor: rack
+part_numbers:
+  - ASR1002-HX
+u_height: 2
+full_depth: true
+weight_kg: 15.42
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: GigabitEthernet0/0/0
+    type: 1000base-x-sfp
+  - name: GigabitEthernet0/0/1
+    type: 1000base-x-sfp
+  - name: GigabitEthernet0/0/2
+    type: 1000base-x-sfp
+  - name: GigabitEthernet0/0/3
+    type: 1000base-x-sfp
+  - name: GigabitEthernet0/0/4
+    type: 1000base-x-sfp
+  - name: GigabitEthernet0/0/5
+    type: 1000base-x-sfp
+  - name: GigabitEthernet0/0/6
+    type: 1000base-x-sfp
+  - name: GigabitEthernet0/0/7
+    type: 1000base-x-sfp
+  - name: TenGigabitEthernet0/1/0
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet0/1/1
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet0/1/2
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet0/1/3
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet0/1/4
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet0/1/5
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet0/1/6
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet0/1/7
+    type: 10gbase-x-sfpp
+  - name: GigabitEthernet0
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: con 0
+    type: rj-45
+module_bays:
+  - name: ASR1002-HX-EPA
+    label: EPA
+    bay_position: 0/2
+  - name: ASR1002-HX-NIM
+    label: NIM
+    bay_position: "1"
+  - name: ASR1002-HX-CRYPTO
+    label: CRYPTO
+    bay_position: "0"
+  - name: PSU0
+    description: Power module 0
+    bay_position: "0"
+  - name: PSU1
+    description: Power module 1
+    bay_position: "1"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/ASR1002-HX.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 9d32413d0887b951

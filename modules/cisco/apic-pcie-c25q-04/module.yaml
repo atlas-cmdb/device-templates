@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: APIC-PCIE-C25Q-04
+slug: apic-pcie-c25q-04
+kind: other
+part_numbers:
+  - APIC-PCIE-C25Q-04
+interfaces:
+  - name: Ethernet {module}/1
+    type: 25gbase-x-sfp28
+  - name: Ethernet {module}/2
+    type: 25gbase-x-sfp28
+  - name: Ethernet {module}/3
+    type: 25gbase-x-sfp28
+  - name: Ethernet {module}/4
+    type: 25gbase-x-sfp28
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/APIC-PCIE-C25Q-04.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 1dfdbfca8a2fdeca

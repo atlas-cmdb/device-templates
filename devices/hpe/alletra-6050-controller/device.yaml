@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Alletra 6050 Controller
+slug: alletra-6050-controller
+category: storage_array
+form_factor: blade
+u_height: 0
+full_depth: true
+subdevice_role: child
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0a
+    type: 1000base-t
+    mgmt_only: true
+  - name: eth0b
+    type: 1000base-t
+    mgmt_only: true
+  - name: eth0c
+    type: 1000base-t
+    mgmt_only: true
+  - name: eth0d
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+  - name: OCP Expansion slot
+    bay_position: OCP
+  - name: PCIe1
+    bay_position: PCIe1
+  - name: PCIe2
+    bay_position: PCIe2
+  - name: PCIe3
+    bay_position: PCIe3
+  - name: PCIe4
+    bay_position: PCIe4
+  - name: PCIe5
+    bay_position: PCIe5
+  - name: PCIe6
+    bay_position: PCIe6
+links:
+  other:
+    - label: HPE Alletra 6050 QuickSpecs
+      url: https://www.hpe.com/psnow/doc/a50002567enw
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Alletra-6050-Controller.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 1c060902c3256c1a

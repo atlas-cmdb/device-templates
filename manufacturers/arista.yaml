@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: arista
+name: Arista
+aliases:
+  - Arista Networks
+website: https://www.arista.com

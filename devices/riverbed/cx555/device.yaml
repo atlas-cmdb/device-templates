@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: riverbed
+model: CX555
+slug: cx555
+category: appliance
+form_factor: rack
+part_numbers:
+  - CX555
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: LAN0_0
+    type: 1000base-t
+  - name: WAN0_0
+    type: 1000base-t
+  - name: LAN_0_1
+    type: 1000base-t
+  - name: WAN0_1
+    type: 1000base-t
+  - name: Primary
+    type: 1000base-t
+  - name: Aux
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: de-9
+  - name: USB0
+    type: usb-a
+  - name: USB1
+    type: usb-a
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 100
+    allocated_draw_w: 45
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Riverbed/CX555.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 98d7d75d4c6648af

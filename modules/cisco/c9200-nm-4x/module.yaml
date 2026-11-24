@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: C9200-NM-4X
+slug: c9200-nm-4x
+kind: line_card
+part_numbers:
+  - C9200-NM-4X
+interfaces:
+  - name: TenGigabitEthernet1/{module}/1
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/{module}/2
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/{module}/3
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/{module}/4
+    type: 10gbase-x-sfpp
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/C9200-NM-4X.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 25fb9a774aae431a

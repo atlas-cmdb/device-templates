@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: opengear
+model: ACM7008-2-M
+slug: acm7008-2-m
+category: console_server
+form_factor: rack
+part_numbers:
+  - ACM7008-2-M
+u_height: 1
+full_depth: false
+weight_kg: 0.6
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: net1_copper
+    description: Combo Port with net1_sfp
+    type: 1000base-t
+  - name: net2_copper
+    description: Combo Port with net2_sfp
+    type: 1000base-t
+  - name: net1_sfp
+    description: Combo Port with net1_copper
+    type: 1000base-x-sfp
+  - name: net2_sfp
+    description: Combo Port with net2_copper
+    type: 1000base-x-sfp
+console_ports:
+  - name: Modem
+    description: V.92 POTS modem
+    type: rj-11
+console_server_ports:
+  - name: Port 1
+    type: rj-45
+  - name: Port 2
+    type: rj-45
+  - name: Port 3
+    type: rj-45
+  - name: Port 4
+    type: rj-45
+  - name: Port 5
+    type: rj-45
+  - name: Port 6
+    type: rj-45
+  - name: Port 7
+    type: rj-45
+  - name: Port 8
+    type: rj-45
+  - name: port9
+    type: usb-a
+  - name: port10
+    type: usb-a
+  - name: port11
+    type: usb-a
+  - name: port12
+    type: usb-a
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 12
+links:
+  datasheet: https://opengear.com/wp-content/uploads/2017/06/Remote_Site_Gateway-Data_Sheet.pdf
+comments: ACM7008 Console Server with 8x RJ45 and 4x USB Console Ports on the rear of the device.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Opengear/ACM7008-2-M.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: ea2d9a0c242ff515

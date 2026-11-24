@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: AP6020A
+slug: ap6020a
+category: pdu
+form_factor: rack
+part_numbers:
+  - AP6020A
+u_height: 1
+full_depth: false
+weight_kg: 1.5
+airflow: passive
+power:
+  outlet_count: 13
+power_ports:
+  - name: Source
+    type: iec-60320-c20
+power_outlets:
+  - name: Outlet 1
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 2
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 3
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 4
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 5
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 6
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 7
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 8
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 9
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 10
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 11
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 12
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 13
+    type: iec-60320-c13
+    power_port: Source
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+comments: APC NetShelter Basic Rack PDU, 0U, 1PH, 3.3kW, 100-240V 20A or 200-240V 16A, 13 C13 outlets, C20 inlet
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/AP6020A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 371ebcd43c6136c3

@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: AP4434
+slug: ap4434
+category: ats
+form_factor: rack
+part_numbers:
+  - AP4434
+u_height: 1
+full_depth: false
+weight_kg: 3.74
+airflow: passive
+power:
+  outlet_count: 9
+interfaces:
+  - name: Management
+    type: 100base-tx
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: rj-12
+power_ports:
+  - name: Source A
+    type: iec-60320-c20
+  - name: Source B
+    type: iec-60320-c20
+power_outlets:
+  - name: Outlet 1
+    type: iec-60320-c19
+  - name: Outlet 2
+    type: iec-60320-c13
+  - name: Outlet 3
+    type: iec-60320-c13
+  - name: Outlet 4
+    type: iec-60320-c13
+  - name: Outlet 5
+    type: iec-60320-c13
+  - name: Outlet 6
+    type: iec-60320-c13
+  - name: Outlet 7
+    type: iec-60320-c13
+  - name: Outlet 8
+    type: iec-60320-c13
+  - name: Outlet 9
+    type: iec-60320-c13
+images:
+  credit: NetBox devicetype-library contributors
+  rear: rear.webp
+comments: Rack ATS, 208V, 20A, C20 in, (8) C13 (1) C19 out
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/AP4434.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: ed0ee172e6e075e3

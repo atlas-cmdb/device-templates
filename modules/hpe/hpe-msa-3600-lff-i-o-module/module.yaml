@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: hpe
+model: HPE MSA 3600 LFF I/O Module
+slug: hpe-msa-3600-lff-i-o-module
+kind: other
+part_numbers:
+  - R0Q44-60001
+interfaces:
+  - name: Port IN/{module}/1-DP1
+    description: SAS Expansion Port Input
+    type: other
+  - name: Port OUT/{module}/2-DP1
+    description: SAS Expansion Port Output (Daisy Chain)
+    type: other
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/HPE/R0Q44-60001.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 30dd1e417cd04e1a

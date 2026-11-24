@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: d-link
+model: DCS-6315
+slug: dcs-6315
+category: network_switch
+form_factor: other
+part_numbers:
+  - DCS-6315
+u_height: 0
+full_depth: false
+airflow: passive
+interfaces:
+  - name: eth0
+    type: 100base-tx
+    poe_mode: pd
+    poe_type: type1-ieee802.3af
+module_bays:
+  - name: microSD
+    description: up to 64 GB
+    bay_position: microSD
+links:
+  product_page: https://www.dlink.com/uk/en/products/dcs-6315-hd-wdr-varifocal-outdoor-fixed-dome-network-camera-with-colour-night-vision
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/D-Link/dcs-6315.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+  import_hash: b54d6ab34381f094

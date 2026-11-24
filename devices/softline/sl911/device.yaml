@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: softline
+model: SL911
+slug: sl911
+category: server
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 20
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Eth1
+    type: 1000base-t
+  - name: Eth2
+    type: 1000base-t
+  - name: Eth3
+    type: 1000base-t
+  - name: Eth4
+    type: 1000base-t
+  - name: IPMI
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+comments: Softline Servers SL line, 2U, 8x3.5 bay Storage, Inwin RS208-02M-CR550.H case, use M1P2-5500V4V PSU or analog
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Softline/sl911.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 9813cd30c3def756

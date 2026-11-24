@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: phoenix-contact
+model: FL SWITCH EP7400-MCP-L-2TB
+slug: fl-switch-ep7400-mcp-l-2tb
+kind: other
+description: Intel Atom E3940 co-processor, 8GB RAM, Ubuntu 22.04 LTS, 2TB storage
+part_numbers:
+  - "1539666"
+interfaces:
+  - name: "{module}:mgmt"
+    type: 1000base-t
+    mgmt_only: true
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Phoenix Contact/FL-SWITCH-EP7400-MCP-L-2TB.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 61620bb27f74726c

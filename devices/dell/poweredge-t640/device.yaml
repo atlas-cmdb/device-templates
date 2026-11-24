@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge T640
+slug: poweredge-t640
+category: server
+form_factor: rack
+u_height: 5
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: TenGig-E 1
+    type: 10gbase-t
+  - name: TenGig-E 2
+    type: 10gbase-t
+  - name: iDRAC
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+power_ports:
+  - name: Power 1
+    type: iec-60320-c14
+  - name: Power 2
+    type: iec-60320-c14
+module_bays:
+  - name: PCIe Slot 1
+    description: PCIe 3.0 x16 Full Length
+    bay_position: PCIe-1
+  - name: PCIe Slot 2
+    description: PCIe 3.0 x4 Half Length
+    bay_position: PCIe-2
+  - name: PCIe Slot 3
+    description: PCIe 3.0 x16 Full Length
+    bay_position: PCIe-3
+  - name: PCIe Slot 4
+    description: PCIe 3.0 x8 Half Length
+    bay_position: PCIe-4
+  - name: PCIe Slot 5
+    description: PCIe 3.0 x4 Half Length
+    bay_position: PCIe-5
+  - name: PCIe Slot 6
+    description: PCIe 3.0 x16 Full Length
+    bay_position: PCIe-6
+  - name: PCIe Slot 7
+    description: PCIe 3.0 x8 Half Length
+    bay_position: PCIe-7
+  - name: PCIe Slot 8
+    description: PCIe 3.0 x16 Full Length
+    bay_position: PCIe-8
+links:
+  manual: https://i.dell.com/sites/csdocuments/product_docs/en/poweredge-t640-technical-guide.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-T640.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 65a86ae82df7aced

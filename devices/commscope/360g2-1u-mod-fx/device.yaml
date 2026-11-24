@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: commscope
+model: 360G2-1U-MOD-FX
+slug: 360g2-1u-mod-fx
+category: patch_panel
+form_factor: rack
+description: 360G2-1U-MOD-FX - G2 1U Fixed Modular Cassette 4-slot Fiber Panel, unloaded
+part_numbers:
+  - "760193763"
+u_height: 1
+full_depth: false
+weight_kg: 4.6
+airflow: passive
+module_bays:
+  - name: "1"
+    description: Accepts G2 Module
+    bay_position: "1"
+  - name: "2"
+    description: Accepts G2 Module
+    bay_position: "2"
+  - name: "3"
+    description: Accepts G2 Module
+    bay_position: "3"
+  - name: "4"
+    description: Accepts G2 Module
+    bay_position: "4"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Commscope/360G2-1U-MOD-FX.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: f7425e576fa6f485

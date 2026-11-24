@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: vertiv
+model: VP5N11A0
+slug: vp5n11a0
+category: pdu
+form_factor: rack
+part_numbers:
+  - MNS5M1R5-06S153-1ST5A0H10-S
+u_height: 1
+full_depth: false
+weight_kg: 4.54
+airflow: passive
+power:
+  outlet_count: 6
+power_ports:
+  - name: Power
+    type: nema-5-15p
+    maximum_draw_w: 1400
+power_outlets:
+  - name: "1"
+    type: nema-5-15r
+    power_port: Power
+  - name: "2"
+    type: nema-5-15r
+    power_port: Power
+  - name: "3"
+    type: nema-5-15r
+    power_port: Power
+  - name: "4"
+    type: nema-5-15r
+    power_port: Power
+  - name: "5"
+    type: nema-5-15r
+    power_port: Power
+  - name: "6"
+    type: nema-5-15r
+    power_port: Power
+comments: rPDU, Switched Unit Level Monitoring EC, 15A, 120V, 1.4kW, Horizontal, (6) NEMA 5-15R, 10ft / 3m power cord with 5-15P, Black Powder Coat
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Vertiv/VP5N11A0.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 5df1860eecb5e819

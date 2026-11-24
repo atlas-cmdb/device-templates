@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: asus
+model: Pro WS X570-ACE
+slug: pro-ws-x570-ace
+category: compute_blade
+form_factor: blade
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 1.5
+airflow: passive
+interfaces:
+  - name: BMC
+    description: RTL8117 pseudo BMC
+    type: 1000base-t
+    mgmt_only: true
+  - name: Gig-E 1
+    type: 1000base-t
+module_bays:
+  - name: CPU 0
+    description: AMD AM4 Socket
+    bay_position: "1"
+  - name: DIMM B1
+    description: DDR4 DIMM slot
+    bay_position: "2"
+  - name: DIMM B2
+    description: DDR4 DIMM slot
+    bay_position: "3"
+  - name: DIMM A1
+    description: DDR4 DIMM slot
+    bay_position: "4"
+  - name: DIMM A2
+    description: DDR4 DIMM slot
+    bay_position: "5"
+  - name: PCIe 1
+    description: PCIe 4.0 x16 slot
+    bay_position: "6"
+  - name: PCIe 2
+    description: PCIe 4.0 8x (in x16 slot)
+    bay_position: "7"
+  - name: PCIe 3
+    description: PCIe 4.0 x1 slot
+    bay_position: "8"
+  - name: PCIe 4
+    description: PCIe 4.0 8x (in x16 slot)
+    bay_position: "9"
+  - name: M.2 1
+    description: PCIe 4.0 x4 (M-key 22110, 2280, 2260, 2242)
+    bay_position: "10"
+  - name: M.2 2
+    description: PCIe 4.0 x2 (M-key 2280, 2260, 2242)
+    bay_position: "11"
+links:
+  other:
+    - label: Pro WS X570-ACE
+      url: https://www.asus.com/us/motherboards-components/motherboards/all-series/pro-ws-x570-ace/
+comments: AMD AM4 X570 ATX Workstation motherboard with 3 PCIe 4.0 x16, 14 with IR3555 power stages, DDR4 ECC memory support, Intel Gigabit LAN, dual M.2, U.2, and ASUS Control Center Express
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/ASUS/Pro-WS-X570-ACE.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 3dc4d662dccbbb76

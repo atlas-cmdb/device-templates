@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Aruba EC-S
+slug: aruba-ec-s
+category: server
+form_factor: rack
+part_numbers:
+  - "200877"
+u_height: 1
+full_depth: false
+weight_kg: 4.99
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: lan0
+    label: lan0
+    type: 1000base-t
+  - name: wan0
+    label: wan0
+    type: 1000base-t
+  - name: lan1
+    label: lan1
+    type: 1000base-t
+  - name: wan1
+    label: wan1
+    type: 1000base-t
+  - name: lan2
+    label: lan2
+    type: 1000base-t
+  - name: wan2
+    label: wan2
+    type: 1000base-t
+  - name: mgmt0
+    label: mgmt0
+    type: 1000base-t
+    mgmt_only: true
+  - name: mgmt1
+    label: mgmt1
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: console
+    label: console
+    type: rj-45
+power_ports:
+  - name: PS1
+    label: Power
+    type: iec-60320-c14
+    maximum_draw_w: 100
+module_bays:
+  - name: Fiber Module
+    bay_position: "1"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Aruba-EC-S.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 2b13ea7f2832365e

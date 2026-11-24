@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge FC630
+slug: poweredge-fc630
+category: compute_blade
+form_factor: blade
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 7.43
+interfaces:
+  - name: iDRAC
+    type: 1000base-kx
+    mgmt_only: true
+module_bays:
+  - name: Slot A bNDC
+    bay_position: A
+  - name: Slot B Mezzanine
+    bay_position: B
+  - name: Slot C Mezzanine
+    bay_position: C
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-FC630.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 90937f7de23bcd0c

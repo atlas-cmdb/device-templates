@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../../schema/rack.schema.json
+manufacturer: digitus
+model: DN-19 12-U
+slug: dn-19-12-u
+form_factor: wall-cabinet
+description: 12HE Wall Mounted Cabinet [Datasheet DE](https://www.digitec.ch/Files/8/8/4/6/5/2/starter_basic.pdf)
+u_height: 12
+starting_unit: 1
+rack_width: 19
+outer_width_mm: 600
+outer_height_mm: 643
+outer_depth_mm: 450
+mounting_depth_mm: 350
+weight_kg: 26
+max_load_kg: 100
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: rack-types/Digitus/DN-19-12-U.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - description
+    - manufacturer
+    - max_load_kg
+    - model
+    - mounting_depth_mm
+    - outer_depth_mm
+    - outer_height_mm
+    - outer_width_mm
+    - rack_width
+    - slug
+    - starting_unit
+    - u_height
+    - weight_kg
+  import_hash: ed44b2302706d9f6

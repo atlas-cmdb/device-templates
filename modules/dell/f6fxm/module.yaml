@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: dell
+model: F6FXM
+slug: f6fxm
+kind: other
+part_numbers:
+  - F6FXM
+interfaces:
+  - name: "{module}-100GbE-1"
+    label: "1"
+    type: 100gbase-x-qsfp28
+  - name: "{module}-100GbE-2"
+    label: "2"
+    type: 100gbase-x-qsfp28
+comments: Mellanox ConnectX-6 DX Dual Port 100GbE QSFP56 Network Adapter, Low Profile
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Dell/F6FXM.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 78b4fcf16c4cf5ac

@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: BX1500M
+slug: bx1500m
+category: pdu
+form_factor: zero-u
+part_numbers:
+  - BX1500M
+u_height: 0
+full_depth: false
+weight_kg: 11.022
+power:
+  outlet_count: 10
+console_ports:
+  - name: Serial
+    type: rj-45
+power_ports:
+  - name: Power Port
+    type: nema-5-15p
+power_outlets:
+  - name: Power Outlet Surge Protection 1
+    type: nema-5-15r
+  - name: Power Outlet Surge Protection 2
+    type: nema-5-15r
+  - name: Power Outlet Surge Protection 3
+    type: nema-5-15r
+  - name: Power Outlet Surge Protection 4
+    type: nema-5-15r
+  - name: Power Outlet Surge Protection 5
+    type: nema-5-15r
+  - name: Power Outlet Battery Backup 1
+    type: nema-5-15r
+  - name: Power Outlet Battery Backup 2
+    type: nema-5-15r
+  - name: Power Outlet Battery Backup 3
+    type: nema-5-15r
+  - name: Power Outlet Battery Backup 4
+    type: nema-5-15r
+  - name: Power Outlet Battery Backup 5
+    type: nema-5-15r
+links:
+  product_page: https://www.apc.com/us/en/product/BX1500M/apc-backups-pro-1500va-tower-120v-10-nema-515r-outlets-avr-lcd
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/BX1500M.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e1160468c55aa49a

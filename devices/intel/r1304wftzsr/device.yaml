@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: intel
+model: R1304WFTZSR
+slug: r1304wftzsr
+category: server
+form_factor: rack
+u_height: 1
+full_depth: true
+weight_kg: 18
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Gig-E 1
+    type: 10gbase-t
+  - name: Gig-E 2
+    type: 10gbase-t
+  - name: IPMI
+    description: Dedicated IPMI LAN port
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: PCIe-1 x16
+    bay_position: PCIe-1
+  - name: PCIe-2 x16
+    bay_position: PCIe-2
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+comments: R1304WFTZSR (https://ark.intel.com/content/www/us/en/ark/products/192586/intel-server-system-r1304wftzsr.html)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Intel/R1304WFTZSR.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 250b32448e0cf618

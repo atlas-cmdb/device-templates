@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: hpe
+model: FlexFabric 7900 1800w AC Power Supply Unit
+slug: flexfabric-7900-1800w-ac-power-supply-unit
+kind: psu
+part_numbers:
+  - JG840A
+power_ports:
+  - name: PS{module}
+    type: iec-60320-c16
+    maximum_draw_w: 1800
+links:
+  datasheet: https://support.hpe.com/hpesc/public/docDisplay?docId=c04932605&docLocale=en_US
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/HPE/JG840A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: 6c9f6d85f2a2b406

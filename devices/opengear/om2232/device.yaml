@@ -1,0 +1,143 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: opengear
+model: OM2232
+slug: om2232
+category: console_server
+form_factor: rack
+part_numbers:
+  - OM2232
+u_height: 1
+full_depth: false
+weight_kg: 3.5
+airflow: passive
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0
+    type: 1000base-t
+    mgmt_only: true
+  - name: eth1
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: USB Console
+    type: usb-micro-b
+console_server_ports:
+  - name: Port 1
+    type: rj-45
+  - name: Port 2
+    type: rj-45
+  - name: Port 3
+    type: rj-45
+  - name: Port 4
+    type: rj-45
+  - name: Port 5
+    type: rj-45
+  - name: Port 6
+    type: rj-45
+  - name: Port 7
+    type: rj-45
+  - name: Port 8
+    type: rj-45
+  - name: Port 9
+    type: rj-45
+  - name: Port 10
+    type: rj-45
+  - name: Port 11
+    type: rj-45
+  - name: Port 12
+    type: rj-45
+  - name: Port 13
+    type: rj-45
+  - name: Port 14
+    type: rj-45
+  - name: Port 15
+    type: rj-45
+  - name: Port 16
+    type: rj-45
+  - name: Port 17
+    type: rj-45
+  - name: Port 18
+    type: rj-45
+  - name: Port 19
+    type: rj-45
+  - name: Port 20
+    type: rj-45
+  - name: Port 21
+    type: rj-45
+  - name: Port 22
+    type: rj-45
+  - name: Port 23
+    type: rj-45
+  - name: Port 24
+    type: rj-45
+  - name: Port 25
+    type: rj-45
+  - name: Port 26
+    type: rj-45
+  - name: Port 27
+    type: rj-45
+  - name: Port 28
+    type: rj-45
+  - name: Port 29
+    type: rj-45
+  - name: Port 30
+    type: rj-45
+  - name: Port 31
+    type: rj-45
+  - name: Port 32
+    type: rj-45
+  - name: USB A
+    type: usb-a
+  - name: USB B
+    type: usb-a
+  - name: USB C
+    type: usb-a
+  - name: USB D
+    type: usb-a
+  - name: USB E
+    type: usb-a
+  - name: USB F
+    type: usb-a
+  - name: USB G
+    type: usb-a
+  - name: USB H
+    type: usb-a
+  - name: Front Upper USB
+    type: usb-a
+  - name: Front Lower USB
+    type: usb-a
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    allocated_draw_w: 30
+  - name: PS2
+    type: iec-60320-c14
+    allocated_draw_w: 30
+links:
+  datasheet: https://resources.opengear.com/om/datasheets/om2200/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Opengear/OM2232.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: cb3790791fdd1383

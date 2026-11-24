@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fs
+model: FMU-MC042733
+slug: fmu-mc042733
+category: patch_panel
+form_factor: blade
+part_numbers:
+  - "42972"
+u_height: 0
+full_depth: false
+subdevice_role: child
+front_ports:
+  - name: "1270"
+    type: lc
+    rear_port: Line
+    rear_port_position: 1
+  - name: "1290"
+    type: lc
+    rear_port: Line
+    rear_port_position: 2
+  - name: "1310"
+    type: lc
+    rear_port: Line
+    rear_port_position: 3
+  - name: "1330"
+    type: lc
+    rear_port: Line
+    rear_port_position: 4
+rear_ports:
+  - name: Line
+    type: lc
+    positions: 5
+links:
+  product_page: https://www.fs.com/products/42972.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/FS/FMU-MC042733.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - front_ports
+    - full_depth
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 5fa2324c28cded4b

@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ciena
+model: Waveserver Ai
+slug: waveserver-ai
+category: optical_transport
+form_factor: rack
+part_numbers:
+  - 186-1010-900
+u_height: 1
+full_depth: true
+weight_kg: 25
+airflow: front-to-rear
+power:
+  psu_count: 2
+module_bays:
+  - name: Access Panel
+    description: 186-1031-900
+    bay_position: AP
+  - name: Module 1
+    description: 186-1800-900/186-1601-900/186-1601-902/186-1601-901/186-1603-900/186-1801-900
+    bay_position: "1"
+  - name: Module 2
+    description: 186-1800-900/186-1601-900/186-1601-902/186-1601-901/186-1603-900/186-1801-900
+    bay_position: "2"
+  - name: Module 3
+    description: 186-1800-900/186-1601-900/186-1601-902/186-1601-901/186-1603-900/186-1801-900
+    bay_position: "3"
+  - name: PSU-1
+    description: 186-1510-900 AC/186-1511-900 DC
+    bay_position: PSU-1
+  - name: PSU-2
+    description: 186-1510-900 AC/186-1511-900 DC
+    bay_position: PSU-2
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ciena/waveserver-ai.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: c51defd3e96f64e5

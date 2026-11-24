@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: certa
+model: EBM-240-9AH
+slug: ebm-240-9ah
+category: ups_battery_pack
+form_factor: rack
+part_numbers:
+  - EBM-240-9AH
+u_height: 2
+full_depth: true
+weight_kg: 60.5
+power:
+  psu_count: 2
+console_ports:
+  - name: Battery Detect 1
+    type: rj-45
+  - name: Battery Detect 2
+    type: rj-45
+power_ports:
+  - name: EBM Connector 1
+    type: other
+  - name: EBM Connector 2
+    type: other
+comments: Rackmount, 9AH external battery pack for C650 series
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Certa/EBM-240-9AH.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 65737a46a8505de1

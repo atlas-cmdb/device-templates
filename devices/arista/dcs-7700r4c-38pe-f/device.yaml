@@ -1,0 +1,129 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: arista
+model: DCS-7700R4C-38PE-F
+slug: dcs-7700r4c-38pe-f
+category: network_switch
+form_factor: rack
+part_numbers:
+  - DCS-7700R4C-38PE-F
+u_height: 2
+full_depth: true
+weight_kg: 20
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Management1
+    type: 1000base-t
+  - name: Management2
+    type: 1000base-t
+  - name: Host1
+    type: 800gbase-x-osfp
+  - name: Host2
+    type: 800gbase-x-osfp
+  - name: Host3
+    type: 800gbase-x-osfp
+  - name: Host4
+    type: 800gbase-x-osfp
+  - name: Host5
+    type: 800gbase-x-osfp
+  - name: Host6
+    type: 800gbase-x-osfp
+  - name: Host7
+    type: 800gbase-x-osfp
+  - name: Host8
+    type: 800gbase-x-osfp
+  - name: Host9
+    type: 800gbase-x-osfp
+  - name: Host10
+    type: 800gbase-x-osfp
+  - name: Host11
+    type: 800gbase-x-osfp
+  - name: Host12
+    type: 800gbase-x-osfp
+  - name: Host13
+    type: 800gbase-x-osfp
+  - name: Host14
+    type: 800gbase-x-osfp
+  - name: Host15
+    type: 800gbase-x-osfp
+  - name: Host16
+    type: 800gbase-x-osfp
+  - name: Host17
+    type: 800gbase-x-osfp
+  - name: Host18
+    type: 800gbase-x-osfp
+  - name: Fabric1
+    type: 800gbase-x-osfp
+  - name: Fabric2
+    type: 800gbase-x-osfp
+  - name: Fabric3
+    type: 800gbase-x-osfp
+  - name: Fabric4
+    type: 800gbase-x-osfp
+  - name: Fabric5
+    type: 800gbase-x-osfp
+  - name: Fabric6
+    type: 800gbase-x-osfp
+  - name: Fabric7
+    type: 800gbase-x-osfp
+  - name: Fabric8
+    type: 800gbase-x-osfp
+  - name: Fabric9
+    type: 800gbase-x-osfp
+  - name: Fabric10
+    type: 800gbase-x-osfp
+  - name: Fabric11
+    type: 800gbase-x-osfp
+  - name: Fabric12
+    type: 800gbase-x-osfp
+  - name: Fabric13
+    type: 800gbase-x-osfp
+  - name: Fabric14
+    type: 800gbase-x-osfp
+  - name: Fabric15
+    type: 800gbase-x-osfp
+  - name: Fabric16
+    type: 800gbase-x-osfp
+  - name: Fabric17
+    type: 800gbase-x-osfp
+  - name: Fabric18
+    type: 800gbase-x-osfp
+  - name: Fabric19
+    type: 800gbase-x-osfp
+  - name: Fabric20
+    type: 800gbase-x-osfp
+console_ports:
+  - name: Console
+    type: rj-45
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+links:
+  product_page: https://www.arista.com/en/products/7700r4-series
+comments: The Arista DCS-7700R4C-38PE-F is a 2RU distributed leaf switch in the 7700R4 Series, offering 18 x 800GbE host ports and 20 x 800GbE fabric ports. It provides 14.4 Tbps of wire-speed performance with 16GB of buffers, optimized for AI/ML workloads.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Arista/DCS-7700R4C-38PE-F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 3789cf466752d8fb

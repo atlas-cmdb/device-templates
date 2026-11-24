@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: VIC 15425
+slug: vic-15425
+kind: other
+part_numbers:
+  - UCSC-P-V5Q50G-D
+interfaces:
+  - name: Ethernet {module}/1
+    type: 50gbase-x-sfp56
+  - name: Ethernet {module}/2
+    type: 50gbase-x-sfp56
+  - name: Ethernet {module}/3
+    type: 50gbase-x-sfp56
+  - name: Ethernet {module}/4
+    type: 50gbase-x-sfp56
+comments: Cisco UCS VIC 15425 Quad port 10/25/50G PCIe for Cisco UCS C-Series M7 rack servers
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/VIC-15425.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: fdcb5c6205259a27

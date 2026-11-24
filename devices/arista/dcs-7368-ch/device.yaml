@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: arista
+model: DCS-7368-CH
+slug: dcs-7368-ch
+category: network_switch
+form_factor: rack
+part_numbers:
+  - DCS-7368-CH
+u_height: 4
+full_depth: true
+weight_kg: 13.6
+power:
+  psu_count: 4
+module_bays:
+  - name: Slot 1
+    label: Supervisor
+    bay_position: "1"
+  - name: Slot 2
+    label: Line Card
+    bay_position: "2"
+  - name: Slot 3
+    label: Line Card
+    bay_position: "3"
+  - name: Slot 4
+    label: Line Card
+    bay_position: "4"
+  - name: Slot 5
+    label: Line Card
+    bay_position: "5"
+  - name: Slot 6
+    label: Line Card
+    bay_position: "6"
+  - name: Slot 7
+    label: Line Card
+    bay_position: "7"
+  - name: Slot 8
+    label: Line Card
+    bay_position: "8"
+  - name: Slot 9
+    label: Line Card
+    bay_position: "9"
+  - name: Switchcard Slot
+    label: Switchcard
+    bay_position: SW1
+  - name: PSU Slot 1
+    bay_position: P1
+  - name: PSU Slot 2
+    bay_position: P2
+  - name: PSU Slot 3
+    bay_position: P3
+  - name: PSU Slot 4
+    bay_position: P4
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.arista.com/assets/data/pdf/Datasheets/7368X4-Datasheet.pdf
+comments: Arista 7368 empty chassis, 1 supervisor slot, 8 module slots.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Arista/DCS-7368-CH.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 9eae74b181df5827

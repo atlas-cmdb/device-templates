@@ -1,0 +1,154 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: opengear
+model: IM7248-2-DAC-LMV
+slug: im7248-2-dac-lmv
+category: console_server
+form_factor: rack
+part_numbers:
+  - IM7248-2-DAC-LMV
+u_height: 1
+full_depth: false
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0
+    type: 1000base-t
+    mgmt_only: true
+  - name: eth1
+    type: 1000base-t
+    mgmt_only: true
+  - name: eth2
+    type: lte
+    mgmt_only: true
+  - name: wlan0
+    type: ieee802.11n
+    mgmt_only: true
+console_ports:
+  - name: Console
+    type: rj-45
+console_server_ports:
+  - name: Port 1
+    type: rj-45
+  - name: Port 2
+    type: rj-45
+  - name: Port 3
+    type: rj-45
+  - name: Port 4
+    type: rj-45
+  - name: Port 5
+    type: rj-45
+  - name: Port 6
+    type: rj-45
+  - name: Port 7
+    type: rj-45
+  - name: Port 8
+    type: rj-45
+  - name: Port 9
+    type: rj-45
+  - name: Port 10
+    type: rj-45
+  - name: Port 11
+    type: rj-45
+  - name: Port 12
+    type: rj-45
+  - name: Port 13
+    type: rj-45
+  - name: Port 14
+    type: rj-45
+  - name: Port 15
+    type: rj-45
+  - name: Port 16
+    type: rj-45
+  - name: Port 17
+    type: rj-45
+  - name: Port 18
+    type: rj-45
+  - name: Port 19
+    type: rj-45
+  - name: Port 20
+    type: rj-45
+  - name: Port 21
+    type: rj-45
+  - name: Port 22
+    type: rj-45
+  - name: Port 23
+    type: rj-45
+  - name: Port 24
+    type: rj-45
+  - name: Port 25
+    type: rj-45
+  - name: Port 26
+    type: rj-45
+  - name: Port 27
+    type: rj-45
+  - name: Port 28
+    type: rj-45
+  - name: Port 29
+    type: rj-45
+  - name: Port 30
+    type: rj-45
+  - name: Port 31
+    type: rj-45
+  - name: Port 32
+    type: rj-45
+  - name: Port 33
+    type: rj-45
+  - name: Port 34
+    type: rj-45
+  - name: Port 35
+    type: rj-45
+  - name: Port 36
+    type: rj-45
+  - name: Port 37
+    type: rj-45
+  - name: Port 38
+    type: rj-45
+  - name: Port 39
+    type: rj-45
+  - name: Port 40
+    type: rj-45
+  - name: Port 41
+    type: rj-45
+  - name: Port 42
+    type: rj-45
+  - name: Port 43
+    type: rj-45
+  - name: Port 44
+    type: rj-45
+  - name: Port 45
+    type: rj-45
+  - name: Port 46
+    type: rj-45
+  - name: Port 47
+    type: rj-45
+  - name: Port 48
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    allocated_draw_w: 15
+  - name: PS2
+    type: iec-60320-c14
+    allocated_draw_w: 15
+comments: 48 serial software selectable, dual AC, Dual 1 GbE Ethernet or fiber SFP, 16GB flash, Verizon 4G LTE cellular, v.92 modem, - No Power Cord
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Opengear/IM7248-2-DAC-LMV.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: e3781565ab7e65b7

@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: mellanox
+model: SN2100
+slug: sn2100
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 4.54
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0
+    description: Management
+    type: 1000base-t
+  - name: swp1
+    type: 100gbase-x-qsfp28
+  - name: swp2
+    type: 100gbase-x-qsfp28
+  - name: swp3
+    type: 100gbase-x-qsfp28
+  - name: swp4
+    type: 100gbase-x-qsfp28
+  - name: swp5
+    type: 100gbase-x-qsfp28
+  - name: swp6
+    type: 100gbase-x-qsfp28
+  - name: swp7
+    type: 100gbase-x-qsfp28
+  - name: swp8
+    type: 100gbase-x-qsfp28
+  - name: swp9
+    type: 100gbase-x-qsfp28
+  - name: swp10
+    type: 100gbase-x-qsfp28
+  - name: swp11
+    type: 100gbase-x-qsfp28
+  - name: swp12
+    type: 100gbase-x-qsfp28
+  - name: swp13
+    type: 100gbase-x-qsfp28
+  - name: swp14
+    type: 100gbase-x-qsfp28
+  - name: swp15
+    type: 100gbase-x-qsfp28
+  - name: swp16
+    type: 100gbase-x-qsfp28
+console_ports:
+  - name: con0
+    type: usb-mini-a
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+comments: Mellanox SN2100 (https://network.nvidia.com/sites/default/files/doc-2020/pb-sn2100.pdf)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Mellanox/SN2100.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: b7d9dfa22128b531

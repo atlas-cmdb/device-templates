@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: hpe
+model: Aruba J9538A
+slug: aruba-j9538a
+kind: other
+part_numbers:
+  - J9538A
+interfaces:
+  - name: "{module}1"
+    type: 10gbase-x-sfpp
+  - name: "{module}2"
+    type: 10gbase-x-sfpp
+  - name: "{module}3"
+    type: 10gbase-x-sfpp
+  - name: "{module}4"
+    type: 10gbase-x-sfpp
+  - name: "{module}5"
+    type: 10gbase-x-sfpp
+  - name: "{module}6"
+    type: 10gbase-x-sfpp
+  - name: "{module}7"
+    type: 10gbase-x-sfpp
+  - name: "{module}8"
+    type: 10gbase-x-sfpp
+comments: HP J9538A 8p 10G-GbE SFP+ v2 zl Module
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/HPE/Aruba-J9538A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 4a757e2760f1a906

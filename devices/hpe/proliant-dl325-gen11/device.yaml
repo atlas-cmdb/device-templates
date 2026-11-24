@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: ProLiant DL325 Gen11
+slug: proliant-dl325-gen11
+category: server
+form_factor: rack
+u_height: 1
+full_depth: true
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: iLO
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: PSU-1
+    bay_position: PSU-1
+  - name: PSU-2
+    bay_position: PSU-2
+  - name: FlexLOM
+    bay_position: FlexLOM
+  - name: PCIe-1 Gen5 raiser
+    bay_position: PCIe-1
+  - name: PCIe-2 NVME
+    description: Optional NS204i-u hot-plug NVME
+    bay_position: PCIe-2
+  - name: PCIe-3 Gen5 raiser
+    bay_position: PCIe-3
+  - name: OCP-1
+    description: OCP 3.0
+    bay_position: OCP-1
+  - name: OCP-2
+    description: OCP 3.0
+    bay_position: OCP-2
+links:
+  datasheet: https://www.hpe.com/psnow/doc/PSN1014689141NGEN
+  manual: https://www.hpe.com/psnow/doc/a50004297enw.pdf?jumpid=in_pdp-psnow-qs
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/ProLiant-DL325-Gen11.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+  import_hash: bd161287e54c2a0f

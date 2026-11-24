@@ -1,0 +1,204 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: nokia
+model: 7250 IXR-Xs
+slug: 7250-ixr-xs
+category: router
+form_factor: rack
+u_height: 1
+full_depth: false
+power:
+  psu_count: 2
+interfaces:
+  - name: Management
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Console
+    type: rj-45
+module_bays:
+  - name: PS1
+    bay_position: PS1
+  - name: PS2
+    bay_position: PS2
+  - name: c1
+    label: QSFP-DD
+    bay_position: c1
+  - name: c2
+    label: QSFP-DD
+    bay_position: c2
+  - name: c3
+    label: QSFP-DD
+    bay_position: c3
+  - name: c4
+    label: QSFP-DD
+    bay_position: c4
+  - name: c5
+    label: QSFP-DD
+    bay_position: c5
+  - name: c6
+    label: QSFP-DD
+    bay_position: c6
+  - name: c7
+    label: SFP56
+    bay_position: c7
+  - name: c8
+    label: SFP56
+    bay_position: c8
+  - name: c9
+    label: SFP56
+    bay_position: c9
+  - name: c10
+    label: SFP56
+    bay_position: c10
+  - name: c11
+    label: SFP56
+    bay_position: c11
+  - name: c12
+    label: SFP56
+    bay_position: c12
+  - name: c13
+    label: SFP56
+    bay_position: c13
+  - name: c14
+    label: SFP56
+    bay_position: c14
+  - name: c15
+    label: SFP56
+    bay_position: c15
+  - name: c16
+    label: SFP56
+    bay_position: c16
+  - name: c17
+    label: SFP56
+    bay_position: c17
+  - name: c18
+    label: SFP56
+    bay_position: c18
+  - name: c19
+    label: SFP56
+    bay_position: c19
+  - name: c20
+    label: SFP56
+    bay_position: c20
+  - name: c21
+    label: SFP56
+    bay_position: c21
+  - name: c22
+    label: SFP56
+    bay_position: c22
+  - name: c23
+    label: SFP56
+    bay_position: c23
+  - name: c24
+    label: SFP56
+    bay_position: c24
+  - name: c25
+    label: SFP56
+    bay_position: c25
+  - name: c26
+    label: SFP56
+    bay_position: c26
+  - name: c27
+    label: SFP56
+    bay_position: c27
+  - name: c28
+    label: SFP56
+    bay_position: c28
+  - name: c29
+    label: SFP56
+    bay_position: c29
+  - name: c30
+    label: SFP56
+    bay_position: c30
+  - name: c31
+    label: SFP56
+    bay_position: c31
+  - name: c32
+    label: SFP56
+    bay_position: c32
+  - name: c33
+    label: SFP56
+    bay_position: c33
+  - name: c34
+    label: SFP56
+    bay_position: c34
+  - name: c35
+    label: SFP56
+    bay_position: c35
+  - name: c36
+    label: SFP56
+    bay_position: c36
+  - name: c37
+    label: SFP56
+    bay_position: c37
+  - name: c38
+    label: SFP56
+    bay_position: c38
+  - name: c39
+    label: SFP56
+    bay_position: c39
+  - name: c40
+    label: SFP56
+    bay_position: c40
+  - name: c41
+    label: SFP56
+    bay_position: c41
+  - name: c42
+    label: SFP56
+    bay_position: c42
+  - name: c43
+    label: SFP56
+    bay_position: c43
+  - name: c44
+    label: SFP56
+    bay_position: c44
+  - name: c45
+    label: SFP56
+    bay_position: c45
+  - name: c46
+    label: SFP56
+    bay_position: c46
+  - name: c47
+    label: SFP56
+    bay_position: c47
+  - name: c48
+    label: SFP56
+    bay_position: c48
+  - name: c49
+    label: SFP56
+    bay_position: c49
+  - name: c50
+    label: SFP56
+    bay_position: c50
+  - name: c51
+    label: SFP56
+    bay_position: c51
+  - name: c52
+    label: SFP56
+    bay_position: c52
+  - name: c53
+    label: SFP56
+    bay_position: c53
+  - name: c54
+    label: SFP56
+    bay_position: c54
+comments: Nokia 7250 IXR-X series, 1RU. 6x 400GE QSFP-DD and 48x 56G SFP-56 ports (all transceiver module bays). Part of the Nokia 7250 IXR-X series.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Nokia/7250-IXR-Xs.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+  import_hash: 7a7d8e94c6fcff85

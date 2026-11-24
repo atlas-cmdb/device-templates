@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cyberpower
+model: CPS1215RMS
+slug: cps1215rms
+category: pdu
+form_factor: rack
+part_numbers:
+  - cps1215rms
+u_height: 1
+full_depth: false
+power:
+  outlet_count: 12
+power_ports:
+  - name: Power Port 1
+    type: nema-5-15p
+    maximum_draw_w: 1800
+power_outlets:
+  - name: Front Outlet 1
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: Front Outlet 2
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: Front Outlet 3
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: Front Outlet 4
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: Front Outlet 5
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: Front Outlet 6
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: Rear Outlet 1
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: Rear Outlet 2
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: Rear Outlet 3
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: Rear Outlet 4
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: Rear Outlet 5
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: Rear Outlet 6
+    type: nema-5-15r
+    power_port: Power Port 1
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/CyberPower/CPS1215RMS.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 01187149b2d1d4fc

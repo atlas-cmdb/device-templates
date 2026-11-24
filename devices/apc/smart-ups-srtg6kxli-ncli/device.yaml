@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: Smart-UPS SRTG6KXLI-NCLI
+slug: smart-ups-srtg6kxli-ncli
+category: ups
+form_factor: rack
+part_numbers:
+  - SRTG6KXLI-NCLI
+u_height: 4
+full_depth: true
+weight_kg: 55.9
+airflow: passive
+power:
+  outlet_count: 4
+  psu_count: 2
+console_ports:
+  - name: Serial
+    type: rj-45
+  - name: USB
+    type: usb-b
+power_ports:
+  - name: Source
+    description: "Hard wire 3-wire (1P + N + E), input voltage: 100-285 V, 40-70 Hz, 30 A max"
+    type: hardwired
+    maximum_draw_w: 6600
+    allocated_draw_w: 6000
+  - name: XLBP Source
+    type: dc-terminal
+power_outlets:
+  - name: Outlet 1
+    description: Sine wave, 230V nominal, max 10A per outlet
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 2
+    description: Sine wave, 230V nominal, max 10A per outlet
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 3
+    description: Sine wave, 230V nominal, max 16A
+    type: iec-60320-c19
+    power_port: Source
+  - name: Hardwire Output
+    type: hardwired
+    power_port: Source
+module_bays:
+  - name: SmartSlot
+    bay_position: SmartSlot
+comments: APC Smart-UPS On-Line, 6kVA, Rack/Tower, 230V, 2x IEC C13 + 1x IEC C19 + Hard wire outlets, Network Card
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/SRTG6KXLI-NCLI.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 85cfc86673004901

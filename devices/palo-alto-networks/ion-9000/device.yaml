@@ -1,0 +1,90 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: palo-alto-networks
+model: ION 9000
+slug: ion-9000
+category: firewall
+form_factor: rack
+u_height: 1
+full_depth: true
+weight_kg: 9.698
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Controller 1
+    type: 1000base-t
+  - name: Controller 2
+    type: 1000base-t
+  - name: Port 1
+    description: Bypass pair with port 2
+    type: 1000base-t
+  - name: Port 2
+    description: Bypass pair with port 1
+    type: 1000base-t
+  - name: Port 3
+    description: Bypass pair with port 4
+    type: 1000base-t
+  - name: Port 4
+    description: Bypass pair with port 3
+    type: 1000base-t
+  - name: Port 5
+    description: Bypass pair with port 6
+    type: 1000base-t
+  - name: Port 6
+    description: Bypass pair with port 5
+    type: 1000base-t
+  - name: Port 7
+    description: Bypass pair with port 8
+    type: 1000base-t
+  - name: Port 8
+    description: Bypass pair with port 7
+    type: 1000base-t
+  - name: Port 9
+    type: 10gbase-x-sfpp
+  - name: Port 10
+    type: 10gbase-x-sfpp
+  - name: Port 11
+    type: 10gbase-x-sfpp
+  - name: Port 12
+    type: 10gbase-x-sfpp
+  - name: Port 13
+    type: 10gbase-x-sfpp
+  - name: Port 14
+    type: 10gbase-x-sfpp
+  - name: Port 15
+    type: 10gbase-x-sfpp
+  - name: Port 16
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: AUX
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 450
+  - name: PS2
+    type: iec-60320-c14
+    maximum_draw_w: 450
+links:
+  datasheet: https://docs.paloaltonetworks.com/hardware/ion-9000-hardware-reference/ion-9000-overview/ion-9000-device-specifications
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Palo Alto Networks/ION-9000.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 67247bf6149eff7b

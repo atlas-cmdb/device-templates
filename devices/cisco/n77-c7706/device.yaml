@@ -1,0 +1,127 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: N77-C7706
+slug: n77-c7706
+category: network_switch
+form_factor: rack
+description: Nexus 7700 Switches 6-Slot Chassis
+part_numbers:
+  - N77-C7706
+u_height: 9
+full_depth: true
+weight_kg: 65.8
+airflow: front-to-rear
+power:
+  psu_count: 4
+interfaces:
+  - name: mgmt0
+    type: virtual
+    mgmt_only: true
+module_bays:
+  - name: Line Card 1
+    label: "1"
+    description: Slot 1
+    bay_position: "1"
+  - name: Line Card 2
+    label: "2"
+    description: Slot 2
+    bay_position: "2"
+  - name: Supervisor Module 1
+    label: "3"
+    description: Slot 3
+    bay_position: "3"
+  - name: Supervisor Module 2
+    label: "4"
+    description: Slot 4
+    bay_position: "4"
+  - name: Line Card 3
+    label: "5"
+    description: Slot 5
+    bay_position: "5"
+  - name: Line Card 4
+    label: "6"
+    description: Slot 6
+    bay_position: "6"
+  - name: Fabric Module 1
+    label: Fabric 1
+    description: Slot 7
+    bay_position: "1"
+  - name: Fabric Module 2
+    label: Fabric 2
+    description: Slot 8
+    bay_position: "2"
+  - name: Fabric Module 3
+    label: Fabric 3
+    description: Slot 9
+    bay_position: "3"
+  - name: Fabric Module 4
+    label: Fabric 4
+    description: Slot 10
+    bay_position: "4"
+  - name: Fabric Module 5
+    label: Fabric 5
+    description: Slot 11
+    bay_position: "5"
+  - name: Fabric Module 6
+    label: Fabric 6
+    description: Slot 12
+    bay_position: "6"
+  - name: Power Supply 1
+    label: PS 1
+    description: Slot 33
+    bay_position: "1"
+  - name: Power Supply 2
+    label: PS 2
+    description: Slot 34
+    bay_position: "2"
+  - name: Power Supply 3
+    label: PS 3
+    description: Slot 35
+    bay_position: "3"
+  - name: Power Supply 4
+    label: PS 4
+    description: Slot 36
+    bay_position: "4"
+  - name: Fan 1
+    label: Fan 1
+    description: Slot 37
+    bay_position: "1"
+  - name: Fan 2
+    label: Fan 2
+    description: Slot 38
+    bay_position: "2"
+  - name: Fan 3
+    label: Fan 3
+    description: Slot 39
+    bay_position: "3"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/switches/nexus-7000-series-switches/data_sheet_c78-728187.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/N77-C7706.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 130798ae323f8a02

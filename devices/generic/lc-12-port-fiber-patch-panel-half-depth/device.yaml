@@ -1,0 +1,100 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: generic
+model: LC-12-port Fiber Patch Panel Half Depth
+slug: lc-12-port-fiber-patch-panel-half-depth
+category: patch_panel
+form_factor: rack
+u_height: 1
+full_depth: false
+airflow: passive
+front_ports:
+  - name: Port 1
+    type: lc
+    rear_port: Port 1
+    rear_port_position: 1
+  - name: Port 2
+    type: lc
+    rear_port: Port 2
+    rear_port_position: 1
+  - name: Port 3
+    type: lc
+    rear_port: Port 3
+    rear_port_position: 1
+  - name: Port 4
+    type: lc
+    rear_port: Port 4
+    rear_port_position: 1
+  - name: Port 5
+    type: lc
+    rear_port: Port 5
+    rear_port_position: 1
+  - name: Port 6
+    type: lc
+    rear_port: Port 6
+    rear_port_position: 1
+  - name: Port 7
+    type: lc
+    rear_port: Port 7
+    rear_port_position: 1
+  - name: Port 8
+    type: lc
+    rear_port: Port 8
+    rear_port_position: 1
+  - name: Port 9
+    type: lc
+    rear_port: Port 9
+    rear_port_position: 1
+  - name: Port 10
+    type: lc
+    rear_port: Port 10
+    rear_port_position: 1
+  - name: Port 11
+    type: lc
+    rear_port: Port 11
+    rear_port_position: 1
+  - name: Port 12
+    type: lc
+    rear_port: Port 12
+    rear_port_position: 1
+rear_ports:
+  - name: Port 1
+    type: lc
+  - name: Port 2
+    type: lc
+  - name: Port 3
+    type: lc
+  - name: Port 4
+    type: lc
+  - name: Port 5
+    type: lc
+  - name: Port 6
+    type: lc
+  - name: Port 7
+    type: lc
+  - name: Port 8
+    type: lc
+  - name: Port 9
+    type: lc
+  - name: Port 10
+    type: lc
+  - name: Port 11
+    type: lc
+  - name: Port 12
+    type: lc
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Generic/LC-12-port-fiber-patch-panel-half-depth.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - front_ports
+    - full_depth
+    - manufacturer
+    - model
+    - rear_ports
+    - slug
+    - u_height
+  import_hash: 3a89d2dffa1b443a

@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netgate
+model: 6100 Security Gateway
+slug: 6100-security-gateway
+category: firewall
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 1.9
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: ix3
+    label: WAN1
+    type: 1000base-x-sfp
+  - name: ix2
+    label: WAN2
+    type: 1000base-x-sfp
+  - name: ix0
+    label: WAN3
+    type: 10gbase-x-sfpp
+  - name: ix1
+    label: WAN4
+    type: 10gbase-x-sfpp
+  - name: igc0
+    label: LAN1
+    type: 2.5gbase-t
+  - name: igc1
+    label: LAN2
+    type: 2.5gbase-t
+  - name: igc2
+    label: LAN3
+    type: 2.5gbase-t
+  - name: igc3
+    label: LAN4
+    type: 2.5gbase-t
+console_ports:
+  - name: console-usb
+    description: |-
+      Auto-detect console port: use RJ-45 -OR- micro-USB.
+      115200 baud rate, 8 data bits, no parity, 1 stop bit, no flow control
+      or XON/OFF
+    type: usb-micro-b
+  - name: console-rj45
+    description: |-
+      Auto-detect console port: use RJ-45 -OR- micro-USB.
+      115200 baud rate, 8 data bits, no parity, 1 stop bit, no flow control
+      or XON/OFF
+    type: rj-45
+power_ports:
+  - name: psu1
+    type: dc-terminal
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Netgate/6100-Security-Gateway.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: a3d89303c830f4f5

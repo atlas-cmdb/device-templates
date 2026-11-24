@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: avaya
+model: IP Office 500
+slug: ip-office-500
+category: appliance
+form_factor: rack
+part_numbers:
+  - "700476013"
+u_height: 2
+full_depth: true
+weight_kg: 4.5
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: eth0
+    type: 100base-tx
+  - name: eth1
+    type: 100base-tx
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+comments: Avaya IP Office 500 Control Unit - modular UC appliance. 2-port embedded Ethernet switch (10/100), 4 internal card slots, SD card for voicemail, rack or wall mountable.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Avaya/IP-Office-500.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 3f5f2fc7ef32428d

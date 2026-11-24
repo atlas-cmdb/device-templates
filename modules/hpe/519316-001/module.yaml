@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: hpe
+model: 519316-001
+slug: 519316-001
+kind: other
+part_numbers:
+  - 519316-001
+interfaces:
+  - name: I/O Module {module} SAS port 1
+    type: other
+  - name: I/O Module {module} SAS port 2
+    type: other
+comments: Controller board - SAS, input-output (I/O) module
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/HPE/519316-001.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 5196f0dd36775115

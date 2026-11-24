@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: UCSB-5108-AC2
+slug: ucsb-5108-ac2
+category: blade_chassis
+form_factor: rack
+part_numbers:
+  - UCSB-5108-AC2
+u_height: 6
+full_depth: true
+subdevice_role: parent
+airflow: front-to-rear
+power:
+  psu_count: 4
+module_bays:
+  - name: IO Module 1
+    bay_position: "1"
+  - name: IO Module 2
+    bay_position: "2"
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+  - name: PSU3
+    bay_position: "3"
+  - name: PSU4
+    bay_position: "4"
+device_bays:
+  - name: slot-1
+  - name: slot-2
+  - name: slot-3
+  - name: slot-4
+  - name: slot-5
+  - name: slot-6
+  - name: slot-7
+  - name: slot-8
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/UCSB-5108-AC2.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - device_bays
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: dd5fae0426c0e801

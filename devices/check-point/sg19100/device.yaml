@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: check-point
+model: SG19100
+slug: sg19100
+category: firewall
+form_factor: rack
+part_numbers:
+  - CPAP-SG19100
+u_height: 2
+full_depth: true
+weight_kg: 16.5
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: LOM
+    type: 1000base-t
+    mgmt_only: true
+  - name: MGMT1
+    type: 10gbase-t
+    mgmt_only: true
+  - name: MGMT2
+    type: 10gbase-t
+    mgmt_only: true
+  - name: SYNC1
+    type: 25gbase-x-sfp28
+  - name: SYNC2
+    type: 25gbase-x-sfp28
+console_ports:
+  - name: Console1
+    type: rj-45
+  - name: Console2
+    type: usb-c
+module_bays:
+  - name: "1"
+    bay_position: "1"
+  - name: "2"
+    bay_position: "2"
+  - name: "3"
+    bay_position: "3"
+  - name: "4"
+    bay_position: "4"
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+links:
+  datasheet: https://www.checkpoint.com/downloads/products/quantum-force-19100-datasheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Check Point/SG19100.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 5952a7ba230aa1ae

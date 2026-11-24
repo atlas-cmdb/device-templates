@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Device Library · Atlas</title>
+<meta name="description" content="Atlas Device Library: open, public-domain templates and faceplate photos for servers, switches, PDUs, UPSes and more, used by Atlas CMDB rack and 3D/VR views.">
+<meta name="theme-color" content="#121212">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<meta property="og:title" content="Atlas Device Library">
+<meta property="og:description" content="Open templates and faceplate photos for data center hardware.">
+<meta property="og:image" content="assets/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+<script>
+	// Same behaviour as the Atlas app: 'auto' follows the OS, otherwise the stored choice.
+	(() => {
+		const pref = localStorage.getItem('theme') ?? 'auto';
+		const dark = pref === 'dark' || (pref === 'auto' && matchMedia('(prefers-color-scheme: dark)').matches);
+		document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+		document.documentElement.dataset.themePref = pref;
+	})();
+</script>
+<style>
+	/* Atlas CMDB design tokens (client-lib _config.scss + atlas.scss) */
+	:root {
+		--color-primary: #4db6ac;
+		--color-success: #4ade80;
+		--color-warning: #fbbf24;
+		--color-danger: #ef4444;
+		--color-info: #38bdf8;
+		--radius-sm: 0.375rem; --radius-md: 0.5rem; --radius-lg: 0.75rem; --radius-xl: 1rem; --radius-xxl: 1.5rem;
+		--control-height: 2.35rem;
+		--content-gap: clamp(1rem, 1.8vw, 1.5rem);
+		font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+		font-size: 15px;
+		line-height: 1.6;
+	}
+	html[data-theme='light'] {
+		color-scheme: light;
+		--color-background-primary: #efefef;
+		--color-background-secondary: #ffffff;
+		--color-background-tertiary: #f4f4f4;
+		--color-text-primary: #212529;
+		--color-text-secondary: #5b5b5b;
+		--color-text-muted: #6c6c6c;
+		--color-border-primary: #e0e0df;
+		--main-bg: rgba(255, 255, 255, 0.78);
+		--focus: color-mix(in srgb, var(--color-primary) 28%, transparent);
+		--focus-strong: color-mix(in srgb, var(--color-primary) 72%, black);
+		--surface-raised: color-mix(in srgb, var(--color-background-secondary) 96%, var(--color-primary));
+		--surface-muted: color-mix(in srgb, var(--color-background-primary) 92%, var(--color-primary));
+		--shadow-sm: 0 1px 2px rgb(20 18 35 / 0.05), 0 5px 16px rgb(20 18 35 / 0.035);
+		--shadow-md: 0 14px 38px rgb(20 18 35 / 0.12);
+		--page-tint: 10%;
+		--primary-text: color-mix(in srgb, var(--color-primary) 70%, black);
+	}
+	html[data-theme='dark'] {
+		color-scheme: dark;
+		--color-background-primary: #000000;
+		--color-background-secondary: #121212;
+		--color-background-tertiary: #1e1e1e;
+		--color-text-primary: #e4e6eb;
+		--color-text-secondary: #b0b3b8;
+		--color-text-muted: #8a8d91;
+		--color-border-primary: #424242;
+		--main-bg: rgba(18, 18, 18, 0.82);
+		--focus: color-mix(in srgb, var(--color-primary) 44%, transparent);
+		--focus-strong: color-mix(in srgb, var(--color-primary) 76%, white);
+		--surface-raised: color-mix(in srgb, var(--color-background-secondary) 94%, var(--color-primary));
+		--surface-muted: color-mix(in srgb, var(--color-background-primary) 94%, var(--color-primary));
+		--shadow-sm: 0 1px 2px rgb(0 0 0 / 0.25), 0 8px 24px rgb(0 0 0 / 0.12);
+		--shadow-md: 0 16px 44px rgb(0 0 0 / 0.42);
+		--page-tint: 12%;
+		--primary-text: var(--color-primary);
+	}
+	* { box-sizing: border-box; }
+	[hidden] { display: none !important; }
+	body {
+		margin: 0;
+		min-height: 100vh;
+		color: var(--color-text-primary);
+		background: linear-gradient(150deg, var(--color-background-primary) 0%, color-mix(in srgb, var(--color-primary) var(--page-tint), var(--color-background-primary)) 100%) fixed;
+		display: flex;
+		flex-direction: column;
+	}
+	a { color: var(--primary-text); text-decoration: none; }
+	a:hover { text-decoration: underline; }
+	:focus-visible { outline: 2px solid var(--focus-strong); outline-offset: 2px; }
+	::selection { background: color-mix(in srgb, var(--color-primary) 28%, transparent); }
+	.mark { width: var(--size, 25px); aspect-ratio: 613 / 692; display: inline-block; flex: none; color: var(--color-text-primary); }
+	.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+	/* Navbar, as in the Atlas dashboard */
+	.navbar { position: sticky; top: 0; z-index: 5; background: var(--main-bg); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--color-border-primary); }
+	.navbar-inner { max-width: 1440px; margin: 0 auto; padding: 0.7rem var(--content-gap); display: flex; align-items: center; gap: 1rem; }
+	.brand { display: flex; align-items: center; gap: 0.5rem; color: var(--color-text-primary); }
+	.brand:hover { text-decoration: none; }
+	.logo-text { font-size: 1.75rem; font-weight: 600; letter-spacing: -0.03em; line-height: 1; }
+	.brand-divider { width: 1px; height: 1.6rem; background: var(--color-border-primary); margin: 0 0.35rem; }
+	.brand-product { font-weight: 500; color: var(--color-text-secondary); white-space: nowrap; }
+	.nav-actions { margin-left: auto; display: flex; align-items: center; gap: 0.5rem; }
+
+	.button {
+		display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+		height: var(--control-height); padding: 0 1.05rem; border-radius: 999px;
+		border: 1px solid var(--color-border-primary); background: var(--color-background-secondary);
+		color: var(--color-text-primary); font: inherit; font-weight: 500; font-size: 0.9rem; cursor: pointer; white-space: nowrap;
+		transition: transform 0.18s ease, background-color 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+	}
+	.button:hover { transform: translateY(-1px); text-decoration: none; border-color: var(--color-primary); }
+	.button.primary { background: var(--color-primary); border-color: var(--color-primary); color: #0b2522; }
+	.button.primary:hover { background: color-mix(in srgb, var(--color-primary) 88%, white); }
+	.button.icon { width: var(--control-height); padding: 0; }
+	.button svg { width: 1.05rem; height: 1.05rem; }
+
+	main { flex: 1; width: 100%; max-width: 1440px; margin: 0 auto; padding: var(--content-gap); }
+
+	/* Hero */
+	.hero { display: grid; grid-template-columns: 1fr auto; gap: var(--content-gap); align-items: end; margin: 0.75rem 0 var(--content-gap); }
+	.eyebrow { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--primary-text); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+	.hero h1 { margin: 0.2rem 0 0.35rem; font-size: clamp(1.65rem, 2vw + 1rem, 2.5rem); font-weight: 600; line-height: 1.2; letter-spacing: -0.02em; }
+	.hero p { margin: 0; max-width: 46rem; color: var(--color-text-secondary); }
+	.stats { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+	.updated { margin: 0.7rem 0 0; font-size: 0.8rem; color: var(--color-text-muted); }
+	.updated:empty { display: none; }
+	.updated a { color: inherit; }
+	.stat { padding: 0.45rem 0.85rem; border-radius: var(--radius-lg); background: var(--surface-raised); border: 1px solid var(--color-border-primary); box-shadow: var(--shadow-sm); }
+	.stat b { display: block; font-size: 1.15rem; font-weight: 600; font-variant-numeric: tabular-nums; line-height: 1.3; }
+	.stat span { font-size: 0.75rem; color: var(--color-text-muted); }
+	.hero-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: flex-end; }
+
+	/* Filters */
+	.toolbar { position: sticky; top: 4.1rem; z-index: 4; display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; padding: 0.75rem; border-radius: var(--radius-xl); background: var(--main-bg); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid var(--color-border-primary); box-shadow: var(--shadow-sm); }
+	.search { position: relative; flex: 1 1 300px; min-width: 220px; }
+	.search svg { position: absolute; left: 0.75rem; top: 50%; translate: 0 -50%; width: 1rem; height: 1rem; color: var(--color-text-muted); }
+	input[type=search], select {
+		height: var(--control-height); font: inherit; font-size: 0.9rem; color: var(--color-text-primary);
+		background: var(--color-background-secondary); border: 1px solid var(--color-border-primary); border-radius: var(--radius-md);
+		padding: 0 0.75rem; transition: border-color 0.15s, box-shadow 0.15s;
+	}
+	input[type=search] { width: 100%; padding-left: 2.2rem; }
+	input[type=search]:focus, select:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px var(--focus); }
+	select { max-width: 15rem; }
+	.toggle { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; color: var(--color-text-secondary); cursor: pointer; user-select: none; }
+	.toggle input { accent-color: var(--color-primary); width: 1rem; height: 1rem; }
+	.count { margin-left: auto; font-size: 0.85rem; color: var(--color-text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+	.chips { display: flex; gap: 0.4rem; overflow-x: auto; padding: 0.85rem 0.1rem 0.25rem; scrollbar-width: thin; }
+	.chip { flex: none; height: 1.9rem; padding: 0 0.8rem; border-radius: 999px; border: 1px solid var(--color-border-primary); background: var(--color-background-secondary); color: var(--color-text-secondary); font: inherit; font-size: 0.8rem; font-weight: 500; cursor: pointer; }
+	.chip:hover { border-color: var(--color-primary); color: var(--color-text-primary); }
+	.chip[aria-pressed='true'] { background: color-mix(in srgb, var(--color-primary) 16%, var(--color-background-secondary)); border-color: var(--color-primary); color: var(--color-text-primary); }
+	.chip small { color: var(--color-text-muted); margin-left: 0.25rem; }
+
+	/* Cards */
+	.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 0.9rem; margin-top: 0.9rem; }
+	.card {
+		display: flex; flex-direction: column; text-align: left; padding: 0; overflow: hidden; cursor: pointer;
+		font: inherit; color: inherit; background: var(--surface-raised); border: 1px solid var(--color-border-primary);
+		border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+	}
+	.card:hover, .card:focus-visible { outline: none; transform: translateY(-2px); border-color: var(--color-primary); box-shadow: 0 0 0 3px var(--focus), var(--shadow-sm); }
+	/* The faceplate sits between two rack rails, like in the Atlas rack elevation. */
+	.face { position: relative; height: 84px; padding: 8px 18px; background: #0c0d0e; display: flex; align-items: center; justify-content: center; }
+	.face::before, .face::after { content: ''; position: absolute; top: 0; bottom: 0; width: 12px; background: repeating-linear-gradient(#24272b 0 5px, #15171a 5px 7px); }
+	.face::before { left: 0; } .face::after { right: 0; }
+	.face img { max-width: 100%; max-height: 68px; display: block; border-radius: 2px; }
+	.face .ph { display: flex; align-items: center; gap: 0.45rem; color: #8a8d91; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; }
+	.face .ph .mark { --size: 14px; color: #5f6368; }
+	.card-body { padding: 0.75rem 0.9rem 0.85rem; display: flex; flex-direction: column; gap: 0.15rem; flex: 1; }
+	.card-mfr { font-size: 0.78rem; color: var(--color-text-muted); }
+	.card-model { font-weight: 600; line-height: 1.35; overflow-wrap: anywhere; }
+	.badges { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.45rem; }
+	/* Atlas state badge */
+	.badge {
+		--state-color: var(--color-text-secondary);
+		display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.18rem 0.5rem; border-radius: 999px;
+		border: 1px solid color-mix(in srgb, var(--state-color) 32%, transparent);
+		background: color-mix(in srgb, var(--state-color) 10%, transparent);
+		color: color-mix(in srgb, var(--state-color) 78%, var(--color-text-primary));
+		font-size: 0.66rem; font-weight: 600; letter-spacing: 0.02em; line-height: 1.4; white-space: nowrap;
+	}
+	.badge.primary { --state-color: var(--color-primary); }
+	.badge.info { --state-color: var(--color-info); }
+	.badge.success { --state-color: var(--color-success); }
+	.badge.warning { --state-color: var(--color-warning); }
+	.badge.success::before, .badge.warning::before { content: ''; width: 0.4rem; height: 0.4rem; border-radius: 999px; background: currentColor; }
+
+	.more { display: flex; margin: 1.5rem auto 0; }
+	.empty { grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; gap: 0.6rem; padding: 3.5rem 1rem; text-align: center; color: var(--color-text-secondary); }
+	.empty .mark { --size: 42px; color: var(--color-text-muted); }
+	.empty h2 { margin: 0; font-size: 1.15rem; font-weight: 600; color: var(--color-text-primary); }
+
+	/* Detail dialog */
+	dialog { width: min(960px, 96vw); max-height: 92vh; padding: 0; border: 1px solid var(--color-border-primary); border-radius: var(--radius-xxl); background: var(--color-background-secondary); color: var(--color-text-primary); box-shadow: var(--shadow-md); }
+	dialog::backdrop { background: rgb(0 0 0 / 0.55); backdrop-filter: blur(3px); }
+	.dlg-head { display: flex; align-items: center; gap: 0.85rem; padding: 1.1rem 1.4rem; border-bottom: 1px solid var(--color-border-primary); }
+	.dlg-head .mark { --size: 22px; }
+	.dlg-head h2 { margin: 0; font-size: 1.25rem; font-weight: 600; line-height: 1.25; }
+	.dlg-head .card-mfr { font-size: 0.8rem; }
+	.dlg-head .button { margin-left: auto; }
+	.dlg-body { padding: 1.2rem 1.4rem 1.4rem; overflow: auto; max-height: calc(92vh - 76px); }
+	.dlg-actions { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1.1rem; }
+	.dlg-actions .button { height: 2rem; font-size: 0.8rem; padding: 0 0.85rem; }
+	.faces { display: grid; gap: 0.6rem; margin-bottom: 1.2rem; }
+	.faces figure { margin: 0; padding: 10px 22px; position: relative; background: #0c0d0e; border-radius: var(--radius-lg); }
+	.faces figure::before, .faces figure::after { content: ''; position: absolute; top: 0; bottom: 0; width: 14px; background: repeating-linear-gradient(#24272b 0 5px, #15171a 5px 7px); }
+	.faces figure::before { left: 0; border-radius: var(--radius-lg) 0 0 var(--radius-lg); } .faces figure::after { right: 0; border-radius: 0 var(--radius-lg) var(--radius-lg) 0; }
+	.faces img { width: 100%; display: block; }
+	.faces figcaption { color: #8a8d91; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-top: 0.35rem; }
+	.photos { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.6rem; margin-bottom: 1.2rem; }
+	.photos figure { margin: 0; border-radius: var(--radius-lg); overflow: hidden; background: var(--color-background-tertiary); border: 1px solid var(--color-border-primary); }
+	.photos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+	.photos figcaption { padding: 0.35rem 0.6rem; font-size: 0.75rem; color: var(--color-text-secondary); }
+	.media { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: -0.4rem 0 1.1rem; align-items: center; }
+	.media .button { height: 2rem; font-size: 0.8rem; padding: 0 0.85rem; border-color: color-mix(in srgb, var(--color-info) 45%, var(--color-border-primary)); }
+	.media small { color: var(--color-text-muted); font-size: 0.72rem; }
+	.specs { width: 100%; border-collapse: collapse; margin-bottom: 1rem; font-size: 0.9rem; }
+	.specs th, .specs td { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--color-border-primary); vertical-align: top; }
+	.specs th { width: 32%; font-weight: 500; color: var(--color-text-muted); }
+	code, pre { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.82rem; }
+	code { padding: 0.05rem 0.35rem; border-radius: var(--radius-sm); background: var(--color-background-tertiary); }
+	details summary { cursor: pointer; color: var(--color-text-secondary); font-weight: 500; }
+	pre { background: var(--color-background-tertiary); padding: 0.9rem; border-radius: var(--radius-lg); overflow: auto; max-height: 340px; }
+
+	footer { border-top: 1px solid var(--color-border-primary); background: var(--main-bg); }
+	.footer-inner { max-width: 1440px; margin: 0 auto; padding: 1.1rem var(--content-gap); display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.25rem; font-size: 0.82rem; color: var(--color-text-muted); }
+	.footer-inner .brand { font-weight: 600; font-size: 0.95rem; }
+	.footer-inner .mark { --size: 16px; }
+	.footer-links { margin-left: auto; display: flex; flex-wrap: wrap; gap: 1rem; }
+
+	@media (max-width: 860px) {
+		.hero { grid-template-columns: 1fr; }
+		.hero-actions { justify-content: flex-start; }
+		.brand-divider, .brand-product, .nav-actions .hide-sm { display: none; }
+		.toolbar { position: static; }
+		.count { margin-left: 0; width: 100%; }
+	}
+	@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+	<symbol id="atlas-mark" viewBox="0 0 613 692"><g transform="translate(0,692) scale(0.1,-0.1)" fill="currentColor"><path d="M2520 6604 c-537 -311 -1132 -654 -1710 -987 -162 -93 -337 -194 -387 -224 -173 -101 -340 -289 -394 -443 l-23 -65 -4 -1488 -4 -1489 22 -61 c58 -159 148 -306 249 -408 72 -72 74 -73 506 -314 341 -191 568 -318 1250 -702 560 -315 553 -312 670 -351 313 -104 674 -78 967 69 138 69 872 485 1783 1011 l310 179 121 122 c67 67 142 154 166 192 84 129 78 42 78 1163 l0 997 -44 77 c-106 187 -263 337 -433 415 -31 15 -66 23 -82 21 -15 -2 -192 -97 -392 -211 -200 -114 -753 -427 -1228 -695 -476 -269 -867 -494 -869 -501 -2 -7 52 -67 120 -134 110 -107 130 -132 167 -207 72 -148 70 -116 71 -1143 l1 -917 -35 -58 c-54 -90 -102 -138 -164 -169 -52 -26 -66 -28 -172 -28 -106 0 -120 2 -172 28 -70 34 -160 114 -182 161 -15 32 -16 153 -14 1423 4 1565 -4 1422 85 1603 39 79 61 109 137 186 77 76 116 106 251 186 243 145 588 345 1150 668 1396 802 1447 832 1438 841 -4 4 -327 194 -718 422 -390 228 -993 579 -1338 781 -345 201 -629 366 -630 366 -1 -1 -247 -143 -547 -316z"/></g></symbol>
+	<symbol id="i-search" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m21 21-4.3-4.3M11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z"/></symbol>
+	<symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+	<symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></symbol>
+	<symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></symbol>
+	<symbol id="i-auto" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path fill="currentColor" stroke="none" d="M12 3a9 9 0 0 1 0 18Z"/></g></symbol>
+	<symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+</svg>
+
+<header class="navbar">
+	<div class="navbar-inner">
+		<a class="brand" href="./" aria-label="Atlas Device Library home">
+			<svg class="mark" aria-hidden="true"><use href="#atlas-mark"/></svg>
+			<span class="logo-text">Atlas</span>
+		</a>
+		<span class="brand-divider" aria-hidden="true"></span>
+		<span class="brand-product">Device Library</span>
+		<nav class="nav-actions" aria-label="Site">
+			<a class="button hide-sm" href="https://github.com/atlas-cmdb/device-templates/blob/main/docs/consuming.md">Use the data</a>
+			<a class="button icon" href="https://github.com/atlas-cmdb/device-templates" aria-label="GitHub repository"><svg aria-hidden="true"><use href="#i-github"/></svg></a>
+			<button class="button icon" id="theme" type="button" aria-label="Theme"><svg aria-hidden="true"><use href="#i-auto"/></svg></button>
+		</nav>
+	</div>
+</header>
+
+<main>
+	<section class="hero">
+		<div>
+			<span class="eyebrow"><svg class="mark" style="--size:12px;color:currentColor" aria-hidden="true"><use href="#atlas-mark"/></svg> Atlas CMDB · Open hardware templates</span>
+			<h1>Every rack, recognisable.</h1>
+			<p>Dimensions, power, ports and faceplate photos for servers, switches, PDUs, UPSes and more. Atlas uses them to draw rack elevations and its 3D/VR data center. Public domain, community-maintained.</p>
+			<div class="stats" id="stats" aria-live="polite"></div>
+			<p class="updated" id="updated"></p>
+		</div>
+		<div class="hero-actions">
+			<a class="button" href="https://github.com/atlas-cmdb/device-templates/issues/new?template=2-add-photos.yml">Add photos</a>
+			<a class="button primary" href="https://github.com/atlas-cmdb/device-templates/issues/new?template=1-new-device.yml"><svg aria-hidden="true"><use href="#i-plus"/></svg> Add a device</a>
+		</div>
+	</section>
+
+	<section class="toolbar" aria-label="Filters">
+		<label class="search"><span class="sr-only">Search</span><svg aria-hidden="true"><use href="#i-search"/></svg>
+			<input id="q" type="search" placeholder="Search model, manufacturer, part number…" autocomplete="off" autofocus></label>
+		<select id="kind" aria-label="Kind"><option value="devices">Devices</option><option value="modules">Modules</option><option value="racks">Racks</option></select>
+		<select id="cat" aria-label="Category"><option value="">All categories</option></select>
+		<select id="mfr" aria-label="Manufacturer"><option value="">All manufacturers</option></select>
+		<label class="toggle"><input id="img" type="checkbox"> With photos</label>
+		<label class="toggle"><input id="review" type="checkbox"> Needs review</label>
+		<span class="count" id="count">Loading…</span>
+	</section>
+	<div class="chips" id="chips" role="toolbar" aria-label="Quick categories"></div>
+
+	<div class="grid" id="grid"></div>
+	<button class="button more" id="more" type="button" hidden>Show more</button>
+</main>
+
+<footer>
+	<div class="footer-inner">
+		<a class="brand" href="https://github.com/atlas-cmdb"><svg class="mark" aria-hidden="true"><use href="#atlas-mark"/></svg> Atlas</a>
+		<span>Device Library · data <a href="https://github.com/atlas-cmdb/device-templates/blob/main/LICENSE">CC0 1.0</a> · includes the <a href="https://github.com/netbox-community/devicetype-library">NetBox device-type library</a></span>
+		<span class="footer-links">
+			<span id="footer-updated"></span>
+			<a href="manifest.json">manifest.json</a>
+			<a href="https://github.com/atlas-cmdb/device-templates/blob/main/CONTRIBUTING.md">Contribute</a>
+			<a href="https://github.com/atlas-cmdb/device-templates">GitHub</a>
+		</span>
+	</div>
+</footer>
+
+<dialog id="dlg" aria-labelledby="d-title">
+	<div class="dlg-head">
+		<svg class="mark" aria-hidden="true"><use href="#atlas-mark"/></svg>
+		<div><div class="card-mfr" id="d-mfr"></div><h2 id="d-title"></h2></div>
+		<button class="button" id="d-close" type="button">Close</button>
+	</div>
+	<div class="dlg-body" id="d-body"></div>
+</dialog>
+
+<script type="module">
+const REPO = 'https://github.com/atlas-cmdb/device-templates';
+const PAGE = 120;
+const QUICK = ['server', 'network_switch', 'router', 'firewall', 'storage_array', 'pdu', 'ups', 'patch_panel', 'console_server', 'blade_chassis'];
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+const mark = (size = 14) => `<svg class="mark" style="--size:${size}px" aria-hidden="true"><use href="#atlas-mark"/></svg>`;
+
+// ---------------------------------------------------------------- theme (auto → light → dark)
+const THEMES = ['auto', 'light', 'dark'];
+function applyTheme(pref) {
+	const dark = pref === 'dark' || (pref === 'auto' && matchMedia('(prefers-color-scheme: dark)').matches);
+	document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+	document.querySelector('meta[name="theme-color"]').content = dark ? '#121212' : '#efefef';
+	$('theme').querySelector('use').setAttribute('href', pref === 'auto' ? '#i-auto' : dark ? '#i-moon' : '#i-sun');
+	$('theme').setAttribute('aria-label', `Theme: ${pref}`);
+	$('theme').title = `Theme: ${pref}`;
+}
+let themePref = localStorage.getItem('theme') ?? 'auto';
+applyTheme(themePref);
+$('theme').addEventListener('click', () => {
+	themePref = THEMES[(THEMES.indexOf(themePref) + 1) % THEMES.length];
+	localStorage.setItem('theme', themePref);
+	applyTheme(themePref);
+});
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => themePref === 'auto' && applyTheme('auto'));
+
+// ---------------------------------------------------------------- data
+let manifest;
+const mfrNames = new Map();
+let results = [];
+let shown = 0;
+try {
+	manifest = await fetch('manifest.json').then((r) => r.json());
+} catch {
+	$('count').textContent = '';
+	$('grid').innerHTML = `<div class="empty">${mark(42)}<h2>Could not load the library</h2><p>manifest.json is not available. Try again later.</p></div>`;
+	throw new Error('manifest unavailable');
+}
+for (const m of manifest.manufacturers) mfrNames.set(m.slug, m);
+const s = manifest.stats;
+$('stats').innerHTML = [[s.devices, 'devices'], [s.with_images, 'with photos'], [s.manufacturers, 'manufacturers'], [s.modules, 'modules'], [s.racks, 'racks']]
+	.map(([n, label]) => `<div class="stat"><b>${Number(n).toLocaleString('en')}</b><span>${label}</span></div>`).join('');
+// When this build was published: relative ("3 hours ago"), exact date on hover, linked to the commit.
+if (manifest.generated_at) {
+	const at = new Date(manifest.generated_at);
+	// The page is English, so dates are too (the browser locale would mix in e.g. Dutch).
+	const exact = at.toLocaleString('en-GB', { dateStyle: 'long', timeStyle: 'short' });
+	const mins = Math.max(0, Math.round((Date.now() - at) / 60000));
+	const rtf = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
+	const ago = mins < 1 ? 'just now' : mins < 60 ? rtf.format(0 - mins, 'minute') : mins < 1440 ? rtf.format(0 - Math.round(mins / 60), 'hour') : rtf.format(0 - Math.round(mins / 1440), 'day');
+	const sha = /^[0-9a-f]{7,40}$/.test(manifest.commit ?? '') ? manifest.commit : '';
+	const commitLink = sha ? ` · <a href="https://github.com/atlas-cmdb/device-templates/commit/${sha}">${sha.slice(0, 7)}</a>` : '';
+	$('updated').innerHTML = `Last updated <time datetime="${esc(manifest.generated_at)}" title="${esc(exact)}">${esc(ago)}</time>${commitLink}`;
+	$('footer-updated').innerHTML = `Updated <time datetime="${esc(manifest.generated_at)}">${esc(at.toLocaleDateString('en-GB', { dateStyle: 'medium' }))}</time>`;
+}
+for (const [key, c] of Object.entries(manifest.categories).sort((a, b) => a[1].label.localeCompare(b[1].label))) $('cat').add(new Option(`${c.label} (${c.count})`, key));
+for (const m of [...manifest.manufacturers].sort((a, b) => a.name.localeCompare(b.name))) $('mfr').add(new Option(m.name, m.slug));
+$('chips').innerHTML = `<button class="chip" type="button" data-cat="">All</button>` + QUICK.filter((k) => manifest.categories[k])
+	.map((k) => `<button class="chip" type="button" data-cat="${k}">${esc(manifest.categories[k].label)}<small>${manifest.categories[k].count}</small></button>`).join('');
+
+const params = new URLSearchParams(location.search);
+$('q').value = params.get('q') ?? '';
+$('cat').value = params.get('category') ?? '';
+$('mfr').value = params.get('manufacturer') ?? '';
+$('kind').value = params.get('kind') ?? 'devices';
+
+const aliasHaystack = (slug) => {
+	const m = mfrNames.get(slug);
+	return m ? [m.name, ...(m.aliases ?? [])].join(' ').toLowerCase() : slug;
+};
+
+function update() {
+	const kind = $('kind').value;
+	const devices = kind === 'devices';
+	$('cat').disabled = $('review').disabled = !devices;
+	$('chips').hidden = !devices;
+	const terms = $('q').value.toLowerCase().split(/\s+/).filter(Boolean);
+	const cat = devices ? $('cat').value : '';
+	const mfr = $('mfr').value;
+	for (const chip of $('chips').children) chip.setAttribute('aria-pressed', String(chip.dataset.cat === cat));
+	results = manifest[kind].filter((d) => {
+		if (cat && d.category !== cat) return false;
+		if (mfr && d.manufacturer !== mfr) return false;
+		if ($('img').checked && !d.images) return false;
+		if (devices && $('review').checked && !d.inferred) return false;
+		if (!terms.length) return true;
+		const hay = `${d.search} ${aliasHaystack(d.manufacturer)}`;
+		return terms.every((t) => hay.includes(t));
+	});
+	// Photographed and verified templates first: they make the best rack views.
+	results.sort((a, b) => (!!b.images - !!a.images) || (!!b.verified - !!a.verified) || a.model.localeCompare(b.model));
+	shown = 0;
+	$('grid').innerHTML = results.length ? '' : `<div class="empty">${mark(42)}<h2>Nothing found</h2><p>Is it missing from the library? Tell us and the community adds it.</p><a class="button primary" href="${REPO}/issues/new?template=1-new-device.yml">Request this device</a></div>`;
+	render();
+	const url = new URL(location.href);
+	for (const [k, v] of [['q', $('q').value], ['category', cat], ['manufacturer', mfr], ['kind', devices ? '' : kind]]) v ? url.searchParams.set(k, v) : url.searchParams.delete(k);
+	history.replaceState(null, '', url);
+}
+
+function card(d) {
+	const m = mfrNames.get(d.manufacturer)?.name ?? d.manufacturer;
+	const img = d.images?.front ?? d.images?.rear;
+	const badges = [];
+	if (d.category) badges.push(`<span class="badge primary">${esc(manifest.categories[d.category]?.label ?? d.category)}</span>`);
+	if (d.kind) badges.push(`<span class="badge primary">${esc(d.kind.replace(/_/g, ' '))}</span>`);
+	if (d.u_height !== undefined) badges.push(`<span class="badge info">${d.u_height > 0 ? `${d.u_height}U` : esc(d.form_factor)}</span>`);
+	if (d.power_w) badges.push(`<span class="badge">${d.power_w} W</span>`);
+	if (d.outlets) badges.push(`<span class="badge">${d.outlets} outlets</span>`);
+	if (d.model_3d || d.media?.some((k) => k === '3d-viewer' || k === '360-view')) badges.push('<span class="badge info">3D</span>');
+	if (d.images?.interior) badges.push('<span class="badge info">inside</span>');
+	if (d.verified) badges.push('<span class="badge success">verified</span>');
+	if (d.inferred) badges.push('<span class="badge warning" title="Category guessed by the importer">review</span>');
+	return `<button class="card" type="button" data-path="${esc(d.path)}">
+		<div class="face">${img ? `<img loading="lazy" src="${esc(img)}" alt="${esc(`${m} ${d.model} front`)}">` : `<span class="ph">${mark(14)} No photo yet</span>`}</div>
+		<div class="card-body"><span class="card-mfr">${esc(m)}</span><span class="card-model">${esc(d.model)}</span><span class="badges">${badges.join('')}</span></div>
+	</button>`;
+}
+
+function render() {
+	const slice = results.slice(shown, shown + PAGE);
+	$('grid').insertAdjacentHTML('beforeend', slice.map(card).join(''));
+	shown += slice.length;
+	$('more').hidden = shown >= results.length;
+	$('count').textContent = `${results.length.toLocaleString()} of ${manifest[$('kind').value].length.toLocaleString()}`;
+}
+
+const row = (k, v) => (v === undefined || v === null || v === '' ? '' : `<tr><th>${esc(k)}</th><td>${v}</td></tr>`);
+async function open(path) {
+	const d = await fetch(path).then((r) => r.json());
+	const kindDir = path.split('/')[0];
+	const file = `${kindDir}/${d.id}/${kindDir === 'devices' ? 'device' : kindDir === 'modules' ? 'module' : 'rack'}.yaml`;
+	$('d-mfr').textContent = d.manufacturer_name;
+	$('d-title').textContent = d.model;
+	// Relative to the page, so local builds, mirrors and offline bundles work too.
+	const dir = path.slice(0, path.lastIndexOf('/') + 1);
+	const faces = ['front', 'rear'].filter((side) => d.images?.[side]).map((side) => `<figure><img src="${esc(dir + d.images[side])}" alt="${esc(side)}"><figcaption>${esc(side)}</figcaption></figure>`).join('');
+	const extra = [
+		...['interior', 'top', 'left', 'right'].filter((v) => d.images?.[v]).map((v) => ({ file: d.images[v], caption: v === 'interior' ? 'Inside (lid off)' : v })),
+		...(d.images?.gallery ?? [])
+	];
+	const photos = extra.map((g) => `<figure><a href="${esc(dir + g.file)}" target="_blank" rel="noopener"><img loading="lazy" src="${esc(dir + g.file)}" alt="${esc(g.caption ?? g.view ?? 'photo')}"></a>${g.caption || g.view ? `<figcaption>${esc(g.caption ?? g.view)}</figcaption>` : ''}</figure>`).join('');
+	const MEDIA = { '3d-viewer': '3D viewer', '360-view': '360° view', gallery: 'Photo gallery', cad: 'CAD model', video: 'Video', 'interior-tour': 'Interior tour', ar: 'AR view' };
+	const host = (u) => { try { return new URL(u).hostname.replace(/^www./, ''); } catch { return ''; } };
+	const media = (d.links?.media ?? []).map((m) => `<a class="button" href="${esc(m.url)}" target="_blank" rel="noopener nofollow">${esc(m.label ?? MEDIA[m.kind] ?? m.kind)} ↗</a>`).join('');
+	const mediaHosts = [...new Set((d.links?.media ?? []).map((m) => host(m.url)).filter(Boolean))].join(', ');
+	const count = (k) => (d[k]?.length ? d[k].length : undefined);
+	const ifaceTypes = Object.entries((d.interfaces ?? []).reduce((a, i) => ((a[i.type] = (a[i.type] ?? 0) + 1), a), {})).map(([t, n]) => `${n}× <code>${esc(t)}</code>`).join(' ');
+	const p = d.power ?? {};
+	const sourceLabel = { 'netbox-devicetype-library': 'NetBox device-type library', opendcim: 'openDCIM', community: 'Community', manufacturer: 'Manufacturer' };
+	$('d-body').innerHTML = `
+		<div class="dlg-actions">
+			<a class="button" href="${REPO}/edit/main/${esc(file)}">Edit on GitHub</a>
+			<a class="button" href="${REPO}/issues/new?template=2-add-photos.yml&title=${encodeURIComponent(`[Photos]: ${d.id}`)}">Add photos</a>
+			<a class="button" href="${REPO}/issues/new?template=3-fix-device.yml&title=${encodeURIComponent(`[Fix]: ${d.id}`)}">Report a problem</a>
+			<a class="button" href="${REPO}/blob/main/${esc(file)}">Source</a>
+			<a class="button" href="${esc(path)}">JSON</a>
+		</div>
+		${faces ? `<div class="faces">${faces}</div>` : ''}
+		${media ? `<div class="media">${media}<small>hosted by ${esc(mediaHosts)}, not part of this library</small></div>` : ''}
+		${photos ? `<div class="photos">${photos}</div>` : ''}
+		<table class="specs">
+			${row('Id', `<code>${esc(d.id)}</code>`)}
+			${row('Category', d.category && `<span class="badge primary">${esc(manifest.categories[d.category]?.label ?? d.category)}</span>${d.atlas_type ? ` &nbsp;Atlas type <code>${esc(d.atlas_type)}</code>` : ''}${d.source?.inferred?.includes('category') ? ' <span class="badge warning">guessed</span>' : ''}`)}
+			${row('Kind', d.kind && esc(d.kind.replace(/_/g, ' ')))}
+			${row('Part numbers', d.part_numbers?.map((x) => `<code>${esc(x)}</code>`).join(' '))}
+			${row('Rack units', d.u_height !== undefined ? `${d.u_height}U${d.full_depth ? ', full depth' : ''} · ${esc(d.form_factor ?? '')}` : '')}
+			${row('Dimensions', d.dimensions && [d.dimensions.width_mm, d.dimensions.height_mm, d.dimensions.depth_mm].map((v) => v ?? '?').join(' × ') + ' mm')}
+			${row('Outer size', d.outer_width_mm && `${d.outer_width_mm} × ${d.outer_height_mm ?? '?'} × ${d.outer_depth_mm ?? '?'} mm`)}
+			${row('Weight', d.weight_kg && `${d.weight_kg} kg`)}
+			${row('Airflow', esc(d.airflow))}
+			${row('Power', [p.typical_w && `typical ${p.typical_w} W`, p.max_w && `max ${p.max_w} W`, p.psu_count && `${p.psu_count} PSU${p.psu_count > 1 ? 's' : ''}`, p.psu_rating_w && `${p.psu_rating_w} W`, p.capacity_va && `${p.capacity_va} VA`, p.outlet_count && `${p.outlet_count} outlets`].filter(Boolean).join(' · '))}
+			${row('Interfaces', ifaceTypes)}
+			${row('Console ports', count('console_ports'))}
+			${row('Power inlets', d.power_ports?.map((x) => `<code>${esc(x.type ?? x.name)}</code>`).join(' '))}
+			${row('Module bays', count('module_bays'))}
+			${row('Device bays', count('device_bays'))}
+			${row('3D model', d.model_3d && `<a href="${esc(dir + d.model_3d)}">${esc(d.model_3d)}</a>${d.model_3d_info?.includes_interior ? ' <span class="badge info">with interior</span>' : ''}${d.model_3d_info?.method ? ` · ${esc(d.model_3d_info.method)}` : ''}`)}
+			${row('Datasheet', d.links?.datasheet && `<a href="${esc(d.links.datasheet)}" rel="noopener">${esc(new URL(d.links.datasheet).hostname)}</a>`)}
+			${row('Source', d.source?.origin && `${esc(sourceLabel[d.source.origin] ?? d.source.origin)}${d.source.also_from?.length ? ` + ${d.source.also_from.map((o) => esc(sourceLabel[o] ?? o)).join(', ')}` : ''}${d.verified ? ' <span class="badge success">verified</span>' : ''}`)}
+		</table>
+		<details><summary>Full JSON</summary><pre>${esc(JSON.stringify(d, null, 2))}</pre></details>`;
+	$('dlg').showModal();
+}
+
+let timer;
+$('q').addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(update, 120); });
+for (const id of ['kind', 'cat', 'mfr', 'img', 'review']) $(id).addEventListener('change', update);
+$('chips').addEventListener('click', (e) => { const c = e.target.closest('.chip'); if (c) { $('cat').value = c.dataset.cat; update(); } });
+$('more').addEventListener('click', render);
+$('grid').addEventListener('click', (e) => { const c = e.target.closest('.card'); if (c) open(c.dataset.path); });
+$('d-close').addEventListener('click', () => $('dlg').close());
+$('dlg').addEventListener('click', (e) => { if (e.target === $('dlg')) $('dlg').close(); });
+update();
+</script>
+</body>
+</html>

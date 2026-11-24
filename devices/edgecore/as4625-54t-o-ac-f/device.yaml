@@ -1,0 +1,167 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: edgecore
+model: AS4625-54T-O-AC-F
+slug: as4625-54t-o-ac-f
+category: network_switch
+form_factor: rack
+part_numbers:
+  - F0PEC4654xxxx
+u_height: 1
+full_depth: false
+weight_kg: 5.8
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0
+    type: 1000base-t
+    mgmt_only: true
+  - name: ge1
+    type: 1000base-t
+  - name: ge2
+    type: 1000base-t
+  - name: ge3
+    type: 1000base-t
+  - name: ge4
+    type: 1000base-t
+  - name: ge5
+    type: 1000base-t
+  - name: ge6
+    type: 1000base-t
+  - name: ge7
+    type: 1000base-t
+  - name: ge8
+    type: 1000base-t
+  - name: ge9
+    type: 1000base-t
+  - name: ge10
+    type: 1000base-t
+  - name: ge11
+    type: 1000base-t
+  - name: ge12
+    type: 1000base-t
+  - name: ge13
+    type: 1000base-t
+  - name: ge14
+    type: 1000base-t
+  - name: ge15
+    type: 1000base-t
+  - name: ge16
+    type: 1000base-t
+  - name: ge17
+    type: 1000base-t
+  - name: ge18
+    type: 1000base-t
+  - name: ge19
+    type: 1000base-t
+  - name: ge20
+    type: 1000base-t
+  - name: ge21
+    type: 1000base-t
+  - name: ge22
+    type: 1000base-t
+  - name: ge23
+    type: 1000base-t
+  - name: ge24
+    type: 1000base-t
+  - name: ge25
+    type: 1000base-t
+  - name: ge26
+    type: 1000base-t
+  - name: ge27
+    type: 1000base-t
+  - name: ge28
+    type: 1000base-t
+  - name: ge29
+    type: 1000base-t
+  - name: ge30
+    type: 1000base-t
+  - name: ge31
+    type: 1000base-t
+  - name: ge32
+    type: 1000base-t
+  - name: ge33
+    type: 1000base-t
+  - name: ge34
+    type: 1000base-t
+  - name: ge35
+    type: 1000base-t
+  - name: ge36
+    type: 1000base-t
+  - name: ge37
+    type: 1000base-t
+  - name: ge38
+    type: 1000base-t
+  - name: ge39
+    type: 1000base-t
+  - name: ge40
+    type: 1000base-t
+  - name: ge41
+    type: 1000base-t
+  - name: ge42
+    type: 1000base-t
+  - name: ge43
+    type: 1000base-t
+  - name: ge44
+    type: 1000base-t
+  - name: ge45
+    type: 1000base-t
+  - name: ge46
+    type: 1000base-t
+  - name: ge47
+    type: 1000base-t
+  - name: ge48
+    type: 1000base-t
+  - name: xe49
+    type: 10gbase-x-sfpp
+  - name: xe50
+    type: 10gbase-x-sfpp
+  - name: xe51
+    type: 10gbase-x-sfpp
+  - name: xe52
+    type: 10gbase-x-sfpp
+  - name: xe53
+    type: 10gbase-x-sfpp
+  - name: xe54
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    type: rj-45
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.edge-core.com/wp-content/uploads/2025/10/2025-055-EPS121_AS4625-54T-DS-R05-20251020.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Edgecore/AS4625-54T-O-AC-F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: fd781e8e1e1ab961

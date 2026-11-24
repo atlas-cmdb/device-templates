@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cabeus
+model: PDU-8P
+slug: pdu-8p
+category: pdu
+form_factor: rack
+description: Cabeus PDU-8P
+part_numbers:
+  - Cabeus-PDU-8P
+u_height: 1
+full_depth: false
+weight_kg: 0.8
+airflow: passive
+power:
+  outlet_count: 8
+power_ports:
+  - name: Input
+    label: Input
+    description: 220 - 250V AC, 10A
+    type: iec-60320-c14
+power_outlets:
+  - name: "1"
+    type: ita-f
+    power_port: Input
+  - name: "2"
+    type: ita-f
+    power_port: Input
+  - name: "3"
+    type: ita-f
+    power_port: Input
+  - name: "4"
+    type: ita-f
+    power_port: Input
+  - name: "5"
+    type: ita-f
+    power_port: Input
+  - name: "6"
+    type: ita-f
+    power_port: Input
+  - name: "7"
+    type: ita-f
+    power_port: Input
+  - name: "8"
+    type: ita-f
+    power_port: Input
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  datasheet: https://cabeus.ru/product/7961/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cabeus/PDU-8P.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 3c67d85124c5f3e7

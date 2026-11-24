@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: Catalyst 9800-L Wireless Controller Rack Mount Tray
+slug: catalyst-9800-l-wireless-controller-rack-mount-tray
+category: network_controller
+form_factor: rack
+part_numbers:
+  - C9800-L-RMNT
+u_height: 2
+full_depth: false
+subdevice_role: parent
+airflow: passive
+device_bays:
+  - name: Left Slot
+  - name: Right Slot
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/C9800-L-RMNT.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - device_bays
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 97644661f076bbdd

@@ -1,0 +1,89 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: mikrotik
+model: CRS812-8DS-2DQ-2DDQ-RM
+slug: crs812-8ds-2dq-2ddq-rm
+category: network_switch
+form_factor: rack
+part_numbers:
+  - CRS812-8DS-2DQ-2DDQ-RM
+u_height: 1
+full_depth: false
+interfaces:
+  - name: ether1
+    type: 10gbase-t
+    mgmt_only: true
+  - name: ether2
+    type: 10gbase-t
+    mgmt_only: true
+  - name: sfp56-1
+    type: 50gbase-x-sfp56
+  - name: sfp56-2
+    type: 50gbase-x-sfp56
+  - name: sfp56-3
+    type: 50gbase-x-sfp56
+  - name: sfp56-4
+    type: 50gbase-x-sfp56
+  - name: sfp56-5
+    type: 50gbase-x-sfp56
+  - name: sfp56-6
+    type: 50gbase-x-sfp56
+  - name: sfp56-7
+    type: 50gbase-x-sfp56
+  - name: sfp56-8
+    type: 50gbase-x-sfp56
+  - name: qsfp56-1-1
+    type: 200gbase-x-qsfp56
+  - name: qsfp56-2-1
+    type: 200gbase-x-qsfp56
+  - name: qsfp56-dd-1-1
+    type: 400gbase-x-qsfpdd
+  - name: qsfp56-dd-2-1
+    type: 400gbase-x-qsfpdd
+console_ports:
+  - name: serial0
+    type: rj-45
+module_bays:
+  - name: power1
+    description: Power module
+    bay_position: power1
+  - name: power2
+    description: Power module
+    bay_position: power2
+  - name: fan1
+    description: Fan tray
+    bay_position: "1"
+  - name: fan2
+    description: Fan tray
+    bay_position: "2"
+  - name: fan3
+    description: Fan tray
+    bay_position: "3"
+  - name: fan4
+    description: Fan tray
+    bay_position: "4"
+links:
+  product_page: https://mikrotik.com/product/crs812_ddq
+comments: |-
+  .
+  Careful, there is only qsfp56-[1..2]-1 and qsfp56-dd-[1..2]-1 interfaces for 200/400Gb,
+  don't forget to add the other if you use breakout cables.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/MikroTik/CRS812-8DS-2DQ-2DDQ-RM.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+  import_hash: 1679b31b2dc11e23

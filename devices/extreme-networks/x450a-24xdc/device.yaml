@@ -1,0 +1,96 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: extreme-networks
+model: X450a-24xDC
+slug: x450a-24xdc
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 5.67
+airflow: right-to-left
+power:
+  psu_count: 1
+interfaces:
+  - name: "1"
+    type: 1000base-x-sfp
+  - name: "2"
+    type: 1000base-x-sfp
+  - name: "3"
+    type: 1000base-x-sfp
+  - name: "4"
+    type: 1000base-x-sfp
+  - name: "5"
+    type: 1000base-x-sfp
+  - name: "6"
+    type: 1000base-x-sfp
+  - name: "7"
+    type: 1000base-x-sfp
+  - name: "8"
+    type: 1000base-x-sfp
+  - name: "9"
+    type: 1000base-x-sfp
+  - name: "10"
+    type: 1000base-x-sfp
+  - name: "11"
+    type: 1000base-x-sfp
+  - name: "12"
+    type: 1000base-x-sfp
+  - name: "13"
+    type: 1000base-x-sfp
+  - name: "14"
+    type: 1000base-x-sfp
+  - name: "15"
+    type: 1000base-x-sfp
+  - name: "16"
+    type: 1000base-x-sfp
+  - name: "17"
+    type: 1000base-x-sfp
+  - name: "18"
+    type: 1000base-x-sfp
+  - name: "19"
+    type: 1000base-x-sfp
+  - name: "20"
+    type: 1000base-x-sfp
+  - name: "21"
+    type: 1000base-x-sfp
+  - name: "22"
+    type: 1000base-x-sfp
+  - name: "23"
+    type: 1000base-x-sfp
+  - name: "24"
+    type: 1000base-x-sfp
+  - name: Mgmt
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial console port
+    type: de-9
+power_ports:
+  - name: DCE2
+    type: other
+    maximum_draw_w: 98
+links:
+  datasheet: https://documentation.extremenetworks.com/summit_16/GUID-A8265952-5554-44D1-9655-DBB009398263.shtml
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Extreme Networks/X450a-24xDC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: b74ae812a1ee71cd

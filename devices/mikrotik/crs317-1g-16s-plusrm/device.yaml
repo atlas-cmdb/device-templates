@@ -1,0 +1,103 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: mikrotik
+model: CRS317-1G-16S+RM
+slug: crs317-1g-16s-plusrm
+category: network_switch
+form_factor: rack
+part_numbers:
+  - CRS317-1G-16S+
+u_height: 1
+full_depth: false
+power:
+  psu_count: 2
+interfaces:
+  - name: sfp-sfpplus1
+    label: SFP+ 1
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus2
+    label: SFP+ 2
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus3
+    label: SFP+ 3
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus4
+    label: SFP+ 4
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus5
+    label: SFP+ 5
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus6
+    label: SFP+ 6
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus7
+    label: SFP+ 7
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus8
+    label: SFP+ 8
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus9
+    label: SFP+ 9
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus10
+    label: SFP+ 10
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus11
+    label: SFP+ 11
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus12
+    label: SFP+ 12
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus13
+    label: SFP+ 13
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus14
+    label: SFP+ 14
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus15
+    label: SFP+ 15
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus16
+    label: SFP+ 16
+    type: 10gbase-x-sfpp
+  - name: ether1
+    label: ETH/BOOT
+    type: 1000base-t
+console_ports:
+  - name: serial0
+    label: CONSOLE
+    type: rj-45
+power_ports:
+  - name: power1
+    label: POWER 1
+    type: iec-60320-c14
+    maximum_draw_w: 44
+  - name: power2
+    label: POWER 2
+    type: iec-60320-c14
+    maximum_draw_w: 44
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+comments: Smart Switch, 1 x Gigabit LAN, 16 x SFP+ cages, Dual Core 800MHz CPU, 1GB RAM, 1U rackmount passive cooling case, Dual Power Supplies.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/MikroTik/CRS317-1G-16S-Plus-RM.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 19d9e1bf93ca59f1

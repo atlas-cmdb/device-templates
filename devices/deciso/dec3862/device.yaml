@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: deciso
+model: DEC3862
+slug: dec3862
+category: appliance
+form_factor: rack
+part_numbers:
+  - DEC3862
+u_height: 1
+full_depth: false
+weight_kg: 3.45
+airflow: side-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: igc0
+    label: "0"
+    type: 2.5gbase-t
+  - name: igc1
+    label: "1"
+    type: 2.5gbase-t
+  - name: igc2
+    label: "2"
+    type: 2.5gbase-t
+  - name: igc3
+    label: "3"
+    type: 2.5gbase-t
+  - name: ax0
+    type: 10gbase-x-sfpp
+  - name: ax1
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    type: usb-mini-b
+power_ports:
+  - name: PSU 1
+    type: iec-60320-c14
+    maximum_draw_w: 506
+    allocated_draw_w: 45
+links:
+  datasheet: https://shop.opnsense.com/product/dec3862-opnsense-rack-security-appliance/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Deciso/DEC3862.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 3befe7fad088479e

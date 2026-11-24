@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: seagate-systems
+model: Exos CORVAULT 4U106
+slug: exos-corvault-4u106
+category: blade_chassis
+form_factor: rack
+description: "[Seagate Exos CORVAULT 4U106](https://www.seagate.com/products/storage/data-storage-systems/corvault/4U106/)"
+part_numbers:
+  - R4106I2500T002
+u_height: 4
+full_depth: true
+subdevice_role: parent
+weight_kg: 131.5
+airflow: front-to-rear
+power:
+  psu_count: 2
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+device_bays:
+  - name: A
+    description: A
+  - name: B
+    description: B
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Seagate Systems/Exos-CORVAULT-4U106.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - description
+    - device_bays
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: dd5f591d8a12a652

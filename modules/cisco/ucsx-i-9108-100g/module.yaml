@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: UCSX-I-9108-100G
+slug: ucsx-i-9108-100g
+kind: other
+description: Cisco UCS 9108 100G Intelligent Fabric Module
+part_numbers:
+  - UCSX-I-9108-100G
+interfaces:
+  - name: Fabric port {module}/1
+    type: 100gbase-x-qsfp28
+  - name: Fabric port {module}/2
+    type: 100gbase-x-qsfp28
+  - name: Fabric port {module}/3
+    type: 100gbase-x-qsfp28
+  - name: Fabric port {module}/4
+    type: 100gbase-x-qsfp28
+  - name: Fabric port {module}/5
+    type: 100gbase-x-qsfp28
+  - name: Fabric port {module}/6
+    type: 100gbase-x-qsfp28
+  - name: Fabric port {module}/7
+    type: 100gbase-x-qsfp28
+  - name: Fabric port {module}/8
+    type: 100gbase-x-qsfp28
+links:
+  datasheet: https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/cisco-ucs-9108-100g-intelligent-fabric-module-spec-sheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/UCSX-I-9108-100G.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: b62345d452c018e5

@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: Smart-UPS C SMC1500-2UC
+slug: smart-ups-c-smc1500-2uc
+category: ups
+form_factor: rack
+part_numbers:
+  - SMC1500-2UC
+u_height: 2
+full_depth: true
+weight_kg: 25.31
+airflow: front-to-rear
+power:
+  outlet_count: 6
+  psu_count: 1
+interfaces:
+  - name: SmartConnect
+    label: NETWORK
+    type: 1000base-t
+console_ports:
+  - name: Serial
+    type: rj-45
+  - name: USB
+    type: usb-a
+power_ports:
+  - name: Source
+    type: nema-5-15p
+    maximum_draw_w: 900
+power_outlets:
+  - name: Main Outlet 1
+    type: nema-5-15r
+  - name: Main Outlet 2
+    type: nema-5-15r
+  - name: Main Outlet 3
+    type: nema-5-15r
+  - name: Main Outlet 4
+    type: nema-5-15r
+  - name: Main Outlet 5
+    type: nema-5-15r
+  - name: Main Outlet 6
+    type: nema-5-15r
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  product_page: https://www.se.com/us/en/product/SMC1500-2UC/apc-smartups-c-line-interactive-1440va-rackmount-2u-120v-6x-nema-515r-outlets-smartconnect-port-usb-and-serial-communication-avrgraphic-lcd/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/SMC1500-2UC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 11ea8f79d57ac3e9

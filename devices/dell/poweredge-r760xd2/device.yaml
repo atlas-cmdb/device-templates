@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge R760xd2
+slug: poweredge-r760xd2
+category: server
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 46.3
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: iDRAC
+    label: iDRAC
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Rear Serial
+    type: de-9
+module_bays:
+  - name: PSU-1
+    label: "1"
+    bay_position: "1"
+  - name: PSU-2
+    label: "2"
+    bay_position: "2"
+  - name: NUMA 0 - OCP slot 1
+    bay_position: OCP-1
+  - name: NUMA 0 - PCIe slot 1 - LP
+    label: "1"
+    bay_position: PCIe-1
+  - name: NUMA 0 - PCIe slot 2 - LP/FH
+    label: "2"
+    bay_position: PCIe-2
+  - name: NUMA 0 - PCIe slot 3 - LP/FH
+    label: "3"
+    bay_position: PCIe-3
+  - name: NUMA 0 - PCIe slot 4 - LP
+    label: "4"
+    bay_position: PCIe-4
+  - name: NUMA 1 - PCIe slot 5 - LP
+    label: "5"
+    bay_position: PCIe-5
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.delltechnologies.com/asset/en-gb/products/servers/technical-support/poweredge-r760xd2-spec-sheet.pdf
+  manual: https://www.delltechnologies.com/asset/en-gb/products/servers/technical-support/poweredge-r760xd2-technical-guide.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-R760xd2.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 8a9807071ffc0eea

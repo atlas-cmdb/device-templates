@@ -1,0 +1,85 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: mikrotik
+model: CSS326-24G-2S+RM
+slug: css326-24g-2s-plusrm
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: ether1
+    type: 1000base-t
+  - name: ether2
+    type: 1000base-t
+  - name: ether3
+    type: 1000base-t
+  - name: ether4
+    type: 1000base-t
+  - name: ether5
+    type: 1000base-t
+  - name: ether6
+    type: 1000base-t
+  - name: ether7
+    type: 1000base-t
+  - name: ether8
+    type: 1000base-t
+  - name: ether9
+    type: 1000base-t
+  - name: ether10
+    type: 1000base-t
+  - name: ether11
+    type: 1000base-t
+  - name: ether12
+    type: 1000base-t
+  - name: ether13
+    type: 1000base-t
+  - name: ether14
+    type: 1000base-t
+  - name: ether15
+    type: 1000base-t
+  - name: ether16
+    type: 1000base-t
+  - name: ether17
+    type: 1000base-t
+  - name: ether18
+    type: 1000base-t
+  - name: ether19
+    type: 1000base-t
+  - name: ether20
+    type: 1000base-t
+  - name: ether21
+    type: 1000base-t
+  - name: ether22
+    type: 1000base-t
+  - name: ether23
+    type: 1000base-t
+  - name: ether24
+    type: 1000base-t
+  - name: sfp-sfpplus1
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus2
+    type: 10gbase-x-sfpp
+power_ports:
+  - name: PSU0
+    type: dc-terminal
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/MikroTik/CSS326-24G-2S-Plus-RM.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: ad9711a4f611623e

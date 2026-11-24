@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netgear
+model: GS110EMX
+slug: gs110emx
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 0.75
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: GigabitEthernet/1
+    type: 1000base-t
+  - name: GigabitEthernet/2
+    type: 1000base-t
+  - name: GigabitEthernet/3
+    type: 1000base-t
+  - name: GigabitEthernet/4
+    type: 1000base-t
+  - name: GigabitEthernet/5
+    type: 1000base-t
+  - name: GigabitEthernet/6
+    type: 1000base-t
+  - name: GigabitEthernet/7
+    type: 1000base-t
+  - name: GigabitEthernet/8
+    type: 1000base-t
+  - name: TenGigabitEthernet/9
+    type: 10gbase-t
+  - name: TenGigabitEthernet/10
+    type: 10gbase-t
+power_ports:
+  - name: PSU0
+    type: dc-terminal
+links:
+  other:
+    - label: 10-Gigabit/Multi-Gigabit Plus (GS110EMX)
+      url: https://www.netgear.com/business/wired/switches/plus/gs110emx/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Netgear/GS110EMX.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: d1016d9b6953cc6f

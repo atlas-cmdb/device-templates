@@ -1,0 +1,145 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: digitus
+model: DN-95117
+slug: dn-95117
+category: network_switch
+form_factor: rack
+part_numbers:
+  - "4016032430384"
+u_height: 1
+full_depth: false
+weight_kg: 5.15
+power:
+  psu_count: 1
+interfaces:
+  - name: GigabitEthernet1
+    type: 1000base-t
+  - name: GigabitEthernet2
+    type: 1000base-t
+  - name: GigabitEthernet3
+    type: 1000base-t
+  - name: GigabitEthernet4
+    type: 1000base-t
+  - name: GigabitEthernet5
+    type: 1000base-t
+  - name: GigabitEthernet6
+    type: 1000base-t
+  - name: GigabitEthernet7
+    type: 1000base-t
+  - name: GigabitEthernet8
+    type: 1000base-t
+  - name: GigabitEthernet9
+    type: 1000base-t
+  - name: GigabitEthernet10
+    type: 1000base-t
+  - name: GigabitEthernet11
+    type: 1000base-t
+  - name: GigabitEthernet12
+    type: 1000base-t
+  - name: GigabitEthernet13
+    type: 1000base-t
+  - name: GigabitEthernet14
+    type: 1000base-t
+  - name: GigabitEthernet15
+    type: 1000base-t
+  - name: GigabitEthernet16
+    type: 1000base-t
+  - name: GigabitEthernet17
+    type: 1000base-t
+  - name: GigabitEthernet18
+    type: 1000base-t
+  - name: GigabitEthernet19
+    type: 1000base-t
+  - name: GigabitEthernet20
+    type: 1000base-t
+  - name: GigabitEthernet21
+    type: 1000base-t
+  - name: GigabitEthernet22
+    type: 1000base-t
+  - name: GigabitEthernet23
+    type: 1000base-t
+  - name: GigabitEthernet24
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut1
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut2
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut3
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut4
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut5
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut6
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut7
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut8
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut9
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut10
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut11
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut12
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut13
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut14
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut15
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut16
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut17
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut18
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut19
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut20
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut21
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut22
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut23
+    type: 1000base-t
+  - name: GigabitEthernetPoEOut24
+    type: 1000base-t
+power_ports:
+  - name: PSU0
+    type: iec-60320-c14
+    maximum_draw_w: 20
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  product_page: https://www.assmann.com/product-pdf/4016032430384?PL=de
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Digitus/DN-95117.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 74add685ccbe0efd

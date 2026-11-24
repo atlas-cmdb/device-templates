@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: aten
+model: 8-Port-PS/2-USB-VGA-KVM-Switch
+slug: 8-port-ps-2-usb-vga-kvm-switch
+category: kvm_switch
+form_factor: rack
+part_numbers:
+  - CS1308
+u_height: 1
+full_depth: false
+weight_kg: 1.9
+power:
+  psu_count: 1
+console_ports:
+  - name: console
+    label: console
+    type: other
+console_server_ports:
+  - name: KVM/1
+    label: "1"
+    type: other
+  - name: KVM/2
+    label: "2"
+    type: other
+  - name: KVM/3
+    label: "3"
+    type: other
+  - name: KVM/4
+    label: "4"
+    type: other
+  - name: KVM/5
+    label: "5"
+    type: other
+  - name: KVM/6
+    label: "6"
+    type: other
+  - name: KVM/7
+    label: "7"
+    type: other
+  - name: KVM/8
+    label: "8"
+    type: other
+power_ports:
+  - name: DC In
+    description: DC 5.3 V
+    type: dc-terminal
+    maximum_draw_w: 3
+links:
+  product_page: https://www.aten.com/de/de/products/kvm/rack-kvm-switches/cs1308/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Aten/cs1308.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 3f52a45f6f25bfd1

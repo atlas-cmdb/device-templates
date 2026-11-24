@@ -1,0 +1,93 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SuperServer 5019D-FN8TP
+slug: superserver-5019d-fn8tp
+category: server
+form_factor: rack
+part_numbers:
+  - SYS-5019D-FN8TP
+u_height: 1
+full_depth: false
+weight_kg: 3.63
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: Gig-E 3
+    type: 1000base-t
+  - name: Gig-E 4
+    type: 1000base-t
+  - name: Gig-E 5
+    type: 10gbase-t
+  - name: Gig-E 6
+    type: 10gbase-t
+  - name: Gig-E 7
+    type: 10gbase-x-sfpp
+  - name: Gig-E 8
+    type: 10gbase-x-sfpp
+  - name: BMC
+    type: 1000base-t
+    mgmt_only: true
+power_ports:
+  - name: Power 1
+    type: iec-60320-c14
+    maximum_draw_w: 200
+module_bays:
+  - name: PCI-E 1
+    description: PCI-E 3.0 x8 slot
+    bay_position: "1"
+  - name: PCI-E 2
+    description: PCI-E 3.0 x16 slot
+    bay_position: "2"
+  - name: PCI-E 3
+    description: Mini-PCIe
+    bay_position: "3"
+  - name: M.2 1
+    description: M.2 M key for SSD, 2242/8
+    bay_position: "4"
+  - name: M.2 2
+    description: M.2 B Key for SSD/WAN card
+    bay_position: "5"
+  - name: DIMM A1
+    description: DDR4 DIMM slot
+    bay_position: "1"
+  - name: DIMM A2
+    description: DDR4 DIMM slot
+    bay_position: "2"
+  - name: DIMM B1
+    description: DDR4 DIMM slot
+    bay_position: "3"
+  - name: DIMM B2
+    bay_position: "4"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+comments: SuperServer 5019D-FN8TP (https://www.supermicro.com/products/system/1u/5019/SYS-5019D-FN8TP.cfm)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SYS-5019D-FN8TP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 35892f5796dd1915

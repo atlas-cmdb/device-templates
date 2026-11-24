@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge XR7620
+slug: poweredge-xr7620
+category: server
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 15.78
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: iDRAC
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Rear Serial
+    type: de-9
+module_bays:
+  - name: OCP 1
+    bay_position: OCP-1
+  - name: OCP 2
+    bay_position: OCP-2
+  - name: OCP 3
+    bay_position: OCP-3
+  - name: OCP 4
+    bay_position: OCP-4
+  - name: PSU-1
+    label: "1"
+    bay_position: PSU-1
+  - name: PSU-2
+    label: "2"
+    bay_position: PSU-2
+links:
+  manual: https://www.delltechnologies.com/asset/en-us/products/servers/technical-support/poweredge-xr7620-techincal-guide.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-XR7620.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: a82e8239195a3119

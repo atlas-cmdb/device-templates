@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: huawei
+model: CR9D0MPUP180
+slug: cr9d0mpup180
+kind: other
+description: NE9000 MPUP1
+part_numbers:
+  - "03057531"
+weight_kg: 7.8
+interfaces:
+  - name: GE0/0/0({module})
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Console({module})
+    type: rj-45
+  - name: AUX({module})
+    type: rj-45
+  - name: USB({module})
+    type: usb-a
+links:
+  other:
+    - label: NE9000-8 Main Processing Unit P1 (MPUP1)
+      url: https://info.support.huawei.com/info-finder/enterprisesearch/en?keyword=CR9D0MPUP180
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Huawei/CR9D0MPUP180.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - console_ports
+    - description
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - weight_kg
+  import_hash: 220634c984cf7590

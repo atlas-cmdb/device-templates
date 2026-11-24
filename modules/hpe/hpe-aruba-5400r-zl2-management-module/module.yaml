@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: hpe
+model: HPE Aruba 5400R zl2 Management Module
+slug: hpe-aruba-5400r-zl2-management-module
+kind: supervisor
+part_numbers:
+  - J9827A
+interfaces:
+  - name: "{module}"
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: Aux
+    type: usb-a
+comments: HPE Aruba 5400R zl2 Management Module
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/HPE/J9827A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - console_ports
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 0d8d3daecfa77e0f

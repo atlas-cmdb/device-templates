@@ -1,0 +1,105 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: zpe
+model: Net SR 8C DAC
+slug: net-sr-8c-dac
+category: network_switch
+form_factor: rack
+description: Modular chassis, 8-Core Intel CPU, Backplane Switch, 32GB mSATA, 5 Slots, 2x SFP+, 2x GbE, 3x USB, 1x HDMI, 1x Console, Dual AC Power Supply
+part_numbers:
+  - NSR-TOP1-DAC
+u_height: 1
+full_depth: false
+weight_kg: 4.9
+airflow: side-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0
+    label: ETH 0
+    type: 1000base-t
+  - name: eth1
+    label: ETH 1
+    type: 1000base-t
+  - name: sfp0
+    label: SFP 0
+    type: 10gbase-x-sfpp
+  - name: sfp1
+    label: SFP 1
+    type: 10gbase-x-sfpp
+  - name: backplane0
+    type: 10gbase-kr
+  - name: backplane1
+    type: 10gbase-kr
+console_ports:
+  - name: Console
+    label: CONSOLE
+    type: rj-45
+console_server_ports:
+  - name: usbS0-1
+    label: USB
+    description: USB 3.0, Front
+    type: usb-a
+  - name: usbS0-2
+    label: USB
+    description: USB 2.0, Rear Top
+    type: usb-a
+  - name: usbS0-3
+    label: USB
+    description: USB 2.0, Rear Bottom (above HDMI)
+    type: usb-a
+power_ports:
+  - name: PS1
+    description: Rear Left
+    type: iec-60320-c14
+  - name: PS2
+    description: Rear Center
+    type: iec-60320-c14
+module_bays:
+  - name: slot-1
+    description: Module Slot, Front Left
+    bay_position: "1"
+  - name: slot-2
+    description: Module Slot, Front Center
+    bay_position: "2"
+  - name: slot-3
+    description: Module Slot, Front Right
+    bay_position: "3"
+  - name: slot-4
+    description: Module Slot, Rear Right
+    bay_position: "4"
+  - name: slot-5
+    description: Module Slot, Rear Center
+    bay_position: "5"
+  - name: system fan 1
+    description: Fan Slot, Rear Center
+    bay_position: "1"
+  - name: system fan 2
+    description: Fan Slot, Rear Left (next to Power Supply)
+    bay_position: "2"
+links:
+  datasheet: https://go.zpesystems.com/rs/004-BTR-463/images/Datasheet-Nodegrid-Net-SR.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/ZPE/NSR-TOP1-DAC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - console_server_ports
+    - description
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1586d581c953eae4

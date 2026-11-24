@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fs
+model: FHX-1UFSP
+slug: fhx-1ufsp
+category: patch_panel
+form_factor: rack
+part_numbers:
+  - FHX-1UFSP (#68911) (discontinued)
+u_height: 1
+full_depth: true
+module_bays:
+  - name: "1"
+    bay_position: "1"
+  - name: "2"
+    bay_position: "2"
+  - name: "3"
+    bay_position: "3"
+  - name: "4"
+    bay_position: "4"
+  - name: "5"
+    bay_position: "5"
+  - name: "6"
+    bay_position: "6"
+  - name: "7"
+    bay_position: "7"
+  - name: "8"
+    bay_position: "8"
+  - name: "9"
+    bay_position: "9"
+  - name: "10"
+    bay_position: "10"
+  - name: "11"
+    bay_position: "11"
+  - name: "12"
+    bay_position: "12"
+comments: 1U 144 Fibers Rack Mount FHX Ultra HD Fiber Enclosure Unloaded, Holds up to 12x FHX MTP-12 Cassettes or Panels
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/FS/FHX-1UFSP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+  import_hash: a4731ccb9b7b1175

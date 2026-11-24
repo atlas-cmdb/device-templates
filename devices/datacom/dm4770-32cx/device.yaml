@@ -1,0 +1,156 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: datacom
+model: DM4770 32CX
+slug: dm4770-32cx
+category: network_switch
+form_factor: rack
+part_numbers:
+  - 800.5255.xx
+u_height: 1
+full_depth: true
+weight_kg: 6.3
+airflow: side-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: hundred-gigabit-ethernet 1/1/1
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/2
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/3
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/4
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/5
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/6
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/7
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/8
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/9
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/10
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/11
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/12
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/13
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/14
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/15
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/16
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/17
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/18
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/19
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/20
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/21
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/22
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/23
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/24
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/25
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/26
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/27
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/28
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/29
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/30
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/31
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: hundred-gigabit-ethernet 1/1/32
+    description: 100G/40G Base-X (QSFP28)
+    type: 100gbase-x-qsfp28
+  - name: mgmt-1/1/1
+    type: 100base-tx
+    mgmt_only: true
+  - name: ten-gigabit-ethernet-1/1/1
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console0
+    type: rj-45
+  - name: Console1
+    type: usb-mini-b
+module_bays:
+  - name: FAN
+    label: "1"
+    bay_position: "1"
+  - name: PSU1
+    label: "1"
+    bay_position: "1"
+  - name: PSU2
+    label: "2"
+    bay_position: "2"
+comments: Switch with L2, L3, and MPLS capabilities, with 32 40GE/100GE interfaces on QSFP28 connectors and 2 GE/10GE interfaces on SFP+ connectors. 1U metal enclosure for 19 rack with 4 slots for fan modules and two slots for redundant AC or DC power supplies. Outband management interfaces, RS232 console, and USB ports. Power supplies, FAN modules, MPLS license, and optical modules must be purchased separately.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Datacom/DM4770-32CX.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1400c5f05835f98d

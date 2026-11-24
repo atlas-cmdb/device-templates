@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: wti
+model: CPM-800-2-A
+slug: cpm-800-2-a
+category: console_server
+form_factor: rack
+part_numbers:
+  - CPM-800-2-A
+u_height: 1
+full_depth: false
+airflow: passive
+power:
+  outlet_count: 8
+  psu_count: 2
+interfaces:
+  - name: ETH0
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: usb-mini-b
+console_server_ports:
+  - name: port1
+    type: rj-45
+  - name: port2
+    type: rj-45
+  - name: port3
+    type: rj-45
+  - name: port4
+    type: rj-45
+  - name: port5
+    type: rj-45
+  - name: port6
+    type: rj-45
+  - name: port7
+    type: rj-45
+  - name: port8
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c20
+  - name: PS2
+    type: iec-60320-c20
+power_outlets:
+  - name: Outlet_A1
+    type: iec-60320-c13
+  - name: Outlet_A2
+    type: iec-60320-c13
+  - name: Outlet_A3
+    type: iec-60320-c13
+  - name: Outlet_A4
+    type: iec-60320-c13
+  - name: Outlet_A5
+    type: iec-60320-c13
+  - name: Outlet_A6
+    type: iec-60320-c13
+  - name: Outlet_A7
+    type: iec-60320-c13
+  - name: Outlet_A8
+    type: iec-60320-c13
+links:
+  datasheet: https://ftp.wti.com/download/datasheets/specs_cpm_gige_console_server-switched_pdu.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/WTI/CPM-800-2-A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 444ebc042aabee4d

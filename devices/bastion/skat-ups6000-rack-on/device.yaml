@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: bastion
+model: SKAT-UPS6000-RACK-ON
+slug: skat-ups6000-rack-on
+category: ups
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 17.4
+airflow: front-to-rear
+power:
+  outlet_count: 1
+  psu_count: 1
+console_ports:
+  - name: Serial
+    type: de-9
+  - name: USB
+    type: usb-b
+power_ports:
+  - name: Input
+    type: hardwired
+    maximum_draw_w: 7200
+power_outlets:
+  - name: Output
+    type: hardwired
+    power_port: Input
+module_bays:
+  - name: IntelligentSlot
+    bay_position: Rear
+links:
+  other:
+    - label: Quickspecs
+      url: https://bast.ru/ups/skat-ups-6000-rack
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Bastion/SKAT-UPS6000-RACK-ON.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 9071c9e046a4ad78

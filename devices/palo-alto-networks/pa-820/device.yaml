@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: palo-alto-networks
+model: PA-820
+slug: pa-820
+category: firewall
+form_factor: rack
+part_numbers:
+  - PA-820
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: management
+    type: 1000base-t
+    mgmt_only: true
+  - name: dedicated-ha1
+    type: 1000base-t
+  - name: dedicated-ha2
+    type: 1000base-t
+  - name: loopback
+    type: virtual
+  - name: ethernet1/1
+    type: 1000base-t
+  - name: ethernet1/2
+    type: 1000base-t
+  - name: ethernet1/3
+    type: 1000base-t
+  - name: ethernet1/4
+    type: 1000base-t
+  - name: ethernet1/5
+    type: 1000base-x-sfp
+  - name: ethernet1/6
+    type: 1000base-x-sfp
+  - name: ethernet1/7
+    type: 1000base-x-sfp
+  - name: ethernet1/8
+    type: 1000base-x-sfp
+  - name: ethernet1/9
+    type: 1000base-x-sfp
+  - name: ethernet1/10
+    type: 1000base-x-sfp
+  - name: ethernet1/11
+    type: 1000base-x-sfp
+  - name: ethernet1/12
+    type: 1000base-x-sfp
+console_ports:
+  - name: console
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 200
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Palo Alto Networks/PA-820.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 1d59cd1c67ae86ad

@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: vertiv
+model: GXT5-3000IRT2UXL
+slug: gxt5-3000irt2uxl
+category: ups
+form_factor: rack
+part_numbers:
+  - GXT5-3000IRT2UXL
+u_height: 2
+full_depth: true
+weight_kg: 28.5
+power:
+  outlet_count: 7
+  psu_count: 2
+interfaces:
+  - name: Network Option (IntelliSlot Port)
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: USB
+    type: usb-b
+  - name: RS232
+    type: rj-45
+  - name: RS485
+    type: rj-45
+power_ports:
+  - name: Input Power
+    type: iec-60320-c20
+  - name: Battery connector (EBC)
+    label: ebc-input
+    type: other
+power_outlets:
+  - name: Power Outlet - Non Programmable 1
+    type: iec-60320-c13
+  - name: Power Outlet - Non Programmable 2
+    type: iec-60320-c13
+  - name: Power Outlet - Programmable 1
+    type: iec-60320-c13
+  - name: Power Outlet - Programmable 2
+    type: iec-60320-c13
+  - name: Power Outlet - Programmable 3
+    type: iec-60320-c13
+  - name: Power Outlet - Programmable 4
+    type: iec-60320-c13
+  - name: Power Outlet - Non Programmable 15A
+    type: iec-60320-c19
+links:
+  manual: https://www.vertiv.com/4a0991/globalassets/products/critical-power/uninterruptible-power-supplies-ups/user-manual_ap-version.pdf
+comments: Vertiv GXT5 UPS , 3000 VA, Rack/tower 2U
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Vertiv/GXT5-3000IRT2UXL.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 570b1afa5d950932

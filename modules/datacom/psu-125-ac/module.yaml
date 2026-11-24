@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: datacom
+model: PSU 125 AC
+slug: psu-125-ac
+kind: psu
+part_numbers:
+  - 800.5187.xx
+power_ports:
+  - name: PSU 1
+    description: 100-240VAC
+    type: iec-60320-c14
+    maximum_draw_w: 125
+comments: 125W power supply with -48VDC input compatible with OLT DM4615. Allows operation as a redundant and hot-swappable source.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Datacom/PSU-125-AC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: 2f0367c163810b4b

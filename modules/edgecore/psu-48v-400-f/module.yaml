@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: edgecore
+model: PSU-48V-400-F
+slug: psu-48v-400-f
+kind: psu
+description: 400W -48V DC Power Supply FRU, port-to-power airflow
+part_numbers:
+  - PSU-48V-400-F
+airflow: front-to-rear
+power:
+  input_voltage: 48V DC
+  psu_rating_w: 400
+power_ports:
+  - name: PSU{module}
+    type: dc-terminal
+    maximum_draw_w: 400
+comments: |-
+  For switches:
+    - Edgecore 5600-52X
+    - Edgecore 5610-52X
+    - Edgecore 5710-54X
+    - Edgecore 5712-54X
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Edgecore/PSU-48V-400-F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - airflow
+    - comments
+    - description
+    - manufacturer
+    - model
+    - part_numbers
+    - power.input_voltage
+    - power.psu_rating_w
+    - power_ports
+    - slug
+  import_hash: 01e00a1a63405357

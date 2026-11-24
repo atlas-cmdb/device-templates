@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: UniFi Switch XG 6PoE
+slug: unifi-switch-xg-6poe
+category: network_switch
+form_factor: rack
+part_numbers:
+  - US-XG-6POE
+u_height: 1
+full_depth: false
+weight_kg: 1.3
+airflow: passive
+power:
+  psu_count: 2
+interfaces:
+  - name: RJ45 1 (PoE)
+    type: 10gbase-t
+    poe_mode: pse
+    poe_type: type3-ieee802.3bt
+  - name: RJ45 2 (PoE)
+    type: 10gbase-t
+    poe_mode: pse
+    poe_type: type3-ieee802.3bt
+  - name: RJ45 3 (PoE)
+    type: 10gbase-t
+    poe_mode: pse
+    poe_type: type3-ieee802.3bt
+  - name: RJ45 4 (PoE)
+    type: 10gbase-t
+    poe_mode: pse
+    poe_type: type3-ieee802.3bt
+  - name: SFP+ 5
+    type: 10gbase-x-sfpp
+  - name: SFP+ 6
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: Console (USB)
+    type: usb-c
+power_ports:
+  - name: 54VDC IN
+    type: dc-terminal
+    maximum_draw_w: 210
+  - name: 54VDC (external)
+    type: dc-terminal
+    maximum_draw_w: 210
+comments: |-
+  UniFi Switch XG 6PoE, 10G 6-Port Switch with 802.3bt PoE++, (40W w/o PoE) External VDC PSU (4) 1/10 Gigabit 60W PoE++ IEEE 802.3bt, (2) SFP+
+  Dimensions: 165 x 268.1 x 31.8 mm (6.50 x 10.56 x 1.25")
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/US-XG-6POE.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: cdd3e575b733a75a

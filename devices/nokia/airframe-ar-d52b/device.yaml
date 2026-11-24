@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: nokia
+model: AirFrame AR-D52B
+slug: airframe-ar-d52b
+category: server
+form_factor: rack
+description: Nokia AirFrame Rackmount 2U server, dual-socket Intel Xeon Scalable, 4x LFF bays
+part_numbers:
+  - AR-D52B
+u_height: 2
+full_depth: true
+weight_kg: 25
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: BMC
+    description: Dedicated BMC management port
+    type: 1000base-t
+    mgmt_only: true
+  - name: eth0
+    type: 1000base-t
+  - name: eth1
+    type: 1000base-t
+console_ports:
+  - name: Serial
+    type: rj-45
+module_bays:
+  - name: HDD Bay 1
+    description: Hot-swap 3.5" LFF bay
+    bay_position: "1"
+  - name: HDD Bay 2
+    description: Hot-swap 3.5" LFF bay
+    bay_position: "2"
+  - name: HDD Bay 3
+    description: Hot-swap 3.5" LFF bay
+    bay_position: "3"
+  - name: HDD Bay 4
+    description: Hot-swap 3.5" LFF bay
+    bay_position: "4"
+  - name: PSU 1
+    bay_position: PSU1
+  - name: PSU 2
+    bay_position: PSU2
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Nokia/AirFrame-AR-D52B.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: a058f6ea1cf200f4

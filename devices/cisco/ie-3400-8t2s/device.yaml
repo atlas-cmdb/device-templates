@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: IE-3400-8T2S
+slug: ie-3400-8t2s
+category: network_switch
+form_factor: rack
+description: Catalyst IE3400 with 8 GE Copper and 2 GE SFP, Adv. Modular
+part_numbers:
+  - IE-3400-8T2S
+u_height: 1
+full_depth: false
+weight_kg: 1.7
+airflow: front-to-rear
+interfaces:
+  - name: GigabitEthernet1/1
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/2
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/3
+    type: 1000base-t
+  - name: GigabitEthernet1/4
+    type: 1000base-t
+  - name: GigabitEthernet1/5
+    type: 1000base-t
+  - name: GigabitEthernet1/6
+    type: 1000base-t
+  - name: GigabitEthernet1/7
+    type: 1000base-t
+  - name: GigabitEthernet1/8
+    type: 1000base-t
+  - name: GigabitEthernet1/9
+    type: 1000base-t
+  - name: GigabitEthernet1/10
+    type: 1000base-t
+console_ports:
+  - name: con0
+    type: rj-45
+  - name: usb0
+    type: usb-mini-b
+module_bays:
+  - name: Expansion Module
+    bay_position: "2"
+  - name: DC-A
+    bay_position: A
+  - name: DC-B
+    bay_position: B
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3400-rugged-series/cat-ie3400-rugged-series-ds.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/IE-3400-8T2S.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e10293c8cc5479be

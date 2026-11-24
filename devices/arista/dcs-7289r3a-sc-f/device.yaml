@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: arista
+model: DCS-7289R3A-SC-F
+slug: dcs-7289r3a-sc-f
+category: network_switch
+form_factor: rack
+part_numbers:
+  - DCS-7289R3A-SC-F
+u_height: 4
+full_depth: false
+weight_kg: 16.3
+airflow: front-to-rear
+power:
+  psu_count: 4
+module_bays:
+  - name: PSU 1
+    bay_position: "1"
+  - name: PSU 2
+    bay_position: "2"
+  - name: PSU 3
+    bay_position: "3"
+  - name: PSU 4
+    bay_position: "4"
+  - name: Supervisor1
+    bay_position: "1"
+  - name: Linecard2
+    bay_position: "2"
+  - name: Linecard3
+    bay_position: "3"
+  - name: Linecard4
+    bay_position: "4"
+  - name: Linecard5
+    bay_position: "5"
+  - name: Linecard6
+    bay_position: "6"
+  - name: Linecard7
+    bay_position: "7"
+  - name: Linecard8
+    bay_position: "8"
+  - name: Linecard9
+    bay_position: "9"
+  - name: Linecard10
+    bay_position: "10"
+links:
+  datasheet: https://www.arista.com/assets/data/pdf/Datasheets/7280R3A-Modular-Datasheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Arista/DCS-7289R3A-SC-F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 8d39d7bfd8b67330

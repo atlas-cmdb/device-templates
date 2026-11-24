@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: riverbed
+model: CX7070
+slug: cx7070
+category: appliance
+form_factor: rack
+part_numbers:
+  - CX7070
+u_height: 2
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: LAN0_0
+    type: 1000base-t
+  - name: WAN0_0
+    type: 1000base-t
+  - name: LAN1_1
+    type: 1000base-t
+  - name: WAN1_1
+    type: 1000base-t
+  - name: Primary
+    type: 1000base-t
+  - name: Aux
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: USB0
+    type: usb-a
+  - name: USB1
+    type: usb-a
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 527
+    allocated_draw_w: 422
+  - name: PS2
+    type: iec-60320-c14
+    maximum_draw_w: 527
+    allocated_draw_w: 422
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Riverbed/CX7070.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 8b8ffa11c7d371a2

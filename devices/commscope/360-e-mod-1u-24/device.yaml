@@ -1,0 +1,182 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: commscope
+model: 360-E-MOD-1U-24
+slug: 360-e-mod-1u-24
+category: patch_panel
+form_factor: rack
+description: SYSTIMAX 360-E-MOD-1U-24 - 360 Evolve 24-port RJ45 flat patch panel
+part_numbers:
+  - "760187187"
+u_height: 1
+full_depth: false
+weight_kg: 0.5
+airflow: passive
+front_ports:
+  - name: "1"
+    type: 8p8c
+    rear_port: "1"
+    rear_port_position: 1
+  - name: "2"
+    type: 8p8c
+    rear_port: "2"
+    rear_port_position: 1
+  - name: "3"
+    type: 8p8c
+    rear_port: "3"
+    rear_port_position: 1
+  - name: "4"
+    type: 8p8c
+    rear_port: "4"
+    rear_port_position: 1
+  - name: "5"
+    type: 8p8c
+    rear_port: "5"
+    rear_port_position: 1
+  - name: "6"
+    type: 8p8c
+    rear_port: "6"
+    rear_port_position: 1
+  - name: "7"
+    type: 8p8c
+    rear_port: "7"
+    rear_port_position: 1
+  - name: "8"
+    type: 8p8c
+    rear_port: "8"
+    rear_port_position: 1
+  - name: "9"
+    type: 8p8c
+    rear_port: "9"
+    rear_port_position: 1
+  - name: "10"
+    type: 8p8c
+    rear_port: "10"
+    rear_port_position: 1
+  - name: "11"
+    type: 8p8c
+    rear_port: "11"
+    rear_port_position: 1
+  - name: "12"
+    type: 8p8c
+    rear_port: "12"
+    rear_port_position: 1
+  - name: "13"
+    type: 8p8c
+    rear_port: "13"
+    rear_port_position: 1
+  - name: "14"
+    type: 8p8c
+    rear_port: "14"
+    rear_port_position: 1
+  - name: "15"
+    type: 8p8c
+    rear_port: "15"
+    rear_port_position: 1
+  - name: "16"
+    type: 8p8c
+    rear_port: "16"
+    rear_port_position: 1
+  - name: "17"
+    type: 8p8c
+    rear_port: "17"
+    rear_port_position: 1
+  - name: "18"
+    type: 8p8c
+    rear_port: "18"
+    rear_port_position: 1
+  - name: "19"
+    type: 8p8c
+    rear_port: "19"
+    rear_port_position: 1
+  - name: "20"
+    type: 8p8c
+    rear_port: "20"
+    rear_port_position: 1
+  - name: "21"
+    type: 8p8c
+    rear_port: "21"
+    rear_port_position: 1
+  - name: "22"
+    type: 8p8c
+    rear_port: "22"
+    rear_port_position: 1
+  - name: "23"
+    type: 8p8c
+    rear_port: "23"
+    rear_port_position: 1
+  - name: "24"
+    type: 8p8c
+    rear_port: "24"
+    rear_port_position: 1
+rear_ports:
+  - name: "1"
+    type: 110-punch
+  - name: "2"
+    type: 110-punch
+  - name: "3"
+    type: 110-punch
+  - name: "4"
+    type: 110-punch
+  - name: "5"
+    type: 110-punch
+  - name: "6"
+    type: 110-punch
+  - name: "7"
+    type: 110-punch
+  - name: "8"
+    type: 110-punch
+  - name: "9"
+    type: 110-punch
+  - name: "10"
+    type: 110-punch
+  - name: "11"
+    type: 110-punch
+  - name: "12"
+    type: 110-punch
+  - name: "13"
+    type: 110-punch
+  - name: "14"
+    type: 110-punch
+  - name: "15"
+    type: 110-punch
+  - name: "16"
+    type: 110-punch
+  - name: "17"
+    type: 110-punch
+  - name: "18"
+    type: 110-punch
+  - name: "19"
+    type: 110-punch
+  - name: "20"
+    type: 110-punch
+  - name: "21"
+    type: 110-punch
+  - name: "22"
+    type: 110-punch
+  - name: "23"
+    type: 110-punch
+  - name: "24"
+    type: 110-punch
+links:
+  product_page: https://www.commscope.com/product-type/frames-panels-cassettes-modules/copper-panels-modules-cassettes/copper-panels/item760187187/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Commscope/360-E-MOD-1U-24.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - front_ports
+    - full_depth
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 653787c1c2af9dda

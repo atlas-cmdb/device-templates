@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: FortiGate Module 7620F
+slug: fortigate-module-7620f
+category: firewall
+form_factor: blade
+part_numbers:
+  - FPM-7620F
+u_height: 0
+full_depth: true
+subdevice_role: child
+weight_kg: 7.35
+airflow: front-to-rear
+interfaces:
+  - name: port1
+    type: 400gbase-x-qsfpdd
+  - name: port2
+    type: 400gbase-x-qsfpdd
+  - name: port3
+    type: 25gbase-x-sfp28
+  - name: port4
+    type: 25gbase-x-sfp28
+  - name: port5
+    type: 25gbase-x-sfp28
+  - name: port6
+    type: 25gbase-x-sfp28
+  - name: port7
+    type: 25gbase-x-sfp28
+  - name: port8
+    type: 25gbase-x-sfp28
+  - name: port9
+    type: 25gbase-x-sfp28
+  - name: port10
+    type: 25gbase-x-sfp28
+console_ports:
+  - name: Console
+    type: rj-45
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/FPM-7620F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 87a81fc747d96a80

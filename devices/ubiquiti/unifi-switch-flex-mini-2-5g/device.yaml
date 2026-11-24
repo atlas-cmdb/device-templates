@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: UniFi Switch Flex Mini 2.5G
+slug: unifi-switch-flex-mini-2-5g
+category: network_switch
+form_factor: other
+part_numbers:
+  - USW-Flex-2-5G-5
+u_height: 0
+full_depth: false
+weight_kg: 0.206
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: Port 1
+    type: 2.5gbase-t
+  - name: Port 2
+    type: 2.5gbase-t
+  - name: Port 3
+    type: 2.5gbase-t
+  - name: Port 4
+    type: 2.5gbase-t
+  - name: Port 5 (PoE IN)
+    type: 2.5gbase-t
+    poe_mode: pd
+    poe_type: type1-ieee802.3af
+power_ports:
+  - name: Supply
+    type: usb-c
+    maximum_draw_w: 5
+links:
+  other:
+    - label: Flex Mini 2.5G
+      url: https://techspecs.ui.com/unifi/switching/usw-flex-2-5g-5
+comments: 117.1 x 90 x 21.2 mm (4.6 x 3.5 x 0.8")
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/USW-Flex-2-5G-5.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 25bd9fbba0162372

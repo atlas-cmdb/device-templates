@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: extreme-networks
+model: "17116"
+slug: "17116"
+kind: other
+part_numbers:
+  - "17116"
+airflow: rear-to-front
+comments: Fan module, for use in 5520, X590, X690, and X870
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Extreme Networks/17116.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - airflow
+    - comments
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: da1d5d4449bb9d4f

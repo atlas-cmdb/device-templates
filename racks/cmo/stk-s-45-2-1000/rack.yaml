@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../../schema/rack.schema.json
+manufacturer: cmo
+model: STK-S-45.2.1000
+slug: stk-s-45-2-1000
+form_factor: 4-post-frame
+description: CMO STK-S-45.2.1000, Server 4post Frame, 45U, Gray, 2115H x 560W x 1280D mm
+u_height: 45
+starting_unit: 1
+rack_width: 19
+outer_width_mm: 560
+outer_height_mm: 2115
+outer_depth_mm: 1280
+mounting_depth_mm: 1000
+weight_kg: 36
+max_load_kg: 480
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: rack-types/CMO/STK-S-45.2.1000.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - description
+    - manufacturer
+    - max_load_kg
+    - model
+    - mounting_depth_mm
+    - outer_depth_mm
+    - outer_height_mm
+    - outer_width_mm
+    - rack_width
+    - slug
+    - starting_unit
+    - u_height
+    - weight_kg
+  import_hash: 5a773087e910e035

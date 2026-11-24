@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: meinberg
+model: IMS-GNM
+slug: ims-gnm
+kind: other
+console_ports:
+  - name: COM
+    type: de-9
+rear_ports:
+  - name: Antenna
+    type: bnc
+comments: |-
+  184-channel multi-band, multi-GNSS receiver for reception of signals from the GPS, Galileo, BeiDou and GLONASS constellations.
+  Requires a Meinberg GNSS Multi-Band Antenna.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Meinberg/IMS-GNM.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - console_ports
+    - manufacturer
+    - model
+    - rear_ports
+    - slug
+  import_hash: ae460756ce63fd8e

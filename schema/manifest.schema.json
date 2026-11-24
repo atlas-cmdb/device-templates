@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://atlas-cmdb.github.io/device-templates/schema/manifest.schema.json",
+  "title": "Template manifest",
+  "description": "Generated search index (dist/manifest.json). Every path is relative to base_url. Fetch a row's `path` for the full template.",
+  "type": "object",
+  "required": ["format_version", "generated_at", "base_url", "devices", "modules", "racks", "manufacturers", "categories"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "format_version": { "const": 1 },
+    "license": {
+      "type": "object",
+      "properties": { "data": { "const": "CC0-1.0" }, "url": { "type": "string", "format": "uri" } }
+    },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "commit": { "type": "string" },
+    "base_url": { "type": "string", "format": "uri" },
+    "stats": { "type": "object", "additionalProperties": { "type": "integer" } },
+    "categories": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["label", "count"],
+        "properties": {
+          "label": { "type": "string" },
+          "atlas_type": { "type": ["string", "null"] },
+          "count": { "type": "integer" }
+        }
+      }
+    },
+    "manufacturers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["slug", "name"],
+        "properties": {
+          "slug": { "type": "string" },
+          "name": { "type": "string" },
+          "aliases": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "devices": { "type": "array", "items": { "$ref": "#/$defs/device" } },
+    "modules": { "type": "array", "items": { "$ref": "#/$defs/module" } },
+    "racks": { "type": "array", "items": { "$ref": "#/$defs/rack" } }
+  },
+  "$defs": {
+    "base": {
+      "type": "object",
+      "required": ["id", "manufacturer", "model", "path", "rev", "search"],
+      "properties": {
+        "id": { "description": "<manufacturer>/<slug>; stable, use it as the foreign key.", "type": "string" },
+        "manufacturer": { "type": "string" },
+        "model": { "type": "string" },
+        "path": { "description": "Full JSON document, relative to base_url.", "type": "string" },
+        "rev": { "description": "Changes whenever the template or one of its files changes.", "type": "string" },
+        "part_numbers": { "type": "array", "items": { "type": "string" } },
+        "images": {
+          "type": "object",
+          "properties": {
+            "front": { "type": "string" },
+            "rear": { "type": "string" },
+            "top": { "type": "string" },
+            "left": { "type": "string" },
+            "right": { "type": "string" }
+          }
+        },
+        "verified": { "type": "boolean" },
+        "search": { "description": "Lower-case haystack: manufacturer, model, part numbers, aliases.", "type": "string" }
+      }
+    },
+    "device": {
+      "allOf": [{ "$ref": "#/$defs/base" }],
+      "required": ["category", "form_factor", "u_height"],
+      "properties": {
+        "category": { "type": "string" },
+        "atlas_type": { "type": "string" },
+        "form_factor": { "type": "string" },
+        "u_height": { "type": "number" },
+        "full_depth": { "type": "boolean" },
+        "weight_kg": { "type": "number" },
+        "airflow": { "type": "string" },
+        "power_w": { "type": "number" },
+        "psu_count": { "type": "integer" },
+        "outlets": { "type": "integer" },
+        "ports": { "type": "object", "additionalProperties": { "type": "integer" } },
+        "model_3d": { "type": "string" },
+        "inferred": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "module": {
+      "allOf": [{ "$ref": "#/$defs/base" }],
+      "properties": { "kind": { "type": "string" }, "power_w": { "type": "number" } }
+    },
+    "rack": {
+      "allOf": [{ "$ref": "#/$defs/base" }],
+      "properties": {
+        "form_factor": { "type": "string" },
+        "u_height": { "type": "integer" },
+        "rack_width": { "type": "integer" },
+        "outer_depth_mm": { "type": "number" }
+      }
+    }
+  }
+}

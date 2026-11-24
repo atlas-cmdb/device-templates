@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge M1000e
+slug: poweredge-m1000e
+category: blade_chassis
+form_factor: rack
+u_height: 10
+full_depth: true
+subdevice_role: parent
+power:
+  psu_count: 6
+power_ports:
+  - name: PSU1
+    type: iec-60320-c20
+  - name: PSU2
+    type: iec-60320-c20
+  - name: PSU3
+    type: iec-60320-c20
+  - name: PSU4
+    type: iec-60320-c20
+  - name: PSU5
+    type: iec-60320-c20
+  - name: PSU6
+    type: iec-60320-c20
+device_bays:
+  - name: Slot 1
+  - name: Slot 2
+  - name: Slot 3
+  - name: Slot 4
+  - name: Slot 5
+  - name: Slot 6
+  - name: Slot 7
+  - name: Slot 8
+  - name: Slot 9
+  - name: Slot 10
+  - name: Slot 11
+  - name: Slot 12
+  - name: Slot 13
+  - name: Slot 14
+  - name: Slot 15
+  - name: Slot 16
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-M1000e.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - device_bays
+    - full_depth
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: d404dba9d5eb7d4e

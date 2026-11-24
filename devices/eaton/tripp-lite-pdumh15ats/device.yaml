@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eaton
+model: Tripp Lite PDUMH15ATS
+slug: tripp-lite-pdumh15ats
+category: pdu
+form_factor: rack
+part_numbers:
+  - "037332126658"
+u_height: 1
+full_depth: false
+weight_kg: 4.99
+power:
+  outlet_count: 8
+console_ports:
+  - name: RS232
+    type: de-9
+power_ports:
+  - name: Primary
+    type: nema-5-15p
+    maximum_draw_w: 1400
+  - name: Secondary
+    type: iec-60320-c14
+    maximum_draw_w: 1400
+power_outlets:
+  - name: "1"
+    type: nema-5-15r
+  - name: "2"
+    type: nema-5-15r
+  - name: "3"
+    type: nema-5-15r
+  - name: "4"
+    type: nema-5-15r
+  - name: "5"
+    type: nema-5-15r
+  - name: "6"
+    type: nema-5-15r
+  - name: "7"
+    type: nema-5-15r
+  - name: "8"
+    type: nema-5-15r
+module_bays:
+  - name: Accessory Slot
+    bay_position: "1"
+comments: Same as AT model but without accessory slot module bay
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eaton/Tripp-Lite-PDUMH15ATS.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: c2bd1857fd486bd0

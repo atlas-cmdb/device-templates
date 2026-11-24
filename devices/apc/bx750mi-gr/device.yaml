@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: BX750MI-GR
+slug: bx750mi-gr
+category: ups
+form_factor: other
+description: APC BX750MI-GR
+part_numbers:
+  - Back-UPS-BX750MI-GR
+u_height: 0
+full_depth: false
+weight_kg: 5.4
+airflow: passive
+power:
+  outlet_count: 4
+  psu_count: 1
+console_ports:
+  - name: usb
+    label: Data port
+    type: usb-b
+power_ports:
+  - name: Input
+    label: Input
+    description: 130 - 300V AC, 3.4A
+    type: ita-ef
+    maximum_draw_w: 410
+    allocated_draw_w: 410
+power_outlets:
+  - name: "1"
+    type: ita-f
+    power_port: Input
+  - name: "2"
+    type: ita-f
+    power_port: Input
+  - name: "3"
+    type: ita-f
+    power_port: Input
+  - name: "4"
+    type: ita-f
+    power_port: Input
+front_ports:
+  - name: IN
+    type: 8p8c
+    rear_port: OUT
+    rear_port_position: 1
+rear_ports:
+  - name: OUT
+    type: 8p8c
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.apc.com/kz/ru/product/BX750MI-GR/apc-backups-750va-tower-230v-4x-cee-7-7-schuko-outlets-avr/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/BX750MI-GR.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - description
+    - front_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - rear_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 82a8d57d2ffcbe28

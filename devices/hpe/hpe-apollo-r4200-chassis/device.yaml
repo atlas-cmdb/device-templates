@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: HPE Apollo R4200 Chassis
+slug: hpe-apollo-r4200-chassis
+category: server
+form_factor: rack
+part_numbers:
+  - 808028-b21
+u_height: 2
+full_depth: true
+weight_kg: 42
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: iLO
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: HDDBox1
+    label: Node 1
+    description: Front Disk Tray 1
+    bay_position: HDDBox1
+  - name: HDDBox2
+    label: Node 2
+    description: Front Disk Tray 2
+    bay_position: HDDBox2
+  - name: HDDBox3
+    label: Node 3
+    description: Back Disk Tray 1
+    bay_position: HDDBox3
+  - name: HDDBox4
+    label: Node 4
+    description: Back Disk Tray 2
+    bay_position: HDDBox4
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+  - name: PCIe1
+    label: primary riser
+    bay_position: PCIe1
+  - name: PCIe2
+    label: primary riser
+    bay_position: PCIe2
+  - name: PCIe3
+    label: primary riser
+    bay_position: PCIe3
+  - name: PCIe4
+    label: secondary riser
+    bay_position: PCIe4
+  - name: PCIe5
+    label: secondary riser
+    bay_position: PCIe5
+  - name: PCIe6
+    label: secondary riser
+    bay_position: PCIe6
+links:
+  datasheet: https://newserverlife.com/upload/iblock/807/Apollo_4200_Gen9_data_sheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/HPE-Apollo-R4200-chassis.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1f9a4f24d274b58b

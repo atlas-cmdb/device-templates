@@ -1,0 +1,127 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eaton
+model: Tripp Lite PDUMVR30HVNETLX
+slug: tripp-lite-pdumvr30hvnetlx
+category: pdu
+form_factor: zero-u
+part_numbers:
+  - PDUMVR30HVNETLX
+u_height: 0
+full_depth: false
+weight_kg: 5.44
+airflow: passive
+power:
+  outlet_count: 24
+interfaces:
+  - name: Net
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Config
+    type: rj-45
+  - name: USB
+    type: usb-a
+power_ports:
+  - name: Power
+    type: nema-l6-30p
+    maximum_draw_w: 8320
+power_outlets:
+  - name: "01"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "02"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "03"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "04"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "05"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "06"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "07"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "8"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "9"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "10"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "11"
+    type: iec-60320-c19
+    power_port: Power
+  - name: "12"
+    type: iec-60320-c19
+    power_port: Power
+  - name: "13"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "14"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "15"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "16"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "17"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "18"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "19"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "20"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "21"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "22"
+    type: iec-60320-c13
+    power_port: Power
+  - name: "23"
+    type: iec-60320-c19
+    power_port: Power
+  - name: "24"
+    type: iec-60320-c19
+    power_port: Power
+links:
+  datasheet: https://assets.tripplite.com/product-pdfs/en/pdumvr30hvnetlx.pdf
+  manual: https://assets.tripplite.com/submittal-drawing/pdumvr30hvnetlx-submittal-drawing-en.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eaton/Tripp-Lite-PDUMVR30HVNETLX.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 85fb628c9579fb1a

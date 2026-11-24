@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/rack.schema.json
+manufacturer: digitus
+model: DN-19 07U-I-OD
+slug: dn-19-07u-i-od
+form_factor: wall-cabinet
+description: "[Datasheet](https://www.assmann.com/product-pdf/4016032360971?PL=de)"
+u_height: 7
+starting_unit: 1
+rack_width: 19
+outer_width_mm: 600
+mounting_depth_mm: 450
+weight_kg: 31
+max_load_kg: 100
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: rack-types/Digitus/dn-19-07u-i-od.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - description
+    - manufacturer
+    - max_load_kg
+    - model
+    - mounting_depth_mm
+    - outer_width_mm
+    - rack_width
+    - slug
+    - starting_unit
+    - u_height
+    - weight_kg
+  import_hash: c5ba40038daa3023

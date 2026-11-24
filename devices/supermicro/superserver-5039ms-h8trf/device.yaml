@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SuperServer 5039MS-H8TRF
+slug: superserver-5039ms-h8trf
+category: server
+form_factor: rack
+part_numbers:
+  - SYS-5039MS-H8TRF
+u_height: 3
+full_depth: true
+subdevice_role: parent
+weight_kg: 28.21
+airflow: front-to-rear
+power:
+  psu_count: 2
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+device_bays:
+  - name: Node 1
+    label: Compute Node 1
+  - name: Node 2
+    label: Compute Node 2
+  - name: Node 3
+    label: Compute Node 3
+  - name: Node 4
+    label: Compute Node 4
+  - name: Node 5
+    label: Compute Node 5
+  - name: Node 6
+    label: Compute Node 6
+  - name: Node 7
+    label: Compute Node 7
+  - name: Node 8
+    label: Compute Node 8
+comments: SuperServer SYS-5039MS-H8TRF (https://www.supermicro.com/products/system/3U/5039/SYS-5039MS-H8TRF.cfm)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SYS-5039MS-H8TRF.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - device_bays
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: f014a8b0daa561b8

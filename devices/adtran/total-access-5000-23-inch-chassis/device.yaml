@@ -1,0 +1,128 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: adtran
+model: Total Access 5000 23-Inch Chassis
+slug: total-access-5000-23-inch-chassis
+category: appliance
+form_factor: rack
+part_numbers:
+  - 1187001G1
+u_height: 8
+full_depth: false
+subdevice_role: parent
+power:
+  psu_count: 2
+interfaces:
+  - name: Ethernet 1/S/1
+    description: Rear Management
+    type: 1000base-t
+power_ports:
+  - name: DC-Input-A
+    label: DC-A
+    type: dc-terminal
+    maximum_draw_w: 1440
+    allocated_draw_w: 1000
+  - name: DC-Input-B
+    label: DC-B
+    type: dc-terminal
+    maximum_draw_w: 1440
+    allocated_draw_w: 1000
+module_bays:
+  - name: "1"
+    label: Slot 1
+    bay_position: "1"
+  - name: "2"
+    label: Slot 2
+    bay_position: "2"
+  - name: "3"
+    label: Slot 3
+    bay_position: "3"
+  - name: "4"
+    label: Slot 4
+    bay_position: "4"
+  - name: "5"
+    label: Slot 5
+    bay_position: "5"
+  - name: "6"
+    label: Slot 6
+    bay_position: "6"
+  - name: "7"
+    label: Slot 7
+    bay_position: "7"
+  - name: "8"
+    label: Slot 8
+    bay_position: "8"
+  - name: "9"
+    label: Slot 9
+    bay_position: "9"
+  - name: "10"
+    label: Slot 10
+    bay_position: "10"
+  - name: "11"
+    label: Slot 11
+    bay_position: "11"
+  - name: "13"
+    label: Slot 13
+    bay_position: "13"
+  - name: "14"
+    label: Slot 14
+    bay_position: "14"
+  - name: "15"
+    label: Slot 15
+    bay_position: "15"
+  - name: "16"
+    label: Slot 16
+    bay_position: "16"
+  - name: "17"
+    label: Slot 17
+    bay_position: "17"
+  - name: "18"
+    label: Slot 18
+    bay_position: "18"
+  - name: "19"
+    label: Slot 19
+    bay_position: "19"
+  - name: "20"
+    label: Slot 20
+    bay_position: "20"
+  - name: "21"
+    label: Slot 21
+    bay_position: "21"
+  - name: "22"
+    label: Slot 22
+    bay_position: "22"
+  - name: A
+    label: SM-A
+    bay_position: A
+  - name: B
+    label: SM-B
+    bay_position: B
+  - name: SCM
+    label: SCM
+    bay_position: SCM
+links:
+  product_page: https://portal.adtran.com/web/appmanager/portal/Adtran?_nfpb=true&partNumber=1187001G1&productGroupId=4192&selectTab=accessoriesAndSoftware&_pageLabel=waverunner_page_products_productdetail
+comments: Fiber Access and Aggregation Platform
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Adtran/Total-Access-5000-23-Inch-Chassis.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: a649502b59004901

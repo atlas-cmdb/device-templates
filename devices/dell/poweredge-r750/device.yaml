@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge R750
+slug: poweredge-r750
+category: server
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 27.7
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: iDRAC9 1
+    label: iDRAC
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Rear Serial
+    type: de-9
+module_bays:
+  - name: PSU-1
+    label: "1"
+    bay_position: "1"
+  - name: PSU-2
+    label: "2"
+    bay_position: "2"
+  - name: NUMA 0 - OCP slot 1
+    bay_position: OCP-1
+  - name: NUMA 0 - PCIe slot 1 - FH
+    label: "1"
+    bay_position: PCIe-1
+  - name: NUMA 0 - PCIe slot 2 - FH
+    label: "2"
+    bay_position: PCIe-2
+  - name: NUMA 0 - PCIe slot 3 - LP
+    label: "3"
+    bay_position: PCIe-3
+  - name: NUMA 0 - PCIe slot 4 - FH
+    label: "4"
+    bay_position: PCIe-4
+  - name: NUMA 1 - PCIe slot 5 - FH
+    label: "5"
+    bay_position: PCIe-5
+  - name: NUMA 1 - PCIe slot 6 - LP
+    label: "6"
+    bay_position: PCIe-6
+  - name: NUMA 1 - PCIe slot 7 - FH
+    label: "7"
+    bay_position: PCIe-7
+  - name: NUMA 1 - PCIe slot 8 - FH
+    label: "8"
+    bay_position: PCIe-8
+links:
+  datasheet: https://servermall.ru/upload/datasheet/dell-poweredge-r750-datasheet.pdf
+  manual: https://i.dell.com/sites/csdocuments/Product_Docs/en/poweredge-r750-technical-guide.pdf
+  media:
+    - kind: 3d-viewer
+      label: 3D & AR viewer (exterior + interior)
+      url: https://www.dell.com/nl-nl/shop/servers-opslag-en-netwerken/poweredge-r750-full-configuration/spd/poweredge-r750/emea_r750
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-R750.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: a8ad01fca7fd10db

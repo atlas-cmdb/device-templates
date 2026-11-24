@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: panduit
+model: Quicknet Rack Mount Fiber Enclosure, 2 RU
+slug: quicknet-rack-mount-fiber-enclosure-2-ru
+category: patch_panel
+form_factor: rack
+part_numbers:
+  - FCE2
+u_height: 2
+full_depth: false
+subdevice_role: parent
+airflow: passive
+module_bays:
+  - name: A
+    bay_position: A
+  - name: B
+    bay_position: B
+  - name: C
+    bay_position: C
+  - name: D
+    bay_position: D
+  - name: E
+    bay_position: E
+  - name: F
+    bay_position: F
+  - name: G
+    bay_position: G
+  - name: H
+    bay_position: H
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Panduit/FCE2.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: d3b1d2673e0dbe58

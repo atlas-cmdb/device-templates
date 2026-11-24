@@ -1,0 +1,126 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: avocent
+model: DSR2035
+slug: dsr2035
+category: kvm_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: LAN 1
+    type: 1000base-t
+  - name: LAN 2
+    type: 1000base-t
+console_ports:
+  - name: MODEM
+    type: rj-45
+  - name: SETUP
+    type: rj-45
+  - name: SPC 1
+    type: rj-45
+  - name: SPC 2
+    type: rj-45
+  - name: Keyboard
+    type: other
+  - name: Mouse
+    type: other
+  - name: Rear USB1
+    type: usb-a
+  - name: Rear USB2
+    type: usb-a
+  - name: Rear USB3
+    type: usb-a
+  - name: Rear USB4
+    type: usb-a
+  - name: Front USB
+    type: usb-a
+console_server_ports:
+  - name: "1"
+    type: rj-45
+  - name: "2"
+    type: rj-45
+  - name: "3"
+    type: rj-45
+  - name: "4"
+    type: rj-45
+  - name: "5"
+    type: rj-45
+  - name: "6"
+    type: rj-45
+  - name: "7"
+    type: rj-45
+  - name: "8"
+    type: rj-45
+  - name: "9"
+    type: rj-45
+  - name: "10"
+    type: rj-45
+  - name: "11"
+    type: rj-45
+  - name: "12"
+    type: rj-45
+  - name: "13"
+    type: rj-45
+  - name: "14"
+    type: rj-45
+  - name: "15"
+    type: rj-45
+  - name: "16"
+    type: rj-45
+  - name: "17"
+    type: rj-45
+  - name: "18"
+    type: rj-45
+  - name: "19"
+    type: rj-45
+  - name: "20"
+    type: rj-45
+  - name: "21"
+    type: rj-45
+  - name: "22"
+    type: rj-45
+  - name: "23"
+    type: rj-45
+  - name: "24"
+    type: rj-45
+  - name: "25"
+    type: rj-45
+  - name: "26"
+    type: rj-45
+  - name: "27"
+    type: rj-45
+  - name: "28"
+    type: rj-45
+  - name: "29"
+    type: rj-45
+  - name: "30"
+    type: rj-45
+  - name: "31"
+    type: rj-45
+  - name: "32"
+    type: rj-45
+power_ports:
+  - name: ps1
+    type: iec-60320-c14
+    maximum_draw_w: 40
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Avocent/DSR2035.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: b984c979df0f1d7c

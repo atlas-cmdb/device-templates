@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: hpe
+model: Aruba 2920 2-Port Stacking Module
+slug: aruba-2920-2-port-stacking-module
+kind: other
+part_numbers:
+  - J9733A
+interfaces:
+  - name: Stacking port 1
+    type: other
+  - name: Stacking port 2
+    type: other
+comments: Aruba 2920 2-Port Stacking Module
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/HPE/J9733A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 023f014b936eabe6

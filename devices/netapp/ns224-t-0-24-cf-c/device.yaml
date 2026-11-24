@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netapp
+model: NS224-T-0-24-CF-C
+slug: ns224-t-0-24-cf-c
+category: storage_shelf
+form_factor: rack
+description: NVMe SHLF,2U24,Empty,NSM100B,CF
+part_numbers:
+  - NS224-T-0-24-CF-C
+u_height: 2
+full_depth: true
+weight_kg: 23
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: a-e0a
+    type: 100gbase-x-qsfp28
+  - name: a-e0b
+    type: 100gbase-x-qsfp28
+  - name: b-e0a
+    type: 100gbase-x-qsfp28
+  - name: b-e0b
+    type: 100gbase-x-qsfp28
+module_bays:
+  - name: PSU 1
+    bay_position: "1"
+  - name: PSU 2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/NetApp/NS224-T-0-24-CF-C.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: ce4f562ee4cfa9ff

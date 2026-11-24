@@ -1,0 +1,176 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: exegate
+model: EPPW-12-8P8C-C5e-FR
+slug: eppw-12-8p8c-c5e-fr
+category: patch_panel
+form_factor: rack
+description: Exegate EPPW-12-8P8C-C5e-FR
+part_numbers:
+  - EX256754RUS
+u_height: 1
+full_depth: false
+weight_kg: 0.288
+airflow: passive
+front_ports:
+  - name: "1"
+    label: "1"
+    description: "1"
+    type: 8p8c
+    rear_port: "1"
+    rear_port_position: 1
+  - name: "2"
+    label: "2"
+    description: "2"
+    type: 8p8c
+    rear_port: "2"
+    rear_port_position: 2
+  - name: "3"
+    label: "3"
+    description: "3"
+    type: 8p8c
+    rear_port: "3"
+    rear_port_position: 3
+  - name: "4"
+    label: "4"
+    description: "4"
+    type: 8p8c
+    rear_port: "4"
+    rear_port_position: 4
+  - name: "5"
+    label: "5"
+    description: "5"
+    type: 8p8c
+    rear_port: "5"
+    rear_port_position: 5
+  - name: "6"
+    label: "6"
+    description: "6"
+    type: 8p8c
+    rear_port: "6"
+    rear_port_position: 6
+  - name: "7"
+    label: "7"
+    description: "7"
+    type: 8p8c
+    rear_port: "7"
+    rear_port_position: 7
+  - name: "8"
+    label: "8"
+    description: "8"
+    type: 8p8c
+    rear_port: "8"
+    rear_port_position: 8
+  - name: "9"
+    label: "9"
+    description: "9"
+    type: 8p8c
+    rear_port: "9"
+    rear_port_position: 9
+  - name: "10"
+    label: "10"
+    description: "10"
+    type: 8p8c
+    rear_port: "10"
+    rear_port_position: 10
+  - name: "11"
+    label: "11"
+    description: "11"
+    type: 8p8c
+    rear_port: "11"
+    rear_port_position: 11
+  - name: "12"
+    label: "12"
+    description: "12"
+    type: 8p8c
+    rear_port: "12"
+    rear_port_position: 12
+rear_ports:
+  - name: "1"
+    label: "1"
+    description: "1"
+    type: 110-punch
+  - name: "2"
+    label: "2"
+    description: "2"
+    type: 110-punch
+    positions: 2
+  - name: "3"
+    label: "3"
+    description: "3"
+    type: 110-punch
+    positions: 3
+  - name: "4"
+    label: "4"
+    description: "4"
+    type: 110-punch
+    positions: 4
+  - name: "5"
+    label: "5"
+    description: "5"
+    type: 110-punch
+    positions: 5
+  - name: "6"
+    label: "6"
+    description: "6"
+    type: 110-punch
+    positions: 6
+  - name: "7"
+    label: "7"
+    description: "7"
+    type: 110-punch
+    positions: 7
+  - name: "8"
+    label: "8"
+    description: "8"
+    type: 110-punch
+    positions: 8
+  - name: "9"
+    label: "9"
+    description: "9"
+    type: 110-punch
+    positions: 9
+  - name: "10"
+    label: "10"
+    description: "10"
+    type: 110-punch
+    positions: 10
+  - name: "11"
+    label: "11"
+    description: "11"
+    type: 110-punch
+    positions: 11
+  - name: "12"
+    label: "12"
+    description: "12"
+    type: 110-punch
+    positions: 12
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.exegate.ru/catalogue/net/ppanel/ex256754.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Exegate/EPPW-12-8P8C-C5e-FR.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - front_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 97e8996c7052895a

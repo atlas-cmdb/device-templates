@@ -1,0 +1,100 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: generic
+model: SC-12-port Fiber Patch Panel Half Depth
+slug: sc-12-port-fiber-patch-panel-half-depth
+category: patch_panel
+form_factor: rack
+u_height: 1
+full_depth: false
+airflow: passive
+front_ports:
+  - name: "1"
+    type: sc
+    rear_port: "1"
+    rear_port_position: 1
+  - name: "2"
+    type: sc
+    rear_port: "2"
+    rear_port_position: 1
+  - name: "3"
+    type: sc
+    rear_port: "3"
+    rear_port_position: 1
+  - name: "4"
+    type: sc
+    rear_port: "4"
+    rear_port_position: 1
+  - name: "5"
+    type: sc
+    rear_port: "5"
+    rear_port_position: 1
+  - name: "6"
+    type: sc
+    rear_port: "6"
+    rear_port_position: 1
+  - name: "7"
+    type: sc
+    rear_port: "7"
+    rear_port_position: 1
+  - name: "8"
+    type: sc
+    rear_port: "8"
+    rear_port_position: 1
+  - name: "9"
+    type: sc
+    rear_port: "9"
+    rear_port_position: 1
+  - name: "10"
+    type: sc
+    rear_port: "10"
+    rear_port_position: 1
+  - name: "11"
+    type: sc
+    rear_port: "11"
+    rear_port_position: 1
+  - name: "12"
+    type: sc
+    rear_port: "12"
+    rear_port_position: 1
+rear_ports:
+  - name: "1"
+    type: sc
+  - name: "2"
+    type: sc
+  - name: "3"
+    type: sc
+  - name: "4"
+    type: sc
+  - name: "5"
+    type: sc
+  - name: "6"
+    type: sc
+  - name: "7"
+    type: sc
+  - name: "8"
+    type: sc
+  - name: "9"
+    type: sc
+  - name: "10"
+    type: sc
+  - name: "11"
+    type: sc
+  - name: "12"
+    type: sc
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Generic/SC-12-port-fiber-patch-panel-half-depth.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - front_ports
+    - full_depth
+    - manufacturer
+    - model
+    - rear_ports
+    - slug
+    - u_height
+  import_hash: 2984c2bab56c955e

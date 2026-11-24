@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netgear
+model: XS712T
+slug: xs712t
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 2.87
+airflow: right-to-left
+power:
+  psu_count: 1
+interfaces:
+  - name: TenGigabitEthernet/1
+    label: "1"
+    type: 10gbase-t
+  - name: TenGigabitEthernet/2
+    label: "2"
+    type: 10gbase-t
+  - name: TenGigabitEthernet/3
+    label: "3"
+    type: 10gbase-t
+  - name: TenGigabitEthernet/4
+    label: "4"
+    type: 10gbase-t
+  - name: TenGigabitEthernet/5
+    label: "5"
+    type: 10gbase-t
+  - name: TenGigabitEthernet/6
+    label: "6"
+    type: 10gbase-t
+  - name: TenGigabitEthernet/7
+    label: "7"
+    type: 10gbase-t
+  - name: TenGigabitEthernet/8
+    label: "8"
+    type: 10gbase-t
+  - name: TenGigabitEthernet/9
+    label: "9"
+    type: 10gbase-t
+  - name: TenGigabitEthernet/10
+    label: "10"
+    type: 10gbase-t
+  - name: TenGigabitEthernet/11T
+    label: 11T
+    type: 10gbase-t
+  - name: TenGigabitEthernet/12T
+    label: 12T
+    type: 10gbase-t
+  - name: TenGigabitEthernet/11F
+    label: 11F
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet/12F
+    label: 12F
+    type: 10gbase-x-sfpp
+power_ports:
+  - name: Power
+    type: iec-60320-c14
+    maximum_draw_w: 76
+links:
+  manual: https://www.downloads.netgear.com/files/GDC/XS708T/XS708T_XS712Tv2_XS716T_XS728T_XS748T_DS.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Netgear/XS712T.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 89014ec4589253dd

@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: niagara
+model: Network TAP Passive Fiber Optics Module Single Width 1310nm 1550nm 50/50
+slug: network-tap-passive-fiber-optics-module-single-width-1310nm-1550nm-50-50
+kind: other
+part_numbers:
+  - 3211-S-LR-50/50
+interfaces:
+  - name: Port/{module}/A_Monitor
+    description: Passive optical single mode simplex LC
+    type: 100gbase-x-qsfp28
+  - name: Port/{module}/B_Monitor
+    description: Passive optical single mode simplex LC
+    type: 100gbase-x-qsfp28
+front_ports:
+  - name: Port/{module}/A
+    type: lc
+    rear_port: Port/{module}/B
+    rear_port_position: 1
+rear_ports:
+  - name: Port/{module}/B
+    type: lc
+links:
+  datasheet: https://info.niagaranetworks.com/hubfs/Product%20Data%20Sheets/3225/3225.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Niagara/3211-S-LR-50-50.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - front_ports
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: a8800d130ba8fe2f

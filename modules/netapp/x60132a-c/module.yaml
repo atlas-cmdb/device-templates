@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: netapp
+model: X60132A-C
+slug: x60132a-c
+kind: other
+description: IO Module,4PT,10/25GbE
+part_numbers:
+  - X60132A-C
+interfaces:
+  - name: e{module}a
+    type: 25gbase-x-sfp28
+  - name: e{module}b
+    type: 25gbase-x-sfp28
+  - name: e{module}c
+    type: 25gbase-x-sfp28
+  - name: e{module}d
+    type: 25gbase-x-sfp28
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/NetApp/X60132A-C.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: c44219cf53b2c5e8

@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netapp
+model: FAS2700 Controller CNA
+slug: fas2700-controller-cna
+category: storage_array
+form_factor: blade
+description: FAS2720 and FAS2750 controller with 4x SFP+
+part_numbers:
+  - X3218A
+u_height: 0
+full_depth: true
+subdevice_role: child
+interfaces:
+  - name: e0M
+    type: 1000base-t
+    mgmt_only: true
+  - name: e0a
+    type: 10gbase-x-sfpp
+  - name: e0b
+    type: 10gbase-x-sfpp
+  - name: e0c
+    type: 10gbase-x-sfpp
+  - name: e0d
+    type: 10gbase-x-sfpp
+  - name: e0e
+    type: 10gbase-x-sfpp
+  - name: e0f
+    type: 10gbase-x-sfpp
+  - name: 0a
+    description: MiniSAS HD
+    type: other
+  - name: 0b
+    description: MiniSAS HD
+    type: other
+console_ports:
+  - name: con0
+    type: rj-45
+  - name: con1
+    type: usb-micro-a
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/NetApp/X3218A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 4515dc6cdb4b311a

@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: deciso
+model: DEC2752
+slug: dec2752
+category: appliance
+form_factor: rack
+part_numbers:
+  - DEC2752
+u_height: 1
+full_depth: false
+weight_kg: 2.65
+airflow: side-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: igc0
+    label: "0"
+    type: 2.5gbase-t
+  - name: igc1
+    label: "1"
+    type: 2.5gbase-t
+  - name: igc2
+    label: "0"
+    type: 2.5gbase-t
+  - name: ax0
+    label: X0
+    type: 10gbase-x-sfpp
+  - name: ax1
+    label: X1
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    description: 115200 Baude
+    type: usb-mini-b
+power_ports:
+  - name: PSU 1
+    type: iec-60320-c14
+    maximum_draw_w: 176
+    allocated_draw_w: 15
+links:
+  datasheet: https://shop.opnsense.com/product/dec2752-opnsense-rack-security-appliance/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Deciso/DEC2752.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 2c0340cabc7fe0b7

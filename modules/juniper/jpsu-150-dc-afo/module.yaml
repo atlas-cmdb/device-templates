@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: juniper
+model: JPSU-150-DC-AFO
+slug: jpsu-150-dc-afo
+kind: other
+part_numbers:
+  - 640-061542
+power_ports:
+  - name: Power Supply {module}
+    type: iec-60320-c14
+    maximum_draw_w: 150
+links:
+  datasheet: https://www.juniper.net/content/dam/www/assets/datasheets/us/en/switches/ex4100-line-of-ethernet-switches-datasheet.pdf
+comments: |-
+  EX Series 150 W DC power supply (front-to-back airflow)
+  Compatible with
+  * EX3400 non-PoE models
+  * EX4100 non-PoE models
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Juniper/JPSU-150-DC-AFO.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: d83b0ddd9bed5d73

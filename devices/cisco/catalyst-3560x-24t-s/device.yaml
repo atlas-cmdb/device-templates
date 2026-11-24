@@ -1,0 +1,98 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: Catalyst 3560X-24T-S
+slug: catalyst-3560x-24t-s
+category: network_switch
+form_factor: rack
+part_numbers:
+  - WS-C3560X-24T-S
+u_height: 1
+full_depth: false
+power:
+  psu_count: 2
+interfaces:
+  - name: FastEthernet0
+    type: 100base-tx
+    mgmt_only: true
+  - name: GigabitEthernet0/1
+    type: 1000base-t
+  - name: GigabitEthernet0/2
+    type: 1000base-t
+  - name: GigabitEthernet0/3
+    type: 1000base-t
+  - name: GigabitEthernet0/4
+    type: 1000base-t
+  - name: GigabitEthernet0/5
+    type: 1000base-t
+  - name: GigabitEthernet0/6
+    type: 1000base-t
+  - name: GigabitEthernet0/7
+    type: 1000base-t
+  - name: GigabitEthernet0/8
+    type: 1000base-t
+  - name: GigabitEthernet0/9
+    type: 1000base-t
+  - name: GigabitEthernet0/10
+    type: 1000base-t
+  - name: GigabitEthernet0/11
+    type: 1000base-t
+  - name: GigabitEthernet0/12
+    type: 1000base-t
+  - name: GigabitEthernet0/13
+    type: 1000base-t
+  - name: GigabitEthernet0/14
+    type: 1000base-t
+  - name: GigabitEthernet0/15
+    type: 1000base-t
+  - name: GigabitEthernet0/16
+    type: 1000base-t
+  - name: GigabitEthernet0/17
+    type: 1000base-t
+  - name: GigabitEthernet0/18
+    type: 1000base-t
+  - name: GigabitEthernet0/19
+    type: 1000base-t
+  - name: GigabitEthernet0/20
+    type: 1000base-t
+  - name: GigabitEthernet0/21
+    type: 1000base-t
+  - name: GigabitEthernet0/22
+    type: 1000base-t
+  - name: GigabitEthernet0/23
+    type: 1000base-t
+  - name: GigabitEthernet0/24
+    type: 1000base-t
+console_ports:
+  - name: con0
+    type: rj-45
+  - name: usb0
+    type: usb-mini-b
+  - name: usb1
+    type: usb-a
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+  - name: Network Module
+    description: Optional network module slot (e.g., C3KX-NM-1G, C3KX-NM-10G, C3KX-NM-10GT)
+    bay_position: "1"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/WS-C3560X-24T-S.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+  import_hash: 7110d279f69d1f91

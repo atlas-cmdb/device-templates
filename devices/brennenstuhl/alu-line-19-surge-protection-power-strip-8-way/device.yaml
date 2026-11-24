@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: brennenstuhl
+model: Alu-Line 19" surge protection Power Strip 8-way
+slug: alu-line-19-surge-protection-power-strip-8-way
+category: pdu
+form_factor: rack
+part_numbers:
+  - "1390007308"
+u_height: 1
+full_depth: false
+weight_kg: 0.7
+airflow: passive
+power:
+  outlet_count: 8
+power_ports:
+  - name: Power 1
+    type: iec-60320-c14
+power_outlets:
+  - name: Outlet 1
+    type: ita-f
+    power_port: Power 1
+  - name: Outlet 2
+    type: ita-f
+    power_port: Power 1
+  - name: Outlet 3
+    type: ita-f
+    power_port: Power 1
+  - name: Outlet 4
+    type: ita-f
+    power_port: Power 1
+  - name: Outlet 5
+    type: ita-f
+    power_port: Power 1
+  - name: Outlet 6
+    type: ita-f
+    power_port: Power 1
+  - name: Outlet 7
+    type: ita-f
+    power_port: Power 1
+  - name: Outlet 8
+    type: ita-f
+    power_port: Power 1
+links:
+  product_page: https://www.brennenstuhl.com/en-DE/products/extension-leads/alu-line-19.500-a-extension-lead-with-surge-protecion-19-8-way-2m-h05vv-f3g1-5
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Brennenstuhl/1390007308.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 35cef07cee30cb8a

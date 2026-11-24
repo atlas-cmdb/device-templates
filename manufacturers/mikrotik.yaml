@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: mikrotik
+name: MikroTik
+aliases:
+  - RouterBOARD
+website: https://mikrotik.com

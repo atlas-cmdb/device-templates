@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: rockwell-automation
+model: ControlLogix Ethernet Adapter K (EN4TR)
+slug: controllogix-ethernet-adapter-k-en4tr
+category: compute_blade
+form_factor: blade
+part_numbers:
+  - 1756-EN4TRK
+u_height: 0
+full_depth: false
+subdevice_role: child
+interfaces:
+  - name: A1
+    type: 1000base-t
+  - name: A2
+    type: 1000base-t
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Rockwell Automation/1756-EN4TRK.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: b4a7805830286de0

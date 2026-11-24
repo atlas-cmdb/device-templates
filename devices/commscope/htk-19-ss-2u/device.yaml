@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: commscope
+model: HTK-19-SS-2U
+slug: htk-19-ss-2u
+category: other
+form_factor: rack
+description: Horizontal Trough Kit, 2 RU, 19 in, single sided
+part_numbers:
+  - "760072959"
+u_height: 2
+full_depth: false
+weight_kg: 2.05
+airflow: passive
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  product_page: https://www.commscope.com/product-type/cable-management/horizontal-vertical-cable-managers/item760072959/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Commscope/HTK-19-SS-2U.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 10dc206c136864fa

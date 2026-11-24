@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cxr
+model: Modem Fibre Optique 4 voies FXO/SC - FOP-4FXO-MM2-SC
+slug: modem-fibre-optique-4-voies-fxo-sc-fop-4fxo-mm2-sc
+category: compute_blade
+form_factor: blade
+part_numbers:
+  - fop-4fxo-mm2-sc
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 0.5
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: Ethernet 1
+    type: 100base-tx
+power_ports:
+  - name: Power
+    type: iec-60320-c6
+    maximum_draw_w: 5
+front_ports:
+  - name: Phone
+    type: 8p8c
+    rear_port: LAN
+    rear_port_position: 1
+rear_ports:
+  - name: LAN
+    type: sc-upc
+links:
+  manual: https://www.cxr.com/documents/brochures/fop-4fxo-mm2-sc.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/CXR/FOP-4FXO-MM2-SC.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - front_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - rear_ports
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: d5e8bb2af76629aa

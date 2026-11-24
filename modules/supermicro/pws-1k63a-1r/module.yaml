@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: supermicro
+model: PWS-1K63A-1R
+slug: pws-1k63a-1r
+kind: psu
+description: 1000W/1600W 1U Redundant Power Supply
+part_numbers:
+  - PWS-1K63A-1R
+power_ports:
+  - name: PSU{module}
+    type: iec-60320-c14
+    maximum_draw_w: 1600
+links:
+  datasheet: https://store.supermicro.com/media/wysiwyg/productspecs/PWS-1K63A-1R/PWS-1K63A-1R_datasheet_09062022.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Supermicro/PWS-1K63A-1R.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: d2ae1c3a7a3735d8

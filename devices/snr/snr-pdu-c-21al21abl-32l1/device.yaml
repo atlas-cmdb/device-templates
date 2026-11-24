@@ -1,0 +1,178 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: snr
+model: SNR-PDU-C-21AL21ABL-32L1
+slug: snr-pdu-c-21al21abl-32l1
+category: pdu
+form_factor: zero-u
+part_numbers:
+  - SNR-PDU-C-21AL21ABL-32L1
+u_height: 0
+full_depth: false
+weight_kg: 9
+airflow: passive
+power:
+  outlet_count: 41
+interfaces:
+  - name: Ethernet
+    type: 1000base-tx
+    mgmt_only: true
+console_ports:
+  - name: CAN Out
+    label: Out
+    type: rj-45
+console_server_ports:
+  - name: CAN In
+    label: In
+    type: rj-45
+power_ports:
+  - name: Power Port 1
+    type: iec-60309-2p-e-6h
+power_outlets:
+  - name: Outlet 1
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 2
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 3
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 4
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 5
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 6
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 7
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 8
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 9
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 10
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 11
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 12
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 13
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 14
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 15
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 16
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 17
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 18
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 19
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 21
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 22
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 23
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 24
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 25
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 26
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 27
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 28
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 29
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 30
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 31
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 32
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 33
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 34
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 35
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 36
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 37
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 38
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 39
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 40
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 41
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: Outlet 42
+    type: iec-60320-c13
+    power_port: Power Port 1
+comments: Rack PDU Switched, 0U, 32A, 230V, (21) C13 + (21) C13/C19
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/SNR/SNR-PDU-C-21AL21ABL-32L1.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: dc6fed34526ac022

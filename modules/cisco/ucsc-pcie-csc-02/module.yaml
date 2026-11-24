@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: UCSC-PCIE-CSC-02
+slug: ucsc-pcie-csc-02
+kind: other
+part_numbers:
+  - UCSC-PCIE-CSC-02
+interfaces:
+  - name: Ethernet{module}/1
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/2
+    type: 10gbase-x-sfpp
+links:
+  other:
+    - label: Cisco VIC 1225 Dual Port 10Gb SFP+ CNA
+      url: https://www.provantage.com/cisco-systems-ucsc-pcie-02~7CSC98FR.htm
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/UCSC-PCIE-CSC-02.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: e74218231ac80d40

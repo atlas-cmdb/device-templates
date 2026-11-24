@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: lenovo
+model: SP57C27128
+slug: sp57c27128
+kind: psu
+part_numbers:
+  - SP57C27128
+airflow: front-to-rear
+power:
+  input_voltage: 230V AC
+  psu_rating_w: 3200
+power_ports:
+  - name: "{module}"
+    type: iec-60320-c20
+    maximum_draw_w: 3200
+comments: ThinkSystem 3200W 230V/115V Titanium CRPS Premium Hot-Swap Power Supply
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Lenovo/SP57C27128.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - airflow
+    - comments
+    - manufacturer
+    - model
+    - part_numbers
+    - power.input_voltage
+    - power.psu_rating_w
+    - power_ports
+    - slug
+  import_hash: 51e145393762e1bf

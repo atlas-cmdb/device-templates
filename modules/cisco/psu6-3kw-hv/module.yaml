@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: PSU6.3KW-HV
+slug: psu6-3kw-hv
+kind: psu
+description: 6.3KW AC/HVAC/HVDC Power Supply
+part_numbers:
+  - PSU6.3KW-HV
+power_ports:
+  - name: 0/PT{module}-PM{module}
+    type: iec-60320-c20
+    maximum_draw_w: 6300
+links:
+  manual: https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/hardware/hig-modular/b-8800-hardware-installation-guide-modular/powering_on_the_router.html#task_txx_wpt_zhb
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/PSU6.3KW-HV.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: 0a63a127af7be7fa

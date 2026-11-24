@@ -1,0 +1,114 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: ASR-9902
+slug: asr-9902
+category: router
+form_factor: rack
+part_numbers:
+  - ASR-9902
+u_height: 2
+full_depth: true
+subdevice_role: parent
+weight_kg: 21.04
+airflow: front-to-rear
+interfaces:
+  - name: TenGigE0/0/0/0
+    type: 25gbase-x-sfp28
+  - name: TenGigE0/0/0/1
+    type: 25gbase-x-sfp28
+  - name: TenGigE0/0/0/2
+    type: 25gbase-x-sfp28
+  - name: TenGigE0/0/0/3
+    type: 25gbase-x-sfp28
+  - name: TenGigE0/0/0/4
+    type: 25gbase-x-sfp28
+  - name: TenGigE0/0/0/5
+    type: 25gbase-x-sfp28
+  - name: TenGigE0/0/0/6
+    type: 25gbase-x-sfp28
+  - name: TenGigE0/0/0/7
+    type: 25gbase-x-sfp28
+  - name: HundredGigE0/0/0/10
+    type: 100gbase-x-qsfp28
+  - name: HundredGigE0/0/0/11
+    type: 400gbase-x-qsfpdd
+  - name: TenGigE0/0/0/22
+    type: 10gbase-x-sfpp
+  - name: TenGigE0/0/0/23
+    type: 10gbase-x-sfpp
+  - name: TenGigE0/0/0/24
+    type: 10gbase-x-sfpp
+  - name: TenGigE0/0/0/25
+    type: 10gbase-x-sfpp
+  - name: HundredGigE0/0/0/36
+    type: 100gbase-x-qsfp28
+  - name: HundredGigE0/0/0/37
+    type: 400gbase-x-qsfpdd
+  - name: TenGigE0/0/0/40
+    type: 25gbase-x-sfp28
+  - name: TenGigE0/0/0/41
+    type: 25gbase-x-sfp28
+  - name: TenGigE0/0/0/42
+    type: 25gbase-x-sfp28
+  - name: TenGigE0/0/0/43
+    type: 25gbase-x-sfp28
+  - name: TenGigE0/0/0/44
+    type: 25gbase-x-sfp28
+  - name: TenGigE0/0/0/45
+    type: 25gbase-x-sfp28
+  - name: TenGigE0/0/0/46
+    type: 25gbase-x-sfp28
+  - name: TenGigE0/0/0/47
+    type: 25gbase-x-sfp28
+module_bays:
+  - name: RP0
+    description: Route Processor
+    bay_position: 0/RP0
+  - name: RP1
+    description: Route Processor
+    bay_position: 0/RP1
+  - name: PM0
+    description: Power module
+    bay_position: 0/PT0-PM0
+  - name: PM1
+    description: Power module
+    bay_position: 0/PT0-PM1
+  - name: FAN0
+    description: Fan tray
+    bay_position: 0/FT0
+  - name: FAN1
+    description: Fan tray
+    bay_position: 0/FT1
+  - name: FAN2
+    description: Fan tray
+    bay_position: 0/FT2
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/routers/asr-9000-series-aggregation-services-routers/datasheet-c78-744663.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/ASR-9902.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 55ea522fcdf14cf4

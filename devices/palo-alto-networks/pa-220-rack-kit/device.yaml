@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: palo-alto-networks
+model: PA-220 Rack Kit
+slug: pa-220-rack-kit
+category: firewall
+form_factor: rack
+part_numbers:
+  - PAN-PA-220-RACK-SINGLE
+u_height: 1
+full_depth: false
+subdevice_role: parent
+airflow: passive
+device_bays:
+  - name: Firewall
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Palo Alto Networks/PA-220-Rack-Kit.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - device_bays
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: f4fdb996268e2741

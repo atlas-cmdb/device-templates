@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SuperChassis 846BE1C-R1K03JBOD
+slug: superchassis-846be1c-r1k03jbod
+category: server
+form_factor: rack
+part_numbers:
+  - 846BE1C-R1K03JBOD
+u_height: 4
+full_depth: true
+weight_kg: 39
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: BMC
+    description: Dedicated IPMI LAN port
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+comments: Supermicro SuperChassis 846BE1C-R1K03JBOD (https://www.supermicro.com/en/products/chassis/4U/846/SC846BE1C-R1K03JBOD)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SuperChassis-846BE1C-R1K03JBOD.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 74a720221b773a19

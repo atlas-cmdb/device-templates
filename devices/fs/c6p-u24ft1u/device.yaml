@@ -1,0 +1,180 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fs
+model: C6P-U24FT1U
+slug: c6p-u24ft1u
+category: patch_panel
+form_factor: rack
+description: Cat6 Unshielded Coupler Patch Panel, 24 Port, 1RU, Cable Management Bar included
+part_numbers:
+  - "69180"
+u_height: 1
+full_depth: false
+airflow: passive
+front_ports:
+  - name: "1"
+    type: 8p8c
+    rear_port: "1"
+    rear_port_position: 1
+  - name: "2"
+    type: 8p8c
+    rear_port: "2"
+    rear_port_position: 1
+  - name: "3"
+    type: 8p8c
+    rear_port: "3"
+    rear_port_position: 1
+  - name: "4"
+    type: 8p8c
+    rear_port: "4"
+    rear_port_position: 1
+  - name: "5"
+    type: 8p8c
+    rear_port: "5"
+    rear_port_position: 1
+  - name: "6"
+    type: 8p8c
+    rear_port: "6"
+    rear_port_position: 1
+  - name: "7"
+    type: 8p8c
+    rear_port: "7"
+    rear_port_position: 1
+  - name: "8"
+    type: 8p8c
+    rear_port: "8"
+    rear_port_position: 1
+  - name: "9"
+    type: 8p8c
+    rear_port: "9"
+    rear_port_position: 1
+  - name: "10"
+    type: 8p8c
+    rear_port: "10"
+    rear_port_position: 1
+  - name: "11"
+    type: 8p8c
+    rear_port: "11"
+    rear_port_position: 1
+  - name: "12"
+    type: 8p8c
+    rear_port: "12"
+    rear_port_position: 1
+  - name: "13"
+    type: 8p8c
+    rear_port: "13"
+    rear_port_position: 1
+  - name: "14"
+    type: 8p8c
+    rear_port: "14"
+    rear_port_position: 1
+  - name: "15"
+    type: 8p8c
+    rear_port: "15"
+    rear_port_position: 1
+  - name: "16"
+    type: 8p8c
+    rear_port: "16"
+    rear_port_position: 1
+  - name: "17"
+    type: 8p8c
+    rear_port: "17"
+    rear_port_position: 1
+  - name: "18"
+    type: 8p8c
+    rear_port: "18"
+    rear_port_position: 1
+  - name: "19"
+    type: 8p8c
+    rear_port: "19"
+    rear_port_position: 1
+  - name: "20"
+    type: 8p8c
+    rear_port: "20"
+    rear_port_position: 1
+  - name: "21"
+    type: 8p8c
+    rear_port: "21"
+    rear_port_position: 1
+  - name: "22"
+    type: 8p8c
+    rear_port: "22"
+    rear_port_position: 1
+  - name: "23"
+    type: 8p8c
+    rear_port: "23"
+    rear_port_position: 1
+  - name: "24"
+    type: 8p8c
+    rear_port: "24"
+    rear_port_position: 1
+rear_ports:
+  - name: "1"
+    type: 8p8c
+  - name: "2"
+    type: 8p8c
+  - name: "3"
+    type: 8p8c
+  - name: "4"
+    type: 8p8c
+  - name: "5"
+    type: 8p8c
+  - name: "6"
+    type: 8p8c
+  - name: "7"
+    type: 8p8c
+  - name: "8"
+    type: 8p8c
+  - name: "9"
+    type: 8p8c
+  - name: "10"
+    type: 8p8c
+  - name: "11"
+    type: 8p8c
+  - name: "12"
+    type: 8p8c
+  - name: "13"
+    type: 8p8c
+  - name: "14"
+    type: 8p8c
+  - name: "15"
+    type: 8p8c
+  - name: "16"
+    type: 8p8c
+  - name: "17"
+    type: 8p8c
+  - name: "18"
+    type: 8p8c
+  - name: "19"
+    type: 8p8c
+  - name: "20"
+    type: 8p8c
+  - name: "21"
+    type: 8p8c
+  - name: "22"
+    type: 8p8c
+  - name: "23"
+    type: 8p8c
+  - name: "24"
+    type: 8p8c
+links:
+  product_page: https://www.fs.com/products/69180.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/FS/C6P-U24FT1U.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - front_ports
+    - full_depth
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+    - u_height
+  import_hash: 5db53bfeebf24394

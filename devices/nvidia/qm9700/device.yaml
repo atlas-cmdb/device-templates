@@ -1,0 +1,167 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: nvidia
+model: QM9700
+slug: qm9700
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: true
+weight_kg: 14.8
+airflow: rear-to-front
+power:
+  psu_count: 2
+interfaces:
+  - name: P0.0
+    type: 400gbase-x-osfp
+  - name: P0.1
+    type: 400gbase-x-osfp
+  - name: P1.0
+    type: 400gbase-x-osfp
+  - name: P1.1
+    type: 400gbase-x-osfp
+  - name: P2.0
+    type: 400gbase-x-osfp
+  - name: P2.1
+    type: 400gbase-x-osfp
+  - name: P3.0
+    type: 400gbase-x-osfp
+  - name: P3.1
+    type: 400gbase-x-osfp
+  - name: P4.0
+    type: 400gbase-x-osfp
+  - name: P4.1
+    type: 400gbase-x-osfp
+  - name: P5.0
+    type: 400gbase-x-osfp
+  - name: P5.1
+    type: 400gbase-x-osfp
+  - name: P6.0
+    type: 400gbase-x-osfp
+  - name: P6.1
+    type: 400gbase-x-osfp
+  - name: P7.0
+    type: 400gbase-x-osfp
+  - name: P7.1
+    type: 400gbase-x-osfp
+  - name: P8.0
+    type: 400gbase-x-osfp
+  - name: P8.1
+    type: 400gbase-x-osfp
+  - name: P9.0
+    type: 400gbase-x-osfp
+  - name: P9.1
+    type: 400gbase-x-osfp
+  - name: P10.0
+    type: 400gbase-x-osfp
+  - name: P10.1
+    type: 400gbase-x-osfp
+  - name: P11.0
+    type: 400gbase-x-osfp
+  - name: P11.1
+    type: 400gbase-x-osfp
+  - name: P12.0
+    type: 400gbase-x-osfp
+  - name: P12.1
+    type: 400gbase-x-osfp
+  - name: P13.0
+    type: 400gbase-x-osfp
+  - name: P13.1
+    type: 400gbase-x-osfp
+  - name: P14.0
+    type: 400gbase-x-osfp
+  - name: P14.1
+    type: 400gbase-x-osfp
+  - name: P15.0
+    type: 400gbase-x-osfp
+  - name: P15.1
+    type: 400gbase-x-osfp
+  - name: P16.0
+    type: 400gbase-x-osfp
+  - name: P16.1
+    type: 400gbase-x-osfp
+  - name: P17.0
+    type: 400gbase-x-osfp
+  - name: P17.1
+    type: 400gbase-x-osfp
+  - name: P18.0
+    type: 400gbase-x-osfp
+  - name: P18.1
+    type: 400gbase-x-osfp
+  - name: P19.0
+    type: 400gbase-x-osfp
+  - name: P19.1
+    type: 400gbase-x-osfp
+  - name: P20.0
+    type: 400gbase-x-osfp
+  - name: P20.1
+    type: 400gbase-x-osfp
+  - name: P21.0
+    type: 400gbase-x-osfp
+  - name: P21.1
+    type: 400gbase-x-osfp
+  - name: P22.0
+    type: 400gbase-x-osfp
+  - name: P23.1
+    type: 400gbase-x-osfp
+  - name: P24.0
+    type: 400gbase-x-osfp
+  - name: P24.1
+    type: 400gbase-x-osfp
+  - name: P25.0
+    type: 400gbase-x-osfp
+  - name: P25.1
+    type: 400gbase-x-osfp
+  - name: P26.0
+    type: 400gbase-x-osfp
+  - name: P26.1
+    type: 400gbase-x-osfp
+  - name: P27.0
+    type: 400gbase-x-osfp
+  - name: P27.1
+    type: 400gbase-x-osfp
+  - name: P28.0
+    type: 400gbase-x-osfp
+  - name: P28.1
+    type: 400gbase-x-osfp
+  - name: P29.0
+    type: 400gbase-x-osfp
+  - name: P29.1
+    type: 400gbase-x-osfp
+  - name: P30.0
+    type: 400gbase-x-osfp
+  - name: P30.1
+    type: 400gbase-x-osfp
+  - name: P31.0
+    type: 400gbase-x-osfp
+  - name: P31.1
+    type: 400gbase-x-osfp
+console_ports:
+  - name: uart
+    type: rj-45
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Nvidia/QM9700.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: a8f6436e397c44ba

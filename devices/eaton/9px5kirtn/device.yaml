@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eaton
+model: 9PX5KIRTN
+slug: 9px5kirtn
+category: ups
+form_factor: rack
+u_height: 3
+full_depth: true
+power:
+  outlet_count: 11
+  psu_count: 1
+interfaces:
+  - name: eth0
+    type: 1000base-t
+    mgmt_only: true
+  - name: Battery connector
+    type: other
+  - name: Battery detection
+    type: other
+console_ports:
+  - name: Serial
+    type: de-9
+  - name: USB management
+    type: usb-b
+power_ports:
+  - name: AC Source
+    type: hardwired
+power_outlets:
+  - name: Primary Group Hardwired
+    type: hardwired
+    power_port: AC Source
+  - name: Primary Group - Output 1
+    type: iec-60320-c19
+    power_port: AC Source
+  - name: Primary Group - Output 2
+    type: iec-60320-c19
+    power_port: AC Source
+  - name: Group 1 - Output 1
+    type: iec-60320-c13
+    power_port: AC Source
+  - name: Group 1 - Output 2
+    type: iec-60320-c13
+    power_port: AC Source
+  - name: Group 1 - Output 3
+    type: iec-60320-c13
+    power_port: AC Source
+  - name: Group 1 - Output 4
+    type: iec-60320-c13
+    power_port: AC Source
+  - name: Group 2 - Output 1
+    type: iec-60320-c13
+    power_port: AC Source
+  - name: Group 2 - Output 2
+    type: iec-60320-c13
+    power_port: AC Source
+  - name: Group 2 - Output 3
+    type: iec-60320-c13
+    power_port: AC Source
+  - name: Group 2 - Output 4
+    type: iec-60320-c13
+    power_port: AC Source
+links:
+  manual: https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/eaton-9px-ups/eaton-9sx-9px-ups-5-6-kva-ebm-180v-installation-and-user-manual.pdf
+comments: 9PX5KIRTN 5kVA 230V Tower/Rack Mountable UPS
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eaton/9PX5KIRTN.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 572d4ebde77df763

@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: IE-2000-8TC-B
+slug: ie-2000-8tc-b
+category: network_switch
+form_factor: rack
+part_numbers:
+  - IE-2000-8TC-B
+u_height: 3
+full_depth: false
+weight_kg: 1.247
+airflow: passive
+power:
+  psu_count: 2
+interfaces:
+  - name: FastEthernet1/1
+    type: 100base-tx
+  - name: FastEthernet1/2
+    type: 100base-tx
+  - name: FastEthernet1/3
+    type: 100base-tx
+  - name: FastEthernet1/4
+    type: 100base-tx
+  - name: FastEthernet1/5
+    type: 100base-tx
+  - name: FastEthernet1/6
+    type: 100base-tx
+  - name: FastEthernet1/7
+    type: 100base-tx
+  - name: FastEthernet1/8
+    type: 100base-tx
+  - name: FastEthernet1/9
+    type: 100base-tx
+  - name: FastEthernet1/10
+    type: 100base-tx
+console_ports:
+  - name: con 0
+    type: rj-45
+  - name: usb
+    type: usb-mini-b
+power_ports:
+  - name: DC-A
+    type: dc-terminal
+    maximum_draw_w: 18
+    allocated_draw_w: 14
+  - name: DC-B
+    type: dc-terminal
+    maximum_draw_w: 18
+    allocated_draw_w: 14
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/IE-2000-8TC-B.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 5071c5e9601a2db2

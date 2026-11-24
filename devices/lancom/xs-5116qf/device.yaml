@@ -1,0 +1,110 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lancom
+model: XS-5116QF
+slug: xs-5116qf
+category: network_switch
+form_factor: rack
+part_numbers:
+  - "61859"
+u_height: 1
+full_depth: false
+weight_kg: 6
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: 1/0/1
+    label: "1"
+    type: 10gbase-x-sfpp
+  - name: 1/0/2
+    label: "2"
+    type: 10gbase-x-sfpp
+  - name: 1/0/3
+    label: "3"
+    type: 10gbase-x-sfpp
+  - name: 1/0/4
+    label: "4"
+    type: 10gbase-x-sfpp
+  - name: 1/0/5
+    label: "5"
+    type: 10gbase-x-sfpp
+  - name: 1/0/6
+    label: "6"
+    type: 10gbase-x-sfpp
+  - name: 1/0/7
+    label: "7"
+    type: 10gbase-x-sfpp
+  - name: 1/0/8
+    label: "8"
+    type: 10gbase-x-sfpp
+  - name: 1/0/9
+    label: "9"
+    type: 10gbase-x-sfpp
+  - name: 1/0/10
+    label: "10"
+    type: 10gbase-x-sfpp
+  - name: 1/0/11
+    label: "11"
+    type: 10gbase-x-sfpp
+  - name: 1/0/12
+    label: "12"
+    type: 10gbase-x-sfpp
+  - name: 1/0/13 sfp
+    label: 13-sfp
+    type: 10gbase-x-sfpp
+  - name: 1/0/14 sfp
+    label: 14-sfp
+    type: 10gbase-x-sfpp
+  - name: 1/0/13 rj45
+    label: 13-rj45
+    type: 10gbase-t
+  - name: 1/0/14 rj45
+    label: 14-rj45
+    type: 10gbase-t
+  - name: 1/0/15
+    label: "15"
+    type: 40gbase-x-qsfpp
+  - name: 1/0/16
+    label: "16"
+    type: 40gbase-x-qsfpp
+console_ports:
+  - name: com
+    type: rj-45
+  - name: USB
+    type: usb-micro-b
+  - name: USB-A
+    description: USB port for firmware and configuration transfer
+    type: usb-a
+module_bays:
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+links:
+  datasheet: https://www.lancom-systems.de/fileadmin/download/LC-XS-5116QF/DS_XS-5116QF_DE.pdf
+  manual: https://www.lancom-systems.com/fileadmin/download/LC-SPSU-250/DS_SPSU-250_EN.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/LANCOM/XS-5116QF.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 621e3422bbeb005a

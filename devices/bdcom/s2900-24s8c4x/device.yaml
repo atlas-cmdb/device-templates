@@ -1,0 +1,117 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: bdcom
+model: S2900-24S8C4X
+slug: s2900-24s8c4x
+category: network_switch
+form_factor: rack
+description: Switch BDCOM S2900-24S8C4X
+u_height: 1
+full_depth: false
+weight_kg: 4
+airflow: left-to-right
+power:
+  psu_count: 1
+interfaces:
+  - name: GigaEthernet0/1
+    description: Combo port (RJ-45/SFP)
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/2
+    description: Combo port (RJ-45/SFP)
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/3
+    description: Combo port (RJ-45/SFP)
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/4
+    description: Combo port (RJ-45/SFP)
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/5
+    description: Combo port (RJ-45/SFP)
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/6
+    description: Combo port (RJ-45/SFP)
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/7
+    description: Combo port (RJ-45/SFP)
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/8
+    description: Combo port (RJ-45/SFP)
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/9
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/10
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/11
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/12
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/13
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/14
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/15
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/16
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/17
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/18
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/19
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/20
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/21
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/22
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/23
+    type: 1000base-x-sfp
+  - name: GigaEthernet0/24
+    type: 1000base-x-sfp
+  - name: TGigaEthernet0/1
+    label: TE1
+    type: 10gbase-x-sfpp
+  - name: TGigaEthernet0/2
+    label: TE2
+    type: 10gbase-x-sfpp
+  - name: TGigaEthernet0/3
+    label: TE3
+    type: 10gbase-x-sfpp
+  - name: TGigaEthernet0/4
+    label: TE4
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    label: CLI
+    type: rj-45
+power_ports:
+  - name: PSU
+    description: "AC: 100V-240V"
+    type: iec-60320-c14
+    maximum_draw_w: 45
+links:
+  product_page: https://bdcomnetworks.com/S2900_24S8C4X/
+comments: See .
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/BDCOM/S2900-24S8C4X.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 0ed5572310046e29

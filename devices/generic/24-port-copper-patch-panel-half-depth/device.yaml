@@ -1,0 +1,179 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: generic
+model: 24-port Copper Patch Panel Half Depth
+slug: 24-port-copper-patch-panel-half-depth
+category: patch_panel
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 0.7
+airflow: passive
+front_ports:
+  - name: Port 1
+    type: 8p8c
+    rear_port: Port 1
+    rear_port_position: 1
+  - name: Port 2
+    type: 8p8c
+    rear_port: Port 2
+    rear_port_position: 1
+  - name: Port 3
+    type: 8p8c
+    rear_port: Port 3
+    rear_port_position: 1
+  - name: Port 4
+    type: 8p8c
+    rear_port: Port 4
+    rear_port_position: 1
+  - name: Port 5
+    type: 8p8c
+    rear_port: Port 5
+    rear_port_position: 1
+  - name: Port 6
+    type: 8p8c
+    rear_port: Port 6
+    rear_port_position: 1
+  - name: Port 7
+    type: 8p8c
+    rear_port: Port 7
+    rear_port_position: 1
+  - name: Port 8
+    type: 8p8c
+    rear_port: Port 8
+    rear_port_position: 1
+  - name: Port 9
+    type: 8p8c
+    rear_port: Port 9
+    rear_port_position: 1
+  - name: Port 10
+    type: 8p8c
+    rear_port: Port 10
+    rear_port_position: 1
+  - name: Port 11
+    type: 8p8c
+    rear_port: Port 11
+    rear_port_position: 1
+  - name: Port 12
+    type: 8p8c
+    rear_port: Port 12
+    rear_port_position: 1
+  - name: Port 13
+    type: 8p8c
+    rear_port: Port 13
+    rear_port_position: 1
+  - name: Port 14
+    type: 8p8c
+    rear_port: Port 14
+    rear_port_position: 1
+  - name: Port 15
+    type: 8p8c
+    rear_port: Port 15
+    rear_port_position: 1
+  - name: Port 16
+    type: 8p8c
+    rear_port: Port 16
+    rear_port_position: 1
+  - name: Port 17
+    type: 8p8c
+    rear_port: Port 17
+    rear_port_position: 1
+  - name: Port 18
+    type: 8p8c
+    rear_port: Port 18
+    rear_port_position: 1
+  - name: Port 19
+    type: 8p8c
+    rear_port: Port 19
+    rear_port_position: 1
+  - name: Port 20
+    type: 8p8c
+    rear_port: Port 20
+    rear_port_position: 1
+  - name: Port 21
+    type: 8p8c
+    rear_port: Port 21
+    rear_port_position: 1
+  - name: Port 22
+    type: 8p8c
+    rear_port: Port 22
+    rear_port_position: 1
+  - name: Port 23
+    type: 8p8c
+    rear_port: Port 23
+    rear_port_position: 1
+  - name: Port 24
+    type: 8p8c
+    rear_port: Port 24
+    rear_port_position: 1
+rear_ports:
+  - name: Port 1
+    type: 8p8c
+  - name: Port 2
+    type: 8p8c
+  - name: Port 3
+    type: 8p8c
+  - name: Port 4
+    type: 8p8c
+  - name: Port 5
+    type: 8p8c
+  - name: Port 6
+    type: 8p8c
+  - name: Port 7
+    type: 8p8c
+  - name: Port 8
+    type: 8p8c
+  - name: Port 9
+    type: 8p8c
+  - name: Port 10
+    type: 8p8c
+  - name: Port 11
+    type: 8p8c
+  - name: Port 12
+    type: 8p8c
+  - name: Port 13
+    type: 8p8c
+  - name: Port 14
+    type: 8p8c
+  - name: Port 15
+    type: 8p8c
+  - name: Port 16
+    type: 8p8c
+  - name: Port 17
+    type: 8p8c
+  - name: Port 18
+    type: 8p8c
+  - name: Port 19
+    type: 8p8c
+  - name: Port 20
+    type: 8p8c
+  - name: Port 21
+    type: 8p8c
+  - name: Port 22
+    type: 8p8c
+  - name: Port 23
+    type: 8p8c
+  - name: Port 24
+    type: 8p8c
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Generic/24-port-copper-patch-panel-half-depth.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - front_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - manufacturer
+    - model
+    - rear_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 34bb92ce75464c08

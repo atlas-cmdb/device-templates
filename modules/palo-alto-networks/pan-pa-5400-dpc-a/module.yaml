@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: palo-alto-networks
+model: PAN-PA-5400-DPC-A
+slug: pan-pa-5400-dpc-a
+kind: other
+part_numbers:
+  - PAN-PA-5400-DPC-A
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Palo Alto Networks/PAN-PA-5400-DPC-A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 1a85c7cd897cc3ee

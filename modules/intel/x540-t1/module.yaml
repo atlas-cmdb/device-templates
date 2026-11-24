@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: intel
+model: X540-T1
+slug: x540-t1
+kind: other
+part_numbers:
+  - X540-T1
+interfaces:
+  - name: Ethernet/{module}/1
+    type: 10gbase-t
+links:
+  datasheet: https://ark.intel.com/content/www/us/en/ark/products/58953/intel-ethernet-converged-network-adapter-x540t1.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Intel/X540-T1.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 76c599dcc6a48e6a

@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: mdx
+model: N00T01-FA-L-IO
+slug: n00t01-fa-l-io
+category: appliance
+form_factor: rack
+part_numbers:
+  - N00T01-FA-L-IO
+u_height: 3.5
+full_depth: true
+weight_kg: 7.3
+airflow: side-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: LAN1
+    type: 10gbase-t
+  - name: LAN2
+    type: 10gbase-t
+console_ports:
+  - name: RS232
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  manual: https://mdxtelecom.com.br/wp-content/uploads/2024/10/N00T01-FA-L-IO.pdf
+  other:
+    - label: Network Video Recorder RAID 128 Channel with Facial Recognition
+      url: https://mdxtelecom.com.br/produto/reconhecimento-facial/gravadores-nvr-faciais-reconhecimento-facial/gravador-nvr-raid-128-canais-com-reconhecimento-facial/
+comments: |-
+  Dimensions: 437mm x 483mm x 143mm (17.2" x 19" x 5.6")
+  Weight: ~7.30 kg
+  Certifications: CE, FCC
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/MDX/N00T01-FA-L-IO.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.manual
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 9c06a2f1c91b7834

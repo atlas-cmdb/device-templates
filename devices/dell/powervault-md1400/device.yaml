@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerVault MD1400
+slug: powervault-md1400
+category: storage_shelf
+form_factor: rack
+part_numbers:
+  - MD1400
+u_height: 2
+full_depth: true
+weight_kg: 28.59
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: EMM0 SAS Port 1
+    type: other
+  - name: EMM0 SAS Port 2
+    type: other
+  - name: EMM0 SAS Port 3
+    type: other
+  - name: EMM0 SAS Port 4
+    type: other
+  - name: EMM1 SAS Port 1
+    type: other
+  - name: EMM1 SAS Port 2
+    type: other
+  - name: EMM1 SAS Port 3
+    type: other
+  - name: EMM1 SAS Port 4
+    type: other
+console_ports:
+  - name: EMM0 USB
+    type: usb-mini-b
+  - name: EMM1 USB
+    type: usb-mini-b
+module_bays:
+  - name: PSU 1
+    label: "1"
+    description: Left side
+    bay_position: "1"
+  - name: PSU 2
+    label: "2"
+    description: Right side
+    bay_position: "2"
+links:
+  datasheet: https://i.dell.com/sites/csdocuments/shared-content_data-sheets_documents/en/dellstorage_md1400_md1420_082114.pdf
+  manual: https://dl.dell.com/topicspdf/md1400om_en-us.pdf
+  product_page: https://www.dell.com/support/product-details/en-uk/product/storage-md1400/overview
+comments: "Power Supply Model: GD7W3"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerVault-MD1400.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 5bbc1d885b0ae297

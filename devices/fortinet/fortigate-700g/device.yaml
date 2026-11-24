@@ -1,0 +1,155 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: FortiGate 700G
+slug: fortigate-700g
+category: firewall
+form_factor: rack
+part_numbers:
+  - FG-700G
+u_height: 1
+full_depth: false
+weight_kg: 3.5
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: ha
+    label: HA
+    type: 2.5gbase-t
+  - name: mgmt
+    label: MGMT
+    type: 1000base-t
+    mgmt_only: true
+  - name: wan1
+    label: WAN1
+    type: 5gbase-t
+  - name: wan2
+    label: WAN2
+    type: 5gbase-t
+  - name: port1
+    label: LAN1
+    type: 5gbase-t
+  - name: port2
+    label: LAN2
+    type: 5gbase-t
+  - name: port3
+    label: LAN3
+    type: 5gbase-t
+  - name: port4
+    label: LAN4
+    type: 5gbase-t
+  - name: port5
+    label: LAN5
+    type: 5gbase-t
+  - name: port6
+    label: LAN6
+    type: 5gbase-t
+  - name: port7
+    label: LAN7
+    type: 1000base-x-sfp
+  - name: port8
+    label: LAN8
+    type: 1000base-x-sfp
+  - name: port9
+    label: LAN9
+    type: 1000base-x-sfp
+  - name: port10
+    label: LAN10
+    type: 1000base-x-sfp
+  - name: port11
+    label: LAN11
+    type: 1000base-x-sfp
+  - name: port12
+    label: LAN12
+    type: 1000base-x-sfp
+  - name: port13
+    label: LAN13
+    type: 1000base-x-sfp
+  - name: port14
+    label: LAN14
+    type: 1000base-x-sfp
+  - name: port15
+    label: LAN15
+    type: 1000base-x-sfp
+  - name: port16
+    label: LAN16
+    type: 1000base-x-sfp
+  - name: port17
+    label: LAN17
+    type: 1000base-x-sfp
+  - name: port18
+    label: LAN18
+    type: 1000base-x-sfp
+  - name: port19
+    label: LAN19
+    type: 1000base-x-sfp
+  - name: port20
+    label: LAN20
+    type: 1000base-x-sfp
+  - name: port21
+    label: LAN21
+    type: 1000base-x-sfp
+  - name: port22
+    label: LAN22
+    type: 1000base-x-sfp
+  - name: X1
+    label: X1
+    type: 10gbase-x-sfpp
+  - name: X2
+    label: X2
+    type: 10gbase-x-sfpp
+  - name: X3
+    label: X3
+    type: 10gbase-x-sfpp
+  - name: X4
+    label: X4
+    type: 10gbase-x-sfpp
+  - name: X5
+    label: X5
+    type: 25gbase-x-sfp28
+  - name: X6
+    label: X6
+    type: 25gbase-x-sfp28
+  - name: X7
+    label: X7
+    type: 25gbase-x-sfp28
+  - name: X8
+    label: X8
+    type: 25gbase-x-sfp28
+console_ports:
+  - name: Console
+    label: CONSOLE
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 283
+    allocated_draw_w: 230
+  - name: PS2
+    type: iec-60320-c14
+    maximum_draw_w: 295
+    allocated_draw_w: 240
+links:
+  datasheet: https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/pdf/fortigate-700g-series.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/FG-700G.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 5f38588ff5917a10

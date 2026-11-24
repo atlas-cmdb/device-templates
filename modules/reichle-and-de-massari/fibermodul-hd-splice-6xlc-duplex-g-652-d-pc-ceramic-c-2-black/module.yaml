@@ -1,0 +1,101 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: reichle-and-de-massari
+model: FiberModul HD, splice, 6xLC-Duplex G.652.D, PC, ceramic, C/2, black
+slug: fibermodul-hd-splice-6xlc-duplex-g-652-d-pc-ceramic-c-2-black
+kind: other
+part_numbers:
+  - R808375
+front_ports:
+  - name: Port/{module}/1.a
+    type: lc-pc
+    rear_port: Port/{module}/1
+    rear_port_position: 1
+  - name: Port/{module}/1.b
+    type: lc-pc
+    rear_port: Port/{module}/2
+    rear_port_position: 1
+  - name: Port/{module}/2.a
+    type: lc-pc
+    rear_port: Port/{module}/3
+    rear_port_position: 1
+  - name: Port/{module}/2.b
+    type: lc-pc
+    rear_port: Port/{module}/4
+    rear_port_position: 1
+  - name: Port/{module}/3.a
+    type: lc-pc
+    rear_port: Port/{module}/5
+    rear_port_position: 1
+  - name: Port/{module}/3.b
+    type: lc-pc
+    rear_port: Port/{module}/6
+    rear_port_position: 1
+  - name: Port/{module}/4.a
+    type: lc-pc
+    rear_port: Port/{module}/7
+    rear_port_position: 1
+  - name: Port/{module}/4.b
+    type: lc-pc
+    rear_port: Port/{module}/8
+    rear_port_position: 1
+  - name: Port/{module}/5.a
+    type: lc-pc
+    rear_port: Port/{module}/9
+    rear_port_position: 1
+  - name: Port/{module}/5.b
+    type: lc-pc
+    rear_port: Port/{module}/10
+    rear_port_position: 1
+  - name: Port/{module}/6.a
+    type: lc-pc
+    rear_port: Port/{module}/11
+    rear_port_position: 1
+  - name: Port/{module}/6.b
+    type: lc-pc
+    rear_port: Port/{module}/12
+    rear_port_position: 1
+rear_ports:
+  - name: Port/{module}/1
+    type: splice
+  - name: Port/{module}/2
+    type: splice
+  - name: Port/{module}/3
+    type: splice
+  - name: Port/{module}/4
+    type: splice
+  - name: Port/{module}/5
+    type: splice
+  - name: Port/{module}/6
+    type: splice
+  - name: Port/{module}/7
+    type: splice
+  - name: Port/{module}/8
+    type: splice
+  - name: Port/{module}/9
+    type: splice
+  - name: Port/{module}/10
+    type: splice
+  - name: Port/{module}/11
+    type: splice
+  - name: Port/{module}/12
+    type: splice
+links:
+  product_page: https://ecatalog.rdm.com/at/en/product/eCatalog-AT/Fiber-Optics/19-Subrack-Solutions/FiberModul-HD/R808375/FiberModul-HD,-splice,-6xLC-Duplex-G.652.D,-PC,-ceramic,-C-2,-black
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Reichle & De-Massari/FiberModul-HD-splice-6xLC-Duplex-G.652.D-PC-ceramic-C-2-black.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - front_ports
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: 6178e6ca86fff072

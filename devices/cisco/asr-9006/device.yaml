@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: ASR-9006
+slug: asr-9006
+category: router
+form_factor: rack
+part_numbers:
+  - ASR-9006
+u_height: 10
+full_depth: true
+weight_kg: 59.65
+airflow: front-to-rear
+module_bays:
+  - name: RSP0
+    label: RSP 0
+    bay_position: "0"
+  - name: RSP1
+    label: RSP 1
+    bay_position: "1"
+  - name: LineCard0
+    label: Line Card 0
+    bay_position: "0"
+  - name: LineCard1
+    label: Line Card 1
+    bay_position: "1"
+  - name: LineCard2
+    label: Line Card 2
+    bay_position: "2"
+  - name: LineCard3
+    label: Line Card 3
+    bay_position: "3"
+  - name: PowerSlot0
+    bay_position: "0"
+  - name: PowerSlot1
+    bay_position: "1"
+  - name: PowerSlot2
+    bay_position: "2"
+  - name: PowerSlot3
+    bay_position: "3"
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/routers/asr-9000-series-aggregation-services-routers/data_sheet_c78-501767.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/ASR-9006.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 25939683eadd06ef

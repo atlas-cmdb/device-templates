@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: ProLiant ML350 Gen9
+slug: proliant-ml350-gen9
+category: server
+form_factor: rack
+part_numbers:
+  - 754536-B21
+u_height: 4
+full_depth: true
+weight_kg: 42
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: ETH-1
+    type: 1000base-t
+  - name: ETH-2
+    type: 1000base-t
+  - name: ETH-3
+    type: 1000base-t
+  - name: ETH-4
+    type: 1000base-t
+  - name: iLO
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+  - name: PCIe1
+    bay_position: PCIe1
+  - name: PCIe2
+    bay_position: PCIe2
+  - name: PCIe3
+    bay_position: PCIe3
+  - name: PCIe4
+    bay_position: PCIe4
+  - name: PCIe5
+    bay_position: PCIe5
+  - name: PCIe6
+    bay_position: PCIe6
+  - name: PCIe7
+    bay_position: PCIe7
+  - name: PCIe8
+    bay_position: PCIe8
+links:
+  other:
+    - label: HPE ProLiant ML350 Gen9 Server QuickSpecs
+      url: https://www.hpe.com/psnow/doc/c04346270
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/ProLiant-ML350-Gen9.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 8770f50b6e00678f

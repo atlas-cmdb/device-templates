@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: qnap
+model: LAN-10G2SF-MLX
+slug: lan-10g2sf-mlx
+kind: transceiver
+description: Dual-port SFP+ PCIe3 x8 network card with Mellanox chipset
+part_numbers:
+  - lan-10g2sf-mlx
+interfaces:
+  - name: "{module}/Adapter 1"
+    type: 10gbase-x-sfpp
+  - name: "{module}/Adapter 2"
+    type: 10gbase-x-sfpp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/QNAP/LAN-10G2SF-MLX.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: fa21a91f84d6eed4

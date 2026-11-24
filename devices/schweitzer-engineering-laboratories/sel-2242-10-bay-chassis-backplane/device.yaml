@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: schweitzer-engineering-laboratories
+model: SEL-2242 10-bay Chassis/Backplane
+slug: sel-2242-10-bay-chassis-backplane
+category: other
+form_factor: rack
+description: The SEL-2242 10-bay Chassis/Backplane is a 10-slot chassis for SEL Axion systems
+u_height: 2
+full_depth: false
+module_bays:
+  - name: Slot A
+    bay_position: A
+  - name: Slot B
+    bay_position: B
+  - name: Slot C
+    bay_position: C
+  - name: Slot D
+    bay_position: D
+  - name: Slot E
+    bay_position: E
+  - name: Slot F
+    bay_position: F
+  - name: Slot G
+    bay_position: G
+  - name: Slot H
+    bay_position: H
+  - name: Slot I
+    bay_position: I
+  - name: Slot J
+    bay_position: J
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Schweitzer Engineering Laboratories/sel-2242-10-bay-chassis-backplane.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - description
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - u_height
+  import_hash: b541c5b6c3f13e18

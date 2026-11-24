@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: schweitzer-engineering-laboratories
+model: SEL-587 Current Differential Relay
+slug: sel-587-current-differential-relay
+category: other
+form_factor: rack
+part_numbers:
+  - SEL-587
+u_height: 2
+full_depth: true
+weight_kg: 2.268
+airflow: front-to-rear
+power:
+  psu_count: 1
+console_server_ports:
+  - name: Port F
+    label: Modbus RTU-Slave, ASCII terminals, HMI, SCADA, or DCS systems
+    type: de-9
+power_ports:
+  - name: Power
+    type: dc-terminal
+    maximum_draw_w: 6
+links:
+  datasheet: https://selinc.com/api/download/2845/
+comments: "; Description: Economical Differential Protectionfor Power Apparatus"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Schweitzer Engineering Laboratories/SEL-587-Current-Differential-Relay.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_server_ports
+    - full_depth
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 53cdf3c9193ef06f

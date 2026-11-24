@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: synology
+model: DS1517+
+slug: ds1517-plus
+category: storage_shelf
+form_factor: rack
+part_numbers:
+  - DS1517+
+u_height: 4
+full_depth: false
+weight_kg: 5.2
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: LAN 1
+    type: 1000base-t
+  - name: LAN 2
+    type: 1000base-t
+  - name: LAN 3
+    type: 1000base-t
+  - name: LAN 4
+    type: 1000base-t
+power_ports:
+  - name: PSU0
+    type: iec-60320-c14
+    maximum_draw_w: 43
+links:
+  datasheet: https://global.download.synology.com/download/Document/Hardware/DataSheet/DiskStation/17-year/DS1517+/enu/Synology_DS1517_Plus_Data_Sheet_enu.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Synology/DS1517+.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 14daaf2ba47f523c

@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: Meraki MR56
+slug: meraki-mr56
+category: wireless_access_point
+form_factor: other
+part_numbers:
+  - MR56-HW
+u_height: 0
+full_depth: false
+interfaces:
+  - name: main
+    type: 5gbase-t
+    poe_mode: pd
+    poe_type: type2-ieee802.3at
+  - name: wlan0
+    type: ieee802.11n
+  - name: wlan1
+    type: ieee802.11ac
+links:
+  datasheet: https://documentation.meraki.com/MR/MR_Overview_and_Specifications/MR56_Datasheet
+comments: |-
+  - Datasheet:
+  - IEEE Standards: 802.11a, 802.11ac, 802.11ax, 802.11b, 802.11e, 802.11g, 802.11h, 802.11i, 802.11k, 802.11n, 802.11r, and 802.11u
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/Meraki-MR56.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+  import_hash: f9e8e02c2878b7b6

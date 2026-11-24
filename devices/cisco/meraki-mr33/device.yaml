@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: Meraki MR33
+slug: meraki-mr33
+category: wireless_access_point
+form_factor: other
+part_numbers:
+  - MR33-HW
+u_height: 0
+full_depth: false
+weight_kg: 0.374
+airflow: passive
+interfaces:
+  - name: main
+    type: 1000base-t
+    poe_mode: pd
+    poe_type: type1-ieee802.3af
+  - name: wlan0
+    type: ieee802.11n
+  - name: wlan1
+    type: ieee802.11ac
+  - name: wlan2
+    description: Bluetooth Scanning and Beaconing
+    type: ieee802.15.1
+links:
+  datasheet: https://meraki.cisco.com/lib/pdf/meraki_datasheet_MR33.pdf
+comments: |-
+  - Datasheet:
+  - IEEE Standards: 802.11a, 802.11ac, 802.11b, 802.11g, 802.11n
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/Meraki-MR33.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 3d94f0e6b3db9e8c

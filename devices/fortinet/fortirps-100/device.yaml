@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: FortiRPS 100
+slug: fortirps-100
+category: firewall
+form_factor: rack
+part_numbers:
+  - FRPS-100
+u_height: 1
+full_depth: false
+weight_kg: 4.4
+airflow: side-to-rear
+power:
+  outlet_count: 4
+  psu_count: 2
+power_ports:
+  - name: AC-Input 1
+    type: iec-60320-c14
+    maximum_draw_w: 552
+  - name: AC-Input 2
+    type: iec-60320-c14
+    maximum_draw_w: 552
+power_outlets:
+  - name: DC Output 1-1
+    type: dc-terminal
+    power_port: AC-Input 1
+  - name: DC Output 1-2
+    type: dc-terminal
+    power_port: AC-Input 1
+  - name: DC Output 2-1
+    type: dc-terminal
+    power_port: AC-Input 2
+  - name: DC Output 2-2
+    type: dc-terminal
+    power_port: AC-Input 2
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/FRPS-100.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 7327bdffc2acdc9f

@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: panduit
+model: Opticom Rack Mount Enclosure, Black, 1 RU, 3 FAP/Cassette Slots
+slug: opticom-rack-mount-enclosure-black-1-ru-3-fap-cassette-slots
+category: patch_panel
+form_factor: rack
+part_numbers:
+  - FRME1U
+u_height: 1
+full_depth: false
+subdevice_role: parent
+weight_kg: 5.488
+airflow: passive
+module_bays:
+  - name: A
+    bay_position: A
+  - name: B
+    bay_position: B
+  - name: C
+    bay_position: C
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Panduit/FRME1U.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 3ff0ab2921b91577

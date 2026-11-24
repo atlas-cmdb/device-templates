@@ -1,0 +1,100 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ciena
+model: "5160"
+slug: "5160"
+category: optical_transport
+form_factor: rack
+part_numbers:
+  - 170-5160-900
+u_height: 1
+full_depth: false
+power:
+  psu_count: 2
+interfaces:
+  - name: "1"
+    type: 10gbase-x-sfpp
+  - name: "2"
+    type: 10gbase-x-sfpp
+  - name: "3"
+    type: 10gbase-x-sfpp
+  - name: "4"
+    type: 10gbase-x-sfpp
+  - name: "5"
+    type: 10gbase-x-sfpp
+  - name: "6"
+    type: 10gbase-x-sfpp
+  - name: "7"
+    type: 10gbase-x-sfpp
+  - name: "8"
+    type: 10gbase-x-sfpp
+  - name: "9"
+    type: 10gbase-x-sfpp
+  - name: "10"
+    type: 10gbase-x-sfpp
+  - name: "11"
+    type: 10gbase-x-sfpp
+  - name: "12"
+    type: 10gbase-x-sfpp
+  - name: "13"
+    type: 10gbase-x-sfpp
+  - name: "14"
+    type: 10gbase-x-sfpp
+  - name: "15"
+    type: 10gbase-x-sfpp
+  - name: "16"
+    type: 10gbase-x-sfpp
+  - name: "17"
+    type: 10gbase-x-sfpp
+  - name: "18"
+    type: 10gbase-x-sfpp
+  - name: "19"
+    type: 10gbase-x-sfpp
+  - name: "20"
+    type: 10gbase-x-sfpp
+  - name: "21"
+    type: 10gbase-x-sfpp
+  - name: "22"
+    type: 10gbase-x-sfpp
+  - name: "23"
+    type: 10gbase-x-sfpp
+  - name: "24"
+    type: 10gbase-x-sfpp
+  - name: MGMT
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: CONSOLE
+    type: rj-45
+power_ports:
+  - name: PSA
+    type: iec-60320-c14
+    maximum_draw_w: 175
+    allocated_draw_w: 50
+  - name: PSB
+    type: iec-60320-c14
+    maximum_draw_w: 175
+    allocated_draw_w: 50
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ciena/5160.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: b075e65d9b9c9b89

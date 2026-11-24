@@ -1,0 +1,165 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: arista
+model: CCS-720DF-48Y-2F
+slug: ccs-720df-48y-2f
+category: network_switch
+form_factor: rack
+part_numbers:
+  - CCS-720DF-48Y-2F
+u_height: 1
+full_depth: false
+weight_kg: 4.5
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Ethernet1
+    type: 1000base-x-sfp
+  - name: Ethernet2
+    type: 1000base-x-sfp
+  - name: Ethernet3
+    type: 1000base-x-sfp
+  - name: Ethernet4
+    type: 1000base-x-sfp
+  - name: Ethernet5
+    type: 1000base-x-sfp
+  - name: Ethernet6
+    type: 1000base-x-sfp
+  - name: Ethernet7
+    type: 1000base-x-sfp
+  - name: Ethernet8
+    type: 1000base-x-sfp
+  - name: Ethernet9
+    type: 1000base-x-sfp
+  - name: Ethernet10
+    type: 1000base-x-sfp
+  - name: Ethernet11
+    type: 1000base-x-sfp
+  - name: Ethernet12
+    type: 1000base-x-sfp
+  - name: Ethernet13
+    type: 1000base-x-sfp
+  - name: Ethernet14
+    type: 1000base-x-sfp
+  - name: Ethernet15
+    type: 1000base-x-sfp
+  - name: Ethernet16
+    type: 1000base-x-sfp
+  - name: Ethernet17
+    type: 1000base-x-sfp
+  - name: Ethernet18
+    type: 1000base-x-sfp
+  - name: Ethernet19
+    type: 1000base-x-sfp
+  - name: Ethernet20
+    type: 1000base-x-sfp
+  - name: Ethernet21
+    type: 1000base-x-sfp
+  - name: Ethernet22
+    type: 1000base-x-sfp
+  - name: Ethernet23
+    type: 1000base-x-sfp
+  - name: Ethernet24
+    type: 1000base-x-sfp
+  - name: Ethernet25
+    type: 1000base-x-sfp
+  - name: Ethernet26
+    type: 1000base-x-sfp
+  - name: Ethernet27
+    type: 1000base-x-sfp
+  - name: Ethernet28
+    type: 1000base-x-sfp
+  - name: Ethernet29
+    type: 1000base-x-sfp
+  - name: Ethernet30
+    type: 1000base-x-sfp
+  - name: Ethernet31
+    type: 1000base-x-sfp
+  - name: Ethernet32
+    type: 1000base-x-sfp
+  - name: Ethernet33
+    type: 1000base-x-sfp
+  - name: Ethernet34
+    type: 1000base-x-sfp
+  - name: Ethernet35
+    type: 1000base-x-sfp
+  - name: Ethernet36
+    type: 1000base-x-sfp
+  - name: Ethernet37
+    type: 1000base-x-sfp
+  - name: Ethernet38
+    type: 1000base-x-sfp
+  - name: Ethernet39
+    type: 1000base-x-sfp
+  - name: Ethernet40
+    type: 1000base-x-sfp
+  - name: Ethernet41
+    type: 1000base-x-sfp
+  - name: Ethernet42
+    type: 1000base-x-sfp
+  - name: Ethernet43
+    type: 1000base-x-sfp
+  - name: Ethernet44
+    type: 1000base-x-sfp
+  - name: Ethernet45
+    type: 1000base-x-sfp
+  - name: Ethernet46
+    type: 1000base-x-sfp
+  - name: Ethernet47
+    type: 1000base-x-sfp
+  - name: Ethernet48
+    type: 1000base-x-sfp
+  - name: Ethernet49
+    type: 25gbase-x-sfp28
+  - name: Ethernet50
+    type: 25gbase-x-sfp28
+  - name: Ethernet51
+    type: 25gbase-x-sfp28
+  - name: Ethernet52
+    type: 25gbase-x-sfp28
+  - name: Management1
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 200
+    allocated_draw_w: 180
+  - name: PS2
+    type: iec-60320-c14
+    maximum_draw_w: 200
+    allocated_draw_w: 180
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.arista.com/assets/data/pdf/Datasheets/CCS-720D-Datasheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Arista/CCS-720DF-48Y-2F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1f5e42548a40da72

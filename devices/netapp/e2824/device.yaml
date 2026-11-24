@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netapp
+model: E2824
+slug: e2824
+category: storage_array
+form_factor: rack
+part_numbers:
+  - E2824
+u_height: 2
+full_depth: true
+weight_kg: 27.44
+power:
+  psu_count: 2
+interfaces:
+  - name: e0a
+    type: 16gfc-sfpp
+  - name: e0b
+    type: 16gfc-sfpp
+  - name: e0c
+    type: 16gfc-sfpp
+  - name: e0d
+    type: 16gfc-sfpp
+console_ports:
+  - name: con0
+    type: rj-45
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/NetApp/E2824.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 973159a87148974c

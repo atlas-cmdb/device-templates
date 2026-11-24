@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: ubiquiti
+name: Ubiquiti
+aliases:
+  - UniFi
+  - Ubiquiti Networks
+  - UBNT
+website: https://www.ui.com

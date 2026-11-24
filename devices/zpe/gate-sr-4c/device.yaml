@@ -1,0 +1,173 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: zpe
+model: Gate SR 4C
+slug: gate-sr-4c
+category: console_server
+form_factor: rack
+description: 4-Core Intel CPU, 8x RJ45 Serial rolled, 2x SFP+, 5x GbE, 4x PoE+, Dual DC input (wide range DC)
+part_numbers:
+  - GSR-T8-BASE
+u_height: 1
+full_depth: false
+weight_kg: 0.9
+airflow: passive
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0
+    label: ETH 0
+    type: 1000base-t
+  - name: sfp0
+    label: SFP+ 0
+    type: 10gbase-x-sfpp
+  - name: sfp1
+    label: SFP+ 1
+    type: 10gbase-x-sfpp
+  - name: backplane0
+    type: 2.5gbase-t
+  - name: backplane1
+    type: 2.5gbase-t
+  - name: netS1
+    label: "1"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: netS2
+    label: "2"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: netS3
+    label: "3"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: netS4
+    label: "4"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: netS5
+    label: "5"
+    type: 1000base-t
+  - name: netS6
+    label: "6"
+    type: 1000base-t
+  - name: netS7
+    label: "7"
+    type: 1000base-t
+  - name: netS8
+    label: "8"
+    type: 1000base-t
+console_ports:
+  - name: Console
+    label: CONSOLE
+    type: rj-45
+console_server_ports:
+  - name: ttyS1
+    label: "1"
+    type: rj-45
+  - name: ttyS2
+    label: "2"
+    type: rj-45
+  - name: ttyS3
+    label: "3"
+    type: rj-45
+  - name: ttyS4
+    label: "4"
+    type: rj-45
+  - name: ttyS5
+    label: "5"
+    type: rj-45
+  - name: ttyS6
+    label: "6"
+    type: rj-45
+  - name: ttyS7
+    label: "7"
+    type: rj-45
+  - name: ttyS8
+    label: "8"
+    type: rj-45
+  - name: usbS0-1
+    label: USB
+    description: USB 3.0, Rear Top (below ETH 0)
+    type: usb-a
+  - name: usbS0-2
+    label: USB
+    description: USB 3.0, Rear Bottom
+    type: usb-a
+  - name: usbS0-3
+    label: USB
+    description: USB 2.0, Front Top
+    type: usb-a
+  - name: usbS0-4
+    label: USB
+    description: USB 2.0, Front Bottom (above HDMI)
+    type: usb-a
+  - name: DIO0
+    label: DIO 0
+    description: Digital I/O Port
+    type: other
+  - name: DIO1
+    label: DIO 1
+    description: Digital I/O Port
+    type: other
+  - name: OUT0
+    label: OUT 0
+    description: Digital Out Port
+    type: other
+  - name: Relay
+    description: Relay Port, next to OUT 0
+    type: other
+power_ports:
+  - name: PS1
+    label: V1
+    type: dc-terminal
+  - name: PS2
+    label: V2
+    type: dc-terminal
+module_bays:
+  - name: Mini PCIe
+    description: Wi-Fi, Front
+    bay_position: "0"
+  - name: SATA DOM 1
+    description: Primary Storage, Center (next to Mini PCIe)
+    bay_position: "1"
+  - name: SATA DOM 2
+    description: Secondary Storage, Rear
+    bay_position: "2"
+  - name: Channel-A
+    description: Cellular Modem, Sim A1 and A2, M.2 B-Key, Center (next to SFP)
+    bay_position: "0"
+  - name: Channel-B
+    description: Cellular Modem, Sim B1 and B2, M.2 B-Key, Left
+    bay_position: "1"
+links:
+  datasheet: https://go.zpesystems.com/rs/004-BTR-463/images/Datasheet-Nodegrid-Gate-SR.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/ZPE/GSR-T8-BASE.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - console_server_ports
+    - description
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 8cc168c4b90befe5

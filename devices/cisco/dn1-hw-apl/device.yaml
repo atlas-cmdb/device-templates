@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: DN1-HW-APL
+slug: dn1-hw-apl
+category: appliance
+form_factor: rack
+part_numbers:
+  - DN1-HW-APL
+u_height: 1
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: eno1
+    type: 10gbase-t
+    mgmt_only: true
+  - name: eno2
+    type: 10gbase-t
+  - name: enp94s0f0
+    type: 10gbase-t
+    mgmt_only: true
+  - name: enp94s0f1
+    type: 10gbase-t
+    mgmt_only: true
+  - name: CIMC
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Con
+    type: rj-45
+power_ports:
+  - name: PS-0
+    type: iec-60320-c14
+    maximum_draw_w: 770
+  - name: PS-1
+    type: iec-60320-c14
+    maximum_draw_w: 770
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/DN1-HW-APL.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: d5ff2ab28e132e39

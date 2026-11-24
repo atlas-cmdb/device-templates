@@ -1,0 +1,95 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: ASR-9006-DC
+slug: asr-9006-dc
+category: router
+form_factor: rack
+description: ASR-9006 DC Chassis
+part_numbers:
+  - ASR-9006-DC
+u_height: 10
+full_depth: true
+subdevice_role: parent
+weight_kg: 40.7
+airflow: side-to-rear
+module_bays:
+  - name: Rack 0(Chassis)
+    description: ASR-9006 DC Chassis
+    bay_position: "0"
+  - name: Line Card Slot 0
+    label: LC0
+    description: Line Card Slot
+    bay_position: "0"
+  - name: Line Card Slot 1
+    label: LC1
+    description: Line Card Slot
+    bay_position: "1"
+  - name: Line Card Slot 2
+    label: LC2
+    description: Line Card Slot
+    bay_position: "2"
+  - name: Line Card Slot 3
+    label: LC3
+    description: Line Card Slot
+    bay_position: "3"
+  - name: Route Processor Slot 0
+    label: RSP0
+    description: Route Processor Slot
+    bay_position: "0"
+  - name: Route Processor Slot 1
+    label: RSP1
+    description: Route Processor Slot
+    bay_position: "1"
+  - name: Power Module Slot0
+    label: PM0
+    description: Power Module Slot
+    bay_position: "0"
+  - name: Power Module Slot1
+    label: PM1
+    description: Power Module Slot
+    bay_position: "1"
+  - name: Power Module Slot2
+    label: PM2
+    description: Power Module Slot
+    bay_position: "2"
+  - name: Power Module Slot3
+    label: PM3
+    description: Power Module Slot
+    bay_position: "3"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/routers/asr-9000-series-aggregation-services-routers/data_sheet_c78-501767.html
+  manual: https://www.cisco.com/c/en/us/td/docs/iosxr/asr9000/hardware-install/hig/b-asr9k-hardware-installation-guide.html
+  product_page: https://www.cisco.com/c/en/us/td/docs/iosxr/asr9000/hardware-install/overview-reference/b-asr9k-overview-reference-guide.html
+comments: |-
+  - ''
+  - ''
+  - ''
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/asr-9006-dc.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - links.datasheet
+    - links.manual
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: e27ce2307ae44e9f

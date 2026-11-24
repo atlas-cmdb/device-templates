@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: i-pro
+model: WV-SF138
+slug: wv-sf138
+category: network_switch
+form_factor: other
+part_numbers:
+  - WV-SF138
+u_height: 0
+full_depth: false
+weight_kg: 0.26
+airflow: passive
+interfaces:
+  - name: eth0
+    type: 100base-tx
+    poe_mode: pd
+    poe_type: type1-ieee802.3af
+links:
+  datasheet: https://i-pro.com/products_and_solutions/en/surveillance/products/wv-sf138
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/i-PRO/wv-sf138.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 2f4c33c6649d359c

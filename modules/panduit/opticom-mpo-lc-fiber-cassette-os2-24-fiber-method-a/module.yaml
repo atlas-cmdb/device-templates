@@ -1,0 +1,152 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: panduit
+model: Opticom MPO-LC Fiber Cassette OS2, 24 Fiber, Method A
+slug: opticom-mpo-lc-fiber-cassette-os2-24-fiber-method-a
+kind: line_card
+part_numbers:
+  - FC29N-24-10AS
+front_ports:
+  - name: "{module}:01"
+    label: 01-A
+    type: lc
+    rear_port: "{module}:1"
+    rear_port_position: 1
+  - name: "{module}:02"
+    label: 01-B
+    type: lc
+    rear_port: "{module}:1"
+    rear_port_position: 2
+  - name: "{module}:03"
+    label: 02-A
+    type: lc
+    rear_port: "{module}:1"
+    rear_port_position: 3
+  - name: "{module}:04"
+    label: 02-B
+    type: lc
+    rear_port: "{module}:1"
+    rear_port_position: 4
+  - name: "{module}:05"
+    label: 03-A
+    type: lc
+    rear_port: "{module}:1"
+    rear_port_position: 5
+  - name: "{module}:06"
+    label: 03-B
+    type: lc
+    rear_port: "{module}:1"
+    rear_port_position: 6
+  - name: "{module}:07"
+    label: 04-A
+    type: lc
+    rear_port: "{module}:1"
+    rear_port_position: 7
+  - name: "{module}:08"
+    label: 04-B
+    type: lc
+    rear_port: "{module}:1"
+    rear_port_position: 8
+  - name: "{module}:09"
+    label: 05-A
+    type: lc
+    rear_port: "{module}:1"
+    rear_port_position: 9
+  - name: "{module}:10"
+    label: 05-B
+    type: lc
+    rear_port: "{module}:1"
+    rear_port_position: 10
+  - name: "{module}:11"
+    label: 06-A
+    type: lc
+    rear_port: "{module}:1"
+    rear_port_position: 11
+  - name: "{module}:12"
+    label: 06-B
+    type: lc
+    rear_port: "{module}:1"
+    rear_port_position: 12
+  - name: "{module}:13"
+    label: 07-A
+    type: lc
+    rear_port: "{module}:2"
+    rear_port_position: 1
+  - name: "{module}:14"
+    label: 07-B
+    type: lc
+    rear_port: "{module}:2"
+    rear_port_position: 2
+  - name: "{module}:15"
+    label: 08-A
+    type: lc
+    rear_port: "{module}:2"
+    rear_port_position: 3
+  - name: "{module}:16"
+    label: 08-B
+    type: lc
+    rear_port: "{module}:2"
+    rear_port_position: 4
+  - name: "{module}:17"
+    label: 09-A
+    type: lc
+    rear_port: "{module}:2"
+    rear_port_position: 5
+  - name: "{module}:18"
+    label: 09-B
+    type: lc
+    rear_port: "{module}:2"
+    rear_port_position: 6
+  - name: "{module}:19"
+    label: 10-A
+    type: lc
+    rear_port: "{module}:2"
+    rear_port_position: 7
+  - name: "{module}:20"
+    label: 10-B
+    type: lc
+    rear_port: "{module}:2"
+    rear_port_position: 8
+  - name: "{module}:21"
+    label: 11-A
+    type: lc
+    rear_port: "{module}:2"
+    rear_port_position: 9
+  - name: "{module}:22"
+    label: 11-B
+    type: lc
+    rear_port: "{module}:2"
+    rear_port_position: 10
+  - name: "{module}:23"
+    label: 12-A
+    type: lc
+    rear_port: "{module}:2"
+    rear_port_position: 11
+  - name: "{module}:24"
+    label: 12-B
+    type: lc
+    rear_port: "{module}:2"
+    rear_port_position: 12
+rear_ports:
+  - name: "{module}:1"
+    type: mpo
+    positions: 12
+  - name: "{module}:2"
+    type: mpo
+    positions: 12
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Panduit/FC29N-24-10AS.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - front_ports
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: 9c3514dd389943dd

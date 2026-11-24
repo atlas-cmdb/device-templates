@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: dell
+name: Dell
+aliases:
+  - Dell EMC
+  - Dell Technologies
+  - EMC
+  - Force10
+website: https://www.dell.com

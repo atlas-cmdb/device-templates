@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: hpe
+model: HPE PSU Gen11 800W
+slug: hpe-psu-gen11-800w
+kind: psu
+description: HPE Proliant G11 servers 800W PSU
+part_numbers:
+  - 865438-B21
+weight_kg: 1
+power_ports:
+  - name: PS{module}
+    type: iec-60320-c14
+    maximum_draw_w: 852
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/HPE/865438-B21.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+    - weight_kg
+  import_hash: 86e2c5493fe04100

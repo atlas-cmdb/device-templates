@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: huawei
+model: FAN-180A-F
+slug: fan-180a-f
+kind: fan
+description: Automatic fan speed adjustment, hot swap is supported
+part_numbers:
+  - 02350KHY
+weight_kg: 0.9
+airflow: front-to-rear
+links:
+  other:
+    - label: Hardware Description
+      url: https://support.huawei.com/enterprise/en/doc/EDOC1000019246/1c26cf41/fan-180a-series-fan-modules#EN-US_CONCEPT_0138782276
+comments: See .
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Huawei/FAN-180A-F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - airflow
+    - comments
+    - description
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - weight_kg
+  import_hash: 082befae748e1561

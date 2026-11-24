@@ -1,0 +1,95 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: Nexus 5648Q Chassis
+slug: nexus-5648q-chassis
+category: network_switch
+form_factor: rack
+part_numbers:
+  - N5K-C5648Q
+u_height: 2
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: mgmt0
+    type: 1000base-t
+    mgmt_only: true
+  - name: Ethernet1/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet1/2
+    type: 40gbase-x-qsfpp
+  - name: Ethernet1/3
+    type: 40gbase-x-qsfpp
+  - name: Ethernet1/4
+    type: 40gbase-x-qsfpp
+  - name: Ethernet1/5
+    type: 40gbase-x-qsfpp
+  - name: Ethernet1/6
+    type: 40gbase-x-qsfpp
+  - name: Ethernet1/7
+    type: 40gbase-x-qsfpp
+  - name: Ethernet1/8
+    type: 40gbase-x-qsfpp
+  - name: Ethernet1/9
+    type: 40gbase-x-qsfpp
+  - name: Ethernet1/10
+    type: 40gbase-x-qsfpp
+  - name: Ethernet1/11
+    type: 40gbase-x-qsfpp
+  - name: Ethernet1/12
+    type: 40gbase-x-qsfpp
+  - name: Ethernet2/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet2/2
+    type: 40gbase-x-qsfpp
+  - name: Ethernet2/3
+    type: 40gbase-x-qsfpp
+  - name: Ethernet2/4
+    type: 40gbase-x-qsfpp
+  - name: Ethernet2/5
+    type: 40gbase-x-qsfpp
+  - name: Ethernet2/6
+    type: 40gbase-x-qsfpp
+  - name: Ethernet2/7
+    type: 40gbase-x-qsfpp
+  - name: Ethernet2/8
+    type: 40gbase-x-qsfpp
+  - name: Ethernet2/9
+    type: 40gbase-x-qsfpp
+  - name: Ethernet2/10
+    type: 40gbase-x-qsfpp
+  - name: Ethernet2/11
+    type: 40gbase-x-qsfpp
+  - name: Ethernet2/12
+    type: 40gbase-x-qsfpp
+console_ports:
+  - name: Console
+    type: rj-45
+module_bays:
+  - name: Slot 3
+    bay_position: "3"
+  - name: Slot 4
+    bay_position: "4"
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/N5K-C5648Q.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+  import_hash: be09b3496cd03a09

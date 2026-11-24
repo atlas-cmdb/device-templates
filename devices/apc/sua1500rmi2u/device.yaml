@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: SUA1500RMI2U
+slug: sua1500rmi2u
+category: ups
+form_factor: rack
+part_numbers:
+  - SUA1500RMI2U
+u_height: 2
+full_depth: true
+airflow: front-to-rear
+power:
+  outlet_count: 4
+  psu_count: 1
+console_ports:
+  - name: Serial
+    type: de-9
+  - name: USB
+    type: usb-b
+power_ports:
+  - name: Source
+    type: iec-60320-c14
+    maximum_draw_w: 2300
+power_outlets:
+  - name: Outlet 1
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 2
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 3
+    type: iec-60320-c13
+    power_port: Source
+  - name: Outlet 4
+    type: iec-60320-c13
+    power_port: Source
+module_bays:
+  - name: SmartSlot
+    bay_position: SmartSlot
+comments: |-
+  APC Smart-UPS, Line Interactive, 1500VA, Rackmount 2U, 230V, 4x IEC C13 outlets, SmartSlot, AVR, LED
+   Battery SKU: RBC24
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/SUA1500RMI2U.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 207b259a095f253f

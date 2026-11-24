@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: dell
+model: 0CMPGMA03
+slug: 0cmpgma03
+kind: psu
+description: Dell 1100 W power supply
+part_numbers:
+  - 0CMPGMA03
+airflow: front-to-rear
+power:
+  input_voltage: 230V AC
+  psu_rating_w: 1100
+power_ports:
+  - name: PSU{module}
+    type: iec-60320-c14
+    maximum_draw_w: 1100
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Dell/0CMPGMA03.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - airflow
+    - description
+    - manufacturer
+    - model
+    - part_numbers
+    - power.input_voltage
+    - power.psu_rating_w
+    - power_ports
+    - slug
+  import_hash: b0b58912b0d6d5d2

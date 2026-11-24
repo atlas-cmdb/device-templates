@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: OfficeConnect 1820-8G
+slug: officeconnect-1820-8g
+category: server
+form_factor: rack
+part_numbers:
+  - J9979A
+u_height: 1
+full_depth: false
+weight_kg: 0.82
+airflow: left-to-right
+power:
+  psu_count: 1
+interfaces:
+  - name: "1"
+    type: 1000base-t
+    poe_mode: pd
+    poe_type: type2-ieee802.3at
+  - name: "2"
+    type: 1000base-t
+  - name: "3"
+    type: 1000base-t
+  - name: "4"
+    type: 1000base-t
+  - name: "5"
+    type: 1000base-t
+  - name: "6"
+    type: 1000base-t
+  - name: "7"
+    type: 1000base-t
+  - name: "8"
+    type: 1000base-t
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 12
+    allocated_draw_w: 10
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  other:
+    - label: HPE OfficeConnect 1820 Switch Series
+      url: https://www.hpe.com/psnow/doc/c04518995?jumpid=in_lit-psnow-red
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/OfficeConnect-1820-8G.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 82e6d31165f00405

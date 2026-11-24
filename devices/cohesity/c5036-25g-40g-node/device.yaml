@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cohesity
+model: C5036-25G-40G-NODE
+slug: c5036-25g-40g-node
+category: backup_appliance
+form_factor: blade
+u_height: 0
+full_depth: true
+subdevice_role: child
+airflow: front-to-rear
+interfaces:
+  - name: IPMI
+    type: 1000base-t
+    mgmt_only: true
+  - name: Network 1
+    type: 25gbase-x-sfp28
+  - name: Network 2
+    type: 25gbase-x-sfp28
+  - name: Network 3
+    type: 40gbase-x-qsfpp
+  - name: Network 4
+    type: 40gbase-x-qsfpp
+comments: C5036-25G-40G Expansion Node with 36 TB Secure Erase HDD, 1.6 TB PCI-e Flash, 128 GB RAM, 2x 25GbE SFP28 OCP and 2x 40GbE QSFP+ PCIe, 1x IPMI; Hardware Only
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cohesity/C5036-25G-40G-NODE.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 61280e4d4e53f23e

@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: mikrotik
+model: CCR1072-1G-8S+
+slug: ccr1072-1g-8s-plus
+category: router
+form_factor: rack
+u_height: 1
+full_depth: false
+interfaces:
+  - name: ether1
+    type: 1000base-t
+  - name: sfp-sfpplus1
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus2
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus3
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus4
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus5
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus6
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus7
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus8
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: serial0
+    type: rj-45
+module_bays:
+  - name: power1
+    description: Power module
+    bay_position: power1
+  - name: power2
+    description: Power module
+    bay_position: power2
+links:
+  product_page: https://mikrotik.com/product/CCR1072-1G-8Splus
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/MikroTik/CCR1072-1G-8S-Plus.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - u_height
+  import_hash: 8aa82568a5f17ebc

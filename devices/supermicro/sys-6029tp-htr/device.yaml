@@ -1,0 +1,107 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SYS-6029TP-HTR
+slug: sys-6029tp-htr
+category: server
+form_factor: blade
+u_height: 0
+full_depth: true
+subdevice_role: child
+airflow: front-to-rear
+interfaces:
+  - name: IPMI
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: CPU 1
+    description: Socket R LGA 2011
+    bay_position: CPU 1
+  - name: CPU 2
+    description: Socket R LGA 2011
+    bay_position: CPU 2
+  - name: P1-DIMM-A1
+    description: DDR4 DIMM slot
+    bay_position: P1-DIMM-A1
+  - name: P1-DIMM-A2
+    description: DDR4 DIMM slot
+    bay_position: P1-DIMM-A2
+  - name: P1-DIMM-B1
+    description: DDR4 DIMM slot
+    bay_position: P1-DIMM-B1
+  - name: P1-DIMM-C1
+    description: DDR4 DIMM slot
+    bay_position: P1-DIMM-C1
+  - name: P1-DIMM-D1
+    description: DDR4 DIMM slot
+    bay_position: P1-DIMM-D1
+  - name: P1-DIMM-D2
+    description: DDR4 DIMM slot
+    bay_position: P1-DIMM-D2
+  - name: P1-DIMM-E1
+    description: DDR4 DIMM slot
+    bay_position: P1-DIMM-E1
+  - name: P1-DIMM-F1
+    description: DDR4 DIMM slot
+    bay_position: P1-DIMM-F1
+  - name: P2-DIMM-A1
+    description: DDR4 DIMM slot
+    bay_position: P2-DIMM-A1
+  - name: P2-DIMM-A2
+    description: DDR4 DIMM slot
+    bay_position: P2-DIMM-A2
+  - name: P2-DIMM-B1
+    description: DDR4 DIMM slot
+    bay_position: P2-DIMM-B1
+  - name: P2-DIMM-C1
+    description: DDR4 DIMM slot
+    bay_position: P2-DIMM-C1
+  - name: P2-DIMM-D1
+    description: DDR4 DIMM slot
+    bay_position: P2-DIMM-D1
+  - name: P2-DIMM-D2
+    description: DDR4 DIMM slot
+    bay_position: P2-DIMM-D2
+  - name: P2-DIMM-E1
+    description: DDR4 DIMM slot
+    bay_position: P2-DIMM-E1
+  - name: P2-DIMM-F1
+    description: DDR4 DIMM slot
+    bay_position: P2-DIMM-F1
+  - name: SXB1
+    description: PCI-E 3.0 x8 slot supported by CPU1 for use of S-SATA 0-5 devices
+    bay_position: SXB1
+  - name: SXB2
+    description: PCI-E 3.0 x16 slot supported by CPU2 for use of I-SATA 0-3 devices
+    bay_position: SXB2
+  - name: SXB3_1
+    description: PCI-E 3.0 x16 slot supported by CPU1
+    bay_position: SXB3_1
+  - name: SXB3_2
+    description: PCI-E 3.0 x8 slot supported by CPU2
+    bay_position: SXB3_2
+  - name: SXB4
+    description: PCI-E 3.0 x16 slot supported by CPU2
+    bay_position: SXB4
+  - name: Super I/O Module (SIOM) slot
+    description: PCI-E 3.0 x16 slot supported by CPU1
+    bay_position: SIOM
+comments: A node with Super X11DPT-PS motherboard which gets installed in a SYS-6029TP-CHASSIS (https://www.supermicro.com/en/products/system/2U/6029/SYS-6029TP-HTR.php)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SYS-6029TP-HTR.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: b1bf16128397d1cd

@@ -1,0 +1,203 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: extreme-networks
+model: X460-G2-24t-24ht-10GE4
+slug: x460-g2-24t-24ht-10ge4
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 6.7
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: "1"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "2"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "3"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "4"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "5"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "6"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "7"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "8"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "9"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "10"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "11"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "12"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "13"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "14"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "15"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "16"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "17"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "18"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "19"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "20"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "21"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "22"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "23"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "24"
+    description: that support full-duplex communication only
+    type: 1000base-t
+  - name: "25"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "26"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "27"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "28"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "29"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "30"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "31"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "32"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "33"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "34"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "35"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "36"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "37"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "38"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "39"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "40"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "41"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "42"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "43"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "44"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "45"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "46"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "47"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "48"
+    description: that support full-duplex communication and support half-duplex communication at speeds less than 1 Gb
+    type: 1000base-t
+  - name: "49"
+    type: 10gbase-x-sfpp
+  - name: "50"
+    type: 10gbase-x-sfpp
+  - name: "51"
+    type: 10gbase-x-sfpp
+  - name: "52"
+    type: 10gbase-x-sfpp
+  - name: Mgmt
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial console port
+    type: rj-45
+module_bays:
+  - name: PSU-1
+    bay_position: PSU-1
+  - name: PSU-2
+    bay_position: PSU-2
+  - name: VIM
+    bay_position: VIM
+links:
+  datasheet: https://documentation.extremenetworks.com/summit_16/GUID-D0A53D52-4982-48F0-8C84-1F5CF901255C.shtml
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Extreme Networks/X460-G2-24t-24ht-10GE4.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1131f687a8271f49

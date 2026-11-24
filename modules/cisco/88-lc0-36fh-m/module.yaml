@@ -1,0 +1,109 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: 88-LC0-36FH-M
+slug: 88-lc0-36fh-m
+kind: transceiver
+description: Cisco 8800 36x 400G QSFP56-DD line card-MACsec
+part_numbers:
+  - 88-LC0-36FH-M
+weight_kg: 14.2
+interfaces:
+  - name: FourHundredGigE0/{module}/0/0
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/1
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/2
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/3
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/4
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/5
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/6
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/7
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/8
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/9
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/10
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/11
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/12
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/13
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/14
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/15
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/16
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/17
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/18
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/19
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/20
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/21
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/22
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/23
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/24
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/25
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/26
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/27
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/28
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/29
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/30
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/31
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/32
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/33
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/34
+    type: 400gbase-x-qsfpdd
+  - name: FourHundredGigE0/{module}/0/35
+    type: 400gbase-x-qsfpdd
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/routers/8000-series-routers/8800-series-q200-basedline-cards-ds.html
+  manual: https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/Interfaces/b-interfaces-hardware-component-cr-8000/m-ethernet-interface-commands.html
+  other:
+    - label: Interface and Hardware Component Configuration Guide for Cisco 8000 Series Routers, IOS XR Release 25.1.x
+      url: https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/Interfaces/25xx/configuration/guide/b-interfaces-config-guide-cisco8k-r25xx/m-configuring-ethernet-interfaces-8k.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/88-LC0-36FH-M.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - weight_kg
+  import_hash: 664c69e60b9ee4f2

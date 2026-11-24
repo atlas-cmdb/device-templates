@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: Motherboard X9DRT-HF
+slug: motherboard-x9drt-hf
+category: server
+form_factor: blade
+part_numbers:
+  - MBD-X9DRT-HF
+u_height: 0
+full_depth: true
+subdevice_role: child
+airflow: front-to-rear
+interfaces:
+  - name: BMC
+    description: Dedicated BMC IPMI port for Nuvoton WPCM450
+    type: 1000base-t
+    mgmt_only: true
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+console_ports:
+  - name: COM1
+    label: Rear
+    type: de-9
+module_bays:
+  - name: CPU 1
+    description: LGA 2011 Socket
+    bay_position: "1"
+  - name: CPU 2
+    description: LGA 2011 Socket
+    bay_position: "2"
+  - name: PCI-E 1
+    description: PCIe 3.0 x16 [CPU1 SXB1]
+    bay_position: "1"
+  - name: PCI-E 2
+    description: PCIe 3.0 x8 [CPU1 SXB2]
+    bay_position: "2"
+  - name: PCI-E 3
+    description: PCIe 3.0 x8 [CPU2 SXB3]
+    bay_position: "3"
+  - name: DIMM A1
+    description: DDR3 DIMM slot
+    bay_position: "1"
+  - name: DIMM B1
+    description: DDR3 DIMM slot
+    bay_position: "2"
+  - name: DIMM C1
+    description: DDR3 DIMM slot
+    bay_position: "3"
+  - name: DIMM D1
+    description: DDR3 DIMM slot
+    bay_position: "4"
+  - name: DIMM E1
+    description: DDR3 DIMM slot
+    bay_position: "5"
+  - name: DIMM F1
+    description: DDR3 DIMM slot
+    bay_position: "6"
+  - name: DIMM G1
+    description: DDR3 DIMM slot
+    bay_position: "7"
+  - name: DIMM H1
+    description: DDR3 DIMM slot
+    bay_position: "8"
+comments: Supermicro motherboard X9DRT-HF (https://www.supermicro.com/products/archive/motherboard/x9drt-hf)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/MBD-X9DRT-HF.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 3b0498d499579565

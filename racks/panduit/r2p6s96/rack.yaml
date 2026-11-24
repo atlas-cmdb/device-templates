@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/rack.schema.json
+manufacturer: panduit
+model: R2P6S96
+slug: r2p6s96
+form_factor: 2-post-frame
+description: "2-Post Rack, 52RU, 6 in. Deep, #12-24 Threaded E-Rails, Steel, Black"
+u_height: 52
+starting_unit: 1
+rack_width: 19
+outer_width_mm: 516
+outer_height_mm: 2441
+outer_depth_mm: 457
+max_load_kg: 680.389
+links:
+  product_page: https://www.panduit.com/en/products/cabinets-thermal-management-racks-enclosures/open-frame-racks/open-frame-racks/p205062.html#pn=R2P6S96
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: rack-types/Panduit/R2P6S96.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - description
+    - links.product_page
+    - manufacturer
+    - max_load_kg
+    - model
+    - outer_depth_mm
+    - outer_height_mm
+    - outer_width_mm
+    - rack_width
+    - slug
+    - starting_unit
+    - u_height
+  import_hash: 9b0a86bec2195728

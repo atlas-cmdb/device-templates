@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: 7609-S
+slug: 7609-s
+category: other
+form_factor: rack
+part_numbers:
+  - CISCO7609-S
+u_height: 21
+full_depth: false
+subdevice_role: parent
+airflow: front-to-rear
+power:
+  psu_count: 2
+power_ports:
+  - name: PS 1
+    type: dc-terminal
+    maximum_draw_w: 4000
+  - name: PS 2
+    type: dc-terminal
+    maximum_draw_w: 4000
+module_bays:
+  - name: slot-1
+    bay_position: "1"
+  - name: slot-2
+    bay_position: "2"
+  - name: slot-3
+    bay_position: "3"
+  - name: slot-4
+    bay_position: "4"
+  - name: slot-5
+    bay_position: "5"
+  - name: slot-6
+    bay_position: "6"
+  - name: slot-7
+    bay_position: "7"
+  - name: slot-8
+    bay_position: "8"
+  - name: slot-9
+    bay_position: "9"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/CISCO7609-S.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 05c2cf7cfc7aa42b

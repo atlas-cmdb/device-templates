@@ -1,0 +1,114 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Aruba 6200M-24G-4SFPP
+slug: aruba-6200m-24g-4sfpp
+category: network_switch
+form_factor: rack
+part_numbers:
+  - R8Q67A
+u_height: 1
+full_depth: true
+weight_kg: 5.59
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: 1/1/1
+    type: 1000base-t
+  - name: 1/1/2
+    type: 1000base-t
+  - name: 1/1/3
+    type: 1000base-t
+  - name: 1/1/4
+    type: 1000base-t
+  - name: 1/1/5
+    type: 1000base-t
+  - name: 1/1/6
+    type: 1000base-t
+  - name: 1/1/7
+    type: 1000base-t
+  - name: 1/1/8
+    type: 1000base-t
+  - name: 1/1/9
+    type: 1000base-t
+  - name: 1/1/10
+    type: 1000base-t
+  - name: 1/1/11
+    type: 1000base-t
+  - name: 1/1/12
+    type: 1000base-t
+  - name: 1/1/13
+    type: 1000base-t
+  - name: 1/1/14
+    type: 1000base-t
+  - name: 1/1/15
+    type: 1000base-t
+  - name: 1/1/16
+    type: 1000base-t
+  - name: 1/1/17
+    type: 1000base-t
+  - name: 1/1/18
+    type: 1000base-t
+  - name: 1/1/19
+    type: 1000base-t
+  - name: 1/1/20
+    type: 1000base-t
+  - name: 1/1/21
+    type: 1000base-t
+  - name: 1/1/22
+    type: 1000base-t
+  - name: 1/1/23
+    type: 1000base-t
+  - name: 1/1/24
+    type: 1000base-t
+  - name: 1/1/25
+    type: 10gbase-x-sfpp
+  - name: 1/1/26
+    type: 10gbase-x-sfpp
+  - name: 1/1/27
+    type: 10gbase-x-sfpp
+  - name: 1/1/28
+    type: 10gbase-x-sfpp
+  - name: mgmt
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: usb-c
+    type: usb-c
+  - name: rj-45
+    type: rj-45
+module_bays:
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+  - name: FAN1
+    bay_position: "1"
+  - name: FAN2
+    bay_position: "2"
+links:
+  other:
+    - label: Aruba 6200 Switch Series
+      url: https://www.hpe.com/psnow/doc/a00097415enw
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Aruba-6200M-24G-4SFPP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 773d5859b87ff439

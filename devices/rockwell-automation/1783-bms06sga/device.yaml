@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: rockwell-automation
+model: 1783-BMS06SGA
+slug: 1783-bms06sga
+category: appliance
+form_factor: rack
+part_numbers:
+  - 1783-BMS06SGA
+u_height: 3
+full_depth: false
+power:
+  psu_count: 2
+interfaces:
+  - name: GigabitEthernet1/1
+    type: 1000base-t
+  - name: GigabitEthernet1/2
+    type: 1000base-t
+  - name: FastEthernet1/1
+    type: 100base-tx
+  - name: FastEthernet1/2
+    type: 100base-tx
+  - name: FastEthernet1/3
+    type: 100base-tx
+  - name: FastEthernet1/4
+    type: 100base-tx
+  - name: SVI1
+    type: virtual
+console_ports:
+  - name: usb
+    type: usb-mini-b
+  - name: con 0
+    type: rj-45
+power_ports:
+  - name: Pwr-A
+    type: dc-terminal
+    maximum_draw_w: 15
+    allocated_draw_w: 10
+  - name: Pwr-B
+    type: dc-terminal
+    maximum_draw_w: 15
+    allocated_draw_w: 10
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Rockwell Automation/1783-BMS06SGA.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: f49a9b0e3cd32f88

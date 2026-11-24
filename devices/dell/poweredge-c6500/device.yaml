@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge C6500
+slug: poweredge-c6500
+category: server
+form_factor: rack
+u_height: 2
+full_depth: true
+subdevice_role: parent
+weight_kg: 41.5
+airflow: front-to-rear
+module_bays:
+  - name: Power 1
+    bay_position: "1"
+  - name: Power 2
+    bay_position: "2"
+device_bays:
+  - name: "1"
+    label: Sled 1
+  - name: "2"
+    label: Sled 2
+  - name: "3"
+    label: Sled 3
+  - name: "4"
+    label: Sled 4
+links:
+  datasheet: https://www.dell.com/support/manuals/it-it/poweredge-c6525/pec6525_ts_pub/technical-specifications?guid=guid-ecb5cfaa-cf2b-46f6-ab1e-1839d086bc6a&lang=en-us
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-C6500.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - device_bays
+    - full_depth
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 2f15a746d883c9e3

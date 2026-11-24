@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: ATS AP7723
+slug: ats-ap7723
+category: ats
+form_factor: rack
+part_numbers:
+  - ATS-AP7723
+u_height: 1
+full_depth: false
+power:
+  outlet_count: 9
+interfaces:
+  - name: eth 1
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: con 0
+    type: rj-45
+power_ports:
+  - name: 16A Inlet 1
+    type: iec-60320-c20
+  - name: 16A Inlet 2
+    type: iec-60320-c20
+power_outlets:
+  - name: 16A Outlet
+    type: iec-60320-c19
+  - name: Group 1 Outlet 1
+    type: iec-60320-c13
+  - name: Group 1 Outlet 2
+    type: iec-60320-c13
+  - name: Group 1 Outlet 3
+    type: iec-60320-c13
+  - name: Group 1 Outlet 4
+    type: iec-60320-c13
+  - name: Group 2 Outlet 1
+    type: iec-60320-c13
+  - name: Group 2 Outlet 2
+    type: iec-60320-c13
+  - name: Group 2 Outlet 3
+    type: iec-60320-c13
+  - name: Group 2 Outlet 4
+    type: iec-60320-c13
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/ATS-AP7723.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 6f1543eb8fb5bc6a

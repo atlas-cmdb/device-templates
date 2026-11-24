@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: milesight
+model: MS-C8173-PD2
+slug: ms-c8173-pd2
+category: router
+form_factor: other
+part_numbers:
+  - MS-C8173-PD2
+u_height: 0
+full_depth: false
+weight_kg: 0.5
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: eth0
+    description: max 4.4 W
+    type: 100base-tx
+    poe_mode: pd
+    poe_type: type1-ieee802.3af
+power_ports:
+  - name: DC IN
+    description: 12V DC
+    type: dc-terminal
+    maximum_draw_w: 4
+module_bays:
+  - name: microSD
+    description: up to 1024 GB
+    bay_position: microSD
+links:
+  datasheet: https://resource.milesight.com/milesight/security/document/datasheet/ipc/series-d2/milesight-ai-vandal-proof-mini-dome-network-camera-ndaa-pd2-datasheet-en.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Milesight/ms-c8173-pd2.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 5f2117ca2d7a8548

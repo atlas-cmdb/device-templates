@@ -1,0 +1,90 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: moxa
+model: EDS-P510
+slug: eds-p510
+category: network_switch
+form_factor: rack
+part_numbers:
+  - EDS-P510
+u_height: 0.5
+full_depth: false
+weight_kg: 1.17
+power:
+  psu_count: 2
+interfaces:
+  - name: eth1
+    type: 100base-tx
+    poe_mode: pd
+    poe_type: type1-ieee802.3af
+  - name: eth2
+    type: 100base-tx
+    poe_mode: pd
+    poe_type: type1-ieee802.3af
+  - name: eth3
+    type: 100base-tx
+    poe_mode: pd
+    poe_type: type1-ieee802.3af
+  - name: eth4
+    type: 100base-tx
+    poe_mode: pd
+    poe_type: type1-ieee802.3af
+  - name: eth5
+    type: 100base-tx
+  - name: eth6
+    type: 100base-tx
+  - name: eth7
+    type: 100base-tx
+  - name: G1-sfp
+    description: combo port with G1-rj45
+    type: 1000base-x-sfp
+  - name: G1-rj45
+    description: combo port with G1-sfp
+    type: 1000base-t
+  - name: G2-sfp
+    description: combo port with G2-rj45
+    type: 1000base-x-sfp
+  - name: G2-rj45
+    description: combo port with G2-sfp
+    type: 1000base-t
+  - name: G3-sfp
+    description: combo port with G3-rj45
+    type: 1000base-x-sfp
+  - name: G3-rj45
+    description: combo port with G3-sfp
+    type: 1000base-t
+power_ports:
+  - name: PS0
+    type: dc-terminal
+    maximum_draw_w: 31
+  - name: PS1
+    type: dc-terminal
+    maximum_draw_w: 31
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  datasheet: https://cdn-cms.azureedge.net/getmedia/ecca16dc-4fee-49af-9c60-5547c513c206/moxa-eds-p510-series-datasheet-v1.6.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Moxa/EDS-P510.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e8d8a1de225a680a

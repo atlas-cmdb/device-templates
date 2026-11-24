@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: fs
+model: FHD-1MTP6LCDOS2U
+slug: fhd-1mtp6lcdos2u
+kind: other
+part_numbers:
+  - "182641"
+front_ports:
+  - name: "{module}:1-2"
+    type: lc
+    color: 0000ff
+    rear_port: "{module}:1-12"
+    rear_port_position: 1
+  - name: "{module}:3-4"
+    type: lc
+    color: 0000ff
+    rear_port: "{module}:1-12"
+    rear_port_position: 2
+  - name: "{module}:5-6"
+    type: lc
+    color: 0000ff
+    rear_port: "{module}:1-12"
+    rear_port_position: 3
+  - name: "{module}:7-8"
+    type: lc
+    color: 0000ff
+    rear_port: "{module}:1-12"
+    rear_port_position: 4
+  - name: "{module}:9-10"
+    type: lc
+    color: 0000ff
+    rear_port: "{module}:1-12"
+    rear_port_position: 5
+  - name: "{module}:11-12"
+    type: lc
+    color: 0000ff
+    rear_port: "{module}:1-12"
+    rear_port_position: 6
+rear_ports:
+  - name: "{module}:1-12"
+    type: mpo
+    positions: 6
+comments: FHD MTP-LC Cassette, OS2 Single Mode, Universal, 12 Fibers, 1x MTP-12 (Male) to 6x LC Duplex (Blue) (https://www.fs.com/products/182641.html)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/FS/FHD-1MTP6LCDOS2U.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - front_ports
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: 774bc2a71bc77a12

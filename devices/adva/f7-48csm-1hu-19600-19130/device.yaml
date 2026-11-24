@@ -1,0 +1,275 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: adva
+model: F7/48CSM/1HU-19600-19130
+slug: f7-48csm-1hu-19600-19130
+category: patch_panel
+form_factor: rack
+part_numbers:
+  - 1078708781-01
+u_height: 1
+full_depth: false
+airflow: passive
+front_ports:
+  - name: C1
+    label: ITU 60
+    type: lc
+    rear_port: Network
+    rear_port_position: 1
+  - name: C2
+    label: ITU 59
+    type: lc
+    rear_port: Network
+    rear_port_position: 2
+  - name: C3
+    label: ITU 58
+    type: lc
+    rear_port: Network
+    rear_port_position: 3
+  - name: C4
+    label: ITU 57
+    type: lc
+    rear_port: Network
+    rear_port_position: 4
+  - name: C5
+    label: ITU 56
+    type: lc
+    rear_port: Network
+    rear_port_position: 5
+  - name: C6
+    label: ITU 55
+    type: lc
+    rear_port: Network
+    rear_port_position: 6
+  - name: C7
+    label: ITU 54
+    type: lc
+    rear_port: Network
+    rear_port_position: 7
+  - name: C8
+    label: ITU 53
+    type: lc
+    rear_port: Network
+    rear_port_position: 8
+  - name: C9
+    label: ITU 52
+    type: lc
+    rear_port: Network
+    rear_port_position: 9
+  - name: C10
+    label: ITU 51
+    type: lc
+    rear_port: Network
+    rear_port_position: 10
+  - name: C11
+    label: ITU 50
+    type: lc
+    rear_port: Network
+    rear_port_position: 11
+  - name: C12
+    label: ITU 49
+    type: lc
+    rear_port: Network
+    rear_port_position: 12
+  - name: C13
+    label: ITU 48
+    type: lc
+    rear_port: Network
+    rear_port_position: 13
+  - name: C14
+    label: ITU 47
+    type: lc
+    rear_port: Network
+    rear_port_position: 14
+  - name: C15
+    label: ITU 46
+    type: lc
+    rear_port: Network
+    rear_port_position: 15
+  - name: C16
+    label: ITU 45
+    type: lc
+    rear_port: Network
+    rear_port_position: 16
+  - name: C17
+    label: ITU 44
+    type: lc
+    rear_port: Network
+    rear_port_position: 17
+  - name: C18
+    label: ITU 43
+    type: lc
+    rear_port: Network
+    rear_port_position: 18
+  - name: C19
+    label: ITU 42
+    type: lc
+    rear_port: Network
+    rear_port_position: 19
+  - name: C20
+    label: ITU 41
+    type: lc
+    rear_port: Network
+    rear_port_position: 20
+  - name: C21
+    label: ITU 40
+    type: lc
+    rear_port: Network
+    rear_port_position: 21
+  - name: C22
+    label: ITU 39
+    type: lc
+    rear_port: Network
+    rear_port_position: 22
+  - name: C23
+    label: ITU 38
+    type: lc
+    rear_port: Network
+    rear_port_position: 23
+  - name: C24
+    label: ITU 37
+    type: lc
+    rear_port: Network
+    rear_port_position: 24
+  - name: C25
+    label: ITU 36
+    type: lc
+    rear_port: Network
+    rear_port_position: 25
+  - name: C26
+    label: ITU 35
+    type: lc
+    rear_port: Network
+    rear_port_position: 26
+  - name: C27
+    label: ITU 34
+    type: lc
+    rear_port: Network
+    rear_port_position: 27
+  - name: C28
+    label: ITU 33
+    type: lc
+    rear_port: Network
+    rear_port_position: 28
+  - name: C29
+    label: ITU 32
+    type: lc
+    rear_port: Network
+    rear_port_position: 29
+  - name: C30
+    label: ITU 31
+    type: lc
+    rear_port: Network
+    rear_port_position: 30
+  - name: C31
+    label: ITU 30
+    type: lc
+    rear_port: Network
+    rear_port_position: 31
+  - name: C32
+    label: ITU 29
+    type: lc
+    rear_port: Network
+    rear_port_position: 32
+  - name: C33
+    label: ITU 28
+    type: lc
+    rear_port: Network
+    rear_port_position: 33
+  - name: C34
+    label: ITU 27
+    type: lc
+    rear_port: Network
+    rear_port_position: 34
+  - name: C35
+    label: ITU 26
+    type: lc
+    rear_port: Network
+    rear_port_position: 35
+  - name: C36
+    label: ITU 25
+    type: lc
+    rear_port: Network
+    rear_port_position: 36
+  - name: C37
+    label: ITU 24
+    type: lc
+    rear_port: Network
+    rear_port_position: 37
+  - name: C38
+    label: ITU 23
+    type: lc
+    rear_port: Network
+    rear_port_position: 38
+  - name: C39
+    label: ITU 22
+    type: lc
+    rear_port: Network
+    rear_port_position: 39
+  - name: C40
+    label: ITU 21
+    type: lc
+    rear_port: Network
+    rear_port_position: 40
+  - name: C41
+    label: ITU 20
+    type: lc
+    rear_port: Network
+    rear_port_position: 41
+  - name: C42
+    label: ITU 19
+    type: lc
+    rear_port: Network
+    rear_port_position: 42
+  - name: C43
+    label: ITU 18
+    type: lc
+    rear_port: Network
+    rear_port_position: 43
+  - name: C44
+    label: ITU 17
+    type: lc
+    rear_port: Network
+    rear_port_position: 44
+  - name: C45
+    label: ITU 16
+    type: lc
+    rear_port: Network
+    rear_port_position: 45
+  - name: C46
+    label: ITU 15
+    type: lc
+    rear_port: Network
+    rear_port_position: 46
+  - name: C47
+    label: ITU 14
+    type: lc
+    rear_port: Network
+    rear_port_position: 47
+  - name: C48
+    label: ITU 13
+    type: lc
+    rear_port: Network
+    rear_port_position: 48
+rear_ports:
+  - name: Network
+    label: N T/R
+    type: lc
+    positions: 48
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/ADVA/f7-48csm-1hu-19600-19130.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - front_ports
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+    - u_height
+  import_hash: 06cd1f46d0de17b1

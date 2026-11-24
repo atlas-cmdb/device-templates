@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SuperChassis 826-BE1C4
+slug: superchassis-826-be1c4
+category: server
+form_factor: rack
+part_numbers:
+  - SuperChassis 826BE1C4-R1K23LPB
+u_height: 2
+full_depth: true
+subdevice_role: parent
+weight_kg: 18.1
+airflow: front-to-rear
+power:
+  psu_count: 2
+module_bays:
+  - name: PSU0
+    bay_position: PSU 0
+  - name: PSU1
+    bay_position: PSU 1
+device_bays:
+  - name: System Board
+    label: System Board
+comments: SuperChassis 826BE1C4 (https://www.supermicro.com/en/products/chassis/2u/826/sc826be1c4-r1k23lpb)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SuperChassis-826-BE1C4.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - device_bays
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 85944deb519695fd

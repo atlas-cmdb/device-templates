@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: AS-2015A-TR
+slug: as-2015a-tr
+category: server
+form_factor: rack
+part_numbers:
+  - AS-2015A-TR
+u_height: 2
+full_depth: true
+subdevice_role: parent
+weight_kg: 16.78
+airflow: front-to-rear
+module_bays:
+  - name: Power 1
+    description: 800W Titanium hot-swap power supply
+    bay_position: "1"
+  - name: Power 2
+    description: 800W Titanium hot-swap power supply
+    bay_position: "2"
+  - name: Drive Bay 1
+    description: 3.5" SAS/SATA front hot-swap drive bay
+    bay_position: "3"
+  - name: Drive Bay 2
+    description: 3.5" SAS/SATA front hot-swap drive bay
+    bay_position: "4"
+  - name: Drive Bay 3
+    description: 3.5" SAS/SATA front hot-swap drive bay
+    bay_position: "5"
+  - name: Drive Bay 4
+    description: 3.5" SAS/SATA front hot-swap drive bay
+    bay_position: "6"
+  - name: Drive Bay 5
+    description: 3.5" SAS/SATA front hot-swap drive bay
+    bay_position: "7"
+  - name: Drive Bay 6
+    description: 3.5" SAS/SATA front hot-swap drive bay
+    bay_position: "8"
+  - name: Drive Bay 7
+    description: 3.5" SAS/SATA front hot-swap drive bay
+    bay_position: "9"
+  - name: Drive Bay 8
+    description: 3.5" SAS/SATA front hot-swap drive bay
+    bay_position: "10"
+device_bays:
+  - name: Motherboard
+    description: Supermicro H13SAE-MF
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  product_page: https://www.supermicro.com/en/products/system/mainstream/2u/as-2015a-tr
+comments: 2U mainstream A+ Server with Supermicro H13SAE-MF motherboard (CSE-825TQC-R802LPB chassis), 8 front hot-swap 3.5" SAS/SATA drive bays, 2 PCIe 5.0 x16 and 1 PCIe 4.0 x4 low-profile slots, 2x 800W redundant Titanium power supplies
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/AS-2015A-TR.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - device_bays
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: f77619092bee940f

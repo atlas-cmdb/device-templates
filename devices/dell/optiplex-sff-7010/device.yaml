@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: OptiPlex SFF 7010
+slug: optiplex-sff-7010
+category: server
+form_factor: rack
+part_numbers:
+  - 4PS9N04
+u_height: 2
+full_depth: false
+weight_kg: 3.68
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+power_ports:
+  - name: PSU
+    description: Internal power supply unit, 85% Efficient, 80 Plus Bronze
+    type: iec-60320-c14
+    maximum_draw_w: 260
+links:
+  manual: https://www.dell.com/support/product-details/en-us/servicetag/0-Y25KTzdwZ3d0R01ZRzFpWCtmVklQUT090/resources/manuals
+comments: See .
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/OptiPlex-SFF-7010.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1e37af11b5537cf9

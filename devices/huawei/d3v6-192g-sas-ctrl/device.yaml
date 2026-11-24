@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huawei
+model: D3V6-192G-SAS-Ctrl
+slug: d3v6-192g-sas-ctrl
+category: compute_blade
+form_factor: blade
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 3
+interfaces:
+  - name: Net P2
+    type: 10gbase-x-sfpp
+  - name: Net P3
+    type: 10gbase-x-sfpp
+  - name: Net P4
+    type: 10gbase-x-sfpp
+  - name: Net P5
+    type: 10gbase-x-sfpp
+  - name: Net P6
+    type: 1000base-t
+  - name: Net P7
+    type: 1000base-t
+  - name: Net P8
+    type: 1000base-t
+  - name: Net P9
+    type: 1000base-t
+  - name: mgmt
+    type: 1000base-t
+    mgmt_only: true
+  - name: service
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: IOM_0
+    bay_position: IOM_0
+  - name: IOM_1
+    bay_position: IOM_1
+  - name: IOM_2
+    bay_position: IOM_2
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Huawei/D3V6-192G-SAS-Ctrl.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 4e4f68c3979a9631

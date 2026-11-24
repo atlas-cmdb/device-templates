@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SuperServer 1027R-WRF
+slug: superserver-1027r-wrf
+category: server
+form_factor: rack
+part_numbers:
+  - SYS-1027R-WRF
+u_height: 1
+full_depth: true
+weight_kg: 15
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: IPMI
+    description: Dedicated IPMI LAN port
+    type: 1000base-t
+    mgmt_only: true
+  - name: LAN1
+    type: 1000base-t
+  - name: LAN2
+    type: 1000base-t
+console_ports:
+  - name: Serial
+    type: de-9
+power_ports:
+  - name: Power 1
+    type: iec-60320-c14
+    maximum_draw_w: 700
+  - name: Power 2
+    type: iec-60320-c14
+    maximum_draw_w: 700
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SYS-1027R-WRF.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 344c4c11089f2ce6

@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: commscope
+model: SD-4U
+slug: sd-4u
+category: patch_panel
+form_factor: rack
+description: Standard Density 4U sliding Panel, accepts (12) LGX/1000 style splice cassettes, modules or panels, providing up to 144 duplex LC ports
+part_numbers:
+  - "760231464"
+u_height: 4
+full_depth: false
+weight_kg: 11.113
+airflow: passive
+module_bays:
+  - name: "1"
+    description: accepts LGX/1000 style splice cassettes, modules or panels
+    bay_position: "1"
+  - name: "2"
+    description: accepts LGX/1000 style splice cassettes, modules or panels
+    bay_position: "2"
+  - name: "3"
+    description: accepts LGX/1000 style splice cassettes, modules or panels
+    bay_position: "3"
+  - name: "4"
+    description: accepts LGX/1000 style splice cassettes, modules or panels
+    bay_position: "4"
+  - name: "5"
+    description: accepts LGX/1000 style splice cassettes, modules or panels
+    bay_position: "5"
+  - name: "6"
+    description: accepts LGX/1000 style splice cassettes, modules or panels
+    bay_position: "6"
+  - name: "7"
+    description: accepts LGX/1000 style splice cassettes, modules or panels
+    bay_position: "7"
+  - name: "8"
+    description: accepts LGX/1000 style splice cassettes, modules or panels
+    bay_position: "8"
+  - name: "9"
+    description: accepts LGX/1000 style splice cassettes, modules or panels
+    bay_position: "9"
+  - name: "10"
+    description: accepts LGX/1000 style splice cassettes, modules or panels
+    bay_position: "10"
+  - name: "11"
+    description: accepts LGX/1000 style splice cassettes, modules or panels
+    bay_position: "11"
+  - name: "12"
+    description: accepts LGX/1000 style splice cassettes, modules or panels
+    bay_position: "12"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  product_page: https://www.commscope.com/product-type/cabinets-panels-enclosures/fiber-panels-cassettes/fiber-panels/item760231464/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Commscope/SD-4U.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 8cf4cd2015bbde37

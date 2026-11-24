@@ -1,0 +1,182 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: brocade
+model: G720
+slug: g720
+category: network_switch
+form_factor: rack
+part_numbers:
+  - DS7720B
+u_height: 1
+full_depth: true
+weight_kg: 7.34
+power:
+  psu_count: 2
+interfaces:
+  - name: management
+    type: 1000base-t
+    mgmt_only: true
+  - name: FC port 0
+    type: 64gfc-sfpp
+  - name: FC port 1
+    type: 64gfc-sfpp
+  - name: FC port 2
+    type: 64gfc-sfpp
+  - name: FC port 3
+    type: 64gfc-sfpp
+  - name: FC port 4
+    type: 64gfc-sfpp
+  - name: FC port 5
+    type: 64gfc-sfpp
+  - name: FC port 6
+    type: 64gfc-sfpp
+  - name: FC port 7
+    type: 64gfc-sfpp
+  - name: FC port 8
+    type: 64gfc-sfpp
+  - name: FC port 9
+    type: 64gfc-sfpp
+  - name: FC port 10
+    type: 64gfc-sfpp
+  - name: FC port 11
+    type: 64gfc-sfpp
+  - name: FC port 12
+    type: 64gfc-sfpp
+  - name: FC port 13
+    type: 64gfc-sfpp
+  - name: FC port 14
+    type: 64gfc-sfpp
+  - name: FC port 15
+    type: 64gfc-sfpp
+  - name: FC port 16
+    type: 64gfc-sfpp
+  - name: FC port 17
+    type: 64gfc-sfpp
+  - name: FC port 18
+    type: 64gfc-sfpp
+  - name: FC port 19
+    type: 64gfc-sfpp
+  - name: FC port 20
+    type: 64gfc-sfpp
+  - name: FC port 21
+    type: 64gfc-sfpp
+  - name: FC port 22
+    type: 64gfc-sfpp
+  - name: FC port 23
+    type: 64gfc-sfpp
+  - name: FC port 24
+    type: 64gfc-sfpp
+  - name: FC port 25
+    type: 64gfc-sfpp
+  - name: FC port 26
+    type: 64gfc-sfpp
+  - name: FC port 27
+    type: 64gfc-sfpp
+  - name: FC port 28
+    type: 64gfc-sfpp
+  - name: FC port 29
+    type: 64gfc-sfpp
+  - name: FC port 30
+    type: 64gfc-sfpp
+  - name: FC port 31
+    type: 64gfc-sfpp
+  - name: FC port 32
+    type: 64gfc-sfpp
+  - name: FC port 33
+    type: 64gfc-sfpp
+  - name: FC port 34
+    type: 64gfc-sfpp
+  - name: FC port 35
+    type: 64gfc-sfpp
+  - name: FC port 36
+    type: 64gfc-sfpp
+  - name: FC port 37
+    type: 64gfc-sfpp
+  - name: FC port 38
+    type: 64gfc-sfpp
+  - name: FC port 39
+    type: 64gfc-sfpp
+  - name: FC port 40
+    type: 64gfc-sfpp
+  - name: FC port 41
+    type: 64gfc-sfpp
+  - name: FC port 42
+    type: 64gfc-sfpp
+  - name: FC port 43
+    type: 64gfc-sfpp
+  - name: FC port 44
+    type: 64gfc-sfpp
+  - name: FC port 45
+    type: 64gfc-sfpp
+  - name: FC port 46
+    type: 64gfc-sfpp
+  - name: FC port 47
+    type: 64gfc-sfpp
+  - name: FC port 48
+    type: 64gfc-sfpdd
+  - name: FC port 49
+    description: Only usable with SFP-DD optic in port 48
+    type: 64gfc-sfpdd
+  - name: FC port 50
+    type: 64gfc-sfpdd
+  - name: FC port 51
+    description: Only usable with SFP-DD optic in port 50
+    type: 64gfc-sfpdd
+  - name: FC port 52
+    type: 64gfc-sfpdd
+  - name: FC port 53
+    description: Only usable with SFP-DD optic in port 52
+    type: 64gfc-sfpdd
+  - name: FC port 54
+    type: 64gfc-sfpdd
+  - name: FC port 55
+    description: Only usable with SFP-DD optic in port 54
+    type: 64gfc-sfpdd
+  - name: FC port 56
+    type: 64gfc-sfpdd
+  - name: FC port 57
+    description: Only usable with SFP-DD optic in port 56
+    type: 64gfc-sfpdd
+  - name: FC port 58
+    type: 64gfc-sfpdd
+  - name: FC port 59
+    description: Only usable with SFP-DD optic in port 58
+    type: 64gfc-sfpdd
+  - name: FC port 60
+    type: 64gfc-sfpdd
+  - name: FC port 61
+    description: Only usable with SFP-DD optic in port 60
+    type: 64gfc-sfpdd
+  - name: FC port 62
+    type: 64gfc-sfpdd
+  - name: FC port 63
+    description: Only usable with SFP-DD optic in port 62
+    type: 64gfc-sfpdd
+module_bays:
+  - name: PSU0
+    bay_position: "0"
+  - name: PSU1
+    bay_position: "1"
+links:
+  datasheet: https://docs.broadcom.com/doc/G720-Switch-PB
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Brocade/G720.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 693b936b69f0d26a

@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: FortiAP 222KL
+slug: fortiap-222kl
+category: wireless_access_point
+form_factor: other
+part_numbers:
+  - FAP-222KL
+u_height: 0
+full_depth: false
+weight_kg: 2.7
+airflow: passive
+interfaces:
+  - name: lan1-poe
+    type: 2.5gbase-t
+    poe_mode: pd
+    poe_type: type3-ieee802.3bt
+  - name: lan2-pse
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: radio-1
+    description: BLE/ZigBee IoT radio
+    type: ieee802.15.1
+  - name: radio-2
+    description: 2.4GHz
+    type: ieee802.11ax
+  - name: radio-3
+    description: 5GHz
+    type: ieee802.11ax
+  - name: radio-4
+    description: LTE cellular radio
+    type: lte
+  - name: radio-5
+    description: LoRa IoT radio
+    type: other-wireless
+console_ports:
+  - name: Console
+    type: rj-45
+links:
+  manual: https://docs.fortinet.com/document/fortiap/hardware/fortiap-222kl-quickstart-guide
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/FAP-222KL.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 7d155033c4589c6b

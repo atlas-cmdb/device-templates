@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eltex
+model: WLC-HW-50
+slug: wlc-hw-50
+category: network_controller
+form_factor: rack
+u_height: 3
+full_depth: true
+weight_kg: 8.35
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: Eth 1
+    type: 1000base-t
+console_ports:
+  - name: Serial
+    type: de-9
+power_ports:
+  - name: Power 1
+    type: iec-60320-c14
+    maximum_draw_w: 450
+links:
+  datasheet: https://api.prod.eltex-co.ru/storage/upload_center/files/13/WLC-HW-50.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eltex/WLC-HW-50.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: b161422fbc251d44

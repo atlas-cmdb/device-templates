@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: sophos
+model: XG 210
+slug: xg-210
+category: firewall
+form_factor: rack
+description: Entry-level unified threat management (UTM) appliance designed for small office and branch office deployments.
+u_height: 1
+full_depth: false
+weight_kg: 5.2
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: Gig-E 3
+    type: 1000base-t
+  - name: Gig-E 4
+    type: 1000base-t
+  - name: Gig-E 5
+    type: 1000base-t
+  - name: Gig-E 6
+    type: 1000base-t
+  - name: SFP(1)
+    type: 1000base-x-sfp
+  - name: SFP(2)
+    type: 1000base-x-sfp
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: USB1
+    description: USB 3.0 Front
+    type: usb-a
+  - name: USB2
+    description: USB 3.0 Front
+    type: usb-a
+  - name: USB3
+    description: Front
+    type: usb-micro-a
+  - name: USB4
+    description: USB 3.0 Rear
+    type: usb-a
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 35
+  - name: PSU-EXT
+    type: dc-terminal
+module_bays:
+  - name: SFP(1)
+    bay_position: "1"
+  - name: SFP(2)
+    bay_position: "2"
+links:
+  datasheet: https://imsecurity-global.com/wp-content/uploads/2021/09/sophos-xg-series-hardware-br.pdf
+comments: See .
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Sophos/XG-210.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: f72af205888f27a7

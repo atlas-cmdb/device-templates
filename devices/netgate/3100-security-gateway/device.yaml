@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netgate
+model: 3100 Security Gateway
+slug: 3100-security-gateway
+category: firewall
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 1.35
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: mvneta0
+    label: OPT1
+    type: 1000base-t
+  - name: mvneta1-1
+    label: LAN1
+    type: 1000base-t
+  - name: mvneta1-2
+    label: LAN2
+    type: 1000base-t
+  - name: mvneta1-3
+    label: LAN3
+    type: 1000base-t
+  - name: mvneta1-4
+    label: LAN4
+    type: 1000base-t
+  - name: mvneta2
+    label: WAN
+    type: 1000base-t
+console_ports:
+  - name: console-usb
+    description: |-
+      115200 baud rate, 8 data bits, no parity, 1 stop bit, no flow control
+      or XON/OFF
+    type: usb-mini-b
+power_ports:
+  - name: psu1
+    type: dc-terminal
+links:
+  other:
+    - url: https://docs.netgate.com/pfsense/en/latest/solutions/sg-3100/index.html
+comments: See
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Netgate/3100-Security-Gateway.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 41ef842d2e60014e

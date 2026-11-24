@@ -1,0 +1,169 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: FlexFabric 5900AF 48XG 4QSFP+
+slug: flexfabric-5900af-48xg-4qsfp-plus
+category: network_switch
+form_factor: rack
+part_numbers:
+  - JC772A
+u_height: 1
+full_depth: true
+weight_kg: 13
+power:
+  psu_count: 2
+interfaces:
+  - name: M-GE0/0/0
+    type: 1000base-t
+    mgmt_only: true
+  - name: XGE1/0/1
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/2
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/3
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/4
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/5
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/6
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/7
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/8
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/9
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/10
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/11
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/12
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/13
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/14
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/15
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/16
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/17
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/18
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/19
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/20
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/21
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/22
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/23
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/24
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/25
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/26
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/27
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/28
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/29
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/30
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/31
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/32
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/33
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/34
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/35
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/36
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/37
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/38
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/39
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/40
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/41
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/42
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/43
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/44
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/45
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/46
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/47
+    type: 10gbase-x-sfpp
+  - name: XGE1/0/48
+    type: 10gbase-x-sfpp
+  - name: FGE1/0/49
+    type: 40gbase-x-qsfpp
+  - name: FGE1/0/50
+    type: 40gbase-x-qsfpp
+  - name: FGE1/0/51
+    type: 40gbase-x-qsfpp
+  - name: FGE1/0/52
+    type: 40gbase-x-qsfpp
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: USB
+    type: usb-a
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+  - name: Fan1
+    bay_position: "1"
+  - name: Fan2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  other:
+    - label: HPE FlexFabric 5900 Switch Series
+      url: https://www.hpe.com/psnow/doc/c04111469
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/FlexFabric-5900AF-48XG-4QSFPP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 14e34d8c4fae395c

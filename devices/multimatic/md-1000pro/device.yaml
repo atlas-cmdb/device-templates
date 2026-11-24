@@ -1,0 +1,97 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: multimatic
+model: MD-1000PRO
+slug: md-1000pro
+category: ups
+form_factor: rack
+description: Online UPS, 1000 VA / 1000 W, 2U rack/tower
+u_height: 2
+full_depth: true
+weight_kg: 17
+power:
+  outlet_count: 8
+  psu_count: 2
+console_ports:
+  - name: RS232
+    description: Serial monitoring interface
+    type: de-9
+  - name: USB
+    description: USB monitoring interface
+    type: usb-b
+power_ports:
+  - name: INPUT
+    description: AC input, 230 V, 10 A
+    type: iec-60320-c14
+  - name: 36VDC
+    description: External battery pack connection
+    type: other
+power_outlets:
+  - name: SEGMENT1-1
+    description: Programmable output segment 1
+    type: iec-60320-c13
+    power_port: INPUT
+  - name: SEGMENT1-2
+    description: Programmable output segment 1
+    type: iec-60320-c13
+    power_port: INPUT
+  - name: SEGMENT1-3
+    description: Programmable output segment 1
+    type: iec-60320-c13
+    power_port: INPUT
+  - name: SEGMENT1-4
+    description: Programmable output segment 1
+    type: iec-60320-c13
+    power_port: INPUT
+  - name: SEGMENT2-1
+    description: Output segment 2
+    type: iec-60320-c13
+    power_port: INPUT
+  - name: SEGMENT2-2
+    description: Output segment 2
+    type: iec-60320-c13
+    power_port: INPUT
+  - name: SEGMENT2-3
+    description: Output segment 2
+    type: iec-60320-c13
+    power_port: INPUT
+  - name: SEGMENT2-4
+    description: Output segment 2
+    type: iec-60320-c13
+    power_port: INPUT
+module_bays:
+  - name: INTELLIGENT SLOT
+    description: Optional SNMP network card or relay card
+    bay_position: Rear
+links:
+  manual: https://www.edelstrom.de/media/mm_hb_md_pro_1-3k_v1.0.pdf
+comments: |-
+  Dimensions (H x W x D): 88 x 440 x 460 mm.
+  Nominal voltage: 230 VAC (configurable 220/230/240 VAC).
+  Internal batteries; optional external battery pack MDBP-1000PRO.
+  RJ45 ports provide data-line surge protection only.
+  EPO terminal block available on the rear panel.
+  Documentation:
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/multimatic/MD-1000PRO.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - description
+    - full_depth
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 2b14d33a03873d4d

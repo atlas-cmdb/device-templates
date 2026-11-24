@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netapp
+model: DE460C
+slug: de460c
+category: shelf
+form_factor: rack
+description: 60SFF/LFF SAS/SATA 12G Expansion Shelf
+part_numbers:
+  - DE460C
+u_height: 4
+full_depth: true
+weight_kg: 112.2
+airflow: front-to-rear
+power:
+  psu_count: 2
+module_bays:
+  - name: IOM A
+    bay_position: IOM A
+  - name: IOM B
+    bay_position: IOM B
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/NetApp/DE460C.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 72615d8bd9adfda1

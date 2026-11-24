@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: rittal
+model: DK 7030040
+slug: dk-7030040
+category: compute_blade
+form_factor: blade
+part_numbers:
+  - "4028177659360"
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 0.56
+airflow: passive
+console_ports:
+  - name: can1
+    label: CAN 1
+    description: 1st CAN BUS connection port
+    type: rj-45
+  - name: can2
+    label: CAN 2
+    description: 2nd CAN BUS connection port
+    type: rj-45
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  other:
+    - label: Documentation here
+      url: https://www.rittal.com/imf/none/3_5176/7030040_Instructions_EN
+  product_page: https://www.rittal.com/com-en/products/PG20231215ZUB101/PG20240405ZUB001/PG20240405ZUB002/PRO23679?variantId=7030040
+comments: |-
+  Dimensions (W x H x D): 138 mm x 40 mm x 132 mm.
+  Temperature range in Celsius: 0 ... 55.
+  Gross weight: 0.56 kg.
+  NOTE: DK CMC III I/O Unit for signal receiving and passing on control commands. For monitoring > 8 digital inputs, and controls > 4 Relays.
+  .
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Rittal/DK-7030040.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - links.other
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 22b16ab6fdd513b9

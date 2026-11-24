@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://atlas-cmdb.github.io/device-templates/schema/manufacturer.schema.json",
+  "title": "Manufacturer",
+  "description": "manufacturers/<slug>.yaml. The slug is the folder name used under devices/, modules/ and racks/.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "slug"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "name": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "slug": { "$ref": "device.schema.json#/$defs/slug" },
+    "aliases": {
+      "description": "Other spellings and former names, e.g. 'HP' for HPE, 'Avocent' for Vertiv, so search finds them.",
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "website": { "type": "string", "format": "uri" },
+    "support_url": { "type": "string", "format": "uri" },
+    "parent": { "description": "Slug of the owning manufacturer, if any.", "$ref": "device.schema.json#/$defs/slug" },
+    "logo": { "description": "Logo file in manufacturers/logos/ (SVG preferred).", "type": "string", "pattern": "^[a-z0-9._-]+\\.(svg|png|webp)$" },
+    "comments": { "type": "string" }
+  }
+}

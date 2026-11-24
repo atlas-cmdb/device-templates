@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: N9K-C9408
+slug: n9k-c9408
+category: network_switch
+form_factor: rack
+part_numbers:
+  - N9K-C9408
+u_height: 4
+full_depth: false
+weight_kg: 55
+airflow: front-to-rear
+power:
+  psu_count: 4
+module_bays:
+  - name: PS1
+    description: Power module
+    bay_position: 1/PM1
+  - name: PS2
+    description: Power module
+    bay_position: 1/PM1
+  - name: PS3
+    description: Power module
+    bay_position: 1/PM1
+  - name: PS4
+    description: Power module
+    bay_position: 1/PM1
+  - name: Slot 1
+    label: Line Card
+    bay_position: "1"
+  - name: Slot 2
+    label: Line Card
+    bay_position: "2"
+  - name: Slot 3
+    label: Line Card
+    bay_position: "3"
+  - name: Slot 4
+    label: Line Card
+    bay_position: "4"
+  - name: Slot 5
+    label: Line Card
+    bay_position: "5"
+  - name: Slot 6
+    label: Line Card
+    bay_position: "6"
+  - name: Slot 7
+    label: Line Card
+    bay_position: "7"
+  - name: Slot 8
+    label: Line Card
+    bay_position: "8"
+  - name: Slot 9
+    label: Supervisor
+    bay_position: "9"
+comments: "[Cisco Nexus 9400 Series Switches Data Sheet](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus9400-series-switches-ds.html"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/N9K-C9408.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: fbbaef9f8d2c9c4b

@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lancom
+model: WLC-30
+slug: wlc-30
+category: network_controller
+form_factor: rack
+part_numbers:
+  - "61789"
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: ETH-1
+    type: 1000base-t
+  - name: ETH-2
+    type: 1000base-t
+  - name: ETH-3
+    type: 1000base-t
+  - name: ETH-4
+    type: 1000base-t
+  - name: Uplink
+    type: 1000base-t
+console_ports:
+  - name: com
+    type: mini-din-8
+power_ports:
+  - name: PS1
+    type: dc-terminal
+    maximum_draw_w: 9
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/LANCOM/WLC-30.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 41bb51088810c1b3

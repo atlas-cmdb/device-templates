@@ -1,0 +1,105 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: corning
+model: CCH-CP12-59
+slug: cch-cp12-59
+kind: other
+part_numbers:
+  - CCH-CP12-59
+front_ports:
+  - name: "{module}:01"
+    type: sc-upc
+    rear_port: "{module}:01"
+    rear_port_position: 1
+  - name: "{module}:02"
+    type: sc-upc
+    rear_port: "{module}:02"
+    rear_port_position: 1
+  - name: "{module}:03"
+    type: sc-upc
+    rear_port: "{module}:03"
+    rear_port_position: 1
+  - name: "{module}:04"
+    type: sc-upc
+    rear_port: "{module}:04"
+    rear_port_position: 1
+  - name: "{module}:05"
+    type: sc-upc
+    rear_port: "{module}:05"
+    rear_port_position: 1
+  - name: "{module}:06"
+    type: sc-upc
+    rear_port: "{module}:06"
+    rear_port_position: 1
+  - name: "{module}:07"
+    type: sc-upc
+    rear_port: "{module}:07"
+    rear_port_position: 1
+  - name: "{module}:08"
+    type: sc-upc
+    rear_port: "{module}:08"
+    rear_port_position: 1
+  - name: "{module}:09"
+    type: sc-upc
+    rear_port: "{module}:09"
+    rear_port_position: 1
+  - name: "{module}:10"
+    type: sc-upc
+    rear_port: "{module}:10"
+    rear_port_position: 1
+  - name: "{module}:11"
+    type: sc-upc
+    rear_port: "{module}:11"
+    rear_port_position: 1
+  - name: "{module}:12"
+    type: sc-upc
+    rear_port: "{module}:12"
+    rear_port_position: 1
+rear_ports:
+  - name: "{module}:01"
+    type: sc-upc
+  - name: "{module}:02"
+    type: sc-upc
+  - name: "{module}:03"
+    type: sc-upc
+  - name: "{module}:04"
+    type: sc-upc
+  - name: "{module}:05"
+    type: sc-upc
+  - name: "{module}:06"
+    type: sc-upc
+  - name: "{module}:07"
+    type: sc-upc
+  - name: "{module}:08"
+    type: sc-upc
+  - name: "{module}:09"
+    type: sc-upc
+  - name: "{module}:10"
+    type: sc-upc
+  - name: "{module}:11"
+    type: sc-upc
+  - name: "{module}:12"
+    type: sc-upc
+links:
+  other:
+    - label: CCH-CP12-59
+      url: https://ecatalog.corning.com/optical-communications/US/en/Fiber-Optic-Hardware/Panels-Modules-and-Cassettes/Closet-Connector-Housing-%28CCH%29-Panel%2C-SC-Adapters/p/CCH-CP12-59
+comments: Closet Connector Housing (CCH) Panel, SC Adapters  Duplex, UPC, 12 F, Single-mode (OS2)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Corning/CCH-CP12-59.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - front_ports
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: d7455de938cb54a3

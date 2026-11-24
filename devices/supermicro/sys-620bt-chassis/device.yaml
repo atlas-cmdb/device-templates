@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SYS-620BT-CHASSIS
+slug: sys-620bt-chassis
+category: server
+form_factor: rack
+part_numbers:
+  - CSE-827BQ-000NP
+u_height: 2
+full_depth: true
+subdevice_role: parent
+weight_kg: 30
+airflow: front-to-rear
+power:
+  psu_count: 2
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+  - name: HDD bay A0
+    description: Connected to node A
+    bay_position: "1"
+  - name: HDD bay A1
+    description: Connected to node A
+    bay_position: "2"
+  - name: HDD bay A2
+    description: Connected to node A
+    bay_position: "3"
+  - name: HDD bay B0
+    description: Connected to node B
+    bay_position: "4"
+  - name: HDD bay B1
+    description: Connected to node B
+    bay_position: "5"
+  - name: HDD bay B2
+    description: Connected to node B
+    bay_position: "6"
+  - name: HDD bay C0
+    description: Connected to node C
+    bay_position: "7"
+  - name: HDD bay C1
+    description: Connected to node C
+    bay_position: "8"
+  - name: HDD bay C2
+    description: Connected to node C
+    bay_position: "9"
+  - name: HDD bay D0
+    description: Connected to node D
+    bay_position: "10"
+  - name: HDD bay D1
+    description: Connected to node D
+    bay_position: "11"
+  - name: HDD bay D2
+    description: Connected to node D
+    bay_position: "12"
+device_bays:
+  - name: Node A
+  - name: Node B
+  - name: Node C
+  - name: Node D
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+comments: Chassis for SYS-620BT series
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SYS-620BT-CHASSIS.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - device_bays
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 3c48ac99feb8154e

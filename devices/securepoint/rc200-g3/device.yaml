@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: securepoint
+model: RC200 G3
+slug: rc200-g3
+category: firewall
+form_factor: rack
+description: UTM firewall, desktop appliance with 4x 1GbE. Rack-mount kit available.
+u_height: 1
+full_depth: false
+weight_kg: 2
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: eth0
+    description: 1GbE RJ45 LAN port
+    type: 1000base-t
+  - name: eth1
+    description: 1GbE RJ45 LAN port
+    type: 1000base-t
+  - name: eth2
+    description: 1GbE RJ45 LAN port
+    type: 1000base-t
+  - name: eth3
+    description: 1GbE RJ45 LAN port
+    type: 1000base-t
+console_ports:
+  - name: USB1
+    description: USB 3.0
+    type: usb-a
+power_ports:
+  - name: PSU1
+    description: External 12V 3.34A 40W screwed, 110-240VAC 50-60Hz
+    type: dc-terminal
+    maximum_draw_w: 46
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Securepoint/RC200-G3.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: d6296afa0e1b219c

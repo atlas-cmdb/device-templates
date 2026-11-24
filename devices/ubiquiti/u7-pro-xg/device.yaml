@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: U7 Pro XG
+slug: u7-pro-xg
+category: wireless_access_point
+form_factor: other
+part_numbers:
+  - U7-Pro-XG
+u_height: 0
+full_depth: false
+weight_kg: 0.75
+airflow: passive
+interfaces:
+  - name: Port 1
+    type: 10gbase-t
+    poe_mode: pd
+    poe_type: type2-ieee802.3at
+  - name: WLAN 0
+    label: 2.4 GHz
+    description: "Max Data Rate: 688 Mbps (BW40), MIMO: 2x2 (DL/UL MU-MIMO), Max TX Power: 23 dBm, Antenna Gain: 4 dBi"
+    type: ieee802.11n
+  - name: WLAN 1
+    label: 5 GHz
+    description: "Max Data Rate: 4.3 Gbps (BW240), MIMO: 2x2 (DL/UL MU-MIMO), Max TX Power: 26 dBm, Antenna Gain: 5 dBi"
+    type: ieee802.11ac
+  - name: WLAN 2
+    label: 6 GHz (WiFi 6E)
+    description: "Max Data Rate: 5.8 Gbps (BW320), MIMO: 2x2 (DL/UL MU-MIMO), Max TX Power: 24 dBm, Antenna Gain: 6 dBi"
+    type: ieee802.11ax
+  - name: WLAN 3
+    label: 5 GHz (WiFi 7)
+    description: "Max Data Rate: 4.3 Gbps (BW240), MIMO: 2x2 (DL/UL MU-MIMO), Max TX Power: 26 dBm, Antenna Gain: 5 dBi"
+    type: ieee802.11be
+  - name: WLAN 4
+    label: 6 GHz (WiFi 7)
+    description: "Max Data Rate: 5.8 Gbps (BW320), MIMO: 2x2 (DL/UL MU-MIMO), Max TX Power: 24 dBm, Antenna Gain: 6 dBi"
+    type: ieee802.11be
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  other:
+    - label: U7 Pro XG
+      url: https://techspecs.ui.com/unifi/wifi/u7-pro-xg
+comments: |-
+  Ceiling-mounted 6-stream WiFi 7 AP with 10/5/2.5/1 GbE support.
+  Dimensions: diameter 206 x 32.5 mm (diameter 8.1 x 1.3")
+  Max. Power Consumption: 22W
+  Weight: 750 g (1.7 lb)
+  Certifications: CE, FCC, IC
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/U7-Pro-XG.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e9cd57c6a32cf96d

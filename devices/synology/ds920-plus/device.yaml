@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: synology
+model: DS920+
+slug: ds920-plus
+category: storage_shelf
+form_factor: other
+part_numbers:
+  - DS920+
+u_height: 0
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: LAN 1
+    type: 1000base-t
+  - name: LAN 2
+    type: 1000base-t
+power_ports:
+  - name: PSU
+    type: dc-terminal
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  product_page: https://www.synology.com/de-de/products/DS920+#specs
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Synology/DS920+.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: d9b488170e38aadd

@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: check-point
+model: SG2550
+slug: sg2550
+category: firewall
+form_factor: rack
+part_numbers:
+  - CPAP-SG2550
+u_height: 1
+full_depth: false
+weight_kg: 0.87
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: WAN-RJ-45
+    type: 1000base-t
+  - name: WAN-SFP
+    type: 1000base-x-sfp
+  - name: DMZ-RJ-45
+    type: 1000base-t
+  - name: DMZ-SFP
+    type: 1000base-x-sfp
+  - name: "1"
+    type: 1000base-t
+  - name: "2"
+    type: 1000base-t
+  - name: "3"
+    type: 1000base-t
+  - name: "4"
+    type: 1000base-t
+  - name: "5"
+    type: 1000base-t
+  - name: "6"
+    type: 1000base-t
+console_ports:
+  - name: CONSOLE
+    type: usb-c
+power_ports:
+  - name: PSU
+    type: dc-terminal
+    maximum_draw_w: 40
+    allocated_draw_w: 26
+links:
+  datasheet: https://www.checkpoint.com/downloads/products/quantum-spark-2500-datasheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Check Point/SG2550.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 2e3941ade7b381f5

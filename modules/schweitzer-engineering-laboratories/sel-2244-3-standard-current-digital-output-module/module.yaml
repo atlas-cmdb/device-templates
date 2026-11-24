@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: schweitzer-engineering-laboratories
+model: SEL-2244-3 Standard Current Digital Output Module
+slug: sel-2244-3-standard-current-digital-output-module
+kind: other
+description: The SEL-2244-3 module includes 16 contact outputs with LED indicators. Up to nine modules may be used in a node. Form A and Form B outputs.
+interfaces:
+  - name: Digital-output terminal
+    type: other
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Schweitzer Engineering Laboratories/sel-2244-3-standard-current-digital-output-module.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - interfaces
+    - manufacturer
+    - model
+    - slug
+  import_hash: 9230f40ce51ee4b5

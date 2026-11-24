@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: smartoptics
+model: H-CHASSI-1RU
+slug: h-chassi-1ru
+category: other
+form_factor: rack
+part_numbers:
+  - H-CHASSI-1RU
+u_height: 1
+full_depth: false
+weight_kg: 0.2
+airflow: passive
+module_bays:
+  - name: Filter 1
+    bay_position: "0"
+  - name: Filter 2
+    bay_position: "1"
+  - name: Filter 3
+    bay_position: "2"
+  - name: Filter 4
+    bay_position: "3"
+  - name: Filter 5
+    bay_position: "4"
+  - name: Filter 6
+    bay_position: "5"
+  - name: Filter 7
+    bay_position: "6"
+  - name: Filter 8
+    bay_position: "7"
+  - name: Filter 9
+    bay_position: "8"
+  - name: Filter 10
+    bay_position: "9"
+  - name: Filter 11
+    bay_position: "10"
+  - name: Filter 12
+    bay_position: "11"
+  - name: Filter 13
+    bay_position: "12"
+  - name: Filter 14
+    bay_position: "13"
+  - name: Filter 15
+    bay_position: "14"
+  - name: Filter 16
+    bay_position: "15"
+comments: Chassi to hold up to 16 passive (C|D)WDM filters, fully modular.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Smartoptics/H-CHASSI-1RU.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 49f7f0b38624874c

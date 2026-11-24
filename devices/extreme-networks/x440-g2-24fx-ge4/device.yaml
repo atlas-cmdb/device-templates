@@ -1,0 +1,115 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: extreme-networks
+model: X440-G2-24fx-GE4
+slug: x440-g2-24fx-ge4
+category: network_switch
+form_factor: rack
+part_numbers:
+  - "16539"
+u_height: 1
+full_depth: false
+weight_kg: 3.93
+power:
+  psu_count: 2
+interfaces:
+  - name: Mgmt-port
+    type: 1000base-t
+    mgmt_only: true
+  - name: "1"
+    type: 100base-fx
+  - name: "2"
+    type: 100base-fx
+  - name: "3"
+    type: 100base-fx
+  - name: "4"
+    type: 100base-fx
+  - name: "5"
+    type: 100base-fx
+  - name: "6"
+    type: 100base-fx
+  - name: "7"
+    type: 100base-fx
+  - name: "8"
+    type: 100base-fx
+  - name: "9"
+    type: 100base-fx
+  - name: "10"
+    type: 100base-fx
+  - name: "11"
+    type: 100base-fx
+  - name: "12"
+    type: 100base-fx
+  - name: "13"
+    type: 100base-fx
+  - name: "14"
+    type: 100base-fx
+  - name: "15"
+    type: 100base-fx
+  - name: "16"
+    type: 100base-fx
+  - name: "17"
+    type: 100base-fx
+  - name: "18"
+    type: 100base-fx
+  - name: "19"
+    type: 100base-fx
+  - name: "20"
+    type: 100base-fx
+  - name: "21"
+    type: 100base-fx
+  - name: "22"
+    type: 100base-fx
+  - name: "23"
+    type: 100base-fx
+  - name: "24"
+    type: 100base-fx
+  - name: "25"
+    type: 1000base-x-sfp
+  - name: "26"
+    type: 1000base-x-sfp
+  - name: "27"
+    type: 1000base-x-sfp
+  - name: "28"
+    type: 1000base-x-sfp
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: PSU1
+    type: iec-60320-c14
+    maximum_draw_w: 65
+  - name: RPS1
+    description: Redundant Power Supply
+    type: dc-terminal
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.extremenetworks.com/product/x440-g2/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Extreme Networks/X440-G2-24fx-GE4.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 5c0142c210cbc936

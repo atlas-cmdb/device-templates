@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: SRT96RMBP
+slug: srt96rmbp
+category: ups_battery_pack
+form_factor: rack
+part_numbers:
+  - SRT96RMBP
+u_height: 2
+full_depth: true
+weight_kg: 40.6
+airflow: passive
+power:
+  outlet_count: 1
+  psu_count: 1
+power_ports:
+  - name: XLBP Source
+    type: dc-terminal
+power_outlets:
+  - name: XLBP Output
+    type: dc-terminal
+comments: APC Smart-UPS SRT, 96 V, 3 kVA, Rackmount Battery Module
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/SRT96RMBP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: ecc411009d25d33b

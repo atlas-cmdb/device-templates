@@ -1,0 +1,103 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: ProCurve A5800-24G
+slug: procurve-a5800-24g
+category: network_switch
+form_factor: rack
+part_numbers:
+  - JC100A
+u_height: 1
+full_depth: false
+weight_kg: 6
+power:
+  psu_count: 1
+interfaces:
+  - name: M-GigabitEthernet0/0/0
+    type: 1000base-t
+    mgmt_only: true
+  - name: GigabitEthernet1/0/1
+    type: 1000base-t
+  - name: GigabitEthernet1/0/2
+    type: 1000base-t
+  - name: GigabitEthernet1/0/3
+    type: 1000base-t
+  - name: GigabitEthernet1/0/4
+    type: 1000base-t
+  - name: GigabitEthernet1/0/5
+    type: 1000base-t
+  - name: GigabitEthernet1/0/6
+    type: 1000base-t
+  - name: GigabitEthernet1/0/7
+    type: 1000base-t
+  - name: GigabitEthernet1/0/8
+    type: 1000base-t
+  - name: GigabitEthernet1/0/9
+    type: 1000base-t
+  - name: GigabitEthernet1/0/10
+    type: 1000base-t
+  - name: GigabitEthernet1/0/11
+    type: 1000base-t
+  - name: GigabitEthernet1/0/12
+    type: 1000base-t
+  - name: GigabitEthernet1/0/13
+    type: 1000base-t
+  - name: GigabitEthernet1/0/14
+    type: 1000base-t
+  - name: GigabitEthernet1/0/15
+    type: 1000base-t
+  - name: GigabitEthernet1/0/16
+    type: 1000base-t
+  - name: GigabitEthernet1/0/17
+    type: 1000base-t
+  - name: GigabitEthernet1/0/18
+    type: 1000base-t
+  - name: GigabitEthernet1/0/19
+    type: 1000base-t
+  - name: GigabitEthernet1/0/20
+    type: 1000base-t
+  - name: GigabitEthernet1/0/21
+    type: 1000base-t
+  - name: GigabitEthernet1/0/22
+    type: 1000base-t
+  - name: GigabitEthernet1/0/23
+    type: 1000base-t
+  - name: GigabitEthernet1/0/24
+    type: 1000base-t
+  - name: Ten-GigabitEthernet1/0/25
+    type: 10gbase-x-sfpp
+  - name: Ten-GigabitEthernet1/0/26
+    type: 10gbase-x-sfpp
+  - name: Ten-GigabitEthernet1/0/27
+    type: 10gbase-x-sfpp
+  - name: Ten-GigabitEthernet1/0/28
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: console
+    type: rj-45
+  - name: console usb
+    type: usb-a
+power_ports:
+  - name: PSU1
+    type: iec-60320-c14
+    maximum_draw_w: 105
+    allocated_draw_w: 67
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/ProCurve-A5800-24G.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 89a9e673ce815077

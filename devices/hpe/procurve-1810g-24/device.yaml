@@ -1,0 +1,95 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: ProCurve-1810G-24
+slug: procurve-1810g-24
+category: network_switch
+form_factor: rack
+part_numbers:
+  - J9450A
+u_height: 1
+full_depth: false
+weight_kg: 1.96
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: gi1
+    type: 1000base-t
+  - name: gi2
+    type: 1000base-t
+  - name: gi3
+    type: 1000base-t
+  - name: gi4
+    type: 1000base-t
+  - name: gi5
+    type: 1000base-t
+  - name: gi6
+    type: 1000base-t
+  - name: gi7
+    type: 1000base-t
+  - name: gi8
+    type: 1000base-t
+  - name: gi9
+    type: 1000base-t
+  - name: gi10
+    type: 1000base-t
+  - name: gi11
+    type: 1000base-t
+  - name: gi12
+    type: 1000base-t
+  - name: gi13
+    type: 1000base-t
+  - name: gi14
+    type: 1000base-t
+  - name: gi15
+    type: 1000base-t
+  - name: gi16
+    type: 1000base-t
+  - name: gi17
+    type: 1000base-t
+  - name: gi18
+    type: 1000base-t
+  - name: gi19
+    type: 1000base-t
+  - name: gi20
+    type: 1000base-t
+  - name: gi21
+    type: 1000base-t
+  - name: gi22
+    type: 1000base-t
+  - name: gi23-copper
+    type: 1000base-t
+  - name: gi24-copper
+    type: 1000base-t
+  - name: gi23-sfp
+    type: 1000base-x-sfp
+  - name: gi24-sfp
+    type: 1000base-x-sfp
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 30
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/ProCurve-1810G-24.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 983e70cc3027924a

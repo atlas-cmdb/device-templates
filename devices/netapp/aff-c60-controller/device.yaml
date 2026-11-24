@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netapp
+model: AFF-C60 Controller
+slug: aff-c60-controller
+category: storage_array
+form_factor: blade
+description: AFF C60 HA System Controller
+part_numbers:
+  - AFF-C60-001
+u_height: 0
+full_depth: true
+subdevice_role: child
+interfaces:
+  - name: e0M
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: IOIOI
+    type: rj-45
+rear_ports:
+  - name: IOIOI
+    type: usb-c
+module_bays:
+  - name: Karte 1
+    description: Karte 1
+    bay_position: "1"
+  - name: Karte 2
+    description: Karte 2
+    bay_position: "2"
+  - name: Karte 3
+    description: Karte 3
+    bay_position: "3"
+  - name: Karte 4
+    description: Karte 4
+    bay_position: "4"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/NetApp/AFF-C60-Controller.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - rear_ports
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 9f38af50ec7dd8d9

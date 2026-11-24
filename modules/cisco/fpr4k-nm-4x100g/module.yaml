@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: FPR4K-NM-4X100G
+slug: fpr4k-nm-4x100g
+kind: other
+part_numbers:
+  - FPR4K-NM-4X100G
+interfaces:
+  - name: Ethernet{module}/1
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/2
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/3
+    type: 100gbase-x-qsfp28
+  - name: Ethernet{module}/4
+    type: 100gbase-x-qsfp28
+links:
+  manual: https://www.cisco.com/c/en/us/td/docs/security/firepower/4100/hw/guide/b_install_guide_4100/overview.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/FPR4K-NM-4X100G.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 239d581b584e0bd9

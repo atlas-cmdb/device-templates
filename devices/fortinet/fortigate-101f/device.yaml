@@ -1,0 +1,103 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: FortiGate 101F
+slug: fortigate-101f
+category: firewall
+form_factor: rack
+part_numbers:
+  - FG-101F
+u_height: 1
+full_depth: false
+power:
+  psu_count: 2
+interfaces:
+  - name: dmz
+    type: 1000base-t
+  - name: mgmt
+    type: 1000base-t
+    mgmt_only: true
+  - name: wan1
+    type: 1000base-t
+  - name: wan2
+    type: 1000base-t
+  - name: ha1
+    type: 1000base-t
+  - name: ha2
+    type: 1000base-t
+  - name: port1
+    type: 1000base-t
+  - name: port2
+    type: 1000base-t
+  - name: port3
+    type: 1000base-t
+  - name: port4
+    type: 1000base-t
+  - name: port5
+    type: 1000base-t
+  - name: port6
+    type: 1000base-t
+  - name: port7
+    type: 1000base-t
+  - name: port8
+    type: 1000base-t
+  - name: port9
+    type: 1000base-t
+  - name: port10
+    type: 1000base-t
+  - name: port11
+    type: 1000base-t
+  - name: port12
+    type: 1000base-t
+  - name: x1
+    type: 10gbase-x-sfpp
+  - name: x2
+    type: 10gbase-x-sfpp
+  - name: port13
+    type: 1000base-x-sfp
+  - name: port14
+    type: 1000base-x-sfp
+  - name: port15
+    type: 1000base-x-sfp
+  - name: port16
+    type: 1000base-x-sfp
+  - name: port17
+    type: 1000base-x-sfp
+  - name: port18
+    type: 1000base-x-sfp
+  - name: port19
+    type: 1000base-x-sfp
+  - name: port20
+    type: 1000base-x-sfp
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 39
+    allocated_draw_w: 35
+  - name: PS2
+    type: iec-60320-c14
+    maximum_draw_w: 39
+    allocated_draw_w: 35
+comments: Same as FG-100F , but **WITH** a 480GB SSD on-board.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/FG-101F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 29bf29c73ffe59ff

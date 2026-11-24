@@ -1,0 +1,102 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: avocent
+model: PM20-L20A
+slug: pm20-l20a
+category: pdu
+form_factor: zero-u
+u_height: 0
+full_depth: false
+power:
+  outlet_count: 20
+console_ports:
+  - name: In
+    type: rj-45
+  - name: Out
+    type: rj-45
+power_ports:
+  - name: Power Port 1
+    type: nema-l5-20p
+    maximum_draw_w: 2400
+power_outlets:
+  - name: PM-1
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: PM-2
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: PM-3
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: PM-4
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: PM-5
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: PM-6
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: PM-7
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: PM-8
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: PM-9
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: PM-10
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: PM-11
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: PM-12
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: PM-13
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: PM-14
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: PM-15
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: PM-16
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: PM-17
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: PM-18
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: PM-19
+    type: nema-5-15r
+    power_port: Power Port 1
+  - name: PM-20
+    type: nema-5-15r
+    power_port: Power Port 1
+comments: AlterPath PM20-L20A
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Avocent/PM20-L20A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - manufacturer
+    - model
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 473068020b5c4900

@@ -1,0 +1,101 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: sonicwall
+model: NSsp 15700
+slug: nssp-15700
+category: firewall
+form_factor: rack
+part_numbers:
+  - NSSP15700
+u_height: 2
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: MGMT
+    type: 1000base-t
+    mgmt_only: true
+  - name: X0
+    type: 10gbase-x-sfpp
+  - name: X1
+    type: 10gbase-x-sfpp
+  - name: X2
+    type: 10gbase-x-sfpp
+  - name: X3
+    type: 10gbase-x-sfpp
+  - name: X4
+    type: 10gbase-x-sfpp
+  - name: X5
+    type: 10gbase-x-sfpp
+  - name: X6
+    type: 10gbase-x-sfpp
+  - name: X7
+    type: 10gbase-x-sfpp
+  - name: X8
+    type: 10gbase-x-sfpp
+  - name: X9
+    type: 10gbase-x-sfpp
+  - name: X10
+    type: 10gbase-x-sfpp
+  - name: X11
+    type: 10gbase-x-sfpp
+  - name: X12
+    type: 10gbase-x-sfpp
+  - name: X13
+    type: 10gbase-x-sfpp
+  - name: X14
+    type: 10gbase-x-sfpp
+  - name: X15
+    type: 10gbase-x-sfpp
+  - name: X16
+    type: 40gbase-x-qsfpp
+  - name: X17
+    type: 40gbase-x-qsfpp
+  - name: X18
+    type: 40gbase-x-qsfpp
+  - name: X19
+    type: 40gbase-x-qsfpp
+  - name: X20
+    type: 100gbase-x-qsfp28
+  - name: X21
+    type: 100gbase-x-qsfp28
+  - name: X22
+    type: 100gbase-x-qsfp28
+  - name: X23
+    type: 100gbase-x-qsfp28
+  - name: X24
+    type: 100gbase-x-qsfp28
+  - name: X25
+    type: 100gbase-x-qsfp28
+console_ports:
+  - name: Console
+    type: rj-45
+module_bays:
+  - name: PSU Slot 1
+    bay_position: "1"
+  - name: PSU Slot 2
+    bay_position: "2"
+  - name: Expansion Module
+    bay_position: "1"
+  - name: Fan 1
+    bay_position: "1"
+  - name: Fan 2
+    bay_position: "2"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/SonicWall/NSsp15700.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+  import_hash: a5d4d77c28ed9629

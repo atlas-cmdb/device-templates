@@ -1,0 +1,156 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: ssd
+model: ssd-skos-l-16lc-upc
+slug: ssd-skos-l-16lc-upc
+kind: storage
+part_numbers:
+  - 130308-00122
+front_ports:
+  - name: "{module}:1"
+    description: LC/UPC Port 1
+    type: lc-upc
+    color: 0000ff
+    rear_port: "{module}:1"
+    rear_port_position: 1
+  - name: "{module}:2"
+    description: LC/UPC Port 2
+    type: lc-upc
+    color: 0000ff
+    rear_port: "{module}:2"
+    rear_port_position: 1
+  - name: "{module}:3"
+    description: LC/UPC Port 3
+    type: lc-upc
+    color: 0000ff
+    rear_port: "{module}:3"
+    rear_port_position: 1
+  - name: "{module}:4"
+    description: LC/UPC Port 4
+    type: lc-upc
+    color: 0000ff
+    rear_port: "{module}:4"
+    rear_port_position: 1
+  - name: "{module}:5"
+    description: LC/UPC Port 5
+    type: lc-upc
+    color: 0000ff
+    rear_port: "{module}:5"
+    rear_port_position: 1
+  - name: "{module}:6"
+    description: LC/UPC Port 6
+    type: lc-upc
+    color: 0000ff
+    rear_port: "{module}:6"
+    rear_port_position: 1
+  - name: "{module}:7"
+    description: LC/UPC Port 7
+    type: lc-upc
+    color: 0000ff
+    rear_port: "{module}:7"
+    rear_port_position: 1
+  - name: "{module}:8"
+    description: LC/UPC Port 8
+    type: lc-upc
+    color: 0000ff
+    rear_port: "{module}:8"
+    rear_port_position: 1
+  - name: "{module}:9"
+    description: LC/UPC Port 9
+    type: lc-upc
+    color: 0000ff
+    rear_port: "{module}:9"
+    rear_port_position: 1
+  - name: "{module}:10"
+    description: LC/UPC Port 10
+    type: lc-upc
+    color: 0000ff
+    rear_port: "{module}:10"
+    rear_port_position: 1
+  - name: "{module}:11"
+    description: LC/UPC Port 11
+    type: lc-upc
+    color: 0000ff
+    rear_port: "{module}:11"
+    rear_port_position: 1
+  - name: "{module}:12"
+    description: LC/UPC Port 12
+    type: lc-upc
+    color: 0000ff
+    rear_port: "{module}:12"
+    rear_port_position: 1
+  - name: "{module}:13"
+    description: LC/UPC Port 13
+    type: lc-upc
+    color: 0000ff
+    rear_port: "{module}:13"
+    rear_port_position: 1
+  - name: "{module}:14"
+    description: LC/UPC Port 14
+    type: lc-upc
+    color: 0000ff
+    rear_port: "{module}:14"
+    rear_port_position: 1
+  - name: "{module}:15"
+    description: LC/UPC Port 15
+    type: lc-upc
+    color: 0000ff
+    rear_port: "{module}:15"
+    rear_port_position: 1
+  - name: "{module}:16"
+    description: LC/UPC Port 16
+    type: lc-upc
+    color: 0000ff
+    rear_port: "{module}:16"
+    rear_port_position: 1
+rear_ports:
+  - name: "{module}:1"
+    type: lc-upc
+  - name: "{module}:2"
+    type: lc-upc
+  - name: "{module}:3"
+    type: lc-upc
+  - name: "{module}:4"
+    type: lc-upc
+  - name: "{module}:5"
+    type: lc-upc
+  - name: "{module}:6"
+    type: lc-upc
+  - name: "{module}:7"
+    type: lc-upc
+  - name: "{module}:8"
+    type: lc-upc
+  - name: "{module}:9"
+    type: lc-upc
+  - name: "{module}:10"
+    type: lc-upc
+  - name: "{module}:11"
+    type: lc-upc
+  - name: "{module}:12"
+    type: lc-upc
+  - name: "{module}:13"
+    type: lc-upc
+  - name: "{module}:14"
+    type: lc-upc
+  - name: "{module}:15"
+    type: lc-upc
+  - name: "{module}:16"
+    type: lc-upc
+comments: Fiber module, 16 x LC/UPC (Blue)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/SSD/ssd-skos-l-16lc-upc.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - front_ports
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: 1a511112d16a37ba

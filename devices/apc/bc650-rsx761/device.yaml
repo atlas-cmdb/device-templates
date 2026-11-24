@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: BC650-RSX761
+slug: bc650-rsx761
+category: ups
+form_factor: other
+description: APC BC650-RSX761
+part_numbers:
+  - Back-UPS-BC650-RSX761
+u_height: 0
+full_depth: false
+weight_kg: 5.5
+airflow: passive
+power:
+  outlet_count: 4
+  psu_count: 1
+power_ports:
+  - name: Input
+    label: Input
+    description: 220 - 240V AC, 3.5A, 50/60Hz
+    type: ita-ef
+    maximum_draw_w: 360
+    allocated_draw_w: 360
+power_outlets:
+  - name: "1"
+    type: ita-f
+    power_port: Input
+  - name: "2"
+    type: ita-f
+    power_port: Input
+  - name: "3"
+    type: ita-f
+    power_port: Input
+  - name: "4"
+    type: ita-f
+    power_port: Input
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.se.com/kz/ru/product/BC650-RSX761/%D0%B8%D0%B1%D0%BF-apc-backups-650-%D0%B2%D0%B0-230-%D0%B2-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C-%D1%81-%D1%80%D0%BE%D0%B7%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8-schuko/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/BC650-RSX761.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 4a1d20a1623e677c

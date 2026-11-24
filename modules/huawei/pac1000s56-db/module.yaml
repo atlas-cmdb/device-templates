@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: huawei
+model: PAC1000S56-DB
+slug: pac1000s56-db
+kind: other
+part_numbers:
+  - "02131727"
+power_ports:
+  - name: PWR-{module}
+    type: iec-60320-c14
+    maximum_draw_w: 1000
+links:
+  other:
+    - label: PAC1000S56-DB
+      url: https://support.huawei.com/enterprise/en/doc/EDOC1000013597/820632cb/pac1000s56-db-1000-w-poe-ac-240-v-dc-power-module
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Huawei/PAC1000S56-DB.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: d9fb9c62150b4842

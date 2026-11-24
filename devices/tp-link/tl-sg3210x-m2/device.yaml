@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: tp-link
+model: TL-SG3210X-M2
+slug: tl-sg3210x-m2
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 1.8
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: Ethernet 1
+    label: "1"
+    type: 2.5gbase-t
+  - name: Ethernet 2
+    label: "2"
+    type: 2.5gbase-t
+  - name: Ethernet 3
+    label: "3"
+    type: 2.5gbase-t
+  - name: Ethernet 4
+    label: "4"
+    type: 2.5gbase-t
+  - name: Ethernet 5
+    label: "5"
+    type: 2.5gbase-t
+  - name: Ethernet 6
+    label: "6"
+    type: 2.5gbase-t
+  - name: Ethernet 7
+    label: "7"
+    type: 2.5gbase-t
+  - name: Ethernet 8
+    label: "8"
+    type: 2.5gbase-t
+  - name: Ethernet 9
+    label: SFP+ 1
+    type: 10gbase-x-sfpp
+  - name: Ethernet 10
+    label: SFP+ 2
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Serial Console
+    label: Console(RJ45)
+    type: rj-45
+  - name: USB Serial Console
+    label: Console(USB)
+    type: usb-micro-b
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 15
+links:
+  other:
+    - label: TP-Link SG3210X-M2
+      url: https://www.omadanetworks.com/us/business-networking/omada-switch-l3-l2-managed/sg3210x-m2/
+comments: "- Omada 8-Port 2.5G L2+ Managed Switch with 2 10G SFP+ uplinks"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/TP-Link/TL-SG3210X-M2.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 9b8ba6fa68c7c827

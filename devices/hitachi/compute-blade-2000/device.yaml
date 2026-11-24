@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hitachi
+model: Compute Blade 2000
+slug: compute-blade-2000
+category: blade_chassis
+form_factor: rack
+u_height: 10
+full_depth: true
+subdevice_role: parent
+weight_kg: 60
+airflow: front-to-rear
+power:
+  psu_count: 4
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+  - name: PSU3
+    bay_position: PSU3
+  - name: PSU4
+    bay_position: PSU4
+  - name: MGMT1
+    bay_position: MGMT1
+  - name: MGMT2
+    bay_position: MGMT2
+  - name: SWITCH1
+    bay_position: SWITCH1
+  - name: SWITCH2
+    bay_position: SWITCH2
+  - name: SWITCH3
+    bay_position: SWITCH3
+  - name: SWITCH4
+    bay_position: SWITCH4
+  - name: SWITCH5
+    bay_position: SWITCH5
+  - name: SWITCH6
+    bay_position: SWITCH6
+device_bays:
+  - name: Blade-1
+    label: Blade-1
+  - name: Blade-2
+    label: Blade-2
+  - name: Blade-3
+    label: Blade-3
+  - name: Blade-4
+    label: Blade-4
+  - name: Blade-5
+    label: Blade-5
+  - name: Blade-6
+    label: Blade-6
+  - name: Blade-7
+    label: Blade-7
+  - name: Blade-8
+    label: Blade-8
+comments: 10U 8xServer 4xPSU 6xSWITCH Blade Enclosure
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HITACHI/Compute-Blade-2000.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - device_bays
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 15efdc3b4ec6cf53

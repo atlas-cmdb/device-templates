@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: allied-telesis
+model: PWR250
+slug: pwr250
+kind: other
+part_numbers:
+  - AT-PWR250
+power_ports:
+  - name: PSU {module}
+    type: dc-terminal
+    maximum_draw_w: 250
+comments: 250W AC system power supply
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Allied Telesis/PWR250.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: e779e33ef269cd8c

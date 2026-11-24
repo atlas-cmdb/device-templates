@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: fs
+model: FHX-3LCQSMF73
+slug: fhx-3lcqsmf73
+kind: other
+part_numbers:
+  - "73676"
+front_ports:
+  - name: "{module}:1"
+    type: lc
+    rear_port: "{module}:1"
+    rear_port_position: 1
+  - name: "{module}:2"
+    type: lc
+    rear_port: "{module}:2"
+    rear_port_position: 1
+  - name: "{module}:1-TAP1"
+    type: lc
+    rear_port: "{module}:1"
+    rear_port_position: 2
+  - name: "{module}:1-TAP2"
+    type: lc
+    rear_port: "{module}:1"
+    rear_port_position: 3
+  - name: "{module}:2-TAP1"
+    type: lc
+    rear_port: "{module}:2"
+    rear_port_position: 2
+  - name: "{module}:2-TAP2"
+    type: lc
+    rear_port: "{module}:2"
+    rear_port_position: 3
+rear_ports:
+  - name: "{module}:1"
+    type: lc
+    positions: 3
+  - name: "{module}:2"
+    type: lc
+    positions: 3
+comments: (discontinued) 3x LC Quad, 12 Fibers OS2 Single Mode FHX TAP Cassette, 70/30 Split Ratio (Live/Tap), 1/10/40/100G
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/FS/FHX-3LCQSMF73.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - front_ports
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: 100b1f3546a72ec3

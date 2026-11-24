@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: N9K-C9516-FAN
+slug: n9k-c9516-fan
+kind: fan
+description: Fan Tray for Cisco Nexus 9516 Chassis, Port-side intake
+part_numbers:
+  - N9K-C9516-FAN
+weight_kg: 5.2
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/N9K-C9516-FAN.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - weight_kg
+  import_hash: 47428f1aa08150b9

@@ -1,0 +1,106 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: qtech
+model: QSW-3470-28TX-AC
+slug: qsw-3470-28tx-ac
+category: network_switch
+form_factor: rack
+part_numbers:
+  - QSW-3470-28TX-AC
+u_height: 1
+full_depth: false
+weight_kg: 3.75
+airflow: right-to-left
+power:
+  psu_count: 1
+interfaces:
+  - name: GigabitEthernet0/1
+    type: 1000base-t
+  - name: GigabitEthernet0/2
+    type: 1000base-t
+  - name: GigabitEthernet0/3
+    type: 1000base-t
+  - name: GigabitEthernet0/4
+    type: 1000base-t
+  - name: GigabitEthernet0/5
+    type: 1000base-t
+  - name: GigabitEthernet0/6
+    type: 1000base-t
+  - name: GigabitEthernet0/7
+    type: 1000base-t
+  - name: GigabitEthernet0/8
+    type: 1000base-t
+  - name: GigabitEthernet0/9
+    type: 1000base-t
+  - name: GigabitEthernet0/10
+    type: 1000base-t
+  - name: GigabitEthernet0/11
+    type: 1000base-t
+  - name: GigabitEthernet0/12
+    type: 1000base-t
+  - name: GigabitEthernet0/13
+    type: 1000base-t
+  - name: GigabitEthernet0/14
+    type: 1000base-t
+  - name: GigabitEthernet0/15
+    type: 1000base-t
+  - name: GigabitEthernet0/16
+    type: 1000base-t
+  - name: GigabitEthernet0/17
+    type: 1000base-t
+  - name: GigabitEthernet0/18
+    type: 1000base-t
+  - name: GigabitEthernet0/19
+    type: 1000base-t
+  - name: GigabitEthernet0/20
+    type: 1000base-t
+  - name: GigabitEthernet0/21
+    type: 1000base-t
+  - name: GigabitEthernet0/22
+    type: 1000base-t
+  - name: GigabitEthernet0/23
+    type: 1000base-t
+  - name: GigabitEthernet0/24
+    type: 1000base-t
+  - name: TenGigabitEthernet0/25
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet0/26
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet0/27
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet0/28
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: con 0
+    type: rj-45
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 24
+links:
+  other:
+    - label: QTECH QSW-3470-28TX-AC
+      url: https://www.qtech.ru/catalog/switches/access/qsw_3470/qsw_3470_28tx_ac/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/QTECH/QSW-3470-28TX-AC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 312a81b18e59c70e

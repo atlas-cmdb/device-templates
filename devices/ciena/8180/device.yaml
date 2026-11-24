@@ -1,0 +1,156 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ciena
+model: "8180"
+slug: "8180"
+category: optical_transport
+form_factor: rack
+part_numbers:
+  - 192-8180-900
+u_height: 2
+full_depth: false
+weight_kg: 15.4
+airflow: front-to-rear
+interfaces:
+  - name: ILAN1
+    type: 100base-tx
+  - name: ILAN2
+    type: 100base-tx
+  - name: AUX
+    type: 1000base-t
+  - name: MGMT
+    type: 1000base-t
+    mgmt_only: true
+  - name: "1"
+    type: 100gbase-x-qsfp28
+  - name: "2"
+    type: 100gbase-x-qsfp28
+  - name: "3"
+    type: 100gbase-x-qsfp28
+  - name: "4"
+    type: 100gbase-x-qsfp28
+  - name: "5"
+    type: 100gbase-x-qsfp28
+  - name: "6"
+    type: 100gbase-x-qsfp28
+  - name: "7"
+    type: 100gbase-x-qsfp28
+  - name: "8"
+    type: 100gbase-x-qsfp28
+  - name: "9"
+    type: 100gbase-x-qsfp28
+  - name: "10"
+    type: 100gbase-x-qsfp28
+  - name: "11"
+    type: 100gbase-x-qsfp28
+  - name: "12"
+    type: 100gbase-x-qsfp28
+  - name: "13"
+    type: 100gbase-x-qsfp28
+  - name: "14"
+    type: 100gbase-x-qsfp28
+  - name: "15"
+    type: 100gbase-x-qsfp28
+  - name: "16"
+    type: 100gbase-x-qsfp28
+  - name: "17"
+    type: 100gbase-x-qsfp28
+  - name: "18"
+    type: 100gbase-x-qsfp28
+  - name: "19"
+    type: 100gbase-x-qsfp28
+  - name: "20"
+    type: 100gbase-x-qsfp28
+  - name: "21"
+    type: 100gbase-x-qsfp28
+  - name: "22"
+    type: 100gbase-x-qsfp28
+  - name: "23"
+    type: 100gbase-x-qsfp28
+  - name: "24"
+    type: 100gbase-x-qsfp28
+  - name: "25"
+    type: 100gbase-x-qsfp28
+  - name: "26"
+    type: 100gbase-x-qsfp28
+  - name: "27"
+    type: 100gbase-x-qsfp28
+  - name: "28"
+    type: 100gbase-x-qsfp28
+  - name: "29"
+    type: 100gbase-x-qsfp28
+  - name: "30"
+    type: 100gbase-x-qsfp28
+  - name: "31"
+    type: 100gbase-x-qsfp28
+  - name: "32"
+    type: 100gbase-x-qsfp28
+console_ports:
+  - name: CONSOLE
+    type: rj-45
+  - name: USB
+    type: usb-a
+  - name: 1PPS
+    description: Mini SMB interface for 1PPS/ToD in/out (software selectable)
+    type: other
+  - name: CLK
+    description: Mini SMB GPS (10 MHz) coax connector, in or out, (SW selectable)
+    type: other
+  - name: BITS
+    description: RJ45 BITS in or out, ToD in or out, or 1PPS in or out
+    type: rj-45
+module_bays:
+  - name: PS A
+    description: |-
+      192-0002-900 8180, DC PLUGGABLE POWER SUPPLY, 2200W
+      192-0003-900 8180, AC PLUGGABLE POWER SUPPLY, 2200W
+    bay_position: A
+  - name: PS B
+    description: |-
+      192-0002-900 8180, DC PLUGGABLE POWER SUPPLY, 2200W
+      192-0003-900 8180, AC PLUGGABLE POWER SUPPLY, 2200W
+    bay_position: B
+  - name: Module 1
+    description: |-
+      * 192-0001-900 1xWAVELOGIC AI 35G/56GBAUD C-BAND FRU MODULE
+      * 192-0050-900 4x100G CFP2-DCO
+    bay_position: "1"
+  - name: Module 2
+    description: |-
+      * 192-0001-900 1xWAVELOGIC AI 35G/56GBAUD C-BAND FRU MODULE
+      * 192-0050-900 4x100G CFP2-DCO
+    bay_position: "2"
+  - name: Module 3
+    description: |-
+      * 192-0001-900 1xWAVELOGIC AI 35G/56GBAUD C-BAND FRU MODULE
+      * 192-0050-900 4x100G CFP2-DCO
+    bay_position: "3"
+  - name: Module 4
+    description: |-
+      * 192-0001-900 1xWAVELOGIC AI 35G/56GBAUD C-BAND FRU MODULE
+      * 192-0050-900 4x100G CFP2-DCO
+    bay_position: "4"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ciena/8180.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 30c9eab528e1e34f

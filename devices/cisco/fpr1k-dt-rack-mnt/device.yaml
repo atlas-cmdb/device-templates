@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: FPR1K-DT-RACK-MNT
+slug: fpr1k-dt-rack-mnt
+category: firewall
+form_factor: rack
+part_numbers:
+  - FPR1K-DT-RACK-MNT
+u_height: 2
+full_depth: true
+subdevice_role: parent
+weight_kg: 0.9
+device_bays:
+  - name: slot-1
+  - name: slot-2
+links:
+  manual: https://www.cisco.com/c/en/us/td/docs/security/firepower/1010/hw/guide/hw-install-1010/mount.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/FPR1K-DT-RACK-MNT.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - device_bays
+    - full_depth
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 7907d0db85567a29

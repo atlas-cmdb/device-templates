@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerScale A300
+slug: powerscale-a300
+category: storage_array
+form_factor: rack
+part_numbers:
+  - R4U31A
+u_height: 4
+full_depth: true
+weight_kg: 114
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Gig-E 1
+    type: 32gfc-sfp28
+  - name: Gig-E 2
+    type: 32gfc-sfp28
+  - name: Gig-E 3
+    type: 128gfc-qsfp28
+  - name: Gig-E 4
+    type: 128gfc-qsfp28
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+links:
+  datasheet: https://www.delltechnologies.com/asset/en-us/products/storage/technical-support/h16072-ss-powerscale-archive-nodes.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerScale-A300.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 658c74335737ba6b

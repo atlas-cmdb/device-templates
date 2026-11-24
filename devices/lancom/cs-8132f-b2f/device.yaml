@@ -1,0 +1,136 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lancom
+model: CS-8132F-B2F
+slug: cs-8132f-b2f
+category: network_switch
+form_factor: rack
+part_numbers:
+  - "61910"
+u_height: 1
+full_depth: true
+weight_kg: 7.44
+airflow: rear-to-front
+power:
+  psu_count: 2
+interfaces:
+  - name: 1/0/1
+    type: 100gbase-x-qsfp28
+  - name: 1/0/2
+    type: 100gbase-x-qsfp28
+  - name: 1/0/3
+    type: 100gbase-x-qsfp28
+  - name: 1/0/4
+    type: 100gbase-x-qsfp28
+  - name: 1/0/5
+    type: 100gbase-x-qsfp28
+  - name: 1/0/6
+    type: 100gbase-x-qsfp28
+  - name: 1/0/7
+    type: 100gbase-x-qsfp28
+  - name: 1/0/8
+    type: 100gbase-x-qsfp28
+  - name: 1/0/9
+    type: 100gbase-x-qsfp28
+  - name: 1/0/10
+    type: 100gbase-x-qsfp28
+  - name: 1/0/11
+    type: 100gbase-x-qsfp28
+  - name: 1/0/12
+    type: 100gbase-x-qsfp28
+  - name: 1/0/13
+    type: 100gbase-x-qsfp28
+  - name: 1/0/14
+    type: 100gbase-x-qsfp28
+  - name: 1/0/15
+    type: 100gbase-x-qsfp28
+  - name: 1/0/16
+    type: 100gbase-x-qsfp28
+  - name: 1/0/17
+    type: 100gbase-x-qsfp28
+  - name: 1/0/18
+    type: 100gbase-x-qsfp28
+  - name: 1/0/19
+    type: 100gbase-x-qsfp28
+  - name: 1/0/20
+    type: 100gbase-x-qsfp28
+  - name: 1/0/21
+    type: 100gbase-x-qsfp28
+  - name: 1/0/22
+    type: 100gbase-x-qsfp28
+  - name: 1/0/23
+    type: 100gbase-x-qsfp28
+  - name: 1/0/24
+    type: 100gbase-x-qsfp28
+  - name: 1/0/25
+    type: 100gbase-x-qsfp28
+  - name: 1/0/26
+    type: 100gbase-x-qsfp28
+  - name: 1/0/27
+    type: 100gbase-x-qsfp28
+  - name: 1/0/28
+    type: 100gbase-x-qsfp28
+  - name: 1/0/29
+    type: 100gbase-x-qsfp28
+  - name: 1/0/30
+    type: 100gbase-x-qsfp28
+  - name: 1/0/31
+    type: 100gbase-x-qsfp28
+  - name: 1/0/32
+    type: 100gbase-x-qsfp28
+  - name: mgmt-rj45
+    type: 1000base-t
+    mgmt_only: true
+  - name: mgmt-sfp
+    type: 25gbase-x-sfp28
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: rj-45
+  - name: USB
+    description: USB port for firmware and configuration transfer
+    type: usb-a
+module_bays:
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+  - name: FAN0
+    bay_position: "1"
+  - name: FAN1
+    bay_position: "2"
+  - name: FAN2
+    bay_position: "3"
+links:
+  datasheet: https://www.lancom-systems.de/fileadmin/download/LC-CS-8132F/DS_CS-8132F_DE.pdf
+  manual: https://www.lancom-systems.com/fileadmin/download/LC-SFAN-CS8/DS_SFAN-CS8_EN.pdf
+  other:
+    - label: LANCOM SSPSU-750 Data sheet
+      url: https://www.lancom-systems.com/fileadmin/download/LC-SPSU-750/DS_SPSU-750_EN.pdf
+comments: This is the "Back to Front" Airflow variant.    "Front to Back" variant (Part Number 61909) also available as CS-8132F-F2B.yaml'
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/LANCOM/CS-8132F-B2F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 117ac13ca0d2f5dd

@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: ASG-2015S-E1CR24L
+slug: asg-2015s-e1cr24l
+category: server
+form_factor: rack
+part_numbers:
+  - ASG-2015S-E1CR24L
+u_height: 2
+full_depth: true
+weight_kg: 23.6
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: BMC
+    description: Dedicated IPMI LAN port
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: Slot 1
+    description: PCIe 5.0 x16 slot
+    bay_position: "1"
+  - name: Slot 2
+    description: PCIe 5.0 x8 slot
+    bay_position: "2"
+  - name: Slot 3
+    description: PCIe 5.0 x16 slot
+    bay_position: "3"
+  - name: Slot 4
+    description: PCIe 5.0 x8 slot
+    bay_position: "4"
+  - name: Slot 5
+    description: PCIe 5.0 x16 slot
+    bay_position: "5"
+  - name: Slot 6
+    description: PCIe 5.0 x16 slot
+    bay_position: "6"
+  - name: Slot A1
+    description: PCIe 5.0 x16 AIOM
+    bay_position: A1
+  - name: Slot A2
+    description: PCIe 5.0 x16 AIOM
+    bay_position: A2
+  - name: PSU1
+    description: Upper power supply unit
+    bay_position: "1"
+  - name: PSU2
+    description: Lower power supply unit
+    bay_position: "2"
+links:
+  datasheet: https://www.supermicro.com/en/products/system/datasheet/asg-2015s-e1cr24l
+  manual: https://www.supermicro.com/manuals/superstorage/MNL-2628.pdf
+comments: <br />
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/ASG-2015S-E1CR24L.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1989b1d927b6229e

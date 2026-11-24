@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: juniper
+model: SRX4200-DC
+slug: srx4200-dc
+category: firewall
+form_factor: rack
+part_numbers:
+  - SRX4200-SYS-JB-DC
+u_height: 1
+full_depth: true
+weight_kg: 13.109
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: fxp0
+    type: 1000base-t
+    mgmt_only: true
+  - name: xe-0/0/0
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/1
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/2
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/3
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/4
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/5
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/6
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/7
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    type: rj-45
+module_bays:
+  - name: PSU 0
+    bay_position: "0"
+  - name: PSU 1
+    bay_position: "1"
+links:
+  datasheet: https://www.juniper.net/content/dam/www/assets/datasheets/us/en/security/srx4100-srx4200-firewall-datasheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Juniper/SRX4200-DC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 8756ebd975747c86

@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lifesafety-power
+model: NetLink Connect
+slug: netlink-connect
+category: appliance
+form_factor: rack
+part_numbers:
+  - NLC
+u_height: 1
+full_depth: false
+weight_kg: 0.113
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: Network
+    type: 100base-tx
+power_ports:
+  - name: PSU
+    type: dc-terminal
+links:
+  product_page: https://www.lifesafetypower.com/en/products/boards---components/network-connectivity-modules
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/LifeSafety Power/NLC.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 41180f01862990ce

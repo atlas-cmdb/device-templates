@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: UCSC-RAID-11-C240
+slug: ucsc-raid-11-c240
+kind: storage
+part_numbers:
+  - UCSC-RAID-11-C240
+links:
+  other:
+    - label: LSI 2008 SAS RAID MEZZANINE CARD
+      url: https://www.provantage.com/cisco-systems-ucsc-raid-11-c240~7CSC9QAX.htm
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/UCSC-RAID-11-C240.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 331c5d5d8f759d9b

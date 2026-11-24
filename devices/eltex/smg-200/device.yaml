@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eltex
+model: SMG-200
+slug: smg-200
+category: network_switch
+form_factor: rack
+part_numbers:
+  - SMG-200
+u_height: 1
+full_depth: false
+weight_kg: 2.47
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: Eth1
+    type: 1000base-t
+  - name: Eth2
+    type: 1000base-t
+  - name: Eth3
+    type: 1000base-t
+  - name: Eth4
+    type: 1000base-t
+  - name: fxo1
+    type: xdsl
+  - name: fxo2
+    type: xdsl
+  - name: fxo3
+    type: xdsl
+  - name: fxo4
+    type: xdsl
+  - name: fxo5
+    type: xdsl
+  - name: fxo6
+    type: xdsl
+  - name: fxo7
+    type: xdsl
+  - name: fxo8
+    type: xdsl
+  - name: fxo9
+    type: xdsl
+  - name: fxo10
+    type: xdsl
+  - name: fxo11
+    type: xdsl
+  - name: fxo12
+    type: xdsl
+  - name: fxo13
+    type: xdsl
+  - name: fxo14
+    type: xdsl
+  - name: fxo15
+    type: xdsl
+  - name: fxo16
+    type: xdsl
+console_ports:
+  - name: console01
+    type: rj-45
+power_ports:
+  - name: PSU1
+    type: iec-60320-c14
+    maximum_draw_w: 25
+links:
+  datasheet: https://api.prod.eltex-co.ru/storage/upload_center/files/38/SMG-200_datasheet_3.406.1.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eltex/SMG-200.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 867b34952c773371

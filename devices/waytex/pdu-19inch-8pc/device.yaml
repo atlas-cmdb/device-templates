@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: waytex
+model: PDU-19inch-8PC
+slug: pdu-19inch-8pc
+category: pdu
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 0.81
+airflow: passive
+power:
+  outlet_count: 8
+power_ports:
+  - name: Primary
+    type: nbr-14136-20a
+    maximum_draw_w: 3500
+power_outlets:
+  - name: Outlet 1
+    type: nbr-14136-10a
+    power_port: Primary
+  - name: Outlet 2
+    type: nbr-14136-10a
+    power_port: Primary
+  - name: Outlet 3
+    type: nbr-14136-10a
+    power_port: Primary
+  - name: Outlet 4
+    type: nbr-14136-10a
+    power_port: Primary
+  - name: Outlet 5
+    type: nbr-14136-10a
+    power_port: Primary
+  - name: Outlet 6
+    type: nbr-14136-10a
+    power_port: Primary
+  - name: Outlet 7
+    type: nbr-14136-10a
+    power_port: Primary
+  - name: Outlet 8
+    type: nbr-14136-10a
+    power_port: Primary
+comments: |-
+  Bloc multiprise boitier alu 8 prises ROUGE + inter rackable 19 -
+  Nombre de prises : 8 ROUGE - Rackable : 19
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Waytex/PDU-19inch-8PC.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 96b7ea97e8a1e445

@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: telcord
+model: MP-4K-6RJ-BK
+slug: mp-4k-6rj-bk
+category: patch_panel
+form_factor: blade
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 0.188
+airflow: passive
+front_ports:
+  - name: Port 1
+    type: 8p8c
+    rear_port: Port 1
+    rear_port_position: 1
+  - name: Port 2
+    type: 8p8c
+    rear_port: Port 2
+    rear_port_position: 1
+  - name: Port 3
+    type: 8p8c
+    rear_port: Port 3
+    rear_port_position: 1
+  - name: Port 4
+    type: 8p8c
+    rear_port: Port 4
+    rear_port_position: 1
+  - name: Port 5
+    type: 8p8c
+    rear_port: Port 5
+    rear_port_position: 1
+  - name: Port 6
+    type: 8p8c
+    rear_port: Port 6
+    rear_port_position: 1
+rear_ports:
+  - name: Port 1
+    type: 8p8c
+  - name: Port 2
+    type: 8p8c
+  - name: Port 3
+    type: 8p8c
+  - name: Port 4
+    type: 8p8c
+  - name: Port 5
+    type: 8p8c
+  - name: Port 6
+    type: 8p8c
+links:
+  other:
+    - label: Copper module 6port
+      url: https://www.telcord.ru/catalog/kassety_dlya_krossa_opticheskogo/telcord-m-4k-6rj-bk-modul-dlya-ks-p-ks-mp-do-6-portov-dlya-moduley-keystone-jack-chernyy-pustoy/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Telcord/MP-4K-6RJ-BK.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - front_ports
+    - full_depth
+    - links.other
+    - manufacturer
+    - model
+    - rear_ports
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: b14fffa80cee6f0b

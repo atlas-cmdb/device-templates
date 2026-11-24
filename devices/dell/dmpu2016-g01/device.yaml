@@ -1,0 +1,112 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: DMPU2016-G01
+slug: dmpu2016-g01
+category: server
+form_factor: rack
+part_numbers:
+  - A7485893
+u_height: 1
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: mgmt1
+    type: 1000base-t
+  - name: mgmt2
+    type: 1000base-t
+console_ports:
+  - name: PDU1
+    type: rj-45
+  - name: PDU2
+    type: rj-45
+  - name: MODEM
+    type: rj-45
+  - name: SETUP
+    type: rj-45
+  - name: ACI
+    type: rj-45
+  - name: usb1
+    type: usb-a
+  - name: usb2
+    type: usb-a
+  - name: usb3
+    type: usb-a
+  - name: usb4
+    type: usb-a
+console_server_ports:
+  - name: "1"
+    type: rj-45
+  - name: "2"
+    type: rj-45
+  - name: "3"
+    type: rj-45
+  - name: "4"
+    type: rj-45
+  - name: "5"
+    type: rj-45
+  - name: "6"
+    type: rj-45
+  - name: "7"
+    type: rj-45
+  - name: "8"
+    type: rj-45
+  - name: "9"
+    type: rj-45
+  - name: "10"
+    type: rj-45
+  - name: "11"
+    type: rj-45
+  - name: "12"
+    type: rj-45
+  - name: "13"
+    type: rj-45
+  - name: "14"
+    type: rj-45
+  - name: "15"
+    type: rj-45
+  - name: "16"
+    type: rj-45
+power_ports:
+  - name: ps1
+    type: iec-60320-c14
+    maximum_draw_w: 18
+  - name: ps2
+    type: iec-60320-c14
+    maximum_draw_w: 18
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  other:
+    - label: Manufacturer Part DMPU2016 | Dell Part A7485893 | Order Code A7485893 | DELL VERTIV
+      url: https://www.dell.com/en-uk/shop/dell-dmpu2016-g01-16-port-remote-kvm-switch-with-two-remote-users-one-local-user-dual-power-supply/apd/a7485893/networking
+comments: Dell DMPU2016-G01 16-port remote KVM switch with two remote users, one local user, dual power supply
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/DMPU2016-G01.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: bbb764546d9f15a6

@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: N5696-M4C
+slug: n5696-m4c
+kind: other
+description: 4-Port 100-Gbps Line-Card Expansion Module
+part_numbers:
+  - N5696-M4C
+interfaces:
+  - name: Ethernet{module}/1
+    type: 100gbase-x-cxp
+  - name: Ethernet{module}/2
+    type: 100gbase-x-cxp
+  - name: Ethernet{module}/3
+    type: 100gbase-x-cxp
+  - name: Ethernet{module}/4
+    type: 100gbase-x-cxp
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html
+comments: supports 100 Gigabit Ethernet with CXP optics
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/N5696-M4C.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - description
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 4424b21825b3c7e8

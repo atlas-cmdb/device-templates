@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lancom
+model: ISG-4000
+slug: isg-4000
+category: network_switch
+form_factor: rack
+part_numbers:
+  - "61075"
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: ETH-1 RJ45
+    type: 1000base-t
+  - name: ETH-1 SFP
+    type: 1000base-x-sfp
+  - name: ETH-2 RJ45
+    type: 1000base-t
+  - name: ETH-2 SFP
+    type: 1000base-x-sfp
+  - name: ETH-3 RJ45
+    type: 1000base-t
+  - name: ETH-3 SFP
+    type: 1000base-x-sfp
+  - name: ETH-4 RJ45
+    type: 1000base-t
+  - name: ETH-4 SFP
+    type: 1000base-x-sfp
+  - name: ETH-5
+    type: 1000base-t
+  - name: ETH-6
+    type: 10gbase-x-sfpp
+  - name: ETH-7
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: com
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 50
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/LANCOM/ISG-4000.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 9317b03c1ee86d1b

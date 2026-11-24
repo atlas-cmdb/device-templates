@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: hpe
+name: HPE
+aliases:
+  - HP
+  - Hewlett Packard Enterprise
+  - Hewlett-Packard
+  - Aruba
+  - 3Com
+  - H3C
+website: https://www.hpe.com

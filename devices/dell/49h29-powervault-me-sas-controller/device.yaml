@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: 49H29 PowerVault ME SAS Controller
+slug: 49h29-powervault-me-sas-controller
+category: storage_array
+form_factor: blade
+part_numbers:
+  - 49H29
+u_height: 0
+full_depth: false
+subdevice_role: child
+airflow: front-to-rear
+interfaces:
+  - name: mgmtport_{module}
+    type: 1000base-t
+    mgmt_only: true
+  - name: SAS {module}0
+    type: other
+  - name: SAS {module}1
+    type: other
+  - name: SAS {module}2
+    type: other
+  - name: SAS {module}3
+    type: other
+  - name: Expansion Port {module}0
+    type: other
+console_ports:
+  - name: Serial{module}
+    type: usb-mini-b
+comments: SAS 4 Port Controller for use in the Dell ME4012, ME4024, and ME4084
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/49H29.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: ebbc3414f4af5be1

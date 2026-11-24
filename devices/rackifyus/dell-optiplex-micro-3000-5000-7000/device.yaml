@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: rackifyus
+model: Dell-OptiPlex-Micro-3000-5000-7000
+slug: dell-optiplex-micro-3000-5000-7000
+category: other
+form_factor: rack
+u_height: 1
+full_depth: false
+airflow: passive
+module_bays:
+  - name: "1"
+    bay_position: "1"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/RackifyUS/dell-optiplex-micro-3000-5000-7000.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - u_height
+  import_hash: 6f7c6b43b8712766

@@ -1,0 +1,109 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: mellanox
+model: SN4700
+slug: sn4700
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0
+    type: 1000base-t
+    mgmt_only: true
+  - name: swp1
+    type: 400gbase-x-qsfpdd
+  - name: swp2
+    type: 400gbase-x-qsfpdd
+  - name: swp3
+    type: 400gbase-x-qsfpdd
+  - name: swp4
+    type: 400gbase-x-qsfpdd
+  - name: swp5
+    type: 400gbase-x-qsfpdd
+  - name: swp6
+    type: 400gbase-x-qsfpdd
+  - name: swp7
+    type: 400gbase-x-qsfpdd
+  - name: swp8
+    type: 400gbase-x-qsfpdd
+  - name: swp9
+    type: 400gbase-x-qsfpdd
+  - name: swp10
+    type: 400gbase-x-qsfpdd
+  - name: swp11
+    type: 400gbase-x-qsfpdd
+  - name: swp12
+    type: 400gbase-x-qsfpdd
+  - name: swp13
+    type: 400gbase-x-qsfpdd
+  - name: swp14
+    type: 400gbase-x-qsfpdd
+  - name: swp15
+    type: 400gbase-x-qsfpdd
+  - name: swp16
+    type: 400gbase-x-qsfpdd
+  - name: swp17
+    type: 400gbase-x-qsfpdd
+  - name: swp18
+    type: 400gbase-x-qsfpdd
+  - name: swp19
+    type: 400gbase-x-qsfpdd
+  - name: swp20
+    type: 400gbase-x-qsfpdd
+  - name: swp21
+    type: 400gbase-x-qsfpdd
+  - name: swp22
+    type: 400gbase-x-qsfpdd
+  - name: swp23
+    type: 400gbase-x-qsfpdd
+  - name: swp24
+    type: 400gbase-x-qsfpdd
+  - name: swp25
+    type: 400gbase-x-qsfpdd
+  - name: swp26
+    type: 400gbase-x-qsfpdd
+  - name: swp27
+    type: 400gbase-x-qsfpdd
+  - name: swp28
+    type: 400gbase-x-qsfpdd
+  - name: swp29
+    type: 400gbase-x-qsfpdd
+  - name: swp30
+    type: 400gbase-x-qsfpdd
+  - name: swp31
+    type: 400gbase-x-qsfpdd
+  - name: swp32
+    type: 400gbase-x-qsfpdd
+console_ports:
+  - name: con0
+    type: rj-45
+power_ports:
+  - name: psu0
+    type: iec-60320-c14
+  - name: psu1
+    type: iec-60320-c14
+links:
+  manual: https://network.nvidia.com/files/doc-2020/br-sn4000-series.pdf
+comments: "Data sheet:"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Mellanox/SN4700.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 8b912caf166b1959

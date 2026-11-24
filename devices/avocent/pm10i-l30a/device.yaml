@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: avocent
+model: PM10i-L30A
+slug: pm10i-l30a
+category: pdu
+form_factor: rack
+u_height: 1
+full_depth: false
+power:
+  outlet_count: 10
+console_ports:
+  - name: In
+    type: rj-45
+  - name: Out
+    type: rj-45
+power_ports:
+  - name: Power Port 1
+    type: nema-l6-30p
+    maximum_draw_w: 3600
+power_outlets:
+  - name: PM-1
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: PM-2
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: PM-3
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: PM-4
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: PM-5
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: PM-6
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: PM-7
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: PM-8
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: PM-9
+    type: iec-60320-c13
+    power_port: Power Port 1
+  - name: PM-10
+    type: iec-60320-c13
+    power_port: Power Port 1
+comments: AlterPath PM10i-L30A
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Avocent/PM10i-L30A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - manufacturer
+    - model
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 78b7a19f70bef65b

@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: BN450M
+slug: bn450m
+category: pdu
+form_factor: rack
+u_height: 3
+full_depth: false
+power:
+  outlet_count: 7
+power_ports:
+  - name: Input
+    type: nema-5-15p
+power_outlets:
+  - name: Battery + Surge - Outlet 1
+    type: nema-5-15r
+  - name: Battery + Surge - Outlet 2
+    type: nema-5-15r
+  - name: Battery + Surge - Outlet 3
+    type: nema-5-15r
+  - name: Battery + Surge - Outlet 4
+    type: nema-5-15r
+  - name: Battery + Surge - Outlet 5
+    type: nema-5-15r
+  - name: Surge - Outlet 1
+    type: nema-5-15r
+  - name: Surge - Outlet 2
+    type: nema-5-15r
+links:
+  datasheet: https://www.se.com/ww/en/product/download-pdf/BN450M
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/BN450M.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - links.datasheet
+    - manufacturer
+    - model
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 9125f9ebbd70e075

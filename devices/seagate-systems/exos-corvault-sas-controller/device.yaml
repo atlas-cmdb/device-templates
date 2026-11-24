@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: seagate-systems
+model: Exos CORVAULT SAS Controller
+slug: exos-corvault-sas-controller
+category: compute_blade
+form_factor: blade
+part_numbers:
+  - R4106I2500T002-controller
+u_height: 0
+full_depth: true
+subdevice_role: child
+interfaces:
+  - name: SAS 0
+    type: other
+  - name: SAS 1
+    type: other
+  - name: SAS 2
+    type: other
+  - name: SAS 3
+    type: other
+  - name: management
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: manufacturer-do-not-use
+    type: usb-micro-a
+  - name: serial
+    type: usb-micro-a
+comments: activ-activ velosCT Controller with 4x MiniSAS HD Ports
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Seagate Systems/exos-corvault-sas-controller.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 00472f1bf748ff23

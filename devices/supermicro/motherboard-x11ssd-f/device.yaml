@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: Motherboard X11SSD-F
+slug: motherboard-x11ssd-f
+category: server
+form_factor: blade
+part_numbers:
+  - MBD-X11SSD-F
+u_height: 0
+full_depth: true
+subdevice_role: child
+airflow: front-to-rear
+interfaces:
+  - name: BMC
+    description: Dedicated BMC IPMI port
+    type: 1000base-t
+    mgmt_only: true
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+module_bays:
+  - name: PCI-E 1
+    description: PCIe 3.0 x8 (Micro Low Profile)
+    bay_position: "1"
+  - name: PCI-E 2
+    description: PCIe 3.0 x8 (Low Profile)
+    bay_position: "2"
+comments: Supermicro motherboard X11SSD-F (https://www.supermicro.com/en/products/motherboard/X11SSD-F)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/MBD-X11SSD-F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 5127db285c97a929

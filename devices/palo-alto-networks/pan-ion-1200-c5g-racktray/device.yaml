@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: palo-alto-networks
+model: PAN-ION-1200-C5G-RACKTRAY
+slug: pan-ion-1200-c5g-racktray
+category: firewall
+form_factor: rack
+u_height: 1
+full_depth: true
+subdevice_role: parent
+airflow: passive
+device_bays:
+  - name: ION device
+comments: Holds one cellular variant of an ION 1200 device in a four-post rack.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Palo Alto Networks/PAN-ION-1200-C5G-RACKTRAY.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - device_bays
+    - full_depth
+    - manufacturer
+    - model
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 1299d3ec30d92146

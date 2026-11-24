@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cable-matters
+model: 1U 24-Port Cat6 Ethernet Patch Panel
+slug: 1u-24-port-cat6-ethernet-patch-panel
+category: patch_panel
+form_factor: rack
+description: 19-Inch, Inline Keystone, Cable Management Bar, Rackmount or Wall Mount Network Patch Panel
+part_numbers:
+  - "180137"
+u_height: 1
+full_depth: false
+weight_kg: 0.454
+airflow: passive
+module_bays:
+  - name: "1"
+    bay_position: "1"
+  - name: "2"
+    bay_position: "2"
+  - name: "3"
+    bay_position: "3"
+  - name: "4"
+    bay_position: "4"
+  - name: "5"
+    bay_position: "5"
+  - name: "6"
+    bay_position: "6"
+  - name: "7"
+    bay_position: "7"
+  - name: "8"
+    bay_position: "8"
+  - name: "9"
+    bay_position: "9"
+  - name: "10"
+    bay_position: "10"
+  - name: "11"
+    bay_position: "11"
+  - name: "12"
+    bay_position: "12"
+  - name: "13"
+    bay_position: "13"
+  - name: "14"
+    bay_position: "14"
+  - name: "15"
+    bay_position: "15"
+  - name: "16"
+    bay_position: "16"
+  - name: "17"
+    bay_position: "17"
+  - name: "18"
+    bay_position: "18"
+  - name: "19"
+    bay_position: "19"
+  - name: "20"
+    bay_position: "20"
+  - name: "21"
+    bay_position: "21"
+  - name: "22"
+    bay_position: "22"
+  - name: "23"
+    bay_position: "23"
+  - name: "24"
+    bay_position: "24"
+links:
+  other:
+    - label: 1U 24-Port Cat6 Ethernet Patch Panel
+      url: https://www.cablematters.com/pc-1706-162-1u-24-port-utp-cat-6-ethernet-patch-panel-with-inline-keystone.aspx
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cable Matters/180137.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: a5a5952a127772de

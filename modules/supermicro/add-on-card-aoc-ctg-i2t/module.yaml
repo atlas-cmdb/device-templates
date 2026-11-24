@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: supermicro
+model: Add-on Card AOC-CTG-i2T
+slug: add-on-card-aoc-ctg-i2t
+kind: other
+description: Intel X540 10GbE controller with integrated 10GBase-T
+part_numbers:
+  - AOC-CTG-i2T
+interfaces:
+  - name: Gig-E 1
+    type: 10gbase-t
+  - name: Gig-E 2
+    type: 10gbase-t
+comments: Supermicro AOC-CTG-i2T (https://www.supermicro.com/en/products/accessories/addon/AOC-CTG-i2T.php)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Supermicro/AOC-CTG-i2T.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - description
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 2fecc7f610827ac8

@@ -1,0 +1,156 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: Nexus 3548P-10G
+slug: nexus-3548p-10g
+category: network_switch
+form_factor: rack
+part_numbers:
+  - N3K-C3548P-10G
+u_height: 1
+full_depth: true
+weight_kg: 7.9
+power:
+  psu_count: 2
+interfaces:
+  - name: mgmt0
+    type: 1000base-t
+    mgmt_only: true
+  - name: Ethernet1/1
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/2
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/3
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/4
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/5
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/6
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/7
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/8
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/9
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/10
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/11
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/12
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/13
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/14
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/15
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/16
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/17
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/18
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/19
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/20
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/21
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/22
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/23
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/24
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/25
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/26
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/27
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/28
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/29
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/30
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/31
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/32
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/33
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/34
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/35
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/36
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/37
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/38
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/39
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/40
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/41
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/42
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/43
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/44
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/45
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/46
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/47
+    type: 10gbase-x-sfpp
+  - name: Ethernet1/48
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: console
+    type: rj-45
+module_bays:
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+  - name: Fan 1
+    bay_position: "1"
+  - name: Fan 2
+    bay_position: "2"
+  - name: Fan 3
+    bay_position: "3"
+  - name: Fan 4
+    bay_position: "4"
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3548-switch/data_sheet_c78-707001.html
+  manual: https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus3548/hw/installation/guide/b_n3500_hardware_install_guide/b_n3500_hardware_install_guide_chapter_01.html
+comments: /
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/N3K-C3548P-10G.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: e22a001fe23d887d

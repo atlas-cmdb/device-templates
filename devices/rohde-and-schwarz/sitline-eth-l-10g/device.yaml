@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: rohde-and-schwarz
+model: SITLine ETH-L 10G
+slug: sitline-eth-l-10g
+category: server
+form_factor: rack
+part_numbers:
+  - 5414.6282.23
+u_height: 1
+full_depth: false
+power:
+  psu_count: 2
+interfaces:
+  - name: A1
+    type: 10gbase-x-sfpp
+  - name: X1
+    type: 10gbase-x-sfpp
+  - name: MGMT
+    type: 1000base-x-sfp
+    mgmt_only: true
+module_bays:
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Rohde & Schwarz/SITLine-ETH-L-10G.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+  import_hash: 2b9dd918f2049c7b

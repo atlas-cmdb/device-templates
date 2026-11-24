@@ -1,0 +1,80 @@
+name: Issue to pull request
+
+# A maintainer adds the `approved` label to an "Add a device" or "Add photos" issue; this workflow
+# turns the form into template files, validates them and opens a pull request that closes the issue.
+# The issue body is untrusted: it is passed only through environment variables, never into `run:`.
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  convert:
+    if: >-
+      github.event.label.name == 'approved' &&
+      (contains(github.event.issue.labels.*.name, 'new-device') || contains(github.event.issue.labels.*.name, 'photos'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Convert issue
+        id: convert
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+        run: node scripts/issue-to-pr.mjs
+      - name: Validate
+        id: validate
+        env:
+          TEMPLATE_PATH: ${{ steps.convert.outputs.path }}
+        run: |
+          set -o pipefail
+          npm run --silent validate -- "$TEMPLATE_PATH" 2>&1 | tee "$RUNNER_TEMP/validate.txt"
+      - uses: peter-evans/create-pull-request@v7
+        id: pr
+        with:
+          branch: ${{ steps.convert.outputs.branch }}
+          delete-branch: true
+          commit-message: ${{ steps.convert.outputs.title }}
+          title: ${{ steps.convert.outputs.title }}
+          labels: from-issue
+          body: |
+            ${{ steps.convert.outputs.summary }}
+
+            Closes #${{ github.event.issue.number }}
+
+            Generated from the issue form. Please check category, port names and that the photos are cropped to the faceplate before merging.
+      - name: Report back
+        if: steps.pr.outputs.pull-request-url
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_URL: ${{ steps.pr.outputs.pull-request-url }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body "Thanks! I opened $PR_URL from this issue; a maintainer will review it."
+      - name: Report failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+          CONVERT_ERROR: ${{ steps.convert.outputs.error }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          {
+            echo "I could not turn this issue into a template automatically."
+            echo
+            if [ -n "$CONVERT_ERROR" ]; then echo "> $CONVERT_ERROR"; echo; fi
+            if [ -s "$RUNNER_TEMP/validate.txt" ]; then echo '```'; tail -n 30 "$RUNNER_TEMP/validate.txt"; echo '```'; fi
+            echo "Edit the issue and remove/re-add the \`approved\` label to retry. [Run log]($RUN_URL)"
+          } > "$RUNNER_TEMP/comment.md"
+          gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/comment.md"

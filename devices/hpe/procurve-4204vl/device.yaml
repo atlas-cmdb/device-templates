@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: ProCurve 4204vl
+slug: procurve-4204vl
+category: network_switch
+form_factor: rack
+part_numbers:
+  - J8770A
+u_height: 3
+full_depth: false
+weight_kg: 9.41
+power:
+  psu_count: 2
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+  - name: Slot A
+    bay_position: A
+  - name: Slot B
+    bay_position: B
+  - name: Slot C
+    bay_position: C
+  - name: Slot D
+    bay_position: D
+links:
+  datasheet: https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=c01811840
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/ProCurve-4204vl.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: ead50295df841164

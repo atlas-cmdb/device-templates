@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: SMT1500RMI2UC
+slug: smt1500rmi2uc
+category: ups
+form_factor: rack
+part_numbers:
+  - SMT1500RMI2UC
+u_height: 2
+full_depth: true
+weight_kg: 38.24
+airflow: front-to-rear
+power:
+  outlet_count: 4
+  psu_count: 1
+interfaces:
+  - name: SmartConnect
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: rj-45
+  - name: USB
+    type: usb-b
+power_ports:
+  - name: Source
+    type: iec-60320-c14
+    maximum_draw_w: 3600
+power_outlets:
+  - name: Group 1 Outlet 1
+    type: iec-60320-c13
+    power_port: Source
+  - name: Group 1 Outlet 2
+    type: iec-60320-c13
+    power_port: Source
+  - name: Group 2 Outlet 1
+    type: iec-60320-c13
+    power_port: Source
+  - name: Group 2 Outlet 2
+    type: iec-60320-c13
+    power_port: Source
+module_bays:
+  - name: SmartSlot
+    bay_position: SmartSlot
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+comments: APC Smart-UPS, Line Interactive, 1500VA, 2HE, 230V, 4 IEC C13-Stecker, SmartConnect Port+SmartSlot, AVR, LCD
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/SMT1500RMI2UC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: f1141cdc153fca23

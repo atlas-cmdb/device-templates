@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: afl
+model: U-Series Housing 1RU, 5 Cassettes
+slug: u-series-housing-1ru-5-cassettes
+category: other
+form_factor: rack
+part_numbers:
+  - FXUCXXBXXX-01BH
+u_height: 1
+full_depth: false
+weight_kg: 1.6
+module_bays:
+  - name: A
+    bay_position: A
+  - name: B
+    bay_position: B
+  - name: C
+    bay_position: C
+  - name: D
+    bay_position: D
+  - name: E
+    bay_position: E
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/AFL/FXUCXXBXXX-01BH.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 28e4e43369a873f4

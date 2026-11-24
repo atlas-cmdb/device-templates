@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: extreme-networks
+model: 5520-VIM-4XE
+slug: 5520-vim-4xe
+kind: other
+part_numbers:
+  - 5520-VIM-4XE
+weight_kg: 0.2
+interfaces:
+  - name: VIM1
+    type: 10gbase-x-sfpp
+  - name: VIM2
+    type: 10gbase-x-sfpp
+  - name: VIM3
+    type: 10gbase-x-sfpp
+  - name: VIM4
+    type: 10gbase-x-sfpp
+comments: 4 x 10Gbase-X SFP+ ports (unpopulated), MACSec capable
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Extreme Networks/5520-VIM-4XE.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - weight_kg
+  import_hash: 5c0a3f9035f8b42c

@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: sophos
+model: SD-RED 20
+slug: sd-red-20
+category: firewall
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 1
+airflow: left-to-right
+power:
+  psu_count: 2
+interfaces:
+  - name: WAN1 SFP
+    type: 1000base-x-sfp
+  - name: WAN1
+    type: 1000base-t
+  - name: LAN1
+    type: 1000base-t
+  - name: LAN2
+    type: 1000base-t
+  - name: LAN3
+    type: 1000base-t
+  - name: LAN4
+    type: 1000base-t
+console_ports:
+  - name: COM USB
+    type: usb-micro-b
+power_ports:
+  - name: DC In 1
+    type: other
+    maximum_draw_w: 23
+    allocated_draw_w: 6
+  - name: DC In 2
+    type: other
+    maximum_draw_w: 23
+    allocated_draw_w: 6
+module_bays:
+  - name: A
+    bay_position: A
+links:
+  manual: https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Sophos/SD-RED-20.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: d64445b94bd4d24c

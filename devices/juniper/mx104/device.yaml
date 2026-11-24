@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: juniper
+model: MX104
+slug: mx104
+category: router
+form_factor: rack
+u_height: 4
+full_depth: true
+weight_kg: 9
+airflow: right-to-left
+interfaces:
+  - name: xe-2/0/0
+    type: 10gbase-x-sfpp
+  - name: xe-2/0/1
+    type: 10gbase-x-sfpp
+  - name: xe-2/0/2
+    type: 10gbase-x-sfpp
+  - name: xe-2/0/3
+    type: 10gbase-x-sfpp
+module_bays:
+  - name: PEM0
+    bay_position: "0"
+  - name: PEM1
+    bay_position: "1"
+  - name: RE0
+    bay_position: "0"
+  - name: RE1
+    bay_position: "1"
+  - name: MIC0/0
+    bay_position: 0/0
+  - name: MIC0/1
+    bay_position: 0/1
+  - name: MIC1/0
+    bay_position: 1/0
+  - name: MIC1/1
+    bay_position: 1/1
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Juniper/MX104.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 5eef6800c824545f

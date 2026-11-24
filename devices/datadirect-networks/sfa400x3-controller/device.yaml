@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: datadirect-networks
+model: SFA400X3 Controller
+slug: sfa400x3-controller
+category: compute_blade
+form_factor: blade
+u_height: 0
+full_depth: true
+subdevice_role: child
+airflow: front-to-rear
+interfaces:
+  - name: bmc
+    type: 1000base-t
+    mgmt_only: true
+  - name: halink
+    description: Inter-controller HA link
+    type: 1000base-t
+  - name: mgmt0
+    type: 10gbase-t
+    mgmt_only: true
+  - name: mgmt1
+    type: 10gbase-t
+    mgmt_only: true
+  - name: mlxen0
+    type: 400gbase-x-qsfp112
+  - name: mlxen1
+    type: 400gbase-x-qsfp112
+links:
+  product_page: https://www.ddn.com/products/ai400x3/
+comments: |-
+  Controller module for the DDN SFA400X3E / SFA400X3IE (AI400X3) enclosure.
+  halink is the inter-controller high-availability link.
+  Product page:
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/DataDirect Networks/SFA400X3-Controller.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: d10105bf5e6ce605

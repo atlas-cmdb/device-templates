@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: juniper
+model: NetScreen SSG-140
+slug: netscreen-ssg-140
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 4.627
+airflow: side-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: ethernet0/0
+    type: 100base-tx
+  - name: ethernet0/1
+    type: 100base-tx
+  - name: ethernet0/2
+    type: 100base-tx
+  - name: ethernet0/3
+    type: 100base-tx
+  - name: ethernet0/4
+    type: 100base-tx
+  - name: ethernet0/5
+    type: 100base-tx
+  - name: ethernet0/6
+    type: 100base-tx
+  - name: ethernet0/7
+    type: 100base-tx
+  - name: ethernet0/8
+    type: 1000base-t
+  - name: ethernet0/9
+    type: 1000base-t
+console_ports:
+  - name: AUX
+    type: rj-45
+  - name: Console
+    type: rj-45
+  - name: USB
+    type: usb-a
+power_ports:
+  - name: PSU0
+    type: iec-60320-c14
+    maximum_draw_w: 440
+module_bays:
+  - name: PIM Slot 1
+    bay_position: "1"
+  - name: PIM Slot 2
+    bay_position: "2"
+  - name: PIM Slot 3
+    bay_position: "3"
+  - name: PIM Slot 4
+    bay_position: "4"
+links:
+  manual: https://www.juniper.net/documentation/hardware/netscreen-systems/netscreen-systems60/HW_SSG140_600.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Juniper/NetScreen-SSG-140.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: ed61568d0063c729

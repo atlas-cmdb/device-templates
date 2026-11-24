@@ -1,0 +1,97 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: zyxel
+model: GS1900-24
+slug: gs1900-24
+category: network_switch
+form_factor: rack
+part_numbers:
+  - GS1900-24E
+u_height: 1
+full_depth: false
+weight_kg: 2
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: "1"
+    type: 1000base-t
+  - name: "2"
+    type: 1000base-t
+  - name: "3"
+    type: 1000base-t
+  - name: "4"
+    type: 1000base-t
+  - name: "5"
+    type: 1000base-t
+  - name: "6"
+    type: 1000base-t
+  - name: "7"
+    type: 1000base-t
+  - name: "8"
+    type: 1000base-t
+  - name: "9"
+    type: 1000base-t
+  - name: "10"
+    type: 1000base-t
+  - name: "11"
+    type: 1000base-t
+  - name: "12"
+    type: 1000base-t
+  - name: "13"
+    type: 1000base-t
+  - name: "14"
+    type: 1000base-t
+  - name: "15"
+    type: 1000base-t
+  - name: "16"
+    type: 1000base-t
+  - name: "17"
+    type: 1000base-t
+  - name: "18"
+    type: 1000base-t
+  - name: "19"
+    type: 1000base-t
+  - name: "20"
+    type: 1000base-t
+  - name: "21"
+    type: 1000base-t
+  - name: "22"
+    type: 1000base-t
+  - name: "23"
+    type: 1000base-t
+  - name: "24"
+    type: 1000base-t
+  - name: "25"
+    type: 1000base-x-sfp
+  - name: "26"
+    type: 1000base-x-sfp
+power_ports:
+  - name: PS
+    description: 100 to 240 V AC, 50/60 Hz
+    type: iec-60320-c14
+    maximum_draw_w: 16
+links:
+  other:
+    - label: Zyxel GS1900-24E 24-port GbE Smart Managed Switch with GbE Uplink
+      url: https://www.zyxelguard.com/GS1900-24.asp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Zyxel/GS1900-24.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 3d2d9c00eebd65b5

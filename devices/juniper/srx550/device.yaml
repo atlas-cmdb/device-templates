@@ -1,0 +1,94 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: juniper
+model: SRX550
+slug: srx550
+category: firewall
+form_factor: rack
+u_height: 2
+full_depth: false
+weight_kg: 9.96
+airflow: left-to-right
+power:
+  psu_count: 2
+interfaces:
+  - name: ge-0/0/0
+    type: 1000base-t
+  - name: ge-0/0/1
+    type: 1000base-t
+  - name: ge-0/0/2
+    type: 1000base-t
+  - name: ge-0/0/3
+    type: 1000base-t
+  - name: ge-0/0/4
+    type: 1000base-t
+  - name: ge-0/0/5
+    type: 1000base-t
+  - name: ge-0/0/6
+    type: 1000base-x-sfp
+  - name: ge-0/0/7
+    type: 1000base-x-sfp
+  - name: ge-0/0/8
+    type: 1000base-x-sfp
+  - name: ge-0/0/9
+    type: 1000base-x-sfp
+console_ports:
+  - name: Console
+    type: rj-45
+module_bays:
+  - name: PIM1
+    label: Mini-PIM 1
+    bay_position: PIM1
+  - name: PIM2
+    label: Mini-PIM 2
+    bay_position: PIM2
+  - name: PIM3
+    label: PIM 3 (10-gigabit XPIM,PoE Capable)
+    bay_position: PIM3
+  - name: PIM4
+    label: PIM 4 (PoE Capable)
+    bay_position: PIM4
+  - name: PIM5
+    label: PIM 5 ()
+    bay_position: PIM5
+  - name: PIM6
+    label: PIM 6 (20-gigabit XPIM,PoE Capable)
+    bay_position: PIM6
+  - name: PIM7
+    label: PIM 7 ()
+    bay_position: PIM7
+  - name: PIM8
+    label: PIM 8 (PoE Capable)
+    bay_position: PIM8
+  - name: PSU0
+    label: Power Supply 0
+    bay_position: PSU0
+  - name: PSU1
+    label: Power Supply 1
+    bay_position: PSU1
+links:
+  datasheet: https://www.juniper.net/content/dam/www/assets/datasheets/us/en/security/srx550m-services-gateway-datasheet.pdf
+  other:
+    - label: Juniper SRX550 Chassis
+      url: https://www.juniper.net/documentation/en_US/release-independent/junos/topics/concept/services-gateway-srx550-chassis.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Juniper/SRX550.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 672fad50091309ed

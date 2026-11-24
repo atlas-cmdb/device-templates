@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: synology
+model: RS822+
+slug: rs822-plus
+category: storage_array
+form_factor: rack
+description: 4-bay rackmount NAS enclosed in a compact 1U chassis
+part_numbers:
+  - RS822+
+u_height: 1
+full_depth: false
+weight_kg: 6.4
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: LAN1
+    type: 1000base-x-sfp
+  - name: LAN2
+    type: 1000base-x-sfp
+  - name: LAN3
+    type: 1000base-x-sfp
+  - name: LAN4
+    type: 1000base-x-sfp
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 48
+links:
+  datasheet: https://global.synologydownload.com/download/Document/Hardware/ProductSpec/RackStation/22-year/RS822%2B/enu/Product_Spec_RS822%2B_enu.pdf
+comments: See .
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Synology/RS822+.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - description
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1ddfa5702b48be79

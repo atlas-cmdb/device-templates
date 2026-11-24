@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netapp
+model: FAS2650-Ctrl
+slug: fas2650-ctrl
+category: storage_array
+form_factor: blade
+description: FAS2650 Controller
+u_height: 0
+full_depth: false
+subdevice_role: child
+interfaces:
+  - name: e0a
+    type: 10gbase-x-sfpp
+  - name: e0b
+    type: 10gbase-x-sfpp
+  - name: e0c
+    description: UTA2
+    type: 10gbase-x-sfpp
+  - name: e0d
+    description: UTA2
+    type: 10gbase-x-sfpp
+  - name: e0e
+    description: UTA2
+    type: 10gbase-x-sfpp
+  - name: e0f
+    description: UTA2
+    type: 10gbase-x-sfpp
+  - name: e0M
+    description: Wrench port
+    type: other
+    mgmt_only: true
+  - name: 0a
+    description: SAS, mini-SAS HD
+    type: other
+  - name: 0b
+    description: SAS, mini-SAS HD
+    type: other
+console_ports:
+  - name: console
+    type: usb-micro-b
+links:
+  datasheet: https://web.archive.org/web/20191018201305/https://www.netapp.com/us/media/ds-3808.pdf
+  manual: https://docs.netapp.com/us-en/ontap-systems/media/PDF/FAS26xx_ISI_215-15014_A0.pdf
+  other:
+    - url: https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/Port_e0c_e0d_e0e_e0f_can't_be_identified_after_power_cycle
+    - url: https://kb.netapp.com/onprem/ontap/os/What_are_the_default_Cluster_Network_ports_for_each_platform
+comments: |-
+  Onboard ports per controller: e0a/e0b 10GbE SFP+ (default cluster ports), e0c-e0f UTA2 (CNA/FC),
+  wrench port e0M, SAS ports 0a and 0b (mini-SAS HD), micro-USB console.
+  Installation:
+  Datasheet (eight UTA2 and four 10GbE ports per HA pair):
+  Ports e0c-e0f:
+  Default cluster ports:
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/NetApp/FAS2650-Ctrl.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - links.other
+    - manufacturer
+    - model
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: a22f6aba26c74839

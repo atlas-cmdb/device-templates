@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: nokia
+model: FAN-7750-SR-1x-FP5-F2B
+slug: fan-7750-sr-1x-fp5-f2b
+kind: fan
+part_numbers:
+  - 3HE16484AA
+airflow: front-to-rear
+comments: FAN - FP5 7750-SR-1 and 1x, FtoB
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Nokia/FAN-7750-SR-1x-FP5-F2B.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - airflow
+    - comments
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 8653b3b308a99b89

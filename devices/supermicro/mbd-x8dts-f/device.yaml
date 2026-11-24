@@ -1,0 +1,85 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: MBD-X8DTS-F
+slug: mbd-x8dts-f
+category: server
+form_factor: blade
+part_numbers:
+  - MBD-X8DTS-F
+u_height: 0
+full_depth: true
+subdevice_role: child
+airflow: front-to-rear
+interfaces:
+  - name: Gig-E 1 (MGMT)
+    description: Onboard LAN 1 (Intel 82576) - External (Shared WPCM450R BMC)
+    type: 1000base-t
+  - name: Gig-E 2
+    description: Onboard LAN 2 (Intel 82576) - External
+    type: 1000base-t
+  - name: int-10g-1
+    description: Internal 10GbE Node Link 1 (Intel 82599)
+    type: 10gbase-t
+  - name: int-10g-2
+    description: Internal 10GbE Node Link 2 (Intel 82599)
+    type: 10gbase-t
+console_ports:
+  - name: COM1
+    description: Rear port
+    type: de-9
+module_bays:
+  - name: CPU 1
+    description: LGA 1366 Socket
+    bay_position: Rear
+  - name: CPU 2
+    description: LGA 1366 Socket
+    bay_position: Front
+  - name: PCI-E 1
+    description: PCIe 2.0 x8 (Riser 1, Slot 1)
+    bay_position: "1"
+  - name: PCI-E 2
+    description: PCIe 2.0 x4 (Riser 1, Slot 2)
+    bay_position: "2"
+  - name: PCI-E 3
+    description: PCIe 2.0 x4 (Riser 1, Slot 3)
+    bay_position: "3"
+  - name: P1 DIMM 1A
+    description: DDR3 DIMM slot (ECC compatible)
+    bay_position: "1"
+  - name: P1 DIMM 2A
+    description: DDR3 DIMM slot (ECC compatible)
+    bay_position: "2"
+  - name: P1 DIMM 3A
+    description: DDR3 DIMM slot (ECC compatible)
+    bay_position: "3"
+  - name: P2 DIMM 1A
+    description: DDR3 DIMM slot (ECC compatible)
+    bay_position: "4"
+  - name: P2 DIMM 2A
+    description: DDR3 DIMM slot (ECC compatible)
+    bay_position: "5"
+  - name: P2 DIMM 3A
+    description: DDR3 DIMM slot (ECC compatible)
+    bay_position: "6"
+comments: Supermicro motherboard X8DTS-F (https://www.supermicro.com/manuals/motherboard/5500/MNL-1046.pdf)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/MBD-X8DTS-F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 1e961dfbc4815382

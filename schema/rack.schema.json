@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://atlas-cmdb.github.io/device-templates/schema/rack.schema.json",
+  "title": "Rack / cabinet template",
+  "description": "racks/<manufacturer>/<slug>/rack.yaml",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["manufacturer", "model", "slug", "u_height"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "manufacturer": { "$ref": "device.schema.json#/$defs/slug" },
+    "model": { "type": "string", "minLength": 1 },
+    "slug": { "$ref": "device.schema.json#/$defs/slug" },
+    "description": { "type": "string" },
+    "part_numbers": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "form_factor": {
+      "enum": ["4-post-cabinet", "4-post-frame", "2-post-frame", "wall-cabinet", "wall-frame", "wall-frame-vertical", "wall-cabinet-vertical"]
+    },
+    "rack_width": { "enum": [10, 19, 21, 23] },
+    "u_height": { "type": "integer", "minimum": 1, "maximum": 100 },
+    "starting_unit": { "type": "integer", "minimum": 0, "default": 1 },
+    "desc_units": { "description": "Units are numbered top to bottom.", "type": "boolean" },
+    "outer_width_mm": { "$ref": "device.schema.json#/$defs/positive" },
+    "outer_height_mm": { "$ref": "device.schema.json#/$defs/positive" },
+    "outer_depth_mm": { "$ref": "device.schema.json#/$defs/positive" },
+    "mounting_depth_mm": { "$ref": "device.schema.json#/$defs/positive" },
+    "weight_kg": { "$ref": "device.schema.json#/$defs/positive" },
+    "max_load_kg": { "$ref": "device.schema.json#/$defs/positive" },
+    "color": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+    "doors": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "front": { "enum": ["none", "perforated", "glass", "solid", "split-perforated"] },
+        "rear": { "enum": ["none", "perforated", "glass", "solid", "split-perforated"] },
+        "perforation_percent": { "type": "number", "minimum": 0, "maximum": 100 }
+      }
+    },
+    "zero_u_channels": { "description": "Number of vertical side channels for zero-U PDUs.", "type": "integer", "minimum": 0 },
+    "images": { "$ref": "device.schema.json#/$defs/images" },
+    "model_3d": { "$ref": "device.schema.json#/properties/model_3d" },
+    "links": { "$ref": "device.schema.json#/properties/links" },
+    "comments": { "type": "string" },
+    "verified": { "type": "boolean" },
+    "source": { "$ref": "device.schema.json#/$defs/source" }
+  }
+}

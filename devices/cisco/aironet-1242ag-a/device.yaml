@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: Aironet 1242AG-A
+slug: aironet-1242ag-a
+category: wireless_access_point
+form_factor: other
+part_numbers:
+  - AIR-LAP1242AG-A-K9
+u_height: 0
+full_depth: false
+interfaces:
+  - name: WAN
+    type: 100base-tx
+    poe_mode: pd
+    poe_type: type2-ieee802.3at
+  - name: WiFi
+    type: ieee802.11g
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/AIR-LAP1242AG-A-K9.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+  import_hash: 52b686db30453e87

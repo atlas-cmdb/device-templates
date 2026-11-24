@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netgear
+model: GS305EPP
+slug: gs305epp
+category: network_switch
+form_factor: other
+u_height: 0
+full_depth: false
+weight_kg: 0.4
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: "1"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "2"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "3"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "4"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "5"
+    type: 1000base-t
+power_ports:
+  - name: DC-in
+    type: dc-terminal
+    maximum_draw_w: 138
+links:
+  datasheet: https://www.downloads.netgear.com/files/GDC/GS324EP/GS305EP_GS305EPP_GS308EP_GS308EPP_GS316EP_GS316EPP_GS324EP_DS.pdf
+  manual: https://www.downloads.netgear.com/files/GDC/GS305EP/GS305EP-EPP_GS308EP-EPP_UM_EN.pdf
+comments: |-
+  (pp. 2-4).
+  Total PoE budget: 120 W.
+  Documented maximum consumption: 137.8 W; maximum_draw rounded up to whole watts.
+   (PDF p. 98) documents the DC inlet and maximum consumption.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Netgear/GS305EPP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 6574e77671ded4b7

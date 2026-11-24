@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: Aironet 1562I-E
+slug: aironet-1562i-e
+category: wireless_access_point
+form_factor: other
+part_numbers:
+  - AIR-AP1562I-E-K9
+u_height: 0
+full_depth: false
+weight_kg: 2.5
+airflow: passive
+interfaces:
+  - name: WAN
+    type: 1000base-t
+    poe_mode: pd
+    poe_type: type2-ieee802.3at
+  - name: WiFi
+    type: ieee802.11ac
+console_ports:
+  - name: console
+    type: rj-45
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/wireless/aironet-1560-series/datasheet-c78-737416.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/AIR-AP1562I-E-K9.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: b3d608358a047fb0

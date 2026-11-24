@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: raritan
+model: PX3-5138JR
+slug: px3-5138jr
+category: pdu
+form_factor: rack
+part_numbers:
+  - PX3-5138JR
+u_height: 1
+full_depth: false
+weight_kg: 4
+power:
+  outlet_count: 8
+interfaces:
+  - name: mgmt
+    type: 100base-tx
+    mgmt_only: true
+console_ports:
+  - name: Console
+    type: de-9
+power_ports:
+  - name: Inlet
+    type: nema-l5-15p
+power_outlets:
+  - name: Outlet1
+    type: nema-5-15r
+    power_port: Inlet
+  - name: Outlet2
+    type: nema-5-15r
+    power_port: Inlet
+  - name: Outlet3
+    type: nema-5-15r
+    power_port: Inlet
+  - name: Outlet4
+    type: nema-5-15r
+    power_port: Inlet
+  - name: Outlet5
+    type: nema-5-15r
+    power_port: Inlet
+  - name: Outlet6
+    type: nema-5-15r
+    power_port: Inlet
+  - name: Outlet7
+    type: nema-5-15r
+    power_port: Inlet
+  - name: Outlet8
+    type: nema-5-15r
+    power_port: Inlet
+comments: Rack PDU, Metered, Remote Switching, 1.5kVA, 100V, (8) NEMA 5-15R
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Raritan/PX3-5138JR.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 7222c29c142823f9

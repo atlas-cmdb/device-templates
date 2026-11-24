@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: U7 Pro Outdoor
+slug: u7-pro-outdoor
+category: wireless_access_point
+form_factor: other
+part_numbers:
+  - U7-Pro-Outdoor
+u_height: 0
+full_depth: false
+weight_kg: 1.2
+airflow: passive
+interfaces:
+  - name: Port 1
+    type: 2.5gbase-t
+    poe_mode: pd
+    poe_type: type2-ieee802.3at
+  - name: Wlan 0
+    type: ieee802.11n
+  - name: Wlan 1
+    type: ieee802.11ac
+  - name: Wlan 2
+    type: ieee802.11ax
+comments: |-
+  The U7 Pro Outdoor has the following antenna configurations and stats:
+  - (1) Directional internal antenna:
+    - 2.4 GHz: 8 dBi, 90deg x 90deg
+    - 5 GHz: 12.5 dBi, 45deg x 45deg
+  - (2) External omni antennas:
+    - 2.4 GHz: 3 dBi, 360deg x 30deg
+    - 5 GHz: 4 dBi, 360deg x 30deg
+  - (2) RP-SMA connectors for external antennas
+  Additional features:
+  - Weatherproofing: IPX6, IP67 (With cable-gland door kit)
+  - Wind survivability: 74.6 N at 200 km/h (16.8 lbf at 125 mph)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/U7-Pro-Outdoor.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: a277caa24a74976e

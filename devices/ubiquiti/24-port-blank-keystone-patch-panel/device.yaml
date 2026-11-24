@@ -1,0 +1,105 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: 24-Port Blank Keystone Patch Panel
+slug: 24-port-blank-keystone-patch-panel
+category: patch_panel
+form_factor: rack
+part_numbers:
+  - UACC-Rack-Panel-Patch-Blank-24
+u_height: 1
+full_depth: false
+subdevice_role: parent
+weight_kg: 0.65
+airflow: passive
+module_bays:
+  - name: "1"
+    bay_position: "1"
+  - name: "2"
+    bay_position: "2"
+  - name: "3"
+    bay_position: "3"
+  - name: "4"
+    bay_position: "4"
+  - name: "5"
+    bay_position: "5"
+  - name: "6"
+    bay_position: "6"
+  - name: "7"
+    bay_position: "7"
+  - name: "8"
+    bay_position: "8"
+  - name: "9"
+    bay_position: "9"
+  - name: "10"
+    bay_position: "10"
+  - name: "11"
+    bay_position: "11"
+  - name: "12"
+    bay_position: "12"
+  - name: "13"
+    bay_position: "13"
+  - name: "14"
+    bay_position: "14"
+  - name: "15"
+    bay_position: "15"
+  - name: "16"
+    bay_position: "16"
+  - name: "17"
+    bay_position: "17"
+  - name: "18"
+    bay_position: "18"
+  - name: "19"
+    bay_position: "19"
+  - name: "20"
+    bay_position: "20"
+  - name: "21"
+    bay_position: "21"
+  - name: "22"
+    bay_position: "22"
+  - name: "23"
+    bay_position: "23"
+  - name: "24"
+    bay_position: "24"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  other:
+    - label: Ubiquiti 24-Port Keystone Patch Panel
+      url: https://store.ui.com/
+comments: |-
+  Dimensions:
+  - Standalone insert: 442.4 x 63.5 x 43.7 mm (17.4 x 2.5 x 1.7")
+  - Management bar: 433.8 x 71.5 x 17 mm (17.1 x 2.8 x 0.7")
+  Weight:
+  - Standalone insert: 260 g (9.17 oz)
+  - Management bar: 390 g (13.8 oz)
+  Materials:
+  - Front panel housing: Cold rolled carbon steel (SPCC)
+  - Inner module: Polycarbonate
+  - Management bar: Cold rolled carbon steel (SPCC)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/UACC-Rack-Panel-Patch-Blank-24.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: bddaea99585feea2

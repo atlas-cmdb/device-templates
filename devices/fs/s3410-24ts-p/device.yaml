@@ -1,0 +1,181 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fs
+model: S3410-24TS-P
+slug: s3410-24ts-p
+category: network_switch
+form_factor: rack
+part_numbers:
+  - S3410-24TS-P
+u_height: 1
+full_depth: false
+weight_kg: 5.8
+airflow: left-to-right
+power:
+  psu_count: 2
+interfaces:
+  - name: GigabitEthernet 0/1
+    label: "1"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/2
+    label: "2"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/3
+    label: "3"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/4
+    label: "4"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/5
+    label: "5"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/6
+    label: "6"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/7
+    label: "7"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/8
+    label: "8"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/9
+    label: "9"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/10
+    label: "10"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/11
+    label: "11"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/12
+    label: "12"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/13
+    label: "13"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/14
+    label: "14"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/15
+    label: "15"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/16
+    label: "16"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/17
+    label: "17"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/18
+    label: "18"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/19
+    label: "19"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/20
+    label: "20"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/21
+    label: "21"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/22
+    label: "22"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/23
+    label: "23"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: GigabitEthernet 0/24
+    label: "24"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: TenGigabitEthernet 0/25
+    label: "25"
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet 0/26
+    label: "26"
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    label: Console
+    description: RJ45 Serial Console Port
+    type: rj-45
+  - name: USB
+    type: usb-a
+module_bays:
+  - name: Expansion Module 1
+    bay_position: "1"
+  - name: Expansion Module 2
+    bay_position: "2"
+  - name: PSU 1
+    bay_position: "1"
+  - name: PSU 2
+    bay_position: "2"
+links:
+  datasheet: https://www.fs.com/eu-en/products_support.html?isPica=false&categories_id=3150&third_categories_id=4240&products_model=S3410-24TS-P&style_id=15&files_id=d4576
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/FS/S3410-24TS-P.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: df697c02dda8caf9

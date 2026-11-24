@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netapp
+model: DS212C
+slug: ds212c
+category: storage_array
+form_factor: rack
+part_numbers:
+  - DS212C
+u_height: 2
+full_depth: true
+subdevice_role: parent
+weight_kg: 22.2
+airflow: front-to-rear
+power:
+  psu_count: 2
+module_bays:
+  - name: PSU0
+    bay_position: PSU0
+  - name: PSU1
+    bay_position: PSU1
+device_bays:
+  - name: Ctrl1
+  - name: Ctrl0
+comments: FAS2700 12xSAS LFF Storage Expansion Enclosure
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/NetApp/DS212C.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - device_bays
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: cc99afdd3d7117ca

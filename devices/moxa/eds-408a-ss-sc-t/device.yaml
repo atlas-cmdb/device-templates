@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: moxa
+model: EDS-408A-SS-SC-T
+slug: eds-408a-ss-sc-t
+category: network_switch
+form_factor: rack
+part_numbers:
+  - EDS-408A-SS-SC-T
+u_height: 0.5
+full_depth: false
+weight_kg: 0.65
+power:
+  psu_count: 1
+interfaces:
+  - name: eth1
+    type: 100base-tx
+  - name: eth2
+    type: 100base-tx
+  - name: eth3
+    type: 100base-tx
+  - name: eth4
+    type: 100base-tx
+  - name: eth5
+    type: 100base-tx
+  - name: eth6
+    type: 100base-tx
+  - name: eth7
+    type: 100base-fx
+  - name: eth8
+    type: 100base-fx
+power_ports:
+  - name: PS0
+    type: dc-terminal
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  datasheet: https://www.moxa.com/getmedia/2bf237cd-dc6f-448f-9007-407a2dfe1533/moxa-eds-408a-series-datasheet-v1.5.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Moxa/EDS-408A-SS-SC-T.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 6f0ec2a5aa1e59f3

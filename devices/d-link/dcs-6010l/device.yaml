@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: d-link
+model: DCS-6010L
+slug: dcs-6010l
+category: network_switch
+form_factor: other
+part_numbers:
+  - DCS-6010L
+u_height: 0
+full_depth: false
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: eth0
+    type: 100base-tx
+power_ports:
+  - name: DC IN
+    type: dc-terminal
+links:
+  datasheet: https://ftp.dlink.ru/pub/Multimedia/DCS-6010L/Data_sh/DCS-6010L_A1_Datasheet_01.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/D-Link/dcs-6010l.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 051533ed929bd1ac

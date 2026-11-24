@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: UCSC-MLOM-C40Q-03
+slug: ucsc-mlom-c40q-03
+kind: other
+part_numbers:
+  - UCSC-MLOM-C40Q-03
+interfaces:
+  - name: Ethernet{module}/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet{module}/2
+    type: 40gbase-x-qsfpp
+comments: Cisco VIC 1387 Dual Port 40Gb QSFP CNA MLOM
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/UCSC-MLOM-C40Q-03.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 1a36260a340b22f2

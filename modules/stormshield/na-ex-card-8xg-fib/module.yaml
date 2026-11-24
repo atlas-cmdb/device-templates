@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: stormshield
+model: NA-EX-CARD-8xG-FIB
+slug: na-ex-card-8xg-fib
+kind: other
+part_numbers:
+  - NA-EX-CARD-8xG-FIB
+interfaces:
+  - name: port{module}/1
+    type: 1000base-x-sfp
+  - name: port{module}/2
+    type: 1000base-x-sfp
+  - name: port{module}/3
+    type: 1000base-x-sfp
+  - name: port{module}/4
+    type: 1000base-x-sfp
+  - name: port{module}/5
+    type: 1000base-x-sfp
+  - name: port{module}/6
+    type: 1000base-x-sfp
+  - name: port{module}/7
+    type: 1000base-x-sfp
+  - name: port{module}/8
+    type: 1000base-x-sfp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Stormshield/NA-EX-CARD-8xG-FIB.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 7c956840caeca9b4

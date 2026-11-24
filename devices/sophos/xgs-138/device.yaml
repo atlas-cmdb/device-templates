@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: sophos
+model: XGS 138
+slug: xgs-138
+category: firewall
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 2.4
+airflow: left-to-right
+power:
+  psu_count: 2
+interfaces:
+  - name: PortF1
+    type: 10gbase-x-sfpp
+  - name: PortF2
+    type: 10gbase-x-sfpp
+  - name: Port1
+    type: 1000base-t
+  - name: Port2
+    type: 1000base-t
+  - name: Port3
+    type: 1000base-t
+  - name: Port4
+    type: 1000base-t
+  - name: Port5
+    type: 2.5gbase-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port6
+    type: 2.5gbase-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+console_ports:
+  - name: COM Serial
+    type: rj-45
+  - name: COM USB
+    type: usb-micro-b
+power_ports:
+  - name: DC In 1
+    type: other
+    maximum_draw_w: 121
+    allocated_draw_w: 33
+  - name: DC In 2
+    type: other
+    maximum_draw_w: 121
+    allocated_draw_w: 33
+module_bays:
+  - name: A
+    bay_position: A
+links:
+  manual: https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Sophos/XGS-138.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 2be926d56dd6ea4d

@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: datadirect-networks
+model: SFA400X3IE Enclosure
+slug: sfa400x3ie-enclosure
+category: blade_chassis
+form_factor: rack
+u_height: 2
+full_depth: true
+subdevice_role: parent
+airflow: front-to-rear
+power:
+  psu_count: 2
+module_bays:
+  - name: PSU 1
+    label: PSU Slot 1
+    bay_position: "1"
+  - name: PSU 2
+    label: PSU Slot 2
+    bay_position: "2"
+device_bays:
+  - name: controller0
+    description: Controller 0
+  - name: controller1
+    description: Controller 1
+comments: 2U dual-controller enclosure for the DDN SFA400X3IE all-NVMe appliance
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/DataDirect Networks/SFA400X3IE-Enclosure.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - device_bays
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 5da79fe83be14e8d

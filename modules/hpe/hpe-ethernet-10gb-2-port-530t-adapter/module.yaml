@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: hpe
+model: HPE Ethernet 10Gb 2-port 530T Adapter
+slug: hpe-ethernet-10gb-2-port-530t-adapter
+kind: other
+description: HPE Ethernet 10Gb 2-port 530T Adapter
+part_numbers:
+  - 656596-B21
+interfaces:
+  - name: "{module}/1"
+    type: 10gbase-t
+  - name: "{module}/2"
+    type: 10gbase-t
+links:
+  other:
+    - label: QuickSpecs
+      url: https://support.hpe.com/hpesc/public/docDisplay?docId=a00037870en_us&page=GUID-7F342F0B-7977-4756-95C9-1410CBBDF3C2.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/HPE/656596-B21.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 3d5f5b309380e4be

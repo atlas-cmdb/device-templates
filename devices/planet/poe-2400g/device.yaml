@@ -1,0 +1,189 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: planet
+model: POE-2400G
+slug: poe-2400g
+category: network_switch
+form_factor: rack
+description: 24-port Gigabit PoE Injector Hub with 380W power budget
+part_numbers:
+  - 2400G-380W
+u_height: 1
+full_depth: false
+weight_kg: 4.5
+power:
+  psu_count: 1
+interfaces:
+  - name: Management Port
+    type: 1000base-t
+  - name: Port 1 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 1 - Internet
+    type: 1000base-t
+  - name: Port 2 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 2 - Internet
+    type: 1000base-t
+  - name: Port 3 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 3 - Internet
+    type: 1000base-t
+  - name: Port 4 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 4 - Internet
+    type: 1000base-t
+  - name: Port 5 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 5 - Internet
+    type: 1000base-t
+  - name: Port 6 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 6 - Internet
+    type: 1000base-t
+  - name: Port 7 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 7 - Internet
+    type: 1000base-t
+  - name: Port 8 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 8 - Internet
+    type: 1000base-t
+  - name: Port 9 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 9 - Internet
+    type: 1000base-t
+  - name: Port 10 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 10 - Internet
+    type: 1000base-t
+  - name: Port 11 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 11 - Internet
+    type: 1000base-t
+  - name: Port 12 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 12 - Internet
+    type: 1000base-t
+  - name: Port 13 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 13 - Internet
+    type: 1000base-t
+  - name: Port 14 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 14 - Internet
+    type: 1000base-t
+  - name: Port 15 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 15 - Internet
+    type: 1000base-t
+  - name: Port 16 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 16 - Internet
+    type: 1000base-t
+  - name: Port 17 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 17 - Internet
+    type: 1000base-t
+  - name: Port 18 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 18 - Internet
+    type: 1000base-t
+  - name: Port 19 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 19 - Internet
+    type: 1000base-t
+  - name: Port 20 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 20 - Internet
+    type: 1000base-t
+  - name: Port 21 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 21 - Internet
+    type: 1000base-t
+  - name: Port 22 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 22 - Internet
+    type: 1000base-t
+  - name: Port 23 - POE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 23 - Internet
+    type: 1000base-t
+  - name: Port 24 - PoE
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port 24 - Internet
+    type: 1000base-t
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 500
+comments: This device provides power and data for PoE-compliant devices.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/PLANET/POE-2400G.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - description
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 36a251013b5e1481

@@ -1,0 +1,102 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ericsson
+model: B6631
+slug: b6631
+category: network_switch
+form_factor: rack
+description: Ericsson Baseband 6631
+part_numbers:
+  - B6631
+u_height: 1
+full_depth: true
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: TN/IDL A
+    type: 40gbase-x-qsfpp
+  - name: TN/IDL B
+    type: 10gbase-x-sfpp
+  - name: TN/IDL C
+    type: 10gbase-x-sfpp
+  - name: TN/IDL D
+    type: 10gbase-x-sfpp
+  - name: DOT A
+    type: 10gbase-x-sfpp
+  - name: DOT B
+    type: 10gbase-x-sfpp
+  - name: DOT C
+    type: 10gbase-x-sfpp
+  - name: DOT D
+    type: 10gbase-x-sfpp
+  - name: DOT E
+    type: 10gbase-x-sfpp
+  - name: DOT F
+    type: 10gbase-x-sfpp
+  - name: DOT G
+    type: 10gbase-x-sfpp
+  - name: DOT H
+    type: 10gbase-x-sfpp
+  - name: DOT I
+    type: 10gbase-x-sfpp
+  - name: DOT J
+    type: 10gbase-x-sfpp
+  - name: DOT K
+    type: 10gbase-x-sfpp
+  - name: DOT L
+    type: 10gbase-x-sfpp
+  - name: DOT M
+    type: 10gbase-x-sfpp
+  - name: DOT N
+    type: 10gbase-x-sfpp
+  - name: DOT O
+    type: 10gbase-x-sfpp
+  - name: DOT P
+    type: 10gbase-x-sfpp
+  - name: DOT Q
+    type: 10gbase-x-sfpp
+  - name: LMT
+    description: 100 / 1000 Base-T Ethernet for Out-of-Band Management
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: SYNC
+    type: rj-45
+  - name: TIME
+    type: rj-45
+  - name: ALARM 1
+    type: rj-45
+  - name: ALARM 2
+    type: rj-45
+power_ports:
+  - name: A
+    description: -48 VDC
+    type: dc-terminal
+  - name: B
+    description: -48 VDC
+    type: dc-terminal
+comments: "[Ericsson Baseband 6631 Data Sheet]()"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ericsson/B6631.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: ddd43d956b117bd0

@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: fortinet
+name: Fortinet
+aliases:
+  - FortiGate
+website: https://www.fortinet.com

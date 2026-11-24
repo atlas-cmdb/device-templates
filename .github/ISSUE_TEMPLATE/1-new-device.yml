@@ -1,0 +1,203 @@
+name: "➕ Add a device"
+description: Request or submit a server, switch, PDU, UPS, ... that is not in the library yet. Fill in what you know; a maintainer turns it into a template.
+title: "[Device]: <Manufacturer> <Model>"
+labels: ["new-device", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping! **Only Manufacturer and Model are required**; every extra field you fill in saves a maintainer a trip to the datasheet.
+        Search the [catalog](https://atlas-cmdb.github.io/device-templates/) first to avoid duplicates. Prefer working in git? See [CONTRIBUTING.md](https://github.com/atlas-cmdb/device-templates/blob/main/CONTRIBUTING.md) and open a pull request directly.
+  - type: input
+    id: manufacturer
+    attributes:
+      label: Manufacturer
+      placeholder: Dell
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model
+      description: Model name as printed by the manufacturer, without the manufacturer name.
+      placeholder: PowerEdge R760
+    validations:
+      required: true
+  - type: input
+    id: part_numbers
+    attributes:
+      label: Part numbers / SKUs
+      description: Comma separated.
+      placeholder: 210-BDZY, 210-BDZZ
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - server
+        - gpu_server
+        - compute_blade
+        - blade_chassis
+        - storage_array
+        - storage_shelf
+        - tape_library
+        - backup_appliance
+        - database_appliance
+        - network_switch
+        - router
+        - firewall
+        - load_balancer
+        - wireless_access_point
+        - network_controller
+        - sdn_controller
+        - network_tap
+        - optical_transport
+        - media_converter
+        - security_appliance
+        - kvm_switch
+        - kvm_extender
+        - console_server
+        - ipmi_controller
+        - pdu
+        - ups
+        - ups_battery_pack
+        - ats
+        - power_meter
+        - environmental_monitor
+        - patch_panel
+        - cable_management
+        - blank_panel
+        - shelf
+        - appliance
+        - other
+    validations:
+      required: true
+  - type: dropdown
+    id: form_factor
+    attributes:
+      label: Mounting
+      options:
+        - rack
+        - zero-u (vertical, side channel)
+        - blade (goes into a chassis)
+        - tower
+        - desktop
+        - wall
+        - din-rail
+        - other
+  - type: input
+    id: u_height
+    attributes:
+      label: Height in rack units (U)
+      description: 0 for zero-U PDUs and blades. Half units are allowed (e.g. 1.5).
+      placeholder: "2"
+  - type: dropdown
+    id: full_depth
+    attributes:
+      label: Full depth?
+      description: Does it block the rear of its rack units (most servers) or only the front (most switches, patch panels)?
+      options:
+        - "yes"
+        - "no"
+        - unknown
+  - type: input
+    id: dimensions
+    attributes:
+      label: Dimensions W x H x D (mm)
+      placeholder: 482 x 86.8 x 772
+  - type: input
+    id: weight
+    attributes:
+      label: Weight (kg)
+      placeholder: "28.6"
+  - type: dropdown
+    id: airflow
+    attributes:
+      label: Airflow
+      options:
+        - front-to-rear
+        - rear-to-front
+        - left-to-right
+        - right-to-left
+        - side-to-rear
+        - passive
+        - mixed
+        - unknown
+  - type: input
+    id: power
+    attributes:
+      label: Power draw (W)
+      description: "Typical and maximum, e.g. `450 / 1400`. For PDUs/UPSes use the capacity field below."
+      placeholder: 450 / 1400
+  - type: input
+    id: psu
+    attributes:
+      label: Power supplies
+      description: Count, rating and redundancy, e.g. `2x 1400W 1+1`.
+      placeholder: 2x 1400W 1+1
+  - type: input
+    id: capacity
+    attributes:
+      label: PDU / UPS capacity
+      description: For PDUs and UPSes, e.g. `3000VA / 2700W`, `32A 3-phase`.
+  - type: textarea
+    id: ports
+    attributes:
+      label: Network & console ports
+      description: One group per line, e.g. `48x RJ45 1G`, `4x SFP28`, `1x RJ45 mgmt`, `1x console RJ45`.
+      placeholder: |
+        48x RJ45 1G
+        4x SFP+
+        1x RJ45 mgmt
+        1x console RJ45
+  - type: textarea
+    id: power_connectors
+    attributes:
+      label: Power inlets / outlets
+      description: One group per line, e.g. `2x C14 inlet`, `24x C13 outlet`, `1x IEC 60309 32A inlet`.
+      placeholder: |
+        2x C14 inlet
+  - type: input
+    id: datasheet
+    attributes:
+      label: Datasheet URL
+      placeholder: https://...
+  - type: input
+    id: product_page
+    attributes:
+      label: Product page URL
+  - type: textarea
+    id: front_image
+    attributes:
+      label: Front photo
+      description: |
+        Drag & drop **one** image: straight-on, cropped exactly to the faceplate (no rack ears), even lighting. See the [photo guidelines](https://github.com/atlas-cmdb/device-templates/blob/main/docs/photography.md).
+  - type: textarea
+    id: rear_image
+    attributes:
+      label: Rear photo
+      description: Drag & drop **one** image, same rules as the front.
+  - type: textarea
+    id: interior_image
+    attributes:
+      label: Interior photo (lid off)
+      description: Optional. Top-down, straight on, front of the server at the bottom, cropped to the chassis.
+  - type: input
+    id: vendor_media
+    attributes:
+      label: Vendor 3D / 360° viewer link
+      description: Optional. A manufacturer page with a 3D/360°/AR viewer. We link to it; we never copy vendor media.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: Management (iDRAC/iLO, SNMP sysObjectID), lifecycle dates, quirks, related models...
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched the catalog and this device is not there yet.
+          required: true
+        - label: I took any attached photos myself (no images copied from vendor websites), and I dedicate this submission to the public domain under CC0 1.0.
+          required: true

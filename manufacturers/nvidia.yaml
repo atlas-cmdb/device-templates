@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: nvidia
+name: Nvidia
+aliases:
+  - Mellanox
+  - Cumulus Networks
+website: https://www.nvidia.com

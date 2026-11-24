@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: IR1833-K9
+slug: ir1833-k9
+category: network_switch
+form_factor: rack
+part_numbers:
+  - IR1833-K9
+u_height: 1
+full_depth: false
+weight_kg: 2.4
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: GigabitEthernet0/0/0
+    type: 1000base-t
+  - name: GigabitEthernet0/0/1
+    type: 1000base-t
+  - name: GigabitEthernet0/0/2
+    type: 1000base-t
+  - name: GigabitEthernet0/0/3
+    type: 1000base-t
+  - name: GigabitEthernet0/1/0
+    type: 1000base-t
+  - name: GigabitEthernet0/1/1
+    type: 1000base-t
+  - name: Wlan0/3/0
+    type: ieee802.11ac
+  - name: Cellular0/4/0
+    type: 5g
+  - name: Cellular0/4/1
+    type: 5g
+console_ports:
+  - name: Console-USB
+    type: usb-micro-b
+power_ports:
+  - name: DC-Input
+    type: dc-terminal
+    maximum_draw_w: 71
+    allocated_draw_w: 23
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+comments: "IR1833 rugged router. 4x LAN, combo WAN, WiFi6 and 5G cellular (0/4/0 & 0/4/1). airflow: passive"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/IR1833-K9.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 4014928c8eeb72c6

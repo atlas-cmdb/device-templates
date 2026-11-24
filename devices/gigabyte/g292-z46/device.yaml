@@ -1,0 +1,89 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: gigabyte
+model: G292-Z46
+slug: g292-z46
+category: gpu_server
+form_factor: rack
+part_numbers:
+  - G292-Z46
+u_height: 2
+full_depth: true
+weight_kg: 36.89
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: BMC
+    description: Dedicated BMC/IPMI LAN port
+    type: 1000base-t
+    mgmt_only: true
+  - name: 10 Gig Ethernet 1
+    type: 10gbase-t
+  - name: 10 Gig Ethernet 2
+    type: 10gbase-t
+module_bays:
+  - name: PSU1
+    description: 2200W 80-PLUS Platinum Power Supply
+    bay_position: PSU1
+  - name: PSU2
+    description: 2200W 80-PLUS Platinum Power Supply
+    bay_position: PSU2
+  - name: PCI-E 1
+    description: PCI-E 4.0 x16 for GPU
+    bay_position: "1"
+  - name: PCI-E 2
+    description: PCI-E 4.0 x16 for GPU
+    bay_position: "2"
+  - name: PCI-E 3
+    description: PCI-E 4.0 x16 for GPU
+    bay_position: "3"
+  - name: PCI-E 4
+    description: PCI-E 4.0 x16 for GPU
+    bay_position: "4"
+  - name: PCI-E 5
+    description: PCI-E 4.0 x16 Low-Profile from CPU_0
+    bay_position: "5"
+  - name: PCI-E 6
+    description: PCI-E 4.0 x16 Low-Profile from CPU_1
+    bay_position: "6"
+  - name: NVME 1
+    description: PCI-E 4.0 x4 (U.2)
+    bay_position: "7"
+  - name: NVME 2
+    description: PCI-E 4.0 x4 (U.2)
+    bay_position: "8"
+  - name: NVME 3
+    description: PCI-E 4.0 x4 (U.2)
+    bay_position: "9"
+  - name: NVME 4
+    description: PCI-E 4.0 x4 (U.2)
+    bay_position: "10"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+comments: Gigabyte G292-Z46 (https://www.gigabyte.com/Enterprise/GPU-Server/G292-Z46-rev-A00#Specifications)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Gigabyte/G292-Z46.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: b57f5c7fa4d43226

@@ -1,0 +1,272 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: smartoptics
+model: DCP-M40-PAM4-ER
+slug: dcp-m40-pam4-er
+category: server
+form_factor: rack
+part_numbers:
+  - DCP-M40-PAM4-ER
+u_height: 1
+full_depth: true
+weight_kg: 13
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Eth0 / Local
+    type: 1000base-t
+    mgmt_only: true
+  - name: Eth2
+    type: 1000base-t
+  - name: Eth3
+    type: 1000base-t
+  - name: Eth4
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: rj-45
+front_ports:
+  - name: "921"
+    description: ITU channel 21
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 1
+  - name: "922"
+    description: ITU channel 22
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 2
+  - name: "923"
+    description: ITU channel 23
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 3
+  - name: "924"
+    description: ITU channel 24
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 4
+  - name: "925"
+    description: ITU channel 25
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 5
+  - name: "926"
+    description: ITU channel 26
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 6
+  - name: "927"
+    description: ITU channel 27
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 7
+  - name: "928"
+    description: ITU channel 28
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 8
+  - name: "929"
+    description: ITU channel 29
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 9
+  - name: "930"
+    description: ITU channel 30
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 10
+  - name: "931"
+    description: ITU channel 31
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 11
+  - name: "932"
+    description: ITU channel 32
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 12
+  - name: "933"
+    description: ITU channel 33
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 13
+  - name: "934"
+    description: ITU channel 34
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 14
+  - name: "935"
+    description: ITU channel 35
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 15
+  - name: "936"
+    description: ITU channel 36
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 16
+  - name: "937"
+    description: ITU channel 37
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 17
+  - name: "938"
+    description: ITU channel 38
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 18
+  - name: "939"
+    description: ITU channel 39
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 19
+  - name: "940"
+    description: ITU channel 40
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 20
+  - name: "941"
+    description: ITU channel 41
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 21
+  - name: "942"
+    description: ITU channel 42
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 22
+  - name: "943"
+    description: ITU channel 43
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 23
+  - name: "944"
+    description: ITU channel 44
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 24
+  - name: "945"
+    description: ITU channel 45
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 25
+  - name: "946"
+    description: ITU channel 46
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 26
+  - name: "947"
+    description: ITU channel 47
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 27
+  - name: "948"
+    description: ITU channel 48
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 28
+  - name: "949"
+    description: ITU channel 49
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 29
+  - name: "950"
+    description: ITU channel 50
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 30
+  - name: "951"
+    description: ITU channel 51
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 31
+  - name: "952"
+    description: ITU channel 52
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 32
+  - name: "953"
+    description: ITU channel 53
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 33
+  - name: "954"
+    description: ITU channel 54
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 34
+  - name: "955"
+    description: ITU channel 55
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 35
+  - name: "956"
+    description: ITU channel 56
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 36
+  - name: "957"
+    description: ITU channel 57
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 37
+  - name: "958"
+    description: ITU channel 58
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 38
+  - name: "959"
+    description: ITU channel 59
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 39
+  - name: "960"
+    description: ITU channel 60
+    type: lc-upc
+    rear_port: Line
+    rear_port_position: 40
+rear_ports:
+  - name: Line
+    description: WDM Line I/O
+    type: lc-upc
+    positions: 40
+module_bays:
+  - name: PSU 1
+    bay_position: "0"
+  - name: PSU 2
+    bay_position: "1"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+comments: "[Smartoptics Datasheet] (https://smartoptics.com/wp-content/uploads/2023/02/so-ds-dcp-m40-pam4-er.pdf) Base HW, 40ch/100GHz Open Line System, PAM4 0-40km, NRZ/Coh, Ch921-960, OSC, Mux/Demux, EDFA, OCM, OCQ, DCM"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Smartoptics/DCP-M40-PAM4-ER.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - front_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - rear_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 249b746726d70ebe

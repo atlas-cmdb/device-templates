@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: SuperServer 5019S-M
+slug: superserver-5019s-m
+category: server
+form_factor: rack
+part_numbers:
+  - SYS-5019S-M
+u_height: 1
+full_depth: true
+weight_kg: 13.8
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: BMC
+    description: Dedicated IPMI LAN port
+    type: 1000base-t
+    mgmt_only: true
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+console_ports:
+  - name: Serial-1
+    label: Front
+    type: de-9
+  - name: Serial-2
+    label: Rear
+    type: de-9
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 400
+module_bays:
+  - name: PCI-E 1
+    description: PCI-E 3.0 x16 slot
+    bay_position: "1"
+  - name: M.2 1
+    description: Form-factors 2280, 22110
+    bay_position: "2"
+comments: SuperServer SYS-5019S-M (https://www.supermicro.com/en/products/system/1u/5019/sys-5019s-m.cfm)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/SYS-5019S-M.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 134451dc682c9d56

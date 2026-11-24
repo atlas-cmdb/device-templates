@@ -1,0 +1,117 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: Catalyst C4500X-32SFP+
+slug: catalyst-c4500x-32sfp-plus
+category: network_switch
+form_factor: rack
+part_numbers:
+  - WS-C4500X-32SFP+
+u_height: 1
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: FastEthernet1
+    type: 100base-tx
+    mgmt_only: true
+  - name: TenGigabitEthernet1/1
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/2
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/3
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/4
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/5
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/6
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/7
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/8
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/9
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/10
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/11
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/12
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/13
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/14
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/15
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/16
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/17
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/18
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/19
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/20
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/21
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/22
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/23
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/24
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/25
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/26
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/27
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/28
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/29
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/30
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/31
+    type: 10gbase-x-sfpp
+  - name: TenGigabitEthernet1/32
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: con0
+    type: rj-45
+module_bays:
+  - name: Network Module
+    bay_position: "2"
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4500-x-series-switches/data_sheet_c78-696791.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/WS-C4500X-32SFP+.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+  import_hash: fc963f4f45b1aa16

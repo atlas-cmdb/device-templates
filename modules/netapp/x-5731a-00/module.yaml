@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: netapp
+model: X-5731A-00
+slug: x-5731a-00
+kind: psu
+description: 2325-Watts AC Power Supply SG5860,SG5760,E2860,DS460C,DE460C
+part_numbers:
+  - 114-00176
+power_ports:
+  - name: "{module}"
+    type: iec-60320-c14
+    maximum_draw_w: 2325
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/NetApp/X-5731A-00.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: a4a4e9c7e180fa63

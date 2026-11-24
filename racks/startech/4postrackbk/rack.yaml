@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../../schema/rack.schema.json
+manufacturer: startech
+model: 4POSTRACKBK
+slug: 4postrackbk
+form_factor: 4-post-frame
+description: 42U Open Frame Server Rack
+u_height: 42
+starting_unit: 1
+rack_width: 19
+outer_width_mm: 57
+outer_height_mm: 2000
+outer_depth_mm: 995
+mounting_depth_mm: 1000
+weight_kg: 46.3
+max_load_kg: 450
+links:
+  other:
+    - label: 42U Open Frame Server Rack
+      url: https://www.startech.com/en-ca/server-management/4postrack
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: rack-types/Startech/4POSTRACKBK.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - description
+    - links.other
+    - manufacturer
+    - max_load_kg
+    - model
+    - mounting_depth_mm
+    - outer_depth_mm
+    - outer_height_mm
+    - outer_width_mm
+    - rack_width
+    - slug
+    - starting_unit
+    - u_height
+    - weight_kg
+  import_hash: cb6b1be0d7b94177

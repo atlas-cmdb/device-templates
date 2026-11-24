@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: corning
+model: ECM-UM-12-05-93Q
+slug: ecm-um-12-05-93q
+kind: other
+part_numbers:
+  - ECM-UM-12-05-93Q
+front_ports:
+  - name: "{module}1"
+    description: Front Port 1 (Strands 1-2)
+    type: lc
+    rear_port: "{module}1-6"
+    rear_port_position: 1
+  - name: "{module}2"
+    description: Front Port 2 (Strands 3-4)
+    type: lc
+    rear_port: "{module}1-6"
+    rear_port_position: 2
+  - name: "{module}3"
+    description: Front Port 3 (Strands 5-6)
+    type: lc
+    rear_port: "{module}1-6"
+    rear_port_position: 3
+  - name: "{module}4"
+    description: Front Port 4 (Strands 7-8)
+    type: lc
+    rear_port: "{module}1-6"
+    rear_port_position: 4
+  - name: "{module}5"
+    description: Front Port 5 (Strands 9-10)
+    type: lc
+    rear_port: "{module}1-6"
+    rear_port_position: 5
+  - name: "{module}6"
+    description: Front Port 6 (Strands 11-12)
+    type: lc
+    rear_port: "{module}1-6"
+    rear_port_position: 6
+rear_ports:
+  - name: "{module}1-6"
+    description: Rear Port MPO connector ports 1-6 (strands 1-12)
+    type: mpo
+    positions: 6
+comments: |-
+  Corning EDGE Low Loss Module:
+  * UM = Universal Polarity
+  * 12 = 12-Strand
+  * 05 = Shuttered LC Duplex multi-mode
+  * 93 = MTP 12 F (pinned) multimode
+  * Q = 50 um multimode (OM4)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Corning/ECM-UM-12-05-93Q.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - front_ports
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: 0383318505a174e8

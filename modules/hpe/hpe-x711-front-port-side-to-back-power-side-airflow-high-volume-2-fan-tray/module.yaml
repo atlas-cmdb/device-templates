@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: hpe
+model: HPE X711 Front (Port Side) to Back (Power Side) Airflow High Volume 2 Fan Tray
+slug: hpe-x711-front-port-side-to-back-power-side-airflow-high-volume-2-fan-tray
+kind: fan
+part_numbers:
+  - JH388A
+comments: HPE X711 Front (Port Side) to Back (Power Side) Airflow High Volume 2 Fan Tray
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/HPE/JH388A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 7a4989f7cc365b4b

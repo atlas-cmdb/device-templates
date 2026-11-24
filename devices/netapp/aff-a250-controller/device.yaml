@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netapp
+model: AFF A250 Controller
+slug: aff-a250-controller
+category: storage_array
+form_factor: blade
+description: AFF A250 HA System Controller
+u_height: 0
+full_depth: true
+subdevice_role: child
+power:
+  psu_count: 1
+interfaces:
+  - name: e0a
+    type: 10gbase-t
+  - name: e0b
+    type: 10gbase-t
+  - name: e0c
+    type: 25gbase-x-sfp28
+  - name: e0d
+    type: 25gbase-x-sfp28
+  - name: e0M
+    description: Wrench port, shared with the BMC
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: console
+    type: usb-micro-b
+module_bays:
+  - name: Slot 1
+    description: Mezzanine slot
+    bay_position: "1"
+  - name: Slot 2
+    description: Mezzanine slot
+    bay_position: "2"
+  - name: PSU
+    bay_position: PSU
+links:
+  manual: https://docs.netapp.com/us-en/ontap-systems/a250/install-detailed-guide.html
+  product_page: https://docs.netapp.com/us-en/ontap-systems/a250/overview.html
+comments: |-
+  Onboard ports per controller: e0a/e0b 10GBASE-T data ports, e0c/e0d 25GbE SFP28 (cluster/HA interconnect),
+  wrench port e0M (shared with the BMC), micro-USB console. Two mezzanine slots (1 and 2) and one power supply
+  installed in the controller module.
+  Specifications:
+  Cabling:
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/NetApp/AFF-A250-Controller.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - links.manual
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 94210f094c321f44

@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ericsson
+model: P6250
+slug: p6250
+category: pdu
+form_factor: rack
+description: Ericsson Power 6250
+part_numbers:
+  - P6250
+u_height: 1
+full_depth: true
+airflow: front-to-rear
+power:
+  outlet_count: 6
+interfaces:
+  - name: LAN
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: RS485
+    description: baudrate 115200
+    type: rj-45
+power_ports:
+  - name: AC IN 1
+    type: iec-60320-c14
+  - name: AC IN 2
+    type: iec-60320-c14
+power_outlets:
+  - name: DC1
+    label: DC Outlet 1
+    type: dc-terminal
+  - name: DC2
+    label: DC Outlet 2
+    type: dc-terminal
+  - name: DC3
+    label: DC Outlet 3
+    type: dc-terminal
+  - name: DC4
+    label: DC Outlet 4
+    type: dc-terminal
+  - name: DC5
+    label: DC Outlet 5
+    type: dc-terminal
+  - name: DC6
+    label: DC Outlet 6
+    type: dc-terminal
+comments: "[Ericsson Power 6250 Data Sheet]()"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ericsson/P6250.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 371724d3dee3bdfc

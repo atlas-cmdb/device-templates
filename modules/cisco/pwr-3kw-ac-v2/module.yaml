@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: PWR-3KW-AC-V2
+slug: pwr-3kw-ac-v2
+kind: psu
+part_numbers:
+  - PWR-3KW-AC-V2
+power_ports:
+  - name: PS-{module}
+    type: iec-60320-c20
+    maximum_draw_w: 3000
+comments: "[3000W AC Power for ASR-9006 and ASR-9010](https://www.router-switch.com/pdf2html/pdf/pwr-3kw-ac-v2-datasheet.pdf}"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/PWR-3KW-AC-V2.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: 6738a8e018bc28cc

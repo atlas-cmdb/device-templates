@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: ruggedcom
+model: RMM2473-4RJ45
+slug: rmm2473-4rj45
+kind: nic
+description: RSG2488 Slot 1 - 6; 10/100/1000Base-TX x 4
+part_numbers:
+  - 6GK6000-8CG01-4EA0
+airflow: passive
+interfaces:
+  - name: "{module}/1"
+    label: "1"
+    type: 1000base-tx
+  - name: "{module}/2"
+    label: "2"
+    type: 1000base-tx
+  - name: "{module}/3"
+    label: "3"
+    type: 1000base-tx
+  - name: "{module}/4"
+    label: "4"
+    type: 1000base-tx
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+comments: |-
+  Cable Type : > CAT-5
+  Speed : 1000 Mbps
+  Connector : RJ45
+  Duplex : FDX/HDX
+  Wiring Standard : TIA/EIA T568A/B
+  Maximum Distance : 100m
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/RuggedCom/RMM2473-4RJ45.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - airflow
+    - comments
+    - description
+    - images.credit
+    - images.front
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 5098907bc93da87d

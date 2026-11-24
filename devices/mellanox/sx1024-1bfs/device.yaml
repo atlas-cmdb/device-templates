@@ -1,0 +1,178 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: mellanox
+model: SX1024-1BFS
+slug: sx1024-1bfs
+category: network_switch
+form_factor: rack
+part_numbers:
+  - MSX1024B-1BFS
+u_height: 1
+full_depth: false
+weight_kg: 7.01
+airflow: rear-to-front
+power:
+  psu_count: 2
+interfaces:
+  - name: Eth1/1
+    type: 10gbase-x-sfpp
+  - name: Eth1/2
+    type: 10gbase-x-sfpp
+  - name: Eth1/3
+    type: 10gbase-x-sfpp
+  - name: Eth1/4
+    type: 10gbase-x-sfpp
+  - name: Eth1/5
+    type: 10gbase-x-sfpp
+  - name: Eth1/6
+    type: 10gbase-x-sfpp
+  - name: Eth1/7
+    type: 10gbase-x-sfpp
+  - name: Eth1/8
+    type: 10gbase-x-sfpp
+  - name: Eth1/9
+    type: 10gbase-x-sfpp
+  - name: Eth1/10
+    type: 10gbase-x-sfpp
+  - name: Eth1/11
+    type: 10gbase-x-sfpp
+  - name: Eth1/12
+    type: 10gbase-x-sfpp
+  - name: Eth1/13
+    type: 10gbase-x-sfpp
+  - name: Eth1/14
+    type: 10gbase-x-sfpp
+  - name: Eth1/15
+    type: 10gbase-x-sfpp
+  - name: Eth1/16
+    type: 10gbase-x-sfpp
+  - name: Eth1/17
+    type: 10gbase-x-sfpp
+  - name: Eth1/18
+    type: 10gbase-x-sfpp
+  - name: Eth1/19
+    type: 10gbase-x-sfpp
+  - name: Eth1/20
+    type: 10gbase-x-sfpp
+  - name: Eth1/21
+    type: 10gbase-x-sfpp
+  - name: Eth1/22
+    type: 10gbase-x-sfpp
+  - name: Eth1/23
+    type: 10gbase-x-sfpp
+  - name: Eth1/24
+    type: 10gbase-x-sfpp
+  - name: Eth1/25
+    type: 10gbase-x-sfpp
+  - name: Eth1/26
+    type: 10gbase-x-sfpp
+  - name: Eth1/27
+    type: 10gbase-x-sfpp
+  - name: Eth1/28
+    type: 10gbase-x-sfpp
+  - name: Eth1/29
+    type: 10gbase-x-sfpp
+  - name: Eth1/30
+    type: 10gbase-x-sfpp
+  - name: Eth1/31
+    type: 10gbase-x-sfpp
+  - name: Eth1/32
+    type: 10gbase-x-sfpp
+  - name: Eth1/33
+    type: 10gbase-x-sfpp
+  - name: Eth1/34
+    type: 10gbase-x-sfpp
+  - name: Eth1/35
+    type: 10gbase-x-sfpp
+  - name: Eth1/36
+    type: 10gbase-x-sfpp
+  - name: Eth1/37
+    type: 10gbase-x-sfpp
+  - name: Eth1/38
+    type: 10gbase-x-sfpp
+  - name: Eth1/39
+    type: 10gbase-x-sfpp
+  - name: Eth1/40
+    type: 10gbase-x-sfpp
+  - name: Eth1/41
+    type: 10gbase-x-sfpp
+  - name: Eth1/42
+    type: 10gbase-x-sfpp
+  - name: Eth1/43
+    type: 10gbase-x-sfpp
+  - name: Eth1/44
+    type: 10gbase-x-sfpp
+  - name: Eth1/45
+    type: 10gbase-x-sfpp
+  - name: Eth1/46
+    type: 10gbase-x-sfpp
+  - name: Eth1/47
+    type: 10gbase-x-sfpp
+  - name: Eth1/48
+    type: 10gbase-x-sfpp
+  - name: Eth1/49
+    type: 40gbase-x-qsfpp
+  - name: Eth1/50
+    type: 40gbase-x-qsfpp
+  - name: Eth1/51
+    type: 40gbase-x-qsfpp
+  - name: Eth1/52
+    type: 40gbase-x-qsfpp
+  - name: Eth1/53
+    type: 40gbase-x-qsfpp
+  - name: Eth1/54
+    type: 40gbase-x-qsfpp
+  - name: Eth1/55
+    type: 40gbase-x-qsfpp
+  - name: Eth1/56
+    type: 40gbase-x-qsfpp
+  - name: Eth1/57
+    type: 40gbase-x-qsfpp
+  - name: Eth1/58
+    type: 40gbase-x-qsfpp
+  - name: Eth1/59
+    type: 40gbase-x-qsfpp
+  - name: Eth1/60
+    type: 40gbase-x-qsfpp
+  - name: mgmt0
+    label: MGT
+    type: 1000base-t
+    mgmt_only: true
+  - name: mgmt1
+    label: MGT
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial Console
+    type: rj-45
+  - name: USB Console
+    type: usb-mini-b
+module_bays:
+  - name: PS1
+    bay_position: "1"
+  - name: PS2
+    bay_position: "2"
+  - name: FAN1
+    bay_position: "1"
+  - name: FAN2
+    bay_position: "2"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Mellanox/SX1024-1BFS.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 83d0ca7dd41ef67a

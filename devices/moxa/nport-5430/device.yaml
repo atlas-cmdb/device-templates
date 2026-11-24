@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: moxa
+model: NPort 5430
+slug: nport-5430
+category: console_server
+form_factor: other
+u_height: 0
+full_depth: false
+weight_kg: 0.74
+airflow: passive
+power:
+  psu_count: 2
+interfaces:
+  - name: Ethernet
+    label: LAN
+    type: 100base-tx
+console_server_ports:
+  - name: P1
+    label: Port 1
+    description: RS-422/485
+    type: other
+  - name: P2
+    label: Port 2
+    description: RS-422/485
+    type: other
+  - name: P3
+    label: Port 3
+    description: RS-422/485
+    type: other
+  - name: P4
+    label: Port 4
+    description: RS-422/485
+    type: other
+power_ports:
+  - name: Screw power jack
+    label: 12-48 VDC
+    type: dc-terminal
+    allocated_draw_w: 4
+  - name: Terminal Block
+    label: 12-48 VDC
+    type: hardwired
+    allocated_draw_w: 4
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Moxa/NPort-5430.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 2fe3d6040419cb5d

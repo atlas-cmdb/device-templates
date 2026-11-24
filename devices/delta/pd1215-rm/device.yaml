@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: delta
+model: PD1215-RM
+slug: pd1215-rm
+category: pdu
+form_factor: rack
+u_height: 1
+full_depth: false
+power:
+  outlet_count: 12
+power_ports:
+  - name: Primary
+    type: nema-5-15p
+    maximum_draw_w: 1500
+power_outlets:
+  - name: "1"
+    type: nema-5-15r
+  - name: "2"
+    type: nema-5-15r
+  - name: "3"
+    type: nema-5-15r
+  - name: "4"
+    type: nema-5-15r
+  - name: "5"
+    type: nema-5-15r
+  - name: "6"
+    type: nema-5-15r
+  - name: "7"
+    type: nema-5-15r
+  - name: "8"
+    type: nema-5-15r
+  - name: "9"
+    type: nema-5-15r
+  - name: "10"
+    type: nema-5-15r
+  - name: Front 11
+    type: nema-5-15r
+  - name: Front 12
+    type: nema-5-15r
+comments: |-
+  Delta PD1215-RM 1U power distribution unit (PDU) with 12 NEMA 5-15P receptacles (2 front, 10 rear) from a single NEMA 5-15P plug
+  Dimensions: 19.00" x 3.76" x 1.68"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Delta/PD1215-RM.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 9f8e26024bf23b91

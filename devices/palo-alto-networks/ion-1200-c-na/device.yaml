@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: palo-alto-networks
+model: ION 1200-C-NA
+slug: ion-1200-c-na
+category: firewall
+form_factor: blade
+u_height: 0
+full_depth: false
+subdevice_role: child
+weight_kg: 1.701
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: Port 1
+    type: 1000base-t
+  - name: Port 2
+    type: 1000base-t
+  - name: Port 3
+    type: 1000base-t
+  - name: Port 4
+    type: 1000base-t
+  - name: Cellular
+    type: 4g
+console_ports:
+  - name: console
+    type: rj-45
+power_ports:
+  - name: PS1
+    description: DC barrel jack
+    type: dc-terminal
+links:
+  datasheet: https://www.paloaltonetworks.com/apps/pan/public/downloadResource?pagePath=/content/pan/en_US/resources/datasheets/prisma-sd-wan-instant-on-network-ion-device-specifications
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Palo Alto Networks/ION-1200-C-NA.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: d94ba261fd4bc85b

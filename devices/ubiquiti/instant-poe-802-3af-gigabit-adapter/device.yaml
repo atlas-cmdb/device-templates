@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: Instant PoE 802.3af Gigabit Adapter
+slug: instant-poe-802-3af-gigabit-adapter
+category: patch_panel
+form_factor: other
+part_numbers:
+  - INS-3AF-O-G
+u_height: 0
+full_depth: false
+weight_kg: 0.09
+airflow: passive
+front_ports:
+  - name: PoE out
+    type: 8p8c
+    rear_port: PoE in
+    rear_port_position: 1
+rear_ports:
+  - name: PoE in
+    label: PoE IN
+    type: 8p8c
+links:
+  datasheet: https://dl.ubnt.com/datasheets/instant/Instant_802.3af_Gigabit_PoE_Converters_DS.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/INS-3AF-O-G.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - front_ports
+    - full_depth
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 72e1bdd5b2ea1f20

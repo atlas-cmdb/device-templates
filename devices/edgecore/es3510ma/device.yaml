@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: edgecore
+model: ES3510MA
+slug: es3510ma
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 0.72
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: ethernet 1/1
+    type: 100base-tx
+  - name: ethernet 1/2
+    type: 100base-tx
+  - name: ethernet 1/3
+    type: 100base-tx
+  - name: ethernet 1/4
+    type: 100base-tx
+  - name: ethernet 1/5
+    type: 100base-tx
+  - name: ethernet 1/6
+    type: 100base-tx
+  - name: ethernet 1/7
+    type: 100base-tx
+  - name: ethernet 1/8
+    type: 100base-tx
+  - name: ethernet 1/9
+    description: Combo port (RJ-45/SFP)
+    type: 1000base-t
+  - name: ethernet 1/10
+    description: Combo port (RJ-45/SFP)
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: PS1
+    description: 100 to 240 VAC, 50 to 60 Hz
+    type: iec-60320-c14
+    maximum_draw_w: 32
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Edgecore/ES3510MA.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 77374d71a7449eb0

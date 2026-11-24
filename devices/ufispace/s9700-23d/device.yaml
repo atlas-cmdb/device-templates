@@ -1,0 +1,142 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ufispace
+model: S9700-23D
+slug: s9700-23d
+category: router
+form_factor: rack
+description: UfiSpace S9700-23D 400G Disaggregated Core/Edge Router
+part_numbers:
+  - S9700-23D
+u_height: 2
+full_depth: true
+weight_kg: 18.77
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0
+    type: 1000base-t
+    mgmt_only: true
+  - name: mgmt-sfp0
+    type: 10gbase-x-sfpp
+    mgmt_only: true
+  - name: mgmt-sfp1
+    type: 10gbase-x-sfpp
+    mgmt_only: true
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: Console USB
+    type: usb-micro-b
+module_bays:
+  - name: Transceiver 0
+    label: QSFP-DD
+    bay_position: swp0
+  - name: Transceiver 1
+    label: QSFP-DD
+    bay_position: swp1
+  - name: Transceiver 2
+    label: QSFP-DD
+    bay_position: swp2
+  - name: Transceiver 3
+    label: QSFP-DD
+    bay_position: swp3
+  - name: Transceiver 4
+    label: QSFP-DD
+    bay_position: swp4
+  - name: Transceiver 5
+    label: QSFP-DD
+    bay_position: swp5
+  - name: Transceiver 6
+    label: QSFP-DD
+    bay_position: swp6
+  - name: Transceiver 7
+    label: QSFP-DD
+    bay_position: swp7
+  - name: Transceiver 8
+    label: QSFP-DD
+    bay_position: swp8
+  - name: Transceiver 9
+    label: QSFP-DD
+    bay_position: swp9
+  - name: Fabric Transceiver 10
+    label: QSFP-DD
+    bay_position: swp10
+  - name: Fabric Transceiver 11
+    label: QSFP-DD
+    bay_position: swp11
+  - name: Fabric Transceiver 12
+    label: QSFP-DD
+    bay_position: swp12
+  - name: Fabric Transceiver 13
+    label: QSFP-DD
+    bay_position: swp13
+  - name: Fabric Transceiver 14
+    label: QSFP-DD
+    bay_position: swp14
+  - name: Fabric Transceiver 15
+    label: QSFP-DD
+    bay_position: swp15
+  - name: Fabric Transceiver 16
+    label: QSFP-DD
+    bay_position: swp16
+  - name: Fabric Transceiver 17
+    label: QSFP-DD
+    bay_position: swp17
+  - name: Fabric Transceiver 18
+    label: QSFP-DD
+    bay_position: swp18
+  - name: Fabric Transceiver 19
+    label: QSFP-DD
+    bay_position: swp19
+  - name: Fabric Transceiver 20
+    label: QSFP-DD
+    bay_position: swp20
+  - name: Fabric Transceiver 21
+    label: QSFP-DD
+    bay_position: swp21
+  - name: Fabric Transceiver 22
+    label: QSFP-DD
+    bay_position: swp22
+  - name: Fan 0
+    label: Fan Module
+    bay_position: FAN0
+  - name: Fan 1
+    label: Fan Module
+    bay_position: FAN1
+  - name: Fan 2
+    label: Fan Module
+    bay_position: FAN2
+  - name: Fan 3
+    label: Fan Module
+    bay_position: FAN3
+  - name: PSU 0
+    label: Power Supply
+    bay_position: PSU0
+  - name: PSU 1
+    label: Power Supply
+    bay_position: PSU1
+comments: 2RU disaggregated core router with 10x QSFP-DD (400GE) service ports + 13x QSFP-DD (400GE) fabric ports for DDC cluster interconnect. Broadcom Jericho2 ASIC, 4.8 Tbps switching capacity. 2x 10G SFP+ management ports, 4 fan modules, 2 power supplies.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/UfiSpace/S9700-23D.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 4e72f7af1dada8a9

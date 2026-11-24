@@ -1,0 +1,182 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerSwitch Z9332F-ON
+slug: powerswitch-z9332f-on
+category: network_switch
+form_factor: rack
+part_numbers:
+  - Z9332F-ON
+u_height: 1
+full_depth: true
+weight_kg: 9.98
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: mgmt 1/1/1
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Console
+    type: rj-45
+module_bays:
+  - name: Ethernet 1/1/1
+    description: QSFP-DD 400G cage
+    bay_position: "1"
+  - name: Ethernet 1/1/2
+    description: QSFP-DD 400G cage
+    bay_position: "2"
+  - name: Ethernet 1/1/3
+    description: QSFP-DD 400G cage
+    bay_position: "3"
+  - name: Ethernet 1/1/4
+    description: QSFP-DD 400G cage
+    bay_position: "4"
+  - name: Ethernet 1/1/5
+    description: QSFP-DD 400G cage
+    bay_position: "5"
+  - name: Ethernet 1/1/6
+    description: QSFP-DD 400G cage
+    bay_position: "6"
+  - name: Ethernet 1/1/7
+    description: QSFP-DD 400G cage
+    bay_position: "7"
+  - name: Ethernet 1/1/8
+    description: QSFP-DD 400G cage
+    bay_position: "8"
+  - name: Ethernet 1/1/9
+    description: QSFP-DD 400G cage
+    bay_position: "9"
+  - name: Ethernet 1/1/10
+    description: QSFP-DD 400G cage
+    bay_position: "10"
+  - name: Ethernet 1/1/11
+    description: QSFP-DD 400G cage
+    bay_position: "11"
+  - name: Ethernet 1/1/12
+    description: QSFP-DD 400G cage
+    bay_position: "12"
+  - name: Ethernet 1/1/13
+    description: QSFP-DD 400G cage
+    bay_position: "13"
+  - name: Ethernet 1/1/14
+    description: QSFP-DD 400G cage
+    bay_position: "14"
+  - name: Ethernet 1/1/15
+    description: QSFP-DD 400G cage
+    bay_position: "15"
+  - name: Ethernet 1/1/16
+    description: QSFP-DD 400G cage
+    bay_position: "16"
+  - name: Ethernet 1/1/17
+    description: QSFP-DD 400G cage
+    bay_position: "17"
+  - name: Ethernet 1/1/18
+    description: QSFP-DD 400G cage
+    bay_position: "18"
+  - name: Ethernet 1/1/19
+    description: QSFP-DD 400G cage
+    bay_position: "19"
+  - name: Ethernet 1/1/20
+    description: QSFP-DD 400G cage
+    bay_position: "20"
+  - name: Ethernet 1/1/21
+    description: QSFP-DD 400G cage
+    bay_position: "21"
+  - name: Ethernet 1/1/22
+    description: QSFP-DD 400G cage
+    bay_position: "22"
+  - name: Ethernet 1/1/23
+    description: QSFP-DD 400G cage
+    bay_position: "23"
+  - name: Ethernet 1/1/24
+    description: QSFP-DD 400G cage
+    bay_position: "24"
+  - name: Ethernet 1/1/25
+    description: QSFP-DD 400G cage
+    bay_position: "25"
+  - name: Ethernet 1/1/26
+    description: QSFP-DD 400G cage
+    bay_position: "26"
+  - name: Ethernet 1/1/27
+    description: QSFP-DD 400G cage
+    bay_position: "27"
+  - name: Ethernet 1/1/28
+    description: QSFP-DD 400G cage
+    bay_position: "28"
+  - name: Ethernet 1/1/29
+    description: QSFP-DD 400G cage
+    bay_position: "29"
+  - name: Ethernet 1/1/30
+    description: QSFP-DD 400G cage
+    bay_position: "30"
+  - name: Ethernet 1/1/31
+    description: QSFP-DD 400G cage
+    bay_position: "31"
+  - name: Ethernet 1/1/32
+    description: QSFP-DD 400G cage
+    bay_position: "32"
+  - name: Ethernet 1/1/33
+    description: SFP+ 10G cage
+    bay_position: "33"
+  - name: Ethernet 1/1/34
+    description: SFP+ 10G cage
+    bay_position: "34"
+  - name: PSU1
+    description: Hot-swappable PSU
+    bay_position: "35"
+  - name: PSU2
+    description: Hot-swappable PSU
+    bay_position: "36"
+  - name: FanTray1
+    description: Hot-swappable fan tray (2 fans)
+    bay_position: "37"
+  - name: FanTray2
+    description: Hot-swappable fan tray (2 fans)
+    bay_position: "38"
+  - name: FanTray3
+    description: Hot-swappable fan tray (2 fans)
+    bay_position: "39"
+  - name: FanTray4
+    description: Hot-swappable fan tray (2 fans)
+    bay_position: "40"
+  - name: FanTray5
+    description: Hot-swappable fan tray (2 fans)
+    bay_position: "41"
+  - name: FanTray6
+    description: Hot-swappable fan tray (2 fans)
+    bay_position: "42"
+  - name: FanTray7
+    description: Hot-swappable fan tray (2 fans)
+    bay_position: "43"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.delltechnologies.com/asset/en-us/products/networking/technical-support/dell-emc-networking-z9332f-spec-sheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerSwitch-Z9332F-ON.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: a419d4d31bfd81fa

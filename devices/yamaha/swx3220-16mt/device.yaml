@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: yamaha
+model: SWX3220-16MT
+slug: swx3220-16mt
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 2.7
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: port1.1
+    type: 10gbase-t
+  - name: port1.2
+    type: 10gbase-t
+  - name: port1.3
+    type: 10gbase-t
+  - name: port1.4
+    type: 10gbase-t
+  - name: port1.5
+    type: 10gbase-t
+  - name: port1.6
+    type: 10gbase-t
+  - name: port1.7
+    type: 10gbase-t
+  - name: port1.8
+    type: 10gbase-t
+  - name: port1.9
+    type: 10gbase-t
+  - name: port1.10
+    type: 10gbase-t
+  - name: port1.11
+    type: 10gbase-t
+  - name: port1.12
+    type: 10gbase-t
+  - name: port1.13
+    type: 10gbase-x-sfpp
+  - name: port1.14
+    type: 10gbase-x-sfpp
+  - name: port1.15
+    type: 10gbase-x-sfpp
+  - name: port1.16
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: RJ-45 console port
+    type: rj-45
+  - name: USB console port
+    type: usb-mini-b
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 84
+links:
+  product_page: https://network.yamaha.com/products/switches/swx3220-16mt/index
+comments: 10G/mGig-Compatible "Standard" Layer 3 Switch, manufactured by YAMAHA.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/YAMAHA/SWX3220-16MT.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 6578d37ad20b2d5d

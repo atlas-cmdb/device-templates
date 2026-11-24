@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: qnap
+model: TS-873AeU
+slug: ts-873aeu
+category: storage_array
+form_factor: rack
+part_numbers:
+  - TS-873AeU
+u_height: 2
+full_depth: false
+weight_kg: 7.97
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: Adapter 1
+    type: 2.5gbase-t
+  - name: Adapter 2
+    type: 2.5gbase-t
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 250
+    allocated_draw_w: 53
+module_bays:
+  - name: PCIe1
+    bay_position: PCIe1
+links:
+  product_page: https://www.qnap.com/en/product/ts-873aeu/specs/hardware
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/QNAP/TS-873AeU.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: c7f161f4e37eade3

@@ -1,0 +1,97 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lancom
+model: GS-2328
+slug: gs-2328
+category: network_switch
+form_factor: rack
+part_numbers:
+  - "61444"
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: Port 1
+    type: 1000base-t
+  - name: Port 2
+    type: 1000base-t
+  - name: Port 3
+    type: 1000base-t
+  - name: Port 4
+    type: 1000base-t
+  - name: Port 5
+    type: 1000base-t
+  - name: Port 6
+    type: 1000base-t
+  - name: Port 7
+    type: 1000base-t
+  - name: Port 8
+    type: 1000base-t
+  - name: Port 9
+    type: 1000base-t
+  - name: Port 10
+    type: 1000base-t
+  - name: Port 11
+    type: 1000base-t
+  - name: Port 12
+    type: 1000base-t
+  - name: Port 13
+    type: 1000base-t
+  - name: Port 14
+    type: 1000base-t
+  - name: Port 15
+    type: 1000base-t
+  - name: Port 16
+    type: 1000base-t
+  - name: Port 17
+    type: 1000base-t
+  - name: Port 18
+    type: 1000base-t
+  - name: Port 19
+    type: 1000base-t
+  - name: Port 20
+    type: 1000base-t
+  - name: Port 21
+    type: 1000base-t
+  - name: Port 22
+    type: 1000base-t
+  - name: Port 23
+    type: 1000base-t
+  - name: Port 24
+    type: 1000base-t
+  - name: Port 25
+    type: 10gbase-x-sfpp
+  - name: Port 26
+    type: 10gbase-x-sfpp
+  - name: Port 27
+    type: 10gbase-x-sfpp
+  - name: Port 28
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: com
+    type: de-9
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 48
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/LANCOM/GS-2328.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: f94e8b6476e52331

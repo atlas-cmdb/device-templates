@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: hpe
+model: Aruba J8713A
+slug: aruba-j8713a
+kind: other
+part_numbers:
+  - J8713A
+power_ports:
+  - name: "{module}"
+    type: iec-60320-c20
+    maximum_draw_w: 1500
+comments: |-
+  ## Physical characteristics
+  * Dimensions: 6.05 x 7.45 x 5.1 in. (15.37 x 18.92 x 12.95 cm)
+  * Weight: 7.5 lb (3.4 kg)
+  ## Electrical characteristics
+  * Maximum current: 10A
+  * Frequency range: 50/60 Hz
+  * Power 1500 W
+  * 220V Only
+  ## Notes
+  Installation of the J8713A reduces the chassis altitude specification to 10,000 ft (3677 rn). J8713A supplies 600 W chassis power and 900 W PoE power. See the Ordering Guide for more details on power supply selection for PoE power. Units shipped to North America include a NEIvIA L6-20P twist lock power cord. Non-locking NEMA 6-20P optionally available - see the Ordering Guide for more details.
+  Supply End - NEMA L6-20P Equipment End - IEC-C19 20N250V
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/HPE/Aruba-J8713A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: 26c4a70278fb6633

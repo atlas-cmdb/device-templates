@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: orange
+model: Livebox Business 360
+slug: livebox-business-360
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 2
+airflow: passive
+power:
+  psu_count: 2
+interfaces:
+  - name: GE-LAN-0/0
+    type: 1000base-t
+  - name: GE-LAN-0/1
+    type: 1000base-t
+  - name: GE-LAN-0/2
+    type: 1000base-t
+  - name: GE-LAN-0/3
+    type: 1000base-t
+  - name: GE-WAN-1/0
+    type: 1000base-t
+  - name: GE-WAN-2/0
+    type: 1000base-t
+  - name: SFP-WAN-1/0
+    type: 1000base-x-sfp
+  - name: SFP-WAN-2/0
+    type: 1000base-x-sfp
+console_ports:
+  - name: console
+    type: rj-45
+power_ports:
+  - name: DC-1 12V
+    type: dc-terminal
+    maximum_draw_w: 5
+    allocated_draw_w: 3
+  - name: DC-2 12V
+    type: dc-terminal
+    maximum_draw_w: 5
+    allocated_draw_w: 3
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Orange/livebox-business-360.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: d07624f2e23cc87c

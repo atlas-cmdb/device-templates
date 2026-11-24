@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netapp
+model: AFF A90 Chassis
+slug: aff-a90-chassis
+category: storage_array
+form_factor: rack
+description: AFF A90 HA System Chassis
+u_height: 4
+full_depth: true
+subdevice_role: parent
+weight_kg: 53.5
+airflow: front-to-rear
+device_bays:
+  - name: controller-a
+    description: Controller A
+  - name: controller-b
+    description: Controller B
+links:
+  product_page: https://docs.netapp.com/us-en/ontap-systems/a70-90/aff-a-series-affa90-overview.html
+comments: |-
+  NetApp AFF A90 4U chassis housing two hot-swappable controller modules and 48
+  internal NVMe SSD slots. The four power supplies install into the controller
+  modules (two each) rather than the chassis, so the chassis itself has no power
+  inlet; see the AFF A90 Controller definition.
+  Specifications:
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/NetApp/AFF-A90-Chassis.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - description
+    - device_bays
+    - full_depth
+    - links.product_page
+    - manufacturer
+    - model
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 41a9a753ef4fae67

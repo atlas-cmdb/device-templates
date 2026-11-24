@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge T310
+slug: poweredge-t310
+category: server
+form_factor: tower
+u_height: 0
+full_depth: false
+subdevice_role: parent
+power:
+  psu_count: 1
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: Gig-E 3
+    type: 1000base-t
+  - name: Gig-E 4
+    type: 1000base-t
+console_ports:
+  - name: Serial
+    type: de-9
+power_ports:
+  - name: Power 1
+    type: iec-60320-c14
+    maximum_draw_w: 400
+device_bays:
+  - name: PCIe-Gen2 1
+  - name: PCIe-Gen2 2
+  - name: PCIe-Gen2 3
+  - name: PCIe-Gen2 4
+  - name: PCIe-Gen2 5
+links:
+  datasheet: https://i.dell.com/sites/csdocuments/Shared-Content_data-Sheets_Documents/en/T310-SpecSheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-T310.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - device_bays
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: d0d58576157519cb

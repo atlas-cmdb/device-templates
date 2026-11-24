@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: huawei
+model: CR8D0MPUA1C0
+slug: cr8d0mpua1c0
+kind: other
+description: NE8000 MPUP1
+part_numbers:
+  - "03059123"
+weight_kg: 4
+interfaces:
+  - name: GE0/0/0({module})
+    label: ETH
+    type: 1000base-t
+    mgmt_only: true
+  - name: FSP0({module})
+    type: 1000base-t
+  - name: FSP1({module})
+    type: 1000base-t
+  - name: SFP+0({module})
+    type: 10gbase-x-sfpp
+  - name: SFP+1({module})
+    type: 10gbase-x-sfpp
+  - name: SFP+2({module})
+    type: 1000base-x-sfp
+  - name: SFP+3({module})
+    type: 1000base-x-sfp
+console_ports:
+  - name: Console({module})
+    label: CONSOLE
+    type: rj-45
+  - name: USB({module})
+    type: usb-a
+links:
+  other:
+    - label: NetEngine 8000 Main Processing Unit A1 (MPUA1)
+      url: https://info.support.huawei.com/info-finder/enterprisesearch/en?keyword=CR9D0MPUP180
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Huawei/CR8D0MPUA1C0.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - console_ports
+    - description
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - weight_kg
+  import_hash: 8dc5763d7a4ccacf

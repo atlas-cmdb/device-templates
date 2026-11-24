@@ -1,0 +1,122 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: SG110-24HP
+slug: sg110-24hp
+category: network_switch
+form_factor: rack
+part_numbers:
+  - SG110-24HP
+u_height: 1
+full_depth: false
+weight_kg: 2.98
+airflow: side-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: GigabitEthernet1
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet2
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet3
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet4
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet5
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet6
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet7
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet8
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet9
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet10
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet11
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet12
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: GigabitEthernet13
+    type: 1000base-t
+  - name: GigabitEthernet14
+    type: 1000base-t
+  - name: GigabitEthernet15
+    type: 1000base-t
+  - name: GigabitEthernet16
+    type: 1000base-t
+  - name: GigabitEthernet17
+    type: 1000base-t
+  - name: GigabitEthernet18
+    type: 1000base-t
+  - name: GigabitEthernet19
+    type: 1000base-t
+  - name: GigabitEthernet20
+    type: 1000base-t
+  - name: GigabitEthernet21
+    type: 1000base-t
+  - name: GigabitEthernet22
+    type: 1000base-t
+  - name: GigabitEthernet23
+    type: 1000base-t
+  - name: GigabitEthernet24
+    type: 1000base-t
+  - name: GigabitEthernet23 (SFP)
+    type: 1000base-x-sfp
+  - name: GigabitEthernet24 (SFP)
+    type: 1000base-x-sfp
+power_ports:
+  - name: PSU0
+    type: iec-60320-c14
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/switches/110-series-unmanaged-switches/datasheet-c78-734450.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/SG110-24HP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: acbc55efd3cc15bb

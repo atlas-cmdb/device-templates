@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: AS2511RJ
+slug: as2511rj
+category: console_server
+form_factor: rack
+part_numbers:
+  - AS2511RJ
+u_height: 1
+full_depth: true
+power:
+  psu_count: 1
+interfaces:
+  - name: Ethernet0
+    type: 100base-tx
+console_ports:
+  - name: con0
+    type: rj-45
+  - name: aux
+    type: rj-45
+  - name: Serial0
+    type: other
+console_server_ports:
+  - name: line1
+    type: rj-45
+  - name: line2
+    type: rj-45
+  - name: line3
+    type: rj-45
+  - name: line4
+    type: rj-45
+  - name: line5
+    type: rj-45
+  - name: line6
+    type: rj-45
+  - name: line7
+    type: rj-45
+  - name: line8
+    type: rj-45
+  - name: line9
+    type: rj-45
+  - name: line10
+    type: rj-45
+  - name: line11
+    type: rj-45
+  - name: line12
+    type: rj-45
+  - name: line13
+    type: rj-45
+  - name: line14
+    type: rj-45
+  - name: line15
+    type: rj-45
+  - name: line16
+    type: rj-45
+power_ports:
+  - name: PSU0
+    type: iec-60320-c14
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/AS2511RJ.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 99c11bda0f38fe60

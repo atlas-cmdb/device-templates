@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: qnap
+model: QXP-12G2E
+slug: qxp-12g2e
+kind: other
+description: Broadcom SAS3008 Dual-port External SAS 12Gb/s SFF-8644 PCIe3 x8 card
+part_numbers:
+  - sas-12g2e
+interfaces:
+  - name: "{module}/SAS 1"
+    type: other
+  - name: "{module}/SAS 2"
+    type: other
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/QNAP/QXP-12G2E.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 01f1011bd761f522

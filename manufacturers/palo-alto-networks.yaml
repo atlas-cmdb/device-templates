@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: palo-alto-networks
+name: Palo Alto Networks
+aliases:
+  - Palo Alto
+  - PAN
+website: https://www.paloaltonetworks.com

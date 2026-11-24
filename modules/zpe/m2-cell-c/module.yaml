@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: zpe
+model: M2-CELL-C
+slug: m2-cell-c
+kind: other
+description: M.2 Cellular 4G/LTE modem with 2 antennas and cables
+part_numbers:
+  - M2-CELL-C
+interfaces:
+  - name: cdc-wdm{module}
+    type: 4g
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/ZPE/M2-CELL-C.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 0246dc77481f680c

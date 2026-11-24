@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: commscope
+model: 360G2-1U-MOD-SD
+slug: 360g2-1u-mod-sd
+category: patch_panel
+form_factor: rack
+description: 360G2-1U-MOD-SD - G2 1U Sliding Modular Cassette 4-slot Fiber Panel, unloaded
+part_numbers:
+  - "760193771"
+u_height: 1
+full_depth: false
+weight_kg: 5.44
+airflow: passive
+module_bays:
+  - name: "1"
+    description: Accepts G2 Module
+    bay_position: "1"
+  - name: "2"
+    description: Accepts G2 Module
+    bay_position: "2"
+  - name: "3"
+    description: Accepts G2 Module
+    bay_position: "3"
+  - name: "4"
+    description: Accepts G2 Module
+    bay_position: "4"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  product_page: https://www.commscope.com/product-type/frames-panels-cassettes-modules/fiber-panels-modules-cassettes/fiber-panels/item760193771/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Commscope/360G2-1U-MOD-SD.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - description
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - links.product_page
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 7bae290dcaca6647

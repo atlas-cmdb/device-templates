@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: supermicro
+model: Add-on Card AOC-STGN-i1S
+slug: add-on-card-aoc-stgn-i1s
+kind: transceiver
+description: Intel 82599EN 10GbE controller with single SFP+ port
+part_numbers:
+  - AOC-STGN-i1S
+interfaces:
+  - name: Gig-E 1
+    type: 10gbase-x-sfpp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Supermicro/AOC-STGN-i1S.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: aed74ee4179c6b81

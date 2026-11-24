@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: SF100-16
+slug: sf100-16
+category: network_switch
+form_factor: rack
+part_numbers:
+  - SF100-16
+u_height: 1
+full_depth: false
+weight_kg: 1.25
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: FastEthernet1
+    type: 100base-tx
+  - name: FastEthernet2
+    type: 100base-tx
+  - name: FastEthernet3
+    type: 100base-tx
+  - name: FastEthernet4
+    type: 100base-tx
+  - name: FastEthernet5
+    type: 100base-tx
+  - name: FastEthernet6
+    type: 100base-tx
+  - name: FastEthernet7
+    type: 100base-tx
+  - name: FastEthernet8
+    type: 100base-tx
+  - name: FastEthernet9
+    type: 100base-tx
+  - name: FastEthernet10
+    type: 100base-tx
+  - name: FastEthernet11
+    type: 100base-tx
+  - name: FastEthernet12
+    type: 100base-tx
+  - name: FastEthernet13
+    type: 100base-tx
+  - name: FastEthernet14
+    type: 100base-tx
+  - name: FastEthernet15
+    type: 100base-tx
+  - name: FastEthernet16
+    type: 100base-tx
+power_ports:
+  - name: PSU0
+    label: POWER
+    type: iec-60320-c14
+links:
+  datasheet: https://community.cisco.com/kxiwq67737/attachments/kxiwq67737/5976-discussions-small-business-switches/7255/1/138184-datasheet_SF100D-16.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/SF100-16.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 83a9cc4a4bef8a3c

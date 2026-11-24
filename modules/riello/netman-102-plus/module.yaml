@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: riello
+model: Netman 102 Plus
+slug: netman-102-plus
+kind: other
+part_numbers:
+  - NETMAN102
+interfaces:
+  - name: Netman/mgmt
+    type: 100base-tx
+    mgmt_only: true
+console_ports:
+  - name: Netman/Serial
+    type: rj-45
+comments: Riello UPS NetMan 102 Plus Network Card
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Riello/Netman102.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - console_ports
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: ed489b94480cf5cb

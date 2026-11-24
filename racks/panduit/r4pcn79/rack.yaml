@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../../schema/rack.schema.json
+manufacturer: panduit
+model: R4PCN79
+slug: r4pcn79
+form_factor: 4-post-frame
+description: 4-Post Rack, 42RU, 30 in. Deep, Cage Nut E-Rails, Black
+u_height: 42
+starting_unit: 1
+rack_width: 19
+outer_width_mm: 591
+outer_height_mm: 2007
+outer_depth_mm: 762
+mounting_depth_mm: 762
+weight_kg: 40
+max_load_kg: 1134
+links:
+  product_page: https://www.panduit.com/emea/en/products/cabinets-thermal-management-racks-enclosures/racks-accessories/racks/p205063.html?pn=R4PCN79
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: rack-types/Panduit/R4PCN79.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - description
+    - links.product_page
+    - manufacturer
+    - max_load_kg
+    - model
+    - mounting_depth_mm
+    - outer_depth_mm
+    - outer_height_mm
+    - outer_width_mm
+    - rack_width
+    - slug
+    - starting_unit
+    - u_height
+    - weight_kg
+  import_hash: 2b43c43a4fb31ffc

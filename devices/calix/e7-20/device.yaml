@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: calix
+model: E7-20
+slug: e7-20
+category: server
+form_factor: rack
+part_numbers:
+  - 100-02089
+u_height: 13
+full_depth: false
+interfaces:
+  - name: mgmt 1
+    type: 1000base-t
+    mgmt_only: true
+  - name: mgmt 3A
+    type: 1000base-t
+    mgmt_only: true
+  - name: mgmt 3B
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: slot 1
+    bay_position: "1"
+  - name: slot 2
+    bay_position: "2"
+  - name: slot 3
+    bay_position: "3"
+  - name: slot 4
+    bay_position: "4"
+  - name: slot 5
+    bay_position: "5"
+  - name: slot 6
+    bay_position: "6"
+  - name: slot 7
+    bay_position: "7"
+  - name: slot 8
+    bay_position: "8"
+  - name: slot 9
+    bay_position: "9"
+  - name: slot 10
+    bay_position: "10"
+  - name: slot 11
+    bay_position: "11"
+  - name: slot 12
+    bay_position: "12"
+  - name: slot 13
+    bay_position: "13"
+  - name: slot 14
+    bay_position: "14"
+  - name: slot 15
+    bay_position: "15"
+  - name: slot 16
+    bay_position: "16"
+  - name: slot 17
+    bay_position: "17"
+  - name: slot 18
+    bay_position: "18"
+  - name: slot 19
+    bay_position: "19"
+  - name: slot 20
+    bay_position: "20"
+  - name: slot A
+    bay_position: A
+  - name: slot B
+    bay_position: B
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Calix/E7-20.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+  import_hash: b8d9ea43c825cd7f

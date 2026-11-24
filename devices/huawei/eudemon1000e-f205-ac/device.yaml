@@ -1,0 +1,133 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huawei
+model: Eudemon1000E-F205-AC
+slug: eudemon1000e-f205-ac
+category: network_switch
+form_factor: rack
+description: Eudemon1000E-F205(HTM) Enhanced AC host (4*QSFP28 + 16*ZSFP+ + 8*SFP+, 2 AC power)
+part_numbers:
+  - 02354MKF-002
+u_height: 1
+full_depth: true
+weight_kg: 10.6
+airflow: front-to-rear
+interfaces:
+  - name: MEth0/0/0
+    type: 1000base-t
+    mgmt_only: true
+  - name: 100GE0/0/0
+    type: 100gbase-x-qsfp28
+  - name: 100GE0/0/1
+    type: 100gbase-x-qsfp28
+  - name: 100GE0/0/2
+    type: 100gbase-x-qsfp28
+  - name: 100GE0/0/3
+    type: 100gbase-x-qsfp28
+  - name: 10GE0/0/0
+    description: ZSFP+, 10G by default, 25G after port mode 40GE on its 100GE port
+    type: 25gbase-x-sfp28
+  - name: 10GE0/0/1
+    description: ZSFP+, 10G by default, 25G after port mode 40GE on its 100GE port
+    type: 25gbase-x-sfp28
+  - name: 10GE0/0/2
+    description: ZSFP+, 10G by default, 25G after port mode 40GE on its 100GE port
+    type: 25gbase-x-sfp28
+  - name: 10GE0/0/3
+    description: ZSFP+, 10G by default, 25G after port mode 40GE on its 100GE port
+    type: 25gbase-x-sfp28
+  - name: 10GE0/0/4
+    description: ZSFP+, 10G by default, 25G after port mode 40GE on its 100GE port
+    type: 25gbase-x-sfp28
+  - name: 10GE0/0/5
+    description: ZSFP+, 10G by default, 25G after port mode 40GE on its 100GE port
+    type: 25gbase-x-sfp28
+  - name: 10GE0/0/6
+    description: ZSFP+, 10G by default, 25G after port mode 40GE on its 100GE port
+    type: 25gbase-x-sfp28
+  - name: 10GE0/0/7
+    description: ZSFP+, 10G by default, 25G after port mode 40GE on its 100GE port
+    type: 25gbase-x-sfp28
+  - name: 10GE0/0/8
+    description: ZSFP+, 10G by default, 25G after port mode 40GE on its 100GE port
+    type: 25gbase-x-sfp28
+  - name: 10GE0/0/9
+    description: ZSFP+, 10G by default, 25G after port mode 40GE on its 100GE port
+    type: 25gbase-x-sfp28
+  - name: 10GE0/0/10
+    description: ZSFP+, 10G by default, 25G after port mode 40GE on its 100GE port
+    type: 25gbase-x-sfp28
+  - name: 10GE0/0/11
+    description: ZSFP+, 10G by default, 25G after port mode 40GE on its 100GE port
+    type: 25gbase-x-sfp28
+  - name: 10GE0/0/12
+    description: ZSFP+, 10G by default, 25G after port mode 40GE on its 100GE port
+    type: 25gbase-x-sfp28
+  - name: 10GE0/0/13
+    description: ZSFP+, 10G by default, 25G after port mode 40GE on its 100GE port
+    type: 25gbase-x-sfp28
+  - name: 10GE0/0/14
+    description: ZSFP+, 10G by default, 25G after port mode 40GE on its 100GE port
+    type: 25gbase-x-sfp28
+  - name: 10GE0/0/15
+    description: ZSFP+, 10G by default, 25G after port mode 40GE on its 100GE port
+    type: 25gbase-x-sfp28
+  - name: 10GE0/0/16
+    type: 10gbase-x-sfpp
+  - name: 10GE0/0/17
+    type: 10gbase-x-sfpp
+  - name: 10GE0/0/18
+    type: 10gbase-x-sfpp
+  - name: 10GE0/0/19
+    type: 10gbase-x-sfpp
+  - name: 10GE0/0/20
+    type: 10gbase-x-sfpp
+  - name: 10GE0/0/21
+    type: 10gbase-x-sfpp
+  - name: 10GE0/0/22
+    type: 10gbase-x-sfpp
+  - name: 10GE0/0/23
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    type: rj-45
+module_bays:
+  - name: FAN1
+    bay_position: "1"
+  - name: FAN2
+    bay_position: "2"
+  - name: FAN3
+    bay_position: "3"
+  - name: FAN4
+    bay_position: "4"
+  - name: FAN5
+    bay_position: "5"
+  - name: PWR1
+    bay_position: "1"
+  - name: PWR2
+    bay_position: "2"
+links:
+  manual: https://support.huawei.com/enterprise/en/doc/EDOC1100208764/1ba634a8/usg6725f
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Huawei/Eudemon1000E-F205-AC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: b11d3f8edf6ed513

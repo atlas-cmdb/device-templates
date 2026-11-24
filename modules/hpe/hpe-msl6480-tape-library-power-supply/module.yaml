@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: hpe
+model: HPE MSL6480 Tape Library Power Supply
+slug: hpe-msl6480-tape-library-power-supply
+kind: psu
+part_numbers:
+  - 723572-001
+power_ports:
+  - name: IN-{module}
+    type: iec-60320-c14
+    maximum_draw_w: 430
+    allocated_draw_w: 200
+comments: HPE MSL6480 Tape Library 432 Watt Power Supply
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/HPE/723572-001.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: b8c8fa9ef687bdd8

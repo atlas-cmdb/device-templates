@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: meinberg
+model: IMS-MSF
+slug: ims-msf
+kind: other
+description: Long-wave receiver for reception of signals from the MSF long-wave-transmitter in Anthorn, UK. Requires a Meinberg AW02-60 antenna.
+console_ports:
+  - name: COM
+    type: de-9
+rear_ports:
+  - name: Antenna
+    type: bnc
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Meinberg/IMS-MSF.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - console_ports
+    - description
+    - manufacturer
+    - model
+    - rear_ports
+    - slug
+  import_hash: 1c67c252ffd70985

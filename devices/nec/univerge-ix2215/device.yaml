@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: nec
+model: UNIVERGE IX2215
+slug: univerge-ix2215
+category: network_switch
+form_factor: rack
+part_numbers:
+  - BI000054
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: GigaEthernet0
+    type: 1000base-t
+  - name: GigaEthernet1
+    type: 1000base-t
+  - name: GigaEthernet2.1
+    type: 1000base-t
+  - name: GigaEthernet2.2
+    type: 1000base-t
+  - name: GigaEthernet2.3
+    type: 1000base-t
+  - name: GigaEthernet2.4
+    type: 1000base-t
+  - name: GigaEthernet2.5
+    type: 1000base-t
+  - name: GigaEthernet2.6
+    type: 1000base-t
+  - name: GigaEthernet2.7
+    type: 1000base-t
+  - name: GigaEthernet2.8
+    type: 1000base-t
+  - name: USB0
+    type: other
+  - name: BRI0 port LINE
+    type: other
+  - name: BRI0 port S/T
+    type: other
+console_ports:
+  - name: CONSOLE
+    type: rj-45
+power_ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw_w: 18
+    allocated_draw_w: 14
+comments: |-
+  NEC UNIVERGE IX2215, VPN-Compatible High speed Access Router, 18W
+  (1) RJ-45 Console Port, (2) Ethernet 1000BASE-T, (8) Ethernet 1000BASE-T in Switching Hub, (1) ISDN LINE interface, (1) ISDN S/T interface, (1) USB2.0 Type-A
+  Dimentions(WxDxH in mm): 210x297x43
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/NEC/UNIVERGE-IX2215.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 64afda04379257cf

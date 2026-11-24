@@ -1,0 +1,158 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ufispace
+model: S8901-54XC
+slug: s8901-54xc
+category: network_switch
+form_factor: rack
+description: Data Center Leaf/ToR Switch 48 x 25G SFP28 & 6 x 100G QSFP28 Ports
+part_numbers:
+  - s8901-54xc
+u_height: 1
+full_depth: true
+weight_kg: 8
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0
+    description: OOB Management
+    type: 1000base-t
+    mgmt_only: true
+  - name: ethernet0
+    type: 25gbase-x-sfp28
+  - name: ethernet1
+    type: 25gbase-x-sfp28
+  - name: ethernet2
+    type: 25gbase-x-sfp28
+  - name: ethernet3
+    type: 25gbase-x-sfp28
+  - name: ethernet4
+    type: 25gbase-x-sfp28
+  - name: ethernet5
+    type: 25gbase-x-sfp28
+  - name: ethernet6
+    type: 25gbase-x-sfp28
+  - name: ethernet7
+    type: 25gbase-x-sfp28
+  - name: ethernet8
+    type: 25gbase-x-sfp28
+  - name: ethernet9
+    type: 25gbase-x-sfp28
+  - name: ethernet10
+    type: 25gbase-x-sfp28
+  - name: ethernet11
+    type: 25gbase-x-sfp28
+  - name: ethernet12
+    type: 25gbase-x-sfp28
+  - name: ethernet13
+    type: 25gbase-x-sfp28
+  - name: ethernet14
+    type: 25gbase-x-sfp28
+  - name: ethernet15
+    type: 25gbase-x-sfp28
+  - name: ethernet16
+    type: 25gbase-x-sfp28
+  - name: ethernet17
+    type: 25gbase-x-sfp28
+  - name: ethernet18
+    type: 25gbase-x-sfp28
+  - name: ethernet19
+    type: 25gbase-x-sfp28
+  - name: ethernet20
+    type: 25gbase-x-sfp28
+  - name: ethernet21
+    type: 25gbase-x-sfp28
+  - name: ethernet22
+    type: 25gbase-x-sfp28
+  - name: ethernet23
+    type: 25gbase-x-sfp28
+  - name: ethernet24
+    type: 25gbase-x-sfp28
+  - name: ethernet25
+    type: 25gbase-x-sfp28
+  - name: ethernet26
+    type: 25gbase-x-sfp28
+  - name: ethernet27
+    type: 25gbase-x-sfp28
+  - name: ethernet28
+    type: 25gbase-x-sfp28
+  - name: ethernet29
+    type: 25gbase-x-sfp28
+  - name: ethernet30
+    type: 25gbase-x-sfp28
+  - name: ethernet31
+    type: 25gbase-x-sfp28
+  - name: ethernet32
+    type: 25gbase-x-sfp28
+  - name: ethernet33
+    type: 25gbase-x-sfp28
+  - name: ethernet34
+    type: 25gbase-x-sfp28
+  - name: ethernet35
+    type: 25gbase-x-sfp28
+  - name: ethernet36
+    type: 25gbase-x-sfp28
+  - name: ethernet37
+    type: 25gbase-x-sfp28
+  - name: ethernet38
+    type: 25gbase-x-sfp28
+  - name: ethernet39
+    type: 25gbase-x-sfp28
+  - name: ethernet40
+    type: 25gbase-x-sfp28
+  - name: ethernet41
+    type: 25gbase-x-sfp28
+  - name: ethernet42
+    type: 25gbase-x-sfp28
+  - name: ethernet43
+    type: 25gbase-x-sfp28
+  - name: ethernet44
+    type: 25gbase-x-sfp28
+  - name: ethernet45
+    type: 25gbase-x-sfp28
+  - name: ethernet46
+    type: 25gbase-x-sfp28
+  - name: ethernet46-53]
+    type: 100gbase-x-qsfp28
+  - name: ethernet47
+    type: 25gbase-x-sfp28
+console_ports:
+  - name: console
+    type: rj-45
+module_bays:
+  - name: FAN0
+    bay_position: "0"
+  - name: FAN1
+    bay_position: "1"
+  - name: FAN2
+    bay_position: "2"
+  - name: FAN3
+    bay_position: "3"
+  - name: FAN4
+    bay_position: "4"
+  - name: PSU0
+    bay_position: "0"
+  - name: PSU1
+    bay_position: "1"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/UfiSpace/S8901-54XC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 170f3d89437b0594

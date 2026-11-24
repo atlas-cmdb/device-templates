@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huawei
+model: OptiXstar B650G-8E8P3W
+slug: optixstar-b650g-8e8p3w
+category: network_switch
+form_factor: rack
+part_numbers:
+  - B650G-8E8P3W
+u_height: 1
+full_depth: false
+weight_kg: 1.4
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: PON
+    type: gpon
+  - name: LAN1
+    type: 1000base-t
+  - name: LAN2
+    type: 1000base-t
+  - name: LAN3
+    type: 1000base-t
+  - name: LAN4
+    type: 1000base-t
+  - name: LAN5
+    type: 1000base-t
+  - name: LAN6
+    type: 1000base-t
+  - name: LAN7
+    type: 1000base-t
+  - name: LAN8
+    type: 1000base-t
+console_ports:
+  - name: USB
+    type: usb-a
+  - name: TEL1
+    description: POTS
+    type: rj-11
+  - name: TEL2
+    description: POTS
+    type: rj-11
+  - name: TEL3
+    description: POTS
+    type: rj-11
+  - name: TEL4
+    description: POTS
+    type: rj-11
+  - name: TEL5
+    description: POTS
+    type: rj-11
+  - name: TEL6
+    description: POTS
+    type: rj-11
+  - name: TEL7
+    description: POTS
+    type: rj-11
+  - name: TEL8
+    description: POTS
+    type: rj-11
+power_ports:
+  - name: DC 12V
+    type: dc-terminal
+    maximum_draw_w: 24
+    allocated_draw_w: 6
+links:
+  datasheet: https://support.huawei.com/enterprise/en/doc/EDOC1100532334/82d93e37/technical-specifications
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Huawei/OptiXstar-B650G-8E8P3W.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 35dace710478737e

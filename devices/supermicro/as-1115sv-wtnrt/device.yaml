@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: AS-1115SV-WTNRT
+slug: as-1115sv-wtnrt
+category: server
+form_factor: rack
+part_numbers:
+  - AS-1115SV-WTNRT
+u_height: 1
+full_depth: true
+weight_kg: 9.53
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: BMC
+    description: Dedicated IPMI LAN port
+    type: 1000base-t
+    mgmt_only: true
+  - name: Gig-E 1
+    type: 10gbase-t
+  - name: Gig-E 2
+    type: 10gbase-t
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: Slot 1
+    description: PCIe 5.0 x16 slot (full-height, full-length)
+    bay_position: "1"
+  - name: Slot 2
+    description: PCIe 5.0 x16 slot (full-height, full-length)
+    bay_position: "2"
+  - name: Slot 3
+    description: PCIe 5.0 x16 slot (low profile)
+    bay_position: "3"
+  - name: PSU1
+    description: Left power supply unit
+    bay_position: "1"
+  - name: PSU2
+    description: Right power supply unit
+    bay_position: "2"
+links:
+  datasheet: https://www.supermicro.com/en/products/system/datasheet/as-1115sv-wtnrt
+  manual: https://www.supermicro.com/manuals/superserver/1U/MNL-2649.pdf
+comments: <br />
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/AS-1115SV-WTNRT.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 46c8271f6f8c838e

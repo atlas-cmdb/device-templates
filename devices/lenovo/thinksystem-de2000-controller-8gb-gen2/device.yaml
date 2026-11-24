@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lenovo
+model: ThinkSystem DE2000 Controller 8GB Gen2
+slug: thinksystem-de2000-controller-8gb-gen2
+category: server
+form_factor: blade
+u_height: 0
+full_depth: false
+subdevice_role: child
+interfaces:
+  - name: Port P1
+    type: 1000base-t
+    mgmt_only: true
+  - name: SAS Expansion 1
+    type: other
+  - name: SAS Expansion 2
+    type: other
+console_ports:
+  - name: Console RJ-45
+    type: rj-45
+  - name: Console Micro-USB
+    type: usb-micro-b
+module_bays:
+  - name: HIC
+    bay_position: "1"
+links:
+  manual: https://lenovopress.lenovo.com/lp0881-thinksystem-de2000h-hybrid-storage-array
+comments: (feature code BQ9Y). Gen2 controllers have no baseboard host ports; host ports are on the optional HIC.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Lenovo/ThinkSystem-DE2000-Controller-8GB-Gen2.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 0ae5391220b50cfd

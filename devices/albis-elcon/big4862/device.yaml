@@ -1,0 +1,85 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: albis-elcon
+model: BIG4862
+slug: big4862
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 4.5
+power:
+  psu_count: 2
+interfaces:
+  - name: LCT
+    type: 1000base-t
+  - name: T3/T4
+    type: 1000base-t
+  - name: WAN1S
+    type: 10gbase-x-sfpp
+  - name: WAN2S
+    type: 10gbase-x-sfpp
+  - name: LAN1S
+    type: 10gbase-x-sfpp
+  - name: LAN2S
+    type: 10gbase-x-sfpp
+  - name: LAN3S
+    type: 1000base-x-sfp
+  - name: LAN4S
+    type: 1000base-x-sfp
+  - name: LAN5S
+    type: 1000base-x-sfp
+  - name: LAN6S
+    type: 1000base-x-sfp
+  - name: LAN7S
+    type: 1000base-x-sfp
+  - name: LAN8S
+    type: 1000base-x-sfp
+  - name: LAN9S
+    type: 1000base-x-sfp
+  - name: LAN10S
+    type: 1000base-x-sfp
+  - name: LAN11
+    type: 1000base-t
+  - name: LAN12
+    type: 1000base-t
+  - name: LAN11S
+    type: 1000base-x-sfp
+  - name: LAN12S
+    type: 1000base-x-sfp
+  - name: LAN13S
+    type: 1000base-x-sfp
+  - name: LAN14S
+    type: 1000base-x-sfp
+  - name: LAN13
+    type: 1000base-t
+  - name: LAN14
+    type: 1000base-t
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 65
+    allocated_draw_w: 50
+  - name: PS2
+    type: iec-60320-c14
+    maximum_draw_w: 65
+    allocated_draw_w: 50
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Albis-Elcon/BIG4862.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1c8069c6e8200b12

@@ -1,0 +1,99 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: f5
+model: BIG-IP r10600
+slug: big-ip-r10600
+category: load_balancer
+form_factor: rack
+part_numbers:
+  - r10600
+u_height: 1
+full_depth: true
+weight_kg: 16.33
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: mgmt
+    type: 1000base-t
+    mgmt_only: true
+  - name: "1.0"
+    type: 100gbase-x-qsfp28
+  - name: "2.0"
+    type: 100gbase-x-qsfp28
+  - name: "3.0"
+    type: 25gbase-x-sfp28
+  - name: "4.0"
+    type: 25gbase-x-sfp28
+  - name: "5.0"
+    type: 25gbase-x-sfp28
+  - name: "6.0"
+    type: 25gbase-x-sfp28
+  - name: "7.0"
+    type: 25gbase-x-sfp28
+  - name: "8.0"
+    type: 25gbase-x-sfp28
+  - name: "9.0"
+    type: 25gbase-x-sfp28
+  - name: "10.0"
+    type: 25gbase-x-sfp28
+  - name: "11.0"
+    type: 100gbase-x-qsfp28
+  - name: "12.0"
+    type: 100gbase-x-qsfp28
+  - name: "13.0"
+    type: 25gbase-x-sfp28
+  - name: "14.0"
+    type: 25gbase-x-sfp28
+  - name: "15.0"
+    type: 25gbase-x-sfp28
+  - name: "16.0"
+    type: 25gbase-x-sfp28
+  - name: "17.0"
+    type: 25gbase-x-sfp28
+  - name: "18.0"
+    type: 25gbase-x-sfp28
+  - name: "19.0"
+    type: 25gbase-x-sfp28
+  - name: "20.0"
+    type: 25gbase-x-sfp28
+  - name: Failover
+    type: 1000base-t
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: usb1
+    type: usb-a
+module_bays:
+  - name: psu1
+    bay_position: "1"
+  - name: psu2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  datasheet: https://www.f5.com/pdf/products/big-ip-platforms-datasheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/F5/BIG-IP-r10600.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: dceb8ada43d4012a

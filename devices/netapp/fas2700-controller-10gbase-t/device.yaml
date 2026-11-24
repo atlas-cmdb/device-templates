@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netapp
+model: FAS2700 Controller 10GBASE-T
+slug: fas2700-controller-10gbase-t
+category: storage_array
+form_factor: blade
+part_numbers:
+  - X3219A
+u_height: 0
+full_depth: true
+subdevice_role: child
+power:
+  psu_count: 4
+interfaces:
+  - name: e0a
+    type: 10gbase-x-sfpp
+  - name: e0b
+    type: 10gbase-x-sfpp
+  - name: e0c
+    type: 10gbase-t
+  - name: e0d
+    type: 10gbase-t
+  - name: e0e
+    type: 10gbase-t
+  - name: e0f
+    type: 10gbase-t
+  - name: e0m
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: con0
+    type: rj-45
+power_ports:
+  - name: PSU1
+    type: iec-60320-c14
+  - name: PSU2
+    type: iec-60320-c14
+  - name: PSU3
+    type: iec-60320-c14
+  - name: PSU4
+    type: iec-60320-c14
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/NetApp/X3219A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: f8c55dd1d2fb0729

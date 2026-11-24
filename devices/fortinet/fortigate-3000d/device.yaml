@@ -1,0 +1,85 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fortinet
+model: FortiGate 3000D
+slug: fortigate-3000d
+category: firewall
+form_factor: rack
+part_numbers:
+  - FG-3000D
+u_height: 2
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: mgmt1
+    type: 1000base-t
+  - name: mgmt2
+    type: 1000base-t
+  - name: port1
+    type: 10gbase-x-sfpp
+  - name: port2
+    type: 10gbase-x-sfpp
+  - name: port3
+    type: 10gbase-x-sfpp
+  - name: port4
+    type: 10gbase-x-sfpp
+  - name: port5
+    type: 10gbase-x-sfpp
+  - name: port6
+    type: 10gbase-x-sfpp
+  - name: port7
+    type: 10gbase-x-sfpp
+  - name: port8
+    type: 10gbase-x-sfpp
+  - name: port9
+    type: 10gbase-x-sfpp
+  - name: port10
+    type: 10gbase-x-sfpp
+  - name: port11
+    type: 10gbase-x-sfpp
+  - name: port12
+    type: 10gbase-x-sfpp
+  - name: port13
+    type: 10gbase-x-sfpp
+  - name: port14
+    type: 10gbase-x-sfpp
+  - name: port15
+    type: 10gbase-x-sfpp
+  - name: port16
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 427
+    allocated_draw_w: 310
+  - name: PS2
+    type: iec-60320-c14
+    maximum_draw_w: 427
+    allocated_draw_w: 310
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fortinet/FG-3000D.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: d6a0112e82f17242

@@ -1,0 +1,97 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: UCS C460 M4
+slug: ucs-c460-m4
+category: server
+form_factor: rack
+part_numbers:
+  - UCSC-C460-M4
+u_height: 4
+full_depth: true
+weight_kg: 64.4
+airflow: front-to-rear
+power:
+  psu_count: 4
+interfaces:
+  - name: Ethernet L1/1
+    label: 1GE 1
+    type: 1000base-t
+  - name: Ethernet L1/2
+    label: 1GE 2
+    type: 1000base-t
+  - name: Ethernet L2/1
+    label: 10GE 1
+    type: 10gbase-t
+  - name: Ethernet L2/2
+    label: 10GE 2
+    type: 10gbase-t
+  - name: CIMC
+    label: M
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Console
+    label: IOIOI
+    type: de-9
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+  - name: PSU3
+    bay_position: "3"
+  - name: PSU4
+    bay_position: "4"
+  - name: PCIe slot 1
+    bay_position: PCIe-1
+  - name: PCIe slot 2
+    bay_position: PCIe-2
+  - name: PCIe slot 3
+    bay_position: PCIe-3
+  - name: PCIe slot 4
+    bay_position: PCIe-4
+  - name: PCIe slot 5
+    bay_position: PCIe-5
+  - name: PCIe slot 6
+    bay_position: PCIe-6
+  - name: PCIe slot 7
+    bay_position: PCIe-7
+  - name: PCIe slot 8
+    bay_position: PCIe-8
+  - name: PCIe slot 9
+    bay_position: PCIe-9
+  - name: PCIe slot 10
+    bay_position: PCIe-10
+  - name: mRAID
+    bay_position: mRAID
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/c460m4_specsheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/UCSC-C460-M4.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 9ea6b3f27fbd6398

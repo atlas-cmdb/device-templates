@@ -1,0 +1,32 @@
+name: "✏️ Correct a device"
+description: Something about an existing template is wrong or missing (U height, depth, power, ports, category...).
+title: "[Fix]: <manufacturer>/<model>"
+labels: ["update-device", "needs-triage"]
+body:
+  - type: input
+    id: device_id
+    attributes:
+      label: Device id
+      description: From the catalog, e.g. `apc/ap8853`. Several devices? List them in the description.
+      placeholder: apc/ap8853
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong or missing?
+      placeholder: |
+        u_height says 1 but the R760 is 2U; category says "appliance" but it is a firewall...
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: Correct values
+      description: If you know YAML, paste the fields as they should be.
+      render: yaml
+  - type: input
+    id: evidence
+    attributes:
+      label: Source
+      description: Datasheet / manual URL, or "I have this device in front of me".

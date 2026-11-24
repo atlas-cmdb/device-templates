@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eaton
+model: 5PX3000IRT2U
+slug: 5px3000irt2u
+category: ups
+form_factor: rack
+part_numbers:
+  - 5PX3000IRT2U
+u_height: 2
+full_depth: true
+weight_kg: 38.08
+power:
+  outlet_count: 9
+  psu_count: 1
+interfaces:
+  - name: eth0
+    type: 1000base-t
+    mgmt_only: true
+power_ports:
+  - name: Input Power
+    type: iec-60320-c20
+    maximum_draw_w: 2700
+power_outlets:
+  - name: Group1 - Outlet1
+    type: iec-60320-c13
+  - name: Group1 - Outlet2
+    type: iec-60320-c13
+  - name: Group2 - Outlet1
+    type: iec-60320-c13
+  - name: Group2 - Outlet2
+    type: iec-60320-c13
+  - name: Primary Group - Outlet1
+    type: iec-60320-c13
+  - name: Primary Group - Outlet2
+    type: iec-60320-c13
+  - name: Primary Group - Outlet3
+    type: iec-60320-c13
+  - name: Primary Group - Outlet4
+    type: iec-60320-c13
+  - name: Primary Group 30R
+    type: iec-60320-c19
+links:
+  product_page: https://www.eaton.com/sg/en-us/skuPage.5PX3000IRT2U.html
+comments: "Eaton 5PX UPS, 3000 VA, 2700 W, Input: C20, Outputs: (8) C13, (1) C19, Rack/tower, 2U"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eaton/5PX3000IRT2U.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 480697c3a7cd8851

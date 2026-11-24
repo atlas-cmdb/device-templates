@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netgear
+model: M4300-12X12F
+slug: m4300-12x12f
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+subdevice_role: parent
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: 1/0/1
+    type: 10gbase-x-sfpp
+  - name: 1/0/2
+    type: 10gbase-x-sfpp
+  - name: 1/0/3
+    type: 10gbase-x-sfpp
+  - name: 1/0/4
+    type: 10gbase-x-sfpp
+  - name: 1/0/5
+    type: 10gbase-x-sfpp
+  - name: 1/0/6
+    type: 10gbase-x-sfpp
+  - name: 1/0/7
+    type: 10gbase-x-sfpp
+  - name: 1/0/8
+    type: 10gbase-x-sfpp
+  - name: 1/0/9
+    type: 10gbase-x-sfpp
+  - name: 1/0/10
+    type: 10gbase-x-sfpp
+  - name: 1/0/11
+    type: 10gbase-x-sfpp
+  - name: 1/0/12
+    type: 10gbase-x-sfpp
+  - name: 1/0/13
+    type: 10gbase-t
+  - name: 1/0/14
+    type: 10gbase-t
+  - name: 1/0/15
+    type: 10gbase-t
+  - name: 1/0/16
+    type: 10gbase-t
+  - name: 1/0/17
+    type: 10gbase-t
+  - name: 1/0/18
+    type: 10gbase-t
+  - name: 1/0/19
+    type: 10gbase-t
+  - name: 1/0/20
+    type: 10gbase-t
+  - name: 1/0/21
+    type: 10gbase-t
+  - name: 1/0/22
+    type: 10gbase-t
+  - name: 1/0/23
+    type: 10gbase-t
+  - name: 1/0/24
+    type: 10gbase-t
+power_ports:
+  - name: PSU1
+    type: iec-60320-c14
+    maximum_draw_w: 250
+links:
+  product_page: https://www.netgear.it/support/product/m4300-12x12f.aspx
+comments: "Documentation:"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Netgear/M4300-12X12F.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 97aa107d3cdb29f7

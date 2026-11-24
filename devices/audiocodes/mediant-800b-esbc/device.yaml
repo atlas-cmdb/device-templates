@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: audiocodes
+model: Mediant 800B ESBC
+slug: mediant-800b-esbc
+category: network_switch
+form_factor: rack
+part_numbers:
+  - Mediant 800B
+u_height: 1
+full_depth: false
+subdevice_role: parent
+weight_kg: 2.495
+power:
+  psu_count: 1
+interfaces:
+  - name: FE_5_1
+    type: 100base-tx
+  - name: FE_5_2
+    type: 100base-tx
+  - name: FE_5_3
+    type: 100base-tx
+  - name: FE_5_4
+    type: 100base-tx
+  - name: FE_5_5
+    type: 100base-tx
+  - name: FE_5_6
+    type: 100base-tx
+  - name: FE_5_7
+    type: 100base-tx
+  - name: FE_5_8
+    type: 100base-tx
+  - name: GE_4_1
+    type: 1000base-tx
+  - name: GE_4_2
+    type: 1000base-tx
+  - name: GE_4_3
+    type: 1000base-tx
+  - name: GE_4_4
+    type: 1000base-tx
+  - name: WAN
+    type: 1000base-tx
+console_ports:
+  - name: console
+    type: rj-45
+power_ports:
+  - name: AC POWER INLET
+    type: iec-60320-c14
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/AudioCodes/mediant-800b-esbc.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: 134239460d63a3e3

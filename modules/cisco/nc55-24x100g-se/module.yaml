@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: NC55-24X100G-SE
+slug: nc55-24x100g-se
+kind: other
+part_numbers:
+  - NC55-24X100G-SE
+interfaces:
+  - name: Hu0/{module}/0/0
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/1
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/2
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/3
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/4
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/5
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/6
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/7
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/8
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/9
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/10
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/11
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/12
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/13
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/14
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/15
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/16
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/17
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/18
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/19
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/20
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/21
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/22
+    type: 100gbase-x-qsfp28
+  - name: Hu0/{module}/0/23
+    type: 100gbase-x-qsfp28
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/routers/network-convergence-system-5500-series/datasheet-c78-737779.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/NC55-24X100G-SE.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: c0662bdc4ee4c7d2

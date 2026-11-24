@@ -1,0 +1,100 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: mikrotik
+model: CRS312-4C+8XG-RM
+slug: crs312-4c-plus8xg-rm
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+power:
+  psu_count: 2
+interfaces:
+  - name: ether1
+    label: Port1
+    type: 10gbase-t
+  - name: ether2
+    label: Port2
+    type: 10gbase-t
+  - name: ether3
+    label: Port3
+    type: 10gbase-t
+  - name: ether4
+    label: Port4
+    type: 10gbase-t
+  - name: ether5
+    label: Port5
+    type: 10gbase-t
+  - name: ether6
+    label: Port6
+    type: 10gbase-t
+  - name: ether7
+    label: Port7
+    type: 10gbase-t
+  - name: ether8
+    label: Port8
+    type: 10gbase-t
+  - name: ether9
+    label: COMBO1T
+    type: 10gbase-t
+  - name: ether10
+    label: COMBO2T
+    type: 10gbase-t
+  - name: ether11
+    label: COMBO3T
+    type: 10gbase-t
+  - name: ether12
+    label: COMBO4T
+    type: 10gbase-t
+  - name: sfp1
+    label: COMBO1F
+    type: 10gbase-x-sfpp
+  - name: sfp2
+    label: COMBO2F
+    type: 10gbase-x-sfpp
+  - name: sfp3
+    label: COMBO3F
+    type: 10gbase-x-sfpp
+  - name: sfp4
+    label: COMBO4F
+    type: 10gbase-x-sfpp
+  - name: mgmt1
+    label: MGMT/BOOT
+    type: 100base-tx
+    mgmt_only: true
+console_ports:
+  - name: serial1
+    label: CONSOLE
+    type: rj-45
+power_ports:
+  - name: PSU1
+    type: iec-60320-c14
+    maximum_draw_w: 60
+  - name: PSU2
+    type: iec-60320-c14
+    maximum_draw_w: 60
+links:
+  product_page: https://mikrotik.com/product/crs312_4c_8xg_rm
+comments: |-
+  Ports 1T-4T and 1F-4F are actually four XOR'ed COMBO ports.
+  They can be used either as RJ-45 or SFP+.
+  See
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/MikroTik/CRS312-4C-Plus-8XG-RM.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 14d52e8c5dc5946c

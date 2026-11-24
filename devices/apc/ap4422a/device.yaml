@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: AP4422A
+slug: ap4422a
+category: ats
+form_factor: rack
+part_numbers:
+  - AP4422A
+u_height: 1
+full_depth: false
+weight_kg: 4.21
+airflow: passive
+power:
+  outlet_count: 1
+interfaces:
+  - name: Management
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: usb-micro-b
+power_ports:
+  - name: Source A
+    type: iec-60309-2p-e-6h
+  - name: Source B
+    type: iec-60309-2p-e-6h
+power_outlets:
+  - name: Outlet 1
+    type: iec-60309-2p-e-6h
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+comments: APC Netshelter Rack Automatic Transfer Switch, 1U, 16A, 230V, 2 IEC309 IN, 1 IEC309 OUT, 50/60Hz
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/AP4422A.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 382a1bce1ba67d9e

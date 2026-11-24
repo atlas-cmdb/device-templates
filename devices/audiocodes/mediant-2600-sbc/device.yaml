@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: audiocodes
+model: Mediant 2600 SBC
+slug: mediant-2600-sbc
+category: network_switch
+form_factor: rack
+part_numbers:
+  - Mediant 2600 SBC
+u_height: 1
+full_depth: true
+weight_kg: 5.307
+airflow: front-to-rear
+interfaces:
+  - name: GE_1_1
+    type: 1000base-t
+  - name: GE_1_2
+    type: 1000base-t
+  - name: GE_1_3
+    type: 1000base-t
+  - name: GE_1_4
+    type: 1000base-t
+  - name: GE_1_5
+    type: 1000base-t
+  - name: GE_1_6
+    type: 1000base-t
+  - name: GE_1_7
+    type: 1000base-t
+  - name: GE_1_8
+    type: 1000base-t
+module_bays:
+  - name: PS-A
+    bay_position: A
+  - name: PS-B
+    bay_position: B
+links:
+  datasheet: https://www.audiocodes.com/media/2414/mediant-2600-sbc-datasheet.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/AudioCodes/mediant-2600-SBC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 96dc078ad8f4c695

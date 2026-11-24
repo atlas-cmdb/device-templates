@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: mikrotik
+model: RB5009UPr+S+IN
+slug: rb5009upr-pluss-plusin
+category: router
+form_factor: blade
+u_height: 0
+full_depth: false
+subdevice_role: child
+airflow: passive
+power:
+  psu_count: 2
+interfaces:
+  - name: ether1
+    type: 2.5gbase-t
+    poe_mode: pd
+    poe_type: passive-48v-4pair
+  - name: ether2
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: ether3
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: ether4
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: ether5
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: ether6
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: ether7
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: ether8
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: sfp-sfpplus1
+    type: 10gbase-x-sfpp
+power_ports:
+  - name: power1
+    type: dc-terminal
+    maximum_draw_w: 150
+    allocated_draw_w: 15
+  - name: power2
+    type: hardwired
+    maximum_draw_w: 150
+    allocated_draw_w: 15
+links:
+  datasheet: https://mikrotik.com/product/rb5009upr_s_in
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/MikroTik/RB5009UPr-Plus-S-Plus-IN.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: c36700dd30377f0a

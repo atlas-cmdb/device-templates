@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: UniFi Dream Router 7
+slug: unifi-dream-router-7
+category: router
+form_factor: other
+part_numbers:
+  - UDR7
+u_height: 0
+full_depth: false
+weight_kg: 1.1
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: port.1
+    label: Port 1 - LAN (PoE)
+    type: 2.5gbase-t
+    poe_mode: pse
+    poe_type: type1-ieee802.3af
+  - name: port.2
+    label: Port 2 - LAN
+    type: 2.5gbase-t
+  - name: port.3
+    label: Port 3 - LAN
+    type: 2.5gbase-t
+  - name: port.4
+    label: Port 4 - LAN
+    type: 2.5gbase-t
+  - name: port.5
+    label: Port 5 - WAN
+    type: 10gbase-x-sfpp
+power_ports:
+  - name: Supply
+    description: 100-240VAC/50-60 Hz
+    type: iec-60320-c6
+    maximum_draw_w: 26
+links:
+  other:
+    - label: Ubiquiti UniFi Dream Router 7
+      url: https://techspecs.ui.com/unifi/cloud-gateways/udr7
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/UDR7.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - full_depth
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1111a0c8de1ba6f6

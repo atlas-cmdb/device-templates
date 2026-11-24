@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge R740
+slug: poweredge-r740
+category: server
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 28.6
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: iDRAC9
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Rear Serial
+    type: de-9
+module_bays:
+  - name: PSU-1
+    label: "1"
+    bay_position: "1"
+  - name: PSU-2
+    label: "2"
+    bay_position: "2"
+  - name: NUMA 0 - NDC slot 1
+    bay_position: NDC-1
+  - name: NUMA 0 - PCIe slot 1 - FH
+    label: "1"
+    bay_position: PCIe-1
+  - name: NUMA 0 - PCIe slot 2 - FH
+    label: "2"
+    bay_position: PCIe-2
+  - name: NUMA 0 - PCIe slot 3 - FH
+    label: "3"
+    bay_position: PCIe-3
+  - name: NUMA 1 - PCIe slot 4 - FH
+    label: "4"
+    bay_position: PCIe-4
+  - name: NUMA 1 - PCIe slot 5 - FH
+    label: "5"
+    bay_position: PCIe-5
+  - name: NUMA 0 - PCIe slot 6 - LP
+    label: "6"
+    bay_position: PCIe-6
+  - name: NUMA 1 - PCIe slot 7 - FH
+    label: "7"
+    bay_position: PCIe-7
+  - name: NUMA 1 - PCIe slot 8 - FH
+    label: "8"
+    bay_position: PCIe-8
+links:
+  datasheet: https://i.dell.com/sites/csdocuments/Product_Docs/en/poweredge-r740-specsheet.pdf
+  manual: https://i.dell.com/sites/csdocuments/Shared-Content_data-Sheets_Documents/en/aa/PowerEdge_R740_R740xd_Technical_Guide.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-R740.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 7adcc3ec4df1c639

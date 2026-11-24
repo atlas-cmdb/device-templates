@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: Nexus 6001 4xQSFP Ethernet Module
+slug: nexus-6001-4xqsfp-ethernet-module
+kind: other
+part_numbers:
+  - N6K-C6001-M4Q
+interfaces:
+  - name: Ethernet{module}/1
+    type: 40gbase-x-qsfpp
+  - name: Etherne{module}/2
+    type: 40gbase-x-qsfpp
+  - name: Ethernet{module}/3
+    type: 40gbase-x-qsfpp
+  - name: Ethernet{module}/4
+    type: 40gbase-x-qsfpp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/N6K-C6001-M4Q.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 12f79b7f42818197

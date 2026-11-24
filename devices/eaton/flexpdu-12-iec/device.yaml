@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: eaton
+model: FLEXPDU 12 IEC
+slug: flexpdu-12-iec
+category: pdu
+form_factor: rack
+part_numbers:
+  - EFLX12I
+u_height: 1
+full_depth: false
+weight_kg: 1.6
+airflow: passive
+power:
+  outlet_count: 13
+power_ports:
+  - name: Power In
+    type: iec-60320-c20
+power_outlets:
+  - name: P1
+    type: iec-60320-c13
+    power_port: Power In
+  - name: P2
+    type: iec-60320-c13
+    power_port: Power In
+  - name: P3
+    type: iec-60320-c13
+    power_port: Power In
+  - name: P4
+    type: iec-60320-c13
+    power_port: Power In
+  - name: P5
+    type: iec-60320-c13
+    power_port: Power In
+  - name: P6
+    type: iec-60320-c13
+    power_port: Power In
+  - name: P7
+    type: iec-60320-c13
+    power_port: Power In
+  - name: P8
+    type: iec-60320-c13
+    power_port: Power In
+  - name: P9
+    type: iec-60320-c13
+    power_port: Power In
+  - name: P10
+    type: iec-60320-c13
+    power_port: Power In
+  - name: P11
+    type: iec-60320-c13
+    power_port: Power In
+  - name: P12
+    type: iec-60320-c13
+    power_port: Power In
+  - name: Power Out
+    type: iec-60320-c19
+    power_port: Power In
+links:
+  manual: https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/power-distribution-for-it-equipment/flexpdu-hotswap-mbp/Eaton%20Flex%20PDU%20-%20Installation%20and%20User%20Manual.pdf
+  product_page: https://www.eaton.com/gb/en-gb/skuPage.EFLX12I.html
+comments: "Eaton FlexPDU, 1U, C20 input, 4 kW, 16A, 200-240V, Outlets: (12) C13/(1) C19"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Eaton/EFLX12I.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - links.manual
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 104cbb1d647ee7c0

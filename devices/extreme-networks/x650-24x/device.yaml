@@ -1,0 +1,97 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: extreme-networks
+model: X650-24x
+slug: x650-24x
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 10.1
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: "1"
+    type: 10gbase-x-sfpp
+  - name: "2"
+    type: 10gbase-x-sfpp
+  - name: "3"
+    type: 10gbase-x-sfpp
+  - name: "4"
+    type: 10gbase-x-sfpp
+  - name: "5"
+    type: 10gbase-x-sfpp
+  - name: "6"
+    type: 10gbase-x-sfpp
+  - name: "7"
+    type: 10gbase-x-sfpp
+  - name: "8"
+    type: 10gbase-x-sfpp
+  - name: "9"
+    type: 10gbase-x-sfpp
+  - name: "10"
+    type: 10gbase-x-sfpp
+  - name: "11"
+    type: 10gbase-x-sfpp
+  - name: "12"
+    type: 10gbase-x-sfpp
+  - name: "13"
+    type: 10gbase-x-sfpp
+  - name: "14"
+    type: 10gbase-x-sfpp
+  - name: "15"
+    type: 10gbase-x-sfpp
+  - name: "16"
+    type: 10gbase-x-sfpp
+  - name: "17"
+    type: 10gbase-x-sfpp
+  - name: "18"
+    type: 10gbase-x-sfpp
+  - name: "19"
+    type: 10gbase-x-sfpp
+  - name: "20"
+    type: 10gbase-x-sfpp
+  - name: "21"
+    type: 10gbase-x-sfpp
+  - name: "22"
+    type: 10gbase-x-sfpp
+  - name: "23"
+    type: 10gbase-x-sfpp
+  - name: "24"
+    type: 10gbase-x-sfpp
+  - name: Mgmt
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial console port
+    type: de-9
+module_bays:
+  - name: PSU-1
+    bay_position: PSU-1
+  - name: PSU-2
+    bay_position: PSU-2
+  - name: VIM
+    bay_position: VIM
+links:
+  datasheet: https://documentation.extremenetworks.com/summit_16/GUID-A13667C4-14C1-4460-9C7B-D319D5FC5E31.shtml
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Extreme Networks/X650-24x.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 75494b77ec67cd74

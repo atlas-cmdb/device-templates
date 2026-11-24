@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: rockwell-automation
+model: 1783-HMS4SG8EG4CGN
+slug: 1783-hms4sg8eg4cgn
+category: network_switch
+form_factor: rack
+part_numbers:
+  - 1783-HMS4SG8EG4CGN
+u_height: 3
+full_depth: false
+power:
+  psu_count: 2
+interfaces:
+  - name: GigabitEthernet1/1
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/2
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/3
+    type: 1000base-t
+  - name: GigabitEthernet1/4
+    type: 1000base-t
+  - name: GigabitEthernet1/5
+    type: 1000base-t
+  - name: GigabitEthernet1/6
+    type: 1000base-t
+  - name: GigabitEthernet1/7
+    type: 1000base-t
+  - name: GigabitEthernet1/8
+    type: 1000base-t
+  - name: GigabitEthernet1/9
+    type: 1000base-t
+  - name: GigabitEthernet1/10
+    type: 1000base-t
+  - name: GigabitEthernet1/11
+    type: 1000base-t
+  - name: GigabitEthernet1/12
+    type: 1000base-t
+  - name: GigabitEthernet1/13
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/14
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/15
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/16
+    type: 1000base-x-sfp
+  - name: SVI1
+    type: virtual
+console_ports:
+  - name: usb
+    type: usb-mini-b
+  - name: con 0
+    type: rj-45
+power_ports:
+  - name: Pwr-A
+    type: dc-terminal
+    maximum_draw_w: 224
+    allocated_draw_w: 164
+  - name: Pwr-B
+    type: dc-terminal
+    maximum_draw_w: 224
+    allocated_draw_w: 164
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Rockwell Automation/1783-HMS4SG8EG4CGN.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: c689593f4f862535

@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: huawei
+model: PAC1500S12-B1
+slug: pac1500s12-b1
+kind: other
+weight_kg: 2.1
+power_ports:
+  - name: PWR{module}
+    type: iec-60320-c14
+    maximum_draw_w: 1500
+comments: 1500 W AC Platinum Power Module for xFusion 1288H V7
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Huawei/PAC1500S12-B1.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - manufacturer
+    - model
+    - power_ports
+    - slug
+    - weight_kg
+  import_hash: 407f2c9bd83df71e

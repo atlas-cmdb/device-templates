@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: AS-1124US-TNRP
+slug: as-1124us-tnrp
+category: server
+form_factor: rack
+part_numbers:
+  - AS-1124US-TNRP
+u_height: 1
+full_depth: true
+weight_kg: 21.8
+airflow: front-to-rear
+interfaces:
+  - name: BMC
+    description: Dedicated IPMI LAN port
+    type: 1000base-t
+    mgmt_only: true
+  - name: 10GbE 1
+    type: 10gbase-t
+  - name: 10GbE 2
+    type: 10gbase-t
+  - name: SFP+ 1
+    type: 10gbase-x-sfpp
+  - name: SFP+ 2
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: Power 1
+    bay_position: "1"
+  - name: Power 2
+    bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Supermicro/AS-1124US-TNRP.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 6651c4f3f298db26

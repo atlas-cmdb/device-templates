@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: ProLiant DL380 Gen11
+slug: proliant-dl380-gen11
+category: server
+form_factor: rack
+part_numbers:
+  - P52534-B21
+u_height: 2
+full_depth: true
+weight_kg: 16
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: iLO
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+  - name: PCIe1
+    label: primary riser
+    bay_position: PCIe1
+  - name: PCIe2
+    label: primary riser
+    bay_position: PCIe2
+  - name: PCIe3
+    label: primary riser
+    bay_position: PCIe3
+  - name: PCIe4
+    label: secondary riser
+    bay_position: PCIe4
+  - name: PCIe5
+    label: secondary riser
+    bay_position: PCIe5
+  - name: PCIe6
+    label: secondary riser
+    bay_position: PCIe6
+  - name: PCIe7
+    label: tertiary riser
+    bay_position: PCIe7
+  - name: PCIe8
+    label: tertiary riser
+    bay_position: PCIe8
+  - name: OCP1
+    label: OCP 3.0
+    bay_position: OCP1
+  - name: OCP2
+    label: OCP 3.0
+    bay_position: OCP2
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  manual: https://www.hpe.com/psnow/doc/a50004307enw.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/ProLiant-DL380-Gen11.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 787dbac41837051f

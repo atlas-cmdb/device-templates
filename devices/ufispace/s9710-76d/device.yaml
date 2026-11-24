@@ -1,0 +1,301 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ufispace
+model: S9710-76D
+slug: s9710-76d
+category: router
+form_factor: rack
+description: UfiSpace S9710-76D High Density 400G Disaggregated Core/Edge Router
+part_numbers:
+  - S9710-76D
+u_height: 2
+full_depth: true
+weight_kg: 26.95
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: eth0
+    type: 1000base-t
+    mgmt_only: true
+  - name: mgmt-sfp0
+    type: 10gbase-x-sfpp
+    mgmt_only: true
+  - name: mgmt-sfp1
+    type: 10gbase-x-sfpp
+    mgmt_only: true
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: Console USB
+    type: usb-micro-b
+module_bays:
+  - name: Transceiver 0
+    label: QSFP-DD
+    bay_position: swp0
+  - name: Transceiver 1
+    label: QSFP-DD
+    bay_position: swp1
+  - name: Transceiver 2
+    label: QSFP-DD
+    bay_position: swp2
+  - name: Transceiver 3
+    label: QSFP-DD
+    bay_position: swp3
+  - name: Transceiver 4
+    label: QSFP-DD
+    bay_position: swp4
+  - name: Transceiver 5
+    label: QSFP-DD
+    bay_position: swp5
+  - name: Transceiver 6
+    label: QSFP-DD
+    bay_position: swp6
+  - name: Transceiver 7
+    label: QSFP-DD
+    bay_position: swp7
+  - name: Transceiver 8
+    label: QSFP-DD
+    bay_position: swp8
+  - name: Transceiver 9
+    label: QSFP-DD
+    bay_position: swp9
+  - name: Transceiver 10
+    label: QSFP-DD
+    bay_position: swp10
+  - name: Transceiver 11
+    label: QSFP-DD
+    bay_position: swp11
+  - name: Transceiver 12
+    label: QSFP-DD
+    bay_position: swp12
+  - name: Transceiver 13
+    label: QSFP-DD
+    bay_position: swp13
+  - name: Transceiver 14
+    label: QSFP-DD
+    bay_position: swp14
+  - name: Transceiver 15
+    label: QSFP-DD
+    bay_position: swp15
+  - name: Transceiver 16
+    label: QSFP-DD
+    bay_position: swp16
+  - name: Transceiver 17
+    label: QSFP-DD
+    bay_position: swp17
+  - name: Transceiver 18
+    label: QSFP-DD
+    bay_position: swp18
+  - name: Transceiver 19
+    label: QSFP-DD
+    bay_position: swp19
+  - name: Transceiver 20
+    label: QSFP-DD
+    bay_position: swp20
+  - name: Transceiver 21
+    label: QSFP-DD
+    bay_position: swp21
+  - name: Transceiver 22
+    label: QSFP-DD
+    bay_position: swp22
+  - name: Transceiver 23
+    label: QSFP-DD
+    bay_position: swp23
+  - name: Transceiver 24
+    label: QSFP-DD
+    bay_position: swp24
+  - name: Transceiver 25
+    label: QSFP-DD
+    bay_position: swp25
+  - name: Transceiver 26
+    label: QSFP-DD
+    bay_position: swp26
+  - name: Transceiver 27
+    label: QSFP-DD
+    bay_position: swp27
+  - name: Transceiver 28
+    label: QSFP-DD
+    bay_position: swp28
+  - name: Transceiver 29
+    label: QSFP-DD
+    bay_position: swp29
+  - name: Transceiver 30
+    label: QSFP-DD
+    bay_position: swp30
+  - name: Transceiver 31
+    label: QSFP-DD
+    bay_position: swp31
+  - name: Transceiver 32
+    label: QSFP-DD
+    bay_position: swp32
+  - name: Transceiver 33
+    label: QSFP-DD
+    bay_position: swp33
+  - name: Transceiver 34
+    label: QSFP-DD
+    bay_position: swp34
+  - name: Transceiver 35
+    label: QSFP-DD
+    bay_position: swp35
+  - name: Fabric Transceiver 36
+    label: QSFP-DD
+    bay_position: swp36
+  - name: Fabric Transceiver 37
+    label: QSFP-DD
+    bay_position: swp37
+  - name: Fabric Transceiver 38
+    label: QSFP-DD
+    bay_position: swp38
+  - name: Fabric Transceiver 39
+    label: QSFP-DD
+    bay_position: swp39
+  - name: Fabric Transceiver 40
+    label: QSFP-DD
+    bay_position: swp40
+  - name: Fabric Transceiver 41
+    label: QSFP-DD
+    bay_position: swp41
+  - name: Fabric Transceiver 42
+    label: QSFP-DD
+    bay_position: swp42
+  - name: Fabric Transceiver 43
+    label: QSFP-DD
+    bay_position: swp43
+  - name: Fabric Transceiver 44
+    label: QSFP-DD
+    bay_position: swp44
+  - name: Fabric Transceiver 45
+    label: QSFP-DD
+    bay_position: swp45
+  - name: Fabric Transceiver 46
+    label: QSFP-DD
+    bay_position: swp46
+  - name: Fabric Transceiver 47
+    label: QSFP-DD
+    bay_position: swp47
+  - name: Fabric Transceiver 48
+    label: QSFP-DD
+    bay_position: swp48
+  - name: Fabric Transceiver 49
+    label: QSFP-DD
+    bay_position: swp49
+  - name: Fabric Transceiver 50
+    label: QSFP-DD
+    bay_position: swp50
+  - name: Fabric Transceiver 51
+    label: QSFP-DD
+    bay_position: swp51
+  - name: Fabric Transceiver 52
+    label: QSFP-DD
+    bay_position: swp52
+  - name: Fabric Transceiver 53
+    label: QSFP-DD
+    bay_position: swp53
+  - name: Fabric Transceiver 54
+    label: QSFP-DD
+    bay_position: swp54
+  - name: Fabric Transceiver 55
+    label: QSFP-DD
+    bay_position: swp55
+  - name: Fabric Transceiver 56
+    label: QSFP-DD
+    bay_position: swp56
+  - name: Fabric Transceiver 57
+    label: QSFP-DD
+    bay_position: swp57
+  - name: Fabric Transceiver 58
+    label: QSFP-DD
+    bay_position: swp58
+  - name: Fabric Transceiver 59
+    label: QSFP-DD
+    bay_position: swp59
+  - name: Fabric Transceiver 60
+    label: QSFP-DD
+    bay_position: swp60
+  - name: Fabric Transceiver 61
+    label: QSFP-DD
+    bay_position: swp61
+  - name: Fabric Transceiver 62
+    label: QSFP-DD
+    bay_position: swp62
+  - name: Fabric Transceiver 63
+    label: QSFP-DD
+    bay_position: swp63
+  - name: Fabric Transceiver 64
+    label: QSFP-DD
+    bay_position: swp64
+  - name: Fabric Transceiver 65
+    label: QSFP-DD
+    bay_position: swp65
+  - name: Fabric Transceiver 66
+    label: QSFP-DD
+    bay_position: swp66
+  - name: Fabric Transceiver 67
+    label: QSFP-DD
+    bay_position: swp67
+  - name: Fabric Transceiver 68
+    label: QSFP-DD
+    bay_position: swp68
+  - name: Fabric Transceiver 69
+    label: QSFP-DD
+    bay_position: swp69
+  - name: Fabric Transceiver 70
+    label: QSFP-DD
+    bay_position: swp70
+  - name: Fabric Transceiver 71
+    label: QSFP-DD
+    bay_position: swp71
+  - name: Fabric Transceiver 72
+    label: QSFP-DD
+    bay_position: swp72
+  - name: Fabric Transceiver 73
+    label: QSFP-DD
+    bay_position: swp73
+  - name: Fabric Transceiver 74
+    label: QSFP-DD
+    bay_position: swp74
+  - name: Fabric Transceiver 75
+    label: QSFP-DD
+    bay_position: swp75
+  - name: Fan 0
+    label: Fan Module
+    bay_position: FAN0
+  - name: Fan 1
+    label: Fan Module
+    bay_position: FAN1
+  - name: Fan 2
+    label: Fan Module
+    bay_position: FAN2
+  - name: Fan 3
+    label: Fan Module
+    bay_position: FAN3
+  - name: PSU 0
+    label: Power Supply
+    bay_position: PSU0
+  - name: PSU 1
+    label: Power Supply
+    bay_position: PSU1
+comments: 2RU disaggregated core router with 36x QSFP-DD (400GE) service ports + 40x QSFP-DD (400GE) fabric ports for DDC cluster interconnect. Broadcom Jericho2c+ BCM88850 ASIC, 14.4 Tbps switching capacity. 2x 10G SFP+ management ports, 4 fan modules, 2 power supplies.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/UfiSpace/S9710-76D.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: b3b2b0e48c726877

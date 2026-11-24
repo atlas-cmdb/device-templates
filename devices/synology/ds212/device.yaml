@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: synology
+model: DS212
+slug: ds212
+category: storage_shelf
+form_factor: other
+u_height: 0
+full_depth: false
+weight_kg: 1.25
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: LAN1
+    type: 1000base-t
+  - name: LAN2
+    type: 1000base-t
+console_ports:
+  - name: USB1
+    description: USB 3.0
+    type: usb-a
+  - name: USB2
+    description: USB 3.0
+    type: usb-a
+  - name: USB3
+    description: USB 2.0
+    type: usb-a
+power_ports:
+  - name: PSU
+    type: dc-terminal
+    maximum_draw_w: 60
+    allocated_draw_w: 15
+links:
+  datasheet: https://global.download.synology.com/download/Document/Hardware/DataSheet/DiskStation/12-year/DS212/enu/Synology_DS212_Data_Sheet_enu.pdf
+comments: See
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Synology/DS212.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 08e76d0416574f04

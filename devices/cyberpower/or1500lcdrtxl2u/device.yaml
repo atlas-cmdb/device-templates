@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cyberpower
+model: OR1500LCDRTXL2U
+slug: or1500lcdrtxl2u
+category: ups
+form_factor: rack
+u_height: 2
+full_depth: true
+power:
+  outlet_count: 8
+  psu_count: 1
+interfaces:
+  - name: eth0
+    label: "1"
+    type: 1000base-t
+console_ports:
+  - name: Serial Port I
+    type: de-9
+  - name: Serial Port II
+    type: de-9
+  - name: USB
+    type: usb-b
+power_ports:
+  - name: AC Input
+    type: nema-5-15p
+    maximum_draw_w: 1125
+power_outlets:
+  - name: Right Top 1
+    type: nema-5-15r
+    power_port: AC Input
+  - name: Right Top 2
+    type: nema-5-15r
+    power_port: AC Input
+  - name: Right Bottom 1
+    type: nema-5-15r
+    power_port: AC Input
+  - name: Right Bottom 2
+    type: nema-5-15r
+    power_port: AC Input
+  - name: Left Top 1
+    type: nema-5-15r
+    power_port: AC Input
+  - name: Left Top 2
+    type: nema-5-15r
+    power_port: AC Input
+  - name: Left Bottom 1
+    type: nema-5-15r
+    power_port: AC Input
+  - name: Left Bottom 2
+    type: nema-5-15r
+    power_port: AC Input
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/CyberPower/OR1500LCDRTXL2U.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - power.outlet_count
+    - power.psu_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 50dc99eaf8b89fa8

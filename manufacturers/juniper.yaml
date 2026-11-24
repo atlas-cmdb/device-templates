@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: juniper
+name: Juniper
+aliases:
+  - Juniper Networks
+website: https://www.juniper.net

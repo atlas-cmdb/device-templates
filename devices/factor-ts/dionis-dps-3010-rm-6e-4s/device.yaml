@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: factor-ts
+model: Dionis DPS-3010-RM-6E-4S
+slug: dionis-dps-3010-rm-6e-4s
+category: network_switch
+form_factor: rack
+part_numbers:
+  - RM-6E-4S
+u_height: 1
+full_depth: true
+power:
+  psu_count: 1
+interfaces:
+  - name: ethernet 0
+    type: 1000base-t
+  - name: ethernet 1
+    type: 1000base-t
+  - name: ethernet 2
+    type: 1000base-t
+  - name: ethernet 3
+    type: 1000base-t
+  - name: ethernet 4
+    type: 1000base-t
+  - name: ethernet 5
+    type: 1000base-t
+  - name: ethernet 6
+    type: 1000base-x-sfp
+  - name: ethernet 7
+    type: 1000base-x-sfp
+  - name: ethernet 8
+    type: 1000base-x-sfp
+  - name: ethernet 9
+    type: 1000base-x-sfp
+power_ports:
+  - name: PSU0
+    type: iec-60320-c14
+    maximum_draw_w: 50
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Factor-TS/DIONIS-DPS-3010-RM-6E-4S.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: c550e3fa51d8d47b

@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: AP9560
+slug: ap9560
+category: pdu
+form_factor: rack
+part_numbers:
+  - AP9560
+u_height: 1
+full_depth: false
+weight_kg: 2.5
+airflow: passive
+power:
+  outlet_count: 10
+power_ports:
+  - name: Source
+    description: 12ft cord
+    type: nema-l5-30p
+power_outlets:
+  - name: Outlet 1
+    type: nema-5-20r
+    power_port: Source
+  - name: Outlet 2
+    type: nema-5-20r
+    power_port: Source
+  - name: Outlet 3
+    type: nema-5-20r
+    power_port: Source
+  - name: Outlet 4
+    type: nema-5-20r
+    power_port: Source
+  - name: Outlet 5
+    type: nema-5-20r
+    power_port: Source
+  - name: Outlet 6
+    type: nema-5-20r
+    power_port: Source
+  - name: Outlet 7
+    type: nema-5-20r
+    power_port: Source
+  - name: Outlet 8
+    type: nema-5-20r
+    power_port: Source
+  - name: Outlet 9
+    type: nema-5-20r
+    power_port: Source
+  - name: Outlet 10
+    type: nema-5-20r
+    power_port: Source
+comments: Rack PDU, Basic, 1U, 30A, 120V, (10)5-20
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/AP9560.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 419f94d40a33ff4b

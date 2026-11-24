@@ -1,0 +1,108 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: raisecom
+model: ISCOM2924GF-4GE
+slug: iscom2924gf-4ge
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 5.5
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: "1"
+    type: 1000base-x-sfp
+  - name: "2"
+    type: 1000base-x-sfp
+  - name: "3"
+    type: 1000base-x-sfp
+  - name: "4"
+    type: 1000base-x-sfp
+  - name: "5"
+    type: 1000base-x-sfp
+  - name: "6"
+    type: 1000base-x-sfp
+  - name: "7"
+    type: 1000base-x-sfp
+  - name: "8"
+    type: 1000base-x-sfp
+  - name: "9"
+    type: 1000base-x-sfp
+  - name: "10"
+    type: 1000base-x-sfp
+  - name: "11"
+    type: 1000base-x-sfp
+  - name: "12"
+    type: 1000base-x-sfp
+  - name: "13"
+    type: 1000base-x-sfp
+  - name: "14"
+    type: 1000base-x-sfp
+  - name: "15"
+    type: 1000base-x-sfp
+  - name: "16"
+    type: 1000base-x-sfp
+  - name: "17"
+    type: 1000base-x-sfp
+  - name: "18"
+    type: 1000base-x-sfp
+  - name: "19"
+    type: 1000base-x-sfp
+  - name: "20"
+    type: 1000base-x-sfp
+  - name: "21"
+    type: 1000base-x-sfp
+  - name: "22"
+    type: 1000base-x-sfp
+  - name: "23"
+    type: 1000base-x-sfp
+  - name: "24"
+    type: 1000base-x-sfp
+  - name: "25"
+    description: Combo port (100/1000Base-X SFP + 10/100/1000Base-T)
+    type: 1000base-x-sfp
+  - name: "26"
+    description: Combo port (100/1000Base-X SFP + 10/100/1000Base-T)
+    type: 1000base-x-sfp
+  - name: "27"
+    description: Combo port (100/1000Base-X SFP + 10/100/1000Base-T)
+    type: 1000base-x-sfp
+  - name: "28"
+    description: Combo port (100/1000Base-X SFP + 10/100/1000Base-T)
+    type: 1000base-x-sfp
+console_ports:
+  - name: MGMT
+    type: usb-a
+module_bays:
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+links:
+  manual: https://www.raisecom.com/sites/default/files/RC%20Catalog%202017%20v2.pdf
+comments: See .
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Raisecom/ISCOM2924GF-4GE.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 70820fc7e7a7c776

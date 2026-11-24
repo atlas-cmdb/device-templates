@@ -1,0 +1,110 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: datacom
+model: DM4615 OLT 16GPON-4GT-4XS
+slug: dm4615-olt-16gpon-4gt-4xs
+category: network_switch
+form_factor: rack
+part_numbers:
+  - 800.5198.xx
+u_height: 1
+full_depth: true
+weight_kg: 3.2
+airflow: side-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: gigabit-ethernet-1/1/1
+    type: 1000base-t
+  - name: gigabit-ethernet-1/1/2
+    type: 1000base-t
+  - name: gigabit-ethernet-1/1/3
+    type: 1000base-t
+  - name: gigabit-ethernet-1/1/4
+    type: 1000base-t
+  - name: gpon-1/1/1
+    type: gpon
+  - name: gpon-1/1/2
+    type: gpon
+  - name: gpon-1/1/3
+    type: gpon
+  - name: gpon-1/1/4
+    type: gpon
+  - name: gpon-1/1/5
+    type: gpon
+  - name: gpon-1/1/6
+    type: gpon
+  - name: gpon-1/1/7
+    type: gpon
+  - name: gpon-1/1/8
+    type: gpon
+  - name: gpon-1/1/9
+    type: gpon
+  - name: gpon-1/1/10
+    type: gpon
+  - name: gpon-1/1/11
+    type: gpon
+  - name: gpon-1/1/12
+    type: gpon
+  - name: gpon-1/1/13
+    type: gpon
+  - name: gpon-1/1/14
+    type: gpon
+  - name: gpon-1/1/15
+    type: gpon
+  - name: gpon-1/1/16
+    type: gpon
+  - name: mgmt-1/1/1
+    type: 100base-tx
+  - name: ten-gigabit-ethernet-1/1/1
+    type: 10gbase-x-sfpp
+  - name: ten-gigabit-ethernet-1/1/2
+    type: 10gbase-x-sfpp
+  - name: ten-gigabit-ethernet-1/1/3
+    type: 10gbase-x-sfpp
+  - name: ten-gigabit-ethernet-1/1/4
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console0
+    type: rj-45
+console_server_ports:
+  - name: Alarmes
+    description: 2 inputs and 1 output
+    type: rj-45
+  - name: Storage
+    type: usb-a
+module_bays:
+  - name: FAN
+    label: "1"
+    bay_position: "1"
+  - name: PSU1
+    label: "1"
+    bay_position: "1"
+  - name: PSU2
+    label: "2"
+    bay_position: "2"
+comments: GPON OLT for installation in a 19" rack, containing 16 GPON interfaces, 4 electrical GE RJ45 interfaces and 4 10GE/GE SFP+ interfaces. Removable ventilation system and two slots for redundant and hot swappable AC or DC power supplies.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Datacom/DM4615-OLT-16GPON-4GT-4XS.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 3cc8d09e7d64e127

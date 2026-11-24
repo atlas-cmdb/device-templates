@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: C9K-PWR-1600WDC-R
+slug: c9k-pwr-1600wdc-r
+kind: psu
+part_numbers:
+  - C9K-PWR-1600WDC-R
+power_ports:
+  - name: PSU{module}
+    type: dc-terminal
+    maximum_draw_w: 1600
+links:
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/nb-06-cat9500-ser-data-sheet-cte-en.html
+comments: "DC terminal type: Amphenol C10-638976-000 /"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/C9K-PWR-1600WDC-R.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: 1e93da0a3c7b6d8f

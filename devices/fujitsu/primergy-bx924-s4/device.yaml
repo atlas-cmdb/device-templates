@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fujitsu
+model: Primergy BX924 S4
+slug: primergy-bx924-s4
+category: server
+form_factor: blade
+u_height: 0
+full_depth: true
+subdevice_role: child
+interfaces:
+  - name: TenGig-E 1
+    type: 10gbase-t
+  - name: TenGig-E 2
+    type: 10gbase-t
+console_ports:
+  - name: Console
+    type: rj-45
+console_server_ports:
+  - name: Front USB1
+    type: usb-a
+  - name: Rear USB1
+    type: usb-a
+  - name: Rear USB2
+    type: usb-a
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Fujitsu/primergy-bx924-s4.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - console_server_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: 2dc754786251ae78

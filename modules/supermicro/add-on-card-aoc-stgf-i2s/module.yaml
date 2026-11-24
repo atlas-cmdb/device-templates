@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: supermicro
+model: Add-on Card AOC-STGF-i2S
+slug: add-on-card-aoc-stgf-i2s
+kind: transceiver
+description: Intel X710-BM2 network controller with dual SFP+ port
+part_numbers:
+  - AOC-STGF-i2S
+interfaces:
+  - name: Gig-E {module}/1
+    type: 10gbase-x-sfpp
+  - name: Gig-E {module}/2
+    type: 10gbase-x-sfpp
+links:
+  datasheet: https://www.supermicro.com/en/products/accessories/addon/AOC-ATG-i2S.php
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Supermicro/AOC-STGF-i2S.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 8b103aef7d540a5c

@@ -1,0 +1,120 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: USP PDU HD
+slug: usp-pdu-hd
+category: pdu
+form_factor: zero-u
+part_numbers:
+  - USP-PDU-HD
+u_height: 0
+full_depth: false
+weight_kg: 6.3
+airflow: passive
+power:
+  outlet_count: 28
+interfaces:
+  - name: Management Port
+    label: Management (RJ45)
+    type: 100base-tx
+  - name: Network Port 1
+    label: Network Redundancy Port 1
+    type: 1000base-t
+  - name: Network Port 2
+    label: Network Redundancy Port 2
+    type: 1000base-t
+  - name: Network Port 3
+    label: Network Redundancy Port 3
+    type: 1000base-t
+power_ports:
+  - name: Power Input
+    type: nema-l5-30p
+    maximum_draw_w: 3750
+power_outlets:
+  - name: Outlet 1
+    type: nema-5-15r
+  - name: Outlet 2
+    type: nema-5-15r
+  - name: Outlet 3
+    type: nema-5-15r
+  - name: Outlet 4
+    type: nema-5-15r
+  - name: Outlet 5
+    type: nema-5-15r
+  - name: Outlet 6
+    type: nema-5-15r
+  - name: Outlet 7
+    type: nema-5-15r
+  - name: Outlet 8
+    type: nema-5-15r
+  - name: Outlet 9
+    type: nema-5-15r
+  - name: Outlet 10
+    type: nema-5-15r
+  - name: Outlet 11
+    type: nema-5-15r
+  - name: Outlet 12
+    type: nema-5-15r
+  - name: USB-C 13
+    type: usb-c
+  - name: USB-C 14
+    type: usb-c
+  - name: USB-C 15
+    type: usb-c
+  - name: USB-C 16
+    type: usb-c
+  - name: Outlet 17
+    type: nema-5-15r
+  - name: Outlet 18
+    type: nema-5-15r
+  - name: Outlet 19
+    type: nema-5-15r
+  - name: Outlet 20
+    type: nema-5-15r
+  - name: Outlet 21
+    type: nema-5-15r
+  - name: Outlet 22
+    type: nema-5-15r
+  - name: Outlet 23
+    type: nema-5-15r
+  - name: Outlet 24
+    type: nema-5-15r
+  - name: Outlet 25
+    type: nema-5-15r
+  - name: Outlet 26
+    type: nema-5-15r
+  - name: Outlet 27
+    type: nema-5-15r
+  - name: Outlet 28
+    type: nema-5-15r
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+comments: |-
+  High-density rack-mounted PDU with 24 managed outlets (125V AC, 15A Max.), 4 USB-C ports, and redundant network interfaces.
+  Dimensions: 1485 x 55 x 56 mm (58.5 x 2.17 x 2.2").
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/USP-PDU-HD.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.outlet_count
+    - power_outlets
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 13ec59c8b54d8e61

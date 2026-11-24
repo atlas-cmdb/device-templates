@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: netlink
+model: FD-6166-2xRJ-45-8p-8c-5
+slug: fd-6166-2xrj-45-8p-8c-5
+category: patch_panel
+form_factor: rack
+part_numbers:
+  - fd-6166-2xrj-45-8p-8c-5
+u_height: 0.5
+full_depth: false
+subdevice_role: parent
+weight_kg: 0.07
+airflow: passive
+front_ports:
+  - name: "1"
+    label: "1"
+    description: "1"
+    type: 8p8c
+    rear_port: "1"
+    rear_port_position: 1
+  - name: "2"
+    label: "2"
+    description: "2"
+    type: 8p8c
+    rear_port: "2"
+    rear_port_position: 2
+rear_ports:
+  - name: "1"
+    label: "1"
+    description: "1"
+    type: 110-punch
+  - name: "2"
+    label: "2"
+    description: "2"
+    type: 110-punch
+    positions: 2
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+links:
+  datasheet: https://www.vseinstrumenti.ru/product/kompyuternaya-rozetka-netlink-fd-6166-2hrj-45-8r-8s-5-kat-00000000425-1751122/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Netlink/fd-6166-2xrj-45-8p-8c-5.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - front_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+    - subdevice_role
+    - u_height
+    - weight_kg
+  import_hash: e8840b086b3cdcb8

@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: Catalyst 9136AXI
+slug: catalyst-9136axi
+category: wireless_access_point
+form_factor: other
+u_height: 0
+full_depth: false
+weight_kg: 1.7
+airflow: passive
+interfaces:
+  - name: Dot11Radio0
+    type: ieee802.11ax
+  - name: Dot11Radio1
+    type: ieee802.11ax
+  - name: Dot11Radio2
+    type: ieee802.11ax
+  - name: Ethernet 0
+    type: 5gbase-t
+  - name: Ethernet 1 (Uplink/PoE)
+    type: 5gbase-t
+    poe_mode: pd
+    poe_type: type3-ieee802.3bt
+console_ports:
+  - name: Console
+    type: rj-45
+comments: The Cisco Catalyst 9136AXI is a high-performance indoor Wi-Fi 6E access point with tri-band support (2.4 GHz, 5 GHz, and 6 GHz) and integrated environmental sensors. It is ideal for high-density enterprise and campus deployments with advanced RF and client management features.
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/catalyst-9136axi.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 36de7dc2980ee070

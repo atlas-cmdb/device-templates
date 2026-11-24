@@ -1,0 +1,96 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: mikrotik
+model: CRS328-4C-20S-4S+RM
+slug: crs328-4c-20s-4s-plusrm
+category: network_switch
+form_factor: rack
+u_height: 1
+full_depth: false
+power:
+  psu_count: 2
+interfaces:
+  - name: sfp1
+    type: 1000base-x-sfp
+  - name: sfp2
+    type: 1000base-x-sfp
+  - name: sfp3
+    type: 1000base-x-sfp
+  - name: sfp4
+    type: 1000base-x-sfp
+  - name: sfp5
+    type: 1000base-x-sfp
+  - name: sfp6
+    type: 1000base-x-sfp
+  - name: sfp7
+    type: 1000base-x-sfp
+  - name: sfp8
+    type: 1000base-x-sfp
+  - name: sfp9
+    type: 1000base-x-sfp
+  - name: sfp10
+    type: 1000base-x-sfp
+  - name: sfp11
+    type: 1000base-x-sfp
+  - name: sfp12
+    type: 1000base-x-sfp
+  - name: sfp13
+    type: 1000base-x-sfp
+  - name: sfp14
+    type: 1000base-x-sfp
+  - name: sfp15
+    type: 1000base-x-sfp
+  - name: sfp16
+    type: 1000base-x-sfp
+  - name: sfp17
+    type: 1000base-x-sfp
+  - name: sfp18
+    type: 1000base-x-sfp
+  - name: sfp19
+    type: 1000base-x-sfp
+  - name: sfp20
+    type: 1000base-x-sfp
+  - name: sfp-sfpplus1
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus2
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus3
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus4
+    type: 10gbase-x-sfpp
+  - name: combo1
+    type: 1000base-x-sfp
+  - name: combo2
+    type: 1000base-x-sfp
+  - name: combo3
+    type: 1000base-x-sfp
+  - name: combo4
+    type: 1000base-x-sfp
+console_ports:
+  - name: serial0
+    label: CONSOLE
+    type: rj-45
+power_ports:
+  - name: power1
+    type: iec-60320-c14
+    maximum_draw_w: 43
+  - name: power2
+    type: iec-60320-c14
+    maximum_draw_w: 43
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/MikroTik/CRS328-4C-20S-4S-Plus-RM.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 5397fa584372954e

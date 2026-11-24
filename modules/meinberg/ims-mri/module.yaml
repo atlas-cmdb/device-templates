@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: meinberg
+model: IMS-MRI
+slug: ims-mri
+kind: other
+description: Multi-reference Input Module BNC
+part_numbers:
+  - IMS-MRI-FO
+rear_ports:
+  - name: TC-AM
+    type: bnc
+  - name: TC-DCLS
+    type: bnc
+  - name: 10Mhz
+    type: bnc
+  - name: PPS
+    type: bnc
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Meinberg/IMS-MRI.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+  import_hash: bffd4945a76bcef7

@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge R7625
+slug: poweredge-r7625
+category: server
+form_factor: rack
+u_height: 2
+full_depth: true
+weight_kg: 34.4
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: iDRAC
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Rear Serial
+    type: de-9
+module_bays:
+  - name: OCP 3.0
+    bay_position: OCP-1
+  - name: PSU-1
+    label: "1"
+    bay_position: PSU-1
+  - name: PSU-2
+    label: "2"
+    bay_position: PSU-2
+  - name: PCIe slot 1 - FH
+    label: "1"
+    bay_position: PCIe-1
+  - name: PCIe slot 2 - FH
+    label: "2"
+    bay_position: PCIe-2
+  - name: PCIe slot 3 - LP
+    label: "3"
+    bay_position: PCIe-3
+  - name: PCIe slot 4 - FH
+    label: "4"
+    bay_position: PCIe-4
+  - name: PCIe slot 5 - FH
+    label: "5"
+    bay_position: PCIe-5
+  - name: PCIe slot 6 - LP
+    label: "6"
+    bay_position: PCIe-6
+  - name: PCIe slot 7 - FH
+    label: "7"
+    bay_position: PCIe-7
+  - name: PCIe slot 8 - FH
+    label: "8"
+    bay_position: PCIe-8
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.delltechnologies.com/asset/en-gb/solutions/oem-solutions/technical-support/poweredge-r7615-oem-spec-sheet.pdf
+  manual: https://www.delltechnologies.com/asset/en-us/products/servers/technical-support/poweredge-r7625-technical-guide.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-R7625.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 879c946f092e65c2

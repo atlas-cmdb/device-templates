@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: vast-data
+model: CBox SMC Gen5
+slug: cbox-smc-gen5
+category: server
+form_factor: rack
+part_numbers:
+  - 1U-1N-GEN5
+u_height: 1
+full_depth: true
+weight_kg: 14.5
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: mgmt-port1
+    label: AIOM - Management Port 1 (Intel i350)
+    description: OCP Intel i350 Quad-Port - Port 1
+    type: 1000base-t
+    mgmt_only: true
+  - name: mgmt-port2
+    label: AIOM - Management Port 2 (Intel i350)
+    description: OCP Intel i350 Quad-Port - Port 2
+    type: 1000base-t
+    mgmt_only: true
+  - name: mgmt-port3
+    label: AIOM - Management Port 3 (Intel i350)
+    description: OCP Intel i350 Quad-Port - Port 3
+    type: 1000base-t
+    mgmt_only: true
+  - name: mgmt-port4
+    label: AIOM - Management Port 4 (Intel i350)
+    description: OCP Intel i350 Quad-Port - Port 4
+    type: 1000base-t
+    mgmt_only: true
+  - name: bmc
+    label: BMC (Dedicated Management)
+    description: Baseboard Management Controller
+    type: 1000base-t
+    mgmt_only: true
+module_bays:
+  - name: PCIe-1
+    bay_position: "1"
+  - name: PCIe-2
+    bay_position: "2"
+  - name: PSU1
+    bay_position: "1"
+  - name: PSU2
+    bay_position: "2"
+comments: |-
+  VAST Data CBox SMC Gen5 (1U-1N-GEN5).
+  1U single server node (Supermicro AS-1115HS-TNR, Genoa, L8).
+  CPU: AMD EPYC 9454P 48-Core (Genoa).
+  Memory: 384GB (12x 32GB) DDR5-4800.
+  NIC: 2x Mellanox CX7 Dual Port MCX755106AS-HEAT (QSFP112).
+  I/O: 4x 200GbE / NDR200 IB total (2NIC config).
+  Management: 4x 1GbE OCP Intel i350.
+  Boot Drive: 1x 960GB NVMe U.2 Samsung MZQL2960HCJR-00A07.
+  Power: Active 500W / Max 700W.
+  Rear: PCIe Slot 1 (Bus 01h), PCIe Slot 2 (Bus 81h), AIOM (Bus 41h).
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/VAST Data/CBox-SMC-Gen5.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: d3742f5c1824cb9d

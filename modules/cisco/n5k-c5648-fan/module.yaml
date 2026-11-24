@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: N5K-C5648-FAN
+slug: n5k-c5648-fan
+kind: fan
+description: Cisco Nexus 5648Q Fan Module, Front-to-Back, fan side intake Airflow
+part_numbers:
+  - N5K-C5648-FAN
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/N5K-C5648-FAN.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 9eea45d96b25e120

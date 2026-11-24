@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: ubiquiti
+model: UniFi Protect Network Video Recorder Pro
+slug: unifi-protect-network-video-recorder-pro
+category: appliance
+form_factor: rack
+part_numbers:
+  - UNVR-Pro
+u_height: 2
+full_depth: false
+weight_kg: 9.435
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: LAN 1
+    type: 1000base-t
+  - name: SFP+ 2 (LAN)
+    type: 10gbase-x-sfpp
+power_ports:
+  - name: Input
+    type: iec-60320-c14
+    maximum_draw_w: 160
+  - name: USP-RPS connector for PSU failover
+    type: ubiquiti-smartpower
+    maximum_draw_w: 160
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  other:
+    - label: UniFi Protect Network Video Recorder Pro Techspecs
+      url: https://techspecs.ui.com/unifi/cameras-nvrs/unvr-pro
+comments: |-
+  Network Video Recorder with seven bays.
+  Dimensions: 442 x 325 x 87 mm (17.4 x 12.8 x 3.4")
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Ubiquiti/UNVR-Pro.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: a96133939fa1d7d9

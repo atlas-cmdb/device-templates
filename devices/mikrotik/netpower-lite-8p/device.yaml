@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: mikrotik
+model: netPower Lite 8P
+slug: netpower-lite-8p
+category: network_switch
+form_factor: other
+part_numbers:
+  - CSS610-8P-2S+OUT
+u_height: 0
+full_depth: false
+weight_kg: 2
+airflow: passive
+power:
+  psu_count: 3
+interfaces:
+  - name: Port1
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port2
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port3
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port4
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port5
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port6
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port7
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: Port8
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: SFP+1
+    type: 10gbase-x-sfpp
+  - name: SFP+2
+    type: 10gbase-x-sfpp
+power_ports:
+  - name: DC1
+    description: 24-57 V
+    type: dc-terminal
+    maximum_draw_w: 208
+  - name: DC2
+    description: 24-57 V
+    type: dc-terminal
+    maximum_draw_w: 208
+  - name: Battery
+    description: 22-30 V (Nominal 24V)
+    type: dc-terminal
+links:
+  product_page: https://mikrotik.com/product/netpower_lite_ups
+comments: "Dimensions: 303 x 212 x 78 mm"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/MikroTik/CSS610-8P-2S-Plus-OUT.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 77f52d421b039401

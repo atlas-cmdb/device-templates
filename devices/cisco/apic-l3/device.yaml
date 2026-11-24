@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: cisco
+model: APIC-L3
+slug: apic-l3
+category: sdn_controller
+form_factor: rack
+part_numbers:
+  - APIC-L3
+u_height: 1
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: eth1-1
+    type: 10gbase-t
+  - name: eth1-2
+    type: 10gbase-t
+  - name: eth2-1
+    type: 25gbase-x-sfp28
+  - name: eth2-2
+    type: 25gbase-x-sfp28
+  - name: eth2-3
+    type: 25gbase-x-sfp28
+  - name: eth2-4
+    type: 25gbase-x-sfp28
+  - name: CIMC
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Con
+    type: rj-45
+power_ports:
+  - name: PSU1
+    type: iec-60320-c14
+    maximum_draw_w: 770
+  - name: PSU2
+    type: iec-60320-c14
+    maximum_draw_w: 770
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Cisco/APIC-L3.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 6932263c942636e9

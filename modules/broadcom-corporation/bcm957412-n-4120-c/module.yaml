@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: broadcom-corporation
+model: BCM957412-N-4120-C
+slug: bcm957412-n-4120-c
+kind: nic
+description: Dual-Port 10 Gb/s Ethernet PCI Express 3.0 x8 OCP 3.0 Small-Form-Factor Network Adapter
+part_numbers:
+  - BCM957412-N-4120-C
+interfaces:
+  - name: Ethernet/{module}/1
+    type: 10gbase-x-sfpp
+  - name: Ethernet/{module}/2
+    type: 10gbase-x-sfpp
+links:
+  datasheet: https://docs.broadcom.com/doc/957412N4120C-DS
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Broadcom Corporation/BCM957412-N-4120-C.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 84d7ef6bdfbc8e25

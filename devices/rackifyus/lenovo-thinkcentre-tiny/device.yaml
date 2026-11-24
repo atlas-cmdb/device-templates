@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: rackifyus
+model: Lenovo-ThinkCentre-Tiny
+slug: lenovo-thinkcentre-tiny
+category: other
+form_factor: rack
+u_height: 1
+full_depth: false
+airflow: passive
+module_bays:
+  - name: "1"
+    bay_position: "1"
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/RackifyUS/lenovo-thinkcentre-tiny.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - full_depth
+    - manufacturer
+    - model
+    - module_bays
+    - slug
+    - u_height
+  import_hash: 0cb578a7242383f4

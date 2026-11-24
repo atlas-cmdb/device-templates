@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: panduit
+model: Mini-Com Front Access Patch Panel (24 Port, 1RU)
+slug: mini-com-front-access-patch-panel-24-port-1ru
+category: patch_panel
+form_factor: rack
+part_numbers:
+  - CPP24WBLY
+u_height: 1
+full_depth: false
+module_bays:
+  - name: "1"
+    bay_position: "1"
+  - name: "2"
+    bay_position: "2"
+  - name: "3"
+    bay_position: "3"
+  - name: "4"
+    bay_position: "4"
+  - name: "5"
+    bay_position: "5"
+  - name: "6"
+    bay_position: "6"
+  - name: "7"
+    bay_position: "7"
+  - name: "8"
+    bay_position: "8"
+  - name: "9"
+    bay_position: "9"
+  - name: "10"
+    bay_position: "10"
+  - name: "11"
+    bay_position: "11"
+  - name: "12"
+    bay_position: "12"
+  - name: "13"
+    bay_position: "13"
+  - name: "14"
+    bay_position: "14"
+  - name: "15"
+    bay_position: "15"
+  - name: "16"
+    bay_position: "16"
+  - name: "17"
+    bay_position: "17"
+  - name: "18"
+    bay_position: "18"
+  - name: "19"
+    bay_position: "19"
+  - name: "20"
+    bay_position: "20"
+  - name: "21"
+    bay_position: "21"
+  - name: "22"
+    bay_position: "22"
+  - name: "23"
+    bay_position: "23"
+  - name: "24"
+    bay_position: "24"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Panduit/CPP24WBLY.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - full_depth
+    - images.credit
+    - images.front
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - slug
+    - u_height
+  import_hash: f1146d4c7d123d79

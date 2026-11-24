@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: fs
+model: FMU-MC082745
+slug: fmu-mc082745
+category: patch_panel
+form_factor: blade
+part_numbers:
+  - "42937"
+u_height: 0
+full_depth: false
+subdevice_role: child
+front_ports:
+  - name: "1270"
+    type: lc
+    rear_port: Line
+    rear_port_position: 1
+  - name: "1290"
+    type: lc
+    rear_port: Line
+    rear_port_position: 2
+  - name: "1310"
+    type: lc
+    rear_port: Line
+    rear_port_position: 3
+  - name: "1330"
+    type: lc
+    rear_port: Line
+    rear_port_position: 4
+  - name: "1350"
+    type: lc
+    rear_port: Line
+    rear_port_position: 5
+  - name: "1370"
+    type: lc
+    rear_port: Line
+    rear_port_position: 6
+  - name: "1430"
+    type: lc
+    rear_port: Line
+    rear_port_position: 7
+  - name: "1450"
+    type: lc
+    rear_port: Line
+    rear_port_position: 8
+rear_ports:
+  - name: Line
+    type: lc
+    positions: 8
+comments: 8Ch CWDM MUX 1270-1450 (Skip 1390,1410)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/FS/FMU-MC082745.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - comments
+    - front_ports
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - rear_ports
+    - slug
+    - subdevice_role
+    - u_height
+  import_hash: d4b2d066305f0da6

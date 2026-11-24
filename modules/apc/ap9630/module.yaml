@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: apc
+model: AP9630
+slug: ap9630
+kind: other
+part_numbers:
+  - AP9630
+interfaces:
+  - name: Network [{module}]
+    type: 100base-tx
+    mgmt_only: true
+console_ports:
+  - name: Serial (3.5mm) [{module}]
+    type: other
+comments: UPS Network Management Card 2
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/APC/AP9630.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - console_ports
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: ae83bbf920fc06cb

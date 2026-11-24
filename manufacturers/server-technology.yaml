@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/manufacturer.schema.json
+slug: server-technology
+name: Server Technology
+aliases:
+  - ServerTech
+  - STI
+  - Legrand Server Technology
+website: https://www.servertech.com
+parent: legrand

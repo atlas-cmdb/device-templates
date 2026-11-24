@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: PowerEdge R470
+slug: poweredge-r470
+category: server
+form_factor: rack
+description: Dell PowerEdge R470 1U Rack Server
+u_height: 1
+full_depth: true
+weight_kg: 19.11
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: iDRAC
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: iDRAC Direct
+    type: usb-c
+module_bays:
+  - name: OCP NIC Slot (3.0)
+    bay_position: OCP-1
+  - name: PSU-1
+    label: "1"
+    bay_position: PSU-1
+  - name: PSU-2
+    label: "2"
+    bay_position: PSU-2
+  - name: PCIe Slot 1
+    label: "1"
+    bay_position: PCIe-1
+  - name: PCIe Slot 4
+    label: "4"
+    bay_position: PCIe-4
+links:
+  datasheet: https://www.delltechnologies.com/asset/en-us/products/servers/technical-support/poweredge-r470-spec-sheet.pdf
+  manual: https://www.delltechnologies.com/asset/en-us/products/servers/technical-support/poweredge-r470-technical-guide.pdf
+comments: "1U single-socket rack server with one Intel Xeon 6 processor (E-cores or P-cores) and 16 DDR5 DIMM slots. Front bays support up to 16x EDSFF E3.S Gen5 NVMe, up to 10x 2.5-inch or 4x 3.5-inch drives. Available in rear I/O (hot aisle) and front I/O (cold aisle) configurations. Hot swap redundant M-CRPS power supplies from 800 W to 1500 W. The rear I/O configuration modelled here has PCIe slots 1 and 4 and one OCP NIC 3.0 slot. In the front I/O configuration the OCP NIC 3.0 slots are 31 and 32 on the front riser. BOSS-N1 DC-MHS is installed at the rear. Dimensions: 42.8 mm x 482 mm x 815.14 mm (rear I/O, without bezel). Weight is the maximum configuration (8x E3.S)."
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Dell/PowerEdge-R470.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - description
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - links.manual
+    - manufacturer
+    - model
+    - module_bays
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 1c8680bd6ca9d535

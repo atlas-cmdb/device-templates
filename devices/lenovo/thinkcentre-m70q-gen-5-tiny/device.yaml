@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lenovo
+model: ThinkCentre M70q Gen 5 Tiny
+slug: thinkcentre-m70q-gen-5-tiny
+category: server
+form_factor: rack
+description: ThinkCentre M70q Gen 5 Tiny Mini PC System (Intel)
+u_height: 1
+full_depth: false
+weight_kg: 1.25
+airflow: top-to-bottom
+power:
+  psu_count: 1
+interfaces:
+  - name: ether1
+    type: 1000base-t
+power_ports:
+  - name: power1
+    type: dc-terminal
+    maximum_draw_w: 90
+    allocated_draw_w: 65
+links:
+  datasheet: https://psref.lenovo.com/syspool/Sys/PDF/ThinkCentre/ThinkCentre_M70q_Gen_5/ThinkCentre_M70q_Gen_5_Spec.pdf
+comments: Supporting 14th Gen Intel Core i3, i5, i7, and i9 Processors (e.g., i5-14500T).
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Lenovo/ThinkCentre-M70q-Gen-5-Tiny.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - description
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 34361c92afcbaf19

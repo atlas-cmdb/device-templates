@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: complete-connect
+model: MX-CAT6A-TC-04
+slug: mx-cat6a-tc-04
+kind: other
+description: MX Series RJ45 Through Coupler Cassette, 4 Ports Cat6A
+front_ports:
+  - name: "{module}:1"
+    type: 8p8c
+    rear_port: "{module}:1"
+    rear_port_position: 1
+  - name: "{module}:2"
+    type: 8p8c
+    rear_port: "{module}:2"
+    rear_port_position: 1
+  - name: "{module}:3"
+    type: 8p8c
+    rear_port: "{module}:3"
+    rear_port_position: 1
+  - name: "{module}:4"
+    type: 8p8c
+    rear_port: "{module}:4"
+    rear_port_position: 1
+rear_ports:
+  - name: "{module}:1"
+    type: 8p8c
+  - name: "{module}:2"
+    type: 8p8c
+  - name: "{module}:3"
+    type: 8p8c
+  - name: "{module}:4"
+    type: 8p8c
+links:
+  product_page: https://www.completeconnect.co.uk/products/mx-series-rj45-through-coupler-cassette
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Complete Connect/MX-CAT6A-TC-04.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - description
+    - front_ports
+    - links.product_page
+    - manufacturer
+    - model
+    - rear_ports
+    - slug
+  import_hash: 15de4013a1ae0fdc

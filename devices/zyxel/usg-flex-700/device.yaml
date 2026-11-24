@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: zyxel
+model: USG FLEX 700
+slug: usg-flex-700
+category: firewall
+form_factor: rack
+u_height: 1
+full_depth: false
+weight_kg: 1.4
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: P1
+    type: 1000base-x-sfp
+  - name: P2
+    type: 1000base-x-sfp
+  - name: P3
+    label: WAN/LAN/DMZ
+    type: 1000base-t
+  - name: P4
+    label: WAN/LAN/DMZ
+    type: 1000base-t
+  - name: P5
+    label: WAN/LAN/DMZ
+    type: 1000base-t
+  - name: P6
+    label: WAN/LAN/DMZ
+    type: 1000base-t
+  - name: P7
+    label: WAN/LAN/DMZ
+    type: 1000base-t
+  - name: P8
+    label: WAN/LAN/DMZ
+    type: 1000base-t
+  - name: P9
+    label: WAN/LAN/DMZ
+    type: 1000base-t
+  - name: P10
+    label: WAN/LAN/DMZ
+    type: 1000base-t
+  - name: P11
+    label: WAN/LAN/DMZ
+    type: 1000base-t
+  - name: P12
+    label: WAN/LAN/DMZ
+    type: 1000base-t
+  - name: P13
+    label: WAN/LAN/DMZ
+    type: 1000base-t
+  - name: P14
+    label: WAN/LAN/DMZ
+    type: 1000base-t
+console_ports:
+  - name: Console port
+    type: de-9
+power_ports:
+  - name: POWER
+    description: Wallwart to 12V DC, 2.5A max
+    type: dc-terminal
+links:
+  product_page: https://www.zyxel.com/global/en/products/next-gen-firewall/usg-flex-firewall-usg-flex-700/license-and-spec
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Zyxel/USG-FLEX-700.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - interfaces
+    - links.product_page
+    - manufacturer
+    - model
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 0214c69244f97f01

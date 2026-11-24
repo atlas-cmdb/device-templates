@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: ciena
+model: AC-8110-8114
+slug: ac-8110-8114
+kind: psu
+description: 8110/8114,AC PLUGGABLE POWER SUPPLY, WIDE RANGE 120/240V
+part_numbers:
+  - 170-0337-900
+power_ports:
+  - name: PS-{module}
+    type: iec-60320-c16
+    maximum_draw_w: 446
+    allocated_draw_w: 240
+comments: |-
+  Used in:
+  * 8110
+  * 8114
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Ciena/AC-8110-8114.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - description
+    - manufacturer
+    - model
+    - part_numbers
+    - power_ports
+    - slug
+  import_hash: 0291a8f2dbbc763f

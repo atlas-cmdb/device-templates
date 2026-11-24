@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Aruba AP-315
+slug: aruba-ap-315
+category: wireless_access_point
+form_factor: other
+part_numbers:
+  - AP-315
+u_height: 0
+full_depth: false
+weight_kg: 0.65
+airflow: passive
+power:
+  psu_count: 1
+interfaces:
+  - name: E0
+    type: 1000base-t
+    poe_mode: pd
+    poe_type: type2-ieee802.3at
+  - name: 5GHz WiFi
+    type: ieee802.11ac
+  - name: 2.4GHz WiFi
+    type: ieee802.11n
+  - name: Bluetooth
+    type: ieee802.15.1
+console_ports:
+  - name: Serial Console
+    type: other
+power_ports:
+  - name: 12 Vdc
+    type: dc-terminal
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.arubanetworks.com/assets/ds/DS_AP310Series.pdf
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Aruba-AP-315.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 29cf4718f1ee35d4

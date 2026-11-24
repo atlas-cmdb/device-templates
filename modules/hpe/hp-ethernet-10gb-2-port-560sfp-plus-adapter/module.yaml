@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: hpe
+model: HP Ethernet 10Gb 2-port 560SFP+ Adapter
+slug: hp-ethernet-10gb-2-port-560sfp-plus-adapter
+kind: other
+part_numbers:
+  - 665249-B21
+interfaces:
+  - name: eth{module}a
+    type: 10gbase-x-sfpp
+  - name: eth{module}b
+    type: 10gbase-x-sfpp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/HPE/665249-B21.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 870a8a4d435483af

@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: lenovo
+model: 4XC7A80567
+slug: 4xc7a80567
+kind: nic
+part_numbers:
+  - 4XC7A80567
+interfaces:
+  - name: 25GE1/{module}/1
+    type: 25gbase-x-sfp28
+  - name: 25GE1/{module}/2
+    type: 25gbase-x-sfp28
+  - name: 25GE1/{module}/3
+    type: 25gbase-x-sfp28
+  - name: 25GE1/{module}/4
+    type: 25gbase-x-sfp28
+links:
+  other:
+    - label: ThinkSystem Broadcom 57504 10/25GbE SFP28 4-Port OCP Ethernet Adapter
+      url: https://lenovopress.lenovo.com/lp1652-thinksystem-broadcom-57504-25gbe-ethernet-adapters
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Lenovo/4XC7A80567.yml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: 2d2e6877b77a2abf

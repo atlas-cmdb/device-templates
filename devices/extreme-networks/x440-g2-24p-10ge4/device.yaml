@@ -1,0 +1,169 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: extreme-networks
+model: X440-G2-24p-10GE4
+slug: x440-g2-24p-10ge4
+category: network_switch
+form_factor: rack
+part_numbers:
+  - "16533"
+u_height: 1
+full_depth: false
+weight_kg: 4.28
+power:
+  psu_count: 2
+interfaces:
+  - name: Mgmt-port
+    type: 1000base-t
+    mgmt_only: true
+  - name: "1"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "2"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "3"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "4"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "5"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "6"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "7"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "8"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "9"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "10"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "11"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "12"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "13"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "14"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "15"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "16"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "17"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "18"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "19"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "20"
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "21"
+    description: Combo Port (either SFP or 1000BASE-T)
+    type: 1000base-x-sfp
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "22"
+    description: Combo Port (either SFP or 1000BASE-T)
+    type: 1000base-x-sfp
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "23"
+    description: Combo Port (either SFP or 1000BASE-T)
+    type: 1000base-x-sfp
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "24"
+    description: Combo Port (either SFP or 1000BASE-T)
+    type: 1000base-x-sfp
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - name: "25"
+    type: 10gbase-x-sfpp
+  - name: "26"
+    type: 10gbase-x-sfpp
+  - name: "27"
+    description: For stacking or as additional SFP+
+    type: 10gbase-x-sfpp
+  - name: "28"
+    description: For stacking or as additional SFP+
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: PSU1
+    type: iec-60320-c14
+    maximum_draw_w: 500
+  - name: RPS1
+    description: Redundant Power Supply
+    type: dc-terminal
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  datasheet: https://www.extremenetworks.com/product/x440-g2/
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Extreme Networks/X440-G2-24p-10GE4.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: ca182b2dbba9aa83

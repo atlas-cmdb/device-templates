@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: d-link
+model: DCS-7010L
+slug: dcs-7010l
+category: network_switch
+form_factor: other
+part_numbers:
+  - DCS-7010L
+u_height: 0
+full_depth: false
+airflow: passive
+interfaces:
+  - name: eth0
+    type: 100base-tx
+    poe_mode: pd
+    poe_type: type1-ieee802.3af
+links:
+  datasheet: https://ftp.dlink.ru/pub/Multimedia/DCS-7010L/Data_sh/DCS-7010L_A3_Datasheet_02(HQ
+comments: .pdf)
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/D-Link/dcs-7010l.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - interfaces
+    - links.datasheet
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+    - u_height
+  import_hash: 69790dea9596506f

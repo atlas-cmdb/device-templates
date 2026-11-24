@@ -1,0 +1,124 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: arista
+model: DCS-7050QX-32S
+slug: dcs-7050qx-32s
+category: network_switch
+form_factor: rack
+part_numbers:
+  - DCS-7050QX-32S
+u_height: 1
+full_depth: false
+power:
+  psu_count: 2
+interfaces:
+  - name: Ethernet1
+    type: 10gbase-x-sfpp
+  - name: Ethernet2
+    type: 10gbase-x-sfpp
+  - name: Ethernet3
+    type: 10gbase-x-sfpp
+  - name: Ethernet4
+    type: 10gbase-x-sfpp
+  - name: Ethernet5/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet6/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet7/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet8/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet9/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet10/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet11/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet12/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet13/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet14/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet15/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet16/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet17/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet18/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet19/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet20/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet21/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet22/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet23/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet24/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet25/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet26/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet27/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet28/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet29/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet30/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet31/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet32/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet33/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet34/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet35/1
+    type: 40gbase-x-qsfpp
+  - name: Ethernet36/1
+    type: 40gbase-x-qsfpp
+  - name: Management1
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 500
+    allocated_draw_w: 192
+  - name: PS2
+    type: iec-60320-c14
+    maximum_draw_w: 500
+    allocated_draw_w: 192
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Arista/DCS-7050QX-32S.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 449c2d118ef48c2f

@@ -1,0 +1,132 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: huawei
+model: S5731-H24T4XC
+slug: s5731-h24t4xc
+category: network_switch
+form_factor: rack
+part_numbers:
+  - 02352QPP
+u_height: 1
+full_depth: true
+weight_kg: 8.4
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: MEth0/0/1
+    type: 1000base-t
+    mgmt_only: true
+  - name: GigabitEthernet0/0/1
+    type: 1000base-t
+  - name: GigabitEthernet0/0/2
+    type: 1000base-t
+  - name: GigabitEthernet0/0/3
+    type: 1000base-t
+  - name: GigabitEthernet0/0/4
+    type: 1000base-t
+  - name: GigabitEthernet0/0/5
+    type: 1000base-t
+  - name: GigabitEthernet0/0/6
+    type: 1000base-t
+  - name: GigabitEthernet0/0/7
+    type: 1000base-t
+  - name: GigabitEthernet0/0/8
+    type: 1000base-t
+  - name: GigabitEthernet0/0/9
+    type: 1000base-t
+  - name: GigabitEthernet0/0/10
+    type: 1000base-t
+  - name: GigabitEthernet0/0/11
+    type: 1000base-t
+  - name: GigabitEthernet0/0/12
+    type: 1000base-t
+  - name: GigabitEthernet0/0/13
+    type: 1000base-t
+  - name: GigabitEthernet0/0/14
+    type: 1000base-t
+  - name: GigabitEthernet0/0/15
+    type: 1000base-t
+  - name: GigabitEthernet0/0/16
+    type: 1000base-t
+  - name: GigabitEthernet0/0/17
+    type: 1000base-t
+  - name: GigabitEthernet0/0/18
+    type: 1000base-t
+  - name: GigabitEthernet0/0/19
+    type: 1000base-t
+  - name: GigabitEthernet0/0/20
+    type: 1000base-t
+  - name: GigabitEthernet0/0/21
+    type: 1000base-t
+  - name: GigabitEthernet0/0/22
+    type: 1000base-t
+  - name: GigabitEthernet0/0/23
+    type: 1000base-t
+  - name: GigabitEthernet0/0/24
+    type: 1000base-t
+  - name: XGigabitEthernet0/0/1
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/2
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/3
+    type: 10gbase-x-sfpp
+  - name: XGigabitEthernet0/0/4
+    type: 10gbase-x-sfpp
+console_ports:
+  - name: con 0
+    label: CONSOLE
+    type: rj-45
+module_bays:
+  - name: FAN1
+    label: FAN1
+    description: Fan module slot 1
+    bay_position: "1"
+  - name: FAN2
+    label: FAN2
+    description: Fan module slot 2
+    bay_position: "2"
+  - name: PSU1
+    label: PWR1
+    description: Power module slot 1
+    bay_position: "1"
+  - name: PSU2
+    label: PWR2
+    description: Power module slot 2
+    bay_position: "2"
+  - name: Extend_slot
+    bay_position: "1"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+links:
+  other:
+    - label: CloudEngine S5731-H24T4XC (24 * 10/100/1000BASE-T ports, 4 * 10GE SFP+ ports, 2 AC power)
+      url: https://support.huawei.com/enterprise/en/doc/EDOC1000013597/523c958c/s5731-h24t4xc-02352qpp-02352qpp-001-02352qpp-005
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Huawei/S5731-H24T4XC.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - links.other
+    - manufacturer
+    - model
+    - module_bays
+    - part_numbers
+    - power.psu_count
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: 5ce871e602f65e7b

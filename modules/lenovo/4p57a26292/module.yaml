@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: lenovo
+model: 4P57A26292
+slug: 4p57a26292
+kind: psu
+part_numbers:
+  - 4P57A26292
+airflow: front-to-rear
+power:
+  input_voltage: 230V AC
+  psu_rating_w: 750
+power_ports:
+  - name: "{module}"
+    type: iec-60320-c14
+    maximum_draw_w: 750
+comments: ThinkSystem 750W 230V Titanium Hot-Swap Gen2 Power Supply
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Lenovo/4P57A26292.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - airflow
+    - comments
+    - manufacturer
+    - model
+    - part_numbers
+    - power.input_voltage
+    - power.psu_rating_w
+    - power_ports
+    - slug
+  import_hash: 2d8c245d33246388

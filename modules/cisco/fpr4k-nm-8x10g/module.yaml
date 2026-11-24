@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: cisco
+model: FPR4K-NM-8X10G
+slug: fpr4k-nm-8x10g
+kind: other
+part_numbers:
+  - FPR4K-NM-8X10G
+interfaces:
+  - name: Ethernet{module}/1
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/2
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/3
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/4
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/5
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/6
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/7
+    type: 10gbase-x-sfpp
+  - name: Ethernet{module}/8
+    type: 10gbase-x-sfpp
+links:
+  manual: https://www.cisco.com/c/en/us/td/docs/security/firepower/4100/hw/guide/b_install_guide_4100/overview.html
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Cisco/FPR4K-NM-8X10G.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - interfaces
+    - links.manual
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: d0d7ec70298106a2

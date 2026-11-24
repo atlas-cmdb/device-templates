@@ -1,0 +1,58 @@
+name: Sync NetBox device-type library
+
+# Weekly pull from https://github.com/netbox-community/devicetype-library (CC0-1.0).
+# Templates someone edited here are never overwritten (see source.import_hash); new and changed
+# upstream templates arrive as one pull request for review.
+
+on:
+  schedule:
+    - cron: '17 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Fetch upstream
+        run: git clone --depth 1 https://github.com/netbox-community/devicetype-library.git "$RUNNER_TEMP/netbox"
+      - name: Import
+        id: import
+        run: |
+          npm run --silent import:netbox -- "$RUNNER_TEMP/netbox" > "$RUNNER_TEMP/import.json"
+          cat "$RUNNER_TEMP/import.json"
+          {
+            echo 'report<<EOF'
+            node -e "
+              const r = JSON.parse(require('fs').readFileSync(process.argv[1], 'utf8').replace(/^[^{]*/, ''));
+              const row = (k) => '| ' + k + ' | ' + r[k].written + ' | ' + r[k].unchanged + ' | ' + r[k].kept_local_edits + ' |';
+              console.log('Upstream commit: ' + r.upstream_commit + '\n');
+              console.log('| | written | unchanged | kept (edited here) |\n|---|---|---|---|');
+              console.log([row('devices'), row('modules'), row('racks')].join('\n'));
+              console.log('\nImages converted: ' + r.images.written + ', failed: ' + r.images.failed);
+            " "$RUNNER_TEMP/import.json"
+            echo EOF
+          } >> "$GITHUB_OUTPUT"
+      - run: npm run validate -- --max-warnings 0
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: sync/netbox
+          delete-branch: true
+          commit-message: 'chore(sync): import NetBox devicetype-library'
+          title: 'Sync NetBox devicetype-library'
+          labels: sync
+          body: |
+            Automated weekly import from [netbox-community/devicetype-library](https://github.com/netbox-community/devicetype-library) (CC0-1.0).
+
+            ${{ steps.import.outputs.report }}
+
+            New templates have `source.inferred: [category]`: spot-check a few categories before merging.

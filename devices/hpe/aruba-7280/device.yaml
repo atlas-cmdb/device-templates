@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: Aruba 7280
+slug: aruba-7280
+category: network_controller
+form_factor: rack
+part_numbers:
+  - JX910A
+u_height: 1
+full_depth: true
+power:
+  psu_count: 2
+interfaces:
+  - name: gigabitethernet 0/0/0
+    type: 10gbase-x-sfpp
+  - name: gigabitethernet 0/0/1
+    type: 10gbase-x-sfpp
+  - name: gigabitethernet 0/0/2
+    type: 10gbase-x-sfpp
+  - name: gigabitethernet 0/0/3
+    type: 10gbase-x-sfpp
+  - name: gigabitethernet 0/0/4
+    type: 10gbase-x-sfpp
+  - name: gigabitethernet 0/0/6
+    type: 10gbase-x-sfpp
+  - name: gigabitethernet 0/0/7
+    type: 10gbase-x-sfpp
+  - name: gigabitethernet 0/0/8
+    type: 10gbase-x-sfpp
+  - name: gigabitethernet 0/0/9
+    type: 10gbase-x-sfpp
+  - name: gigabitethernet 0/0/10
+    type: 10gbase-x-sfpp
+  - name: gigabitethernet 0/0/11
+    type: 10gbase-x-sfpp
+  - name: gigabitethernet 0/0/12
+    type: 10gbase-x-sfpp
+  - name: gigabitethernet 0/0/13
+    type: 10gbase-x-sfpp
+  - name: gigabitethernet 0/0/14
+    type: 10gbase-x-sfpp
+  - name: gigabitethernet 0/0/15
+    type: 10gbase-x-sfpp
+  - name: mgmt
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Console
+    type: rj-45
+power_ports:
+  - name: PEM0
+    type: iec-60320-c14
+    maximum_draw_w: 350
+    allocated_draw_w: 110
+  - name: PEM1
+    type: iec-60320-c14
+    maximum_draw_w: 350
+    allocated_draw_w: 110
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/HPE/Aruba-7280.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 20a76d6384c7e84d

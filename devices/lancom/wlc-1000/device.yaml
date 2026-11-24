@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: lancom
+model: WLC-1000
+slug: wlc-1000
+category: network_controller
+form_factor: rack
+part_numbers:
+  - "61783"
+u_height: 1
+full_depth: false
+power:
+  psu_count: 1
+interfaces:
+  - name: ETH-1 RJ45
+    type: 1000base-t
+  - name: ETH-1 SFP
+    type: 1000base-x-sfp
+  - name: ETH-2 RJ45
+    type: 1000base-t
+  - name: ETH-2 SFP
+    type: 1000base-x-sfp
+  - name: ETH-3 RJ45
+    type: 1000base-t
+  - name: ETH-3 SFP
+    type: 1000base-x-sfp
+  - name: ETH-4 RJ45
+    type: 1000base-t
+  - name: ETH-4 SFP
+    type: 1000base-x-sfp
+  - name: ETH-5
+    type: 1000base-t
+console_ports:
+  - name: com
+    type: rj-45
+power_ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw_w: 30
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/LANCOM/WLC-1000.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - console_ports
+    - full_depth
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+  import_hash: 6d810725ba072362

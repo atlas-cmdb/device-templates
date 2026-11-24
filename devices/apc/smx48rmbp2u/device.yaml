@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: apc
+model: SMX48RMBP2U
+slug: smx48rmbp2u
+category: ups_battery_pack
+form_factor: rack
+part_numbers:
+  - SMX48RMBP2U
+u_height: 2
+full_depth: true
+weight_kg: 29
+airflow: passive
+power:
+  psu_count: 1
+power_ports:
+  - name: UPS Input
+    type: other
+comments: APC Smart-UPS X-Series External Battery Pack Rack/Tower 48V, 864VAh, rackmount, 2U
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/APC/SMX48RMBP2U.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  upstream_fields:
+    - airflow
+    - comments
+    - full_depth
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: f88e581d631a4c3f

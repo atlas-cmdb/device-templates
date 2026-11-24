@@ -1,0 +1,118 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: juniper
+model: NFX250
+slug: nfx250
+category: network_switch
+form_factor: rack
+part_numbers:
+  - NFX250-S2
+u_height: 1
+full_depth: false
+weight_kg: 4.3
+airflow: front-to-rear
+power:
+  psu_count: 1
+interfaces:
+  - name: ge-0/0/0
+    label: "0"
+    description: access port
+    type: 1000base-t
+  - name: ge-0/0/1
+    label: "1"
+    description: access port
+    type: 1000base-t
+  - name: ge-0/0/2
+    label: "2"
+    description: access port
+    type: 1000base-t
+  - name: ge-0/0/3
+    label: "3"
+    description: access port
+    type: 1000base-t
+  - name: ge-0/0/4
+    label: "4"
+    description: access port
+    type: 1000base-t
+  - name: ge-0/0/5
+    label: "5"
+    description: access port
+    type: 1000base-t
+  - name: ge-0/0/6
+    label: "6"
+    description: access port
+    type: 1000base-t
+  - name: ge-0/0/7
+    label: "7"
+    description: access port
+    type: 1000base-t
+  - name: ge-0/0/8
+    label: "8"
+    description: access / uplink port
+    type: 1000base-t
+  - name: ge-0/0/9
+    label: "9"
+    description: access / uplink port
+    type: 1000base-t
+  - name: ge-0/0/10
+    label: "10"
+    description: uplink port
+    type: 1000base-x-sfp
+  - name: ge-0/0/11
+    label: "11"
+    description: uplink port
+    type: 1000base-x-sfp
+  - name: xe-0/0/12
+    label: "0"
+    description: uplink port
+    type: 10gbase-x-sfpp
+  - name: xe-0/0/13
+    label: "1"
+    description: uplink port
+    type: 10gbase-x-sfpp
+  - name: fxp0
+    label: MGMT
+    description: management port
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Console
+    type: rj-45
+  - name: USB-Console
+    type: usb-mini-a
+power_ports:
+  - name: PSU0
+    type: iec-60320-c14
+    maximum_draw_w: 140
+    allocated_draw_w: 40
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
+comments: Juniper NFV Platform for CPE install
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: device-types/Juniper/NFX250.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - category
+  upstream_fields:
+    - airflow
+    - comments
+    - console_ports
+    - full_depth
+    - images.credit
+    - images.front
+    - images.rear
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - power.psu_count
+    - power_ports
+    - slug
+    - u_height
+    - weight_kg
+  import_hash: af3705ca7cd21541

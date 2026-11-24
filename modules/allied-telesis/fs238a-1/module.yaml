@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/module.schema.json
+manufacturer: allied-telesis
+model: FS238A/1
+slug: fs238a-1
+kind: other
+part_numbers:
+  - AT-FS238A/1
+interfaces:
+  - name: Slot {module} - Port 1
+    type: 100base-fx
+  - name: Port 2 (Slot {module})
+    type: 100base-tx
+comments: 10/100TX to 100LX (SC) BiDi media and rate converter
+source:
+  origin: netbox-devicetype-library
+  url: https://github.com/netbox-community/devicetype-library
+  license: CC0-1.0
+  upstream_path: module-types/Allied Telesis/FS238A-1.yaml
+  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  imported_at: 2026-11-24
+  inferred:
+    - kind
+  upstream_fields:
+    - comments
+    - interfaces
+    - manufacturer
+    - model
+    - part_numbers
+    - slug
+  import_hash: ba519fc18dd9f15e
