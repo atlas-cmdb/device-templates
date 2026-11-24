@@ -108,6 +108,11 @@ module_bays:
   - name: PSU 2
     bay_position: right
     side: rear
+images:
+  credit: Ubiquiti Inc. (product renders from techspecs.ui.com)
+  license: LicenseRef-Ubiquiti-Copyright
+  front: front.webp
+  rear: rear.webp
 links:
   product_page: https://store.ui.com/us/en/products/ef-core
   datasheet: https://techspecs.ui.com/unifi/cloud-gateways/ef-core

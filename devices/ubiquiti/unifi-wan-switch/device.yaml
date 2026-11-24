@@ -51,6 +51,11 @@ power_ports:
     type: iec-60320-c14
     maximum_draw_w: 13
     side: rear
+images:
+  credit: Ubiquiti Inc. (product renders from techspecs.ui.com)
+  license: LicenseRef-Ubiquiti-Copyright
+  front: front.webp
+  rear: rear.webp
 links:
   product_page: https://store.ui.com/us/en/products/usw-wan
   datasheet: https://techspecs.ui.com/unifi/switching/usw-wan

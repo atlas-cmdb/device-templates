@@ -114,7 +114,7 @@ See [CREDITS.md](CREDITS.md).
 
 ## License
 
-- **Data and images** (`devices/`, `modules/`, `racks/`, `manufacturers/`, `schema/`, and the published dataset): **[CC0 1.0](LICENSE)**, public domain. Use them for anything, commercial or not, without asking and without attribution. This is the same licence as the NetBox library, so data flows freely both ways.
+- **Data and images** (`devices/`, `modules/`, `racks/`, `manufacturers/`, `schema/`, and the published dataset): **[CC0 1.0](LICENSE)**, public domain. Use them for anything, commercial or not, without asking and without attribution. This is the same licence as the NetBox library, so data flows freely both ways. Exception: images whose template sets `images.license` keep that licence and are not CC0 (currently the Ubiquiti renders for `ubiquiti/enterprise-firewall-core` and `ubiquiti/unifi-wan-switch`, © Ubiquiti Inc.).
 - **Code** (`scripts/`, `site/`, `types/`): [MIT](LICENSE-CODE).
 
 Contributions are accepted under these terms: by contributing you dedicate your templates and photos to the public domain under CC0. Only submit photos you took yourself, and no vendor marketing images. Attribution isn't required, but it's welcome: photographers are credited in `images.credit`, and the sources are listed in [CREDITS.md](CREDITS.md).

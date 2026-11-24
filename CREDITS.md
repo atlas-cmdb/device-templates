@@ -3,6 +3,8 @@
 - **[NetBox devicetype-library](https://github.com/netbox-community/devicetype-library)**: device, module and rack types and elevation images, contributed by the NetBox community and dedicated to the public domain under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Imported files record the upstream path and commit in `source`. Thank you to everyone who contributed there.
 - **[openDCIM](https://opendcim.org)**: its template model (wattage, PSU count, chassis slots on faceplate images, CDU/SNMP templates) informed this schema. Templates imported from openDCIM installations carry `source.origin: opendcim` or `source.also_from: [opendcim]`. Organisations that contributed their openDCIM libraries are listed below.
 
+- **Ubiquiti Inc.**: front and rear product renders for the Enterprise Firewall Core and the WAN Switch, from [techspecs.ui.com](https://techspecs.ui.com). They are Ubiquiti's copyright, not CC0, and are marked with `images.license: LicenseRef-Ubiquiti-Copyright`. They will be replaced by own photos.
+
 ## openDCIM libraries contributed
 
 <!-- Add your organisation when you send a PR from `npm run import:opendcim`. -->
