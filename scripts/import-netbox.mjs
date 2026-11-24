@@ -279,7 +279,9 @@ for (const { vendor, file, rel } of yamlFiles(join(SRC, 'device-types'))) {
 		const imgDir = join(SRC, 'elevation-images', vendor);
 		const images = {};
 		for (const side of ['front', 'rear']) {
-			if (!src[`${side}_image`] || opts['no-images']) continue;
+			// Take the image whenever upstream has the file. Many device types never set
+			// front_image/rear_image although their elevation images exist (e.g. Dell PowerEdge R750).
+			if (opts['no-images']) continue;
 			const img = findImage(imgDir, src.slug, side);
 			if (img) images[side] = { from: img, to: `${side}.webp` };
 		}

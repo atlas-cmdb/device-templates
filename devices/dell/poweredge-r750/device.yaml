@@ -55,6 +55,10 @@ module_bays:
   - name: NUMA 1 - PCIe slot 8 - FH
     label: "8"
     bay_position: PCIe-8
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
 links:
   datasheet: https://servermall.ru/upload/datasheet/dell-poweredge-r750-datasheet.pdf
   manual: https://i.dell.com/sites/csdocuments/Product_Docs/en/poweredge-r750-technical-guide.pdf
