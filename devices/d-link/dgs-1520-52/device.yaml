@@ -127,6 +127,10 @@ power_ports:
   - name: PS1
     type: iec-60320-c14
     maximum_draw_w: 51
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
 links:
   product_page: https://eu.dlink.com/it/it/products/dgs-1520-layer-3-stackable-smart-managed-switches
 source:
@@ -134,12 +138,15 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/D-Link/DGS-1520-52.yaml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   upstream_fields:
     - airflow
     - console_ports
     - full_depth
+    - images.credit
+    - images.front
+    - images.rear
     - interfaces
     - links.product_page
     - manufacturer
@@ -150,4 +157,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: b11be6e06913ca89
+  import_hash: 8bc6ed03cb4af662

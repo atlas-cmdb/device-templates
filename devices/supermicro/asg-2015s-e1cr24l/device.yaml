@@ -51,6 +51,10 @@ module_bays:
   - name: PSU2
     description: Lower power supply unit
     bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
 links:
   datasheet: https://www.supermicro.com/en/products/system/datasheet/asg-2015s-e1cr24l
   manual: https://www.supermicro.com/manuals/superstorage/MNL-2628.pdf
@@ -60,13 +64,16 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Supermicro/ASG-2015S-E1CR24L.yaml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   upstream_fields:
     - airflow
     - comments
     - console_ports
     - full_depth
+    - images.credit
+    - images.front
+    - images.rear
     - interfaces
     - links.datasheet
     - links.manual
@@ -78,4 +85,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: 1989b1d927b6229e
+  import_hash: fd4aa85fe69c8826

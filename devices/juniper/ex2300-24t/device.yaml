@@ -84,6 +84,10 @@ power_ports:
   - name: PSU0
     type: iec-60320-c14
     maximum_draw_w: 55
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
 links:
   datasheet: https://www.juniper.net/content/dam/www/assets/datasheets/us/en/switches/ex2300-ethernet-switch-datasheet.pdf
 source:
@@ -91,12 +95,15 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Juniper/EX2300-24T.yaml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   upstream_fields:
     - airflow
     - console_ports
     - full_depth
+    - images.credit
+    - images.front
+    - images.rear
     - interfaces
     - links.datasheet
     - manufacturer
@@ -107,4 +114,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: 9587e4c69744c435
+  import_hash: 83564ef0f6dfe304

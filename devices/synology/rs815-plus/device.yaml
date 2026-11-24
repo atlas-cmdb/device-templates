@@ -26,6 +26,9 @@ console_ports:
 power_ports:
   - name: PSU 1
     type: iec-60320-c14
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
 links:
   datasheet: https://www.synology.com/en-us/products/RS815+#specs
 source:
@@ -33,11 +36,13 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Synology/RS815+.yaml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   upstream_fields:
     - console_ports
     - full_depth
+    - images.credit
+    - images.front
     - interfaces
     - links.datasheet
     - manufacturer
@@ -48,4 +53,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: cdd244e925c9a6e6
+  import_hash: 46fc31e417459293

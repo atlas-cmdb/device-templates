@@ -303,6 +303,7 @@ rear_ports:
 images:
   credit: NetBox devicetype-library contributors
   front: front.webp
+  rear: rear.webp
 links:
   product_page: https://verticalcable.com/product/042-378-48
 source:
@@ -310,7 +311,7 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Vertical Cable/042-378-48.yaml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   upstream_fields:
     - airflow
@@ -318,6 +319,7 @@ source:
     - full_depth
     - images.credit
     - images.front
+    - images.rear
     - links.product_page
     - manufacturer
     - model
@@ -326,4 +328,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: 963cc4a7c2374fc2
+  import_hash: a837ac20726c017c

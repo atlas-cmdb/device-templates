@@ -221,6 +221,9 @@ module_bays:
     bay_position: "0"
   - name: PS1
     bay_position: "1"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
 links:
   datasheet: https://api.prod.eltex-co.ru/storage/upload_center/files/27/MES23xxP_datasheet_4.0.24.1.pdf
 source:
@@ -228,7 +231,7 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Eltex/MES2348P.yaml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   inferred:
     - category
@@ -236,6 +239,8 @@ source:
     - airflow
     - console_ports
     - full_depth
+    - images.credit
+    - images.front
     - interfaces
     - links.datasheet
     - manufacturer
@@ -246,4 +251,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: 31e4916b28e02213
+  import_hash: 593e75b92cf529cf

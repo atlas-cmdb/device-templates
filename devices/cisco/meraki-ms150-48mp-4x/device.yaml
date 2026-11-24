@@ -223,6 +223,10 @@ power_ports:
   - name: Slot 1
     type: iec-60320-c14
     maximum_draw_w: 933
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
 links:
   datasheet: https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS150_Datasheet
 source:
@@ -230,10 +234,13 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Cisco/Meraki-MS150-48MP-4X.yaml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   upstream_fields:
     - full_depth
+    - images.credit
+    - images.front
+    - images.rear
     - interfaces
     - links.datasheet
     - manufacturer
@@ -244,4 +251,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: 75ae2344e568e53b
+  import_hash: 22e4d45333e4593a

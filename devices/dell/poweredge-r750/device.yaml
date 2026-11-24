@@ -60,8 +60,6 @@ images:
   front: front.webp
   rear: rear.webp
 links:
-  datasheet: https://servermall.ru/upload/datasheet/dell-poweredge-r750-datasheet.pdf
-  manual: https://i.dell.com/sites/csdocuments/Product_Docs/en/poweredge-r750-technical-guide.pdf
   media:
     - kind: 3d-viewer
       label: 3D & AR viewer (exterior + interior)
@@ -69,17 +67,22 @@ links:
     - kind: 3d-viewer
       url: https://content.hmxmedia.com/poweredge-r750/
       label: Dell 3D viewer (exterior + interior, openable)
+  datasheet: https://servermall.ru/upload/datasheet/dell-poweredge-r750-datasheet.pdf
+  manual: https://i.dell.com/sites/csdocuments/Product_Docs/en/poweredge-r750-technical-guide.pdf
 source:
   origin: netbox-devicetype-library
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Dell/PowerEdge-R750.yml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   upstream_fields:
     - airflow
     - console_ports
     - full_depth
+    - images.credit
+    - images.front
+    - images.rear
     - interfaces
     - links.datasheet
     - links.manual
@@ -90,4 +93,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: a8ad01fca7fd10db
+  import_hash: ee9140e99ebb3153

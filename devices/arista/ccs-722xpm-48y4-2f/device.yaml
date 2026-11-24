@@ -235,6 +235,7 @@ module_bays:
 images:
   credit: NetBox devicetype-library contributors
   front: front.webp
+  rear: rear.webp
 links:
   datasheet: https://www.arista.com/assets/data/pdf/Datasheets/CCS-722XP-Datasheet.pdf
 source:
@@ -242,7 +243,7 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Arista/CCS-722XPM-48Y4-2F.yaml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   upstream_fields:
     - airflow
@@ -250,6 +251,7 @@ source:
     - full_depth
     - images.credit
     - images.front
+    - images.rear
     - interfaces
     - links.datasheet
     - manufacturer
@@ -260,4 +262,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: 4574f265808d98f9
+  import_hash: f74e197f26cd9fdc

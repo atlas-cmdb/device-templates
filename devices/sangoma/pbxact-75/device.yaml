@@ -22,18 +22,23 @@ console_ports:
 power_ports:
   - name: PSU
     type: dc-terminal
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
 source:
   origin: netbox-devicetype-library
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Sangoma/PBXact-75.yaml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   inferred:
     - category
   upstream_fields:
     - console_ports
     - full_depth
+    - images.credit
+    - images.front
     - interfaces
     - manufacturer
     - model
@@ -42,4 +47,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: db327b42fe3b6707
+  import_hash: 2634299ce916404a

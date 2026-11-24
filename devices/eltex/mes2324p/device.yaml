@@ -124,6 +124,9 @@ power_ports:
   - name: PS0
     type: iec-60320-c14
     maximum_draw_w: 445
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
 links:
   datasheet: https://api.prod.eltex-co.ru/storage/upload_center/files/27/MES23xxP_datasheet_4.0.24.1.pdf
 source:
@@ -131,7 +134,7 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Eltex/MES2324P.yaml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   inferred:
     - category
@@ -139,6 +142,8 @@ source:
     - airflow
     - console_ports
     - full_depth
+    - images.credit
+    - images.front
     - interfaces
     - links.datasheet
     - manufacturer
@@ -149,4 +154,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: 012c298ee031c538
+  import_hash: d60b81d568618973

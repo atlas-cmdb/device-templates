@@ -104,6 +104,10 @@ module_bays:
     bay_position: "4"
   - name: PIM 3
     bay_position: "5"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
 links:
   datasheet: https://www.juniper.net/content/dam/www/assets/datasheets/us/en/security/srx300-line-services-gateways-branch-datasheet.pdf
 source:
@@ -111,12 +115,15 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Juniper/SRX380.yaml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   upstream_fields:
     - airflow
     - console_ports
     - full_depth
+    - images.credit
+    - images.front
+    - images.rear
     - interfaces
     - links.datasheet
     - manufacturer
@@ -127,4 +134,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: 8827c0a26ab56f1b
+  import_hash: 9ac6b77287448676

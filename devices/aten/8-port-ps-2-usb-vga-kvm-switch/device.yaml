@@ -45,6 +45,10 @@ power_ports:
     description: DC 5.3 V
     type: dc-terminal
     maximum_draw_w: 3
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
 links:
   product_page: https://www.aten.com/de/de/products/kvm/rack-kvm-switches/cs1308/
 source:
@@ -52,12 +56,15 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Aten/cs1308.yml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   upstream_fields:
     - console_ports
     - console_server_ports
     - full_depth
+    - images.credit
+    - images.front
+    - images.rear
     - links.product_page
     - manufacturer
     - model
@@ -67,4 +74,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: 3f52a45f6f25bfd1
+  import_hash: de88b42c72b43ddd

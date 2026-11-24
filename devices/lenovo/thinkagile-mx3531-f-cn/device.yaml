@@ -48,6 +48,10 @@ module_bays:
   - name: Riser 3 - PCIe slot 8
     label: 8 PCIe
     bay_position: PCIe-8
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
 links:
   manual: https://lenovopress.lenovo.com/lp1512.pdf
 source:
@@ -55,11 +59,14 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Lenovo/ThinkAgile-MX3531-F-CN.yaml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   upstream_fields:
     - airflow
     - full_depth
+    - images.credit
+    - images.front
+    - images.rear
     - interfaces
     - links.manual
     - manufacturer
@@ -71,4 +78,4 @@ source:
     - subdevice_role
     - u_height
     - weight_kg
-  import_hash: f3950f651a8e2e17
+  import_hash: b819107c4eca2e27

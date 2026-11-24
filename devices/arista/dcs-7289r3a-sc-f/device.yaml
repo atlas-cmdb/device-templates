@@ -41,6 +41,9 @@ module_bays:
     bay_position: "9"
   - name: Linecard10
     bay_position: "10"
+images:
+  credit: NetBox devicetype-library contributors
+  rear: rear.webp
 links:
   datasheet: https://www.arista.com/assets/data/pdf/Datasheets/7280R3A-Modular-Datasheet.pdf
 source:
@@ -48,11 +51,13 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Arista/DCS-7289R3A-SC-F.yaml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   upstream_fields:
     - airflow
     - full_depth
+    - images.credit
+    - images.rear
     - links.datasheet
     - manufacturer
     - model
@@ -62,4 +67,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: 8d39d7bfd8b67330
+  import_hash: 290bd6e6922aadec

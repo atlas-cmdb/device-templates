@@ -73,6 +73,10 @@ module_bays:
     bay_position: "1"
   - name: PSU2
     bay_position: "2"
+images:
+  credit: NetBox devicetype-library contributors
+  front: front.webp
+  rear: rear.webp
 links:
   datasheet: https://docs.broadcom.com/doc/12379859
 source:
@@ -80,12 +84,15 @@ source:
   url: https://github.com/netbox-community/devicetype-library
   license: CC0-1.0
   upstream_path: device-types/Brocade/SAN-Switch-6505.yml
-  upstream_commit: 01a523e1b188681c83af76a6795abf4875d71401
+  upstream_commit: 2648bfb4c53188aa4184007caab591d0a81d18dd
   imported_at: 2026-11-24
   upstream_fields:
     - airflow
     - console_ports
     - full_depth
+    - images.credit
+    - images.front
+    - images.rear
     - interfaces
     - links.datasheet
     - manufacturer
@@ -96,4 +103,4 @@ source:
     - slug
     - u_height
     - weight_kg
-  import_hash: 1e4c924968c453e9
+  import_hash: 3f8cfa3fd790c57a
