@@ -39,6 +39,10 @@ module_bays:
 links:
   datasheet: https://www.delltechnologies.com/asset/no-no/products/servers/technical-support/poweredge-r6615-spec-sheet.pdf
   manual: https://www.delltechnologies.com/asset/en-us/products/servers/technical-support/poweredge-r6615-technical-guide.pdf
+  media:
+    - kind: 3d-viewer
+      url: https://content.hmxmedia.com/poweredge-r6615-rack-server/
+      label: Dell 3D viewer (exterior + interior, openable)
 source:
   origin: netbox-devicetype-library
   url: https://github.com/netbox-community/devicetype-library

@@ -4,14 +4,14 @@ Atlas' 3D/VR view looks best with real geometry and real photos: a server you ca
 
 ## What we store and what we only link
 
-| | Stored here (CC0) | Linked only |
+| | Stored here (CC0 unless marked) | Linked only |
 |---|---|---|
 | Photos you took (front, rear, **interior**, gallery) | ✔ `images.*` | |
 | 3D models you scanned or modelled | ✔ `model_3d` + `model_3d_info` | |
 | Models generated from template data | ✔ `model_3d_info.method: generated` | |
 | Vendor 3D / 360° / AR viewers, product photos, CAD downloads | ✘ copyrighted | ✔ `links.media` |
 
-Vendor media (Dell, HPE, Cisco, Lenovo…) is owned by the vendor or their agency. Republishing it here would infringe their copyright and mislabel it as public domain, so we **link to it** instead:
+Vendor media (Dell, HPE, Cisco, Lenovo…) is owned by the vendor or their agency. Republishing it here would infringe their copyright and mislabel it as public domain, so we **link to it** instead. Files that are stored here under another licence (for example manufacturer renders) must say so in `images.license` / `model_3d_info.license` with a `credit`; everything without such a field is CC0:
 
 ```yaml
 links:

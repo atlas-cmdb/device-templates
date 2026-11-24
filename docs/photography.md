@@ -11,7 +11,7 @@ Faceplate photos are drawn directly onto the front and rear of devices in rack e
 4. **Sharp and level.** Correct perspective/keystone in any photo editor (Snapseed, Lightroom, GIMP "Perspective"). The top and bottom edges must be horizontal.
 5. **Typical configuration.** Bezel on or off: choose what operators usually see and mention it in the PR/issue. Blank drive slots are fine.
 6. **Both sides if you can.** The rear (PSUs, ports) matters as much as the front for cabling and VR.
-7. **Your own photos only.** Everything here is public domain ([CC0](../LICENSE)), so we can only accept photos you took yourself; vendor marketing renders are copyrighted. Photos of devices in your own rack are ideal. Blur or crop asset tags and hostnames if they are sensitive. You're credited in `images.credit`.
+7. **Your own photos, preferably.** Photos are public domain ([CC0](../LICENSE)) unless a template marks them otherwise; vendor marketing renders are copyrighted, so they are only accepted with `images.credit` and `images.license` set (see [CONTRIBUTING](../CONTRIBUTING.md#licence-of-contributions)). Photos of devices in your own rack are ideal. Blur or crop asset tags and hostnames if they are sensitive. You're credited in `images.credit`.
 
 ## Interior and extra photos
 

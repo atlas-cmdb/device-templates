@@ -38,6 +38,10 @@ module_bays:
     bay_position: PCIe-3
 links:
   manual: https://i.dell.com/sites/csdocuments/Product_Docs/en/poweredge-r660-technical-guide.pdf
+  media:
+    - kind: 3d-viewer
+      url: https://content.hmxmedia.com/poweredge-r660-rack-server/
+      label: Dell 3D viewer (exterior + interior, openable)
 source:
   origin: netbox-devicetype-library
   url: https://github.com/netbox-community/devicetype-library

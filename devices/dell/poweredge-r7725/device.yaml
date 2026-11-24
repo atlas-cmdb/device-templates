@@ -31,6 +31,10 @@ images:
   rear: rear.webp
 links:
   manual: https://www.delltechnologies.com/asset/en-us/products/servers/technical-support/poweredge-r7725-technical-guide.pdf
+  media:
+    - kind: 3d-viewer
+      url: https://content.hmxmedia.com/poweredge-r7725/
+      label: Dell 3D viewer (exterior + interior, openable)
 source:
   origin: netbox-devicetype-library
   url: https://github.com/netbox-community/devicetype-library

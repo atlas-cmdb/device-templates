@@ -114,7 +114,7 @@
 
     "images": { "$ref": "#/$defs/images" },
     "model_3d": {
-      "description": "Optional glTF binary (.glb) next to device.yaml for the 3D/VR viewer. Origin at front-bottom-left, +Z towards the rear, metres. Must be your own work (scan or model); see docs/3d-models.md.",
+      "description": "Optional glTF binary (.glb) next to device.yaml for the 3D/VR viewer. Origin at front-bottom-left, +Z towards the rear, metres. CC0 unless model_3d_info.license says otherwise; see docs/3d-models.md.",
       "type": "string",
       "pattern": "^[a-z0-9._-]+\\.glb$"
     },
@@ -150,7 +150,7 @@
         },
         "triangles": { "type": "integer", "minimum": 0 },
         "credit": { "type": "string" },
-        "license": { "description": "SPDX id; contributions are CC0-1.0.", "type": "string" }
+        "license": { "description": "SPDX id or LicenseRef-… when the model is not CC0 (the repository licence). Set credit too.", "type": "string" }
       }
     },
 
@@ -433,7 +433,7 @@
           }
         },
         "credit": { "description": "Photographer / origin of the images.", "type": "string" },
-        "license": { "description": "SPDX id if the images differ from the repository licence.", "type": "string" }
+        "license": { "description": "SPDX id or LicenseRef-… when the images are not CC0 (the repository licence), e.g. LicenseRef-Ubiquiti-Copyright for vendor renders. Set credit too.", "type": "string" }
       }
     },
 

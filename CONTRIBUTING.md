@@ -50,17 +50,19 @@ Running openDCIM? Its template library can be imported in one go, through the AP
 
 ### Photos
 
-Photos make the biggest difference to the 3D/VR view. See **[docs/photography.md](docs/photography.md)**. In short: straight-on, crop to the faceplate *without* rack ears, sharp, evenly lit, front and rear. Only submit photos you took yourself; no vendor marketing images. Add yourself to `images.credit` if you'd like to be credited.
+Photos make the biggest difference to the 3D/VR view. See **[docs/photography.md](docs/photography.md)**. In short: straight-on, crop to the faceplate *without* rack ears, sharp, evenly lit, front and rear. Your own photos are preferred (CC0). Add yourself to `images.credit` if you'd like to be credited. Images under another licence (e.g. manufacturer renders) are only accepted when marked; see below.
 
 ### Licence of contributions
 
-Everything in the dataset is public domain under [CC0 1.0](LICENSE), the same as the NetBox library it builds on. By opening a pull request or issue with data or photos, you confirm that you created them (or that they are factual data from public datasheets) and that you dedicate them to the public domain under CC0. Code contributions to `scripts/`, `site/` and `types/` are MIT ([LICENSE-CODE](LICENSE-CODE)).
+Everything in the dataset is public domain under [CC0 1.0](LICENSE), the same as the NetBox library it builds on. By opening a pull request or issue with data or photos, you confirm that you created them (or that they are factual data from public datasheets) and that you dedicate them to the public domain under CC0.
+
+**Images and 3D models may have a different licence than the repository.** If you add an image or model you did not create, set `images.credit` + `images.license` or `model_3d_info.credit` + `model_3d_info.license` (an SPDX id such as `CC-BY-4.0`, or `LicenseRef-<Owner>-Copyright` when the owner keeps all rights). Those files are then not CC0, are listed in [CREDITS.md](CREDITS.md), and are removed if the rights holder asks. Prefer your own work where you can. Code contributions to `scripts/`, `site/` and `types/` are MIT ([LICENSE-CODE](LICENSE-CODE)).
 
 ### 3D models, interior photos and vendor viewers
 
 - **Interior photos** (lid off, top-down) and **gallery photos** are easy wins; see [docs/photography.md](docs/photography.md).
 - **3D models**: a `model.glb` you scanned or modelled yourself, with toggleable layers (`top_cover`, `front_bezel`…) and camera views, like vendor viewers have. Conventions and tooling are in [docs/3d-models.md](docs/3d-models.md).
-- **Vendor 3D/360°/AR viewers and CAD downloads**: add the URL under `links.media`. Never download or convert vendor media into the repository; it is copyrighted.
+- **Vendor 3D/360°/AR viewers and CAD downloads**: add the URL under `links.media`. Don't download or convert a vendor's viewer into the repository; link to it. Vendor files may only be added when the vendor allows redistribution, marked with their licence as described above.
 
 ### Schema changes
 

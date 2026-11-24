@@ -61,6 +61,10 @@ images:
 links:
   datasheet: https://www.delltechnologies.com/asset/en-gb/solutions/oem-solutions/technical-support/poweredge-r7615-oem-spec-sheet.pdf
   manual: https://www.delltechnologies.com/asset/en-us/products/servers/technical-support/poweredge-r7625-technical-guide.pdf
+  media:
+    - kind: 3d-viewer
+      url: https://content.hmxmedia.com/poweredge-r7625-rack-server/
+      label: Dell 3D viewer (exterior + interior, openable)
 source:
   origin: netbox-devicetype-library
   url: https://github.com/netbox-community/devicetype-library

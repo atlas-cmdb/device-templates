@@ -125,6 +125,7 @@
 	.hero h1 { margin: 0.2rem 0 0.35rem; font-size: clamp(1.65rem, 2vw + 1rem, 2.5rem); font-weight: 600; line-height: 1.2; letter-spacing: -0.02em; }
 	.hero p { margin: 0; max-width: 46rem; color: var(--color-text-secondary); }
 	.stats { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+	.credit { margin: 0.25rem 0 0.75rem; font-size: 0.8rem; color: var(--color-text-muted); }
 	.updated { margin: 0.7rem 0 0; font-size: 0.8rem; color: var(--color-text-muted); }
 	.updated:empty { display: none; }
 	.updated a { color: inherit; }
@@ -302,7 +303,7 @@
 <footer>
 	<div class="footer-inner">
 		<a class="brand" href="https://github.com/atlas-cmdb"><svg class="mark" aria-hidden="true"><use href="#atlas-mark"/></svg> Atlas</a>
-		<span>Device Library · data <a href="https://github.com/atlas-cmdb/device-templates/blob/main/LICENSE">CC0 1.0</a> · includes the <a href="https://github.com/netbox-community/devicetype-library">NetBox device-type library</a></span>
+		<span>Device Library · data <a href="https://github.com/atlas-cmdb/device-templates/blob/main/LICENSE">CC0 1.0</a> (some images and 3D models have <a href="https://github.com/atlas-cmdb/device-templates#license">their own licence</a>) · includes the <a href="https://github.com/netbox-community/devicetype-library">NetBox device-type library</a></span>
 		<span class="footer-links">
 			<span id="footer-updated"></span>
 			<a href="manifest.json">manifest.json</a>
@@ -480,8 +481,10 @@ async function open(path) {
 			<a class="button" href="${esc(path)}">JSON</a>
 		</div>
 		${faces ? `<div class="faces">${faces}</div>` : ''}
+		${(faces || photos) && (d.images?.credit || d.images?.license) ? `<p class="credit">Images: ${esc(d.images.credit ?? '')}${d.images.license ? ` · <strong>${d.images.license === 'CC0-1.0' ? 'CC0' : `${esc(d.images.license)}, not CC0`}</strong>` : ''}</p>` : ''}
 		${media ? `<div class="media">${media}<small>hosted by ${esc(mediaHosts)}, not part of this library</small></div>` : ''}
 		${photos ? `<div class="photos">${photos}</div>` : ''}
+		${d.model_3d_info?.license ? `<p class="credit">3D model: ${esc(d.model_3d_info.credit ?? '')} · <strong>${esc(d.model_3d_info.license)}${d.model_3d_info.license === 'CC0-1.0' ? '' : ', not CC0'}</strong></p>` : ''}
 		<table class="specs">
 			${row('Id', `<code>${esc(d.id)}</code>`)}
 			${row('Category', d.category && `<span class="badge primary">${esc(manifest.categories[d.category]?.label ?? d.category)}</span>${d.atlas_type ? ` &nbsp;Atlas type <code>${esc(d.atlas_type)}</code>` : ''}${d.source?.inferred?.includes('category') ? ' <span class="badge warning">guessed</span>' : ''}`)}

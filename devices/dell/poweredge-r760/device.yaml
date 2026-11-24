@@ -62,6 +62,10 @@ images:
 links:
   datasheet: https://servermall.ru/upload/datasheet/dell-poweredge-r760-datasheet.pdf
   manual: https://i.dell.com/sites/csdocuments/Product_Docs/en/poweredge-r760-technical-guide.pdf
+  media:
+    - kind: 3d-viewer
+      url: https://content.hmxmedia.com/poweredge-r760-rack-server/
+      label: Dell 3D viewer (exterior + interior, openable)
 source:
   origin: netbox-devicetype-library
   url: https://github.com/netbox-community/devicetype-library

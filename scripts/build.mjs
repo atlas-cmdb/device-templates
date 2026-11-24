@@ -27,7 +27,11 @@ const OUT = join(ROOT, opts.out);
 const BASE = opts['base-url'].endsWith('/') ? opts['base-url'] : `${opts['base-url']}/`;
 const FORMAT_VERSION = 1;
 // The dataset is public domain; code (scripts/site/types) is MIT, see LICENSE-CODE.
-const LICENSE = { data: 'CC0-1.0', url: 'https://creativecommons.org/publicdomain/zero/1.0/' };
+const LICENSE = {
+	data: 'CC0-1.0',
+	url: 'https://creativecommons.org/publicdomain/zero/1.0/',
+	note: 'Images and 3D models may have a different licence: see images.license and model_3d_info.license on each template.'
+};
 
 let commit = process.env.GITHUB_SHA ?? 'unknown';
 try {

@@ -62,6 +62,9 @@ links:
     - kind: 3d-viewer
       label: 3D & AR viewer (exterior + interior)
       url: https://www.dell.com/nl-nl/shop/servers-opslag-en-netwerken/poweredge-r750-full-configuration/spd/poweredge-r750/emea_r750
+    - kind: 3d-viewer
+      url: https://content.hmxmedia.com/poweredge-r750/
+      label: Dell 3D viewer (exterior + interior, openable)
 source:
   origin: netbox-devicetype-library
   url: https://github.com/netbox-community/devicetype-library
