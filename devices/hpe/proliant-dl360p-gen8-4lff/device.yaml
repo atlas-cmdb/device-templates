@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: hpe
+model: ProLiant DL360p Gen8 4LFF
+slug: proliant-dl360p-gen8-4lff
+family: ProLiant
+description: 1U dual-socket server, 4 x 3.5" LFF hot-plug drive bays.
+category: server
+form_factor: rack
+u_height: 1
+full_depth: true
+weight_kg: 20.7
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: Gig-E 1
+    type: 1000base-t
+  - name: Gig-E 2
+    type: 1000base-t
+  - name: Gig-E 3
+    type: 1000base-t
+  - name: Gig-E 4
+    type: 1000base-t
+  - name: iLO
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: PSU1
+    bay_position: PSU1
+  - name: PSU2
+    bay_position: PSU2
+  - name: FlexLOM
+    bay_position: FlexLOM
+  - name: PCIe1
+    bay_position: PCIe1
+  - name: PCIe2
+    bay_position: PCIe2
+  - name: PCIe3
+    bay_position: PCIe3
+images:
+  credit: Hewlett Packard Enterprise (product photos of the 4 x LFF front and the rear)
+  license: LicenseRef-HPE-Copyright
+  front: front.webp
+  rear: rear.webp
+  # The front keeps the rack ears (HP logo, model label), as Atlas draws faces ear to ear.
+  includes_ears: true
+links:
+  other:
+    - label: HP ProLiant DL360p Gen8 QuickSpecs
+      url: https://www.hpe.com/psnow/doc/c04123167
+comments: Same chassis, rear and I/O as the 8 x SFF model (proliant-dl360p-gen8); only the drive cage differs.

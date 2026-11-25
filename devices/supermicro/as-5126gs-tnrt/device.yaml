@@ -1,0 +1,101 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: supermicro
+model: AS-5126GS-TNRT
+slug: as-5126gs-tnrt
+category: gpu_server
+form_factor: rack
+family: A+ Server
+description: 5U dual-socket AMD EPYC 9005/9004 GPU server for up to 8 double-width PCIe GPUs.
+part_numbers:
+  - AS-5126GS-TNRT
+  - AS-5126GS-TNRT-01-G2
+aliases:
+  - AS -5126GS-TNRT
+u_height: 5
+full_depth: true
+dimensions:
+  width_mm: 438
+  height_mm: 222.5
+  depth_mm: 786.1
+weight_kg: 29.7
+airflow: front-to-rear
+power:
+  psu_count: 6
+  psu_redundancy: 4+2
+  psu_rating_w: 2700
+  input_voltage: 200-240V AC
+interfaces:
+  - name: BMC
+    description: Dedicated IPMI LAN port
+    type: 1000base-t
+    mgmt_only: true
+  - name: LAN 1
+    type: 10gbase-t
+  - name: LAN 2
+    type: 10gbase-t
+console_ports:
+  - name: Serial
+    type: de-9
+  - name: Rear USB 1
+    type: usb-a
+  - name: Rear USB 2
+    type: usb-a
+module_bays:
+  - name: PSU 1
+    description: 2700W Titanium hot-swap power supply
+  - name: PSU 2
+    description: 2700W Titanium hot-swap power supply
+  - name: PSU 3
+    description: 2700W Titanium hot-swap power supply
+  - name: PSU 4
+    description: 2700W Titanium hot-swap power supply
+  - name: PSU 5
+    description: 2700W Titanium hot-swap power supply
+  - name: PSU 6
+    description: 2700W Titanium hot-swap power supply
+  - name: PCIe 1
+    description: PCIe 5.0 x16 FHFL double-width
+  - name: PCIe 2
+    description: PCIe 5.0 x16 FHFL double-width
+  - name: PCIe 3
+    description: PCIe 5.0 x16 FHFL double-width
+  - name: PCIe 4
+    description: PCIe 5.0 x16 FHFL double-width
+  - name: PCIe 5
+    description: PCIe 5.0 x16 FHFL double-width
+  - name: PCIe 6
+    description: PCIe 5.0 x16 FHFL double-width
+  - name: PCIe 7
+    description: PCIe 5.0 x16 FHFL double-width
+  - name: PCIe 8
+    description: PCIe 5.0 x16 FHFL double-width
+  - name: PCIe 9
+    description: PCIe 5.0 x16 FHFL double-width
+  - name: PCIe 10
+    description: PCIe 5.0 x16 FHFL double-width (option A, only when the front NVMe bays are disabled)
+  - name: NVMe Bay 0
+    description: Front hot-swap 2.5" NVMe drive bay
+  - name: NVMe Bay 1
+    description: Front hot-swap 2.5" NVMe drive bay
+  - name: NVMe Bay 2
+    description: Front hot-swap 2.5" NVMe drive bay
+  - name: NVMe Bay 3
+    description: Front hot-swap 2.5" NVMe drive bay
+  - name: SATA Bay 0
+    description: Front hot-swap 2.5" SATA drive bay
+  - name: SATA Bay 1
+    description: Front hot-swap 2.5" SATA drive bay
+images:
+  credit: Supermicro Computer, Inc. (product images)
+  license: LicenseRef-Supermicro-Copyright
+  front: front.webp
+  rear: rear.webp
+  # The control panel (power button, LEDs) sits on the left rack ear, so the front keeps the ears.
+  includes_ears: true
+links:
+  product_page: https://www.supermicro.com/en/products/system/gpu/5u/as-5126gs-tnrt
+  datasheet: https://www.supermicro.com/en/products/system/datasheet/as-5126gs-tnrt
+  other:
+    - label: Quick Reference Guide (QRG-2767)
+      url: https://www.supermicro.com/QuickRefs/superserver/5U/QRG-2767.pdf
+comments: The default configuration has 6 front drive bays (4 NVMe + 2 SATA); the other front slots are blanks. Up to 10 hot-swap fans.

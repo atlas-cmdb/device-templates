@@ -4,6 +4,7 @@ model: ProLiant DL360p Gen8
 slug: proliant-dl360p-gen8
 category: server
 form_factor: rack
+description: 1U dual-socket server, 8 x 2.5" SFF hot-plug drive bays and an optical bay. For the 4 x LFF model see proliant-dl360p-gen8-4lff.
 part_numbers:
   - 673648-B21
 u_height: 1
@@ -40,6 +41,13 @@ module_bays:
     bay_position: PCIe2
   - name: PCIe3
     bay_position: PCIe3
+images:
+  credit: Hewlett Packard Enterprise (product photos of the 8 x SFF front and the rear)
+  license: LicenseRef-HPE-Copyright
+  front: front.webp
+  rear: rear.webp
+  # The front keeps the rack ears (HP logo, model label), as Atlas draws faces ear to ear.
+  includes_ears: true
 links:
   other:
     - label: HP ProLiant DL360p Gen8 QuickSpecs

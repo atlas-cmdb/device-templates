@@ -4,6 +4,8 @@
 - **[openDCIM](https://opendcim.org)**: its template model (wattage, PSU count, chassis slots on faceplate images, CDU/SNMP templates) informed this schema. Templates imported from openDCIM installations carry `source.origin: opendcim` or `source.also_from: [opendcim]`. Organisations that contributed their openDCIM libraries are listed below.
 
 - **Ubiquiti Inc.**: front and rear product renders for the Enterprise Firewall Core and the WAN Switch, from [techspecs.ui.com](https://techspecs.ui.com). They are Ubiquiti's copyright, not CC0, and are marked with `images.license: LicenseRef-Ubiquiti-Copyright`. They will be replaced by own photos.
+- **Super Micro Computer, Inc.**: front and rear product images of the AS-5126GS-TNRT. They are Supermicro's copyright, not CC0, and are marked with `images.license: LicenseRef-Supermicro-Copyright`. They will be replaced by own photos.
+- **Hewlett Packard Enterprise**: front (8 x SFF and 4 x LFF) and rear product photos of the ProLiant DL360p Gen8. They are HPE's copyright, not CC0, and are marked with `images.license: LicenseRef-HPE-Copyright`. They will be replaced by own photos.
 
 ## openDCIM libraries contributed
 
