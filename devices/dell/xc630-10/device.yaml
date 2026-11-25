@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../../schema/device.schema.json
+manufacturer: dell
+model: XC630-10
+slug: xc630-10
+family: XC Series
+aliases:
+  - XC630
+description: Nutanix web-scale hyperconverged appliance built on PowerEdge R630 hardware (1U, 10 x 2.5" drive bays).
+category: server
+form_factor: rack
+u_height: 1
+full_depth: true
+weight_kg: 18.5
+airflow: front-to-rear
+power:
+  psu_count: 2
+interfaces:
+  - name: iDRAC
+    type: 1000base-t
+    mgmt_only: true
+console_ports:
+  - name: Serial
+    type: de-9
+module_bays:
+  - name: PSU-1
+    label: "1"
+    bay_position: "1"
+  - name: PSU-2
+    label: "2"
+    bay_position: "2"
+  - name: Network Daughter Card slot 1
+    bay_position: NDC-1
+  - name: Riser PCIe-Gen3 1
+    bay_position: PCIe-Gen3-1
+  - name: Riser PCIe-Gen3 2
+    bay_position: PCIe-Gen3-2
+  - name: Riser PCIe-Gen3 3
+    bay_position: PCIe-Gen3-3
+images:
+  credit: NetBox devicetype-library contributors (PowerEdge R630 images; same chassis)
+  front: front.webp
+  rear: rear.webp
+comments: Same chassis, layout and images as dell/poweredge-r630 (10-bay 2.5" variant). The XC bezel carries XC branding; the images show the server without bezel.
